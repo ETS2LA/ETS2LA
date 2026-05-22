@@ -281,6 +281,7 @@ public class GameOutput
                 List<Tuple<float, float>> values = kvp.Value;
 
                 float totalWeight = values.Sum(v => v.Item1);
+                if (totalWeight == 0f) continue;
                 float weightedValue = values.Sum(v => v.Item1 * v.Item2) / totalWeight;
                 weightedValue = Math.Clamp(weightedValue, -1f, 1f);
 
