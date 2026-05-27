@@ -133,10 +133,14 @@ class Plugin(ETS2LAPlugin):
         if not points:
             return  # no steering points available
 
+        truck_speed = api["truckFloat"]["speed"]
+        mass = 10000 + api["configFloat"]["cargoMass"]
         max_speed = get_maximum_speed_for_points(
             points,
             api["truckPlacement"]["coordinateX"],
             api["truckPlacement"]["coordinateZ"],
+            truck_speed,
+            mass
         )
 
         if max_speed > settings.max_speed / 3.6:

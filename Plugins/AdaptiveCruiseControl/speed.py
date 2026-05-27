@@ -4,7 +4,6 @@ import logging
 
 MU = settings.MU
 G = 9.81  # Gravitational acceleration (m/s^2)
-MAX_DISTANCE = 150  # Distance at which curvature affects 0%
 MIN_DISTANCE = 30  # Distance at which curvature affects 100%
 
 
@@ -20,8 +19,12 @@ def distance_to_point(x1, y1, x2, y2):
     return np.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2)
 
 
-def calculate_curvature(points, x, z):
+def calculate_curvature(points, x, z, speed=25.0, mass=40000.0):
     """Calculate the curvature for each point in the road segment."""
+    safe_decel = min(3.0, 100000 / max(1000, mass))
+    max_distance = speed * 2 + (speed ** 2) / (2 * safe_decel)
+    max_distance = max(max_distance, MIN_DISTANCE + 10)
+
     curvatures = []
     for i in range(1, len(points) - 1):
         # Direction vectors
@@ -52,7 +55,7 @@ def calculate_curvature(points, x, z):
         kappa = delta_theta / delta_s
 
         distance = distance_to_point(x, z, points[i][0], points[i][2])
-        multiplier = 1 - (distance - MIN_DISTANCE) / (MAX_DISTANCE - MIN_DISTANCE)
+        multiplier = 1 - (distance - MIN_DISTANCE) / (max_distance - MIN_DISTANCE)
         multiplier = np.clip(multiplier, 0, 1)
 
         curvatures.append(kappa * multiplier)
@@ -60,14 +63,14 @@ def calculate_curvature(points, x, z):
     return curvatures
 
 
-def get_maximum_speed_for_points(points, x, z) -> float:
+def get_maximum_speed_for_points(points, x, z, speed=25.0, mass=40000.0) -> float:
     """Calculate the maximum safe speed based on road curvature."""
     if len(points) < 3:  # Need at least 3 points to calculate curvature
         return 999
 
     try:
         # Calculate curvatures for all points
-        curvatures = calculate_curvature(points, x, z)
+        curvatures = calculate_curvature(points, x, z, speed, mass)
 
         if not curvatures:
             return 999
