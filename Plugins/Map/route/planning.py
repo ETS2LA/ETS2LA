@@ -631,6 +631,10 @@ def GetNextNavigationItem():
         best_distance = math.inf
         best_length = math.inf
         for lane in accepted_lanes:
+            # Validate index bounds before accessing nav_routes
+            if lane < 0 or lane >= len(next_item.nav_routes):
+                continue
+
             length = next_item.nav_routes[lane].distance
             points = next_item.nav_routes[lane].points
 
@@ -663,7 +667,7 @@ def GetNextNavigationItem():
         if best_lane == math.inf:
             return None
 
-        return PrefabToRouteSection(next_item, best_lane, path_index=index)
+        return PrefabToRouteSection(next_item, best_lane, path_index=index)    
 
 
 def ResetState():
