@@ -437,26 +437,7 @@ class Page(ETS2LAPage):
                     description="This will control how many ads you see in ETS2LA. Minimal is recommended to support development without affecting usage.",
                 )
 
-                if ads == 0:
-                    with Button(
-                        style=styles.FlexHorizontal()
-                        + styles.Gap("12px")
-                        + styles.Classname("items-center bg-kofi hover:bg-kofi-active!")
-                        + styles.Height("70px"),
-                        action=self.open_kofi,
-                    ):
-                        style = styles.Style()
-                        style.margin_top = "2px"
-                        style.width = "1.5rem"
-                        style.height = "1.5rem"
-                        style.color = ""
-                        Icon("heart", style)
-                        Text(
-                            _("Support ETS2LA Development on Ko-Fi"),
-                            styles.Classname("font-semibold"),
-                        )
-
-                else:
+                if ads != 0:
                     with Alert(style=styles.Padding("14px")):
                         with Container(
                             styles.FlexHorizontal()

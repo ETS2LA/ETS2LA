@@ -41,8 +41,7 @@ contributors = [
         "description": _("Lead developer and creator of ETS2LA, backend & frontend."),
         "links": [
             ["Github", "https://github.com/Tumppi066"],
-            ["Youtube", "https://www.youtube.com/@Tumppi066"],
-            ["Ko-Fi", "https://ko-fi.com/tumppi066"],
+            ["Youtube", "https://www.youtube.com/@Tumppi066"]
         ],
     },
     {
@@ -203,7 +202,7 @@ class Page(ETS2LAPage):
     url = "/about"
     game_needs_update = {}
     refresh_rate = 60
-    show_kofi = True
+    show_kofi = False
 
     user_count = "..."
     unique_users = "..."
