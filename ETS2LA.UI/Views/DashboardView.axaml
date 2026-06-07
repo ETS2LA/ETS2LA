@@ -98,7 +98,7 @@
                         </StackPanel>
                         <WrapPanel Grid.Row="1" ItemSpacing="8" VerticalAlignment="Bottom">
                             <Button Content="Join Discord" />
-                            <Button Content="Open GitHub" />
+                            <Button Content="Open GitHub" Click="OpenGitHub" />
                             <Button Content="Ko-Fi" Classes="Primary" />
                         </WrapPanel>
                     </Grid>

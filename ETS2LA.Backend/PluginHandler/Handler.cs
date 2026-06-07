@@ -36,23 +36,45 @@ namespace ETS2LA.Backend
         public Action<IPlugin>? PluginDisabled;
         public bool loading = false;
         
-        public string[] DiscoverDlls(string path)
+        // Base directory for user-installed plugins that survive updates.
+        // User plugins live in %AppData%/ETS2LA/, not in the app directory which gets
+        // replaced by Velopack on every update.
+        private static readonly string _userPluginDir = Path.Combine(
+            Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "ETS2LA");
+
+        public string[] DiscoverDlls(string relativePath)
         {
             try
             {
-                var pluginFiles = Directory.GetFiles(path, "*.dll");
+                var allPluginFiles = new List<string>();
+
+                // Built-in / default plugins shipped with ETS2LA in the app directory.
+                var appPluginPath = Path.GetFullPath(relativePath);
+                if (Directory.Exists(appPluginPath))
+                {
+                    var files = Directory.GetFiles(appPluginPath, "*.dll");
+                    allPluginFiles.AddRange(files);
+                }
+
+                // User-installed plugins in AppData that should survive updates.
+                var userPluginPath = Path.Combine(_userPluginDir, relativePath);
+                if (Directory.Exists(userPluginPath))
+                {
+                    var files = Directory.GetFiles(userPluginPath, "*.dll");
+                    allPluginFiles.AddRange(files);
+                }
 
                 // Exclude anything in _exclusions.
-                pluginFiles = pluginFiles.Where(file =>
+                allPluginFiles = allPluginFiles.Where(file =>
                 {
                     var fileName = Path.GetFileName(file);
                     return !_exclusions.Any(pattern => 
                         System.Text.RegularExpressions.Regex.IsMatch(fileName, 
                             "^" + System.Text.RegularExpressions.Regex.Escape(pattern).Replace("\\*", ".*") + "$"
                         ));
-                }).ToArray();
+                }).ToList();
 
-                return pluginFiles;
+                return allPluginFiles.ToArray();
             } catch (Exception ex)
             {
                 Logger.Error($"Failed to discover Dlls: {ex.Message}");
@@ -174,7 +196,9 @@ namespace ETS2LA.Backend
             // we've unloaded, these will be unloaded later.
             var loadContexts = new HashSet<AssemblyLoadContext>();
 
-            foreach (var plugin in LoadedPlugins)
+            // Take a snapshot to avoid collection-modified-during-enumeration crashes
+            var pluginSnapshot = LoadedPlugins.ToList();
+            foreach (var plugin in pluginSnapshot)
             {
                 try
                 {
@@ -213,15 +237,29 @@ namespace ETS2LA.Backend
             // assemblies, otherwise they might still be around for 
             // the next cycle, meaning a call of UnloadPlugins -> LoadPlugins 
             // without delay might not update the .dlls as expected.
-            GC.Collect();
-            GC.WaitForPendingFinalizers();
-            GC.Collect();
+            try
+            {
+                GC.Collect();
+                GC.WaitForPendingFinalizers();
+                GC.Collect();
+            }
+            catch (Exception ex)
+            {
+                Logger.Error($"Error during GC after plugin unload: {ex.Message}");
+            }
 
             foreach (var loadContext in loadContexts)
             {
                 // TODO: This doesn't work on Windows...
                 // The files get cleaned up on restart, but it does throw warnings in the logs.
-                CleanupShadowDirectory(loadContext);
+                try
+                {
+                    CleanupShadowDirectory(loadContext);
+                }
+                catch (Exception ex)
+                {
+                    Logger.Warn($"Failed to clean shadow directory for unloaded plugin: {ex.Message}");
+                }
             }
 
             loading = false;

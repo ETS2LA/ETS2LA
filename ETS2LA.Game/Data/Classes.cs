@@ -423,8 +423,14 @@ public class ParsedRoad : IParsedItem
     /// <returns>The interpolated oriented point.</returns>
     public OrientedPoint InterpolateBetweenLanes(float t, Side side, float laneIndexFloat, float additionalOffset = 0)
     {
-        int laneIndexFloor = (int)Math.Floor(laneIndexFloat);
-        int laneIndexCeil = (int)Math.Ceiling(laneIndexFloat);
+        int laneCount = GetLaneCount(side);
+        
+        // No lanes on this side — return road center
+        if (laneCount == 0)
+            return Interpolate(t);
+        
+        int laneIndexFloor = Math.Clamp((int)Math.Floor(laneIndexFloat), 0, laneCount - 1);
+        int laneIndexCeil = Math.Clamp((int)Math.Ceiling(laneIndexFloat), 0, laneCount - 1);
         if (laneIndexFloor == laneIndexCeil)
             return InterpolateLane(t, side, laneIndexFloor, additionalOffset);
 
@@ -847,8 +853,14 @@ public class ParsedRoadList : IParsedItem
     /// <returns>The interpolated oriented point.</returns>
     public OrientedPoint InterpolateBetweenLanes(float t, Side side, float laneIndexFloat, float additionalOffset = 0)
     {
-        int laneIndexFloor = (int)Math.Floor(laneIndexFloat);
-        int laneIndexCeil = (int)Math.Ceiling(laneIndexFloat);
+        int laneCount = GetLaneCount(side);
+        
+        // No lanes on this side — return road center
+        if (laneCount == 0)
+            return Interpolate(t);
+        
+        int laneIndexFloor = Math.Clamp((int)Math.Floor(laneIndexFloat), 0, laneCount - 1);
+        int laneIndexCeil = Math.Clamp((int)Math.Ceiling(laneIndexFloat), 0, laneCount - 1);
         if (laneIndexFloor == laneIndexCeil)
             return InterpolateLane(t, side, laneIndexFloor, additionalOffset);
 

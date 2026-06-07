@@ -230,94 +230,129 @@ public class GameOutput
     public void Tick()
     {
         Stopwatch tickTimer = Stopwatch.StartNew();
+        int consecutiveErrors = 0;
         while(true)
         {
-            float timeLeft = TickRate - (float)tickTimer.Elapsed.TotalSeconds;
-            if (timeLeft > 0)
-            {   
-                Thread.Sleep((int)(timeLeft * 1000));
-                continue;
-            }
-
-            // These || need to be added to silence warnings...
-            // If someone knows how to make the compiler understand that MemoryAccessAvailable ensures
-            // that the accessors are not null, then please tell me.
-            if (!MemoryAccessAvailable || legacyAccessor == null || modernAccessor == null)
+            try
             {
-                TryOpenMemory();
-                tickTimer.Restart();
-                continue;
-            }
-
-            if(Channels.Count == 0)
-            {
-                if (!IsReset)
-                    ResetOutputs();
-                
-                tickTimer.Restart();
-                continue;
-            }
-
-            IsReset = false;
-            foreach (var channel in Channels.Values)
-            {
-                if (channel.Properties == null || channel.Variables == null)
-                    continue;
-
-                if (channel.LastUpdate.Elapsed.TotalSeconds > channel.Definition.Timeout)
-                {
-                    Logging.Logger.Debug($"Channel {channel.Definition.Id} timed out, removing.");
-                    Channels.Remove(channel.Definition.Id);
+                float timeLeft = TickRate - (float)tickTimer.Elapsed.TotalSeconds;
+                if (timeLeft > 0)
+                {   
+                    Thread.Sleep((int)(timeLeft * 1000));
                     continue;
                 }
 
-                ProcessChannel(channel);
-            }
-
-            double time = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds() / 1000.0;
-            foreach (var kvp in curFrameFloats)
-            {
-                string propName = kvp.Key;
-                List<Tuple<float, float>> values = kvp.Value;
-
-                float totalWeight = values.Sum(v => v.Item1);
-                float weightedValue = values.Sum(v => v.Item1 * v.Item2) / totalWeight;
-                weightedValue = Math.Clamp(weightedValue, -1f, 1f);
-
-                if(propName == "steering")
+                // These || need to be added to silence warnings...
+                // If someone knows how to make the compiler understand that MemoryAccessAvailable ensures
+                // that the accessors are not null, then please tell me.
+                if (!MemoryAccessAvailable || legacyAccessor == null || modernAccessor == null)
                 {
-                    WriteFloat(modernAccessor, 0, weightedValue);
-                    WriteBool(modernAccessor, 4, weightedValue != 0.0f);
-                    WriteDouble(modernAccessor, 5, time);
-                    WriteFloat(legacyAccessor, legacyShmOffsets[propName], -weightedValue);
+                    TryOpenMemory();
+                    tickTimer.Restart();
+                    continue;
                 }
-                else if (propName == "acceleration")
+
+                if(Channels.Count == 0)
                 {
-                    WriteFloat(modernAccessor, 13, weightedValue);
-                    WriteBool(modernAccessor, 17, weightedValue != 0.0f);
-                    WriteDouble(modernAccessor, 18, time);
-                    if (weightedValue < 0)
+                    if (!IsReset)
+                        ResetOutputs();
+                    
+                    tickTimer.Restart();
+                    continue;
+                }
+
+                IsReset = false;
+
+                // Iterate over a snapshot to avoid collection-modified-during-enumeration crashes
+                var channelSnapshot = Channels.Values.ToList();
+                foreach (var channel in channelSnapshot)
+                {
+                    if (channel.Properties == null || channel.Variables == null)
+                        continue;
+
+                    if (channel.LastUpdate.Elapsed.TotalSeconds > channel.Definition.Timeout)
                     {
-                        WriteFloat(legacyAccessor, legacyShmOffsets["abackward"], -weightedValue);
-                        WriteFloat(legacyAccessor, legacyShmOffsets["aforward"], 0);
+                        Logging.Logger.Debug($"Channel {channel.Definition.Id} timed out, removing.");
+                        Channels.Remove(channel.Definition.Id);
+                        continue;
+                    }
+
+                    ProcessChannel(channel);
+                }
+
+                double time = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds() / 1000.0;
+                foreach (var kvp in curFrameFloats)
+                {
+                    string propName = kvp.Key;
+                    List<Tuple<float, float>> values = kvp.Value;
+
+                    if (values.Count == 0) continue;
+
+                    float totalWeight = values.Sum(v => v.Item1);
+                    if (totalWeight <= 0) continue;
+                    float weightedValue = values.Sum(v => v.Item1 * v.Item2) / totalWeight;
+                    weightedValue = Math.Clamp(weightedValue, -1f, 1f);
+
+                    if(propName == "steering")
+                    {
+                        WriteFloat(modernAccessor, 0, weightedValue);
+                        WriteBool(modernAccessor, 4, weightedValue != 0.0f);
+                        WriteDouble(modernAccessor, 5, time);
+                        WriteFloat(legacyAccessor, legacyShmOffsets[propName], -weightedValue);
+                    }
+                    else if (propName == "acceleration")
+                    {
+                        WriteFloat(modernAccessor, 13, weightedValue);
+                        WriteBool(modernAccessor, 17, weightedValue != 0.0f);
+                        WriteDouble(modernAccessor, 18, time);
+                        if (weightedValue < 0)
+                        {
+                            WriteFloat(legacyAccessor, legacyShmOffsets["abackward"], -weightedValue);
+                            WriteFloat(legacyAccessor, legacyShmOffsets["aforward"], 0);
+                        }
+                        else
+                        {
+                            WriteFloat(legacyAccessor, legacyShmOffsets["aforward"], weightedValue);
+                            WriteFloat(legacyAccessor, legacyShmOffsets["abackward"], 0);   
+                        }
                     }
                     else
                     {
-                        WriteFloat(legacyAccessor, legacyShmOffsets["aforward"], weightedValue);
-                        WriteFloat(legacyAccessor, legacyShmOffsets["abackward"], 0);   
+                        WriteFloat(legacyAccessor!, legacyShmOffsets[propName], weightedValue);
                     }
                 }
-                else
-                {
-                    WriteFloat(legacyAccessor!, legacyShmOffsets[propName], weightedValue);
-                }
+
+                modernAccessor.Flush();
+                legacyAccessor.Flush();
+
+                curFrameFloats.Clear();
+                consecutiveErrors = 0;
+                tickTimer.Restart();
             }
-
-            modernAccessor.Flush();
-            legacyAccessor.Flush();
-
-            curFrameFloats.Clear();
-            tickTimer.Restart();
+            catch (Exception ex)
+            {
+                consecutiveErrors++;
+                Logging.Logger.Error($"Error in GameOutput tick loop (error #{consecutiveErrors}): {ex.Message}");
+                
+                // If we keep failing, the memory access is probably broken — reset accessors
+                if (consecutiveErrors >= 5)
+                {
+                    Logging.Logger.Warn("Too many consecutive errors in GameOutput tick. Resetting memory accessors.");
+                    legacyAccessor?.Dispose();
+                    modernAccessor?.Dispose();
+                    legacyAccessor = null;
+                    modernAccessor = null;
+                    legacyMmf?.Dispose();
+                    modernMmf?.Dispose();
+                    legacyMmf = null;
+                    modernMmf = null;
+                    consecutiveErrors = 0;
+                    SinceTriedMemoryAccess.Restart();
+                }
+                
+                tickTimer.Restart();
+                Thread.Sleep(100);
+            }
         }
 
     }
