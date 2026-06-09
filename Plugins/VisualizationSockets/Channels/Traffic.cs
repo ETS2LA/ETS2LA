@@ -18,7 +18,7 @@ public class TrafficChannel : IWebsocketChannel
     public string Description => "Sends traffic data, includes all traffic vehicles and objects (TODO!).";
     public int Channel => 4;
     public WebSocketChannelType ChannelType => WebSocketChannelType.Continuous;
-    public JsonSerializerOptions JsonOptions => new JsonSerializerOptions
+    private static readonly JsonSerializerOptions JsonOptions = new JsonSerializerOptions
     {
         NumberHandling = JsonNumberHandling.AllowNamedFloatingPointLiterals
     };
