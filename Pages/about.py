@@ -315,18 +315,18 @@ class Page(ETS2LAPage):
                     styles.Classname("text-muted-foreground")
                     + styles.Style(font_size="9px"),
                 )
-        elif self.show_kofi:
-            with Container(
+                            
+        with Container(
                 styles.FlexVertical()
                 + styles.Padding("40px 0px 0px 80px")
                 + styles.MaxWidth("900px")
             ):
                 with Container(
-                    styles.Classname("w-full p-4 border rounded-md bg-kofi")
+                    styles.Classname("w-full p-4 border rounded-md")
                     # + styles.Style(background_color="#c45635")
                 ):
                     Text(
-                        _("Hey There!"),
+                        _("Announcement"),
                         styles.Classname("font-bold")
                         + styles.Style(
                             color="#e9e9e9",
@@ -336,7 +336,7 @@ class Page(ETS2LAPage):
                     Space(styles.Height("4px"))
                     Markdown(
                         _(
-                            "I see you've disabled ads. That's totally fine, but you can still support ETS2LA development by donating via Ko-Fi. *Every donation is equal to weeks(!) of ad revenue*, we are eternally grateful for every bit of support we get!"
+                            "This version of ETS2LA will soon be superceded. Please prepare to reinstall ETS2LA once the new version releases, there will not be an automatic updater! You can monitor the links below for updates."
                         ),
                         styles.Style(
                             color="#e9e9e9",
@@ -350,36 +350,37 @@ class Page(ETS2LAPage):
                         + styles.Classname("items-center")
                     ):
                         Link(
-                            _("Donate via Ko-Fi"),
-                            "https://ko-fi.com/tumppi066",
+                            _("ETS2LA Discord"),
+                            "https://ets2la.com/discord",
                             styles.Classname("text-xs hover:underline")
                             + styles.Style(
                                 color="#e9e9e9",
                                 text_shadow="1px 1px 2px #00000080",
                             ),
                         )
-                        Text(
-                            "or",
-                            styles.Classname("text-xs")
+                        Link(
+                            _("ETS2LA Website"),
+                            "https://docs.ets2la.com/blog",
+                            styles.Classname("text-xs hover:underline")
                             + styles.Style(
                                 color="#e9e9e9",
                                 text_shadow="1px 1px 2px #00000080",
                             ),
                         )
-                        with Button(action=self.handle_hide_kofi, type="link"):
-                            Text(
-                                _("Hide"),
-                                style=styles.Classname("text-xs hover:underline")
-                                + styles.Style(
-                                    color="#e9e9e9",
-                                    text_shadow="1px 1px 2px #00000080",
-                                ),
-                            )
+                        Link(
+                            _("Tumppi066 YouTube"),
+                            "https://www.youtube.com/@Tumppi066",
+                            styles.Classname("text-xs hover:underline")
+                            + styles.Style(
+                                color="#e9e9e9",
+                                text_shadow="1px 1px 2px #00000080",
+                            ),
+                        )
 
         with Container(
             style=styles.FlexVertical()
             + styles.Padding(
-                ("60px" if not self.show_kofi and ads < 1 else "15px") + " 0px 0px 80px"
+                "15px 0px 0px 80px"
             )
             + styles.MaxWidth("900px")
         ):
