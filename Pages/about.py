@@ -336,7 +336,7 @@ class Page(ETS2LAPage):
                     Space(styles.Height("4px"))
                     Markdown(
                         _(
-                            "This version of ETS2LA will soon be superceded. Please prepare to reinstall ETS2LA once the new version releases, there will not be an automatic updater! You can monitor the links below for updates."
+                            "This version of ETS2LA will now no longer receive updates. The next version (C#) will be released on 27.6.2026. You can continue to use this version, and we'll continue to provide an installer for it. However no new features (or game support!) will be coming. The below download link will lead to the new version once released."
                         ),
                         styles.Style(
                             color="#e9e9e9",
@@ -349,6 +349,15 @@ class Page(ETS2LAPage):
                         + styles.Gap("10px")
                         + styles.Classname("items-center")
                     ):
+                        Link(
+                            _("Download C# Version, coming 27.6.2026"),
+                            "https://github.com/ETS2LA/ETS2LA/releases/latest",
+                            styles.Classname("text-xs hover:underline")
+                            + styles.Style(
+                                color="#e9e9e9",
+                                text_shadow="1px 1px 2px #00000080",
+                            ),
+                        )
                         Link(
                             _("ETS2LA Discord"),
                             "https://ets2la.com/discord",

@@ -43,6 +43,7 @@ def get_commit_url(repo, commit_hash):
 
 
 def CheckForUpdate():
+    return False # TODO: Maybe in the future re-enable updates... Though now that C# is going to be released this version is deprecated.
     try:
         repo = git.Repo()
         current_hash = repo.head.object.hexsha
