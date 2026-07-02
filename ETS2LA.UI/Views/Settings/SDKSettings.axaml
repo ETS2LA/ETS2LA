@@ -12,7 +12,8 @@
 
     <ScrollViewer VerticalScrollBarVisibility="Auto">
         <StackPanel>
-            <TextBlock Text="Click a card to install/uninstall our SDKs." Classes="Description" Margin="14 7 14 7" />
+            <TextBlock Text="Click a card to install/uninstall our SDKs." IsVisible="{Binding Games.Count}" Classes="Description" Margin="14 7 14 7" />
+            <TextBlock Text="No valid game installations were found on your system!" IsVisible="{Binding !Games.Count}" Classes="Description" Margin="14 7 14 7" />
             <TextBlock Text="Note: On linux we cannot automatically detect the game version, please enter it manually." Margin="14 7 14 7" IsVisible="{Binding IsLinux}" />
             <TextBlock Text="We also cannot automatically detect if the SDK is installed. Update work as expected, but for uninstalling you need to do it manually." Margin="14 7 14 7" IsVisible="{Binding IsLinux}" />
             <ItemsControl x:Name="GameList" ItemsSource="{Binding Games}" ItemsPanel="{StaticResource WrapPanelTemplate}" AutomationProperties.Name="List of detected games">
