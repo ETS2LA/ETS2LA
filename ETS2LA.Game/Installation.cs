@@ -294,6 +294,29 @@ public class Installation
         return true;
     }
 
+    /// <summary>
+    ///  Throw away this installation's parsed map data so the GC can reclaim it.
+    ///  Called when the user switches games, we don't want to keep both
+    ///  games' data in memory at the same time.
+    /// </summary>
+    public void ClearParsedData()
+    {
+        if (!IsParsed)
+            return;
+
+        Logger.Info($"Unloading parsed map data for installation at '{Path}'");
+        map = null;
+        assetLoader = null;
+        IsParsed = false;
+
+        // Same trick as in the PluginHandler, force the GC to actually
+        // release everything now instead of whenever it feels like it.
+        // This also runs the finalizers that close the .scs file handles.
+        GC.Collect();
+        GC.WaitForPendingFinalizers();
+        GC.Collect();
+    }
+
     public bool IsSDKInstalled(string version)
     {
         string sdkPath;

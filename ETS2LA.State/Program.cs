@@ -64,13 +64,22 @@ public class ApplicationState
             IsGameRunning = true;
             RunningGameType = data.scsValues.game == "ETS2" ? GameType.EuroTruckSimulator2
                                                             : GameType.AmericanTruckSimulator;
-            RunningGameVersion = data.scsValues.versionMajor.ToString() + "." 
+            RunningGameVersion = data.scsValues.versionMajor.ToString() + "."
                                + data.scsValues.versionMinor.ToString();
 
-            if(parsingTask == null)
+            if (RunningGame != null && RunningGame.Type != RunningGameType)
+            {
+                Logger.Info($"Detected a switch to {RunningGameType}, waiting for its game data to be parsed.");
+                Installation oldGame = RunningGame;
+                RunningGame = null;
+                // Unload in the background so the forced GC doesn't
+                // stall the telemetry thread.
+                Task.Run(oldGame.ClearParsedData);
+            }
+
+            if (RunningGame == null && (parsingTask == null || parsingTask.IsCompleted))
                 // This function will run until game data is successfully parsed.
-                // TODO: Handle switching game types!
-                WaitForParseSuccessful();
+                parsingTask = WaitForParseSuccessful();
         }
     }
 
@@ -355,34 +364,31 @@ public class ApplicationState
     public bool IsGameRunning { get; set; } = false;
     public GameType? RunningGameType { get; set; }
     public string? RunningGameVersion { get; set; }
-    private Task parsingTask;
+    private Task? parsingTask;
     public Installation? RunningGame { get; set; }
 
     private async Task WaitForParseSuccessful()
     {
-        if(parsingTask != null)
-            return;
-
         while (!shutdown)
         {
             foreach(Installation install in GameHandler.Current.Installations)
             {
                 if (RunningGame != null)
                     break;
-                
+
                 if(install.Type == RunningGameType)
                 {
-                    parsingTask = Task.Run(async () =>
-                    {
-                        bool success = install.Parse();
-                        if (success)
-                            RunningGame = install;
-                    });
-                    await parsingTask;
+                    bool success = await Task.Run(() => install.Parse());
+                    // The user might have switched games while we were parsing,
+                    // in that case throw the now stale data away.
+                    if (success && install.Type == RunningGameType)
+                        RunningGame = install;
+                    else if (success)
+                        install.ClearParsedData();
                 }
             }
 
-            if (RunningGame != null)
+            if (RunningGame != null && RunningGame.Type == RunningGameType)
                 break;
 
             await Task.Delay(5000);
