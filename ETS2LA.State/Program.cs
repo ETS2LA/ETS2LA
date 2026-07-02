@@ -81,6 +81,10 @@ public class ApplicationState
                 // This function will run until game data is successfully parsed.
                 parsingTask = WaitForParseSuccessful();
         }
+        else
+        {
+            IsGameRunning = false;
+        }
     }
 
     public void Shutdown()
