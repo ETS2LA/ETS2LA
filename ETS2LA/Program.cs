@@ -48,24 +48,26 @@ internal static class Program
             .AddService("ETS2LA", serviceVersion: currentVersion)
             .AddAttributes(OTelAttributes.GetAttributes());
 
+        bool telemetryEnabled = UserSettings.Current.IsTelemetryEnabled;
+
         // These get automatically removed because of using var
-        using var tracerProvider = Sdk.CreateTracerProviderBuilder()
+        using var tracerProvider = !telemetryEnabled ? null : Sdk.CreateTracerProviderBuilder()
             .SetResourceBuilder(appResource)
             .AddSource("ETS2LA.*")
             .AddOtlpExporter(options =>
             {
                 options.Protocol = OtlpExportProtocol.HttpProtobuf;
-                options.Endpoint = UserSettings.Current.IsTelemetryEnabled ? new Uri("https://otel.ets2la.com/v1/traces") : new Uri("http://localhost:4318/v1/traces");
+                options.Endpoint = new Uri("https://otel.ets2la.com/v1/traces");
             })
             .Build();
-        
-        using var meterProvider = Sdk.CreateMeterProviderBuilder()
+
+        using var meterProvider = !telemetryEnabled ? null : Sdk.CreateMeterProviderBuilder()
             .SetResourceBuilder(appResource)
             .AddMeter("ETS2LA.*")
             .AddOtlpExporter(options =>
             {
                 options.Protocol = OtlpExportProtocol.HttpProtobuf;
-                options.Endpoint = UserSettings.Current.IsTelemetryEnabled ? new Uri("https://otel.ets2la.com/v1/metrics") : new Uri("http://localhost:4318/v1/metrics");
+                options.Endpoint = new Uri("https://otel.ets2la.com/v1/metrics");
             })
             .Build();
 
