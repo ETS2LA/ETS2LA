@@ -1,5 +1,6 @@
 ﻿using Huskui.Avalonia.Controls;
 using Huskui.Avalonia.Models;
+using ETS2LA.Logging;
 using System.Numerics;
 
 namespace ETS2LA.Shared;
@@ -95,7 +96,7 @@ public abstract class Plugin : IPlugin
     public virtual void OnEnable()
     {
         _IsRunning = true;
-        Task.Run(() => RunningThread());
+        Task.Factory.StartNew(RunningThread, TaskCreationOptions.LongRunning);
     }
 
     /// <summary>
@@ -113,10 +114,10 @@ public abstract class Plugin : IPlugin
             interval = 1000.0 / TickRate;
 
             next += interval;
-            try { Tick(); } 
+            try { Tick(); }
             catch (Exception ex)
             {
-                Console.WriteLine($"Error in plugin {Info.Name} Tick: {ex}");
+                Logger.Error($"Error in plugin {Info.Name} Tick: {ex}");
             }
 
             if (next < sw.Elapsed.TotalMilliseconds)
