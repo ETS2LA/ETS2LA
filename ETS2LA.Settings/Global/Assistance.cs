@@ -57,6 +57,8 @@ public class AssistanceSettings
     public SetSpeedBehaviour SetSpeedBehaviourOption { get; set; } = SetSpeedBehaviour.SpeedLimit;
     public SpeedLimitWarning SpeedLimitWarningOption { get; set; } = SpeedLimitWarning.Visual;
     public CollisionAvoidance CollisionAvoidanceOption { get; set; } = CollisionAvoidance.Early;
+    public float MaximumSpeed { get; set; } = 0f; // 0 = no limit
+    public bool IgnoreTrafficRules { get; set; } = false;
 
     [NonSerialized]
     private SettingsHandler? _settingsHandler;
@@ -77,6 +79,8 @@ public class AssistanceSettings
                 SetSpeedBehaviourOption = loadedSettings.SetSpeedBehaviourOption;
                 SpeedLimitWarningOption = loadedSettings.SpeedLimitWarningOption;
                 CollisionAvoidanceOption = loadedSettings.CollisionAvoidanceOption;
+                MaximumSpeed = loadedSettings.MaximumSpeed;
+                IgnoreTrafficRules = loadedSettings.IgnoreTrafficRules;
             }
             _settingsHandler.RegisterListener<AssistanceSettings>("AssistanceSettings.json", OnSettingsChanged);
         }
@@ -99,5 +103,7 @@ public class AssistanceSettings
         SetSpeedBehaviourOption = newSettings.SetSpeedBehaviourOption;
         SpeedLimitWarningOption = newSettings.SpeedLimitWarningOption;
         CollisionAvoidanceOption = newSettings.CollisionAvoidanceOption;
+        MaximumSpeed = newSettings.MaximumSpeed;
+        IgnoreTrafficRules = newSettings.IgnoreTrafficRules;
     }
 }

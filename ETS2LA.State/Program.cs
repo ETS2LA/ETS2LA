@@ -171,6 +171,13 @@ public class ApplicationState
         if (DesiredSpeed < 0)
             DesiredSpeed = 0;
     }
+
+    private void LimitToMax()
+    {
+        float maxSpeed = UnitConversions.ToScientificUnits(UnitType.Speed, AssistanceSettings.Current.MaximumSpeed, DisplayUnits);
+        if (DesiredSpeed > maxSpeed)
+            DesiredSpeed = maxSpeed;
+    }
     
     private float SnapTo10s(float increase)
     {
@@ -209,6 +216,7 @@ public class ApplicationState
         lastSpeedLimit = newSpeedLimit;
         DesiredSpeed = newSpeedLimit + offset;
         RoundToNearestUnit();
+        LimitToMax();
         NotificationHandler.Current.SendNotification(new Notification
         {
             Id = "ApplicationState.SpeedLimitChanged",
@@ -237,6 +245,7 @@ public class ApplicationState
             Events.Current.Publish<bool>("ETS2LA.State.SteeringPaused", PauseSteeringAssist);
             Events.Current.Publish<bool>("ETS2LA.State.LongitudinalPaused", PauseLongitudinalAssist);
             RoundToNearestUnit();
+            LimitToMax();
         }
         else
         {
@@ -293,6 +302,7 @@ public class ApplicationState
         }
 
         RoundToNearestUnit();
+        LimitToMax();
     }
 
     private void HandleDecrease(object sender, ControlChangeEventArgs e)
@@ -334,6 +344,7 @@ public class ApplicationState
         }
 
         RoundToNearestUnit();
+        LimitToMax();
     }
 
     private void HandleAssist(object sender, ControlChangeEventArgs e)

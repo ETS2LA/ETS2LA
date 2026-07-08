@@ -92,6 +92,36 @@ public partial class AssistanceSettingsPage : UserControl, INotifyPropertyChange
         }
     }
 
+    public bool IgnoreTrafficRules
+    {
+        get => AssistanceSettings.Current.IgnoreTrafficRules;
+        set
+        {
+            if (AssistanceSettings.Current.IgnoreTrafficRules != value)
+            {
+                AssistanceSettings.Current.IgnoreTrafficRules = value;
+                AssistanceSettings.Current.Save();
+            }
+            OnPropertyChanged(nameof(IgnoreTrafficRules));
+        }
+    }
+
+    public string MaximumSpeedDisplay => AssistanceSettings.Current.MaximumSpeed > 0 ? $"{AssistanceSettings.Current.MaximumSpeed:F0} {UnitConversions.GetUnitAbbreviation(UnitType.Speed, StateSettingsHandler.Current.GetSettings().DisplayUnits)}" : "No Limit";
+    public float MaximumSpeed
+    {
+        get => AssistanceSettings.Current.MaximumSpeed;
+        set
+        {
+            if (AssistanceSettings.Current.MaximumSpeed != value)
+            {
+                AssistanceSettings.Current.MaximumSpeed = value;
+                AssistanceSettings.Current.Save();
+            }
+            OnPropertyChanged(nameof(MaximumSpeed));
+            OnPropertyChanged(nameof(MaximumSpeedDisplay));
+        }
+    }
+
     public int SelectedAccelerationOption { get; set; }
     public int SelectedSteeringSensitivityOption { get; set; }
     public int SelectedFollowingDistanceOption { get; set; }

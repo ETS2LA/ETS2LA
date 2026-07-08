@@ -147,6 +147,22 @@
                 </TabStrip>
             </StackPanel>
 
+            <StackPanel Spacing="10">
+                <Grid ColumnDefinitions="*, Auto">
+                    <TextBlock Text="Ignore Traffic Rules" VerticalAlignment="Center" />
+                    <ToggleSwitch Grid.Column="1" IsChecked="{Binding IgnoreTrafficRules}" Classes="primary-toggle" AutomationProperties.Name="Ignore Traffic Rules" />
+                </Grid>
+                <TextBlock Text="We will ignore traffic rules and speed limits. Expect damage to your vehicle and others. Why would you enable this?" FontSize="12" Classes="Description" />
+            </StackPanel>
+
+            <StackPanel Spacing="12">
+                <StackPanel Orientation="Horizontal" Spacing="6">
+                    <TextBlock Text="Maximum Speed" />
+                    <TextBlock Text="{Binding MaximumSpeedDisplay}" />
+                </StackPanel>
+                <Slider Name="MaximumSpeedSlider" Minimum="0" Maximum="120" TickFrequency="1" IsSnapToTickEnabled="True" Value="{Binding MaximumSpeed}" AutomationProperties.Name="Maximum speed limit" />
+            </StackPanel>
+
             <Separator />
 
             <StackPanel Spacing="10">
