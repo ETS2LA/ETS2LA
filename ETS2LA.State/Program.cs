@@ -203,6 +203,9 @@ public class ApplicationState
 
     private void HandleSpeedLimitChanged(float newSpeedLimit)
     {
+        if (AssistanceSettings.Current.IgnoreTrafficRules)
+            return;
+        
         if (DesiredSpeed == 0)
             return;
 
