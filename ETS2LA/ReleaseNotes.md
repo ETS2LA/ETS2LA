@@ -1,17 +1,23 @@
-### ETS2LA C# 3.4.18
-- Cleanup debug printing in `ETS2LA.Game`.
-- **Drk** - Handle switching games while ETS2LA is running. Reset game data and `IsGameRunning` when SDK reports inactive.
+### ETS2LA C# 3.4.19
+- Added new assistance options: `Maximum Speed` to change your maximum allowed speed, and `Ignore Traffic Rules` to ignore traffic lights, speedlimits etc...
+  - `Ignore Traffic Rules` requires a plugin side update to work.
+- Added a button on the dashboard to donate to development.
+- Added the option to `Force Map Load` in the data settings. This will force ETS2LA to load the game map on game startup. Can resolve issues where `game.log.txt` is not where ETS2LA expects it.
+- **Drk** - Clear old plugin shadows at startup.
+- **Drk** - Run tick loops in completely separate threads.
+- **Drk** - Keep unicode characters when sanitizing paths in `ETS2LA.Game`.
+- **Drk** - Settings saving is now behind a lock to avoid race conditions.
 
 ---
 <!-- Content inside ETS2LA will be cutoff at the line above, do not place lines inside the changelog. -->
 
 > [!CAUTION]
 > 如果您来自中国，可访问 [https://cnb.cool/ETS2LA-CN/Euro-Truck-Simulator-2-Lane-Assist/-/releases/latest](https://cnb.cool/ETS2LA-CN/Euro-Truck-Simulator-2-Lane-Assist/-/releases/latest) 这是我们官方的中国镜像仓库，从该仓库下载和安装的文件会优先使用中国仓库进行更新；另外这是开源免费项目，如发现有倒卖/安装收费行为，中国镜像站运营负责人有权利封禁你的ip，如遭遇ip封禁请不要提请任何申诉，我们不会受理  
-<sub>The above notice is to make sure Chinese people can find their specific download as they can't download from GitHub without a VPN.</sub>
+<sub>The above notice is to make sure Chinese people can find their specific download. They can't download from GitHub without a VPN.</sub>
 
 > [!WARNING]
 > If you have issues with your **overlay being fully opaque**, make sure to reinstall your graphics card drivers.  
-> **NVIDIA** - Set `OpenGL GDI Compatibility` to `Prefer Compatible` in the *NVIDIA App*.  
+> **NVIDIA** - Set `OpenGL GDI Compatibility` to `Prefer Compatible` in the **NVIDIA App**.  
 > **AMD** - Disable **HDR** in Windows settings.
 
 <sub>ETS2LA is version specific, make sure you use a supported version!  
