@@ -149,13 +149,12 @@ namespace Extractor
 
         public static string RemoveNonAsciiOrInvalidChars(string input)
         {
-            // TODO don't remove non-chicanery unicode chars like 'ß' etc.
             var output = new StringBuilder();
             foreach (char c in input)
             {
                 if (char.IsControl(c))
                     continue;
-                if (!char.IsAscii(c))
+                if (!char.IsAscii(c) && !char.IsLetter(c))
                     continue;
                 if (Array.IndexOf(InvalidPathChars, c) > -1)
                     continue;
