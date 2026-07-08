@@ -60,4 +60,9 @@ public partial class DashboardView : UserControl
     {
         OpenLink("https://docs.ets2la.com/docs/Rewrite/Introduction");
     }
+
+    public void OpenDonate(object? sender, RoutedEventArgs e)
+    {
+        OpenLink("https://ets2la.com/donate");
+    }
 }

@@ -40,9 +40,6 @@
                         </WrapPanel>
                     </StackPanel>
                 </husk:Card>
-                <Border Padding="16">
-
-                </Border>
             </UniformGrid>
 
             <UniformGrid Columns="2" ColumnSpacing="14"
@@ -57,6 +54,21 @@
                             <Button Content="Documentation" Click="OpenDocumentation" AutomationProperties.Name="Open the ETS2LA Documentation in Browser, button"/>
                             <Button Content="GitHub" Click="OpenGitHub" AutomationProperties.Name="Open the ETS2LA GitHub in Browser, button"/>
                             <Button Content="Discord" Click="OpenDiscord" AutomationProperties.Name="Open the ETS2LA Discord in Browser, button"/>
+                        </WrapPanel>
+                    </Grid>
+                </husk:Card>
+            </UniformGrid>
+
+            <UniformGrid Columns="2" ColumnSpacing="14"
+                MaxWidth="{Binding Extent.Width, RelativeSource={RelativeSource AncestorType=ScrollViewer}}">
+                <husk:Card Padding="16">
+                    <Grid RowDefinitions="Auto,*" RowSpacing="16">
+                        <StackPanel Grid.Row="0" Spacing="4" VerticalAlignment="Top">
+                            <TextBlock Text="Sponsor Us" FontSize="16" Foreground="{DynamicResource TextPrimaryBrush}"/>
+                            <TextBlock HorizontalAlignment="Stretch" Text="Your supports helps me continue developing ETS2LA! The more donations we get the more time I can dedicate to improving the project. Thank you!" Classes="Description" FontSize="13"/>
+                        </StackPanel>
+                        <WrapPanel Grid.Row="1" ItemSpacing="8" VerticalAlignment="Bottom">
+                            <Button Content="Donate to Development" Click="OpenDonate" Classes="Primary" AutomationProperties.Name="Open Tumppi066's Donation Page in Browser, button"/>
                         </WrapPanel>
                     </Grid>
                 </husk:Card>
