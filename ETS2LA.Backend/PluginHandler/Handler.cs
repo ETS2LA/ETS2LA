@@ -46,6 +46,13 @@ public class PluginHandler
         public string PluginRootPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "ETS2LA");
     # endif
 
+    private static readonly string ShadowRootPath = Path.Combine(Path.GetTempPath(), "ETS2LA", "PluginShadow");
+
+    public PluginHandler()
+    {
+        CleanupStaleShadowDirectories();
+    }
+
     public string[] DiscoverManualDlls(string path)
     {
         path = Path.Combine(PluginRootPath, path);
@@ -256,8 +263,8 @@ public class PluginHandler
 
         foreach (var loadContext in loadContexts)
         {
-            // TODO: This doesn't work on Windows...
-            // The files get cleaned up on restart, but it does throw warnings in the logs.
+            // On Windows this fails while assemblies are still mapped,
+            // leftovers are swept on the next startup instead.
             CleanupShadowDirectory(loadContext);
         }
 
@@ -267,7 +274,7 @@ public class PluginHandler
     private static string CreateShadowCopy(string sourceAssemblyPath)
     {
         var pluginName = Path.GetFileNameWithoutExtension(sourceAssemblyPath);
-        var shadowDirectory = Path.Combine(Path.GetTempPath(), "ETS2LA", "PluginShadow", pluginName + "_" + Guid.NewGuid().ToString("N"));
+        var shadowDirectory = Path.Combine(ShadowRootPath, pluginName + "_" + Guid.NewGuid().ToString("N"));
         Directory.CreateDirectory(shadowDirectory);
 
         var destinationAssemblyPath = Path.Combine(shadowDirectory, Path.GetFileName(sourceAssemblyPath));
@@ -294,7 +301,28 @@ public class PluginHandler
         }
         catch (Exception ex)
         {
-            Logger.Warn($"Failed to clean plugin shadow directory [gray]{shadowDirectory}[/]: {ex.Message}");
+            Logger.Debug($"Failed to clean plugin shadow directory [gray]{shadowDirectory}[/], it will be removed on the next startup: {ex.Message}");
+        }
+    }
+
+    // Removes shadow directories left behind by previous runs.
+    private static void CleanupStaleShadowDirectories()
+    {
+        if (!Directory.Exists(ShadowRootPath))
+        {
+            return;
+        }
+
+        foreach (var directory in Directory.GetDirectories(ShadowRootPath))
+        {
+            try
+            {
+                Directory.Delete(directory, recursive: true);
+            }
+            catch (Exception ex)
+            {
+                Logger.Debug($"Skipped stale plugin shadow directory [gray]{directory}[/]: {ex.Message}");
+            }
         }
     }
 
