@@ -121,9 +121,6 @@ internal static class Program
             }
         # endif
 
-        // Test crash handling by uncommenting this line.
-        throw new Exception("Test crash handling. This should show a popup and log to OpenTelemetry.");
-
         // Gotta wait for the UI thread to close (i.e. user closed the window)
         // and then tell the backend to shutdown too.
         UI.Program.Main(args);
