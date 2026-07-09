@@ -18,10 +18,12 @@ public class LogFileWriter
 
     public LogFileWriter()
     {
-        if (!Directory.Exists(Path.GetDirectoryName(logFilePath)))
-        {
-            Directory.CreateDirectory(Path.GetDirectoryName(logFilePath) ?? throw new InvalidOperationException("Failed to get log file directory."));
-        }
+        # if LINUX
+            if (!Directory.Exists(Path.GetDirectoryName(logFilePath)))
+            {
+                Directory.CreateDirectory(Path.GetDirectoryName(logFilePath) ?? throw new InvalidOperationException("Failed to get log file directory."));
+            }
+        # endif
 
         if (File.Exists(logFilePath))
         {

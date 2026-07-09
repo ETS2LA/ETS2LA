@@ -160,7 +160,6 @@ internal static class Program
         } catch {}
         
         # if WINDOWS
-        {
             try { NativeMethods.MessageBox(IntPtr.Zero, errorMessage, "ETS2LA", 0x10); }
             catch { }
         # else
