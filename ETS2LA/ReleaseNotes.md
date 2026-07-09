@@ -1,12 +1,6 @@
-### ETS2LA C# 3.4.19
-- Added new assistance options: `Maximum Speed` to change your maximum allowed speed, and `Ignore Traffic Rules` to ignore traffic lights, speedlimits etc...
-  - `Ignore Traffic Rules` requires a plugin side update to work.
-- Added a button on the dashboard to donate to development.
-- Added the option to `Force Map Load` in the data settings. This will force ETS2LA to load the game map on game startup. Can resolve issues where `game.log.txt` is not where ETS2LA expects it.
-- **Drk** - Clear old plugin shadows at startup.
-- **Drk** - Run tick loops in completely separate threads.
-- **Drk** - Keep unicode characters when sanitizing paths in `ETS2LA.Game`.
-- **Drk** - Settings saving is now behind a lock to avoid race conditions.
+### ETS2LA C# 3.4.22
+- Added crash handling. ETS2LA will now display a popup window when it crashes. The crash report is also automatically sent to our servers.
+- Logs will now save to a file. On Linux this file is `~/.local/share/ETS2LA/ets2la.log`, on Windows it's at `.../AppData/Local/ETS2LA/current`.
 
 ---
 <!-- Content inside ETS2LA will be cutoff at the line above, do not place lines inside the changelog. -->
