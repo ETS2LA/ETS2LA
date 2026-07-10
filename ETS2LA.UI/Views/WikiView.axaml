@@ -1,0 +1,15 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:views="clr-namespace:ETS2LA.UI.Views"
+             xmlns:husk="https://github.com/d3ara1n/Huskui.Avalonia"
+             xmlns:i="https://github.com/projektanker/icons.avalonia"
+             x:Class="ETS2LA.UI.Views.WikiView"
+             x:DataType="views:WikiView">
+    <Border Padding="20">
+        <StackPanel Spacing="8">
+            <HyperlinkButton Content="Frequently Asked Questions (Support)" NavigateUri="https://ets2la.com/help/faq/" />
+            <HyperlinkButton Content="Developer Documentation" NavigateUri="https://docs.ets2la.com" />
+            <HyperlinkButton Content="Blog" NavigateUri="https://docs.ets2la.com/blog" />
+        </StackPanel>
+    </Border>
+</UserControl>
