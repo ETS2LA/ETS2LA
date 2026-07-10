@@ -39,6 +39,15 @@ internal static class Program
         TaskScheduler.UnobservedTaskException += (sender, e) =>
         {
             e.SetObserved(); // Prevents an immediate crash, we'll handle termination in HandleFatalException instead.
+
+            // Avalonia's IBus integration on linux throws these from DBus calls
+            // that nothing awaits (like when closing the window). They are harmless, can be ignored.
+            if (e.Exception.Flatten().InnerExceptions.All(ex => ex is Tmds.DBus.Protocol.DBusExceptionBase))
+            {
+                Logger.Warn($"Ignored DBus exception: {e.Exception.InnerException?.Message}");
+                return;
+            }
+
             HandleFatalException(e.Exception);
         };
 
@@ -143,6 +152,9 @@ internal static class Program
     private static void HandleFatalException(Exception? ex)
     {
         if (ex == null) return;
+
+        if (ex is AggregateException aggregate)
+            ex = aggregate.Flatten().InnerExceptions.FirstOrDefault() ?? ex;
 
         string errorMessage = $"ETS2LA has encountered a fatal error.\n\n" +
                               $"Error: {ex.Message}\n\n" +
