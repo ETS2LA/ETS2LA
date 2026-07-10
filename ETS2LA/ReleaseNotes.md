@@ -1,6 +1,8 @@
-### ETS2LA C# 3.4.22
-- Added crash handling. ETS2LA will now display a popup window when it crashes. The crash report is also automatically sent to our servers.
-- Logs will now save to a file. On Linux this file is `~/.local/share/ETS2LA/ets2la.log`, on Windows it's at `.../AppData/Local/ETS2LA/current`.
+### ETS2LA C# 3.4.23
+- `Wiki` sidebar page is now implemented, although very basic.
+- Crashes are now correctly sent to the server via a `Counter`, rather than only being logged locally.
+- **Drk** - Refactored game version detection, now works on both operating systems.
+- **Drk** - You can now add a game ETS2LA missed manually in the SDK settings.
 
 ---
 <!-- Content inside ETS2LA will be cutoff at the line above, do not place lines inside the changelog. -->
