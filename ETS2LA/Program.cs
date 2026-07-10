@@ -98,13 +98,11 @@ internal static class Program
         bool shutdown = false;
         var AnalyticsThread = Task.Factory.StartNew(() =>
         {
-            AppAnalytics.StartSession();
             while (!shutdown)
             {
                 AppAnalytics.Pulse();
                 Thread.Sleep(TimeSpan.FromMinutes(1));
             }
-            AppAnalytics.StopSession();
         }, TaskCreationOptions.LongRunning);
 
         var BackendThread = Task.Run(() =>

@@ -53,45 +53,30 @@ public static class AppAnalytics
     private static readonly Counter<long> HeartbeatCounter =
         AnalyticsMeter.CreateCounter<long>("app.heartbeat", description: "Keeps track of uptime ticks (so that we can track active users over time).");
 
-    public static void StartSession()
-    {
-        SessionActivity = new Activity("UserSession");
-        SessionActivity.Start();
-        Logger.Info("Started telemetry session.");
-    }
+    private static readonly Counter<long> EventCounter =
+        AnalyticsMeter.CreateCounter<long>("app.event", description: "Counts the number of events triggered.");
 
-    public static void StopSession()
-    {
-        if (SessionActivity != null)
-        {
-            SessionActivity.Stop();
-            Logger.Info("Stopped telemetry session.");
-        }
-    }
-
-    /// <summary>
-    ///  Fire an event into the current SessionActivity.
-    /// </summary>
-    public static void LogEvent(string eventName, Dictionary<string, string>? tags = null)
-    {
-        if (SessionActivity == null) return;
-
-        var eventTags = new ActivityTagsCollection();
-        if (tags != null)
-        {
-            foreach (var tag in tags)
-            {
-                eventTags.Add(tag.Key, tag.Value);
-            }
-        }
-
-        // This is a single atomic call that logs a point-in-time event
-        SessionActivity.AddEvent(new ActivityEvent(eventName, tags: eventTags));
-    }
 
     public static void Pulse()
     {
-        Logger.Debug("Sending heartbeat...");
         HeartbeatCounter.Add(1);
+    }
+
+    public static void LogEvent(string eventName, Dictionary<string, string>? customTags = null)
+    {
+        var allTags = OTelAttributes.GetAttributes()
+            .ToDictionary(kv => kv.Key, kv => kv.Value);
+
+        allTags.Add("event.name", eventName);
+        if (customTags != null)
+        {
+            foreach (var tag in customTags)
+            {
+                allTags[tag.Key] = tag.Value;
+            }
+        }
+
+        var tagsArray = allTags.Select(kv => new KeyValuePair<string, object?>(kv.Key, kv.Value)).ToArray();
+        EventCounter.Add(1, tagsArray);
     }
 }
