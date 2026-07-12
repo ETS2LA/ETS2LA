@@ -63,8 +63,17 @@ public static class Logger
         Exception ex = null
     )
     {
-        message = Markup.Escape(message);
-        OnLog?.Invoke(Tuple.Create(level, message));
+        // overlay + log file want plain text
+        string plainMessage;
+        try
+        {
+            plainMessage = Markup.Remove(message);
+        }
+        catch
+        {
+            plainMessage = message;
+        }
+        OnLog?.Invoke(Tuple.Create(level, plainMessage));
         var source = GetSourceInfo(filePath, lineNumber);
         var timestamp = GetTimestamp();
         var levelTag = $"[{color}][[{level}]][/]";
@@ -85,7 +94,7 @@ public static class Logger
         {
             // If something goes wrong with the markup (eg. message contains invalid markup)
             // just print the message without markup instead of crashing the logger.
-            Console.WriteLine($"{timestamp} [{level}] {message} ({source})");
+            Console.WriteLine($"{timestamp} [{level}] {plainMessage} ({source})");
             Console.WriteLine($"Error while writing log line: {markupEx}");
             return;
         }
