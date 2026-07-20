@@ -73,6 +73,12 @@ public class AudioHandler
     /// <param name="loopCount">How many times this file should be played.</param>
     public void Queue(string filepath, bool overrideCurrent = false, int loopCount = 1)
     {
+        if (!File.Exists(filepath))
+        {
+            Logger.Warn($"File not found: {filepath}");
+            return;
+        }
+
         if (overrideCurrent)
         {
             while (_queue.TryDequeue(out _)) { }
