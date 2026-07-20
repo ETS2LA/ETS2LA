@@ -64,7 +64,7 @@ static class Utils
     {
         var processName = "ets2la";
         var processes = System.Diagnostics.Process.GetProcessesByName(processName);
-        return processes.Length > 0;
+        return processes.Length > 1;
     }
 }
 

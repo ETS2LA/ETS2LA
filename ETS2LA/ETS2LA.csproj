@@ -8,7 +8,7 @@
 
     <Title>ETS2LA</Title>
     <Description>Self driving for ETS2 and ATS.</Description>
-    <Version>3.4.24</Version>
+    <Version>3.4.25</Version>
   </PropertyGroup>
 
   <ItemGroup>
