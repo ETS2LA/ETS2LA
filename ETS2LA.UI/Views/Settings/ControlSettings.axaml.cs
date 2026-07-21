@@ -272,6 +272,7 @@ public class ControlItem : INotifyPropertyChanged
         string type = GetControlType();
         controlIdStr = controlIdStr.Replace(type, "").Trim();
         
+        #if LINUX
         if (type.StartsWith("Hat"))
         {
             int dirId = int.Parse(controlIdStr);
@@ -284,7 +285,20 @@ public class ControlItem : INotifyPropertyChanged
                 _ => controlIdStr
             };
         }
-        
+        #else
+        if (type.StartsWith("Hat")) 
+        {
+            controlIdStr = controlIdStr switch
+            {
+                "Up" => "↑",
+                "Right" => "→",
+                "Down" => "↓",
+                "Left" => "←",
+                _ => controlIdStr
+            };
+        }
+        #endif
+
         return controlIdStr;
     }
 

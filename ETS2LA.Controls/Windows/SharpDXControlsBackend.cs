@@ -5,6 +5,15 @@ using ETS2LA.Controls.Defaults;
 
 namespace ETS2LA.Controls.Windows;
 
+enum HatPosition
+{
+    None,
+    Up,
+    Right,
+    Down,
+    Left
+}
+
 public class SharpDXControlsBackend : IControlsBackend
 {
     private static readonly Lazy<SharpDXControlsBackend> _instance = new(() => new SharpDXControlsBackend());
@@ -19,6 +28,7 @@ public class SharpDXControlsBackend : IControlsBackend
 
     private bool pauseListener = false;
     private const int AxisMoveThreshold = 16384;
+    private const int PovHatDiff = 9000; // 0 - up, 9000 - right, etc...
 
     /// <summary>
     ///  You can access connected joysticks through this list. It is preferred <br/>
@@ -249,6 +259,10 @@ public class SharpDXControlsBackend : IControlsBackend
             JoystickOffset.RotationZ => "Axis RotationZ",
             JoystickOffset.Sliders0 => "Axis Slider1",
             JoystickOffset.Sliders1 => "Axis Slider2",
+            JoystickOffset.PointOfViewControllers0 => "Hat 1",
+            JoystickOffset.PointOfViewControllers1 => "Hat 2",
+            JoystickOffset.PointOfViewControllers2 => "Hat 3",
+            JoystickOffset.PointOfViewControllers3 => "Hat 4",
             _ => "Axis " + offset.ToString()
         };
     }
@@ -264,6 +278,24 @@ public class SharpDXControlsBackend : IControlsBackend
             AxisType.SplitPos => Math.Clamp((rawValue - 0.5f) * 2.0f, 0.0f, 1.0f),
             _ => rawValue,
         };
+    }
+
+    private HatPosition DecodePovHatSwitch(int value)
+    {
+        if (value == -1) return HatPosition.None;
+        if (value < PovHatDiff) return HatPosition.Up;
+        if (value < PovHatDiff * 2) return HatPosition.Right;
+        if (value < PovHatDiff * 3) return HatPosition.Down;
+        return HatPosition.Left;
+    }
+
+    private HatPosition DecodeHatIdToValue(string hatId)
+    {
+        if (hatId.Contains("Up")) return HatPosition.Up;
+        if (hatId.Contains("Right")) return HatPosition.Right;
+        if (hatId.Contains("Down")) return HatPosition.Down;
+        if (hatId.Contains("Left")) return HatPosition.Left;
+        return HatPosition.None;
     }
 
     private void ControlListener()
@@ -328,7 +360,8 @@ public class SharpDXControlsBackend : IControlsBackend
 
                     var matchingControls = RegisteredControls.Where(c => 
                         c.DeviceId == joystick.Information.InstanceGuid.ToString() && 
-                        c.ControlId.ToString() == controlId);
+                        (c.ControlId.ToString()?.StartsWith(controlId) ?? false)
+                    );
 
                     try
                     {
@@ -338,6 +371,11 @@ public class SharpDXControlsBackend : IControlsBackend
                             {
                                 // Value is 128 for pressed, 0 for released (for whatever reason...)
                                 control.UpdateState(update.Value == 128);
+                            }
+                            else if (update.Offset >= JoystickOffset.PointOfViewControllers0 && update.Offset <= JoystickOffset.PointOfViewControllers3)
+                            {
+                                var dir = DecodePovHatSwitch(update.Value);
+                                control.UpdateState(dir == DecodeHatIdToValue(control.ControlId.ToString()));
                             }
                             else
                             {
@@ -351,8 +389,8 @@ public class SharpDXControlsBackend : IControlsBackend
                 }
             }
 
-            // Sleep for 20ms -> ~50 updates per second
-            Thread.Sleep(20);
+            // Sleep for 10ms -> ~100 updates per second
+            Thread.Sleep(10);
         }
     }
 
@@ -392,6 +430,12 @@ public class SharpDXControlsBackend : IControlsBackend
                     {
                         pauseListener = false;
                         return (joystick.Information.InstanceGuid.ToString(), controlId);
+                    }
+
+                    if (update.Offset >= JoystickOffset.PointOfViewControllers0 && update.Offset <= JoystickOffset.PointOfViewControllers3)
+                    {
+                        pauseListener = false;
+                        return (joystick.Information.InstanceGuid.ToString(), controlId + " " + DecodePovHatSwitch(update.Value).ToString());
                     }
 
                     if (!_previousStates.ContainsKey(joystick))
