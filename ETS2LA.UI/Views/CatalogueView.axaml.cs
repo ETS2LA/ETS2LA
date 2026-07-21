@@ -52,11 +52,15 @@ public partial class CatalogueView : UserControl, INotifyPropertyChanged
     private void OnRestartClick(object? sender, RoutedEventArgs e)
     {
         Logger.Info("Restarting ETS2LA...");
-        Process.Start(new ProcessStartInfo
+        using Process currentProcess = Process.GetCurrentProcess();
+        var startInfo = new ProcessStartInfo
         {
-            FileName = System.Diagnostics.Process.GetCurrentProcess().MainModule?.FileName,
+            FileName = currentProcess.MainModule?.FileName,
             UseShellExecute = true
-        });
+        };
+        // Let the new instance wait for this process to exit.
+        startInfo.ArgumentList.Add($"--restart-parent-process-id={currentProcess.Id}");
+        Process.Start(startInfo);
         Environment.Exit(0);
     }
 

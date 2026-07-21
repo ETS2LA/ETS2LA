@@ -52,6 +52,8 @@ internal static class Program
             Utils.HandleFatalException(e.Exception, tracerProvider, meterProvider);
         };
 
+        args = Utils.WaitForRestartParentProcess(args);
+
         if (Utils.DoesETS2LAProcessExist())
             throw new InvalidOperationException("ETS2LA is already running, please close it from the Task Manager.");
 
