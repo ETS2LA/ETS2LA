@@ -16,7 +16,7 @@ public static class Logger
 
     private static readonly object logLock = new();
 
-    public static event Action<Tuple<string, string>> OnLog;
+    public static event Action<Tuple<string, string>>? OnLog;
     static Logger()
     {
         Console = AnsiConsole.Console;
