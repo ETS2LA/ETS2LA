@@ -275,9 +275,6 @@ public class ControlInstance : ISerializable
 
     public void UpdateState(object newValue)
     {
-        if (_lastValue != null && _lastValue.Equals(newValue))
-            return;
-
         if (Definition.Type == ControlType.Boolean)
         {
             bool boolValue;
@@ -286,7 +283,11 @@ public class ControlInstance : ISerializable
             else
                 boolValue = (bool)newValue;
 
+            if (_lastValue != null && _lastValue.Equals(boolValue))
+                return;
+
             OnChange?.Invoke(this, new ControlChangeEventArgs(boolValue));
+            _lastValue = boolValue;
         }
         else
         {
@@ -296,9 +297,11 @@ public class ControlInstance : ISerializable
             else
                 floatValue = (float)newValue;
 
-            OnChange?.Invoke(this, new ControlChangeEventArgs(floatValue));
-        }
+            if (_lastValue != null && _lastValue.Equals(floatValue))
+                return;
 
-        _lastValue = newValue;
+            OnChange?.Invoke(this, new ControlChangeEventArgs(floatValue));
+            _lastValue = floatValue;
+        }
     }
 }
