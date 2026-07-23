@@ -298,6 +298,7 @@ public partial class MainWindow : AppWindow
         SetSelected(SettingsButton);
         ShowPage(PageKind.Settings);
     }
+    
     public void NavigateToPage( PageKind page)
     {
         switch (page)
