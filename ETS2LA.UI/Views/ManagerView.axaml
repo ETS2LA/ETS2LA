@@ -101,9 +101,9 @@
                 </ItemsControl>
                 <StackPanel Margin="10" IsVisible="{Binding !HasPlugins}">
                     <TextBlock Text="No plugins found, please make sure there are .DLLs in the plugins folder, or install via the Catalogue." Classes="Description" />
-                <WrapPanel Grid.Row="1" Margin="0,12,0,0">
-                    <Button Click="OpenCataloguePage" Content="Go to Catalogue" Classes="Secondary" AutomationProperties.Name="Open Plugin Catalogue, button"/>
-                </WrapPanel>
+                    <WrapPanel Grid.Row="1" Margin="0,12,0,0">
+                        <Button Click="OpenCataloguePage" Content="Go to Catalogue" Classes="Secondary" AutomationProperties.Name="Open Plugin Catalogue, button"/>
+                    </WrapPanel>
                 </StackPanel>
             </StackPanel>
         </ScrollViewer>
