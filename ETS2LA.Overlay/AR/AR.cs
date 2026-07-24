@@ -309,13 +309,15 @@ public class ARRenderer
     }
 
     /// <summary>
-    /// Option A: Renders a HUD guide line from a single list of centerline points.
+    ///   Renders a HUD guide line from a single list of centerline points.
+    ///   WARNING: This function has partly been created by Gemini to support the shader it made.
+    ///            This function has however been modified extensively, unlike the shader itself.
     /// </summary>
     /// <param name="points">Ordered path coordinates (from closest to farthest point)</param>
     /// <param name="color">RGBA uint color format</param>
     /// <param name="glowWidth">Width of the glow bleed in world units</param>
     /// <param name="isLeftLine">True if this is the left boundary line, False if right boundary</param>
-    public void Draw3DLineWithGradient(IReadOnlyList<ARCoordinate> leftPoints, IReadOnlyList<ARCoordinate> rightPoints, uint color, float transparentValue = 0.0f)
+    public void Draw3DLineWithGradient(IReadOnlyList<ARCoordinate> leftPoints, IReadOnlyList<ARCoordinate> rightPoints, uint color, float transparentValue = 0.0f, uint secondaryColor = 0x00000000, float secondaryColorDist = -1f)
     {
         if (leftPoints == null || rightPoints == null)
             return;
@@ -329,12 +331,21 @@ public class ARRenderer
         float nearFadeEnd = 10f;
         float farFadeStart = 60f;
         float farFadeEnd = 150f;
+        float secondaryColorFadeStart = secondaryColorDist - 10f;
+        float secondaryColorFadeEnd = secondaryColorDist + 10f;
 
         Vector4 colVec = new Vector4(
             ((color & 0xFF000000) >> 24) / 255.0f,
             ((color & 0x00FF0000) >> 16) / 255.0f,
             ((color & 0x0000FF00) >> 8) / 255.0f,
             (color & 0x000000FF) / 255.0f
+        );
+
+        Vector4 secondaryColorVec = new Vector4(
+            ((secondaryColor & 0xFF000000) >> 24) / 255.0f,
+            ((secondaryColor & 0x00FF0000) >> 16) / 255.0f,
+            ((secondaryColor & 0x0000FF00) >> 8) / 255.0f,
+            (secondaryColor & 0x000000FF) / 255.0f
         );
 
         float GetProgressFloat(float distance)
@@ -348,6 +359,20 @@ public class ARRenderer
             if (distance > farFadeEnd)
                 return 1.0f;
             return 0.0f;
+        }
+
+        Vector4 GetColor(float distance)
+        {
+            if (secondaryColorDist > 0f && distance >= secondaryColorFadeStart && distance <= secondaryColorFadeEnd)
+            {
+                float t = (distance - secondaryColorFadeStart) / (secondaryColorFadeEnd - secondaryColorFadeStart);
+                return Vector4.Lerp(colVec, secondaryColorVec, t);
+            }
+            else if (secondaryColorDist > 0f && distance >= secondaryColorFadeEnd)
+            {
+                return secondaryColorVec;
+            }
+            return colVec;
         }
 
         for (int i = 0; i < count - 1; i++)
@@ -371,12 +396,15 @@ public class ARRenderer
             float distanceStart = Vector3.Distance(ARCoordinateToVector3(outStart), camPos);
             float distanceEnd = Vector3.Distance(ARCoordinateToVector3(outEnd), camPos);
 
+            
+
             lineWithGradientShader.AddGlowQuad(
                 ndcOutStart.Value,
                 ndcInStart.Value,
                 ndcInEnd.Value,
                 ndcOutEnd.Value,
-                colVec,
+                GetColor(distanceStart),
+                GetColor(distanceEnd),
                 GetProgressFloat(distanceStart),
                 GetProgressFloat(distanceEnd),
                 transparentValue

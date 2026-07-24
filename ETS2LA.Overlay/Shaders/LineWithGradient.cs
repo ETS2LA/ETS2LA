@@ -11,10 +11,10 @@ public class LineWithGradient : IDisposable
     [StructLayout(LayoutKind.Sequential, Pack = 1)]
     public struct LineVertex
     {
-        public Vector2 ScreenPos; // NDC (-1 to 1)
-        public Vector2 UV;        // x: -1 (outer core) to 1 (inner glow), y: 0 to 1 (progress along line)
-        public Vector4 Color;     // RGBA
-        public float Feather;     // Unused by HUD shader, retained for struct alignment
+        public Vector2 ScreenPos; // Location 0: NDC (-1 to 1)
+        public Vector2 UV;        // Location 1: x: -1 to 1 (cross-section), y: 0 to 1 (segment height)
+        public Vector4 Color;     // Location 2: RGBA for this exact vertex
+        public float Feather;     // Location 3: Unused, kept for layout alignment
     }
 
     private readonly GL gl;
@@ -69,18 +69,28 @@ public class LineWithGradient : IDisposable
     }
 
     /// <summary>
-    /// Adds a quad segment.
-    /// UV.x = -1.0 for the Sharp Outer Edge, +1.0 for the Soft Inward Glow Edge.
-    /// progressStart/progressEnd range from 0.0 (near) to 1.0 (far) for distance fading.
+    /// Adds a single quad segment. Color lerps directly from startColor (bottom) to endColor (top) of this piece.
     /// </summary>
-    public void AddGlowQuad(Vector2 outerStart, Vector2 innerStart, Vector2 innerEnd, Vector2 outerEnd, Vector4 color, float progressStart, float progressEnd, float transparentValue = 0.0f)
+    public void AddGlowQuad(
+        Vector2 outerStart, 
+        Vector2 innerStart, 
+        Vector2 innerEnd, 
+        Vector2 outerEnd, 
+        Vector4 startColor, 
+        Vector4 endColor, 
+        float progressStart, 
+        float progressEnd, 
+        float transparentValue = 0.0f)
     {
         uint baseIndex = (uint)vertices.Count;
 
-        vertices.Add(new LineVertex { ScreenPos = outerStart, UV = new Vector2(-1.0f, progressStart), Color = color, Feather = transparentValue });
-        vertices.Add(new LineVertex { ScreenPos = innerStart, UV = new Vector2( 1.0f, progressStart), Color = color, Feather = transparentValue });
-        vertices.Add(new LineVertex { ScreenPos = innerEnd,   UV = new Vector2( 1.0f, progressEnd),   Color = color, Feather = transparentValue });
-        vertices.Add(new LineVertex { ScreenPos = outerEnd,   UV = new Vector2(-1.0f, progressEnd),   Color = color, Feather = transparentValue });
+        // Bottom vertices get startColor
+        vertices.Add(new LineVertex { ScreenPos = outerStart, UV = new Vector2(-1.0f, progressStart), Color = startColor, Feather = transparentValue });
+        vertices.Add(new LineVertex { ScreenPos = innerStart, UV = new Vector2( 1.0f, progressStart), Color = startColor, Feather = transparentValue });
+        
+        // Top vertices get endColor
+        vertices.Add(new LineVertex { ScreenPos = innerEnd,   UV = new Vector2( 1.0f, progressEnd),   Color = endColor,   Feather = transparentValue });
+        vertices.Add(new LineVertex { ScreenPos = outerEnd,   UV = new Vector2(-1.0f, progressEnd),   Color = endColor,   Feather = transparentValue });
 
         indices.Add(baseIndex + 0);
         indices.Add(baseIndex + 1);
@@ -139,7 +149,8 @@ out vec4 FragColor;
 void main()
 {
     FragUV = aUV;
-    FragColor = aColor;
+    // Hardware automatically interpolates aColor smoothly across the quad surface
+    FragColor = aColor; 
     gl_Position = vec4(aPos, 0.0, 1.0);
 }";
 
@@ -163,7 +174,7 @@ void main()
 
     float totalAlpha = clamp(coreLine + innerGlow, 0.0, 1.0);
 
-    // 3. Smooth fadeout near the horizon (FragUV.y = distance progress)
+    // 3. Distance fadeout along full line (FragUV.y)
     float distanceFade = 1.0 - smoothstep(0.7, 1.0, FragUV.y);
 
     // Pop the brightness on the crisp outer edge
