@@ -18,7 +18,9 @@ namespace ETS2LA.UI;
 // TODO: Documentation, cleanup code!
 public partial class MainWindow : AppWindow
 {
-    private enum PageKind
+    public static MainWindow? Instance { get; private set; }
+    
+    public enum PageKind
     {
         Dashboard,
         Visualization,
@@ -41,6 +43,7 @@ public partial class MainWindow : AppWindow
 
     public MainWindow()
     {
+        Instance = this;
         CanResize = true;
         ExtendClientAreaToDecorationsHint = true;
         InitializeComponent();
@@ -293,5 +296,44 @@ public partial class MainWindow : AppWindow
     {
         SetSelected(SettingsButton);
         ShowPage(PageKind.Settings);
+    }
+
+    public void NavigateToPage( PageKind page)
+    {
+        switch (page)
+        {
+            case PageKind.Dashboard:
+                ShowPage(PageKind.Dashboard);
+                SetSelected(DashboardButton);
+                break;
+            case PageKind.Visualization:
+                ShowPage(PageKind.Visualization);
+                SetSelected(VisualizationButton);
+                break;
+            case PageKind.Manager:
+                ShowPage(PageKind.Manager);
+                SetSelected(ManagerButton);
+                break;
+            case PageKind.Catalogue:
+                ShowPage(PageKind.Catalogue);
+                SetSelected(CatalogueButton);
+                break;
+            case PageKind.Performance:
+                ShowPage(PageKind.Performance);
+                SetSelected(PerformanceButton);
+                break;
+            case PageKind.Wiki:
+                ShowPage(PageKind.Wiki);
+                SetSelected(WikiButton);
+                break;
+            case PageKind.Roadmap:
+                ShowPage(PageKind.Roadmap);
+                SetSelected(RoadmapButton);
+                break;
+            case PageKind.Settings:
+                ShowPage(PageKind.Settings);
+                SetSelected(SettingsButton);
+                break;
+        }
     }
 }
