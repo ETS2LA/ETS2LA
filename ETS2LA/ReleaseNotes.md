@@ -1,8 +1,9 @@
-### ETS2LA C# 3.4.29
-- `ETS2LA.Overlay` now supports **custom OpenGL shaders**. 
-  - This is used in the newly updated core plugins. Please make sure to update your plugins after updating ETS2LA.
-- `Draw3DText` now supports **xFactor** and **yFactor** parameters to offset the text position relative to it's size.
-- **Drk** - Various small backend fixes.
+### ETS2LA C# 3.4.30
+- Added `Simplified Graphics` to Display settings. This will turn off shaders and other effects. If you can't see certain overlay elements, try to enable this.
+- Tweaked `LineWithGradient` to allow more control over the gradient.
+- Added 2D and 3D versions of the `KalmanFilter` class.
+- ETS2LA will now continue parsing the game data, even if one of the core SCS files fails to load. This happens on systems where mods are installed into the game directory, rather than the dedicated mod folder. **These mods are not supported and will not be loaded, ensure you load your mods into Documents/Euro Truck Simulator 2/mod, or a similar path.** Fixes `Error: This is a zip file`.
+- **airskye1** - Add `Open Catalogue` button to the plugin page if no plugins are installed.
 
 ---
 <!-- Content inside ETS2LA will be cutoff at the line above, do not place lines inside the changelog. -->
