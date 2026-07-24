@@ -171,9 +171,24 @@ public class Installation
         List<string> scsFiles = new List<string>();
         GetBaseContent(scsFiles);
 
-        List<IFileSystem> hashFsReaders = scsFiles
-            .Select(file => HashFsReader.Open(file) as IFileSystem)
-            .ToList();
+        List<IFileSystem> hashFsReaders = new();
+        foreach (string file in scsFiles)
+        {
+            try { hashFsReaders.Add(HashFsReader.Open(file) as IFileSystem); }
+            catch (Exception ex)
+            {
+                Logger.Error($"Error loading '{file}': {ex.Message}\n\nEnsure you don't have any mods installed in the root directory. Those have to be installed in Documents/Euro Truck Simulator 2/mod.");
+                NotificationHandler.Current.SendNotification(new Notification
+                {
+                    Id = $"ETS2LA.Game.Error.{Guid.NewGuid()}",
+                    Title = "Error Loading File",
+                    Content = $"An error occurred while loading file '{file}': {ex.Message}\nParsing will continue, however information contained in this file won't be available to ETS2LA.",
+                    IsProgressIndeterminate = false,
+                    Level = NotificationLevel.Danger,
+                    CloseAfter = 10
+                });
+            }
+        }
 
         int modCount = modFiles.Count;
         List<Task> tasks = new List<Task>();
