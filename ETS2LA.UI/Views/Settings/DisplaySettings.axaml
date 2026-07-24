@@ -74,6 +74,14 @@
                 <TextBlock Text="We can render elements in the game world using our overlay. This will use additional CPU and GPU resources." FontSize="12" Classes="Description" />
             </StackPanel>
 
+            <StackPanel Spacing="10">
+                <Grid ColumnDefinitions="*, Auto">
+                    <TextBlock Text="Simplified Graphics" VerticalAlignment="Center" />
+                    <ToggleSwitch Grid.Column="1" IsChecked="{Binding SimplifiedGraphics}" Classes="primary-toggle" AutomationProperties.Name="Simplified graphics" />
+                </Grid>
+                <TextBlock Text="Using simplified graphics can improve performance on lower-end hardware, or fix situations in which advanced features like shaders are not supported." FontSize="12" Classes="Description" />
+            </StackPanel>
+
             <StackPanel Spacing="10" IsVisible="{Binding RenderAR}">
                 <Grid ColumnDefinitions="*, Auto">
                     <TextBlock Text="Stop Rendering When Game is Paused" VerticalAlignment="Center" />

@@ -11,6 +11,7 @@ public class OverlaySettings
 
     // AR
     public bool RenderAR = true;
+    public bool SimplifiedGraphics = false;
     public bool DontRenderWhenPaused = true;
     public float MaxARDistance = 150.0f;
 }

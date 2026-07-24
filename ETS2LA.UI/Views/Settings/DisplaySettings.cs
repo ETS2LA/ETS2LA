@@ -80,6 +80,20 @@ public partial class DisplaySettings : UserControl, INotifyPropertyChanged
         }
     }
 
+    public bool SimplifiedGraphics
+    {
+        get => OverlaySettingsHandler.Current.GetSettings().SimplifiedGraphics;
+        set
+        {
+            if (OverlaySettingsHandler.Current.GetSettings().SimplifiedGraphics != value)
+            {
+                OverlaySettingsHandler.Current.GetSettings().SimplifiedGraphics = value;
+                OverlaySettingsHandler.Current.Save();
+            }
+            OnPropertyChanged(nameof(SimplifiedGraphics));
+        }
+    }
+
     public bool DontRenderWhenPaused
     {
         get => OverlaySettingsHandler.Current.GetSettings().DontRenderWhenPaused;
