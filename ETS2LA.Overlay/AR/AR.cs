@@ -573,7 +573,7 @@ public class ARRenderer
     /// <param name="color"></param>
     /// <param name="centerX">Whether to center the text horizontally on the position.</param>
     /// <param name="centerY">Whether to center the text vertically on the position.</param>
-    public void Draw3DText(ARCoordinate position, string text, UInt32 color, float xFactor = 0f, float yFactor = 0f)
+    public void Draw3DText(ARCoordinate position, string text, UInt32 color, float xFactor = 0f, float yFactor = 0f, UInt32? bgColor = null, UInt32? bgBorderColor = null, float bgBorderThickness = 1f, float bgPaddingX = 0f, float bgPaddingY = 0f, float bgRounding = 0f)
     {
         if (AllPointsOutsideRenderDistance(new ARCoordinate[] { position }))
             return;
@@ -585,6 +585,27 @@ public class ARRenderer
         Vector2 drawPos = screenPos.Value;
         drawPos.X -= textSize.X * xFactor;
         drawPos.Y -= textSize.Y * yFactor;
+
+        if (bgColor.HasValue)
+        {
+            ImGui.GetBackgroundDrawList().AddRectFilled(
+                new Vector2(drawPos.X - bgPaddingX, drawPos.Y - bgPaddingY),
+                new Vector2(drawPos.X + textSize.X + bgPaddingX, drawPos.Y + textSize.Y + bgPaddingY),
+                ConvertColor(bgColor.Value),
+                bgRounding
+            );
+        }
+
+        if (bgBorderColor.HasValue)
+        {
+            ImGui.GetBackgroundDrawList().AddRect(
+                new Vector2(drawPos.X - bgPaddingX, drawPos.Y - bgPaddingY),
+                new Vector2(drawPos.X + textSize.X + bgPaddingX, drawPos.Y + textSize.Y + bgPaddingY),
+                ConvertColor(bgBorderColor.Value),
+                bgRounding,
+                bgBorderThickness
+            );
+        }
 
         ImGui.GetBackgroundDrawList().AddText(
             drawPos, ConvertColor(color), text

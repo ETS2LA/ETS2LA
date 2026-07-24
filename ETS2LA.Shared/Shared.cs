@@ -282,7 +282,7 @@ public class KalmanFilter
     ///  A (1D) Kalman Filter for smoothing values with lots of noise. In ETS2LA that is usually location data, speed data,
     ///  or other data that relates to dynamically changing values.
     /// </summary>
-    /// <param name="q">Process noise. Low values mean the stability. High values mean quick changes.</param>
+    /// <param name="q">Process noise. Low values mean stability. High values mean quick changes.</param>
     /// <param name="r">Measurement noise. High values indicate a noisy sensor. The filter will use it's internal model more.</param>
     /// <param name="p">Initial estimation error. Usually no need to change.</param>
     public KalmanFilter(float q = 0.01f, float r = 0.1f, float p = 1.0f)
@@ -314,5 +314,63 @@ public class KalmanFilter
     public void Reset()
     {
         _isInitialized = false;
+    }
+}
+
+// These are naive implementations for 2D and 3D filters. There might be some better
+// implementations, but I'm not good enough at math to figure out which are / aren't good.
+// This seems to work well enough...
+
+public class KalmanFilter2D
+{
+    private KalmanFilter _filterX;
+    private KalmanFilter _filterY;
+
+    public KalmanFilter2D(float q = 0.01f, float r = 0.1f, float p = 1.0f)
+    {
+        _filterX = new KalmanFilter(q, r, p);
+        _filterY = new KalmanFilter(q, r, p);
+    }
+
+    public Vector2 Update(Vector2 measurement)
+    {
+        float x = _filterX.Update(measurement.X);
+        float y = _filterY.Update(measurement.Y);
+        return new Vector2(x, y);
+    }
+
+    public void Reset()
+    {
+        _filterX.Reset();
+        _filterY.Reset();
+    }
+}
+
+public class KalmanFilter3D
+{
+    private KalmanFilter _filterX;
+    private KalmanFilter _filterY;
+    private KalmanFilter _filterZ;
+
+    public KalmanFilter3D(float q = 0.01f, float r = 0.1f, float p = 1.0f)
+    {
+        _filterX = new KalmanFilter(q, r, p);
+        _filterY = new KalmanFilter(q, r, p);
+        _filterZ = new KalmanFilter(q, r, p);
+    }
+
+    public Vector3 Update(Vector3 measurement)
+    {
+        float x = _filterX.Update(measurement.X);
+        float y = _filterY.Update(measurement.Y);
+        float z = _filterZ.Update(measurement.Z);
+        return new Vector3(x, y, z);
+    }
+
+    public void Reset()
+    {
+        _filterX.Reset();
+        _filterY.Reset();
+        _filterZ.Reset();
     }
 }
