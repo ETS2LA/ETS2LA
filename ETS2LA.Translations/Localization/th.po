@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
 "POT-Creation-Date: 2026-09-08 12:21:10+0300\n"
-"PO-Revision-Date: 2026-09-16 20:58+0000\n"
+"PO-Revision-Date: 2026-09-17 04:38+0000\n"
 "Last-Translator: cooper153826 <cooper153826@ets2la.com>\n"
 "Language-Team: Thai <http://weblate.ets2la.com/projects/ets2la/ets2la/th/>\n"
 "Language: th\n"
@@ -999,7 +999,7 @@ msgstr ""
 
 #: ../../../ETS2LA.UI/Pages/Onboarding/Steps/SDKStep.razor:12
 msgid "SDK Installation"
-msgstr ""
+msgstr "การติดตั้ง SDK"
 
 #: ../../../ETS2LA.State/Units.cs:256
 msgid "mph"
@@ -1078,7 +1078,7 @@ msgstr ""
 
 #: ../../../ETS2LA.UI/Pages/Settings/Controls.razor:80
 msgid "Not Connected"
-msgstr ""
+msgstr "ไม่ได้เชื่อมต่อ"
 
 #: ../../../ETS2LA.UI/Pages/Settings/Account.razor:5
 msgid "This page will be implemented in a future update."
@@ -1097,7 +1097,7 @@ msgstr ""
 #: ../../../ETS2LA.UI/Pages/Plugins/Manager.razor:102
 #: ../../../ETS2LA.UI/Pages/Plugins/Catalogue.razor:134
 msgid "No plugins found."
-msgstr ""
+msgstr "ไม่เจอปลั๊กอิน"
 
 #: ../../../ETS2LA.UI/Pages/Settings/Assists.razor:128
 msgid ""
@@ -1157,7 +1157,7 @@ msgstr ""
 
 #: ../../../ETS2LA.UI/Pages/Settings/Audio.razor:18
 msgid "Volume"
-msgstr ""
+msgstr "ระดับเสียง"
 
 #: ../../../ETS2LA.Game/Data/Classes.cs:125
 #, csharp-format
@@ -1189,7 +1189,7 @@ msgstr ""
 
 #: ../../../ETS2LA.UI/Pages/Onboarding/Steps/DisclaimerStep2.razor:21
 msgid "I understand, now let me in!"
-msgstr ""
+msgstr "ฉันเข้าใจ, ตอนนี้ให้ฉันเข้า!"
 
 #: ../../../ETS2LA.UI/Pages/Settings/Display.razor:241
 msgid ""
@@ -1245,14 +1245,14 @@ msgstr ""
 #: ../../../ETS2LA.Backend/PluginHandler/Handler.cs:446
 #, csharp-format
 msgid "Disabled plugin: [bold]{0}[/]"
-msgstr ""
+msgstr "ปิดใช้งานปลั๊กอิน: [bold]{0}[/] แล้ว"
 
 #: ../../../ETS2LA.UI/Pages/Onboarding/Steps/SDKStep.razor:17
 #: ../../../ETS2LA.UI/Pages/Onboarding/Steps/PluginStep.razor:56
 #: ../../../ETS2LA.UI/Pages/Onboarding/Steps/OverlayStep.razor:27
 #: ../../../ETS2LA.UI/Pages/Onboarding/Steps/ControlsStep.razor:48
 msgid "Continue"
-msgstr ""
+msgstr "ดำเนินการต่อ"
 
 #: ../../../ETS2LA.Controls/Defaults.cs:31
 msgid "Cancel/MODE"
@@ -1263,7 +1263,7 @@ msgstr ""
 #: ../../../ETS2LA.Backend/PluginHandler/Handler.cs:428
 #, csharp-format
 msgid "Failed enable {0}: {1}"
-msgstr ""
+msgstr "เปิดใช้งาน {0}: {1}"
 
 #: ../../../ETS2LA.UI/Pages/Settings/Assists.razor:159
 msgid "Acceleration Response"
@@ -1281,7 +1281,7 @@ msgstr ""
 #: ../../../ETS2LA.UI/Pages/Settings/Assists.razor:22
 #: ../../../ETS2LA.UI/Pages/Settings/Assists.razor:30
 msgid "Normal"
-msgstr ""
+msgstr "ปกติ"
 
 #: ../../../ETS2LA.UI/Pages/Settings/Controls.razor:156
 #: ../../../ETS2LA.UI/Pages/Settings/Controls.razor:186
@@ -1306,7 +1306,7 @@ msgstr ""
 #: ../../../ETS2LA.Game/Installation.cs:417
 #, csharp-format
 msgid "Failed to install SDK version '{0}' to '{1}': {2}"
-msgstr ""
+msgstr "ติดตั้ง SDK เวอร์ชั่น '{0}' สู่ '{1}': {2} ล้มเหลว"
 
 #: ../../../ETS2LA.Networking/Updates/Handler.cs:169
 #, csharp-format
@@ -1316,13 +1316,13 @@ msgstr ""
 #: ../../../ETS2LA.State/Units.cs:202
 #: ../../../ETS2LA.State/Units.cs:206
 msgid "liters"
-msgstr ""
+msgstr "ลิตร"
 
 #: ../../../ETS2LA.Networking/Plugins/client.cs:104
 #: ../../../ETS2LA.Networking/Plugins/client.cs:129
 #, csharp-format
 msgid "No valid versions found for plugin with ID {0}."
-msgstr ""
+msgstr "ไม่มีเวอร์ชั่นถูกต้องสำหรับปลั๊กอินด้วยไอดี {0}"
 
 #: ../../../ETS2LA.Controls/Defaults.cs:32
 msgid ""
@@ -1343,7 +1343,7 @@ msgstr ""
 #: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:106
 #: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:122
 msgid "Downloading Update"
-msgstr ""
+msgstr "กำลังโหลดอัปเดต"
 
 #: ../../../ETS2LA.UI/Pages/Settings/Display.razor:231
 msgid "Simplified Graphics"
@@ -1356,7 +1356,7 @@ msgstr ""
 #: ../../../ETS2LA.UI/Pages/Plugins/Manager.razor:130
 #: ../../../ETS2LA.UI/Pages/Settings/Assists.razor:207
 msgid "Disabled"
-msgstr ""
+msgstr "ปิดใช้งาน"
 
 #: ../../../ETS2LA.Backend/PluginHandler/Handler.cs:202
 #: ../../../ETS2LA.Backend/PluginHandler/Handler.cs:366
@@ -1364,7 +1364,7 @@ msgstr ""
 #: ../../../ETS2LA.Backend/PluginHandler/Handler.cs:400
 #, csharp-format
 msgid "{0}"
-msgstr ""
+msgstr "{0}"
 
 #: ../../../ETS2LA.UI/Pages/Home.razor:33
 #: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:48
@@ -1384,7 +1384,7 @@ msgstr ""
 #: ../../../ETS2LA.UI/Pages/Settings/Assists.razor:45
 #: ../../../ETS2LA.UI/Pages/Settings/Assists.razor:55
 msgid "Off"
-msgstr ""
+msgstr "ปิด"
 
 #: ../../../ETS2LA.State/Units.cs:276
 #: ../../../ETS2LA.State/Units.cs:280
@@ -1393,11 +1393,11 @@ msgstr ""
 
 #: ../../../ETS2LA.UI/Pages/Onboarding/Steps/PluginStep.razor:61
 msgid "Installing..."
-msgstr ""
+msgstr "กำลังติดตั้ง..."
 
 #: ../../../ETS2LA.UI/Pages/Settings/SDK.razor:62
 msgid "Failed to add game"
-msgstr ""
+msgstr "เพิ่มเกมล้มเหลว"
 
 #: ../../../ETS2LA.Overlay/Overlay.cs:509
 #, csharp-format
@@ -1425,12 +1425,12 @@ msgstr ""
 #: ../../../ETS2LA.Networking/Plugins/client.cs:139
 #, csharp-format
 msgid "Version {0} not found for plugin with ID {1}."
-msgstr ""
+msgstr "เวอร์ชั่น {0} ไม่เจอสำหรับปลั๊กอินด้วยไอดี {1}"
 
 #: ../../../ETS2LA.UI/Pages/Settings/SDK.razor:39
 #: ../../../ETS2LA.UI/Pages/Settings/SDK.razor:45
 msgid "Invalid file"
-msgstr ""
+msgstr "ไฟล์ไม่ถูกต้อง"
 
 #: ../../../ETS2LA.Backend/PluginHandler/Handler.cs:120
 #, csharp-format
@@ -1441,7 +1441,7 @@ msgstr[1] ""
 
 #: ../../../ETS2LA.Overlay/Window/Console.cs:17
 msgid "Console"
-msgstr ""
+msgstr "คอนโซล"
 
 #: ../../../ETS2LA.UI/Pages/Settings/SDK.razor:58
 msgid "The game has been added successfully."
@@ -1473,7 +1473,7 @@ msgstr ""
 
 #: ../../../ETS2LA.UI/Pages/Onboarding/Steps/SDKStep.razor:21
 msgid "Waiting..."
-msgstr ""
+msgstr "กำลังรอ..."
 
 #: ../../../ETS2LA.Overlay/Overlay.cs:299
 msgid "hide"
@@ -1482,7 +1482,7 @@ msgstr ""
 #: ../../../ETS2LA.Networking/Updates/Handler.cs:61
 #, csharp-format
 msgid "Update available: {0}"
-msgstr ""
+msgstr "มีรายการอัปเดต: {0}"
 
 #: ../../../ETS2LA.Game/SDK/Traffic.cs:129
 msgid "Error in traffic update loop."
@@ -1545,12 +1545,12 @@ msgstr ""
 
 #: ../../../ETS2LA.UI/Shared/Layouts/SettingsLayout.razor:32
 msgid "Account"
-msgstr ""
+msgstr "บัญชี"
 
 #: ../../../ETS2LA.Game/Program.cs:149
 #, csharp-format
 msgid "Found {0} (version: {1}) at '{2}'"
-msgstr ""
+msgstr "เจอ {0} (เวอร์ชั่น: {1}) ที่ '{2}'"
 
 #: ../../../ETS2LA.UI/Pages/Settings/Display.razor:228
 msgid ""
@@ -1560,7 +1560,7 @@ msgstr ""
 
 #: ../../../ETS2LA.State/Units.cs:180
 msgid "kilometers per hour"
-msgstr ""
+msgstr "กิโลเมตรต่อชั่วโมง"
 
 #: ../../../ETS2LA.Controls/Windows/SharpDXControlsBackend.cs:152
 #: ../../../ETS2LA.Controls/Linux/SDL3ControlsBackend.cs:133
@@ -1608,11 +1608,11 @@ msgstr ""
 
 #: ../../../ETS2LA.UI/Shared/Layouts/MainLayout.razor:48
 msgid "Plugins"
-msgstr ""
+msgstr "ปลั๊กอิน"
 
 #: ../../../ETS2LA.Overlay/Overlay.cs:433
 msgid "Close"
-msgstr ""
+msgstr "ปิด"
 
 #: ../../../ETS2LA.State/Units.cs:289
 msgid "lbs"
@@ -1629,7 +1629,7 @@ msgstr ""
 
 #: ../../../ETS2LA.UI/Pages/Plugins/Catalogue.razor:200
 msgid "Install"
-msgstr ""
+msgstr "ติดตั้ง"
 
 #: ../../../ETS2LA.Networking/Updates/Handler.cs:104
 #, csharp-format
@@ -1640,7 +1640,7 @@ msgstr ""
 
 #: ../../../ETS2LA.UI/Pages/Settings/Assists.razor:38
 msgid "Speed Limit"
-msgstr ""
+msgstr "จำกัดความเร็ว"
 
 #: ../../../ETS2LA.Overlay/Window/VisionCameras.cs:15
 msgid "Vision Cameras"
@@ -1665,7 +1665,7 @@ msgstr ""
 
 #: ../../../ETS2LA.UI/Pages/Onboarding/Steps/SDKReminderStep.razor:16
 msgid "Remember!"
-msgstr ""
+msgstr "จำ!"
 
 #: ../../../ETS2LA.Networking/Plugins/client.cs:79
 msgid ""
@@ -1674,7 +1674,7 @@ msgstr ""
 
 #: ../../../ETS2LA.State/Units.cs:193
 msgid "feet"
-msgstr ""
+msgstr "ฟุต"
 
 #: ../../../ETS2LA.Networking/Plugins/client.cs:225
 #, csharp-format
@@ -1697,11 +1697,11 @@ msgstr ""
 
 #: ../../../ETS2LA.UI/Pages/Settings/Assists.razor:31
 msgid "Far"
-msgstr ""
+msgstr "ไกล"
 
 #: ../../../ETS2LA.UI/Pages/Help/ContactUs.razor:13
 msgid "For now, please contact us on GitHub or Discord."
-msgstr ""
+msgstr "สำหรับตอนนี้, โปรดติดต่อพวกเราใน Github หรือ Discord"
 
 #: ../../../ETS2LA.State/Units.cs:228
 #: ../../../ETS2LA.State/Units.cs:302
@@ -1710,21 +1710,21 @@ msgstr ""
 
 #: ../../../ETS2LA.UI/Pages/Settings/Display.razor:198
 msgid "Window"
-msgstr ""
+msgstr "หน้าต่าง"
 
 #: ../../../ETS2LA.UI/Shared/Layouts/MainLayout.razor:61
 msgid "Settings"
-msgstr ""
+msgstr "การตั้งค่า"
 
 #: ../../../ETS2LA.Game/Installation.cs:185
 msgid "Error Loading File"
-msgstr ""
+msgstr "มีข้อผิดพลาดในการโหลดไฟล์"
 
 #: ../../../ETS2LA.UI/Pages/Home.razor:46
 #: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:60
 #, csharp-format
 msgid "A new update is available: {0}"
-msgstr ""
+msgstr "มีรายการอัปเดตใหม่: {0}"
 
 #: ../../../ETS2LA.UI/Pages/Settings/Data.razor:60
 msgid "Force Base Map Name"
@@ -1732,20 +1732,20 @@ msgstr ""
 
 #: ../../../ETS2LA.UI/Shared/Layouts/SettingsLayout.razor:27
 msgid "Experiments"
-msgstr ""
+msgstr "ทดลอง"
 
 #: ../../../ETS2LA.State/Units.cs:204
 msgid "gallons"
-msgstr ""
+msgstr "แกลลอน"
 
 #: ../../../ETS2LA.State/Units.cs:265
 #: ../../../ETS2LA.State/Units.cs:269
 msgid "m"
-msgstr ""
+msgstr "ม."
 
 #: ../../../ETS2LA.UI/Pages/Settings/SDK.razor:81
 msgid "SDKs are currently installed."
-msgstr ""
+msgstr "SDKs ติดตั้งอยู่"
 
 #: ../../../ETS2LA.UI/Utils.cs:55
 #: ../../../ETS2LA.UI/Pages/Settings/Telemetry.razor:16
@@ -1756,12 +1756,12 @@ msgstr ""
 
 #: ../../../ETS2LA.UI/Pages/Onboarding/Steps/SDKReminderStep.razor:21
 msgid "I understand"
-msgstr ""
+msgstr "ฉันเข้าใจ"
 
 #: ../../../ETS2LA.Game/Installation.cs:289
 #, csharp-format
 msgid "No map data found for installation at '{0}'. Is the installation valid?"
-msgstr ""
+msgstr "ไม่พบข้อมูลแผนที่สำหรับการติดตั้งที่ '{0}' การติดตั้งถูกต้องไหม?"
 
 #: ../../../ETS2LA.Overlay/Overlay.cs:406
 #, csharp-format
@@ -1775,11 +1775,11 @@ msgstr ""
 #: ../../../ETS2LA.State/Units.cs:213
 #: ../../../ETS2LA.State/Units.cs:217
 msgid "kilograms"
-msgstr ""
+msgstr "กิโลกรัม"
 
 #: ../../../ETS2LA.State/Units.cs:267
 msgid "ft"
-msgstr ""
+msgstr "ฟุต"
 
 #: ../../../ETS2LA.Backend/PluginHandler/Handler.cs:312
 #, csharp-format
@@ -1791,7 +1791,7 @@ msgstr ""
 #: ../../../ETS2LA.Backend/PluginHandler/Handler.cs:385
 #, csharp-format
 msgid "Cannot enable plugin {0} because dependency {1} failed to enable."
-msgstr ""
+msgstr "ไม่สามารถเปิดใช้งานปลั๊กอิน {0} เพราะส่วนประกอบ {1} เปิดใช้งานล้มเหลว"
 
 #: ../../../ETS2LA.Backend/PluginHandler/Handler.cs:118
 #, csharp-format
@@ -1843,7 +1843,7 @@ msgstr ""
 
 #: ../../../ETS2LA.UI/Pages/Settings/SDK.razor:58
 msgid "Game added"
-msgstr ""
+msgstr "เพิ่มเกมแล้ว"
 
 #: ../../../ETS2LA.Game/Installation.cs:334
 #, csharp-format
@@ -1883,12 +1883,13 @@ msgstr ""
 #: ../../../ETS2LA.Game/Installation.cs:456
 #, csharp-format
 msgid "Deleted '{0}'"
-msgstr ""
+msgstr "ลบ '{0}' แล้ว"
 
 #: ../../../ETS2LA.UI/Pages/Onboarding/Steps/ControlsStep.razor:44
 #, csharp-format
 msgid "Target Speed: <span class=\"text-text-accent font-bold\">{0} {1}</span>"
 msgstr ""
+"เป้าหมายความเร็ว: <span class=\"text-text-accent font-bold\">{0}{1}</span>"
 
 #: ../../../ETS2LA.Game/SDK/ParkedVehicles.cs:108
 #: ../../../ETS2LA.Game/SDK/Camera.cs:130
@@ -1990,7 +1991,7 @@ msgstr ""
 
 #: ../../../ETS2LA.UI/Pages/Settings/Display.razor:188
 msgid "Translated by:"
-msgstr ""
+msgstr "แปลโดย:"
 
 #: ../../../ETS2LA.UI/Pages/Settings/SDK.razor:81
 msgid "This game was found at"
@@ -2109,7 +2110,7 @@ msgstr ""
 #: ../../../ETS2LA.UI/Pages/Settings/Data.razor:12
 #: ../../../ETS2LA.UI/Pages/Settings/Data.razor:20
 msgid "High"
-msgstr ""
+msgstr "สูง"
 
 #: ../../../ETS2LA.UI/Pages/Onboarding/Steps/DisclaimerStep1.razor:15
 msgid "Final Disclaimer <span class=\"description\">1/2</span>"
@@ -2150,7 +2151,7 @@ msgstr ""
 #: ../../../ETS2LA.State/Units.cs:191
 #: ../../../ETS2LA.State/Units.cs:195
 msgid "meters"
-msgstr ""
+msgstr "เมตร"
 
 #: ../../../ETS2LA.State/Units.cs:224
 #: ../../../ETS2LA.State/Units.cs:298
@@ -2175,7 +2176,7 @@ msgstr ""
 
 #: ../../../ETS2LA.Backend/Program.cs:40
 msgid "Starting ETS2LA..."
-msgstr ""
+msgstr "กำลังเริ่ม ETS2LA..."
 
 #: ../../../ETS2LA.UI/Pages/Settings/Assists.razor:189
 msgid ""
@@ -2207,7 +2208,7 @@ msgstr ""
 
 #: ../../../ETS2LA.UI/Pages/Onboarding/Steps/WelcomeStep.razor:68
 msgid "Next"
-msgstr ""
+msgstr "ต่อไป"
 
 #: ../../../ETS2LA.Overlay/Window/DemoWindow.cs:13
 msgid "Demo Window"
@@ -2215,7 +2216,7 @@ msgstr ""
 
 #: ../../../ETS2LA.UI/Shared/Layouts/MainLayout.razor:54
 msgid "Help"
-msgstr ""
+msgstr "ช่วยเหลือ"
 
 #: ../../../ETS2LA.Backend/PluginHandler/Handler.cs:332
 #, csharp-format
