@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
 "POT-Creation-Date: 2026-09-08 12:21:10+0300\n"
-"PO-Revision-Date: 2026-09-17 06:55+0000\n"
+"PO-Revision-Date: 2026-09-17 08:43+0000\n"
 "Last-Translator: cooper153826 <cooper153826@ets2la.com>\n"
 "Language-Team: Thai <http://weblate.ets2la.com/projects/ets2la/ets2la/th/>\n"
 "Language: th\n"
@@ -939,7 +939,7 @@ msgstr "ความเร็วตอนนี้"
 
 #: ../../../ETS2LA.State/Units.cs:182
 msgid "miles per hour"
-msgstr ""
+msgstr "ไมล์ต่อชั่วโมง"
 
 #: ../../../ETS2LA.UI/Pages/Settings/Display.razor:213
 msgid "Limit Overlay Framerate"
@@ -1003,7 +1003,7 @@ msgstr ""
 
 #: ../../../ETS2LA.UI/Shared/Layouts/SettingsLayout.razor:13
 msgid "Assists"
-msgstr ""
+msgstr "การช่วยเหลือ"
 
 #: ../../../ETS2LA.UI/Pages/Onboarding/Steps/SDKStep.razor:12
 msgid "SDK Installation"
@@ -1054,7 +1054,7 @@ msgstr "ปุ่ม"
 
 #: ../../../ETS2LA.UI/Pages/Settings/SDK.razor:101
 msgid "Add Game Manually"
-msgstr ""
+msgstr "เพิ่มเกมด้วยตนเอง"
 
 #: ../../../ETS2LA.UI/Pages/Settings/Display.razor:214
 msgid ""
