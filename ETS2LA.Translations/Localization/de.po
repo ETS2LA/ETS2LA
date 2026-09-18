@@ -5,10 +5,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
 "POT-Creation-Date: 2026-09-18 19:03:17+0300\n"
-"PO-Revision-Date: 2026-08-28 16:13+0000\n"
+"PO-Revision-Date: 2026-09-19 12:33+0000\n"
 "Last-Translator: ABOY <aboy@ets2la.com>\n"
-"Language-Team: German <http://weblate.ets2la.com/projects/ets2la/ets2la/de/"
-">\n"
+"Language-Team: German <http://weblate.ets2la.com/projects/ets2la/ets2la/de/>"
+"\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -85,7 +85,7 @@ msgid ""
 msgstr ""
 
 msgid "Become a GitHub Sponsor"
-msgstr ""
+msgstr "Werde ein Github Sponsor"
 
 #, csharp-format
 msgid "Installed {0}"
@@ -170,7 +170,7 @@ msgstr ""
 "funktionieren nicht, und wir haben nicht vor, dies zu beheben."
 
 msgid "Contact us on Discord"
-msgstr ""
+msgstr "Kontaktier uns auf Discord"
 
 msgid "km/h"
 msgstr "km/h"
@@ -182,7 +182,7 @@ msgid ""
 msgstr ""
 
 msgid "If you can't interact with the Window, press CTRL+R."
-msgstr ""
+msgstr "Wenn du nicht mit dem Fesnter interagieren kannst, drücke STRG+R."
 
 msgid "The step size for changing the cruise control speed."
 msgstr "Die Schrittweite zur Änderung der Cruise-Control-Geschwindigkeit."
@@ -412,7 +412,7 @@ msgid "Contact Us"
 msgstr "Kontaktiere uns"
 
 msgid "An error occurred while checking for updates."
-msgstr ""
+msgstr "Ein Fehler ist während der Suche von Updates aufgetreten."
 
 #, csharp-format
 msgid "Copied '{0}' to '{1}'"
@@ -642,7 +642,7 @@ msgid "State Info"
 msgstr "Info zum Stand"
 
 msgid "Contact us on GitHub"
-msgstr ""
+msgstr "Kontaktier uns auf Github"
 
 #, csharp-format
 msgid "Error in AR rendering: {0}"
@@ -999,7 +999,7 @@ msgstr[0] "{0} Punkt gefunden"
 msgstr[1] "{0} Punkte gefunden"
 
 msgid "Did you remember to restart after installing them?"
-msgstr ""
+msgstr "Hast du dran gedacht nach dem Installieren neu zu starten?"
 
 msgid "Volume"
 msgstr "Lautstärke"
