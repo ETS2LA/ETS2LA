@@ -1,7 +1,7 @@
-### ETS2LA C# 2026.9.5011
-- Added automatic update checking. You'll get a notification when a new update is available.
-- Added GitHub Sponsors "ad" in the homepage. We'd greatly appreciate it if you supported us.
-- Added a way for ETS2LA to open external links in your default browser across OSs.
+### ETS2LA C# 2026.9.5026
+- Added support for ETS2 and ATS 1.61. (**Remember to install the SDKs again!**)
+- Added `PmdFileHandler` to load models.
+- ETS2LA no longer crashes if you don't have a connection to the update server (GitHub).
 
 ---
 <!-- Content inside ETS2LA will be cutoff at the line above, do not place lines inside the changelog. -->
@@ -11,17 +11,17 @@
 <sub>The above notice is to make sure Chinese people can find their specific download. They can't download from GitHub without a VPN.</sub>
 
 > [!WARNING]
-> If you have issues with your **overlay being fully opaque**, make sure to reinstall your graphics card drivers.  
-> **NVIDIA** - Set `OpenGL GDI Compatibility` to `Prefer Compatible` in the **NVIDIA App**.  
-> **AMD** - Disable **HDR** in Windows settings.
+> If you have issues with your **overlay being fully opaque**, make sure to reinstall your graphics card drivers.
+> **NVIDIA** - Set `OpenGL GDI Compatibility` to `Prefer Compatible` in the **NVIDIA App**. Disable `Automatically manage colors for apps` in Windows settings.
+> **AMD** - Disable `HDR` and `Automatically manage colors for apps` in Windows settings.
 
 <sub>ETS2LA is version specific, make sure you use a supported version!  
 Older versions are not kept compatible with server side changes.</sub>
 <!-- Please include a link to the latest working version for each game version. -->
-<!-- 1.59 and 1.60 share the same map data version -->
+<!-- 1.59, 1.60 and 1.61 share the same map data version -->
 | Game Version  |  ETS2LA Version  |
 | ------------- | ---------------- |
-| **1.61**      | *Not Supported*  |
+| **1.61**      | [**≥ 2026.9.5026**](https://github.com/ETS2LA/Euro-Truck-Simulator-2-Lane-Assist/releases/latest)  |
 | **1.60**      | [**≥ 3.4.0**](https://github.com/ETS2LA/Euro-Truck-Simulator-2-Lane-Assist/releases/latest) |
 | **1.59**      | [**≥ 3.2.0**](https://github.com/ETS2LA/Euro-Truck-Simulator-2-Lane-Assist/releases/latest) |
 

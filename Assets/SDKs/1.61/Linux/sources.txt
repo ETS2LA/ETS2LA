@@ -1,0 +1,8 @@
+libscs_sdk_controller.so - https://github.com/ETS2LA/scs-sdk-controller
+Plugin developed by mimi89999, will interface with the game to send input data with no virtual controller.
+
+libscs-telemetry.so - https://github.com/truckermudgeon/scs-sdk-plugin (forked from https://github.com/RenCloud/scs-sdk-plugin)
+Plugin developed by truckermudgeon (credit to original author RenCloud), provides data from the game to the app. (stuff like speed, location etc...)
+
+libets2la_plugin.so - https://gitlab.com/ETS2LA/ets2la_plugin
+Plugin developed mainly by Roccovax (dariowouters), ziakhan4505 and Tumppi066. Provides a massive amount of hard to get data. Check the repo for more info.
