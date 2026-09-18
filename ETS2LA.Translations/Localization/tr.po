@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-09-08 12:21:10+0300\n"
+"POT-Creation-Date: 2026-09-18 19:03:17+0300\n"
 "PO-Revision-Date: 2026-09-04 20:02+0000\n"
 "Last-Translator: Kivanc <kivanc@ets2la.com>\n"
 "Language-Team: Turkish <http://weblate.ets2la.com/projects/ets2la/ets2la/tr/"
@@ -234,11 +234,11 @@ msgstr "Görsel"
 msgid "Additional"
 msgstr "Ek olarak"
 
-msgid "Show Fewer Logs"
-msgstr "Daha az günlük göster"
-
 msgid "Install Plugins"
 msgstr "Eklentileri Yükle"
+
+msgid "Show Fewer Logs"
+msgstr "Daha az günlük göster"
 
 #, csharp-format
 msgid "Error while downloading update: {0}"
@@ -413,6 +413,9 @@ msgstr ""
 
 msgid "Contact Us"
 msgstr "Bize Ulaşın"
+
+msgid "An error occurred while checking for updates."
+msgstr ""
 
 #, csharp-format
 msgid "Copied '{0}' to '{1}'"
@@ -1157,11 +1160,11 @@ msgstr "Oyun eklenemedi"
 msgid "Font file not found at {0}"
 msgstr "Yazı tipi dosyası şu konumda bulunamadı: {0}"
 
-msgid "Changelog"
-msgstr "Değişiklik Günlüğü"
-
 msgid "No release notes available."
 msgstr "Sürüm notları mevcut değil."
+
+msgid "Changelog"
+msgstr "Değişiklik Günlüğü"
 
 #, csharp-format
 msgid "Detected a switch to {0}, waiting for its game data to be parsed."
@@ -1351,6 +1354,9 @@ msgstr ""
 "Güncelleme kaynağı '{0}' olarak değiştirilmeye çalışıldı, ancak mevcut "
 "kaynaklar arasında bulunamadı."
 
+msgid "Error Checking for Updates"
+msgstr ""
+
 msgid "Speed Limit"
 msgstr "Hız Limiti"
 
@@ -1501,15 +1507,15 @@ msgstr ""
 msgid "Recommended Plugins"
 msgstr ""
 
+msgid "Game added"
+msgstr ""
+
 msgid ""
 "The maximum speed ETS2LA will accelerate to. It might still drift over this "
 "limit due to momentum."
 msgstr ""
 "ETS2LA'nın ulaşabileceği maksimum hız. İvme nedeniyle bu sınırın üzerine "
 "çıkabilir."
-
-msgid "Game added"
-msgstr ""
 
 #, csharp-format
 msgid "Unloading parsed map data for installation at '{0}'"
@@ -1560,10 +1566,10 @@ msgstr ""
 msgid "Assist Mode: <span class=\"text-text-accent font-bold\">{0}</span>"
 msgstr ""
 
-msgid "View Public Telemetry"
+msgid "Adjust the volume of the audio output."
 msgstr ""
 
-msgid "Adjust the volume of the audio output."
+msgid "View Public Telemetry"
 msgstr ""
 
 #, csharp-format
@@ -1620,10 +1626,10 @@ msgstr ""
 msgid "The selected file is not a core.scs file."
 msgstr ""
 
-msgid "Translated by:"
+msgid "This game was found at"
 msgstr ""
 
-msgid "This game was found at"
+msgid "Translated by:"
 msgstr ""
 
 msgid "Data Quality"
@@ -1849,13 +1855,13 @@ msgid "Display Units: "
 msgstr ""
 
 msgid ""
-"The language ETS2LA will be displayed at. Translations are provided by the "
-"community, we cannot guarantee their accuracy."
+"Warning: Your system has less than 20GB of RAM. You can only select up to "
+"High."
 msgstr ""
 
 msgid ""
-"Warning: Your system has less than 20GB of RAM. You can only select up to "
-"High."
+"The language ETS2LA will be displayed at. Translations are provided by the "
+"community, we cannot guarantee their accuracy."
 msgstr ""
 
 msgid "Interaction Mode"

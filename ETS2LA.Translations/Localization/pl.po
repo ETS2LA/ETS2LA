@@ -3,17 +3,17 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-09-08 12:21:10+0300\n"
+"POT-Creation-Date: 2026-09-18 19:03:17+0300\n"
 "PO-Revision-Date: 2026-09-11 13:17+0000\n"
 "Last-Translator: Kubex70 <kubex70@ets2la.com>\n"
-"Language-Team: Polish <http://weblate.ets2la.com/projects/ets2la/ets2la/pl/>"
-"\n"
+"Language-Team: Polish <http://weblate.ets2la.com/projects/ets2la/ets2la/pl/"
+">\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && "
-"(n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 5.14.3\n"
 
 msgid ""
@@ -240,11 +240,11 @@ msgstr "Wizualne"
 msgid "Additional"
 msgstr "Dodatkowe"
 
-msgid "Show Fewer Logs"
-msgstr "Pokaż mniej dzienników"
-
 msgid "Install Plugins"
 msgstr "Zainstaluj pluginy"
+
+msgid "Show Fewer Logs"
+msgstr "Pokaż mniej dzienników"
 
 #, csharp-format
 msgid "Error while downloading update: {0}"
@@ -420,6 +420,9 @@ msgstr "Niezarejestrowana kontrola: {0} ({1})"
 
 msgid "Contact Us"
 msgstr "Skontaktuj się z nami"
+
+msgid "An error occurred while checking for updates."
+msgstr ""
 
 #, csharp-format
 msgid "Copied '{0}' to '{1}'"
@@ -1209,11 +1212,11 @@ msgstr "Nie udało się dodać gry"
 msgid "Font file not found at {0}"
 msgstr "Nie znaleziono pliku czcionki w {0}"
 
-msgid "Changelog"
-msgstr "Dziennik zmian"
-
 msgid "No release notes available."
 msgstr "Brak dostępnych informacji o wydaniu."
+
+msgid "Changelog"
+msgstr "Dziennik zmian"
 
 #, csharp-format
 msgid "Detected a switch to {0}, waiting for its game data to be parsed."
@@ -1416,6 +1419,9 @@ msgstr ""
 "Próbowano zmienić źródło aktualizacji na '{0}', ale nie znaleziono go wśród "
 "dostępnych źródeł."
 
+msgid "Error Checking for Updates"
+msgstr ""
+
 msgid "Speed Limit"
 msgstr "Ograniczenie prędkości"
 
@@ -1576,15 +1582,15 @@ msgstr ""
 msgid "Recommended Plugins"
 msgstr "Zalecane pluginy"
 
+msgid "Game added"
+msgstr "Gra dodana"
+
 msgid ""
 "The maximum speed ETS2LA will accelerate to. It might still drift over this "
 "limit due to momentum."
 msgstr ""
 "Maksymalna prędkość, jaką osiągnie ETS2LA. Może jednak nadal przekraczać ten "
 "limit ze względu na pęd."
-
-msgid "Game added"
-msgstr "Gra dodana"
 
 #, csharp-format
 msgid "Unloading parsed map data for installation at '{0}'"
@@ -1646,11 +1652,11 @@ msgid "Assist Mode: <span class=\"text-text-accent font-bold\">{0}</span>"
 msgstr ""
 "Tryb wspomagania: <span class=\"text-text-accent font-bold\">{0}</span>"
 
-msgid "View Public Telemetry"
-msgstr "Wyświetl telemetrię publiczną"
-
 msgid "Adjust the volume of the audio output."
 msgstr "Dostosuj głośność wyjścia audio."
+
+msgid "View Public Telemetry"
+msgstr "Wyświetl telemetrię publiczną"
 
 #, csharp-format
 msgid ""
@@ -1718,11 +1724,11 @@ msgstr ""
 msgid "The selected file is not a core.scs file."
 msgstr "Wybrany plik nie jest plikiem core.scs ."
 
-msgid "Translated by:"
-msgstr "Przetłumaczone przez:"
-
 msgid "This game was found at"
 msgstr "Tę grę znaleziono pod adresem"
+
+msgid "Translated by:"
+msgstr "Przetłumaczone przez:"
 
 msgid "Data Quality"
 msgstr "Jakość danych"
@@ -1961,18 +1967,18 @@ msgid "Display Units: "
 msgstr "Wyświetlane jednostki: "
 
 msgid ""
-"The language ETS2LA will be displayed at. Translations are provided by the "
-"community, we cannot guarantee their accuracy."
-msgstr ""
-"Język w jakim będzie wyświetlany ETS2LA. Tłumaczenia są tworzone przez "
-"społeczność, nie gwarantujemy ich dokładności."
-
-msgid ""
 "Warning: Your system has less than 20GB of RAM. You can only select up to "
 "High."
 msgstr ""
 "Ostrzeżenie: Twój system ma mniej niż 20 GB pamięci RAM. Możesz wybrać "
 "maksymalnie opcję Wysoka."
+
+msgid ""
+"The language ETS2LA will be displayed at. Translations are provided by the "
+"community, we cannot guarantee their accuracy."
+msgstr ""
+"Język w jakim będzie wyświetlany ETS2LA. Tłumaczenia są tworzone przez "
+"społeczność, nie gwarantujemy ich dokładności."
 
 msgid "Interaction Mode"
 msgstr "Tryb interakcji"

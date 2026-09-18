@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-09-08 12:21:10+0300\n"
+"POT-Creation-Date: 2026-09-18 19:03:17+0300\n"
 "PO-Revision-Date: 2026-09-09 11:08+0000\n"
 "Last-Translator: McAs13 <tsumiguel@ets2la.com>\n"
 "Language-Team: Spanish (American) <http://weblate.ets2la.com/projects/ets2la/"
@@ -237,11 +237,11 @@ msgstr "Visual"
 msgid "Additional"
 msgstr "Adicional"
 
-msgid "Show Fewer Logs"
-msgstr "Mostrar menos registros"
-
 msgid "Install Plugins"
 msgstr "Instalar plugins"
+
+msgid "Show Fewer Logs"
+msgstr "Mostrar menos registros"
 
 #, csharp-format
 msgid "Error while downloading update: {0}"
@@ -417,6 +417,9 @@ msgstr "Control no registrado: {0} ({1})"
 
 msgid "Contact Us"
 msgstr "Contáctanos"
+
+msgid "An error occurred while checking for updates."
+msgstr ""
 
 #, csharp-format
 msgid "Copied '{0}' to '{1}'"
@@ -1201,11 +1204,11 @@ msgstr "Error al añadir el juego"
 msgid "Font file not found at {0}"
 msgstr "No se encontró el archivo de fuente en {0}"
 
-msgid "Changelog"
-msgstr "Registro de cambios"
-
 msgid "No release notes available."
 msgstr "No hay notas de la versión disponibles."
+
+msgid "Changelog"
+msgstr "Registro de cambios"
 
 #, csharp-format
 msgid "Detected a switch to {0}, waiting for its game data to be parsed."
@@ -1406,6 +1409,9 @@ msgstr ""
 "Se intentó cambiar la fuente de actualización a '{0}', pero no se encontró "
 "entre las fuentes disponibles."
 
+msgid "Error Checking for Updates"
+msgstr ""
+
 msgid "Speed Limit"
 msgstr "Límite de velocidad"
 
@@ -1568,15 +1574,15 @@ msgstr ""
 msgid "Recommended Plugins"
 msgstr "Plugins recomendados"
 
+msgid "Game added"
+msgstr "Juego añadido"
+
 msgid ""
 "The maximum speed ETS2LA will accelerate to. It might still drift over this "
 "limit due to momentum."
 msgstr ""
 "La velocidad máxima a la que ETS2LA acelerará. Es posible que aún supere "
 "este límite debido a la inercia."
-
-msgid "Game added"
-msgstr "Juego añadido"
 
 #, csharp-format
 msgid "Unloading parsed map data for installation at '{0}'"
@@ -1638,11 +1644,11 @@ msgid "Assist Mode: <span class=\"text-text-accent font-bold\">{0}</span>"
 msgstr ""
 "Modo de asistencia: <span class=\"text-text-accent font-bold\">{0}</span>"
 
-msgid "View Public Telemetry"
-msgstr "Ver telemetría pública"
-
 msgid "Adjust the volume of the audio output."
 msgstr "Ajusta el volumen de la salida de audio."
+
+msgid "View Public Telemetry"
+msgstr "Ver telemetría pública"
 
 #, csharp-format
 msgid ""
@@ -1710,11 +1716,11 @@ msgstr ""
 msgid "The selected file is not a core.scs file."
 msgstr "El archivo seleccionado no es un archivo core.scs."
 
-msgid "Translated by:"
-msgstr "Traducido por:"
-
 msgid "This game was found at"
 msgstr "Este juego se encontró en"
+
+msgid "Translated by:"
+msgstr "Traducido por:"
 
 msgid "Data Quality"
 msgstr "Calidad de los datos"
@@ -1954,18 +1960,18 @@ msgid "Display Units: "
 msgstr "Unidades de visualización: "
 
 msgid ""
-"The language ETS2LA will be displayed at. Translations are provided by the "
-"community, we cannot guarantee their accuracy."
-msgstr ""
-"El idioma en el que se mostrará ETS2LA. Las traducciones son proporcionadas "
-"por la comunidad, no podemos garantizar su precisión."
-
-msgid ""
 "Warning: Your system has less than 20GB of RAM. You can only select up to "
 "High."
 msgstr ""
 "Advertencia: tu sistema tiene menos de 20 GB de RAM. Solo puedes seleccionar "
 "hasta Alto."
+
+msgid ""
+"The language ETS2LA will be displayed at. Translations are provided by the "
+"community, we cannot guarantee their accuracy."
+msgstr ""
+"El idioma en el que se mostrará ETS2LA. Las traducciones son proporcionadas "
+"por la comunidad, no podemos garantizar su precisión."
 
 msgid "Interaction Mode"
 msgstr "Modo de interacción"

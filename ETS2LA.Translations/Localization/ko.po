@@ -2,11 +2,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-09-08 12:21:10+0300\n"
+"POT-Creation-Date: 2026-09-18 19:03:17+0300\n"
 "PO-Revision-Date: 2026-09-13 12:43+0000\n"
 "Last-Translator: bot_lapis <botlapis@ets2la.com>\n"
-"Language-Team: Korean <http://weblate.ets2la.com/projects/ets2la/ets2la/ko/>"
-"\n"
+"Language-Team: Korean <http://weblate.ets2la.com/projects/ets2la/ets2la/ko/"
+">\n"
 "Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -51,8 +51,8 @@ msgid ""
 "Force ETS2LA to load the map on game startup. This can resolve issues where "
 "your game.log.txt is not where ETS2LA expects it."
 msgstr ""
-"게임 시작 시 ETS2LA가 강제로 맵을 로드하도록 합니다. 이는 game.log.txt 파일이"
-" ETS2LA가 예상하는 위치에 없을 때 발생하는 문제를 해결할 수 있습니다."
+"게임 시작 시 ETS2LA가 강제로 맵을 로드하도록 합니다. 이는 game.log.txt 파일"
+"이 ETS2LA가 예상하는 위치에 없을 때 발생하는 문제를 해결할 수 있습니다."
 
 msgid "Game SDK"
 msgstr "게임 SDK"
@@ -66,7 +66,8 @@ msgstr "{0}'의 설치 항목을 파싱하는 중 (버전: {1})"
 
 msgid ""
 "When changing the speed, snap to the nearest 10. i.e. 37 -> 39 -> 40 -> 42..."
-msgstr "속도를 변경할 때 가장 가까운 10 단위로 맞춥니다. 예: 37 → 39 → 40 → 42..."
+msgstr ""
+"속도를 변경할 때 가장 가까운 10 단위로 맞춥니다. 예: 37 → 39 → 40 → 42..."
 
 msgid "kg"
 msgstr "kg"
@@ -98,7 +99,8 @@ msgstr "최대 속도"
 
 msgid ""
 "When the game reports itself being paused, ETS2LA won't render AR elements."
-msgstr "게임이 일시정지 상태라고 보고하면, ETS2LA는 AR 요소를 렌더링하지 않습니다."
+msgstr ""
+"게임이 일시정지 상태라고 보고하면, ETS2LA는 AR 요소를 렌더링하지 않습니다."
 
 #, csharp-format
 msgid "Connected joystick: [bold]{0}[/] [gray italic]({1})[/]"
@@ -143,7 +145,8 @@ msgstr "내비게이션 업데이트 루프에서 오류가 발생했습니다."
 msgid ""
 "Warning: Your system has less than 16GB of RAM. You can only select up to "
 "Medium."
-msgstr "경고: 시스템 RAM이 16GB 미만입니다. 최대 '중간'까지만 선택할 수 있습니다."
+msgstr ""
+"경고: 시스템 RAM이 16GB 미만입니다. 최대 '중간'까지만 선택할 수 있습니다."
 
 msgid "Window Zoom"
 msgstr "창 확대/축소"
@@ -154,7 +157,8 @@ msgstr "로그 더 보기"
 msgid ""
 "Cracked games or demos will block our SDK from loading. They do not work, "
 "and we don't intend to fix this."
-msgstr "크랙된 게임이나 데모 버전은 저희 SDK가 로드되는 것을 차단합니다. 작동하지 않"
+msgstr ""
+"크랙된 게임이나 데모 버전은 저희 SDK가 로드되는 것을 차단합니다. 작동하지 않"
 "으며, 저희는 이를 수정할 의도가 없습니다."
 
 msgid "Contact us on Discord"
@@ -208,9 +212,9 @@ msgid ""
 "bold\">SDK</span> to get started. Please install the SDK for <span "
 "class=\"text-text-accent font-bold\">at least one game</span> to continue."
 msgstr ""
-"ETS2LA를 시작하려면 저희 <span class=\"text-text-accent font-bold\">SDK</span"
-">를 설치해야 합니다. 계속하려면 <span class=\"text-text-accent font-bold\">최"
-"소 한 개의 게임</span>용 SDK를 설치해주세요."
+"ETS2LA를 시작하려면 저희 <span class=\"text-text-accent font-bold\">SDK</"
+"span>를 설치해야 합니다. 계속하려면 <span class=\"text-text-accent font-"
+"bold\">최소 한 개의 게임</span>용 SDK를 설치해주세요."
 
 #, csharp-format
 msgid "Successfully updated plugin with ID {0}."
@@ -225,11 +229,11 @@ msgstr "비주얼"
 msgid "Additional"
 msgstr "추가"
 
-msgid "Show Fewer Logs"
-msgstr "로그 적게 보기"
-
 msgid "Install Plugins"
 msgstr "플러그인 설치"
+
+msgid "Show Fewer Logs"
+msgstr "로그 적게 보기"
 
 #, csharp-format
 msgid "Error while downloading update: {0}"
@@ -243,7 +247,8 @@ msgstr "키보드"
 
 #, csharp-format
 msgid "No game executable found in '{0}', not adding it as an installation."
-msgstr "{0}'에서 게임 실행 파일을 찾을 수 없어 설치 항목으로 추가하지 않습니다."
+msgstr ""
+"{0}'에서 게임 실행 파일을 찾을 수 없어 설치 항목으로 추가하지 않습니다."
 
 msgid "Chime"
 msgstr "알림음"
@@ -296,7 +301,8 @@ msgstr "네트워킹"
 msgid ""
 "Press a button or move an axis on your input device to bind it to this "
 "control. This will time out in {0} seconds."
-msgstr "입력 장치에서 버튼을 누르거나 축을 움직여 이 컨트롤에 바인딩하세요. {0}초 후"
+msgstr ""
+"입력 장치에서 버튼을 누르거나 축을 움직여 이 컨트롤에 바인딩하세요. {0}초 후"
 "에 시간 초과됩니다."
 
 msgid ""
@@ -312,7 +318,8 @@ msgstr "데이터 파싱"
 msgid ""
 "Service unavailable. The server is currently unable to handle the request "
 "due to temporary overloading or maintenance."
-msgstr "서비스를 이용할 수 없습니다. 서버가 일시적인 과부하 또는 점검으로 인해 현재 "
+msgstr ""
+"서비스를 이용할 수 없습니다. 서버가 일시적인 과부하 또는 점검으로 인해 현재 "
 "요청을 처리할 수 없습니다."
 
 msgid "Enabled"
@@ -323,15 +330,16 @@ msgid ""
 "this to off will disable collision avoidance regardless of your enabled "
 "plugins."
 msgstr ""
-"ETS2LA가 발생 가능한 충돌에 얼마나 일찍 대응을 시도할지 설정합니다. 이 기능을"
-" 끄면 활성화된 플러그인과 관계없이 충돌 회피가 비활성화됩니다."
+"ETS2LA가 발생 가능한 충돌에 얼마나 일찍 대응을 시도할지 설정합니다. 이 기능"
+"을 끄면 활성화된 플러그인과 관계없이 충돌 회피가 비활성화됩니다."
 
 msgid "The selected file does not exist."
 msgstr "선택한 파일이 존재하지 않습니다."
 
 #, csharp-format
 msgid "Assists Enabled: <span class=\"text-text-accent font-bold\">{0}</span>"
-msgstr "보조 기능 활성화됨: <span class=\"text-text-accent font-bold\">{0}</span>"
+msgstr ""
+"보조 기능 활성화됨: <span class=\"text-text-accent font-bold\">{0}</span>"
 
 #, csharp-format
 msgid "Latest Version: {0}"
@@ -356,7 +364,8 @@ msgstr "변경 없음 / 사용 불가"
 msgid ""
 "This key is used to select in UI menus. It also acts as the approval key for "
 "any notifications."
-msgstr "이 키는 UI 메뉴에서 선택할 때 사용됩니다. 또한 모든 알림에 대한 승인 키 역할"
+msgstr ""
+"이 키는 UI 메뉴에서 선택할 때 사용됩니다. 또한 모든 알림에 대한 승인 키 역할"
 "도 합니다."
 
 #, csharp-format
@@ -376,7 +385,8 @@ msgstr "이른"
 msgid ""
 "Bad gateway. The server, while acting as a gateway or proxy, received an "
 "invalid response from an inbound server."
-msgstr "잘못된 게이트웨이. 게이트웨이 또는 프록시 역할을 하던 서버가 내부 서버로부터 "
+msgstr ""
+"잘못된 게이트웨이. 게이트웨이 또는 프록시 역할을 하던 서버가 내부 서버로부터 "
 "잘못된 응답을 받았습니다."
 
 msgid "The server timed out waiting for the request from the client."
@@ -395,6 +405,9 @@ msgstr "등록되지 않은 컨트롤: {0} ({1})"
 
 msgid "Contact Us"
 msgstr "문의하기"
+
+msgid "An error occurred while checking for updates."
+msgstr ""
 
 #, csharp-format
 msgid "Copied '{0}' to '{1}'"
@@ -563,7 +576,8 @@ msgstr "느림"
 msgid ""
 "Authentication is required. The client must authenticate itself to get the "
 "requested response."
-msgstr "인증이 필요합니다. 클라이언트가 요청한 응답을 받으려면 인증을 해야 합니다."
+msgstr ""
+"인증이 필요합니다. 클라이언트가 요청한 응답을 받으려면 인증을 해야 합니다."
 
 #, csharp-format
 msgid "Connected joystick: [bold]{0}[/] [gray italic]({1}, {2})[/]"
@@ -600,7 +614,8 @@ msgstr "인스턴스 ID {0}인 알 수 없는 조이스틱에서 입력을 받�
 msgid ""
 "Adjust how quickly ETS2LA will respond to desired changes in acceleration. "
 "Emergency braking is not affected."
-msgstr "ETS2LA가 원하는 가속도 변화에 얼마나 빠르게 반응할지 조정합니다. 비상 제동은 "
+msgstr ""
+"ETS2LA가 원하는 가속도 변화에 얼마나 빠르게 반응할지 조정합니다. 비상 제동은 "
 "영향을 받지 않습니다."
 
 msgid "Display Units"
@@ -635,7 +650,8 @@ msgstr "요청이 너무 많습니다. 주어진 시간 내에 너무 많은 요
 msgid ""
 "This will disconnect ETS2LA from the game and close the window. You can "
 "minimize the window to keep ETS2LA running."
-msgstr "이 작업은 ETS2LA를 게임에서 연결 해제하고 창을 닫습니다. ETS2LA를 계속 실행하"
+msgstr ""
+"이 작업은 ETS2LA를 게임에서 연결 해제하고 창을 닫습니다. ETS2LA를 계속 실행하"
 "려면 창을 최소화할 수 있습니다."
 
 #, csharp-format
@@ -645,7 +661,8 @@ msgstr "카메라 {0} ({1}x{2}"
 msgid ""
 "This setting only loads roads and intersections visible on the in game map. "
 "It discards all other information."
-msgstr "이 설정은 게임 내 지도에 표시되는 도로와 교차로만 로드합니다. 다른 모든 정보"
+msgstr ""
+"이 설정은 게임 내 지도에 표시되는 도로와 교차로만 로드합니다. 다른 모든 정보"
 "는 버립니다."
 
 #, csharp-format
@@ -654,7 +671,8 @@ msgstr "[gray]{0}[/]에서 라이브러리 플러그인을 불러오지 못했�
 
 #, csharp-format
 msgid "Updated bindings for control: {0} ({1}) to Device: {2}, Control: {3}"
-msgstr "컨트롤 {0} ({1})의 바인딩을 장치 {2}, 컨트롤 {3}(으)로 업데이트했습니다"
+msgstr ""
+"컨트롤 {0} ({1})의 바인딩을 장치 {2}, 컨트롤 {3}(으)로 업데이트했습니다"
 
 msgid "Pause When Unstable"
 msgstr "불안정 시 일시정지"
@@ -686,8 +704,9 @@ msgstr "익명"
 msgid ""
 "The units ETS2LA will use when displaying information to a user. Scientific "
 "has only slight differences to metric."
-msgstr "ETS2LA가 사용자에게 정보를 표시할 때 사용할 단위입니다. Scientific은 Metric과"
-" 약간의 차이만 있습니다."
+msgstr ""
+"ETS2LA가 사용자에게 정보를 표시할 때 사용할 단위입니다. Scientific은 Metric"
+"과 약간의 차이만 있습니다."
 
 #, csharp-format
 msgid "Control with ID '{0}' not found for unregistration."
@@ -698,8 +717,8 @@ msgid ""
 "amounts of RAM, and may cause your system to become unstable. Please select "
 "a lower fidelity."
 msgstr ""
-"시스템 RAM이 16GB 미만입니다. 높은 데이터 충실도는 상당한 양의 RAM을 사용하며"
-", 시스템이 불안정해질 수 있습니다. 더 낮은 충실도를 선택해주세요."
+"시스템 RAM이 16GB 미만입니다. 높은 데이터 충실도는 상당한 양의 RAM을 사용하"
+"며, 시스템이 불안정해질 수 있습니다. 더 낮은 충실도를 선택해주세요."
 
 #, csharp-format
 msgid "Failed to shutdown plugin {0}: {1}"
@@ -771,13 +790,14 @@ msgid ""
 "interact with it. NOTE: Interaction with items below the overlay is not "
 "possible during this time."
 msgstr ""
-"이 키를 누르고 있는 동안 오버레이가 마우스 입력을 받아 상호작용할 수 있습니다"
-". 참고: 이 시간 동안에는 오버레이 아래 항목과 상호작용할 수 없습니다."
+"이 키를 누르고 있는 동안 오버레이가 마우스 입력을 받아 상호작용할 수 있습니"
+"다. 참고: 이 시간 동안에는 오버레이 아래 항목과 상호작용할 수 없습니다."
 
 msgid ""
 "The request method is recognized by the server but is not supported by the "
 "target resource."
-msgstr "요청 메서드는 서버에서 인식되지만, 대상 리소스에서는 지원되지 않습니다."
+msgstr ""
+"요청 메서드는 서버에서 인식되지만, 대상 리소스에서는 지원되지 않습니다."
 
 msgid "Binding Successful"
 msgstr "바인딩 성공"
@@ -1111,10 +1131,10 @@ msgstr ""
 msgid "Font file not found at {0}"
 msgstr ""
 
-msgid "Changelog"
+msgid "No release notes available."
 msgstr ""
 
-msgid "No release notes available."
+msgid "Changelog"
 msgstr ""
 
 #, csharp-format
@@ -1295,6 +1315,9 @@ msgid ""
 "sources."
 msgstr ""
 
+msgid "Error Checking for Updates"
+msgstr ""
+
 msgid "Speed Limit"
 msgstr ""
 
@@ -1441,15 +1464,15 @@ msgstr ""
 msgid "Recommended Plugins"
 msgstr ""
 
+msgid "Game added"
+msgstr ""
+
 msgid ""
 "The maximum speed ETS2LA will accelerate to. It might still drift over this "
 "limit due to momentum."
 msgstr ""
 "ETS2LA의 최고 가속 속도입니다. 관성으로 인해 제한 속도를 살짝 오버할 수 있어"
 "요."
-
-msgid "Game added"
-msgstr ""
 
 #, csharp-format
 msgid "Unloading parsed map data for installation at '{0}'"
@@ -1500,10 +1523,10 @@ msgstr ""
 msgid "Assist Mode: <span class=\"text-text-accent font-bold\">{0}</span>"
 msgstr ""
 
-msgid "View Public Telemetry"
+msgid "Adjust the volume of the audio output."
 msgstr ""
 
-msgid "Adjust the volume of the audio output."
+msgid "View Public Telemetry"
 msgstr ""
 
 #, csharp-format
@@ -1560,10 +1583,10 @@ msgstr ""
 msgid "The selected file is not a core.scs file."
 msgstr ""
 
-msgid "Translated by:"
+msgid "This game was found at"
 msgstr ""
 
-msgid "This game was found at"
+msgid "Translated by:"
 msgstr ""
 
 msgid "Data Quality"
@@ -1788,13 +1811,13 @@ msgid "Display Units: "
 msgstr ""
 
 msgid ""
-"The language ETS2LA will be displayed at. Translations are provided by the "
-"community, we cannot guarantee their accuracy."
+"Warning: Your system has less than 20GB of RAM. You can only select up to "
+"High."
 msgstr ""
 
 msgid ""
-"Warning: Your system has less than 20GB of RAM. You can only select up to "
-"High."
+"The language ETS2LA will be displayed at. Translations are provided by the "
+"community, we cannot guarantee their accuracy."
 msgstr ""
 
 msgid "Interaction Mode"

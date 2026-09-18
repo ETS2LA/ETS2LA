@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-09-08 12:21:10+0300\n"
+"POT-Creation-Date: 2026-09-18 19:03:17+0300\n"
 "PO-Revision-Date: 2026-08-26 18:07+0000\n"
 "Last-Translator: phucc <phucc@ets2la.com>\n"
 "Language-Team: Vietnamese <http://weblate.ets2la.com/projects/ets2la/ets2la/"
@@ -226,10 +226,10 @@ msgstr "Giao diện"
 msgid "Additional"
 msgstr "Bổ sung"
 
-msgid "Show Fewer Logs"
+msgid "Install Plugins"
 msgstr ""
 
-msgid "Install Plugins"
+msgid "Show Fewer Logs"
 msgstr ""
 
 #, csharp-format
@@ -401,6 +401,9 @@ msgstr "Điều khiển chưa được đăng kí: {0} ({1})"
 
 msgid "Contact Us"
 msgstr "Liên lạc với chúng tôi"
+
+msgid "An error occurred while checking for updates."
+msgstr ""
 
 #, csharp-format
 msgid "Copied '{0}' to '{1}'"
@@ -1131,11 +1134,11 @@ msgstr "Thêm trò chơi không thành công"
 msgid "Font file not found at {0}"
 msgstr ""
 
-msgid "Changelog"
-msgstr ""
-
 msgid "No release notes available."
 msgstr "Hiện không có ghi chú cập nhật nào."
+
+msgid "Changelog"
+msgstr ""
 
 #, csharp-format
 msgid "Detected a switch to {0}, waiting for its game data to be parsed."
@@ -1314,6 +1317,9 @@ msgid ""
 "sources."
 msgstr ""
 
+msgid "Error Checking for Updates"
+msgstr ""
+
 msgid "Speed Limit"
 msgstr ""
 
@@ -1464,15 +1470,15 @@ msgstr ""
 msgid "Recommended Plugins"
 msgstr ""
 
+msgid "Game added"
+msgstr "Đã thêm trò chơi"
+
 msgid ""
 "The maximum speed ETS2LA will accelerate to. It might still drift over this "
 "limit due to momentum."
 msgstr ""
 "Tốc độ tối đa mà ETS2LA sẽ tăng tốc tới. Xe vẫn có thể vượt quá giới hạn do "
 "đà di chuyển."
-
-msgid "Game added"
-msgstr "Đã thêm trò chơi"
 
 #, csharp-format
 msgid "Unloading parsed map data for installation at '{0}'"
@@ -1527,11 +1533,11 @@ msgstr "Nạp plugin không thành công từ [gray]{0}[/]: {1}"
 msgid "Assist Mode: <span class=\"text-text-accent font-bold\">{0}</span>"
 msgstr ""
 
-msgid "View Public Telemetry"
-msgstr "Xem dữ liệu thu thập từ xa công khai"
-
 msgid "Adjust the volume of the audio output."
 msgstr ""
+
+msgid "View Public Telemetry"
+msgstr "Xem dữ liệu thu thập từ xa công khai"
 
 #, csharp-format
 msgid ""
@@ -1587,11 +1593,11 @@ msgstr ""
 msgid "The selected file is not a core.scs file."
 msgstr ""
 
-msgid "Translated by:"
-msgstr "Được dịch bởi:"
-
 msgid "This game was found at"
 msgstr ""
+
+msgid "Translated by:"
+msgstr "Được dịch bởi:"
 
 msgid "Data Quality"
 msgstr "Chất lượng dữ liệu"
@@ -1824,16 +1830,16 @@ msgid "Display Units: "
 msgstr "Đơn vị hiển thị:. "
 
 msgid ""
+"Warning: Your system has less than 20GB of RAM. You can only select up to "
+"High."
+msgstr ""
+
+msgid ""
 "The language ETS2LA will be displayed at. Translations are provided by the "
 "community, we cannot guarantee their accuracy."
 msgstr ""
 "Ngôn ngữ hiển thị của ETS2LA. Các bản dịch được cung cấp bởi cộng đồng và "
 "chúng tôi không bảo đảm tính chính xác."
-
-msgid ""
-"Warning: Your system has less than 20GB of RAM. You can only select up to "
-"High."
-msgstr ""
 
 msgid "Interaction Mode"
 msgstr "Chế độ tương tác"

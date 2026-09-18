@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-09-08 12:21:10+0300\n"
+"POT-Creation-Date: 2026-09-18 19:03:17+0300\n"
 "PO-Revision-Date: 2026-09-09 11:08+0000\n"
 "Last-Translator: goodnightan <goodnightan@ets2la.com>\n"
 "Language-Team: Chinese (Simplified Han script) <http://weblate.ets2la.com/"
@@ -229,11 +229,11 @@ msgstr "视觉提示"
 msgid "Additional"
 msgstr "其他"
 
-msgid "Show Fewer Logs"
-msgstr "显示更少日志"
-
 msgid "Install Plugins"
 msgstr "安装插件"
+
+msgid "Show Fewer Logs"
+msgstr "显示更少日志"
 
 #, csharp-format
 msgid "Error while downloading update: {0}"
@@ -397,6 +397,9 @@ msgstr "已取消注册控件：{0}（{1}）"
 
 msgid "Contact Us"
 msgstr "联系我们"
+
+msgid "An error occurred while checking for updates."
+msgstr ""
 
 #, csharp-format
 msgid "Copied '{0}' to '{1}'"
@@ -986,8 +989,8 @@ msgid ""
 "text-text-accent\">GitHub Sponsor</span> to cover ongoing development and "
 "operational costs."
 msgstr ""
-"喜欢 ETS2LA 吗？欢迎考虑成为 <span class=\"font-bold text-text-accent\""
-">GitHub 赞助者</span>，帮助我们承担持续开发和运营所需的费用。"
+"喜欢 ETS2LA 吗？欢迎考虑成为 <span class=\"font-bold text-text-"
+"accent\">GitHub 赞助者</span>，帮助我们承担持续开发和运营所需的费用。"
 
 msgid "Error in telemetry update loop."
 msgstr "遥测更新时发生错误。"
@@ -1123,11 +1126,11 @@ msgstr "游戏添加失败"
 msgid "Font file not found at {0}"
 msgstr "找不到字体文件：{0}"
 
-msgid "Changelog"
-msgstr "更新日志"
-
 msgid "No release notes available."
 msgstr "暂无更新日志。"
+
+msgid "Changelog"
+msgstr "更新日志"
 
 #, csharp-format
 msgid "Detected a switch to {0}, waiting for its game data to be parsed."
@@ -1307,6 +1310,9 @@ msgid ""
 "sources."
 msgstr "尝试将更新源更改为“{0}”，但在可用源中找不到该源。"
 
+msgid "Error Checking for Updates"
+msgstr ""
+
 msgid "Speed Limit"
 msgstr "限速"
 
@@ -1457,13 +1463,13 @@ msgstr ""
 msgid "Recommended Plugins"
 msgstr "推荐插件"
 
+msgid "Game added"
+msgstr "游戏已添加"
+
 msgid ""
 "The maximum speed ETS2LA will accelerate to. It might still drift over this "
 "limit due to momentum."
 msgstr "ETS2LA 会加速到的最高速度。由于惯性，速度仍可能略微超过此限制。"
-
-msgid "Game added"
-msgstr "游戏已添加"
 
 #, csharp-format
 msgid "Unloading parsed map data for installation at '{0}'"
@@ -1517,11 +1523,11 @@ msgstr "从 [gray]{0}[/] 加载插件失败：{1}"
 msgid "Assist Mode: <span class=\"text-text-accent font-bold\">{0}</span>"
 msgstr "辅助模式：<span class=\"text-text-accent font-bold\">{0}</span>"
 
-msgid "View Public Telemetry"
-msgstr "查看公开遥测数据"
-
 msgid "Adjust the volume of the audio output."
 msgstr "调整音频输出的音量。"
+
+msgid "View Public Telemetry"
+msgstr "查看公开遥测数据"
 
 #, csharp-format
 msgid ""
@@ -1582,11 +1588,11 @@ msgstr "解析仍会继续，但此文件中的信息将无法供 ETS2LA 使用�
 msgid "The selected file is not a core.scs file."
 msgstr "所选的文件不是 core.scs 文件。"
 
-msgid "Translated by:"
-msgstr "译者为："
-
 msgid "This game was found at"
 msgstr "此游戏位于"
+
+msgid "Translated by:"
+msgstr "译者为："
 
 msgid "Data Quality"
 msgstr "数据质量"
@@ -1812,14 +1818,14 @@ msgid "Display Units: "
 msgstr "显示单位： "
 
 msgid ""
-"The language ETS2LA will be displayed at. Translations are provided by the "
-"community, we cannot guarantee their accuracy."
-msgstr "ETS2LA 的显示语言。翻译由社区提供，我们无法保证其准确性。"
-
-msgid ""
 "Warning: Your system has less than 20GB of RAM. You can only select up to "
 "High."
 msgstr "警告：你的系统内存少于 20GB。你最多只能选择“高”。"
+
+msgid ""
+"The language ETS2LA will be displayed at. Translations are provided by the "
+"community, we cannot guarantee their accuracy."
+msgstr "ETS2LA 的显示语言。翻译由社区提供，我们无法保证其准确性。"
 
 msgid "Interaction Mode"
 msgstr "互动模式"
