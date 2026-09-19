@@ -1,7 +1,7 @@
-### ETS2LA C# 2026.9.5026
-- Added support for ETS2 and ATS 1.61. (**Remember to install the SDKs again!**)
-- Added `PmdFileHandler` to load models.
-- ETS2LA no longer crashes if you don't have a connection to the update server (GitHub).
+### ETS2LA C# 2026.9.XXXX
+- Prevent loading duplicated libraries or plugins. In some cases this could cause a crash on startup.
+- Fixed race condition when removing notifications.
+- Visualization page is now implemented. Requires `VisualizationSockets` plugin.
 
 ---
 <!-- Content inside ETS2LA will be cutoff at the line above, do not place lines inside the changelog. -->

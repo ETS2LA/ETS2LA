@@ -58,9 +58,12 @@ public class NotificationHandler
             if (candidate.Id != id)
                 continue;
 
-            ActiveNotifications.Remove(candidate);
-            OnNotificationRemoved?.Invoke(this, id);
-            return;
+            try
+            {
+                ActiveNotifications.Remove(candidate);
+                OnNotificationRemoved?.Invoke(this, id);
+               return;
+            } catch { return; }
         }
     }
 
