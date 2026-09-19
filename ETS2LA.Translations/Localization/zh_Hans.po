@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-09-18 19:03:17+0300\n"
+"POT-Creation-Date: 2026-09-19 15:24:46+0300\n"
 "PO-Revision-Date: 2026-09-09 11:08+0000\n"
 "Last-Translator: goodnightan <goodnightan@ets2la.com>\n"
 "Language-Team: Chinese (Simplified Han script) <http://weblate.ets2la.com/"
@@ -135,6 +135,11 @@ msgstr[0] "找到了 {0} 条道路"
 msgid "Binding for control {0} ({1}) timed out."
 msgstr "控制 {0}（{1}）的绑定超时了。"
 
+#, csharp-format
+msgid ""
+"Library plugin with ID [gray]{0}[/] is already loaded, skipping duplicate."
+msgstr ""
+
 msgid "Dashboard"
 msgstr "仪表盘"
 
@@ -235,12 +240,12 @@ msgstr "安装插件"
 msgid "Show Fewer Logs"
 msgstr "显示更少日志"
 
+msgid "I won't leave ETS2LA unattended"
+msgstr "我不会在无人看管的情况下运行 ETS2LA"
+
 #, csharp-format
 msgid "Error while downloading update: {0}"
 msgstr "下载更新时发生错误：{0}"
-
-msgid "I won't leave ETS2LA unattended"
-msgstr "我不会在无人看管的情况下运行 ETS2LA"
 
 msgid "Keyboard"
 msgstr "键盘"
@@ -738,12 +743,12 @@ msgstr[0] "找到 {0} 个预制件"
 msgid "Pascals"
 msgstr "帕斯卡（压力单位）"
 
+msgid "You can enable the plugins we installed in a previous step here."
+msgstr "您可以在此处启用我们在上一步安装的插件。"
+
 #, csharp-format
 msgid "Failed to disable {0}: {1}"
 msgstr "停用 {0} 失败:{1}"
-
-msgid "You can enable the plugins we installed in a previous step here."
-msgstr "您可以在此处启用我们在上一步安装的插件。"
 
 msgid "SDK Installed"
 msgstr "已安装SDK"
@@ -885,6 +890,10 @@ msgid "This page will be implemented in a future update."
 msgstr "此页面将于后续更新中实现。"
 
 #, csharp-format
+msgid "Plugin with ID [gray]{0}[/] is already loaded, skipping duplicate."
+msgstr ""
+
+#, csharp-format
 msgid "Failed to download plugin with ID {0} from {1}. Status code: {2}"
 msgstr "从 {1} 下载 ID 为 {0} 的插件失败。状态码：{2}"
 
@@ -961,15 +970,15 @@ msgstr ""
 msgid "Failed to install latest version of plugin with ID {0}."
 msgstr "ID 为 {0} 的插件最新版本安装失败。"
 
+msgid "I understand, now let me in!"
+msgstr "我明白了，现在让我进入！"
+
 #, csharp-format
 msgid ""
 "If you think this is a bug, please report it in the {0}Discord Server{1} or "
 "on {2}GitHub{3}."
 msgstr ""
 "如果你认为这是一个错误，请在 {0}Discord 服务器{1} 或 {2}GitHub{3} 报告。"
-
-msgid "I understand, now let me in!"
-msgstr "我明白了，现在让我进入！"
 
 msgid ""
 "The maximum distance at which 3D elements will be rendered. Lowering this "
@@ -1126,11 +1135,11 @@ msgstr "游戏添加失败"
 msgid "Font file not found at {0}"
 msgstr "找不到字体文件：{0}"
 
-msgid "No release notes available."
-msgstr "暂无更新日志。"
-
 msgid "Changelog"
 msgstr "更新日志"
+
+msgid "No release notes available."
+msgstr "暂无更新日志。"
 
 #, csharp-format
 msgid "Detected a switch to {0}, waiting for its game data to be parsed."
@@ -1463,13 +1472,13 @@ msgstr ""
 msgid "Recommended Plugins"
 msgstr "推荐插件"
 
-msgid "Game added"
-msgstr "游戏已添加"
-
 msgid ""
 "The maximum speed ETS2LA will accelerate to. It might still drift over this "
 "limit due to momentum."
 msgstr "ETS2LA 会加速到的最高速度。由于惯性，速度仍可能略微超过此限制。"
+
+msgid "Game added"
+msgstr "游戏已添加"
 
 #, csharp-format
 msgid "Unloading parsed map data for installation at '{0}'"
@@ -1516,18 +1525,18 @@ msgid "Error initializing memory mapped file: {0}"
 msgstr "初始化内存映射文件时发生错误：{0}"
 
 #, csharp-format
-msgid "Failed to load plugin from [gray]{0}[/]: {1}"
-msgstr "从 [gray]{0}[/] 加载插件失败：{1}"
-
-#, csharp-format
 msgid "Assist Mode: <span class=\"text-text-accent font-bold\">{0}</span>"
 msgstr "辅助模式：<span class=\"text-text-accent font-bold\">{0}</span>"
 
-msgid "Adjust the volume of the audio output."
-msgstr "调整音频输出的音量。"
+#, csharp-format
+msgid "Failed to load plugin from [gray]{0}[/]: {1}"
+msgstr "从 [gray]{0}[/] 加载插件失败：{1}"
 
 msgid "View Public Telemetry"
 msgstr "查看公开遥测数据"
+
+msgid "Adjust the volume of the audio output."
+msgstr "调整音频输出的音量。"
 
 #, csharp-format
 msgid ""
@@ -1588,11 +1597,11 @@ msgstr "解析仍会继续，但此文件中的信息将无法供 ETS2LA 使用�
 msgid "The selected file is not a core.scs file."
 msgstr "所选的文件不是 core.scs 文件。"
 
-msgid "This game was found at"
-msgstr "此游戏位于"
-
 msgid "Translated by:"
 msgstr "译者为："
+
+msgid "This game was found at"
+msgstr "此游戏位于"
 
 msgid "Data Quality"
 msgstr "数据质量"
@@ -1818,14 +1827,14 @@ msgid "Display Units: "
 msgstr "显示单位： "
 
 msgid ""
-"Warning: Your system has less than 20GB of RAM. You can only select up to "
-"High."
-msgstr "警告：你的系统内存少于 20GB。你最多只能选择“高”。"
-
-msgid ""
 "The language ETS2LA will be displayed at. Translations are provided by the "
 "community, we cannot guarantee their accuracy."
 msgstr "ETS2LA 的显示语言。翻译由社区提供，我们无法保证其准确性。"
+
+msgid ""
+"Warning: Your system has less than 20GB of RAM. You can only select up to "
+"High."
+msgstr "警告：你的系统内存少于 20GB。你最多只能选择“高”。"
 
 msgid "Interaction Mode"
 msgstr "互动模式"

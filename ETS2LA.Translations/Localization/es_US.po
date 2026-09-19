@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-09-18 19:03:17+0300\n"
+"POT-Creation-Date: 2026-09-19 15:24:46+0300\n"
 "PO-Revision-Date: 2026-09-09 11:08+0000\n"
 "Last-Translator: McAs13 <tsumiguel@ets2la.com>\n"
 "Language-Team: Spanish (American) <http://weblate.ets2la.com/projects/ets2la/"
@@ -140,6 +140,11 @@ msgstr[1] "se encontraron {0} carreteras"
 msgid "Binding for control {0} ({1}) timed out."
 msgstr "El enlace para el control {0} ({1}) agotó el tiempo de espera."
 
+#, csharp-format
+msgid ""
+"Library plugin with ID [gray]{0}[/] is already loaded, skipping duplicate."
+msgstr ""
+
 msgid "Dashboard"
 msgstr "Panel de control"
 
@@ -243,12 +248,12 @@ msgstr "Instalar plugins"
 msgid "Show Fewer Logs"
 msgstr "Mostrar menos registros"
 
+msgid "I won't leave ETS2LA unattended"
+msgstr "No dejaré ETS2LA sin supervisión"
+
 #, csharp-format
 msgid "Error while downloading update: {0}"
 msgstr "Error al descargar la actualización: {0}"
-
-msgid "I won't leave ETS2LA unattended"
-msgstr "No dejaré ETS2LA sin supervisión"
 
 msgid "Keyboard"
 msgstr "Teclado"
@@ -784,12 +789,12 @@ msgstr[1] "Se encontraron {0} prefabs"
 msgid "Pascals"
 msgstr "Pascales"
 
+msgid "You can enable the plugins we installed in a previous step here."
+msgstr "Aquí puedes habilitar los plugins que instalamos en un paso anterior."
+
 #, csharp-format
 msgid "Failed to disable {0}: {1}"
 msgstr "Error al deshabilitar {0}: {1}"
-
-msgid "You can enable the plugins we installed in a previous step here."
-msgstr "Aquí puedes habilitar los plugins que instalamos en un paso anterior."
 
 msgid "SDK Installed"
 msgstr "SDK instalado"
@@ -939,6 +944,10 @@ msgid "This page will be implemented in a future update."
 msgstr "Esta página se implementará en una futura actualización."
 
 #, csharp-format
+msgid "Plugin with ID [gray]{0}[/] is already loaded, skipping duplicate."
+msgstr ""
+
+#, csharp-format
 msgid "Failed to download plugin with ID {0} from {1}. Status code: {2}"
 msgstr ""
 "Error al descargar el plugin con ID {0} desde {1}. Código de estado: {2}"
@@ -1025,6 +1034,9 @@ msgstr ""
 msgid "Failed to install latest version of plugin with ID {0}."
 msgstr "Error al instalar la última versión del plugin con ID {0}."
 
+msgid "I understand, now let me in!"
+msgstr "¡Entiendo, ahora déjame entrar!"
+
 #, csharp-format
 msgid ""
 "If you think this is a bug, please report it in the {0}Discord Server{1} or "
@@ -1032,9 +1044,6 @@ msgid ""
 msgstr ""
 "Si crees que esto es un error, repórtalo en el {0}Servidor de Discord{1} o "
 "en {2}GitHub{3}."
-
-msgid "I understand, now let me in!"
-msgstr "¡Entiendo, ahora déjame entrar!"
 
 msgid ""
 "The maximum distance at which 3D elements will be rendered. Lowering this "
@@ -1204,11 +1213,11 @@ msgstr "Error al añadir el juego"
 msgid "Font file not found at {0}"
 msgstr "No se encontró el archivo de fuente en {0}"
 
-msgid "No release notes available."
-msgstr "No hay notas de la versión disponibles."
-
 msgid "Changelog"
 msgstr "Registro de cambios"
+
+msgid "No release notes available."
+msgstr "No hay notas de la versión disponibles."
 
 #, csharp-format
 msgid "Detected a switch to {0}, waiting for its game data to be parsed."
@@ -1574,15 +1583,15 @@ msgstr ""
 msgid "Recommended Plugins"
 msgstr "Plugins recomendados"
 
-msgid "Game added"
-msgstr "Juego añadido"
-
 msgid ""
 "The maximum speed ETS2LA will accelerate to. It might still drift over this "
 "limit due to momentum."
 msgstr ""
 "La velocidad máxima a la que ETS2LA acelerará. Es posible que aún supere "
 "este límite debido a la inercia."
+
+msgid "Game added"
+msgstr "Juego añadido"
 
 #, csharp-format
 msgid "Unloading parsed map data for installation at '{0}'"
@@ -1636,19 +1645,19 @@ msgid "Error initializing memory mapped file: {0}"
 msgstr "Error al inicializar el archivo mapeado en memoria: {0}"
 
 #, csharp-format
-msgid "Failed to load plugin from [gray]{0}[/]: {1}"
-msgstr "Error al cargar el plugin desde [gray]{0}[/]: {1}"
-
-#, csharp-format
 msgid "Assist Mode: <span class=\"text-text-accent font-bold\">{0}</span>"
 msgstr ""
 "Modo de asistencia: <span class=\"text-text-accent font-bold\">{0}</span>"
 
-msgid "Adjust the volume of the audio output."
-msgstr "Ajusta el volumen de la salida de audio."
+#, csharp-format
+msgid "Failed to load plugin from [gray]{0}[/]: {1}"
+msgstr "Error al cargar el plugin desde [gray]{0}[/]: {1}"
 
 msgid "View Public Telemetry"
 msgstr "Ver telemetría pública"
+
+msgid "Adjust the volume of the audio output."
+msgstr "Ajusta el volumen de la salida de audio."
 
 #, csharp-format
 msgid ""
@@ -1716,11 +1725,11 @@ msgstr ""
 msgid "The selected file is not a core.scs file."
 msgstr "El archivo seleccionado no es un archivo core.scs."
 
-msgid "This game was found at"
-msgstr "Este juego se encontró en"
-
 msgid "Translated by:"
 msgstr "Traducido por:"
+
+msgid "This game was found at"
+msgstr "Este juego se encontró en"
 
 msgid "Data Quality"
 msgstr "Calidad de los datos"
@@ -1960,18 +1969,18 @@ msgid "Display Units: "
 msgstr "Unidades de visualización: "
 
 msgid ""
-"Warning: Your system has less than 20GB of RAM. You can only select up to "
-"High."
-msgstr ""
-"Advertencia: tu sistema tiene menos de 20 GB de RAM. Solo puedes seleccionar "
-"hasta Alto."
-
-msgid ""
 "The language ETS2LA will be displayed at. Translations are provided by the "
 "community, we cannot guarantee their accuracy."
 msgstr ""
 "El idioma en el que se mostrará ETS2LA. Las traducciones son proporcionadas "
 "por la comunidad, no podemos garantizar su precisión."
+
+msgid ""
+"Warning: Your system has less than 20GB of RAM. You can only select up to "
+"High."
+msgstr ""
+"Advertencia: tu sistema tiene menos de 20 GB de RAM. Solo puedes seleccionar "
+"hasta Alto."
 
 msgid "Interaction Mode"
 msgstr "Modo de interacción"

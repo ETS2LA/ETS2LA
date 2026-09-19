@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-09-18 19:03:17+0300\n"
+"POT-Creation-Date: 2026-09-19 15:24:46+0300\n"
 "PO-Revision-Date: 2026-09-04 20:02+0000\n"
 "Last-Translator: Kivanc <kivanc@ets2la.com>\n"
 "Language-Team: Turkish <http://weblate.ets2la.com/projects/ets2la/ets2la/tr/"
@@ -139,6 +139,11 @@ msgstr[1] ""
 msgid "Binding for control {0} ({1}) timed out."
 msgstr "{0} ({1}) kontrolü için bağlama işlemi zaman aşımına uğradı."
 
+#, csharp-format
+msgid ""
+"Library plugin with ID [gray]{0}[/] is already loaded, skipping duplicate."
+msgstr ""
+
 msgid "Dashboard"
 msgstr "Gösterge Paneli"
 
@@ -240,12 +245,12 @@ msgstr "Eklentileri Yükle"
 msgid "Show Fewer Logs"
 msgstr "Daha az günlük göster"
 
+msgid "I won't leave ETS2LA unattended"
+msgstr ""
+
 #, csharp-format
 msgid "Error while downloading update: {0}"
 msgstr "Güncelleme indirilirken hata oluştu: {0}"
-
-msgid "I won't leave ETS2LA unattended"
-msgstr ""
 
 msgid "Keyboard"
 msgstr "Klavye"
@@ -765,12 +770,12 @@ msgstr[1] ""
 msgid "Pascals"
 msgstr ""
 
+msgid "You can enable the plugins we installed in a previous step here."
+msgstr "Bir önceki adımda yüklenen eklentileri buradan etkinleştirebilirsiniz."
+
 #, csharp-format
 msgid "Failed to disable {0}: {1}"
 msgstr "{0} devre dışı bırakılamadı: {1}"
-
-msgid "You can enable the plugins we installed in a previous step here."
-msgstr "Bir önceki adımda yüklenen eklentileri buradan etkinleştirebilirsiniz."
 
 msgid "SDK Installed"
 msgstr "SDK Yüklendi"
@@ -911,6 +916,10 @@ msgid "This page will be implemented in a future update."
 msgstr "Bu sayfa, gelecek bir güncellemede kullanıma sunulacaktır."
 
 #, csharp-format
+msgid "Plugin with ID [gray]{0}[/] is already loaded, skipping duplicate."
+msgstr ""
+
+#, csharp-format
 msgid "Failed to download plugin with ID {0} from {1}. Status code: {2}"
 msgstr ""
 
@@ -989,6 +998,9 @@ msgstr ""
 msgid "Failed to install latest version of plugin with ID {0}."
 msgstr ""
 
+msgid "I understand, now let me in!"
+msgstr ""
+
 #, csharp-format
 msgid ""
 "If you think this is a bug, please report it in the {0}Discord Server{1} or "
@@ -996,9 +1008,6 @@ msgid ""
 msgstr ""
 "Bunun bir hata olduğunu düşünüyorsanız, lütfen bunu {0}Discord "
 "Sunucusunda{1} veya {2}GitHub'da{3} bildirin."
-
-msgid "I understand, now let me in!"
-msgstr ""
 
 msgid ""
 "The maximum distance at which 3D elements will be rendered. Lowering this "
@@ -1160,11 +1169,11 @@ msgstr "Oyun eklenemedi"
 msgid "Font file not found at {0}"
 msgstr "Yazı tipi dosyası şu konumda bulunamadı: {0}"
 
-msgid "No release notes available."
-msgstr "Sürüm notları mevcut değil."
-
 msgid "Changelog"
 msgstr "Değişiklik Günlüğü"
+
+msgid "No release notes available."
+msgstr "Sürüm notları mevcut değil."
 
 #, csharp-format
 msgid "Detected a switch to {0}, waiting for its game data to be parsed."
@@ -1507,15 +1516,15 @@ msgstr ""
 msgid "Recommended Plugins"
 msgstr ""
 
-msgid "Game added"
-msgstr ""
-
 msgid ""
 "The maximum speed ETS2LA will accelerate to. It might still drift over this "
 "limit due to momentum."
 msgstr ""
 "ETS2LA'nın ulaşabileceği maksimum hız. İvme nedeniyle bu sınırın üzerine "
 "çıkabilir."
+
+msgid "Game added"
+msgstr ""
 
 #, csharp-format
 msgid "Unloading parsed map data for installation at '{0}'"
@@ -1559,17 +1568,17 @@ msgid "Error initializing memory mapped file: {0}"
 msgstr ""
 
 #, csharp-format
-msgid "Failed to load plugin from [gray]{0}[/]: {1}"
-msgstr ""
-
-#, csharp-format
 msgid "Assist Mode: <span class=\"text-text-accent font-bold\">{0}</span>"
 msgstr ""
 
-msgid "Adjust the volume of the audio output."
+#, csharp-format
+msgid "Failed to load plugin from [gray]{0}[/]: {1}"
 msgstr ""
 
 msgid "View Public Telemetry"
+msgstr ""
+
+msgid "Adjust the volume of the audio output."
 msgstr ""
 
 #, csharp-format
@@ -1626,10 +1635,10 @@ msgstr ""
 msgid "The selected file is not a core.scs file."
 msgstr ""
 
-msgid "This game was found at"
+msgid "Translated by:"
 msgstr ""
 
-msgid "Translated by:"
+msgid "This game was found at"
 msgstr ""
 
 msgid "Data Quality"
@@ -1855,13 +1864,13 @@ msgid "Display Units: "
 msgstr ""
 
 msgid ""
-"Warning: Your system has less than 20GB of RAM. You can only select up to "
-"High."
+"The language ETS2LA will be displayed at. Translations are provided by the "
+"community, we cannot guarantee their accuracy."
 msgstr ""
 
 msgid ""
-"The language ETS2LA will be displayed at. Translations are provided by the "
-"community, we cannot guarantee their accuracy."
+"Warning: Your system has less than 20GB of RAM. You can only select up to "
+"High."
 msgstr ""
 
 msgid "Interaction Mode"

@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-09-18 19:03:17+0300\n"
+"POT-Creation-Date: 2026-09-19 15:24:46+0300\n"
 "PO-Revision-Date: 2026-09-13 12:43+0000\n"
 "Last-Translator: bot_lapis <botlapis@ets2la.com>\n"
 "Language-Team: Korean <http://weblate.ets2la.com/projects/ets2la/ets2la/ko/"
@@ -133,6 +133,11 @@ msgstr[0] "도로 {0}개를 찾았습니다"
 msgid "Binding for control {0} ({1}) timed out."
 msgstr "컨트롤 {0} ({1})의 바인딩 시간이 초과되었습니다."
 
+#, csharp-format
+msgid ""
+"Library plugin with ID [gray]{0}[/] is already loaded, skipping duplicate."
+msgstr ""
+
 msgid "Dashboard"
 msgstr "계기판"
 
@@ -235,12 +240,12 @@ msgstr "플러그인 설치"
 msgid "Show Fewer Logs"
 msgstr "로그 적게 보기"
 
+msgid "I won't leave ETS2LA unattended"
+msgstr "ETS2LA를 방치하지 않겠습니다"
+
 #, csharp-format
 msgid "Error while downloading update: {0}"
 msgstr "업데이트를 다운로드하는 중 오류가 발생했습니다: {0}"
-
-msgid "I won't leave ETS2LA unattended"
-msgstr "ETS2LA를 방치하지 않겠습니다"
 
 msgid "Keyboard"
 msgstr "키보드"
@@ -755,12 +760,12 @@ msgstr[0] "프리팹 {0}개를 찾았습니다"
 msgid "Pascals"
 msgstr "파스칼"
 
+msgid "You can enable the plugins we installed in a previous step here."
+msgstr "이전 단계에서 설치한 플러그인을 여기에서 활성화할 수 있습니다."
+
 #, csharp-format
 msgid "Failed to disable {0}: {1}"
 msgstr "{0}을(를) 비활성화하지 못했습니다: {1}"
-
-msgid "You can enable the plugins we installed in a previous step here."
-msgstr "이전 단계에서 설치한 플러그인을 여기에서 활성화할 수 있습니다."
 
 msgid "SDK Installed"
 msgstr "SDK 설치됨"
@@ -894,6 +899,10 @@ msgid "This page will be implemented in a future update."
 msgstr ""
 
 #, csharp-format
+msgid "Plugin with ID [gray]{0}[/] is already loaded, skipping duplicate."
+msgstr ""
+
+#, csharp-format
 msgid "Failed to download plugin with ID {0} from {1}. Status code: {2}"
 msgstr ""
 
@@ -970,13 +979,13 @@ msgstr ""
 msgid "Failed to install latest version of plugin with ID {0}."
 msgstr ""
 
+msgid "I understand, now let me in!"
+msgstr ""
+
 #, csharp-format
 msgid ""
 "If you think this is a bug, please report it in the {0}Discord Server{1} or "
 "on {2}GitHub{3}."
-msgstr ""
-
-msgid "I understand, now let me in!"
 msgstr ""
 
 msgid ""
@@ -1131,10 +1140,10 @@ msgstr ""
 msgid "Font file not found at {0}"
 msgstr ""
 
-msgid "No release notes available."
+msgid "Changelog"
 msgstr ""
 
-msgid "Changelog"
+msgid "No release notes available."
 msgstr ""
 
 #, csharp-format
@@ -1464,15 +1473,15 @@ msgstr ""
 msgid "Recommended Plugins"
 msgstr ""
 
-msgid "Game added"
-msgstr ""
-
 msgid ""
 "The maximum speed ETS2LA will accelerate to. It might still drift over this "
 "limit due to momentum."
 msgstr ""
 "ETS2LA의 최고 가속 속도입니다. 관성으로 인해 제한 속도를 살짝 오버할 수 있어"
 "요."
+
+msgid "Game added"
+msgstr ""
 
 #, csharp-format
 msgid "Unloading parsed map data for installation at '{0}'"
@@ -1516,17 +1525,17 @@ msgid "Error initializing memory mapped file: {0}"
 msgstr ""
 
 #, csharp-format
-msgid "Failed to load plugin from [gray]{0}[/]: {1}"
-msgstr ""
-
-#, csharp-format
 msgid "Assist Mode: <span class=\"text-text-accent font-bold\">{0}</span>"
 msgstr ""
 
-msgid "Adjust the volume of the audio output."
+#, csharp-format
+msgid "Failed to load plugin from [gray]{0}[/]: {1}"
 msgstr ""
 
 msgid "View Public Telemetry"
+msgstr ""
+
+msgid "Adjust the volume of the audio output."
 msgstr ""
 
 #, csharp-format
@@ -1583,10 +1592,10 @@ msgstr ""
 msgid "The selected file is not a core.scs file."
 msgstr ""
 
-msgid "This game was found at"
+msgid "Translated by:"
 msgstr ""
 
-msgid "Translated by:"
+msgid "This game was found at"
 msgstr ""
 
 msgid "Data Quality"
@@ -1811,13 +1820,13 @@ msgid "Display Units: "
 msgstr ""
 
 msgid ""
-"Warning: Your system has less than 20GB of RAM. You can only select up to "
-"High."
+"The language ETS2LA will be displayed at. Translations are provided by the "
+"community, we cannot guarantee their accuracy."
 msgstr ""
 
 msgid ""
-"The language ETS2LA will be displayed at. Translations are provided by the "
-"community, we cannot guarantee their accuracy."
+"Warning: Your system has less than 20GB of RAM. You can only select up to "
+"High."
 msgstr ""
 
 msgid "Interaction Mode"

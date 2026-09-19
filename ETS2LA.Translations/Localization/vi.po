@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-09-18 19:03:17+0300\n"
+"POT-Creation-Date: 2026-09-19 15:24:46+0300\n"
 "PO-Revision-Date: 2026-08-26 18:07+0000\n"
 "Last-Translator: phucc <phucc@ets2la.com>\n"
 "Language-Team: Vietnamese <http://weblate.ets2la.com/projects/ets2la/ets2la/"
@@ -134,6 +134,11 @@ msgstr[0] "Đã tìm thấy {0} tuyến đường"
 msgid "Binding for control {0} ({1}) timed out."
 msgstr "Quá thời gian gán phím cho nút điều khiển {0} ({1})."
 
+#, csharp-format
+msgid ""
+"Library plugin with ID [gray]{0}[/] is already loaded, skipping duplicate."
+msgstr ""
+
 msgid "Dashboard"
 msgstr "Bảng điều khiển"
 
@@ -232,12 +237,12 @@ msgstr ""
 msgid "Show Fewer Logs"
 msgstr ""
 
+msgid "I won't leave ETS2LA unattended"
+msgstr ""
+
 #, csharp-format
 msgid "Error while downloading update: {0}"
 msgstr "Lỗi khi đang tải bản cập nhật: {0}"
-
-msgid "I won't leave ETS2LA unattended"
-msgstr ""
 
 msgid "Keyboard"
 msgstr "Bàn phím"
@@ -749,11 +754,11 @@ msgstr[1] ""
 msgid "Pascals"
 msgstr "Pascals"
 
-#, csharp-format
-msgid "Failed to disable {0}: {1}"
+msgid "You can enable the plugins we installed in a previous step here."
 msgstr ""
 
-msgid "You can enable the plugins we installed in a previous step here."
+#, csharp-format
+msgid "Failed to disable {0}: {1}"
 msgstr ""
 
 msgid "SDK Installed"
@@ -892,6 +897,10 @@ msgid "This page will be implemented in a future update."
 msgstr "Trang này sẽ được thêm vào trong phiên bản sắp tới."
 
 #, csharp-format
+msgid "Plugin with ID [gray]{0}[/] is already loaded, skipping duplicate."
+msgstr ""
+
+#, csharp-format
 msgid "Failed to download plugin with ID {0} from {1}. Status code: {2}"
 msgstr ""
 
@@ -971,13 +980,13 @@ msgstr ""
 msgid "Failed to install latest version of plugin with ID {0}."
 msgstr ""
 
+msgid "I understand, now let me in!"
+msgstr ""
+
 #, csharp-format
 msgid ""
 "If you think this is a bug, please report it in the {0}Discord Server{1} or "
 "on {2}GitHub{3}."
-msgstr ""
-
-msgid "I understand, now let me in!"
 msgstr ""
 
 msgid ""
@@ -1134,11 +1143,11 @@ msgstr "Thêm trò chơi không thành công"
 msgid "Font file not found at {0}"
 msgstr ""
 
-msgid "No release notes available."
-msgstr "Hiện không có ghi chú cập nhật nào."
-
 msgid "Changelog"
 msgstr ""
+
+msgid "No release notes available."
+msgstr "Hiện không có ghi chú cập nhật nào."
 
 #, csharp-format
 msgid "Detected a switch to {0}, waiting for its game data to be parsed."
@@ -1470,15 +1479,15 @@ msgstr ""
 msgid "Recommended Plugins"
 msgstr ""
 
-msgid "Game added"
-msgstr "Đã thêm trò chơi"
-
 msgid ""
 "The maximum speed ETS2LA will accelerate to. It might still drift over this "
 "limit due to momentum."
 msgstr ""
 "Tốc độ tối đa mà ETS2LA sẽ tăng tốc tới. Xe vẫn có thể vượt quá giới hạn do "
 "đà di chuyển."
+
+msgid "Game added"
+msgstr "Đã thêm trò chơi"
 
 #, csharp-format
 msgid "Unloading parsed map data for installation at '{0}'"
@@ -1526,18 +1535,18 @@ msgid "Error initializing memory mapped file: {0}"
 msgstr ""
 
 #, csharp-format
-msgid "Failed to load plugin from [gray]{0}[/]: {1}"
-msgstr "Nạp plugin không thành công từ [gray]{0}[/]: {1}"
-
-#, csharp-format
 msgid "Assist Mode: <span class=\"text-text-accent font-bold\">{0}</span>"
 msgstr ""
 
-msgid "Adjust the volume of the audio output."
-msgstr ""
+#, csharp-format
+msgid "Failed to load plugin from [gray]{0}[/]: {1}"
+msgstr "Nạp plugin không thành công từ [gray]{0}[/]: {1}"
 
 msgid "View Public Telemetry"
 msgstr "Xem dữ liệu thu thập từ xa công khai"
+
+msgid "Adjust the volume of the audio output."
+msgstr ""
 
 #, csharp-format
 msgid ""
@@ -1593,11 +1602,11 @@ msgstr ""
 msgid "The selected file is not a core.scs file."
 msgstr ""
 
-msgid "This game was found at"
-msgstr ""
-
 msgid "Translated by:"
 msgstr "Được dịch bởi:"
+
+msgid "This game was found at"
+msgstr ""
 
 msgid "Data Quality"
 msgstr "Chất lượng dữ liệu"
@@ -1830,16 +1839,16 @@ msgid "Display Units: "
 msgstr "Đơn vị hiển thị:. "
 
 msgid ""
-"Warning: Your system has less than 20GB of RAM. You can only select up to "
-"High."
-msgstr ""
-
-msgid ""
 "The language ETS2LA will be displayed at. Translations are provided by the "
 "community, we cannot guarantee their accuracy."
 msgstr ""
 "Ngôn ngữ hiển thị của ETS2LA. Các bản dịch được cung cấp bởi cộng đồng và "
 "chúng tôi không bảo đảm tính chính xác."
+
+msgid ""
+"Warning: Your system has less than 20GB of RAM. You can only select up to "
+"High."
+msgstr ""
 
 msgid "Interaction Mode"
 msgstr "Chế độ tương tác"

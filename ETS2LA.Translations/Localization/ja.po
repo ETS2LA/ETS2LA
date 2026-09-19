@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-09-18 19:03:17+0300\n"
+"POT-Creation-Date: 2026-09-19 15:24:46+0300\n"
 "PO-Revision-Date: 2026-09-09 11:08+0000\n"
 "Last-Translator: Pastel <pastel@ets2la.com>\n"
 "Language-Team: Japanese <http://weblate.ets2la.com/projects/ets2la/ets2la/ja/"
@@ -137,6 +137,11 @@ msgstr[0] "{0}件の道路が見つかりました"
 msgid "Binding for control {0} ({1}) timed out."
 msgstr "操作 {0}（{1}）の割り当てがタイムアウトしました。"
 
+#, csharp-format
+msgid ""
+"Library plugin with ID [gray]{0}[/] is already loaded, skipping duplicate."
+msgstr ""
+
 msgid "Dashboard"
 msgstr "ダッシュボード"
 
@@ -240,12 +245,12 @@ msgstr "プラグインのインストール"
 msgid "Show Fewer Logs"
 msgstr "ログの表示数を減らす"
 
+msgid "I won't leave ETS2LA unattended"
+msgstr "ETS2LAを無人で動作させません"
+
 #, csharp-format
 msgid "Error while downloading update: {0}"
 msgstr "アップデートのダウンロード中にエラーが発生しました:{0}"
-
-msgid "I won't leave ETS2LA unattended"
-msgstr "ETS2LAを無人で動作させません"
 
 msgid "Keyboard"
 msgstr "キーボード"
@@ -772,12 +777,12 @@ msgstr[0] "{0}個のプレハブが見つかりました"
 msgid "Pascals"
 msgstr "パスカル"
 
+msgid "You can enable the plugins we installed in a previous step here."
+msgstr "ここで、前の手順でインストールしたプラグインを有効にできます。"
+
 #, csharp-format
 msgid "Failed to disable {0}: {1}"
 msgstr "{0} の無効化に失敗しました: {1}"
-
-msgid "You can enable the plugins we installed in a previous step here."
-msgstr "ここで、前の手順でインストールしたプラグインを有効にできます。"
 
 msgid "SDK Installed"
 msgstr "SDKがインストールされました"
@@ -929,6 +934,10 @@ msgid "This page will be implemented in a future update."
 msgstr "このページは今後のアップデートで実装される予定です。"
 
 #, csharp-format
+msgid "Plugin with ID [gray]{0}[/] is already loaded, skipping duplicate."
+msgstr ""
+
+#, csharp-format
 msgid "Failed to download plugin with ID {0} from {1}. Status code: {2}"
 msgstr ""
 "ID {0} のプラグインを {1} からダウンロードできませんでした。ステータスコー"
@@ -1013,6 +1022,9 @@ msgstr ""
 msgid "Failed to install latest version of plugin with ID {0}."
 msgstr "ID {0} のプラグインの最新バージョンのインストールに失敗しました。"
 
+msgid "I understand, now let me in!"
+msgstr "理解しました。始めよう!"
+
 #, csharp-format
 msgid ""
 "If you think this is a bug, please report it in the {0}Discord Server{1} or "
@@ -1020,9 +1032,6 @@ msgid ""
 msgstr ""
 "バグだと思われる場合は、{0}Discordサーバー{1}または{2}GitHub{3}で報告してくだ"
 "さい。"
-
-msgid "I understand, now let me in!"
-msgstr "理解しました。始めよう!"
 
 msgid ""
 "The maximum distance at which 3D elements will be rendered. Lowering this "
@@ -1188,11 +1197,11 @@ msgstr "ゲームの追加に失敗しました"
 msgid "Font file not found at {0}"
 msgstr "フォントファイルが {0} に見つかりません"
 
-msgid "No release notes available."
-msgstr "リリースノートはありません。"
-
 msgid "Changelog"
 msgstr "変更履歴"
+
+msgid "No release notes available."
+msgstr "リリースノートはありません。"
 
 #, csharp-format
 msgid "Detected a switch to {0}, waiting for its game data to be parsed."
@@ -1556,15 +1565,15 @@ msgstr ""
 msgid "Recommended Plugins"
 msgstr "おすすめのプラグイン"
 
-msgid "Game added"
-msgstr "ゲームを追加しました"
-
 msgid ""
 "The maximum speed ETS2LA will accelerate to. It might still drift over this "
 "limit due to momentum."
 msgstr ""
 "ETS2LAが加速する最高速度です。慣性により、この制限速度を超える場合がありま"
 "す。"
+
+msgid "Game added"
+msgstr "ゲームを追加しました"
 
 #, csharp-format
 msgid "Unloading parsed map data for installation at '{0}'"
@@ -1617,18 +1626,18 @@ msgid "Error initializing memory mapped file: {0}"
 msgstr "メモリマップファイルの初期化中にエラーが発生しました: {0}"
 
 #, csharp-format
-msgid "Failed to load plugin from [gray]{0}[/]: {1}"
-msgstr "プラグインを [gray]{0}[/] から読み込めませんでした: {1}"
-
-#, csharp-format
 msgid "Assist Mode: <span class=\"text-text-accent font-bold\">{0}</span>"
 msgstr "アシストモード: <span class=\"text-text-accent font-bold\">{0}</span>"
 
-msgid "Adjust the volume of the audio output."
-msgstr "音声出力の音量を調整します。"
+#, csharp-format
+msgid "Failed to load plugin from [gray]{0}[/]: {1}"
+msgstr "プラグインを [gray]{0}[/] から読み込めませんでした: {1}"
 
 msgid "View Public Telemetry"
 msgstr "公開テレメトリを表示"
+
+msgid "Adjust the volume of the audio output."
+msgstr "音声出力の音量を調整します。"
 
 #, csharp-format
 msgid ""
@@ -1695,11 +1704,11 @@ msgstr ""
 msgid "The selected file is not a core.scs file."
 msgstr "選択されたファイルは core.scs ファイルではありません。"
 
-msgid "This game was found at"
-msgstr "このゲームが見つかった場所"
-
 msgid "Translated by:"
 msgstr "翻訳者:"
+
+msgid "This game was found at"
+msgstr "このゲームが見つかった場所"
 
 msgid "Data Quality"
 msgstr "データの品質"
@@ -1938,17 +1947,17 @@ msgid "Display Units: "
 msgstr "表示単位： "
 
 msgid ""
-"Warning: Your system has less than 20GB of RAM. You can only select up to "
-"High."
-msgstr ""
-"警告: お使いのシステムのRAM容量が20GB未満です。「高」までしか選択できません。"
-
-msgid ""
 "The language ETS2LA will be displayed at. Translations are provided by the "
 "community, we cannot guarantee their accuracy."
 msgstr ""
 "ETS2LAで表示される言語です。翻訳はコミュニティによって提供されているため、そ"
 "の正確性を保証することはできません。"
+
+msgid ""
+"Warning: Your system has less than 20GB of RAM. You can only select up to "
+"High."
+msgstr ""
+"警告: お使いのシステムのRAM容量が20GB未満です。「高」までしか選択できません。"
 
 msgid "Interaction Mode"
 msgstr "インタラクションモード"

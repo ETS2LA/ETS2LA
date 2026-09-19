@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-09-18 19:03:17+0300\n"
+"POT-Creation-Date: 2026-09-19 15:24:46+0300\n"
 "PO-Revision-Date: 2026-09-08 09:24+0000\n"
 "Last-Translator: Ketchup1812 <ketchup1812@ets2la.com>\n"
 "Language-Team: Slovak <http://weblate.ets2la.com/projects/ets2la/ets2la/sk/"
@@ -138,6 +138,11 @@ msgstr[2] "Bolo nájdených {0} ciest"
 msgid "Binding for control {0} ({1}) timed out."
 msgstr "Vypršal časový limit pre mapovanie ovládacieho prvku {0} ({1})."
 
+#, csharp-format
+msgid ""
+"Library plugin with ID [gray]{0}[/] is already loaded, skipping duplicate."
+msgstr ""
+
 msgid "Dashboard"
 msgstr "Ovládací panel"
 
@@ -243,12 +248,12 @@ msgstr "Nainštalujte pluginy"
 msgid "Show Fewer Logs"
 msgstr "Zobraziť menej záznamov"
 
+msgid "I won't leave ETS2LA unattended"
+msgstr "Nenechám ETS2LA bez dozoru"
+
 #, csharp-format
 msgid "Error while downloading update: {0}"
 msgstr "Chyba pri sťahovaní aktualizácie: {0}"
-
-msgid "I won't leave ETS2LA unattended"
-msgstr "Nenechám ETS2LA bez dozoru"
 
 msgid "Keyboard"
 msgstr "Klávesnica"
@@ -783,13 +788,13 @@ msgstr[2] "Bolo nájdených {0} prefabov"
 msgid "Pascals"
 msgstr "Pascali"
 
-#, csharp-format
-msgid "Failed to disable {0}: {1}"
-msgstr "Nepodarilo sa vypnúť {0}: {1}"
-
 msgid "You can enable the plugins we installed in a previous step here."
 msgstr ""
 "Tu môžete aktivovať pluginy, ktoré sme nainštalovali v predchádzajúcom kroku."
+
+#, csharp-format
+msgid "Failed to disable {0}: {1}"
+msgstr "Nepodarilo sa vypnúť {0}: {1}"
 
 msgid "SDK Installed"
 msgstr "SDK je nainštalované"
@@ -941,6 +946,10 @@ msgid "This page will be implemented in a future update."
 msgstr "Táto stránka bude sprístupnená v budúcej aktualizácii."
 
 #, csharp-format
+msgid "Plugin with ID [gray]{0}[/] is already loaded, skipping duplicate."
+msgstr ""
+
+#, csharp-format
 msgid "Failed to download plugin with ID {0} from {1}. Status code: {2}"
 msgstr "Nepodarilo sa stiahnuť plugin s ID {0} z {1}. Kód stavu: {2}"
 
@@ -1028,6 +1037,9 @@ msgstr ""
 msgid "Failed to install latest version of plugin with ID {0}."
 msgstr "Nepodarilo sa nainštalovať najnovšiu verziu pluginu s ID {0}."
 
+msgid "I understand, now let me in!"
+msgstr "Rozumiem, tak ma teraz pusťte dnu!"
+
 #, csharp-format
 msgid ""
 "If you think this is a bug, please report it in the {0}Discord Server{1} or "
@@ -1035,9 +1047,6 @@ msgid ""
 msgstr ""
 "Ak si myslíte, že ide o chybu, nahláste ju prosím na {0}Discord serveri{1} "
 "alebo na {2}GitHube{3}."
-
-msgid "I understand, now let me in!"
-msgstr "Rozumiem, tak ma teraz pusťte dnu!"
 
 msgid ""
 "The maximum distance at which 3D elements will be rendered. Lowering this "
@@ -1205,11 +1214,11 @@ msgstr "Nepodarilo sa pridať hru"
 msgid "Font file not found at {0}"
 msgstr "Súbor s písmom sa nenašiel v {0}"
 
-msgid "No release notes available."
-msgstr "Poznámky k verzii nie sú k dispozícii."
-
 msgid "Changelog"
 msgstr "Zoznam zmien"
+
+msgid "No release notes available."
+msgstr "Poznámky k verzii nie sú k dispozícii."
 
 #, csharp-format
 msgid "Detected a switch to {0}, waiting for its game data to be parsed."
@@ -1576,15 +1585,15 @@ msgstr ""
 msgid "Recommended Plugins"
 msgstr "Odporúčané pluginy"
 
-msgid "Game added"
-msgstr "Hra bola pridaná"
-
 msgid ""
 "The maximum speed ETS2LA will accelerate to. It might still drift over this "
 "limit due to momentum."
 msgstr ""
 "Maximálna rýchlosť, na ktorú ETS2LA zrýchli. V dôsledku hybnosti sa však "
 "môže stať, že túto hranicu prekročí."
+
+msgid "Game added"
+msgstr "Hra bola pridaná"
 
 #, csharp-format
 msgid "Unloading parsed map data for installation at '{0}'"
@@ -1638,18 +1647,18 @@ msgid "Error initializing memory mapped file: {0}"
 msgstr "Chyba pri inicializácii súboru mapovaného v pamäti: {0}"
 
 #, csharp-format
-msgid "Failed to load plugin from [gray]{0}[/]: {1}"
-msgstr "Nepodarilo sa načítať plugin z [gray]{0}[/]: {1}"
-
-#, csharp-format
 msgid "Assist Mode: <span class=\"text-text-accent font-bold\">{0}</span>"
 msgstr "Režim asistenta: <span class=\"text-text-accent font-bold\">{0}</span>"
 
-msgid "Adjust the volume of the audio output."
-msgstr "Upravte hlasitosť zvukového výstupu."
+#, csharp-format
+msgid "Failed to load plugin from [gray]{0}[/]: {1}"
+msgstr "Nepodarilo sa načítať plugin z [gray]{0}[/]: {1}"
 
 msgid "View Public Telemetry"
 msgstr "Zobraziť verejnú telemetriu"
+
+msgid "Adjust the volume of the audio output."
+msgstr "Upravte hlasitosť zvukového výstupu."
 
 #, csharp-format
 msgid ""
@@ -1717,11 +1726,11 @@ msgstr ""
 msgid "The selected file is not a core.scs file."
 msgstr "Vybraný súbor nie je súbor typu core.scs."
 
-msgid "This game was found at"
-msgstr "Túto hru sme našli v"
-
 msgid "Translated by:"
 msgstr "Preložil:"
+
+msgid "This game was found at"
+msgstr "Túto hru sme našli v"
 
 msgid "Data Quality"
 msgstr "Kvalita údajov"
@@ -1959,18 +1968,18 @@ msgid "Display Units: "
 msgstr "Jednotka: "
 
 msgid ""
-"Warning: Your system has less than 20GB of RAM. You can only select up to "
-"High."
-msgstr ""
-"Upozornenie: Váš systém má menej ako 20 GB pamäte RAM. Môžete zvoliť "
-"maximálne úroveň „Vysoký“."
-
-msgid ""
 "The language ETS2LA will be displayed at. Translations are provided by the "
 "community, we cannot guarantee their accuracy."
 msgstr ""
 "Jazyk, v ktorom sa bude zobrazovať ETS2LA. Preklady poskytuje komunita, "
 "nemôžeme zaručiť ich správnosť :)"
+
+msgid ""
+"Warning: Your system has less than 20GB of RAM. You can only select up to "
+"High."
+msgstr ""
+"Upozornenie: Váš systém má menej ako 20 GB pamäte RAM. Môžete zvoliť "
+"maximálne úroveň „Vysoký“."
 
 msgid "Interaction Mode"
 msgstr "Režim interakcie"

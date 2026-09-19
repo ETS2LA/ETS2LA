@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-09-18 19:03:17+0300\n"
+"POT-Creation-Date: 2026-09-19 15:24:46+0300\n"
 "PO-Revision-Date: 2026-09-08 09:24+0000\n"
 "Last-Translator: Tumppi066 <contact@ets2la.com>\n"
 "Language-Team: Finnish <http://weblate.ets2la.com/projects/ets2la/ets2la/fi/"
@@ -139,6 +139,11 @@ msgstr[1] "{0} tietä"
 msgid "Binding for control {0} ({1}) timed out."
 msgstr "Ohjainmäärityksen {0} ({1}) määritys aikakatkaistiin."
 
+#, csharp-format
+msgid ""
+"Library plugin with ID [gray]{0}[/] is already loaded, skipping duplicate."
+msgstr ""
+
 msgid "Dashboard"
 msgstr "Etusivu"
 
@@ -242,12 +247,12 @@ msgstr "Asenna Lisäosat"
 msgid "Show Fewer Logs"
 msgstr "Näytä vähemmän lokeja"
 
+msgid "I won't leave ETS2LA unattended"
+msgstr "En jätä sovellusta vahtimatta"
+
 #, csharp-format
 msgid "Error while downloading update: {0}"
 msgstr "Virhe päivityksen latauksessa: {0}"
-
-msgid "I won't leave ETS2LA unattended"
-msgstr "En jätä sovellusta vahtimatta"
 
 msgid "Keyboard"
 msgstr "Näppäimistö"
@@ -780,12 +785,12 @@ msgstr[1] "Löydettiin {0} risteystä"
 msgid "Pascals"
 msgstr "Paskalia"
 
+msgid "You can enable the plugins we installed in a previous step here."
+msgstr "Voit käynnistää aikaisemmin asentamamme lisäosat täältä."
+
 #, csharp-format
 msgid "Failed to disable {0}: {1}"
 msgstr "Virhe lisäosan {0} sulkemisessa: {1}"
-
-msgid "You can enable the plugins we installed in a previous step here."
-msgstr "Voit käynnistää aikaisemmin asentamamme lisäosat täältä."
 
 msgid "SDK Installed"
 msgstr "SDK asennettu"
@@ -935,6 +940,10 @@ msgid "This page will be implemented in a future update."
 msgstr "Tämä sivu rakennetaan tulevassa päivityksessä."
 
 #, csharp-format
+msgid "Plugin with ID [gray]{0}[/] is already loaded, skipping duplicate."
+msgstr ""
+
+#, csharp-format
 msgid "Failed to download plugin with ID {0} from {1}. Status code: {2}"
 msgstr "Lisäosan {0} lataus epäonnistui osoitteesta {1} koodilla {2}"
 
@@ -1018,6 +1027,9 @@ msgstr ""
 msgid "Failed to install latest version of plugin with ID {0}."
 msgstr "Virhe lisäosan {0} uusimman version latauksessa."
 
+msgid "I understand, now let me in!"
+msgstr "Ymmärrän, päästä jo sisään!"
+
 #, csharp-format
 msgid ""
 "If you think this is a bug, please report it in the {0}Discord Server{1} or "
@@ -1025,9 +1037,6 @@ msgid ""
 msgstr ""
 "Jos uskot tämän olevan pikku bugi, kerro meille {0}Discordissa{1} tai {2}"
 "GitHubissa{3}, jotta kärpäslätkä ohjataan oikeaan paikkaan."
-
-msgid "I understand, now let me in!"
-msgstr "Ymmärrän, päästä jo sisään!"
 
 msgid ""
 "The maximum distance at which 3D elements will be rendered. Lowering this "
@@ -1194,11 +1203,11 @@ msgstr "Virhe pelin lisäämisessä"
 msgid "Font file not found at {0}"
 msgstr "Fonttia {0} ei löytynyt"
 
-msgid "No release notes available."
-msgstr "Muutoslokia ei saatavilla."
-
 msgid "Changelog"
 msgstr "Muutosloki"
+
+msgid "No release notes available."
+msgstr "Muutoslokia ei saatavilla."
 
 #, csharp-format
 msgid "Detected a switch to {0}, waiting for its game data to be parsed."
@@ -1560,15 +1569,15 @@ msgstr ""
 msgid "Recommended Plugins"
 msgstr "Suositellut lisäosat"
 
-msgid "Game added"
-msgstr "Peli lisätty"
-
 msgid ""
 "The maximum speed ETS2LA will accelerate to. It might still drift over this "
 "limit due to momentum."
 msgstr ""
 "Maksiminopeus johon ETS2LA kiihdyttää. Alamäessä nopeus voi nousta tätä "
 "korkeammaksi."
+
+msgid "Game added"
+msgstr "Peli lisätty"
 
 #, csharp-format
 msgid "Unloading parsed map data for installation at '{0}'"
@@ -1621,18 +1630,18 @@ msgid "Error initializing memory mapped file: {0}"
 msgstr "Virhe muistitiedoston avaamisessa: {0}"
 
 #, csharp-format
-msgid "Failed to load plugin from [gray]{0}[/]: {1}"
-msgstr "Lisäosan lataus paikasta [gray]{0}[/] epäonnistui: {1}"
-
-#, csharp-format
 msgid "Assist Mode: <span class=\"text-text-accent font-bold\">{0}</span>"
 msgstr "Ajomuoto: <span class=\"text-text-accent font-bold\">{0}</span>"
 
-msgid "Adjust the volume of the audio output."
-msgstr "Säädä äänenvoimakkuutta."
+#, csharp-format
+msgid "Failed to load plugin from [gray]{0}[/]: {1}"
+msgstr "Lisäosan lataus paikasta [gray]{0}[/] epäonnistui: {1}"
 
 msgid "View Public Telemetry"
 msgstr "Katso julkinen telemetria"
+
+msgid "Adjust the volume of the audio output."
+msgstr "Säädä äänenvoimakkuutta."
 
 #, csharp-format
 msgid ""
@@ -1699,11 +1708,11 @@ msgstr ""
 msgid "The selected file is not a core.scs file."
 msgstr "Valittu tiedosto ei ole core.scs."
 
-msgid "This game was found at"
-msgstr "Tämä peli löytyi"
-
 msgid "Translated by:"
 msgstr "Kääntäjänä toimi:"
+
+msgid "This game was found at"
+msgstr "Tämä peli löytyi"
 
 msgid "Data Quality"
 msgstr "Karttadatan Laatu"
@@ -1938,18 +1947,18 @@ msgid "Display Units: "
 msgstr "Yksiköt: "
 
 msgid ""
-"Warning: Your system has less than 20GB of RAM. You can only select up to "
-"High."
-msgstr ""
-"Varoitus: Laitteessasi on vähemmän kuin 20GB muistia. Voit valita "
-"korkeintaan \"Korkea\" asetuksen."
-
-msgid ""
 "The language ETS2LA will be displayed at. Translations are provided by the "
 "community, we cannot guarantee their accuracy."
 msgstr ""
 "Kieli jolla ETS2LA näytetään. Käännökset ovat yhteysön tekemiä, joten emme "
 "takaa niiden laatua. Paitsi suomeksi tietenkin, kirjoitettu by yours truly."
+
+msgid ""
+"Warning: Your system has less than 20GB of RAM. You can only select up to "
+"High."
+msgstr ""
+"Varoitus: Laitteessasi on vähemmän kuin 20GB muistia. Voit valita "
+"korkeintaan \"Korkea\" asetuksen."
 
 msgid "Interaction Mode"
 msgstr "Muokkaustila"
