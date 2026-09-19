@@ -133,6 +133,12 @@ public class PluginHandler
                 foreach (var type in libraryTypes)
                 {
                     var libraryPlugin = (ILibraryPlugin)Activator.CreateInstance(type)!;
+                    if (LoadedLibraryPlugins.Any(p => p.Info.Id == libraryPlugin.Info.Id))
+                    {
+                        Logger.Warn(_("Library plugin with ID [gray]{0}[/] is already loaded, skipping duplicate.", libraryPlugin.Info.Id));
+                        continue;
+                    }
+
                     LoadedLibraryPlugins.Add(libraryPlugin);
                     Logger.Info(_("Loaded library plugin: [gray]{0}[/] from [gray]{1}[/].", type.FullName ?? "Unknown", filename));
                 }
@@ -176,8 +182,13 @@ public class PluginHandler
                 foreach (var type in pluginTypes)
                 {
                     var plugin = (IPlugin)Activator.CreateInstance(type)!;
+                    if (LoadedPlugins.Any(p => p.Info.Id == plugin.Info.Id))
+                    {
+                        Logger.Warn(_("Plugin with ID [gray]{0}[/] is already loaded, skipping duplicate.", type.FullName ?? "Unknown"));
+                        continue;
+                    }
+                    
                     plugin.Init();
-
                     LoadedPlugins.Add(plugin);
                     _pluginLoadContexts[plugin] = loadContext;
                     
