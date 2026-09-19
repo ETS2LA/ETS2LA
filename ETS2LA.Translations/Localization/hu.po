@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
 "POT-Creation-Date: 2026-09-18 19:03:17+0300\n"
-"PO-Revision-Date: 2026-09-18 16:07+0000\n"
+"PO-Revision-Date: 2026-09-19 12:33+0000\n"
 "Last-Translator: delilevente <delilevente@ets2la.com>\n"
 "Language-Team: Hungarian <http://weblate.ets2la.com/projects/ets2la/ets2la/"
 "hu/>\n"
@@ -30,7 +30,7 @@ msgid "Display"
 msgstr "Kijelző"
 
 msgid "Overlay Interaction"
-msgstr "Felület interakció"
+msgstr "Overlay interakció"
 
 msgid "SDK Installation Failed"
 msgstr "SDK telepítése síkertelen"
@@ -132,7 +132,7 @@ msgid "Dashboard"
 msgstr "Irányítópult"
 
 msgid "Update Available"
-msgstr ""
+msgstr "Firssítés elérhető"
 
 msgid "Error in navigation update loop."
 msgstr ""
@@ -157,7 +157,7 @@ msgid "Contact us on Discord"
 msgstr ""
 
 msgid "km/h"
-msgstr ""
+msgstr "km/ó"
 
 msgid ""
 "ETS2LA will display information on top of the game. You can interact with "
@@ -172,7 +172,7 @@ msgid "The step size for changing the cruise control speed."
 msgstr ""
 
 msgid "Welcome to ETS2LA!"
-msgstr ""
+msgstr "Üdvözöl az ETS2LA!"
 
 msgid ""
 "<span class=\"text-text-accent\"))>Success!</span> You can find more plugins "
@@ -180,7 +180,7 @@ msgid ""
 msgstr ""
 
 msgid "Initializing..."
-msgstr ""
+msgstr "Telepítés..."
 
 #, csharp-format
 msgid "Error rendering window {0}: {1}"
@@ -192,7 +192,7 @@ msgstr ""
 
 #, csharp-format
 msgid "Error loading '{0}': {1}"
-msgstr ""
+msgstr "Betöltési hiba '{0}': {1}"
 
 msgid ""
 "ETS2LA requires you to install our <span class=\"text-text-accent font-"
@@ -214,7 +214,7 @@ msgid "Additional"
 msgstr ""
 
 msgid "Install Plugins"
-msgstr ""
+msgstr "Pluginok telepítése"
 
 msgid "Show Fewer Logs"
 msgstr ""
@@ -227,7 +227,7 @@ msgid "I won't leave ETS2LA unattended"
 msgstr ""
 
 msgid "Keyboard"
-msgstr ""
+msgstr "Billentyüzet"
 
 #, csharp-format
 msgid "No game executable found in '{0}', not adding it as an installation."
@@ -240,10 +240,10 @@ msgid "Failed to create GLFW window"
 msgstr ""
 
 msgid "Fast"
-msgstr ""
+msgstr "Gyors"
 
 msgid "Install Update and Restart"
-msgstr ""
+msgstr "Frissítés telepítése és újraindítás"
 
 msgid "Curve Quality"
 msgstr ""
@@ -258,10 +258,10 @@ msgid "Successfully uninstalled plugin with ID {0}."
 msgstr ""
 
 msgid "No Update Available"
-msgstr ""
+msgstr "Nincs elérhető frissítés"
 
 msgid "Performance Overlay"
-msgstr ""
+msgstr "Teljesítmény overlay"
 
 #, csharp-format
 msgid "Disconnected joystick: [gray italic]({0})[/]"
@@ -269,7 +269,7 @@ msgstr ""
 
 #, csharp-format
 msgid "Update to {0}"
-msgstr ""
+msgstr "Frissítés erre a verzióra: {0}"
 
 #, csharp-format
 msgid "Control with ID '{0}' not found for updating axis behavior."
@@ -290,7 +290,7 @@ msgid ""
 msgstr ""
 
 msgid "Data Parsing"
-msgstr ""
+msgstr "Adatok kinyerése"
 
 msgid ""
 "Service unavailable. The server is currently unable to handle the request "
@@ -298,7 +298,7 @@ msgid ""
 msgstr ""
 
 msgid "Enabled"
-msgstr ""
+msgstr "Engedélyezve"
 
 msgid ""
 "How early ETS2LA will attempt to respond to possible collisions. Turning "
@@ -315,17 +315,17 @@ msgstr ""
 
 #, csharp-format
 msgid "Latest Version: {0}"
-msgstr ""
+msgstr "Legújabb verzió: {0}"
 
 msgid "Translating release notes..."
 msgstr ""
 
 #, csharp-format
 msgid "Failed to read version from '{0}': {1}"
-msgstr ""
+msgstr "Hiba a játékverzió kiolvasása során: '{0}': {1}"
 
 msgid "Are you sure?"
-msgstr ""
+msgstr "Biztos vagy benne?"
 
 msgid "Render AR Elements"
 msgstr ""
@@ -350,7 +350,7 @@ msgid "Failed to uninstall current version of plugin with ID {0}."
 msgstr ""
 
 msgid "Early"
-msgstr ""
+msgstr "Korán"
 
 msgid ""
 "Bad gateway. The server, while acting as a gateway or proxy, received an "
@@ -361,7 +361,7 @@ msgid "The server timed out waiting for the request from the client."
 msgstr ""
 
 msgid "Backend shutdown complete."
-msgstr ""
+msgstr "Backend leállítva."
 
 #, csharp-format
 msgid "Control with ID '{0}' not found for event subscription."
@@ -379,13 +379,13 @@ msgstr ""
 
 #, csharp-format
 msgid "Copied '{0}' to '{1}'"
-msgstr ""
+msgstr "'{0}' másolva ide: '{1}'"
 
 msgid "Clear Console"
 msgstr ""
 
 msgid "show"
-msgstr ""
+msgstr "Megjelenítsd"
 
 msgid "Select core.scs"
 msgstr ""
@@ -403,7 +403,7 @@ msgid "Adaptive Cruise Control Only"
 msgstr ""
 
 msgid "Initializing GLFW..."
-msgstr ""
+msgstr "GLFW indítása..."
 
 msgid "3D Renderer"
 msgstr ""
@@ -426,7 +426,7 @@ msgid ""
 msgstr ""
 
 msgid "Uninstall"
-msgstr ""
+msgstr "Eltávolítás"
 
 msgid ""
 "Anonymous telemetry helps us improve ETS2LA by giving us insights into "
@@ -435,10 +435,10 @@ msgid ""
 msgstr ""
 
 msgid "SDK Uninstalled"
-msgstr ""
+msgstr "SDK eltávolítva"
 
 msgid "Low"
-msgstr ""
+msgstr "Alacsony"
 
 msgid ""
 "Additionally, some communities like VTCs, Job Trackers and Leaderboards will "
@@ -452,7 +452,7 @@ msgid "Apparent plugin directory {0} does not exist."
 msgstr ""
 
 msgid "Visualization"
-msgstr ""
+msgstr "Vizualizáció"
 
 #, csharp-format
 msgid "Loaded {0} plugin from the Plugins folder."
