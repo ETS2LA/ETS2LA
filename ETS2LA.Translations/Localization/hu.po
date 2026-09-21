@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
 "POT-Creation-Date: 2026-09-19 15:24:46+0300\n"
-"PO-Revision-Date: 2026-09-19 12:33+0000\n"
+"PO-Revision-Date: 2026-09-21 11:05+0000\n"
 "Last-Translator: delilevente <delilevente@ets2la.com>\n"
 "Language-Team: Hungarian <http://weblate.ets2la.com/projects/ets2la/ets2la/"
 "hu/>\n"
@@ -162,7 +162,7 @@ msgid "Contact us on Discord"
 msgstr ""
 
 msgid "km/h"
-msgstr "km/ó"
+msgstr "km/h"
 
 msgid ""
 "ETS2LA will display information on top of the game. You can interact with "
@@ -232,7 +232,7 @@ msgid "Error while downloading update: {0}"
 msgstr ""
 
 msgid "Keyboard"
-msgstr "Billentyüzet"
+msgstr "Billentyűzet"
 
 #, csharp-format
 msgid "No game executable found in '{0}', not adding it as an installation."
@@ -462,27 +462,29 @@ msgstr "Vizualizáció"
 #, csharp-format
 msgid "Loaded {0} plugin from the Plugins folder."
 msgid_plural "Loaded {0} plugins from the Plugins folder."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{0} plugin betöltve a Plugins mappából."
+msgstr[1] "{0} plugin betöltve a Plugins mappából."
 
 msgid "Late"
-msgstr ""
+msgstr "Későn"
 
 msgid "Force Map Load"
 msgstr ""
 
 #, csharp-format
 msgid "Failed to uninstall SDK version '{0}' from '{1}': {2}"
-msgstr ""
+msgstr "Nem sikerült törölni a(z) '{0}' SDK-verziót innen: '{1}': {2}"
 
 msgid "Failed to initialize overlay, ImGui initialization failed."
 msgstr ""
+"Nem sikerült elindítani az overlay-t, az ImGui inicializálása sikertelen "
+"volt."
 
 msgid "Speed Limit Warning"
 msgstr ""
 
 msgid "Speed limit changed"
-msgstr ""
+msgstr "A sebességhatár megváltozott"
 
 #, csharp-format
 msgid "Discovered {0} plugins in total."
@@ -498,16 +500,16 @@ msgid "Failed to discover Dlls: {0}"
 msgstr ""
 
 msgid "Not Installed"
-msgstr ""
+msgstr "Nincs telepítve"
 
 msgid "gal"
-msgstr ""
+msgstr "gal"
 
 msgid "Error in camera update loop."
 msgstr ""
 
 msgid "Enable"
-msgstr ""
+msgstr "Engedélyezve"
 
 #, csharp-format
 msgid "Loading map data from '{0}'"
@@ -526,7 +528,7 @@ msgstr ""
 
 #, csharp-format
 msgid "Current Version: {0}"
-msgstr ""
+msgstr "Jelenlegi verzió: {0}"
 
 #, csharp-format
 msgid "No update available for plugin with ID {0}."
@@ -536,7 +538,7 @@ msgid "Speed Control Step Size"
 msgstr ""
 
 msgid "Slow"
-msgstr ""
+msgstr "Lassú"
 
 msgid ""
 "Authentication is required. The client must authenticate itself to get the "
@@ -555,7 +557,7 @@ msgid "Undetermined"
 msgstr ""
 
 msgid "meters per second"
-msgstr ""
+msgstr "méter per másodperc"
 
 msgid "Update check skipped, using already cached result."
 msgstr ""
@@ -565,7 +567,7 @@ msgid "Installed plugin with ID {0} not found."
 msgstr ""
 
 msgid "Audio"
-msgstr ""
+msgstr "Hang"
 
 #, csharp-format
 msgid "{0} m/s ({1} in {2})"
@@ -642,7 +644,7 @@ msgid "File not found: {0}"
 msgstr ""
 
 msgid "Restart Now"
-msgstr ""
+msgstr "Újraindítás most"
 
 #, csharp-format
 msgid "New limit {0} {1}"
@@ -656,7 +658,7 @@ msgid "Controls Backend shutdown complete, all controls saved."
 msgstr ""
 
 msgid "Anonymous"
-msgstr ""
+msgstr "Névtelen"
 
 msgid ""
 "The units ETS2LA will use when displaying information to a user. Scientific "
@@ -675,7 +677,7 @@ msgstr ""
 
 #, csharp-format
 msgid "Failed to shutdown plugin {0}: {1}"
-msgstr ""
+msgstr "{0} plugin leállítása sikertelen volt: {1}"
 
 #, csharp-format
 msgid "Plugin with ID {0} not found in available plugins."
@@ -685,10 +687,10 @@ msgid "Manager"
 msgstr ""
 
 msgid "Near"
-msgstr ""
+msgstr "Közel"
 
 msgid "Driving"
-msgstr ""
+msgstr "Vezetés"
 
 msgid "Failed to initialize SDL3 input backend."
 msgstr ""
@@ -717,23 +719,23 @@ msgid "Failed to disable {0}: {1}"
 msgstr ""
 
 msgid "SDK Installed"
-msgstr ""
+msgstr "SDK telepítve"
 
 #, csharp-format
 msgid "Bound control {0} ({1}) to device {2} and control {3}"
 msgstr ""
 
 msgid "Current Speed"
-msgstr ""
+msgstr "Jelenlegi sebesség"
 
 msgid "miles per hour"
-msgstr ""
+msgstr "mérföld per óra"
 
 msgid "Limit Overlay Framerate"
 msgstr ""
 
 msgid "Wiki / FAQ"
-msgstr ""
+msgstr "Wiki / GYIK"
 
 #, csharp-format
 msgid "Failed to install SDK from '{0}' to '{1}': {2}"
@@ -757,7 +759,7 @@ msgid "Disable"
 msgstr ""
 
 msgid "Controls"
-msgstr ""
+msgstr "Irányítás"
 
 #, csharp-format
 msgid "Unknown manifest type: {0}"
@@ -770,7 +772,7 @@ msgstr ""
 
 #, csharp-format
 msgid "Download progress: {0}%"
-msgstr ""
+msgstr "Letöltés folyamatban: {0}%"
 
 msgid "Search for plugins..."
 msgstr ""
@@ -779,22 +781,22 @@ msgid "Assists"
 msgstr ""
 
 msgid "SDK Installation"
-msgstr ""
+msgstr "SDK telepítés"
 
 msgid "mph"
-msgstr ""
+msgstr "mph"
 
 msgid "°F"
-msgstr ""
+msgstr "°F"
 
 msgid "Pa"
-msgstr ""
+msgstr "Pa"
 
 msgid "Game Telemetry"
-msgstr ""
+msgstr "Játék telemetria"
 
 msgid "Key"
-msgstr ""
+msgstr "Billentyű"
 
 msgid ""
 "This setting drops redundant information while maintaining most detail "
@@ -810,7 +812,7 @@ msgid ""
 msgstr ""
 
 msgid "Button"
-msgstr ""
+msgstr "Gomb"
 
 msgid "Add Game Manually"
 msgstr ""
@@ -827,7 +829,7 @@ msgid ""
 msgstr ""
 
 msgid "Restart and Continue"
-msgstr ""
+msgstr "Újraindítás és folytatás"
 
 msgid ""
 "Using simplified graphics can improve performance on lower-end hardware, or "
@@ -839,7 +841,7 @@ msgid "Failed to load map for installation at '{0}'"
 msgstr ""
 
 msgid "Not Connected"
-msgstr ""
+msgstr "Nincs csatlakoztatva"
 
 msgid "This page will be implemented in a future update."
 msgstr ""
@@ -853,7 +855,7 @@ msgid "Failed to download plugin with ID {0} from {1}. Status code: {2}"
 msgstr ""
 
 msgid "You are running the latest version."
-msgstr ""
+msgstr "A legfrissebb verziót futtatod."
 
 msgid "No plugins found."
 msgstr ""
@@ -876,13 +878,13 @@ msgid "Error while applying update: {0}"
 msgstr ""
 
 msgid "Following Distance"
-msgstr ""
+msgstr "Követési távolság"
 
 msgid "Check For Updates"
-msgstr ""
+msgstr "Frissítések keresése"
 
 msgid "Telemetry"
-msgstr ""
+msgstr "Telemetria"
 
 msgid ""
 "This allows ETS2LA to render in multiple viewports, meaning you can move "
@@ -904,7 +906,7 @@ msgid "Did you remember to restart after installing them?"
 msgstr ""
 
 msgid "Volume"
-msgstr ""
+msgstr "Hangerő"
 
 #, csharp-format
 msgid "Parsing sector {0} of {1}..."
@@ -943,7 +945,7 @@ msgstr[0] ""
 msgstr[1] ""
 
 msgid "Metric"
-msgstr ""
+msgstr "Metrikus"
 
 msgid ""
 "Like ETS2LA? Consider supporting us by becoming a <span class=\"font-bold "
@@ -976,7 +978,7 @@ msgid "Disabled plugin: [bold]{0}[/]"
 msgstr ""
 
 msgid "Continue"
-msgstr ""
+msgstr "Folytatás"
 
 msgid "Cancel/MODE"
 msgstr ""
@@ -995,7 +997,7 @@ msgid "The plugin was enabled successfully."
 msgstr ""
 
 msgid "Normal"
-msgstr ""
+msgstr "Normál"
 
 msgid "Unknown Control"
 msgstr ""
@@ -1021,7 +1023,7 @@ msgid "Failed to read bundled update source marker: {0}"
 msgstr ""
 
 msgid "liters"
-msgstr ""
+msgstr "liter"
 
 #, csharp-format
 msgid "No valid versions found for plugin with ID {0}."
@@ -1041,7 +1043,7 @@ msgid ""
 msgstr ""
 
 msgid "Downloading Update"
-msgstr ""
+msgstr "Frissítés letöltése"
 
 msgid "Simplified Graphics"
 msgstr ""
@@ -1061,20 +1063,20 @@ msgid ""
 msgstr ""
 
 msgid "No updates available."
-msgstr ""
+msgstr "Nincs elérhető frissítés."
 
 #, csharp-format
 msgid "Error rendering overlay: {0}"
 msgstr ""
 
 msgid "Off"
-msgstr ""
+msgstr "Kikapcsolva"
 
 msgid "L"
-msgstr ""
+msgstr "L"
 
 msgid "Installing..."
-msgstr ""
+msgstr "Telepítés..."
 
 msgid "Failed to add game"
 msgstr ""
@@ -1111,7 +1113,7 @@ msgstr[0] ""
 msgstr[1] ""
 
 msgid "Console"
-msgstr ""
+msgstr "Konzol"
 
 msgid "The game has been added successfully."
 msgstr ""
@@ -1136,14 +1138,14 @@ msgid "Scientific"
 msgstr ""
 
 msgid "Waiting..."
-msgstr ""
+msgstr "Várakozás..."
 
 msgid "hide"
 msgstr ""
 
 #, csharp-format
 msgid "Update available: {0}"
-msgstr ""
+msgstr "Frissítés elérhető: {0}"
 
 msgid "Error in traffic update loop."
 msgstr ""
@@ -1176,7 +1178,7 @@ msgid "SDKs need to be installed."
 msgstr ""
 
 msgid "Hide Installed"
-msgstr ""
+msgstr "Telepített elrejtése"
 
 msgid "Failed to initialize overlay, OpenGL initialization failed."
 msgstr ""
@@ -1192,7 +1194,7 @@ msgid ""
 msgstr ""
 
 msgid "Account"
-msgstr ""
+msgstr "Fiók"
 
 #, csharp-format
 msgid "Found {0} (version: {1}) at '{2}'"
@@ -1204,7 +1206,7 @@ msgid ""
 msgstr ""
 
 msgid "kilometers per hour"
-msgstr ""
+msgstr "kilométer per óra"
 
 #, csharp-format
 msgid "Control with ID '{0}' not found for event unsubscription."
@@ -1232,32 +1234,32 @@ msgid "Update to {0} from {1}"
 msgstr ""
 
 msgid "Restarting ETS2LA..."
-msgstr ""
+msgstr "ETS2LA újraindítása..."
 
 msgid "ETS2LA is running."
-msgstr ""
+msgstr "Az ETS2LA fut."
 
 msgid "Restart"
-msgstr ""
+msgstr "Újraindítás"
 
 msgid "Plugins"
 msgstr ""
 
 msgid "Close"
-msgstr ""
+msgstr "Bezárás"
 
 msgid "lbs"
-msgstr ""
+msgstr "lbs"
 
 #, csharp-format
 msgid "Tried to disable {0}, but it was not found among loaded plugins."
 msgstr ""
 
 msgid "Full Self-Driving"
-msgstr ""
+msgstr "Teljes önvezetés"
 
 msgid "Install"
-msgstr ""
+msgstr "Telepítés"
 
 #, csharp-format
 msgid ""
@@ -1269,7 +1271,7 @@ msgid "Error Checking for Updates"
 msgstr ""
 
 msgid "Speed Limit"
-msgstr ""
+msgstr "Sebességhatár"
 
 msgid "Vision Cameras"
 msgstr ""
@@ -1287,7 +1289,7 @@ msgid ""
 msgstr ""
 
 msgid "Remember!"
-msgstr ""
+msgstr "Ne feledd!"
 
 msgid ""
 "Failed to fetch available plugins. Please check your internet connection."
@@ -1312,26 +1314,26 @@ msgid "Failed to acquire joystick [gray italic]({0})[/]: {1}"
 msgstr ""
 
 msgid "Far"
-msgstr ""
+msgstr "Távol"
 
 msgid "For now, please contact us on GitHub or Discord."
 msgstr ""
 
 msgid "K"
-msgstr ""
+msgstr "K"
 
 msgid "Window"
-msgstr ""
+msgstr "Ablak"
 
 msgid "Settings"
-msgstr ""
+msgstr "Beállítások"
 
 msgid "Error Loading File"
 msgstr ""
 
 #, csharp-format
 msgid "A new update is available: {0}"
-msgstr ""
+msgstr "Új frissítés elérhető: {0}"
 
 msgid "Force Base Map Name"
 msgstr ""
@@ -1340,19 +1342,19 @@ msgid "Experiments"
 msgstr ""
 
 msgid "gallons"
-msgstr ""
+msgstr "gallon"
 
 msgid "m"
-msgstr ""
+msgstr "m"
 
 msgid "SDKs are currently installed."
 msgstr ""
 
 msgid "Restart Required"
-msgstr ""
+msgstr "Újraindítás szükséges"
 
 msgid "I understand"
-msgstr ""
+msgstr "Értettem"
 
 #, csharp-format
 msgid "No map data found for installation at '{0}'. Is the installation valid?"
@@ -1366,10 +1368,10 @@ msgid "Audio playback canceled"
 msgstr ""
 
 msgid "kilograms"
-msgstr ""
+msgstr "kilogramm"
 
 msgid "ft"
-msgstr ""
+msgstr "ft"
 
 #, csharp-format
 msgid ""
@@ -1396,14 +1398,14 @@ msgid ""
 msgstr ""
 
 msgid "psi"
-msgstr ""
+msgstr "psi"
 
 #, csharp-format
 msgid "An error occurred while loading file '{0}': {1}"
 msgstr ""
 
 msgid "Next/OK"
-msgstr ""
+msgstr "Tovább/OK"
 
 msgid ""
 "ETS2LA is running as a system administrator. This puts your system at risk "
@@ -1433,7 +1435,7 @@ msgid ""
 msgstr ""
 
 msgid "Extreme"
-msgstr ""
+msgstr "Extrém"
 
 #, csharp-format
 msgid ""
