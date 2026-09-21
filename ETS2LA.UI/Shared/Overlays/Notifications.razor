@@ -2,6 +2,8 @@
 @using ETS2LA.UI.Shared.Components
 @using ETS2LA.Logging
 
+@inject IJSRuntime JS
+
 @code {
     private List<ETS2LA.Notifications.Notification> notifications = new();
     private Dictionary<string, bool> notificationExitingStates = new();
@@ -12,6 +14,14 @@
         NotificationHandler.Current.OnNotificationAdded += HandleNotificationAdded;
         NotificationHandler.Current.OnNotificationRemoved += HandleNotificationRemoved;
         NotificationHandler.Current.OnNotificationUpdated += HandleNotificationUpdated;
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await JS.InvokeVoidAsync("initNotificationHover");
+        }
     }
 
     private void HandleNotificationAdded(object? sender, ETS2LA.Notifications.Notification notification)
@@ -80,14 +90,14 @@
     }
 }
 
-<div class="fixed bottom-4 right-4 z-[9999] flex flex-col w-[300px] max-h-[calc(100vh-20px)] overflow-y-auto overflow-x-hidden">
+<div class="fixed bottom-4 right-4 z-[9999] flex flex-col w-[300px] max-h-[calc(100vh-20px)] overflow-y-auto overflow-x-hidden pointer-events-none">
     @foreach (var notification in notifications)
     {
         var isExiting = notificationExitingStates.TryGetValue(notification.Id, out var exiting) && exiting;
         
-        <div @key="notification.Id" class="notification-anim-wrapper justify-items-end justify-end @(isExiting ? "exiting" : "")">
-            <div>
-                <div class="notification-anim-content">
+        <div @key="notification.Id" class="notification-anim-wrapper pointer-events-none justify-items-end justify-end @(isExiting ? "exiting" : "")">
+            <div class="pointer-events-none">
+                <div class="notification-anim-content pointer-events-none">
                     <Notification Id="@notification.Id" 
                                   Title="@notification.Title" 
                                   Content="@notification.Content" 

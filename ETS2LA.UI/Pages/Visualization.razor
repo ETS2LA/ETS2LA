@@ -3,6 +3,7 @@
 @using ETS2LA.Game.Telemetry
 @using ETS2LA.State
 @using ETS2LA.Backend.Events
+@using ETS2LA.Shared
 @using ETS2LA.Backend
 
 @code {
@@ -29,99 +30,116 @@
     private bool RightIndicator => GameTelemetry.Current.GetCurrentData().truckBool.blinkerRightOn;
     private bool LeftIndicator => GameTelemetry.Current.GetCurrentData().truckBool.blinkerLeftOn;
 
+    private IPlugin? VisualizationSockets;
 
     protected override void OnInitialized()
     {
         base.OnInitialized();
-        WindowState.Current.IsSidebarOpen = false;
-        WindowState.Current.RequestFullReload();
 
-        Events.Current.Subscribe<GameTelemetryData>(GameTelemetry.Current.EventString, data => InvokeAsync(StateHasChanged));
+        VisualizationSockets = PluginBackend.Current.PluginHandler?.LoadedPlugins.FirstOrDefault(p => p.Info.Id == "tumppi066.visualizationsockets");
+        if (VisualizationSockets != null && VisualizationSockets._IsRunning)
+        {
+            WindowState.Current.IsSidebarOpen = false;
+            WindowState.Current.RequestFullReload();
+
+            Events.Current.Subscribe<GameTelemetryData>(GameTelemetry.Current.EventString, data => InvokeAsync(StateHasChanged));
+        }
     }
 }
 
 <div class="w-full h-full overflow-hidden">
-    <!-- We'll eventually have two iframes here, one for the visualization
-         and one for the map, that's why we're two divs deep. -->
-    <div class="w-full h-full relative">
-        <iframe src="Visualization/index.html" class="w-full h-full bg-bg" />
-        
-        <!-- Overlay for the visualization -->
-        <div class="absolute top-0 left-0 right-0 bottom-0 flex">
-            <div class="w-full h-full flex flex-col justify-between"> <!-- Left -->
-                <div class="flex flex-row w-full gap-5"> <!-- Top -->
-                    <div class="ml-4 mt-4 h-28 w-2 overflow-hidden rounded-md bg-white/15"> <!-- Accel slider -->
-                        <div class="relative h-full w-full">
-                            <div class="z-5 absolute inset-x-0 rounded-md @(IsBraking ? "bg-red-400 top-0" : IsControllingAcceleration ? "bg-sky-400 bottom-0" : "bg-gray-400 bottom-0")" style="height: @(GivenPedalValue * 100)%;"></div>
-                            <div class="z-10 absolute inset-x-0 rounded-md @(IsBraking ? "bg-red-500 top-0" : IsControllingAcceleration ? "bg-sky-500 bottom-0" : "bg-gray-500 bottom-0")" style="height: @(RealPedalValue * 100)%;"></div>
-                        </div>
-                    </div>
-                    <div class="flex flex-col mt-4"> <!-- Speed -->
-                        <p class="text-[72px] font-normal leading-none">@Math.Abs(Math.Round(UnitConversions.FromScientificUnits(UnitType.Speed, GameTelemetry.Current.GetCurrentData().truckFloat.speed, ApplicationState.Current.DisplayUnits), 0))</p>
-                        <p class="description text-[12px]">@UnitConversions.GetUnitAbbreviation(UnitType.Speed, ApplicationState.Current.DisplayUnits)</p>
-                    </div>
-                </div>
-                <div class="flex w-full h-full justify-end items-end"> <!-- Bottom -->
-                    
-                </div>
-            </div>
-            <div class="w-full h-full flex flex-col"> <!-- Right -->
-                <div class="flex w-full h-full justify-end"> <!-- Top -->
-                    <div class="flex flex-col w-12.5 items-center mt-4 mr-6 gap-2">
-                        <div class="flex gap-1 px-2.5 items-center"> <!-- ACC Status -->
-                            <p class=@(IsControllingAcceleration ? "text-sky-500 text-[18px]" : "text-description text-[18px]")>@Math.Round(UnitConversions.FromScientificUnits(UnitType.Speed, ApplicationState.Current.DesiredSpeed, ApplicationState.Current.DisplayUnits), 0)</p>
-                            @if (IsControllingAcceleration)
-                            {
-                                <svg class="text-sky-500 text-[18px]" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
-                                    <path d="M0 0h24v24H0z" fill="none" />
-                                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                                        <path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0-18 0" />
-                                        <path d="M11 12a1 1 0 1 0 2 0a1 1 0 1 0-2 0m2.41-1.41L16 8m-9 4a5 5 0 0 1 5-5" />
-                                    </g>
-                                </svg>
-                            } else 
-                            {
-                                <svg class="text-description text-[18px]" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
-                                    <path d="M0 0h24v24H0z" fill="none" />
-                                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                                        <path d="M20.038 16.052A9 9 0 0 0 7.971 3.95M5.638 5.636a9 9 0 1 0 12.73 12.726" />
-                                        <path d="M11.283 11.303a1 1 0 0 0 1.419 1.41M14 10l2-2m-9 4c0-1.386.564-2.64 1.475-3.546m2.619-1.372Q11.536 7.001 12 7M3 3l18 18" />
-                                    </g>
-                                </svg>
-                            }
-                        </div>
 
-                        <div class="relative w-12.5 h-12.5"> <!-- Speedlimit -->
-                            <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" height="50" width="50" xmlns="http://www.w3.org/2000/svg">
-                                <circle r="23" cx="25" cy="25" fill="none" stroke="#D94646" stroke-width="4" />
+    @if (VisualizationSockets == null || !VisualizationSockets._IsRunning)
+    {
+        <div class="w-full h-full flex flex-col justify-center items-center gap-2">
+            <p class="font-bold">@_("Please enable the Visualization Sockets plugin.")</p>
+            <p class="description">@_("If you've not yet installed it, you can find it in the catalogue.")</p>
+        </div>
+    }
+    else 
+    {
+        <!-- We'll eventually have two iframes here, one for the visualization
+            and one for the map, that's why we're two divs deep. -->
+        <div class="w-full h-full relative">
+            <iframe src="Visualization/index.html" class="w-full h-full bg-bg" />
+            
+            <!-- Overlay for the visualization -->
+            <div class="absolute top-0 left-0 right-0 bottom-0 flex">
+                <div class="w-full h-full flex flex-col justify-between"> <!-- Left -->
+                    <div class="flex flex-row w-full gap-5"> <!-- Top -->
+                        <div class="ml-4 mt-4 h-28 w-2 overflow-hidden rounded-md bg-white/15"> <!-- Accel slider -->
+                            <div class="relative h-full w-full">
+                                <div class="z-5 absolute inset-x-0 rounded-md @(IsBraking ? "bg-red-400 top-0" : IsControllingAcceleration ? "bg-sky-400 bottom-0" : "bg-gray-400 bottom-0")" style="height: @(GivenPedalValue * 100)%;"></div>
+                                <div class="z-10 absolute inset-x-0 rounded-md @(IsBraking ? "bg-red-500 top-0" : IsControllingAcceleration ? "bg-sky-500 bottom-0" : "bg-gray-500 bottom-0")" style="height: @(RealPedalValue * 100)%;"></div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col mt-4"> <!-- Speed -->
+                            <p class="text-[72px] font-normal leading-none">@Math.Abs(Math.Round(UnitConversions.FromScientificUnits(UnitType.Speed, GameTelemetry.Current.GetCurrentData().truckFloat.speed, ApplicationState.Current.DisplayUnits), 0))</p>
+                            <p class="description text-[12px]">@UnitConversions.GetUnitAbbreviation(UnitType.Speed, ApplicationState.Current.DisplayUnits)</p>
+                        </div>
+                    </div>
+                    <div class="flex w-full h-full justify-end items-end"> <!-- Bottom -->
+                        
+                    </div>
+                </div>
+                <div class="w-full h-full flex flex-col"> <!-- Right -->
+                    <div class="flex w-full h-full justify-end"> <!-- Top -->
+                        <div class="flex flex-col w-12.5 items-center mt-4 mr-6 gap-2">
+                            <div class="flex gap-1 px-2.5 items-center"> <!-- ACC Status -->
+                                <p class=@(IsControllingAcceleration ? "text-sky-500 text-[18px]" : "text-description text-[18px]")>@Math.Round(UnitConversions.FromScientificUnits(UnitType.Speed, ApplicationState.Current.DesiredSpeed, ApplicationState.Current.DisplayUnits), 0)</p>
+                                @if (IsControllingAcceleration)
+                                {
+                                    <svg class="text-sky-500 text-[18px]" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                                        <path d="M0 0h24v24H0z" fill="none" />
+                                        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                            <path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0-18 0" />
+                                            <path d="M11 12a1 1 0 1 0 2 0a1 1 0 1 0-2 0m2.41-1.41L16 8m-9 4a5 5 0 0 1 5-5" />
+                                        </g>
+                                    </svg>
+                                } else 
+                                {
+                                    <svg class="text-description text-[18px]" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                                        <path d="M0 0h24v24H0z" fill="none" />
+                                        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                            <path d="M20.038 16.052A9 9 0 0 0 7.971 3.95M5.638 5.636a9 9 0 1 0 12.73 12.726" />
+                                            <path d="M11.283 11.303a1 1 0 0 0 1.419 1.41M14 10l2-2m-9 4c0-1.386.564-2.64 1.475-3.546m2.619-1.372Q11.536 7.001 12 7M3 3l18 18" />
+                                        </g>
+                                    </svg>
+                                }
+                            </div>
+
+                            <div class="relative w-12.5 h-12.5"> <!-- Speedlimit -->
+                                <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" height="50" width="50" xmlns="http://www.w3.org/2000/svg">
+                                    <circle r="23" cx="25" cy="25" fill="none" stroke="#D94646" stroke-width="4" />
+                                </svg>
+                                <p class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[22px] font-normal">@Math.Abs(Math.Round(UnitConversions.FromScientificUnits(UnitType.Speed, GameTelemetry.Current.GetCurrentData().truckFloat.speedLimit, ApplicationState.Current.DisplayUnits), 0))</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex w-full h-full justify-end items-end mb-4 mr-4"> <!-- Bottom -->
+
+                        <!--
+                        @if (RightIndicator)
+                        {
+                            <svg class="text-green-500 text-[24px]" xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 16 16">
+                                <path d="M0 0h16v16H0z" fill="none" />
+                                <path fill="currentColor" d="m12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.482 4.796a1 1 0 0 1 0 1.506z" />
                             </svg>
-                            <p class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[22px] font-normal">@Math.Abs(Math.Round(UnitConversions.FromScientificUnits(UnitType.Speed, GameTelemetry.Current.GetCurrentData().truckFloat.speedLimit, ApplicationState.Current.DisplayUnits), 0))</p>
-                        </div>
+                        }
+
+                        @if (LeftIndicator)
+                        {
+                            <svg class="text-green-500 text-[24px]" xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 16 16">
+                                <path d="M0 0h16v16H0z" fill="none" />
+                                <path fill="currentColor" d="m3.86 8.753l5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753L3.86 7.247a1 1 0 0 0 0 1.506z" />
+                            </svg>
+                        }
+
+                        -->
+
                     </div>
-                </div>
-                <div class="flex w-full h-full justify-end items-end mb-4 mr-4"> <!-- Bottom -->
-
-                    <!--
-                    @if (RightIndicator)
-                    {
-                        <svg class="text-green-500 text-[24px]" xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 16 16">
-                            <path d="M0 0h16v16H0z" fill="none" />
-                            <path fill="currentColor" d="m12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.482 4.796a1 1 0 0 1 0 1.506z" />
-                        </svg>
-                    }
-
-                    @if (LeftIndicator)
-                    {
-                        <svg class="text-green-500 text-[24px]" xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 16 16">
-                            <path d="M0 0h16v16H0z" fill="none" />
-                            <path fill="currentColor" d="m3.86 8.753l5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753L3.86 7.247a1 1 0 0 0 0 1.506z" />
-                        </svg>
-                    }
-
-                    -->
-
                 </div>
             </div>
         </div>
-    </div>
+    }
 </div>

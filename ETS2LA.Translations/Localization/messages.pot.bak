@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-09-19 15:24:26+0300\n"
-"PO-Revision-Date: 2026-09-19 15:24:26+0300\n"
+"POT-Creation-Date: 2026-09-21 13:55:20+0300\n"
+"PO-Revision-Date: 2026-09-21 13:55:20+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -90,6 +90,10 @@ msgstr ""
 
 #: ../../../ETS2LA.UI/Pages/Home.razor:96
 msgid "Become a GitHub Sponsor"
+msgstr ""
+
+#: ../../../ETS2LA.UI/Pages/Visualization.razor:56
+msgid "If you've not yet installed it, you can find it in the catalogue."
 msgstr ""
 
 #: ../../../ETS2LA.UI/Pages/Plugins/Catalogue.razor:163
@@ -221,7 +225,7 @@ msgstr ""
 msgid "Welcome to ETS2LA!"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/PluginStep.razor:50
+#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/PluginStep.razor:51
 msgid ""
 "<span class=\"text-text-accent\"))>Success!</span> You can find more plugins "
 "in the catalogue later."
@@ -271,7 +275,7 @@ msgstr ""
 msgid "Additional"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/PluginStep.razor:55
+#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/PluginStep.razor:56
 msgid "Install Plugins"
 msgstr ""
 
@@ -596,6 +600,10 @@ msgstr[1] ""
 
 #: ../../../ETS2LA.UI/Pages/Settings/Assists.razor:54
 msgid "Late"
+msgstr ""
+
+#: ../../../ETS2LA.UI/Pages/Visualization.razor:55
+msgid "Please enable the Visualization Sockets plugin."
 msgstr ""
 
 #: ../../../ETS2LA.UI/Pages/Settings/Data.razor:64
@@ -995,8 +1003,8 @@ msgstr ""
 msgid "Download progress: {0}%"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Plugins/Manager.razor:89
 #: ../../../ETS2LA.UI/Pages/Plugins/Catalogue.razor:108
+#: ../../../ETS2LA.UI/Pages/Plugins/Manager.razor:89
 msgid "Search for plugins..."
 msgstr ""
 
@@ -1068,7 +1076,7 @@ msgid ""
 "expect over 10GB of usage.</span>"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/PluginStep.razor:51
+#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/PluginStep.razor:52
 msgid "Restart and Continue"
 msgstr ""
 
@@ -1106,8 +1114,8 @@ msgstr ""
 msgid "You are running the latest version."
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Plugins/Manager.razor:102
 #: ../../../ETS2LA.UI/Pages/Plugins/Catalogue.razor:134
+#: ../../../ETS2LA.UI/Pages/Plugins/Manager.razor:102
 msgid "No plugins found."
 msgstr ""
 
@@ -1260,9 +1268,9 @@ msgid "Disabled plugin: [bold]{0}[/]"
 msgstr ""
 
 #: ../../../ETS2LA.UI/Pages/Onboarding/Steps/SDKStep.razor:17
-#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/PluginStep.razor:56
-#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/ControlsStep.razor:48
 #: ../../../ETS2LA.UI/Pages/Onboarding/Steps/OverlayStep.razor:27
+#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/PluginStep.razor:57
+#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/ControlsStep.razor:48
 msgid "Continue"
 msgstr ""
 
@@ -1403,7 +1411,7 @@ msgstr ""
 msgid "L"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/PluginStep.razor:61
+#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/PluginStep.razor:62
 msgid "Installing..."
 msgstr ""
 
@@ -1416,12 +1424,12 @@ msgstr ""
 msgid "Font file not found at {0}"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Plugins/Catalogue.razor:158
-msgid "Changelog"
-msgstr ""
-
 #: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:81
 msgid "No release notes available."
+msgstr ""
+
+#: ../../../ETS2LA.UI/Pages/Plugins/Catalogue.razor:158
+msgid "Changelog"
 msgstr ""
 
 #: ../../../ETS2LA.State/Program.cs:68
@@ -1505,7 +1513,7 @@ msgstr ""
 msgid "Error in plugin {0} Tick: {1}"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/PluginStep.razor:42
+#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/PluginStep.razor:43
 msgid ""
 "To get started fast, you can install our <span class=\"text-text-accent "
 "font-bold\">recommended</span> plugins. These contain everything you need to get "
@@ -1847,7 +1855,7 @@ msgid ""
 "risk."
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/PluginStep.razor:41
+#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/PluginStep.razor:42
 msgid "Recommended Plugins"
 msgstr ""
 
@@ -1907,9 +1915,9 @@ msgid "Target Speed: <span class=\"text-text-accent font-bold\">{0} {1}</span>"
 msgstr ""
 
 #: ../../../ETS2LA.Game/SDK/Navigation.cs:122
-#: ../../../ETS2LA.Game/SDK/ParkedVehicles.cs:108
-#: ../../../ETS2LA.Game/SDK/Semaphores.cs:176
 #: ../../../ETS2LA.Game/SDK/Camera.cs:130
+#: ../../../ETS2LA.Game/SDK/Semaphores.cs:176
+#: ../../../ETS2LA.Game/SDK/ParkedVehicles.cs:108
 #: ../../../ETS2LA.Game/SDK/Traffic.cs:159
 #, csharp-format
 msgid "Error initializing memory mapped file: {0}"

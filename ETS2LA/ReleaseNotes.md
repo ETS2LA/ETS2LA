@@ -2,6 +2,7 @@
 - Prevent loading duplicated libraries or plugins. In some cases this could cause a crash on startup.
 - Fixed race condition when removing notifications.
 - Visualization page is now implemented. Requires `VisualizationSockets` plugin.
+- Notifications will now go transparent if hovered. This allows you to interact with elements below them.
 
 ---
 <!-- Content inside ETS2LA will be cutoff at the line above, do not place lines inside the changelog. -->

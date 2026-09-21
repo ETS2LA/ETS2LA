@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-09-19 15:24:46+0300\n"
-"PO-Revision-Date: 2026-09-19 15:24:46+0300\n"
+"POT-Creation-Date: 2026-09-21 13:55:42+0300\n"
+"PO-Revision-Date: 2026-09-21 13:55:42+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -90,6 +90,10 @@ msgstr ""
 
 #: ../../../ETS2LA.UI/Pages/Home.razor:96
 msgid "Become a GitHub Sponsor"
+msgstr ""
+
+#: ../../../ETS2LA.UI/Pages/Visualization.razor:56
+msgid "If you've not yet installed it, you can find it in the catalogue."
 msgstr ""
 
 #: ../../../ETS2LA.UI/Pages/Plugins/Catalogue.razor:163
@@ -221,7 +225,7 @@ msgstr ""
 msgid "Welcome to ETS2LA!"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/PluginStep.razor:50
+#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/PluginStep.razor:51
 msgid ""
 "<span class=\"text-text-accent\"))>Success!</span> You can find more plugins "
 "in the catalogue later."
@@ -271,7 +275,7 @@ msgstr ""
 msgid "Additional"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/PluginStep.razor:55
+#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/PluginStep.razor:56
 msgid "Install Plugins"
 msgstr ""
 
@@ -598,6 +602,10 @@ msgstr[1] ""
 msgid "Late"
 msgstr ""
 
+#: ../../../ETS2LA.UI/Pages/Visualization.razor:55
+msgid "Please enable the Visualization Sockets plugin."
+msgstr ""
+
 #: ../../../ETS2LA.UI/Pages/Settings/Data.razor:64
 msgid "Force Map Load"
 msgstr ""
@@ -853,8 +861,8 @@ msgid ""
 "has only slight differences to metric."
 msgstr ""
 
-#: ../../../ETS2LA.Controls/Windows/SharpDXControlsBackend.cs:170
 #: ../../../ETS2LA.Controls/Linux/SDL3ControlsBackend.cs:149
+#: ../../../ETS2LA.Controls/Windows/SharpDXControlsBackend.cs:170
 #, csharp-format
 msgid "Control with ID '{0}' not found for unregistration."
 msgstr ""
@@ -1068,7 +1076,7 @@ msgid ""
 "expect over 10GB of usage.</span>"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/PluginStep.razor:51
+#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/PluginStep.razor:52
 msgid "Restart and Continue"
 msgstr ""
 
@@ -1260,7 +1268,7 @@ msgid "Disabled plugin: [bold]{0}[/]"
 msgstr ""
 
 #: ../../../ETS2LA.UI/Pages/Onboarding/Steps/SDKStep.razor:17
-#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/PluginStep.razor:56
+#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/PluginStep.razor:57
 #: ../../../ETS2LA.UI/Pages/Onboarding/Steps/ControlsStep.razor:48
 #: ../../../ETS2LA.UI/Pages/Onboarding/Steps/OverlayStep.razor:27
 msgid "Continue"
@@ -1403,7 +1411,7 @@ msgstr ""
 msgid "L"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/PluginStep.razor:61
+#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/PluginStep.razor:62
 msgid "Installing..."
 msgstr ""
 
@@ -1505,7 +1513,7 @@ msgstr ""
 msgid "Error in plugin {0} Tick: {1}"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/PluginStep.razor:42
+#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/PluginStep.razor:43
 msgid ""
 "To get started fast, you can install our <span class=\"text-text-accent "
 "font-bold\">recommended</span> plugins. These contain everything you need to get "
@@ -1526,8 +1534,8 @@ msgstr ""
 msgid "Responsiveness"
 msgstr ""
 
-#: ../../../ETS2LA.Game/Installation.cs:266
 #: ../../../ETS2LA.Game/Data/Classes.cs:130
+#: ../../../ETS2LA.Game/Installation.cs:266
 msgid "Parsing Map Data"
 msgstr ""
 
@@ -1847,7 +1855,7 @@ msgid ""
 "risk."
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/PluginStep.razor:41
+#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/PluginStep.razor:42
 msgid "Recommended Plugins"
 msgstr ""
 
@@ -1906,11 +1914,11 @@ msgstr ""
 msgid "Target Speed: <span class=\"text-text-accent font-bold\">{0} {1}</span>"
 msgstr ""
 
-#: ../../../ETS2LA.Game/SDK/ParkedVehicles.cs:108
 #: ../../../ETS2LA.Game/SDK/Navigation.cs:122
+#: ../../../ETS2LA.Game/SDK/ParkedVehicles.cs:108
 #: ../../../ETS2LA.Game/SDK/Camera.cs:130
-#: ../../../ETS2LA.Game/SDK/Semaphores.cs:176
 #: ../../../ETS2LA.Game/SDK/Traffic.cs:159
+#: ../../../ETS2LA.Game/SDK/Semaphores.cs:176
 #, csharp-format
 msgid "Error initializing memory mapped file: {0}"
 msgstr ""
