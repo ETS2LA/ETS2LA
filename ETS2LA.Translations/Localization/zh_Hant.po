@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
 "POT-Creation-Date: 2026-09-21 13:56:56+0300\n"
-"PO-Revision-Date: 2026-09-08 09:24+0000\n"
+"PO-Revision-Date: 2026-09-21 15:01+0000\n"
 "Last-Translator: Lun <lun@ets2la.com>\n"
 "Language-Team: Chinese (Traditional Han script) <http://weblate.ets2la.com/"
 "projects/ets2la/ets2la/zh_Hant/>\n"
@@ -83,7 +83,7 @@ msgid "Become a GitHub Sponsor"
 msgstr "成為 GitHub 贊助者"
 
 msgid "If you've not yet installed it, you can find it in the catalogue."
-msgstr ""
+msgstr "如果你還沒有安裝，可以在插件庫中找到它。"
 
 #, csharp-format
 msgid "Installed {0}"
@@ -136,7 +136,7 @@ msgstr "控制項 {0}（{1}）的綁定已逾時。"
 #, csharp-format
 msgid ""
 "Library plugin with ID [gray]{0}[/] is already loaded, skipping duplicate."
-msgstr ""
+msgstr "ID 為 [gray]{0}[/] 的函式庫插件已載入，將跳過重複項目。"
 
 msgid "Dashboard"
 msgstr "首頁"
@@ -402,7 +402,7 @@ msgid "Contact Us"
 msgstr "聯絡我們"
 
 msgid "An error occurred while checking for updates."
-msgstr ""
+msgstr "檢查更新時發生錯誤。"
 
 #, csharp-format
 msgid "Copied '{0}' to '{1}'"
@@ -499,7 +499,7 @@ msgid "Late"
 msgstr "較晚"
 
 msgid "Please enable the Visualization Sockets plugin."
-msgstr ""
+msgstr "請啟用 Visualization Sockets 插件。"
 
 msgid "Force Map Load"
 msgstr "強制載入地圖"
@@ -892,7 +892,7 @@ msgstr "此頁面將於後續更新中實作。"
 
 #, csharp-format
 msgid "Plugin with ID [gray]{0}[/] is already loaded, skipping duplicate."
-msgstr ""
+msgstr "ID 為 [gray]{0}[/] 的插件已載入，跳過重複項目。"
 
 #, csharp-format
 msgid "Failed to download plugin with ID {0} from {1}. Status code: {2}"
@@ -1321,7 +1321,7 @@ msgid ""
 msgstr "嘗試將更新來源變更為「{0}」，但在可用來源中找不到該來源。"
 
 msgid "Error Checking for Updates"
-msgstr ""
+msgstr "檢查更新時發生錯誤"
 
 msgid "Speed Limit"
 msgstr "速限"
