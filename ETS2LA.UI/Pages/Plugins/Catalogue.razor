@@ -24,7 +24,6 @@
     private void OnHideInstalledChanged(ChangeEventArgs e)
     {
         hideInstalled = (bool)e.Value;
-        Logger.Info($"Hide Installed: {hideInstalled}");
         FilterPlugins();
     }
 

@@ -7,9 +7,10 @@
 
 @code {
     PluginHandler handler;
-    
+
     List<IPlugin> Plugins = new List<IPlugin>();
     List<IPlugin> FilteredPlugins = new List<IPlugin>();
+    bool AllEnabled => FilteredPlugins.All(p => p._IsRunning);
 
     string searchQuery = "";
 
@@ -26,16 +27,57 @@
         FilterPlugins();
     }
 
-    private void RefreshPlugins()
+    private void RefreshPlugins(bool fullReload = false)
     {
         if (handler == null)
             handler = PluginBackend.Current.PluginHandler;
         if (handler == null)
             return;
-        
-        Plugins = handler.LoadedPlugins;
-        FilterPlugins();
-        StateHasChanged();
+
+        Task.Run(() =>
+        {
+            if (fullReload)
+            {
+                Plugins = [];
+                FilteredPlugins = [];
+                InvokeAsync(StateHasChanged);
+                handler.UnloadPlugins();
+                handler.LoadPlugins();
+            }
+
+            Plugins = handler.LoadedPlugins;
+            FilterPlugins();
+            InvokeAsync(StateHasChanged);
+        });
+    }
+
+    private void OpenPluginFolder()
+    {
+        if (handler == null)
+            handler = PluginBackend.Current.PluginHandler;
+        if (handler == null)
+            return;
+
+        string pluginFolderPath = handler.PluginRootPath;
+        // On Windows
+        if (pluginFolderPath == "")
+        {
+            pluginFolderPath = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "ETS2LA", "current", "Plugins");
+        }
+
+        if (Directory.Exists(pluginFolderPath))
+        {
+            #if WINDOWS
+                System.Diagnostics.Process.Start("explorer.exe", pluginFolderPath);
+            #else
+                System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo
+                {
+                    FileName = pluginFolderPath,
+                    UseShellExecute = true,
+                    Verb = "open"
+                });
+            #endif
+        }
     }
 
     private void FilterPlugins()
@@ -53,6 +95,32 @@
                 || p.Info.Tags.Any(tag => tag.ToString().Contains(searchQuery, StringComparison.OrdinalIgnoreCase))
             ).ToList();
         }
+    }
+
+    private void EnableAllPlugins()
+    {
+        Task.Run(() =>
+        {
+            foreach (var plugin in FilteredPlugins)
+            {
+                if (!plugin._IsRunning)
+                    handler.EnablePlugin(plugin);
+            }
+            InvokeAsync(StateHasChanged);
+        });
+    }
+
+    private void DisableAllPlugins()
+    {
+        Task.Run(() =>
+        {
+            foreach (var plugin in FilteredPlugins)
+            {
+                if (plugin._IsRunning)
+                    handler.DisablePlugin(plugin);
+            }
+            InvokeAsync(StateHasChanged);
+        });
     }
 
     public bool HasRoute(IPlugin plugin, string route)
@@ -84,11 +152,39 @@
 <div class="flex h-full w-full flex-col bg-bg-dark">
 <div class="flex p-1.5 h-full w-full">
     <!-- Sidebar -->
-    <div class="w-[230px] pl-2 pr-3 pt-2 flex gap-6.5 flex-col h-full">
+    <div class="w-[230px] pl-2 pr-3 pt-2 flex gap-3 flex-col h-full">
         <input type="text"
                placeholder=@(_("Search for plugins..."))
                class="w-full p-2 rounded-md bg-control-bg text-text-muted placeholder:text-text-muted focus:outline-none focus:ring-2 focus:ring-accent"
                @oninput="OnSearchQueryChanged" />
+
+        <div class="flex flex-col gap-1">
+            <div class="flex gap-1">
+                <button class="button w-full!" @onclick="OpenPluginFolder">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16">
+                        <path d="M0 0h16v16H0z" fill="none" />
+                        <g fill="currentColor">
+                            <path d="M14.081 7a1 1 0 0 1 .942 1.336l-1.55 4.337A2 2 0 0 1 11.592 14H3a2 2 0 0 1-.923-.227l1.51-5.66A1.5 1.5 0 0 1 5.037 7z" />
+                            <path d="M4.586 2a1 1 0 0 1 .707.293L7 4h4a2 2 0 0 1 2 2H5.036a2.5 2.5 0 0 0-2.415 1.855l-1.366 5.12A2 2 0 0 1 1 12V4a2 2 0 0 1 2-2z" />
+                        </g>
+                    </svg>
+                </button>
+                <button class="button w-full!" @onclick="() => RefreshPlugins(true)">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none" />
+                        <path fill="currentColor" d="M18.13 17.13c-.15.18-.31.36-.48.52c-.73.74-1.59 1.31-2.54 1.71c-1.97.83-4.26.83-6.23 0c-.95-.4-1.81-.98-2.54-1.72a7.8 7.8 0 0 1-1.71-2.54c-.42-.99-.63-2.03-.63-3.11H2c0 1.35.26 2.66.79 3.89c.5 1.19 1.23 2.26 2.14 3.18s1.99 1.64 3.18 2.14c1.23.52 2.54.79 3.89.79s2.66-.26 3.89-.79c1.19-.5 2.26-1.23 3.18-2.14c.17-.17.32-.35.48-.52L22 20.99v-6h-6l2.13 2.13Zm.94-12.2a9.9 9.9 0 0 0-3.18-2.14a10.12 10.12 0 0 0-7.79 0c-1.19.5-2.26 1.23-3.18 2.14c-.17.17-.32.35-.48.52L1.99 3v6h6L5.86 6.87c.15-.18.31-.36.48-.52c.73-.74 1.59-1.31 2.54-1.71c1.97-.83 4.26-.83 6.23 0c.95.4 1.81.98 2.54 1.72c.74.73 1.31 1.59 1.71 2.54c.42.99.63 2.03.63 3.11h2c0-1.35-.26-2.66-.79-3.89c-.5-1.19-1.23-2.26-2.14-3.18Z" />
+                    </svg>
+                </button>
+            </div>
+            @if (AllEnabled)
+            {
+                <button class="button w-full! button-accent" @onclick="DisableAllPlugins">@(_("Disable All"))</button>
+            }
+            else
+            {
+                <button class="button w-full!" @onclick="EnableAllPlugins">@(_("Enable All"))</button>
+            }
+        </div>
     </div>
 
     <div class="mt-2 mb-2 bg-control-bg w-0.5 rounded-md"></div>

@@ -1,3 +1,14 @@
+**This update cannot be automatically downloaded due to a bug in the updater. Please download the latest version from GitHub or CNB.**
+### ETS2LA C# 2026.9.5051 (Nightly)
+- Added option to keep the ETS2LA window on top of other windows. This can be turned on in Settings - Display.
+- Changing the ETS2LA volume now plays an example sound to preview the volume level.
+- Fixed updater bug.
+- Added notification when changing driving modes. This will hopefully alleviate confusion about what mode you are in until the new HUD is implemented.
+- You can now do the following actions in the plugin manager:
+    - Enable/Disable all plugins.
+    - Open the plugin folder in your default file manager.
+    - Reload plugins at runtime. This will unload and reload all plugins, mainly useful for developers.
+
 ### ETS2LA C# 2026.9.5040 (Nightly)
 - Prevent loading duplicated libraries or plugins. In some cases this could cause a crash on startup.
 - Fixed race condition when removing notifications.

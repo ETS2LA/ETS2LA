@@ -587,7 +587,7 @@ public class OverlayHandler
         // NOTE: Width and height set to screen-2
         // If they are set to the screen size, windows does some optimizations that cause the window
         // to go full black when focused. Setting these to -2 seems to prevent that.
-        glfwWindow = GLFW.CreateWindow(width - 2, height - 2, "ETS2LA overlay", null, null);
+        glfwWindow = GLFW.CreateWindow(width - 2, height - 2, "ETS2LA Overlay", null, null);
         if (glfwWindow.IsNull)
         {
             Logger.Error(_("Failed to create GLFW window"));
