@@ -15,12 +15,14 @@
 - Visualization page is now implemented. Requires `VisualizationSockets` plugin.
 - Notifications will now go transparent if hovered. This allows you to interact with elements below them.
 
-**Thank you to today's sponsor... You!** \
+#### Thank you to today's sponsor... You!
 Development is possible thanks to our [sponsors](https://github.com/sponsors/Tumppi066). Please consider supporting if you like the project and have the means to do so.
+- McAs13
 - luuukske
 - Lun011666
-- McAs13
 - Anonymous
+- AkhtiveLzz
+- All our [previous sponsors](https://github.com/sponsors/Tumppi066)
 
 ---
 <!-- Content inside ETS2LA will be cutoff at the line above, do not place lines inside the changelog. -->
