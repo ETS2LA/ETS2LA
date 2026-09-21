@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-09-19 15:24:46+0300\n"
+"POT-Creation-Date: 2026-09-21 13:56:56+0300\n"
 "PO-Revision-Date: 2026-09-11 13:17+0000\n"
 "Last-Translator: Kubex70 <kubex70@ets2la.com>\n"
 "Language-Team: Polish <http://weblate.ets2la.com/projects/ets2la/ets2la/pl/"
@@ -88,6 +88,9 @@ msgstr ""
 
 msgid "Become a GitHub Sponsor"
 msgstr "Zostań sponsorem na GitHubie"
+
+msgid "If you've not yet installed it, you can find it in the catalogue."
+msgstr ""
 
 #, csharp-format
 msgid "Installed {0}"
@@ -527,6 +530,9 @@ msgstr[2] "Załadowano {0} pluginów z folderu pluginów."
 
 msgid "Late"
 msgstr "Późno"
+
+msgid "Please enable the Visualization Sockets plugin."
+msgstr ""
 
 msgid "Force Map Load"
 msgstr "Wymuś załadowanie mapy"

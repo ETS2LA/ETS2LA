@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-09-19 15:24:46+0300\n"
+"POT-Creation-Date: 2026-09-21 13:56:56+0300\n"
 "PO-Revision-Date: 2026-09-08 09:24+0000\n"
 "Last-Translator: Lun <lun@ets2la.com>\n"
 "Language-Team: Chinese (Traditional Han script) <http://weblate.ets2la.com/"
@@ -81,6 +81,9 @@ msgstr ""
 
 msgid "Become a GitHub Sponsor"
 msgstr "成為 GitHub 贊助者"
+
+msgid "If you've not yet installed it, you can find it in the catalogue."
+msgstr ""
 
 #, csharp-format
 msgid "Installed {0}"
@@ -494,6 +497,9 @@ msgstr[0] "已從 Plugins 資料夾載入 {0} 個插件。"
 
 msgid "Late"
 msgstr "較晚"
+
+msgid "Please enable the Visualization Sockets plugin."
+msgstr ""
 
 msgid "Force Map Load"
 msgstr "強制載入地圖"

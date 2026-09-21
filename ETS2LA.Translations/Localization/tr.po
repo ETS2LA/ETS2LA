@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-09-19 15:24:46+0300\n"
+"POT-Creation-Date: 2026-09-21 13:56:56+0300\n"
 "PO-Revision-Date: 2026-09-04 20:02+0000\n"
 "Last-Translator: Kivanc <kivanc@ets2la.com>\n"
 "Language-Team: Turkish <http://weblate.ets2la.com/projects/ets2la/ets2la/tr/"
@@ -85,6 +85,9 @@ msgstr ""
 "kapalıysa, bu tuş AYARLA işlevi görür. Yani mevcut hızı hız sınırına ayarlar."
 
 msgid "Become a GitHub Sponsor"
+msgstr ""
+
+msgid "If you've not yet installed it, you can find it in the catalogue."
 msgstr ""
 
 #, csharp-format
@@ -513,6 +516,9 @@ msgstr[1] ""
 
 msgid "Late"
 msgstr "Geç"
+
+msgid "Please enable the Visualization Sockets plugin."
+msgstr ""
 
 msgid "Force Map Load"
 msgstr "Harita Yüklemeyi Zorla"

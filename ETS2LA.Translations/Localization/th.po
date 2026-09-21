@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-09-19 15:24:46+0300\n"
+"POT-Creation-Date: 2026-09-21 13:56:56+0300\n"
 "PO-Revision-Date: 2026-09-17 08:43+0000\n"
 "Last-Translator: cooper153826 <cooper153826@ets2la.com>\n"
 "Language-Team: Thai <http://weblate.ets2la.com/projects/ets2la/ets2la/th/>\n"
@@ -74,6 +74,9 @@ msgstr ""
 
 msgid "Become a GitHub Sponsor"
 msgstr "เป็น GitHub สปอนเซอร์"
+
+msgid "If you've not yet installed it, you can find it in the catalogue."
+msgstr ""
 
 #, csharp-format
 msgid "Installed {0}"
@@ -471,6 +474,9 @@ msgstr[1] ""
 
 msgid "Late"
 msgstr "สาย"
+
+msgid "Please enable the Visualization Sockets plugin."
+msgstr ""
 
 msgid "Force Map Load"
 msgstr "บังคับโหลดแผนที่"

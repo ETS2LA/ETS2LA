@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-09-19 15:24:46+0300\n"
+"POT-Creation-Date: 2026-09-21 13:56:56+0300\n"
 "PO-Revision-Date: 2026-09-13 12:43+0000\n"
 "Last-Translator: bot_lapis <botlapis@ets2la.com>\n"
 "Language-Team: Korean <http://weblate.ets2la.com/projects/ets2la/ets2la/ko/"
@@ -82,6 +82,9 @@ msgstr ""
 
 msgid "Become a GitHub Sponsor"
 msgstr "GitHub에서 후원하기"
+
+msgid "If you've not yet installed it, you can find it in the catalogue."
+msgstr ""
 
 #, csharp-format
 msgid "Installed {0}"
@@ -508,6 +511,9 @@ msgstr[0] "Plugins 폴더에서 플러그인 {0}개를 불러왔습니다."
 
 msgid "Late"
 msgstr "늦게"
+
+msgid "Please enable the Visualization Sockets plugin."
+msgstr ""
 
 msgid "Force Map Load"
 msgstr "맵 강제 로드"

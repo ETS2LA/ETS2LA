@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-09-19 15:24:46+0300\n"
+"POT-Creation-Date: 2026-09-21 13:56:56+0300\n"
 "PO-Revision-Date: 2026-08-30 16:09+0000\n"
 "Last-Translator: retroposition <retroposition@ets2la.com>\n"
 "Language-Team: French <http://weblate.ets2la.com/projects/ets2la/ets2la/fr/"
@@ -87,6 +87,9 @@ msgstr ""
 "vitesse en vigueur."
 
 msgid "Become a GitHub Sponsor"
+msgstr ""
+
+msgid "If you've not yet installed it, you can find it in the catalogue."
 msgstr ""
 
 #, csharp-format
@@ -530,6 +533,9 @@ msgstr[1] "{0} plugins chargés depuis le dossier Plugins."
 
 msgid "Late"
 msgstr "Tard"
+
+msgid "Please enable the Visualization Sockets plugin."
+msgstr ""
 
 msgid "Force Map Load"
 msgstr "Forcer le chargement de la carte"

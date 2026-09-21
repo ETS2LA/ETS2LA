@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-09-19 15:24:46+0300\n"
+"POT-Creation-Date: 2026-09-21 13:56:56+0300\n"
 "PO-Revision-Date: 2026-09-08 09:24+0000\n"
 "Last-Translator: Tumppi066 <contact@ets2la.com>\n"
 "Language-Team: Finnish <http://weblate.ets2la.com/projects/ets2la/ets2la/fi/"
@@ -86,6 +86,9 @@ msgstr ""
 msgid "Become a GitHub Sponsor"
 msgstr ""
 "Suomalaiset eivät voi tukea tätä kautta rahankeräys säätelyiden vuoksi!"
+
+msgid "If you've not yet installed it, you can find it in the catalogue."
+msgstr ""
 
 #, csharp-format
 msgid "Installed {0}"
@@ -524,6 +527,9 @@ msgstr[1] "Ladattiin {0} lisäosaa \"Plugins\" kansiosta."
 
 msgid "Late"
 msgstr "Myöhään"
+
+msgid "Please enable the Visualization Sockets plugin."
+msgstr ""
 
 msgid "Force Map Load"
 msgstr "Pakota kartan lataus"
