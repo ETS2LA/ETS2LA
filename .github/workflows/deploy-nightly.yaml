@@ -4,7 +4,7 @@ permissions:
 on:
   push:
     branches:
-      - photino
+      - main
 
 jobs:
   check_version:
