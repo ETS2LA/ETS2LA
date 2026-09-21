@@ -1,4 +1,4 @@
-### ETS2LA C# 2026.9.XXXX
+### ETS2LA C# 2026.9.5039 (Nightly)
 - Prevent loading duplicated libraries or plugins. In some cases this could cause a crash on startup.
 - Fixed race condition when removing notifications.
 - Visualization page is now implemented. Requires `VisualizationSockets` plugin.
