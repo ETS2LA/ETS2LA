@@ -1,6 +1,20 @@
 @page "/help/wiki"
 
-<div class="flex flex-col p-6">
-    <h3>@(_("Sorry"))</h3>
-    <p class="description">@((MarkupString)(_("This page hasn't been created yet, but it's coming <i>soon</i>.")))</p>
+@code {
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+
+        
+        WindowState.Current.IsSidebarOpen = false;
+        WindowState.Current.RequestFullReload();
+    }
+}
+
+<!-- 
+    Insane hacks to make sure that the iframe is scaled down, as the website would be too large otherwise 
+    100/90 = 11.11%
+-->
+<div class="w-full h-full overflow-hidden">
+    <iframe src="https://ets2la.com/help/faq" class="w-[111.11%] h-[111.11%] transform scale-90 origin-top-left" style="border: none;"></iframe>
 </div>
