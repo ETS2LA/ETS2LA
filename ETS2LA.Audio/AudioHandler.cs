@@ -67,6 +67,14 @@ public class AudioHandler
     }
 
     /// <summary>
+    ///  Get the queue length (check if audio is currently playing).
+    /// </summary>
+    public int GetQueueLength()
+    {
+        return _queue.Count;
+    }
+
+    /// <summary>
     ///  Queue an audio file for playback.
     /// </summary>
     /// <param name="filepath">Filepath of the audio file to play.</param>

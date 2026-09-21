@@ -9,7 +9,12 @@
         get => (float)Math.Round(AudioHandler.Current.GetVolume() * 100, 0);
         set
         {
-            AudioHandler.Current.SetVolume(value / 100);
+            if (value != Volume)
+            {
+                AudioHandler.Current.SetVolume(value / 100);
+                if (AudioHandler.Current.GetQueueLength() == 0)
+                    AudioHandler.Current.Queue("Assets/Sounds/prompt.mp3");
+            }
         }
     }
 }
