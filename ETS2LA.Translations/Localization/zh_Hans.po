@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
 "POT-Creation-Date: 2026-09-21 13:56:56+0300\n"
-"PO-Revision-Date: 2026-09-09 11:08+0000\n"
-"Last-Translator: goodnightan <goodnightan@ets2la.com>\n"
+"PO-Revision-Date: 2026-09-21 15:01+0000\n"
+"Last-Translator: Lun <lun@ets2la.com>\n"
 "Language-Team: Chinese (Simplified Han script) <http://weblate.ets2la.com/"
 "projects/ets2la/ets2la/zh_Hans/>\n"
 "Language: zh_Hans\n"
@@ -342,8 +342,7 @@ msgstr "选中的文件不存在。"
 
 #, csharp-format
 msgid "Assists Enabled: <span class=\"text-text-accent font-bold\">{0}</span>"
-msgstr ""
-"已启用的辅助功能：<span class=\"text-text-accent font-bold\">{0}</span>"
+msgstr "辅助功能启用状态：<span class=\"text-text-accent font-bold\">{0}</span>"
 
 #, csharp-format
 msgid "Latest Version: {0}"
@@ -739,7 +738,7 @@ msgid "{0} not found in supported languages."
 msgstr "在支持的语言中找不到 {0}。"
 
 msgid "Assists Enabled: "
-msgstr "已启用的辅助功能： "
+msgstr "辅助功能启用状态： "
 
 #, csharp-format
 msgid "Found {0} prefab"
