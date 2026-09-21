@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
 "POT-Creation-Date: 2026-09-21 13:56:56+0300\n"
-"PO-Revision-Date: 2026-09-21 11:05+0000\n"
+"PO-Revision-Date: 2026-09-21 15:01+0000\n"
 "Last-Translator: delilevente <delilevente@ets2la.com>\n"
 "Language-Team: Hungarian <http://weblate.ets2la.com/projects/ets2la/ets2la/"
 "hu/>\n"
@@ -690,7 +690,7 @@ msgid "Plugin with ID {0} not found in available plugins."
 msgstr ""
 
 msgid "Manager"
-msgstr ""
+msgstr "Kezelő"
 
 msgid "Near"
 msgstr "Közel"
@@ -781,7 +781,7 @@ msgid "Download progress: {0}%"
 msgstr "Letöltés folyamatban: {0}%"
 
 msgid "Search for plugins..."
-msgstr ""
+msgstr "Pluginok keresése..."
 
 msgid "Assists"
 msgstr ""
@@ -1188,6 +1188,8 @@ msgstr "Telepített elrejtése"
 
 msgid "Failed to initialize overlay, OpenGL initialization failed."
 msgstr ""
+"Nem sikerült elindítani az overlay-t, az OpenGL inicializálása sikertelen "
+"volt."
 
 #, csharp-format
 msgid "Plugin '{0}' is missing its DLL at '{1}' and has been removed."
@@ -1249,7 +1251,7 @@ msgid "Restart"
 msgstr "Újraindítás"
 
 msgid "Plugins"
-msgstr ""
+msgstr "Pluginok"
 
 msgid "Close"
 msgstr "Bezárás"
@@ -1302,7 +1304,7 @@ msgid ""
 msgstr ""
 
 msgid "feet"
-msgstr ""
+msgstr "láb"
 
 #, csharp-format
 msgid "Successfully installed plugin {0} ({1}, {2})"
@@ -1420,7 +1422,7 @@ msgid ""
 msgstr ""
 
 msgid "Recommended Plugins"
-msgstr ""
+msgstr "Ajánlott pluginok"
 
 msgid ""
 "The maximum speed ETS2LA will accelerate to. It might still drift over this "
@@ -1540,7 +1542,7 @@ msgid "The selected file is not a core.scs file."
 msgstr ""
 
 msgid "Translated by:"
-msgstr ""
+msgstr "Fordítók:"
 
 msgid "This game was found at"
 msgstr ""
@@ -1549,14 +1551,14 @@ msgid "Data Quality"
 msgstr ""
 
 msgid "Overlay"
-msgstr ""
+msgstr "Overlay"
 
 #, csharp-format
 msgid "Error in AR OpenGL pass: {0}"
 msgstr ""
 
 msgid "General"
-msgstr ""
+msgstr "Általános"
 
 #, csharp-format
 msgid "Failed to uninstall SDK from '{0}' to '{1}': {2}"
@@ -1583,7 +1585,7 @@ msgid ""
 msgstr ""
 
 msgid "Display Language"
-msgstr ""
+msgstr "Felület nyelve"
 
 #, csharp-format
 msgid "Changed update source to '{0}'."
@@ -1595,22 +1597,22 @@ msgstr ""
 
 #, csharp-format
 msgid "Initializing GLFW Version: {0}"
-msgstr ""
+msgstr "GLFW inicializálása, verzió: {0}"
 
 msgid "Render Vision Cameras"
 msgstr ""
 
 msgid "Match Game"
-msgstr ""
+msgstr "Játékkal megegyező"
 
 msgid "Imperial"
 msgstr ""
 
 msgid "Unpacking Mods"
-msgstr ""
+msgstr "Modok kibontása"
 
 msgid "m/s"
-msgstr ""
+msgstr "m/s"
 
 #, csharp-format
 msgid "Click to {0} this window"
@@ -1624,13 +1626,13 @@ msgid "Overlay free CPU time percentage"
 msgstr ""
 
 msgid "Invalid directory"
-msgstr ""
+msgstr "Érvénytelen mappa"
 
 msgid "Starting download..."
-msgstr ""
+msgstr "Letöltés indítása..."
 
 msgid "High"
-msgstr ""
+msgstr "Magas"
 
 msgid "Final Disclaimer <span class=\"description\">1/2</span>"
 msgstr ""
@@ -1644,7 +1646,7 @@ msgid ""
 msgstr ""
 
 msgid "Unknown Version"
-msgstr ""
+msgstr "Ismeretlen verzió"
 
 msgid ""
 "Your system has less than 20GB of RAM. Extreme data fidelity uses "
@@ -1660,10 +1662,10 @@ msgid "Desired Speed: "
 msgstr ""
 
 msgid "meters"
-msgstr ""
+msgstr "méter"
 
 msgid "°C"
-msgstr ""
+msgstr "°C"
 
 #, csharp-format
 msgid "Discovered {0} manually installed plugin."
@@ -1672,13 +1674,13 @@ msgstr[0] ""
 msgstr[1] ""
 
 msgid "Checking for updates..."
-msgstr ""
+msgstr "Frissítések keresése..."
 
 msgid "Catalogue"
-msgstr ""
+msgstr "Katalógus"
 
 msgid "Starting ETS2LA..."
-msgstr ""
+msgstr "ETS2LA indítása..."
 
 msgid ""
 "How ETS2LA will warn you about exceeding the speed limit by a major amount."
@@ -1703,13 +1705,13 @@ msgid "Keybind Behaviour"
 msgstr ""
 
 msgid "Next"
-msgstr ""
+msgstr "Tovább"
 
 msgid "Demo Window"
-msgstr ""
+msgstr "Demó ablak"
 
 msgid "Help"
-msgstr ""
+msgstr "Segítség"
 
 #, csharp-format
 msgid "Skipped stale plugin shadow directory [gray]{0}[/]: {1}"
@@ -1758,7 +1760,7 @@ msgid ""
 msgstr ""
 
 msgid "Plugin Installer"
-msgstr ""
+msgstr "Plugin telepítő"
 
 #, csharp-format
 msgid "Successfully installed SDK version '{0}' to '{1}'"
@@ -1778,11 +1780,11 @@ msgid ""
 msgstr ""
 
 msgid "Interaction Mode"
-msgstr ""
+msgstr "Interakciós mód"
 
 #, csharp-format
 msgid "Adding mod: {0}"
-msgstr ""
+msgstr "Mod hozzáadása: {0}"
 
 #, csharp-format
 msgid "Not all dependencies for plugin {0} are installed."
