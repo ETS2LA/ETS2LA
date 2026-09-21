@@ -220,7 +220,7 @@ public class ApplicationState
         {
             Id = "ApplicationState.SpeedLimitChanged",
             Title = _("Speed limit changed"),
-            Content = _("New limit {0} {1}", UnitConversions.FromScientificUnits(UnitType.Speed, newSpeedLimit, DisplayUnits), UnitConversions.GetUnitAbbreviation(UnitType.Speed, DisplayUnits))
+            Content = _("New limit {0} {1}", (int)Math.Round(UnitConversions.FromScientificUnits(UnitType.Speed, newSpeedLimit, DisplayUnits), 0), UnitConversions.GetUnitAbbreviation(UnitType.Speed, DisplayUnits))
         });
     }
 
@@ -238,6 +238,13 @@ public class ApplicationState
             DrivingMode += 1;
             if (DrivingMode > DrivingMode.LaneAssistOnly)
                 DrivingMode = DrivingMode.AdaptiveCruiseControlOnly;
+            
+            NotificationHandler.Current.SendNotification(new Notification
+            {
+                Id = "ApplicationState.DrivingModeChanged",
+                Title = DrivingModeTranslation[DrivingMode],
+                Content = _("Driving mode changed, press Cancel/MODE again to cycle through the modes.")
+            });
         }
     }
 
