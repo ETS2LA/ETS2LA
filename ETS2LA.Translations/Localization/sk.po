@@ -3,10 +3,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
 "POT-Creation-Date: 2026-09-21 13:56:56+0300\n"
-"PO-Revision-Date: 2026-09-08 09:24+0000\n"
+"PO-Revision-Date: 2026-09-21 15:01+0000\n"
 "Last-Translator: Ketchup1812 <ketchup1812@ets2la.com>\n"
-"Language-Team: Slovak <http://weblate.ets2la.com/projects/ets2la/ets2la/sk/"
-">\n"
+"Language-Team: Slovak <http://weblate.ets2la.com/projects/ets2la/ets2la/sk/>"
+"\n"
 "Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -87,7 +87,7 @@ msgid "Become a GitHub Sponsor"
 msgstr "Staňte sa sponzorom GitHubu"
 
 msgid "If you've not yet installed it, you can find it in the catalogue."
-msgstr ""
+msgstr "Ak ste si ho ešte nenainštalovali, nájdete ho v katalógu."
 
 #, csharp-format
 msgid "Installed {0}"
@@ -145,6 +145,7 @@ msgstr "Vypršal časový limit pre mapovanie ovládacieho prvku {0} ({1})."
 msgid ""
 "Library plugin with ID [gray]{0}[/] is already loaded, skipping duplicate."
 msgstr ""
+"Knižničný plugin s ID [gray]{0}[/] je už načítaný, duplicitný sa preskočí."
 
 msgid "Dashboard"
 msgstr "Ovládací panel"
@@ -425,7 +426,7 @@ msgid "Contact Us"
 msgstr "Kontaktujte nás"
 
 msgid "An error occurred while checking for updates."
-msgstr ""
+msgstr "Pri kontrole aktualizácií došlo k chybe."
 
 #, csharp-format
 msgid "Copied '{0}' to '{1}'"
@@ -527,7 +528,7 @@ msgid "Late"
 msgstr "Neskoro"
 
 msgid "Please enable the Visualization Sockets plugin."
-msgstr ""
+msgstr "Prosím, aktivujte plugin Visualization Sockets."
 
 msgid "Force Map Load"
 msgstr "Vynútiť načítanie mapy"
@@ -953,7 +954,7 @@ msgstr "Táto stránka bude sprístupnená v budúcej aktualizácii."
 
 #, csharp-format
 msgid "Plugin with ID [gray]{0}[/] is already loaded, skipping duplicate."
-msgstr ""
+msgstr "Plugin s ID [gray]{0}[/] je už načítaný, duplicitný sa preskočí."
 
 #, csharp-format
 msgid "Failed to download plugin with ID {0} from {1}. Status code: {2}"
@@ -1425,7 +1426,7 @@ msgstr ""
 "zdrojmi sa tento zdroj nenašiel."
 
 msgid "Error Checking for Updates"
-msgstr ""
+msgstr "Kontrola chýb pri aktualizácii"
 
 msgid "Speed Limit"
 msgstr "Rýchlostný limit"
