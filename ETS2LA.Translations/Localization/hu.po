@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-09-21 13:56:56+0300\n"
+"POT-Creation-Date: 2026-09-21 21:01:15+0300\n"
 "PO-Revision-Date: 2026-09-21 15:01+0000\n"
 "Last-Translator: delilevente <delilevente@ets2la.com>\n"
 "Language-Team: Hungarian <http://weblate.ets2la.com/projects/ets2la/ets2la/"
@@ -26,6 +26,9 @@ msgstr ""
 msgid "Sorry"
 msgstr "Elnézést"
 
+msgid "Stay on Top"
+msgstr ""
+
 msgid "Display"
 msgstr "Kijelző"
 
@@ -40,6 +43,11 @@ msgid "Failed to open joystick {0}."
 msgstr ""
 
 msgid "Anonymous Telemetry"
+msgstr ""
+
+msgid ""
+"Keep the ETS2LA window on top of other windows. If you want to use the "
+"visualization on a single monitor setup, this is recommended."
 msgstr ""
 
 #, csharp-format
@@ -717,11 +725,11 @@ msgstr[1] ""
 msgid "Pascals"
 msgstr ""
 
-msgid "You can enable the plugins we installed in a previous step here."
-msgstr ""
-
 #, csharp-format
 msgid "Failed to disable {0}: {1}"
+msgstr ""
+
+msgid "You can enable the plugins we installed in a previous step here."
 msgstr ""
 
 msgid "SDK Installed"
@@ -856,12 +864,12 @@ msgstr ""
 msgid "Plugin with ID [gray]{0}[/] is already loaded, skipping duplicate."
 msgstr ""
 
+msgid "You are running the latest version."
+msgstr "A legfrissebb verziót futtatod."
+
 #, csharp-format
 msgid "Failed to download plugin with ID {0} from {1}. Status code: {2}"
 msgstr ""
-
-msgid "You are running the latest version."
-msgstr "A legfrissebb verziót futtatod."
 
 msgid "No plugins found."
 msgstr ""
@@ -930,13 +938,13 @@ msgstr ""
 msgid "Failed to install latest version of plugin with ID {0}."
 msgstr ""
 
-msgid "I understand, now let me in!"
-msgstr ""
-
 #, csharp-format
 msgid ""
 "If you think this is a bug, please report it in the {0}Discord Server{1} or "
 "on {2}GitHub{3}."
+msgstr ""
+
+msgid "I understand, now let me in!"
 msgstr ""
 
 msgid ""

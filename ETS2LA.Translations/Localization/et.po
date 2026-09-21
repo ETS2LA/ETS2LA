@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-09-21 13:56:56+0300\n"
+"POT-Creation-Date: 2026-09-21 21:01:15+0300\n"
 "PO-Revision-Date: 2026-08-26 00:24+0000\n"
 "Last-Translator: svllyu <svllyu@ets2la.com>\n"
 "Language-Team: Estonian <http://weblate.ets2la.com/projects/ets2la/ets2la/et/"
@@ -25,6 +25,9 @@ msgstr ""
 msgid "Sorry"
 msgstr ""
 
+msgid "Stay on Top"
+msgstr ""
+
 msgid "Display"
 msgstr ""
 
@@ -40,6 +43,11 @@ msgstr ""
 
 msgid "Anonymous Telemetry"
 msgstr "Anonüümne telemeetria"
+
+msgid ""
+"Keep the ETS2LA window on top of other windows. If you want to use the "
+"visualization on a single monitor setup, this is recommended."
+msgstr ""
 
 #, csharp-format
 msgid "Control with ID '{0}' not found for updating bindings."
@@ -719,11 +727,11 @@ msgstr[1] ""
 msgid "Pascals"
 msgstr ""
 
-msgid "You can enable the plugins we installed in a previous step here."
-msgstr ""
-
 #, csharp-format
 msgid "Failed to disable {0}: {1}"
+msgstr ""
+
+msgid "You can enable the plugins we installed in a previous step here."
 msgstr ""
 
 msgid "SDK Installed"
@@ -858,11 +866,11 @@ msgstr ""
 msgid "Plugin with ID [gray]{0}[/] is already loaded, skipping duplicate."
 msgstr ""
 
-#, csharp-format
-msgid "Failed to download plugin with ID {0} from {1}. Status code: {2}"
+msgid "You are running the latest version."
 msgstr ""
 
-msgid "You are running the latest version."
+#, csharp-format
+msgid "Failed to download plugin with ID {0} from {1}. Status code: {2}"
 msgstr ""
 
 msgid "No plugins found."
@@ -938,13 +946,13 @@ msgstr ""
 msgid "Failed to install latest version of plugin with ID {0}."
 msgstr ""
 
-msgid "I understand, now let me in!"
-msgstr ""
-
 #, csharp-format
 msgid ""
 "If you think this is a bug, please report it in the {0}Discord Server{1} or "
 "on {2}GitHub{3}."
+msgstr ""
+
+msgid "I understand, now let me in!"
 msgstr ""
 
 msgid ""
