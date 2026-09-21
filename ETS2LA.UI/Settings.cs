@@ -11,6 +11,7 @@ public class WindowSettings
     public int Height = 720;
 
     public int Zoom = 100;
+    public bool StayOnTop = false;
 
     public int OnboardingStep = 0;
     public bool HasCompletedOnboarding = false;
@@ -41,6 +42,7 @@ public class WindowSettings
                 Width = loadedSettings.Width;
                 Height = loadedSettings.Height;
                 Zoom = loadedSettings.Zoom;
+                StayOnTop = loadedSettings.StayOnTop;
                 OnboardingStep = loadedSettings.OnboardingStep;
                 HasCompletedOnboarding = loadedSettings.HasCompletedOnboarding;
             }
@@ -62,6 +64,7 @@ public class WindowSettings
         Width = newSettings.Width;
         Height = newSettings.Height;
         Zoom = newSettings.Zoom;
+        StayOnTop = newSettings.StayOnTop;
         OnboardingStep = newSettings.OnboardingStep;
         HasCompletedOnboarding = newSettings.HasCompletedOnboarding;
     }

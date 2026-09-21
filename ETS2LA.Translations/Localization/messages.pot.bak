@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-09-21 20:47:38+0300\n"
-"PO-Revision-Date: 2026-09-21 20:47:38+0300\n"
+"POT-Creation-Date: 2026-09-21 21:00:18+0300\n"
+"PO-Revision-Date: 2026-09-21 21:00:19+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -23,6 +23,10 @@ msgstr ""
 #: ../../../ETS2LA.UI/Pages/Help/Wiki.razor:4
 #: ../../../ETS2LA.UI/Pages/Help/ContactUs.razor:11
 msgid "Sorry"
+msgstr ""
+
+#: ../../../ETS2LA.UI/Pages/Settings/Display.razor:224
+msgid "Stay on Top"
 msgstr ""
 
 #: ../../../ETS2LA.UI/Shared/Layouts/SettingsLayout.razor:19
@@ -76,6 +80,10 @@ msgid ""
 "When changing the speed, snap to the nearest 10. i.e. 37 -> 39 -> 40 -> 42..."
 msgstr ""
 
+#: ../../../ETS2LA.UI/Pages/Settings/Display.razor:225
+msgid "Keep the ETS2LA window on top of other windows."
+msgstr ""
+
 #: ../../../ETS2LA.State/Units.cs:287
 #: ../../../ETS2LA.State/Units.cs:291
 msgid "kg"
@@ -106,8 +114,8 @@ msgstr ""
 msgid "Error loading map data from '{0}': {1}"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Settings/Data.razor:11
 #: ../../../ETS2LA.UI/Pages/Settings/Assists.razor:53
+#: ../../../ETS2LA.UI/Pages/Settings/Data.razor:11
 msgid "Medium"
 msgstr ""
 
@@ -115,7 +123,7 @@ msgstr ""
 msgid "Maximum Speed"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Settings/Display.razor:236
+#: ../../../ETS2LA.UI/Pages/Settings/Display.razor:257
 msgid ""
 "When the game reports itself being paused, ETS2LA won't render AR elements."
 msgstr ""
@@ -184,7 +192,7 @@ msgid ""
 "Medium."
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Settings/Display.razor:199
+#: ../../../ETS2LA.UI/Pages/Settings/Display.razor:216
 msgid "Window Zoom"
 msgstr ""
 
@@ -424,7 +432,7 @@ msgstr ""
 msgid "Are you sure?"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Settings/Display.razor:227
+#: ../../../ETS2LA.UI/Pages/Settings/Display.razor:248
 msgid "Render AR Elements"
 msgstr ""
 
@@ -513,7 +521,7 @@ msgstr ""
 msgid "Failed to init ImGui Impl OpenGL3"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Settings/Display.razor:209
+#: ../../../ETS2LA.UI/Pages/Settings/Display.razor:230
 msgid "Support Multiple Viewports"
 msgstr ""
 
@@ -529,7 +537,7 @@ msgstr ""
 msgid "Initializing GLFW..."
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Settings/Display.razor:226
+#: ../../../ETS2LA.UI/Pages/Settings/Display.razor:247
 msgid "3D Renderer"
 msgstr ""
 
@@ -537,7 +545,7 @@ msgstr ""
 msgid "SDK Uninstallation Failed"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Settings/Display.razor:217
+#: ../../../ETS2LA.UI/Pages/Settings/Display.razor:238
 msgid "Max Overlay Framerate"
 msgstr ""
 
@@ -569,17 +577,17 @@ msgstr ""
 msgid "SDK Uninstalled"
 msgstr ""
 
+#: ../../../ETS2LA.UI/Pages/Settings/Data.razor:10
+#: ../../../ETS2LA.UI/Pages/Settings/Data.razor:18
+msgid "Low"
+msgstr ""
+
 #: ../../../ETS2LA.UI/Pages/Onboarding/Steps/DisclaimerStep2.razor:17
 msgid ""
 "Additionally, some communities like VTCs, Job Trackers and Leaderboards will "
 "ban either specific features, or the entirety of ETS2LA. <span "
 "class=\"text-text-accent font-bold\">Please check with your community <i>before</i> using "
 "ETS2LA.</span>"
-msgstr ""
-
-#: ../../../ETS2LA.UI/Pages/Settings/Data.razor:10
-#: ../../../ETS2LA.UI/Pages/Settings/Data.razor:18
-msgid "Low"
 msgstr ""
 
 #: ../../../ETS2LA.Networking/Plugins/client.cs:290
@@ -754,7 +762,7 @@ msgid ""
 "Emergency braking is not affected."
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Settings/Display.razor:176
+#: ../../../ETS2LA.UI/Pages/Settings/Display.razor:193
 msgid "Display Units"
 msgstr ""
 
@@ -824,11 +832,11 @@ msgstr ""
 msgid "Pause When Unstable"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Settings/Display.razor:235
+#: ../../../ETS2LA.UI/Pages/Settings/Display.razor:256
 msgid "Stop Rendering When Game is Paused"
 msgstr ""
 
-#: ../../../ETS2LA.Audio/AudioHandler.cs:79
+#: ../../../ETS2LA.Audio/AudioHandler.cs:87
 #, csharp-format
 msgid "File not found: {0}"
 msgstr ""
@@ -842,7 +850,7 @@ msgstr ""
 msgid "New limit {0} {1}"
 msgstr ""
 
-#: ../../../ETS2LA.Audio/AudioHandler.cs:138
+#: ../../../ETS2LA.Audio/AudioHandler.cs:146
 #, csharp-format
 msgid "Error playing audio file {0}: {1}"
 msgstr ""
@@ -855,7 +863,7 @@ msgstr ""
 msgid "Anonymous"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Settings/Display.razor:177
+#: ../../../ETS2LA.UI/Pages/Settings/Display.razor:194
 msgid ""
 "The units ETS2LA will use when displaying information to a user. Scientific "
 "has only slight differences to metric."
@@ -901,7 +909,7 @@ msgid "Failed to initialize SDL3 input backend."
 msgstr ""
 
 #: ../../../ETS2LA.UI/Pages/Onboarding/Steps/WelcomeStep.razor:29
-#: ../../../ETS2LA.UI/Pages/Settings/Display.razor:147
+#: ../../../ETS2LA.UI/Pages/Settings/Display.razor:164
 #, csharp-format
 msgid "{0} not found in supported languages."
 msgstr ""
@@ -934,21 +942,21 @@ msgstr ""
 msgid "SDK Installed"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Settings/Assists.razor:37
-msgid "Current Speed"
-msgstr ""
-
 #: ../../../ETS2LA.UI/Pages/Settings/Controls.razor:181
 #: ../../../ETS2LA.UI/Pages/Settings/Controls.razor:186
 #, csharp-format
 msgid "Bound control {0} ({1}) to device {2} and control {3}"
 msgstr ""
 
+#: ../../../ETS2LA.UI/Pages/Settings/Assists.razor:37
+msgid "Current Speed"
+msgstr ""
+
 #: ../../../ETS2LA.State/Units.cs:182
 msgid "miles per hour"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Settings/Display.razor:213
+#: ../../../ETS2LA.UI/Pages/Settings/Display.razor:234
 msgid "Limit Overlay Framerate"
 msgstr ""
 
@@ -1003,8 +1011,8 @@ msgstr ""
 msgid "Download progress: {0}%"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Plugins/Catalogue.razor:108
 #: ../../../ETS2LA.UI/Pages/Plugins/Manager.razor:89
+#: ../../../ETS2LA.UI/Pages/Plugins/Catalogue.razor:108
 msgid "Search for plugins..."
 msgstr ""
 
@@ -1063,7 +1071,7 @@ msgstr ""
 msgid "Add Game Manually"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Settings/Display.razor:214
+#: ../../../ETS2LA.UI/Pages/Settings/Display.razor:235
 msgid ""
 "In most situations, over half of ETS2LA's CPU use is consumed by the overlay. "
 "Limiting the framerate will reduce CPU usage."
@@ -1080,7 +1088,7 @@ msgstr ""
 msgid "Restart and Continue"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Settings/Display.razor:232
+#: ../../../ETS2LA.UI/Pages/Settings/Display.razor:253
 msgid ""
 "Using simplified graphics can improve performance on lower-end hardware, or "
 "fix situations in which advanced features like shaders are not supported."
@@ -1104,18 +1112,18 @@ msgstr ""
 msgid "Plugin with ID [gray]{0}[/] is already loaded, skipping duplicate."
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Home.razor:80
-#: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:109
-msgid "You are running the latest version."
-msgstr ""
-
 #: ../../../ETS2LA.Networking/Plugins/client.cs:190
 #, csharp-format
 msgid "Failed to download plugin with ID {0} from {1}. Status code: {2}"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Plugins/Catalogue.razor:134
+#: ../../../ETS2LA.UI/Pages/Home.razor:80
+#: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:109
+msgid "You are running the latest version."
+msgstr ""
+
 #: ../../../ETS2LA.UI/Pages/Plugins/Manager.razor:102
+#: ../../../ETS2LA.UI/Pages/Plugins/Catalogue.razor:134
 msgid "No plugins found."
 msgstr ""
 
@@ -1152,7 +1160,7 @@ msgstr ""
 msgid "Telemetry"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Settings/Display.razor:210
+#: ../../../ETS2LA.UI/Pages/Settings/Display.razor:231
 msgid ""
 "This allows ETS2LA to render in multiple viewports, meaning you can move "
 "overlay windows to any monitor."
@@ -1175,7 +1183,7 @@ msgstr[1] ""
 msgid "Did you remember to restart after installing them?"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Settings/Audio.razor:22
+#: ../../../ETS2LA.UI/Pages/Settings/Audio.razor:23
 msgid "Volume"
 msgstr ""
 
@@ -1211,7 +1219,7 @@ msgstr ""
 msgid "I understand, now let me in!"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Settings/Display.razor:241
+#: ../../../ETS2LA.UI/Pages/Settings/Display.razor:262
 msgid ""
 "The maximum distance at which 3D elements will be rendered. Lowering this can "
 "be used to improve performance on lower-end hardware."
@@ -1267,10 +1275,10 @@ msgstr ""
 msgid "Disabled plugin: [bold]{0}[/]"
 msgstr ""
 
+#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/ControlsStep.razor:48
+#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/OverlayStep.razor:27
 #: ../../../ETS2LA.UI/Pages/Onboarding/Steps/SDKStep.razor:17
 #: ../../../ETS2LA.UI/Pages/Onboarding/Steps/PluginStep.razor:57
-#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/OverlayStep.razor:27
-#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/ControlsStep.razor:48
 msgid "Continue"
 msgstr ""
 
@@ -1365,7 +1373,7 @@ msgstr ""
 msgid "Downloading Update"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Settings/Display.razor:231
+#: ../../../ETS2LA.UI/Pages/Settings/Display.razor:252
 msgid "Simplified Graphics"
 msgstr ""
 
@@ -1373,8 +1381,8 @@ msgstr ""
 msgid "Steering Sensitivity"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Plugins/Manager.razor:130
 #: ../../../ETS2LA.UI/Pages/Settings/Assists.razor:207
+#: ../../../ETS2LA.UI/Pages/Plugins/Manager.razor:130
 msgid "Disabled"
 msgstr ""
 
@@ -1437,7 +1445,7 @@ msgstr ""
 msgid "Detected a switch to {0}, waiting for its game data to be parsed."
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Settings/Display.razor:218
+#: ../../../ETS2LA.UI/Pages/Settings/Display.razor:239
 #, csharp-format
 msgid "Currently running at {0} FPS."
 msgstr ""
@@ -1572,7 +1580,7 @@ msgstr ""
 msgid "Found {0} (version: {1}) at '{2}'"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Settings/Display.razor:228
+#: ../../../ETS2LA.UI/Pages/Settings/Display.razor:249
 msgid ""
 "We can render elements in the game world using the overlay. This will use "
 "additional CPU and GPU resources."
@@ -1603,7 +1611,7 @@ msgstr ""
 msgid "No download URL found for plugin with ID {0} in region {1}."
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Settings/Display.razor:157
+#: ../../../ETS2LA.UI/Pages/Settings/Display.razor:174
 msgid ""
 "Changing the display language requires a restart of ETS2LA to take effect. "
 "Restart now?"
@@ -1732,7 +1740,7 @@ msgstr ""
 msgid "K"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Settings/Display.razor:198
+#: ../../../ETS2LA.UI/Pages/Settings/Display.razor:215
 msgid "Window"
 msgstr ""
 
@@ -1773,8 +1781,9 @@ msgstr ""
 
 #: ../../../ETS2LA.UI/Utils.cs:55
 #: ../../../ETS2LA.UI/Pages/Settings/Telemetry.razor:16
+#: ../../../ETS2LA.UI/Pages/Settings/Display.razor:141
+#: ../../../ETS2LA.UI/Pages/Settings/Display.razor:173
 #: ../../../ETS2LA.UI/Pages/Settings/Data.razor:32
-#: ../../../ETS2LA.UI/Pages/Settings/Display.razor:156
 msgid "Restart Required"
 msgstr ""
 
@@ -1792,7 +1801,7 @@ msgstr ""
 msgid "Error rendering context menu for window {0}: {1}"
 msgstr ""
 
-#: ../../../ETS2LA.Audio/AudioHandler.cs:134
+#: ../../../ETS2LA.Audio/AudioHandler.cs:142
 msgid "Audio playback canceled"
 msgstr ""
 
@@ -1824,7 +1833,7 @@ msgid_plural "Discovered {0} manually installed libraries."
 msgstr[0] ""
 msgstr[1] ""
 
-#: ../../../ETS2LA.UI/Pages/Settings/Display.razor:239
+#: ../../../ETS2LA.UI/Pages/Settings/Display.razor:260
 msgid "Max Render Distance"
 msgstr ""
 
@@ -1859,14 +1868,14 @@ msgstr ""
 msgid "Recommended Plugins"
 msgstr ""
 
+#: ../../../ETS2LA.UI/Pages/Settings/SDK.razor:58
+msgid "Game added"
+msgstr ""
+
 #: ../../../ETS2LA.UI/Pages/Settings/Assists.razor:206
 msgid ""
 "The maximum speed ETS2LA will accelerate to. It might still drift over this "
 "limit due to momentum."
-msgstr ""
-
-#: ../../../ETS2LA.UI/Pages/Settings/SDK.razor:58
-msgid "Game added"
 msgstr ""
 
 #: ../../../ETS2LA.Game/Installation.cs:334
@@ -1914,18 +1923,13 @@ msgstr ""
 msgid "Target Speed: <span class=\"text-text-accent font-bold\">{0} {1}</span>"
 msgstr ""
 
+#: ../../../ETS2LA.Game/SDK/ParkedVehicles.cs:108
 #: ../../../ETS2LA.Game/SDK/Navigation.cs:122
 #: ../../../ETS2LA.Game/SDK/Camera.cs:130
-#: ../../../ETS2LA.Game/SDK/ParkedVehicles.cs:108
 #: ../../../ETS2LA.Game/SDK/Semaphores.cs:176
 #: ../../../ETS2LA.Game/SDK/Traffic.cs:159
 #, csharp-format
 msgid "Error initializing memory mapped file: {0}"
-msgstr ""
-
-#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/ControlsStep.razor:43
-#, csharp-format
-msgid "Assist Mode: <span class=\"text-text-accent font-bold\">{0}</span>"
 msgstr ""
 
 #: ../../../ETS2LA.Backend/PluginHandler/Handler.cs:204
@@ -1935,11 +1939,16 @@ msgstr ""
 msgid "Failed to load plugin from [gray]{0}[/]: {1}"
 msgstr ""
 
+#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/ControlsStep.razor:43
+#, csharp-format
+msgid "Assist Mode: <span class=\"text-text-accent font-bold\">{0}</span>"
+msgstr ""
+
 #: ../../../ETS2LA.UI/Pages/Settings/Telemetry.razor:28
 msgid "View Public Telemetry"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Settings/Audio.razor:23
+#: ../../../ETS2LA.UI/Pages/Settings/Audio.razor:24
 msgid "Adjust the volume of the audio output."
 msgstr ""
 
@@ -2012,7 +2021,7 @@ msgstr ""
 msgid "The selected file is not a core.scs file."
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Settings/Display.razor:188
+#: ../../../ETS2LA.UI/Pages/Settings/Display.razor:205
 msgid "Translated by:"
 msgstr ""
 
@@ -2025,7 +2034,7 @@ msgid "Data Quality"
 msgstr ""
 
 #: ../../../ETS2LA.UI/Pages/Onboarding/Steps/OverlayStep.razor:22
-#: ../../../ETS2LA.UI/Pages/Settings/Display.razor:208
+#: ../../../ETS2LA.UI/Pages/Settings/Display.razor:229
 msgid "Overlay"
 msgstr ""
 
@@ -2053,7 +2062,7 @@ msgstr ""
 msgid "Plugin with ID {0} not found."
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Settings/Display.razor:175
+#: ../../../ETS2LA.UI/Pages/Settings/Display.razor:192
 msgid "Units and Language"
 msgstr ""
 
@@ -2068,7 +2077,7 @@ msgid ""
 "request but refuses to authorize it."
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Settings/Display.razor:182
+#: ../../../ETS2LA.UI/Pages/Settings/Display.razor:199
 msgid "Display Language"
 msgstr ""
 
@@ -2211,7 +2220,7 @@ msgstr ""
 msgid "Finished parsing installation at '{0}'"
 msgstr ""
 
-#: ../../../ETS2LA.Audio/AudioHandler.cs:151
+#: ../../../ETS2LA.Audio/AudioHandler.cs:159
 #, csharp-format
 msgid "Playing sound: {0}"
 msgstr ""
@@ -2246,7 +2255,7 @@ msgstr ""
 msgid "Skipped stale plugin shadow directory [gray]{0}[/]: {1}"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Settings/Display.razor:201
+#: ../../../ETS2LA.UI/Pages/Settings/Display.razor:218
 msgid ""
 "The zoom level of the ETS2LA window. This can be used to scale the window to "
 "your monitor's DPI settings."
@@ -2295,6 +2304,7 @@ msgstr ""
 
 #: ../../../ETS2LA.UI/Utils.cs:56
 #: ../../../ETS2LA.UI/Pages/Settings/Telemetry.razor:17
+#: ../../../ETS2LA.UI/Pages/Settings/Display.razor:142
 #: ../../../ETS2LA.UI/Pages/Settings/Data.razor:33
 msgid ""
 "Changing this option requires a restart of ETS2LA to take effect. Restart "
@@ -2314,16 +2324,16 @@ msgstr ""
 msgid "Display Units: "
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Settings/Display.razor:183
-msgid ""
-"The language ETS2LA will be displayed at. Translations are provided by the "
-"community, we cannot guarantee their accuracy."
-msgstr ""
-
 #: ../../../ETS2LA.UI/Pages/Settings/Data.razor:116
 msgid ""
 "Warning: Your system has less than 20GB of RAM. You can only select up to "
 "High."
+msgstr ""
+
+#: ../../../ETS2LA.UI/Pages/Settings/Display.razor:200
+msgid ""
+"The language ETS2LA will be displayed at. Translations are provided by the "
+"community, we cannot guarantee their accuracy."
 msgstr ""
 
 #: ../../../ETS2LA.Overlay/Overlay.cs:282

@@ -57,6 +57,7 @@ public class UserInterface
             .SetChromeless(true);
 
         app.MainWindow.Center();
+        app.MainWindow.SetTopMost(WindowSettings.Current.StayOnTop);
 
         Current.Window = app.MainWindow;
         Current.Window.WindowSizeChanged += (sender, e) => {
