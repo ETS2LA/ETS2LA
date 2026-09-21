@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-09-21 13:56:56+0300\n"
+"POT-Creation-Date: 2026-09-21 21:01:15+0300\n"
 "PO-Revision-Date: 2026-09-04 20:02+0000\n"
 "Last-Translator: Kivanc <kivanc@ets2la.com>\n"
 "Language-Team: Turkish <http://weblate.ets2la.com/projects/ets2la/ets2la/tr/"
@@ -29,6 +29,9 @@ msgstr "Bilinmeyen Kontrol Kimliği"
 msgid "Sorry"
 msgstr "Üzgünüm"
 
+msgid "Stay on Top"
+msgstr ""
+
 msgid "Display"
 msgstr "Görüntü"
 
@@ -44,6 +47,11 @@ msgstr "{0} joystick'i açılamadı."
 
 msgid "Anonymous Telemetry"
 msgstr "Anonim Telemetri"
+
+msgid ""
+"Keep the ETS2LA window on top of other windows. If you want to use the "
+"visualization on a single monitor setup, this is recommended."
+msgstr ""
 
 #, csharp-format
 msgid "Control with ID '{0}' not found for updating bindings."
@@ -776,12 +784,12 @@ msgstr[1] ""
 msgid "Pascals"
 msgstr ""
 
-msgid "You can enable the plugins we installed in a previous step here."
-msgstr "Bir önceki adımda yüklenen eklentileri buradan etkinleştirebilirsiniz."
-
 #, csharp-format
 msgid "Failed to disable {0}: {1}"
 msgstr "{0} devre dışı bırakılamadı: {1}"
+
+msgid "You can enable the plugins we installed in a previous step here."
+msgstr "Bir önceki adımda yüklenen eklentileri buradan etkinleştirebilirsiniz."
 
 msgid "SDK Installed"
 msgstr "SDK Yüklendi"
@@ -925,12 +933,12 @@ msgstr "Bu sayfa, gelecek bir güncellemede kullanıma sunulacaktır."
 msgid "Plugin with ID [gray]{0}[/] is already loaded, skipping duplicate."
 msgstr ""
 
+msgid "You are running the latest version."
+msgstr "En son sürümü kullanıyorsunuz."
+
 #, csharp-format
 msgid "Failed to download plugin with ID {0} from {1}. Status code: {2}"
 msgstr ""
-
-msgid "You are running the latest version."
-msgstr "En son sürümü kullanıyorsunuz."
 
 msgid "No plugins found."
 msgstr "Eklenti bulunamadı."
@@ -1004,9 +1012,6 @@ msgstr ""
 msgid "Failed to install latest version of plugin with ID {0}."
 msgstr ""
 
-msgid "I understand, now let me in!"
-msgstr ""
-
 #, csharp-format
 msgid ""
 "If you think this is a bug, please report it in the {0}Discord Server{1} or "
@@ -1014,6 +1019,9 @@ msgid ""
 msgstr ""
 "Bunun bir hata olduğunu düşünüyorsanız, lütfen bunu {0}Discord "
 "Sunucusunda{1} veya {2}GitHub'da{3} bildirin."
+
+msgid "I understand, now let me in!"
+msgstr ""
 
 msgid ""
 "The maximum distance at which 3D elements will be rendered. Lowering this "

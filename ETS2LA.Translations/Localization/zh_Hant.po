@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-09-21 13:56:56+0300\n"
+"POT-Creation-Date: 2026-09-21 21:01:15+0300\n"
 "PO-Revision-Date: 2026-09-21 15:01+0000\n"
 "Last-Translator: Lun <lun@ets2la.com>\n"
 "Language-Team: Chinese (Traditional Han script) <http://weblate.ets2la.com/"
@@ -27,6 +27,9 @@ msgstr "未知控制項 ID"
 msgid "Sorry"
 msgstr "抱歉"
 
+msgid "Stay on Top"
+msgstr ""
+
 msgid "Display"
 msgstr "顯示"
 
@@ -42,6 +45,11 @@ msgstr "無法存取搖桿 {0}。"
 
 msgid "Anonymous Telemetry"
 msgstr "匿名遙測"
+
+msgid ""
+"Keep the ETS2LA window on top of other windows. If you want to use the "
+"visualization on a single monitor setup, this is recommended."
+msgstr ""
 
 #, csharp-format
 msgid "Control with ID '{0}' not found for updating bindings."
@@ -744,12 +752,12 @@ msgstr[0] "找到 {0} 個預製件"
 msgid "Pascals"
 msgstr "帕斯卡"
 
-msgid "You can enable the plugins we installed in a previous step here."
-msgstr "你可以在這裡啟用我們在先前步驟中安裝的插件。"
-
 #, csharp-format
 msgid "Failed to disable {0}: {1}"
 msgstr "停用 {0} 失敗：{1}"
+
+msgid "You can enable the plugins we installed in a previous step here."
+msgstr "你可以在這裡啟用我們在先前步驟中安裝的插件。"
 
 msgid "SDK Installed"
 msgstr "SDK 已安裝"
@@ -894,12 +902,12 @@ msgstr "此頁面將於後續更新中實作。"
 msgid "Plugin with ID [gray]{0}[/] is already loaded, skipping duplicate."
 msgstr "ID 為 [gray]{0}[/] 的插件已載入，跳過重複項目。"
 
+msgid "You are running the latest version."
+msgstr "你目前使用的是最新版本。"
+
 #, csharp-format
 msgid "Failed to download plugin with ID {0} from {1}. Status code: {2}"
 msgstr "從 {1} 下載 ID 為 {0} 的插件失敗。狀態碼：{2}"
-
-msgid "You are running the latest version."
-msgstr "你目前使用的是最新版本。"
 
 msgid "No plugins found."
 msgstr "找不到任何插件。"
@@ -971,15 +979,15 @@ msgstr ""
 msgid "Failed to install latest version of plugin with ID {0}."
 msgstr "ID 為 {0} 的插件最新版本安裝失敗。"
 
-msgid "I understand, now let me in!"
-msgstr "我知道了，現在讓我進去吧！"
-
 #, csharp-format
 msgid ""
 "If you think this is a bug, please report it in the {0}Discord Server{1} or "
 "on {2}GitHub{3}."
 msgstr ""
 "如果你認為這是一個錯誤，請在 {0}Discord 伺服器{1} 或 {2}GitHub{3} 回報。"
+
+msgid "I understand, now let me in!"
+msgstr "我知道了，現在讓我進去吧！"
 
 msgid ""
 "The maximum distance at which 3D elements will be rendered. Lowering this "

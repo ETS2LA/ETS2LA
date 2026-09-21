@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-09-21 13:56:56+0300\n"
+"POT-Creation-Date: 2026-09-21 21:01:15+0300\n"
 "PO-Revision-Date: 2026-09-11 13:17+0000\n"
 "Last-Translator: Kubex70 <kubex70@ets2la.com>\n"
 "Language-Team: Polish <http://weblate.ets2la.com/projects/ets2la/ets2la/pl/"
@@ -30,6 +30,9 @@ msgstr "Nieznany identyfikator kontroli"
 msgid "Sorry"
 msgstr "Przepraszam"
 
+msgid "Stay on Top"
+msgstr ""
+
 msgid "Display"
 msgstr "Wyświetlanie"
 
@@ -45,6 +48,11 @@ msgstr "Nie udało się otworzyć joysticka {0}."
 
 msgid "Anonymous Telemetry"
 msgstr "Anonimowa telemetria"
+
+msgid ""
+"Keep the ETS2LA window on top of other windows. If you want to use the "
+"visualization on a single monitor setup, this is recommended."
+msgstr ""
 
 #, csharp-format
 msgid "Control with ID '{0}' not found for updating bindings."
@@ -801,13 +809,13 @@ msgstr[2] "Znaleziono {0} prefabrykaty"
 msgid "Pascals"
 msgstr "Paskale"
 
-msgid "You can enable the plugins we installed in a previous step here."
-msgstr ""
-"Tutaj możesz włączyć pluginy, które zainstalowaliśmy w poprzednim kroku."
-
 #, csharp-format
 msgid "Failed to disable {0}: {1}"
 msgstr "Nie udało się wyłączyć {0}: {1}"
+
+msgid "You can enable the plugins we installed in a previous step here."
+msgstr ""
+"Tutaj możesz włączyć pluginy, które zainstalowaliśmy w poprzednim kroku."
 
 msgid "SDK Installed"
 msgstr "Zainstalowano zestaw SDK"
@@ -960,13 +968,13 @@ msgstr "Ta strona zostanie wdrożona w przyszłej aktualizacji."
 msgid "Plugin with ID [gray]{0}[/] is already loaded, skipping duplicate."
 msgstr ""
 
+msgid "You are running the latest version."
+msgstr "Używasz najnowszej wersji."
+
 #, csharp-format
 msgid "Failed to download plugin with ID {0} from {1}. Status code: {2}"
 msgstr ""
 "Nie udało się pobrać pluginu o identyfikatorze {0} z {1}. Kod stanu: {2}"
-
-msgid "You are running the latest version."
-msgstr "Używasz najnowszej wersji."
 
 msgid "No plugins found."
 msgstr "Nie znaleziono pluginów."
@@ -1049,9 +1057,6 @@ msgid "Failed to install latest version of plugin with ID {0}."
 msgstr ""
 "Nie udało się zainstalować najnowszej wersji pluginu o identyfikatorze {0}."
 
-msgid "I understand, now let me in!"
-msgstr "Rozumiem, teraz mnie wpuść!"
-
 #, csharp-format
 msgid ""
 "If you think this is a bug, please report it in the {0}Discord Server{1} or "
@@ -1059,6 +1064,9 @@ msgid ""
 msgstr ""
 "Jeśli uważasz, że to błąd, zgłoś to na {0}serwerze Discord{1} lub na {2}"
 "GitHubie{3}."
+
+msgid "I understand, now let me in!"
+msgstr "Rozumiem, teraz mnie wpuść!"
 
 msgid ""
 "The maximum distance at which 3D elements will be rendered. Lowering this "

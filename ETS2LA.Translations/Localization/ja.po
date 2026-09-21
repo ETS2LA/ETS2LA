@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-09-21 13:56:56+0300\n"
+"POT-Creation-Date: 2026-09-21 21:01:15+0300\n"
 "PO-Revision-Date: 2026-09-09 11:08+0000\n"
 "Last-Translator: Pastel <pastel@ets2la.com>\n"
 "Language-Team: Japanese <http://weblate.ets2la.com/projects/ets2la/ets2la/ja/"
@@ -27,6 +27,9 @@ msgstr "不明なコントロールID"
 msgid "Sorry"
 msgstr "すみません"
 
+msgid "Stay on Top"
+msgstr ""
+
 msgid "Display"
 msgstr "ディスプレイ"
 
@@ -42,6 +45,11 @@ msgstr "ジョイスティック {0} を開くことができませんでした�
 
 msgid "Anonymous Telemetry"
 msgstr "匿名テレメトリ"
+
+msgid ""
+"Keep the ETS2LA window on top of other windows. If you want to use the "
+"visualization on a single monitor setup, this is recommended."
+msgstr ""
 
 #, csharp-format
 msgid "Control with ID '{0}' not found for updating bindings."
@@ -783,12 +791,12 @@ msgstr[0] "{0}個のプレハブが見つかりました"
 msgid "Pascals"
 msgstr "パスカル"
 
-msgid "You can enable the plugins we installed in a previous step here."
-msgstr "ここで、前の手順でインストールしたプラグインを有効にできます。"
-
 #, csharp-format
 msgid "Failed to disable {0}: {1}"
 msgstr "{0} の無効化に失敗しました: {1}"
+
+msgid "You can enable the plugins we installed in a previous step here."
+msgstr "ここで、前の手順でインストールしたプラグインを有効にできます。"
 
 msgid "SDK Installed"
 msgstr "SDKがインストールされました"
@@ -943,14 +951,14 @@ msgstr "このページは今後のアップデートで実装される予定で
 msgid "Plugin with ID [gray]{0}[/] is already loaded, skipping duplicate."
 msgstr ""
 
+msgid "You are running the latest version."
+msgstr "最新バージョンがインストールされています。"
+
 #, csharp-format
 msgid "Failed to download plugin with ID {0} from {1}. Status code: {2}"
 msgstr ""
 "ID {0} のプラグインを {1} からダウンロードできませんでした。ステータスコー"
 "ド: {2}"
-
-msgid "You are running the latest version."
-msgstr "最新バージョンがインストールされています。"
 
 msgid "No plugins found."
 msgstr "プラグインが見つかりませんでした。"
@@ -1028,9 +1036,6 @@ msgstr ""
 msgid "Failed to install latest version of plugin with ID {0}."
 msgstr "ID {0} のプラグインの最新バージョンのインストールに失敗しました。"
 
-msgid "I understand, now let me in!"
-msgstr "理解しました。始めよう!"
-
 #, csharp-format
 msgid ""
 "If you think this is a bug, please report it in the {0}Discord Server{1} or "
@@ -1038,6 +1043,9 @@ msgid ""
 msgstr ""
 "バグだと思われる場合は、{0}Discordサーバー{1}または{2}GitHub{3}で報告してくだ"
 "さい。"
+
+msgid "I understand, now let me in!"
+msgstr "理解しました。始めよう!"
 
 msgid ""
 "The maximum distance at which 3D elements will be rendered. Lowering this "

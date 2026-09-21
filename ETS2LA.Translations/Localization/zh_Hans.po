@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-09-21 13:56:56+0300\n"
+"POT-Creation-Date: 2026-09-21 21:01:15+0300\n"
 "PO-Revision-Date: 2026-09-21 15:01+0000\n"
 "Last-Translator: Lun <lun@ets2la.com>\n"
 "Language-Team: Chinese (Simplified Han script) <http://weblate.ets2la.com/"
@@ -30,6 +30,9 @@ msgstr "未知控制ID"
 msgid "Sorry"
 msgstr "抱歉"
 
+msgid "Stay on Top"
+msgstr ""
+
 msgid "Display"
 msgstr "显示"
 
@@ -45,6 +48,11 @@ msgstr "摇杆 {0} 打开失败。"
 
 msgid "Anonymous Telemetry"
 msgstr "匿名遥测"
+
+msgid ""
+"Keep the ETS2LA window on top of other windows. If you want to use the "
+"visualization on a single monitor setup, this is recommended."
+msgstr ""
 
 #, csharp-format
 msgid "Control with ID '{0}' not found for updating bindings."
@@ -342,7 +350,8 @@ msgstr "选中的文件不存在。"
 
 #, csharp-format
 msgid "Assists Enabled: <span class=\"text-text-accent font-bold\">{0}</span>"
-msgstr "辅助功能启用状态：<span class=\"text-text-accent font-bold\">{0}</span>"
+msgstr ""
+"辅助功能启用状态：<span class=\"text-text-accent font-bold\">{0}</span>"
 
 #, csharp-format
 msgid "Latest Version: {0}"
@@ -748,12 +757,12 @@ msgstr[0] "找到 {0} 个预制件"
 msgid "Pascals"
 msgstr "帕斯卡（压力单位）"
 
-msgid "You can enable the plugins we installed in a previous step here."
-msgstr "您可以在此处启用我们在上一步安装的插件。"
-
 #, csharp-format
 msgid "Failed to disable {0}: {1}"
 msgstr "停用 {0} 失败:{1}"
+
+msgid "You can enable the plugins we installed in a previous step here."
+msgstr "您可以在此处启用我们在上一步安装的插件。"
 
 msgid "SDK Installed"
 msgstr "已安装SDK"
@@ -898,12 +907,12 @@ msgstr "此页面将于后续更新中实现。"
 msgid "Plugin with ID [gray]{0}[/] is already loaded, skipping duplicate."
 msgstr ""
 
+msgid "You are running the latest version."
+msgstr "你正在使用最新版本。"
+
 #, csharp-format
 msgid "Failed to download plugin with ID {0} from {1}. Status code: {2}"
 msgstr "从 {1} 下载 ID 为 {0} 的插件失败。状态码：{2}"
-
-msgid "You are running the latest version."
-msgstr "你正在使用最新版本。"
 
 msgid "No plugins found."
 msgstr "找不到任何插件。"
@@ -975,15 +984,15 @@ msgstr ""
 msgid "Failed to install latest version of plugin with ID {0}."
 msgstr "ID 为 {0} 的插件最新版本安装失败。"
 
-msgid "I understand, now let me in!"
-msgstr "我明白了，现在让我进入！"
-
 #, csharp-format
 msgid ""
 "If you think this is a bug, please report it in the {0}Discord Server{1} or "
 "on {2}GitHub{3}."
 msgstr ""
 "如果你认为这是一个错误，请在 {0}Discord 服务器{1} 或 {2}GitHub{3} 报告。"
+
+msgid "I understand, now let me in!"
+msgstr "我明白了，现在让我进入！"
 
 msgid ""
 "The maximum distance at which 3D elements will be rendered. Lowering this "

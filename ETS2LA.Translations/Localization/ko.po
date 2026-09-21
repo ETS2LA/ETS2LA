@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-09-21 13:56:56+0300\n"
+"POT-Creation-Date: 2026-09-21 21:01:15+0300\n"
 "PO-Revision-Date: 2026-09-13 12:43+0000\n"
 "Last-Translator: bot_lapis <botlapis@ets2la.com>\n"
 "Language-Team: Korean <http://weblate.ets2la.com/projects/ets2la/ets2la/ko/"
@@ -27,6 +27,9 @@ msgstr "알 수 없는 컨트롤 ID"
 msgid "Sorry"
 msgstr "죄송합니다"
 
+msgid "Stay on Top"
+msgstr ""
+
 msgid "Display"
 msgstr "디스플레이"
 
@@ -42,6 +45,11 @@ msgstr "조이스틱 {0}을(를) 열지 못했습니다."
 
 msgid "Anonymous Telemetry"
 msgstr "익명 데이터 수집"
+
+msgid ""
+"Keep the ETS2LA window on top of other windows. If you want to use the "
+"visualization on a single monitor setup, this is recommended."
+msgstr ""
 
 #, csharp-format
 msgid "Control with ID '{0}' not found for updating bindings."
@@ -766,12 +774,12 @@ msgstr[0] "프리팹 {0}개를 찾았습니다"
 msgid "Pascals"
 msgstr "파스칼"
 
-msgid "You can enable the plugins we installed in a previous step here."
-msgstr "이전 단계에서 설치한 플러그인을 여기에서 활성화할 수 있습니다."
-
 #, csharp-format
 msgid "Failed to disable {0}: {1}"
 msgstr "{0}을(를) 비활성화하지 못했습니다: {1}"
+
+msgid "You can enable the plugins we installed in a previous step here."
+msgstr "이전 단계에서 설치한 플러그인을 여기에서 활성화할 수 있습니다."
 
 msgid "SDK Installed"
 msgstr "SDK 설치됨"
@@ -908,11 +916,11 @@ msgstr ""
 msgid "Plugin with ID [gray]{0}[/] is already loaded, skipping duplicate."
 msgstr ""
 
-#, csharp-format
-msgid "Failed to download plugin with ID {0} from {1}. Status code: {2}"
+msgid "You are running the latest version."
 msgstr ""
 
-msgid "You are running the latest version."
+#, csharp-format
+msgid "Failed to download plugin with ID {0} from {1}. Status code: {2}"
 msgstr ""
 
 msgid "No plugins found."
@@ -985,13 +993,13 @@ msgstr ""
 msgid "Failed to install latest version of plugin with ID {0}."
 msgstr ""
 
-msgid "I understand, now let me in!"
-msgstr ""
-
 #, csharp-format
 msgid ""
 "If you think this is a bug, please report it in the {0}Discord Server{1} or "
 "on {2}GitHub{3}."
+msgstr ""
+
+msgid "I understand, now let me in!"
 msgstr ""
 
 msgid ""
