@@ -66,6 +66,7 @@ public class OverlayHandler
     private OverlaySettings overlaySettings;
 
     private bool isInteracting = false;
+    private bool hasInteracted = false;
     private float bgOpacityTarget = 0.0f;
     private bool shutdown = false;
     private List<float> frameTimes = new List<float>();
@@ -115,8 +116,23 @@ public class OverlayHandler
     private void HandleInput(object sender, ControlChangeEventArgs e)
     {
         bool b = (bool)e.NewValue;
-        if (b == isInteracting) { return; }
-        isInteracting = b;
+        if (overlaySettings.OverlayInteractionIsToggle)
+        {
+            if (b && !hasInteracted)
+            {
+                isInteracting = !isInteracting;
+                hasInteracted = true;
+            }
+            else if (!b && hasInteracted)
+            {
+                hasInteracted = false;
+            }
+        }
+        else
+        {
+            if (b == isInteracting) { return; }
+            isInteracting = b;
+        }
     }
 
     private void RenderLoop()

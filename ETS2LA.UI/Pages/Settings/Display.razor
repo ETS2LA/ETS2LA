@@ -46,6 +46,17 @@
         get => SupportedLanguages.FindIndex(l => l.Code == StateSettingsHandler.Current.GetSettings().DisplayLanguage?.Code);
     }
 
+    private bool OverlayInteractionIsToggle
+    {
+        get => OverlaySettingsHandler.Current.GetSettings().OverlayInteractionIsToggle;
+        set 
+        {
+            var settings = OverlaySettingsHandler.Current.GetSettings();
+            settings.OverlayInteractionIsToggle = value;
+            OverlaySettingsHandler.Current.Save();
+        }
+    }
+
     private bool SupportMultipleViewports
     {
         get => OverlaySettingsHandler.Current.GetSettings().SupportMultipleViewports;
@@ -227,6 +238,10 @@
             ValueChanged="@((bool value) => StayOnTop = value)" />
 
     <Separator Label=@(_("Overlay")) Class="mt-8" />
+    <Switch Title=@(_("Keybind is Toggle"))
+            Description=@(_("When enabled, the overlay will toggle between interaction and non-interaction mode when you press it's keybind. When disabled, the overlay will only be interactive while you hold down the keybind."))
+            Value="@OverlaySettingsHandler.Current.GetSettings().OverlayInteractionIsToggle"
+            ValueChanged="@((bool value) => OverlayInteractionIsToggle = value)" />
     <Switch Title=@(_("Support Multiple Viewports"))
             Description=@(_("This allows ETS2LA to render in multiple viewports, meaning you can move overlay windows to any monitor."))
             Value="@SupportMultipleViewports"
