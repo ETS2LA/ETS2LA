@@ -1,4 +1,4 @@
-### ETS2LA C# 2026.9.XXXX (Nightly)
+### ETS2LA C# 2026.9.5062 (Nightly)
 - Updated sponsors.
 - Removed redundant settings that were accidentally left in the settings pages.
 - Implemented a toggle mode for overlay interaction. **This is now the default behavior.** You can change this in `Settings - Display`.
