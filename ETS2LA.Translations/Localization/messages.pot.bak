@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-09-22 22:10:47+0300\n"
-"PO-Revision-Date: 2026-09-22 22:10:48+0300\n"
+"POT-Creation-Date: 2026-09-22 22:17:22+0300\n"
+"PO-Revision-Date: 2026-09-22 22:17:23+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -105,7 +105,7 @@ msgstr ""
 msgid "If you've not yet installed it, you can find it in the catalogue."
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Plugins/Catalogue.razor:162
+#: ../../../ETS2LA.UI/Pages/Plugins/Catalogue.razor:172
 #, csharp-format
 msgid "Installed {0}"
 msgstr ""
@@ -115,8 +115,8 @@ msgstr ""
 msgid "Error loading map data from '{0}': {1}"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Settings/Assists.razor:53
 #: ../../../ETS2LA.UI/Pages/Settings/Data.razor:11
+#: ../../../ETS2LA.UI/Pages/Settings/Assists.razor:53
 msgid "Medium"
 msgstr ""
 
@@ -357,7 +357,7 @@ msgstr ""
 msgid "Disconnected joystick: [gray italic]({0})[/]"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Plugins/Catalogue.razor:191
+#: ../../../ETS2LA.UI/Pages/Plugins/Catalogue.razor:201
 #, csharp-format
 msgid "Update to {0}"
 msgstr ""
@@ -484,14 +484,14 @@ msgstr ""
 msgid "Backend shutdown complete."
 msgstr ""
 
-#: ../../../ETS2LA.Controls/Linux/SDL3ControlsBackend.cs:121
 #: ../../../ETS2LA.Controls/Windows/SharpDXControlsBackend.cs:141
+#: ../../../ETS2LA.Controls/Linux/SDL3ControlsBackend.cs:121
 #, csharp-format
 msgid "Control with ID '{0}' not found for event subscription."
 msgstr ""
 
-#: ../../../ETS2LA.Controls/Linux/SDL3ControlsBackend.cs:156
 #: ../../../ETS2LA.Controls/Windows/SharpDXControlsBackend.cs:166
+#: ../../../ETS2LA.Controls/Linux/SDL3ControlsBackend.cs:156
 #, csharp-format
 msgid "Unregistered control: {0} ({1})"
 msgstr ""
@@ -567,7 +567,7 @@ msgid ""
 "{1}Discord Server{2} or on {3}GitHub{4}."
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Plugins/Catalogue.razor:195
+#: ../../../ETS2LA.UI/Pages/Plugins/Catalogue.razor:205
 msgid "Uninstall"
 msgstr ""
 
@@ -656,7 +656,7 @@ msgstr ""
 msgid "Failed to discover Dlls: {0}"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Plugins/Catalogue.razor:166
+#: ../../../ETS2LA.UI/Pages/Plugins/Catalogue.razor:176
 msgid "Not Installed"
 msgstr ""
 
@@ -827,8 +827,8 @@ msgstr ""
 msgid "Failed to load library plugin from [gray]{0}[/]: {1}"
 msgstr ""
 
-#: ../../../ETS2LA.Controls/Linux/SDL3ControlsBackend.cs:172
 #: ../../../ETS2LA.Controls/Windows/SharpDXControlsBackend.cs:182
+#: ../../../ETS2LA.Controls/Linux/SDL3ControlsBackend.cs:172
 #, csharp-format
 msgid "Updated bindings for control: {0} ({1}) to Device: {2}, Control: {3}"
 msgstr ""
@@ -851,7 +851,7 @@ msgstr ""
 msgid "File not found: {0}"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Plugins/Catalogue.razor:120
+#: ../../../ETS2LA.UI/Pages/Plugins/Catalogue.razor:130
 msgid "Restart Now"
 msgstr ""
 
@@ -939,27 +939,27 @@ msgstr[1] ""
 msgid "Pascals"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/FinishStep.razor:24
-msgid "You can enable the plugins we installed in a previous step here."
-msgstr ""
-
 #: ../../../ETS2LA.Backend/PluginHandler/Handler.cs:465
 #, csharp-format
 msgid "Failed to disable {0}: {1}"
+msgstr ""
+
+#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/FinishStep.razor:24
+msgid "You can enable the plugins we installed in a previous step here."
 msgstr ""
 
 #: ../../../ETS2LA.Game/Installation.cs:402
 msgid "SDK Installed"
 msgstr ""
 
+#: ../../../ETS2LA.UI/Pages/Settings/Assists.razor:37
+msgid "Current Speed"
+msgstr ""
+
 #: ../../../ETS2LA.UI/Pages/Settings/Controls.razor:181
 #: ../../../ETS2LA.UI/Pages/Settings/Controls.razor:186
 #, csharp-format
 msgid "Bound control {0} ({1}) to device {2} and control {3}"
-msgstr ""
-
-#: ../../../ETS2LA.UI/Pages/Settings/Assists.razor:37
-msgid "Current Speed"
 msgstr ""
 
 #: ../../../ETS2LA.State/Units.cs:182
@@ -1122,17 +1122,17 @@ msgstr ""
 msgid "Plugin with ID [gray]{0}[/] is already loaded, skipping duplicate."
 msgstr ""
 
-#: ../../../ETS2LA.Networking/Plugins/client.cs:190
-#, csharp-format
-msgid "Failed to download plugin with ID {0} from {1}. Status code: {2}"
-msgstr ""
-
 #: ../../../ETS2LA.UI/Pages/Home.razor:81
 #: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:109
 msgid "You are running the latest version."
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Plugins/Catalogue.razor:133
+#: ../../../ETS2LA.Networking/Plugins/client.cs:190
+#, csharp-format
+msgid "Failed to download plugin with ID {0} from {1}. Status code: {2}"
+msgstr ""
+
+#: ../../../ETS2LA.UI/Pages/Plugins/Catalogue.razor:143
 #: ../../../ETS2LA.UI/Pages/Plugins/Manager.razor:198
 msgid "No plugins found."
 msgstr ""
@@ -1285,10 +1285,10 @@ msgstr ""
 msgid "Disabled plugin: [bold]{0}[/]"
 msgstr ""
 
+#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/SDKStep.razor:17
+#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/PluginStep.razor:57
 #: ../../../ETS2LA.UI/Pages/Onboarding/Steps/ControlsStep.razor:48
 #: ../../../ETS2LA.UI/Pages/Onboarding/Steps/OverlayStep.razor:27
-#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/PluginStep.razor:57
-#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/SDKStep.razor:17
 msgid "Continue"
 msgstr ""
 
@@ -1398,8 +1398,8 @@ msgstr ""
 msgid "Steering Sensitivity"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Plugins/Manager.razor:226
 #: ../../../ETS2LA.UI/Pages/Settings/Assists.razor:207
+#: ../../../ETS2LA.UI/Pages/Plugins/Manager.razor:226
 msgid "Disabled"
 msgstr ""
 
@@ -1453,7 +1453,7 @@ msgstr ""
 msgid "No release notes available."
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Plugins/Catalogue.razor:157
+#: ../../../ETS2LA.UI/Pages/Plugins/Catalogue.razor:167
 msgid "Changelog"
 msgstr ""
 
@@ -1568,7 +1568,7 @@ msgstr ""
 msgid "SDKs need to be installed."
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Plugins/Catalogue.razor:112
+#: ../../../ETS2LA.UI/Pages/Plugins/Catalogue.razor:121
 msgid "Hide Installed"
 msgstr ""
 
@@ -1607,8 +1607,8 @@ msgstr ""
 msgid "kilometers per hour"
 msgstr ""
 
-#: ../../../ETS2LA.Controls/Linux/SDL3ControlsBackend.cs:133
 #: ../../../ETS2LA.Controls/Windows/SharpDXControlsBackend.cs:152
+#: ../../../ETS2LA.Controls/Linux/SDL3ControlsBackend.cs:133
 #, csharp-format
 msgid "Control with ID '{0}' not found for event unsubscription."
 msgstr ""
@@ -1634,7 +1634,7 @@ msgid ""
 "Restart now?"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Plugins/Catalogue.razor:155
+#: ../../../ETS2LA.UI/Pages/Plugins/Catalogue.razor:165
 #, csharp-format
 msgid "Update to {0} from {1}"
 msgstr ""
@@ -1672,7 +1672,7 @@ msgstr ""
 msgid "Full Self-Driving"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Plugins/Catalogue.razor:199
+#: ../../../ETS2LA.UI/Pages/Plugins/Catalogue.razor:209
 msgid "Install"
 msgstr ""
 
@@ -1800,11 +1800,11 @@ msgid "SDKs are currently installed."
 msgstr ""
 
 #: ../../../ETS2LA.UI/Utils.cs:55
+#: ../../../ETS2LA.UI/Pages/Settings/Telemetry.razor:16
 #: ../../../ETS2LA.UI/Pages/Settings/Data.razor:32
 #: ../../../ETS2LA.UI/Pages/Settings/Data.razor:100
 #: ../../../ETS2LA.UI/Pages/Settings/Display.razor:152
 #: ../../../ETS2LA.UI/Pages/Settings/Display.razor:184
-#: ../../../ETS2LA.UI/Pages/Settings/Telemetry.razor:16
 msgid "Restart Required"
 msgstr ""
 
@@ -1945,8 +1945,8 @@ msgid "Target Speed: <span class=\"text-text-accent font-bold\">{0} {1}</span>"
 msgstr ""
 
 #: ../../../ETS2LA.Game/SDK/Navigation.cs:122
-#: ../../../ETS2LA.Game/SDK/Camera.cs:130
 #: ../../../ETS2LA.Game/SDK/ParkedVehicles.cs:108
+#: ../../../ETS2LA.Game/SDK/Camera.cs:130
 #: ../../../ETS2LA.Game/SDK/Semaphores.cs:176
 #: ../../../ETS2LA.Game/SDK/Traffic.cs:159
 #, csharp-format
@@ -1983,10 +1983,14 @@ msgstr ""
 msgid "SET Behaviour"
 msgstr ""
 
-#: ../../../ETS2LA.Controls/Linux/SDL3ControlsBackend.cs:113
 #: ../../../ETS2LA.Controls/Windows/SharpDXControlsBackend.cs:133
+#: ../../../ETS2LA.Controls/Linux/SDL3ControlsBackend.cs:113
 #, csharp-format
 msgid "Registered control: {0} [gray italic]({1})[/]"
+msgstr ""
+
+#: ../../../ETS2LA.UI/Pages/Settings/Display.razor:241
+msgid "Keybind is Toggle"
 msgstr ""
 
 #: ../../../ETS2LA.UI/Pages/Onboarding/Steps/SDKReminderStep.razor:17
@@ -2008,7 +2012,7 @@ msgstr ""
 msgid "Thank you to the following people for their ongoing support:"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Plugins/Catalogue.razor:119
+#: ../../../ETS2LA.UI/Pages/Plugins/Catalogue.razor:129
 msgid "Changes will take effect after restarting the application."
 msgstr ""
 
@@ -2250,10 +2254,6 @@ msgstr ""
 msgid "Assist Level: "
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Settings/Display.razor:241
-msgid "Overlay Interaction acts as Toggle"
-msgstr ""
-
 #: ../../../ETS2LA.Backend/PluginHandler/Handler.cs:381
 #, csharp-format
 msgid "Cannot enable plugin {0} because dependency {1} was not found."
@@ -2328,10 +2328,10 @@ msgid "Enabled plugin: [bold]{0}[/]"
 msgstr ""
 
 #: ../../../ETS2LA.UI/Utils.cs:56
+#: ../../../ETS2LA.UI/Pages/Settings/Telemetry.razor:17
 #: ../../../ETS2LA.UI/Pages/Settings/Data.razor:33
 #: ../../../ETS2LA.UI/Pages/Settings/Data.razor:101
 #: ../../../ETS2LA.UI/Pages/Settings/Display.razor:153
-#: ../../../ETS2LA.UI/Pages/Settings/Telemetry.razor:17
 msgid ""
 "Changing this option requires a restart of ETS2LA to take effect. Restart "
 "now?"

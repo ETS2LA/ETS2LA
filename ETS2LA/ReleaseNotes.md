@@ -1,3 +1,9 @@
+### ETS2LA C# 2026.9.XXXX (Nightly)
+- Updated sponsors.
+- Removed redundant settings that were accidentally left in the settings pages.
+- Implemented a toggle mode for overlay interaction. **This is now the default behavior.** You can change this in `Settings - Display`.
+- You can now refresh catalogue plugins without restarting ETS2LA.
+
 **This update cannot be automatically downloaded due to a bug in the updater. Please download the latest version from GitHub or CNB.**
 ### ETS2LA C# 2026.9.5051 (Nightly)
 - Added option to keep the ETS2LA window on top of other windows. This can be turned on in Settings - Display.
