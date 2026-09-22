@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-09-22 11:12:01+0300\n"
+"POT-Creation-Date: 2026-09-22 22:35:36+0300\n"
 "PO-Revision-Date: 2026-09-04 20:02+0000\n"
 "Last-Translator: Kivanc <kivanc@ets2la.com>\n"
 "Language-Team: Turkish <http://weblate.ets2la.com/projects/ets2la/ets2la/tr/"
@@ -190,6 +190,9 @@ msgstr ""
 msgid "km/h"
 msgstr "km/sa"
 
+msgid "Overlay is disabled in settings, skipping initialization."
+msgstr ""
+
 msgid ""
 "ETS2LA will display information on top of the game. You can interact with "
 "these overlay elements using <span class=\"text-text-accent font-"
@@ -250,11 +253,11 @@ msgstr "Görsel"
 msgid "Additional"
 msgstr "Ek olarak"
 
-msgid "Install Plugins"
-msgstr "Eklentileri Yükle"
-
 msgid "Show Fewer Logs"
 msgstr "Daha az günlük göster"
+
+msgid "Install Plugins"
+msgstr "Eklentileri Yükle"
 
 #, csharp-format
 msgid "Error while downloading update: {0}"
@@ -348,6 +351,11 @@ msgid ""
 msgstr ""
 "Hizmet kullanılamıyor. Sunucu geçici yoğunluk veya bakım çalışması nedeniyle "
 "şu anda isteği işleyemiyor."
+
+msgid ""
+"Disables the overlay entirely. This is useful if you want to use ETS2LA "
+"without the overlay, or if you are experiencing issues with the overlay."
+msgstr ""
 
 msgid "Enabled"
 msgstr ""
@@ -801,12 +809,12 @@ msgstr "Bir önceki adımda yüklenen eklentileri buradan etkinleştirebilirsini
 msgid "SDK Installed"
 msgstr "SDK Yüklendi"
 
-msgid "Current Speed"
-msgstr "Mevcut Hız"
-
 #, csharp-format
 msgid "Bound control {0} ({1}) to device {2} and control {3}"
 msgstr ""
+
+msgid "Current Speed"
+msgstr "Mevcut Hız"
 
 msgid "miles per hour"
 msgstr "mil/saat"
@@ -940,12 +948,12 @@ msgstr "Bu sayfa, gelecek bir güncellemede kullanıma sunulacaktır."
 msgid "Plugin with ID [gray]{0}[/] is already loaded, skipping duplicate."
 msgstr ""
 
-msgid "You are running the latest version."
-msgstr "En son sürümü kullanıyorsunuz."
-
 #, csharp-format
 msgid "Failed to download plugin with ID {0} from {1}. Status code: {2}"
 msgstr ""
+
+msgid "You are running the latest version."
+msgstr "En son sürümü kullanıyorsunuz."
 
 msgid "No plugins found."
 msgstr "Eklenti bulunamadı."
@@ -1030,6 +1038,9 @@ msgstr ""
 msgid "I understand, now let me in!"
 msgstr ""
 
+msgid "Disable Overlay"
+msgstr ""
+
 msgid ""
 "The maximum distance at which 3D elements will be rendered. Lowering this "
 "can be used to improve performance on lower-end hardware."
@@ -1101,6 +1112,12 @@ msgid "Normal"
 msgstr "Normal"
 
 msgid "Unknown Control"
+msgstr ""
+
+msgid ""
+"When enabled, the overlay will toggle between interaction and non-"
+"interaction mode when you press it's keybind. When disabled, the overlay "
+"will only be interactive while you hold down the keybind."
 msgstr ""
 
 msgid "pounds"
@@ -1190,11 +1207,11 @@ msgstr "Oyun eklenemedi"
 msgid "Font file not found at {0}"
 msgstr "Yazı tipi dosyası şu konumda bulunamadı: {0}"
 
-msgid "No release notes available."
-msgstr "Sürüm notları mevcut değil."
-
 msgid "Changelog"
 msgstr "Değişiklik Günlüğü"
+
+msgid "No release notes available."
+msgstr "Sürüm notları mevcut değil."
 
 #, csharp-format
 msgid "Detected a switch to {0}, waiting for its game data to be parsed."
@@ -1421,6 +1438,10 @@ msgid "feet"
 msgstr ""
 
 #, csharp-format
+msgid "Overlay is disabled in settings, skipping window registration for {0}."
+msgstr ""
+
+#, csharp-format
 msgid "Successfully installed plugin {0} ({1}, {2})"
 msgstr "{0} ({1}, {2}) eklentisi başarıyla indirildi"
 
@@ -1599,10 +1620,10 @@ msgstr ""
 msgid "Assist Mode: <span class=\"text-text-accent font-bold\">{0}</span>"
 msgstr ""
 
-msgid "View Public Telemetry"
+msgid "Adjust the volume of the audio output."
 msgstr ""
 
-msgid "Adjust the volume of the audio output."
+msgid "View Public Telemetry"
 msgstr ""
 
 #, csharp-format
@@ -1615,6 +1636,9 @@ msgstr ""
 
 #, csharp-format
 msgid "Registered control: {0} [gray italic]({1})[/]"
+msgstr ""
+
+msgid "Keybind is Toggle"
 msgstr ""
 
 msgid ""

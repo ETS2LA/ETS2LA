@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-09-22 11:12:01+0300\n"
+"POT-Creation-Date: 2026-09-22 22:35:36+0300\n"
 "PO-Revision-Date: 2026-09-21 15:01+0000\n"
 "Last-Translator: Lun <lun@ets2la.com>\n"
 "Language-Team: Chinese (Simplified Han script) <http://weblate.ets2la.com/"
@@ -184,6 +184,9 @@ msgstr "通过 Discord 联系我们"
 msgid "km/h"
 msgstr "km/h"
 
+msgid "Overlay is disabled in settings, skipping initialization."
+msgstr ""
+
 msgid ""
 "ETS2LA will display information on top of the game. You can interact with "
 "these overlay elements using <span class=\"text-text-accent font-"
@@ -245,11 +248,11 @@ msgstr "视觉提示"
 msgid "Additional"
 msgstr "其他"
 
-msgid "Install Plugins"
-msgstr "安装插件"
-
 msgid "Show Fewer Logs"
 msgstr "显示更少日志"
+
+msgid "Install Plugins"
+msgstr "安装插件"
 
 #, csharp-format
 msgid "Error while downloading update: {0}"
@@ -336,6 +339,11 @@ msgid ""
 "Service unavailable. The server is currently unable to handle the request "
 "due to temporary overloading or maintenance."
 msgstr "服务不可用。由于暂时过载或者维护目的，服务器目前无法处理请求。"
+
+msgid ""
+"Disables the overlay entirely. This is useful if you want to use ETS2LA "
+"without the overlay, or if you are experiencing issues with the overlay."
+msgstr ""
 
 msgid "Enabled"
 msgstr "启用"
@@ -774,12 +782,12 @@ msgstr "您可以在此处启用我们在上一步安装的插件。"
 msgid "SDK Installed"
 msgstr "已安装SDK"
 
-msgid "Current Speed"
-msgstr "当前速度"
-
 #, csharp-format
 msgid "Bound control {0} ({1}) to device {2} and control {3}"
 msgstr "已将控件 {0}（{1}）绑定至设备 {2} 的控件 {3}"
+
+msgid "Current Speed"
+msgstr "当前速度"
 
 msgid "miles per hour"
 msgstr "英里每小时"
@@ -914,12 +922,12 @@ msgstr "此页面将于后续更新中实现。"
 msgid "Plugin with ID [gray]{0}[/] is already loaded, skipping duplicate."
 msgstr ""
 
-msgid "You are running the latest version."
-msgstr "你正在使用最新版本。"
-
 #, csharp-format
 msgid "Failed to download plugin with ID {0} from {1}. Status code: {2}"
 msgstr "从 {1} 下载 ID 为 {0} 的插件失败。状态码：{2}"
+
+msgid "You are running the latest version."
+msgstr "你正在使用最新版本。"
 
 msgid "No plugins found."
 msgstr "找不到任何插件。"
@@ -1001,6 +1009,9 @@ msgstr ""
 msgid "I understand, now let me in!"
 msgstr "我明白了，现在让我进入！"
 
+msgid "Disable Overlay"
+msgstr ""
+
 msgid ""
 "The maximum distance at which 3D elements will be rendered. Lowering this "
 "can be used to improve performance on lower-end hardware."
@@ -1070,6 +1081,12 @@ msgstr "标准"
 
 msgid "Unknown Control"
 msgstr "未知控件"
+
+msgid ""
+"When enabled, the overlay will toggle between interaction and non-"
+"interaction mode when you press it's keybind. When disabled, the overlay "
+"will only be interactive while you hold down the keybind."
+msgstr ""
 
 msgid "pounds"
 msgstr "磅"
@@ -1156,11 +1173,11 @@ msgstr "游戏添加失败"
 msgid "Font file not found at {0}"
 msgstr "找不到字体文件：{0}"
 
-msgid "No release notes available."
-msgstr "暂无更新日志。"
-
 msgid "Changelog"
 msgstr "更新日志"
+
+msgid "No release notes available."
+msgstr "暂无更新日志。"
 
 #, csharp-format
 msgid "Detected a switch to {0}, waiting for its game data to be parsed."
@@ -1377,6 +1394,10 @@ msgid "feet"
 msgstr "英尺"
 
 #, csharp-format
+msgid "Overlay is disabled in settings, skipping window registration for {0}."
+msgstr ""
+
+#, csharp-format
 msgid "Successfully installed plugin {0} ({1}, {2})"
 msgstr "已成功安装插件 {0}（{1}，{2}）"
 
@@ -1556,11 +1577,11 @@ msgstr "从 [gray]{0}[/] 加载插件失败：{1}"
 msgid "Assist Mode: <span class=\"text-text-accent font-bold\">{0}</span>"
 msgstr "辅助模式：<span class=\"text-text-accent font-bold\">{0}</span>"
 
-msgid "View Public Telemetry"
-msgstr "查看公开遥测数据"
-
 msgid "Adjust the volume of the audio output."
 msgstr "调整音频输出的音量。"
+
+msgid "View Public Telemetry"
+msgstr "查看公开遥测数据"
 
 #, csharp-format
 msgid ""
@@ -1573,6 +1594,9 @@ msgstr "“设定”按键行为"
 #, csharp-format
 msgid "Registered control: {0} [gray italic]({1})[/]"
 msgstr "已注册控件：{0} [gray italic]({1})[/]"
+
+msgid "Keybind is Toggle"
+msgstr ""
 
 msgid ""
 "You'll have to reinstall the SDK for <span class=\"text-text-accent font-"

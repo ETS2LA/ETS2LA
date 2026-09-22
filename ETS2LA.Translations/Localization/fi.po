@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-09-22 11:12:01+0300\n"
+"POT-Creation-Date: 2026-09-22 22:35:36+0300\n"
 "PO-Revision-Date: 2026-09-21 20:12+0000\n"
 "Last-Translator: Tumppi066 <contact@ets2la.com>\n"
 "Language-Team: Finnish <http://weblate.ets2la.com/projects/ets2la/ets2la/fi/"
@@ -192,6 +192,9 @@ msgstr "Ote yhteyttä Discordissa"
 msgid "km/h"
 msgstr "km/h"
 
+msgid "Overlay is disabled in settings, skipping initialization."
+msgstr ""
+
 msgid ""
 "ETS2LA will display information on top of the game. You can interact with "
 "these overlay elements using <span class=\"text-text-accent font-"
@@ -254,11 +257,11 @@ msgstr "Visuaalinen"
 msgid "Additional"
 msgstr "Lisäasetukset"
 
-msgid "Install Plugins"
-msgstr "Asenna Lisäosat"
-
 msgid "Show Fewer Logs"
 msgstr "Näytä vähemmän lokeja"
+
+msgid "Install Plugins"
+msgstr "Asenna Lisäosat"
 
 #, csharp-format
 msgid "Error while downloading update: {0}"
@@ -351,6 +354,11 @@ msgid ""
 msgstr ""
 "Palvelu ei ole saatavilla. Palvelin ei pysty käsittelemään pyyntöä niiden "
 "määrän, tai esimerkiksi huollon takia."
+
+msgid ""
+"Disables the overlay entirely. This is useful if you want to use ETS2LA "
+"without the overlay, or if you are experiencing issues with the overlay."
+msgstr ""
 
 msgid "Enabled"
 msgstr "Käynnissä"
@@ -818,12 +826,12 @@ msgstr "Voit käynnistää aikaisemmin asentamamme lisäosat täältä."
 msgid "SDK Installed"
 msgstr "SDK asennettu"
 
-msgid "Current Speed"
-msgstr "Nykyinen Nopeus"
-
 #, csharp-format
 msgid "Bound control {0} ({1}) to device {2} and control {3}"
 msgstr "Ohjäinmääritys {0} ({1}) määritelty laitteen {2} painikkeeseen {3}"
+
+msgid "Current Speed"
+msgstr "Nykyinen Nopeus"
 
 msgid "miles per hour"
 msgstr "mailia tunnissa"
@@ -966,12 +974,12 @@ msgstr "Tämä sivu rakennetaan tulevassa päivityksessä."
 msgid "Plugin with ID [gray]{0}[/] is already loaded, skipping duplicate."
 msgstr "Lisäosa ID:llä [gray]{0}[/] on jo ladattu, ohitetaan duplikaatti."
 
-msgid "You are running the latest version."
-msgstr "Sinulla on uusin versio."
-
 #, csharp-format
 msgid "Failed to download plugin with ID {0} from {1}. Status code: {2}"
 msgstr "Lisäosan {0} lataus epäonnistui osoitteesta {1} koodilla {2}"
+
+msgid "You are running the latest version."
+msgstr "Sinulla on uusin versio."
 
 msgid "No plugins found."
 msgstr "Lisäosia ei löytynyt."
@@ -1061,6 +1069,9 @@ msgstr ""
 msgid "I understand, now let me in!"
 msgstr "Ymmärrän, päästä jo sisään!"
 
+msgid "Disable Overlay"
+msgstr ""
+
 msgid ""
 "The maximum distance at which 3D elements will be rendered. Lowering this "
 "can be used to improve performance on lower-end hardware."
@@ -1136,6 +1147,12 @@ msgstr "Normaali"
 
 msgid "Unknown Control"
 msgstr "Tuntematon määritys"
+
+msgid ""
+"When enabled, the overlay will toggle between interaction and non-"
+"interaction mode when you press it's keybind. When disabled, the overlay "
+"will only be interactive while you hold down the keybind."
+msgstr ""
 
 msgid "pounds"
 msgstr "paunaa"
@@ -1226,11 +1243,11 @@ msgstr "Virhe pelin lisäämisessä"
 msgid "Font file not found at {0}"
 msgstr "Fonttia {0} ei löytynyt"
 
-msgid "No release notes available."
-msgstr "Muutoslokia ei saatavilla."
-
 msgid "Changelog"
 msgstr "Muutosloki"
+
+msgid "No release notes available."
+msgstr "Muutoslokia ei saatavilla."
 
 #, csharp-format
 msgid "Detected a switch to {0}, waiting for its game data to be parsed."
@@ -1469,6 +1486,10 @@ msgid "feet"
 msgstr "jalkaa"
 
 #, csharp-format
+msgid "Overlay is disabled in settings, skipping window registration for {0}."
+msgstr ""
+
+#, csharp-format
 msgid "Successfully installed plugin {0} ({1}, {2})"
 msgstr "Lisäosa {0} ({1}, {2}) asennettiin onnistuneesti"
 
@@ -1663,11 +1684,11 @@ msgstr "Lisäosan lataus paikasta [gray]{0}[/] epäonnistui: {1}"
 msgid "Assist Mode: <span class=\"text-text-accent font-bold\">{0}</span>"
 msgstr "Ajomuoto: <span class=\"text-text-accent font-bold\">{0}</span>"
 
-msgid "View Public Telemetry"
-msgstr "Katso julkinen telemetria"
-
 msgid "Adjust the volume of the audio output."
 msgstr "Säädä äänenvoimakkuutta."
+
+msgid "View Public Telemetry"
+msgstr "Katso julkinen telemetria"
 
 #, csharp-format
 msgid ""
@@ -1680,6 +1701,9 @@ msgstr "Aseta -käytös"
 #, csharp-format
 msgid "Registered control: {0} [gray italic]({1})[/]"
 msgstr "Rekisteröitiin ohjainmääritys {0} [gray italic]({1})[/]"
+
+msgid "Keybind is Toggle"
+msgstr ""
 
 msgid ""
 "You'll have to reinstall the SDK for <span class=\"text-text-accent font-"

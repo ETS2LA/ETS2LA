@@ -2,11 +2,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-09-22 11:12:01+0300\n"
+"POT-Creation-Date: 2026-09-22 22:35:36+0300\n"
 "PO-Revision-Date: 2026-09-22 19:40+0000\n"
 "Last-Translator: Ketchup1812 <ketchup1812@ets2la.com>\n"
-"Language-Team: Slovak <http://weblate.ets2la.com/projects/ets2la/ets2la/sk/>"
-"\n"
+"Language-Team: Slovak <http://weblate.ets2la.com/projects/ets2la/ets2la/sk/"
+">\n"
 "Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -193,6 +193,9 @@ msgstr "Kontaktujte nás na Discorde"
 msgid "km/h"
 msgstr "km/h"
 
+msgid "Overlay is disabled in settings, skipping initialization."
+msgstr ""
+
 msgid ""
 "ETS2LA will display information on top of the game. You can interact with "
 "these overlay elements using <span class=\"text-text-accent font-"
@@ -257,11 +260,11 @@ msgstr "Vizuál"
 msgid "Additional"
 msgstr "Dodatočné"
 
-msgid "Install Plugins"
-msgstr "Nainštalujte pluginy"
-
 msgid "Show Fewer Logs"
 msgstr "Zobraziť menej záznamov"
+
+msgid "Install Plugins"
+msgstr "Nainštalujte pluginy"
 
 #, csharp-format
 msgid "Error while downloading update: {0}"
@@ -353,6 +356,11 @@ msgid ""
 msgstr ""
 "Služba nie je k dispozícii. Server momentálne nemôže spracovať žiadosť z "
 "dôvodu dočasného preťaženia alebo údržby."
+
+msgid ""
+"Disables the overlay entirely. This is useful if you want to use ETS2LA "
+"without the overlay, or if you are experiencing issues with the overlay."
+msgstr ""
 
 msgid "Enabled"
 msgstr "Zapnuté"
@@ -826,12 +834,12 @@ msgstr ""
 msgid "SDK Installed"
 msgstr "SDK je nainštalované"
 
-msgid "Current Speed"
-msgstr "Aktuálna rýchlosť"
-
 #, csharp-format
 msgid "Bound control {0} ({1}) to device {2} and control {3}"
 msgstr "Priradili sme ovládač {0} ({1}) k zariadeniu {2} a ovládanie {3}"
+
+msgid "Current Speed"
+msgstr "Aktuálna rýchlosť"
 
 msgid "miles per hour"
 msgstr "míle za hodinu"
@@ -976,12 +984,12 @@ msgstr "Táto stránka bude sprístupnená v budúcej aktualizácii."
 msgid "Plugin with ID [gray]{0}[/] is already loaded, skipping duplicate."
 msgstr "Plugin s ID [gray]{0}[/] je už načítaný, duplicitný sa preskočí."
 
-msgid "You are running the latest version."
-msgstr "Používate najnovšiu verziu."
-
 #, csharp-format
 msgid "Failed to download plugin with ID {0} from {1}. Status code: {2}"
 msgstr "Nepodarilo sa stiahnuť plugin s ID {0} z {1}. Kód stavu: {2}"
+
+msgid "You are running the latest version."
+msgstr "Používate najnovšiu verziu."
 
 msgid "No plugins found."
 msgstr "Nenašli sa žiadne pluginy."
@@ -1075,6 +1083,9 @@ msgstr ""
 msgid "I understand, now let me in!"
 msgstr "Rozumiem, tak ma teraz pusťte dnu!"
 
+msgid "Disable Overlay"
+msgstr ""
+
 msgid ""
 "The maximum distance at which 3D elements will be rendered. Lowering this "
 "can be used to improve performance on lower-end hardware."
@@ -1151,6 +1162,12 @@ msgstr "Normálne"
 
 msgid "Unknown Control"
 msgstr "Neznámy ovládací prvok"
+
+msgid ""
+"When enabled, the overlay will toggle between interaction and non-"
+"interaction mode when you press it's keybind. When disabled, the overlay "
+"will only be interactive while you hold down the keybind."
+msgstr ""
 
 msgid "pounds"
 msgstr "libry"
@@ -1241,11 +1258,11 @@ msgstr "Nepodarilo sa pridať hru"
 msgid "Font file not found at {0}"
 msgstr "Súbor s písmom sa nenašiel v {0}"
 
-msgid "No release notes available."
-msgstr "Poznámky k verzii nie sú k dispozícii."
-
 msgid "Changelog"
 msgstr "Zoznam zmien"
+
+msgid "No release notes available."
+msgstr "Poznámky k verzii nie sú k dispozícii."
 
 #, csharp-format
 msgid "Detected a switch to {0}, waiting for its game data to be parsed."
@@ -1486,6 +1503,10 @@ msgid "feet"
 msgstr "stopa"
 
 #, csharp-format
+msgid "Overlay is disabled in settings, skipping window registration for {0}."
+msgstr ""
+
+#, csharp-format
 msgid "Successfully installed plugin {0} ({1}, {2})"
 msgstr "Plugin {0} bol úspešne nainštalovaný ({1}, {2})"
 
@@ -1684,11 +1705,11 @@ msgstr "Nepodarilo sa načítať plugin z [gray]{0}[/]: {1}"
 msgid "Assist Mode: <span class=\"text-text-accent font-bold\">{0}</span>"
 msgstr "Režim asistenta: <span class=\"text-text-accent font-bold\">{0}</span>"
 
-msgid "View Public Telemetry"
-msgstr "Zobraziť verejnú telemetriu"
-
 msgid "Adjust the volume of the audio output."
 msgstr "Upravte hlasitosť zvukového výstupu."
+
+msgid "View Public Telemetry"
+msgstr "Zobraziť verejnú telemetriu"
 
 #, csharp-format
 msgid ""
@@ -1703,6 +1724,9 @@ msgstr "Správanie SET"
 #, csharp-format
 msgid "Registered control: {0} [gray italic]({1})[/]"
 msgstr "Registrovaná kontrola: {0} [gray italic]({1})[/]"
+
+msgid "Keybind is Toggle"
+msgstr ""
 
 msgid ""
 "You'll have to reinstall the SDK for <span class=\"text-text-accent font-"
