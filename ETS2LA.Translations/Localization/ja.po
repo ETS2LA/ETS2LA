@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-09-21 21:01:15+0300\n"
+"POT-Creation-Date: 2026-09-22 11:12:01+0300\n"
 "PO-Revision-Date: 2026-09-09 11:08+0000\n"
 "Last-Translator: Pastel <pastel@ets2la.com>\n"
 "Language-Team: Japanese <http://weblate.ets2la.com/projects/ets2la/ets2la/ja/"
@@ -256,12 +256,12 @@ msgstr "プラグインのインストール"
 msgid "Show Fewer Logs"
 msgstr "ログの表示数を減らす"
 
-msgid "I won't leave ETS2LA unattended"
-msgstr "ETS2LAを無人で動作させません"
-
 #, csharp-format
 msgid "Error while downloading update: {0}"
 msgstr "アップデートのダウンロード中にエラーが発生しました:{0}"
+
+msgid "I won't leave ETS2LA unattended"
+msgstr "ETS2LAを無人で動作させません"
 
 msgid "Keyboard"
 msgstr "キーボード"
@@ -326,6 +326,9 @@ msgid ""
 msgstr ""
 "ボタンを押すか、入力デバイスの軸を動かして、このコントロールに割り当ててくだ"
 "さい。この操作は{0}秒後にタイムアウトします。"
+
+msgid "Enable All"
+msgstr ""
 
 msgid ""
 "Subscriptions will <span class=\"font-bold text-text-accent\">never</span> "
@@ -707,6 +710,10 @@ msgstr "ライブラリプラグインを [gray]{0}[/] から読み込めませ�
 msgid "Updated bindings for control: {0} ({1}) to Device: {2}, Control: {3}"
 msgstr "操作 {0}（{1}）の割り当てをデバイス: {2}、操作: {3} に更新"
 
+msgid ""
+"Driving mode changed, press Cancel/MODE again to cycle through the modes."
+msgstr ""
+
 msgid "Pause When Unstable"
 msgstr "不安定な場合は一時停止する"
 
@@ -801,13 +808,13 @@ msgstr "ここで、前の手順でインストールしたプラグインを有
 msgid "SDK Installed"
 msgstr "SDKがインストールされました"
 
+msgid "Current Speed"
+msgstr "現在の速度"
+
 #, csharp-format
 msgid "Bound control {0} ({1}) to device {2} and control {3}"
 msgstr ""
 "コントロール {0} ({1}) をデバイス {2} およびコントロール {3} に紐付けました"
-
-msgid "Current Speed"
-msgstr "現在の速度"
 
 msgid "miles per hour"
 msgstr "マイル毎時"
@@ -1211,11 +1218,11 @@ msgstr "ゲームの追加に失敗しました"
 msgid "Font file not found at {0}"
 msgstr "フォントファイルが {0} に見つかりません"
 
-msgid "Changelog"
-msgstr "変更履歴"
-
 msgid "No release notes available."
 msgstr "リリースノートはありません。"
+
+msgid "Changelog"
+msgstr "変更履歴"
 
 #, csharp-format
 msgid "Detected a switch to {0}, waiting for its game data to be parsed."
@@ -1441,6 +1448,9 @@ msgstr ""
 msgid "Remember!"
 msgstr "忘れないで！"
 
+msgid "Disable All"
+msgstr ""
+
 msgid ""
 "Failed to fetch available plugins. Please check your internet connection."
 msgstr ""
@@ -1640,12 +1650,12 @@ msgid "Error initializing memory mapped file: {0}"
 msgstr "メモリマップファイルの初期化中にエラーが発生しました: {0}"
 
 #, csharp-format
-msgid "Assist Mode: <span class=\"text-text-accent font-bold\">{0}</span>"
-msgstr "アシストモード: <span class=\"text-text-accent font-bold\">{0}</span>"
-
-#, csharp-format
 msgid "Failed to load plugin from [gray]{0}[/]: {1}"
 msgstr "プラグインを [gray]{0}[/] から読み込めませんでした: {1}"
+
+#, csharp-format
+msgid "Assist Mode: <span class=\"text-text-accent font-bold\">{0}</span>"
+msgstr "アシストモード: <span class=\"text-text-accent font-bold\">{0}</span>"
 
 msgid "View Public Telemetry"
 msgstr "公開テレメトリを表示"

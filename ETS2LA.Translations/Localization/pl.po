@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-09-21 21:01:15+0300\n"
+"POT-Creation-Date: 2026-09-22 11:12:01+0300\n"
 "PO-Revision-Date: 2026-09-11 13:17+0000\n"
 "Last-Translator: Kubex70 <kubex70@ets2la.com>\n"
 "Language-Team: Polish <http://weblate.ets2la.com/projects/ets2la/ets2la/pl/"
@@ -262,12 +262,12 @@ msgstr "Zainstaluj pluginy"
 msgid "Show Fewer Logs"
 msgstr "Pokaż mniej dzienników"
 
-msgid "I won't leave ETS2LA unattended"
-msgstr "Nie zostawie ETS2LA bez nadzoru"
-
 #, csharp-format
 msgid "Error while downloading update: {0}"
 msgstr "Błąd podczas pobierania aktualizacji: {0}"
+
+msgid "I won't leave ETS2LA unattended"
+msgstr "Nie zostawie ETS2LA bez nadzoru"
 
 msgid "Keyboard"
 msgstr "Klawiatura"
@@ -334,6 +334,9 @@ msgid ""
 msgstr ""
 "Naciśnij przycisk lub przesuń oś na urządzeniu wejściowym, aby powiązać je z "
 "tym elementem sterującym. Czas oczekiwania wygaśnie za {0} sekund."
+
+msgid "Enable All"
+msgstr ""
 
 msgid ""
 "Subscriptions will <span class=\"font-bold text-text-accent\">never</span> "
@@ -721,6 +724,10 @@ msgstr ""
 "Zaktualizowano przypisanie dla sterowania: {0} ({1}) do urządzenia: {2}, "
 "sterowanie: {3}"
 
+msgid ""
+"Driving mode changed, press Cancel/MODE again to cycle through the modes."
+msgstr ""
+
 msgid "Pause When Unstable"
 msgstr "Wstrzymaj, gdy jest niestabilny"
 
@@ -820,12 +827,12 @@ msgstr ""
 msgid "SDK Installed"
 msgstr "Zainstalowano zestaw SDK"
 
+msgid "Current Speed"
+msgstr "Aktualna prędkość"
+
 #, csharp-format
 msgid "Bound control {0} ({1}) to device {2} and control {3}"
 msgstr "Powiąż sterowanie {0} ({1}) z urządzeniem {2} i sterowaniem {3}"
-
-msgid "Current Speed"
-msgstr "Aktualna prędkość"
 
 msgid "miles per hour"
 msgstr "mile na godzinę"
@@ -1235,11 +1242,11 @@ msgstr "Nie udało się dodać gry"
 msgid "Font file not found at {0}"
 msgstr "Nie znaleziono pliku czcionki w {0}"
 
-msgid "Changelog"
-msgstr "Dziennik zmian"
-
 msgid "No release notes available."
 msgstr "Brak dostępnych informacji o wydaniu."
+
+msgid "Changelog"
+msgstr "Dziennik zmian"
 
 #, csharp-format
 msgid "Detected a switch to {0}, waiting for its game data to be parsed."
@@ -1469,6 +1476,9 @@ msgstr ""
 msgid "Remember!"
 msgstr "Pamiętaj!"
 
+msgid "Disable All"
+msgstr ""
+
 msgid ""
 "Failed to fetch available plugins. Please check your internet connection."
 msgstr ""
@@ -1667,13 +1677,13 @@ msgid "Error initializing memory mapped file: {0}"
 msgstr "Błąd inicjalizacji pliku mapowanego w pamięci: {0}"
 
 #, csharp-format
+msgid "Failed to load plugin from [gray]{0}[/]: {1}"
+msgstr "Nie udało się załadować pluginu z [gray]{0}[/]: {1}"
+
+#, csharp-format
 msgid "Assist Mode: <span class=\"text-text-accent font-bold\">{0}</span>"
 msgstr ""
 "Tryb wspomagania: <span class=\"text-text-accent font-bold\">{0}</span>"
-
-#, csharp-format
-msgid "Failed to load plugin from [gray]{0}[/]: {1}"
-msgstr "Nie udało się załadować pluginu z [gray]{0}[/]: {1}"
 
 msgid "View Public Telemetry"
 msgstr "Wyświetl telemetrię publiczną"

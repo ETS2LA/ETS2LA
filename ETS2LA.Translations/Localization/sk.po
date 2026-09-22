@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-09-21 21:01:15+0300\n"
+"POT-Creation-Date: 2026-09-22 11:12:01+0300\n"
 "PO-Revision-Date: 2026-09-21 15:01+0000\n"
 "Last-Translator: Ketchup1812 <ketchup1812@ets2la.com>\n"
 "Language-Team: Slovak <http://weblate.ets2la.com/projects/ets2la/ets2la/sk/"
@@ -260,12 +260,12 @@ msgstr "Nainštalujte pluginy"
 msgid "Show Fewer Logs"
 msgstr "Zobraziť menej záznamov"
 
-msgid "I won't leave ETS2LA unattended"
-msgstr "Nenechám ETS2LA bez dozoru"
-
 #, csharp-format
 msgid "Error while downloading update: {0}"
 msgstr "Chyba pri sťahovaní aktualizácie: {0}"
+
+msgid "I won't leave ETS2LA unattended"
+msgstr "Nenechám ETS2LA bez dozoru"
 
 msgid "Keyboard"
 msgstr "Klávesnica"
@@ -330,6 +330,9 @@ msgid ""
 msgstr ""
 "Stlačte tlačidlo alebo posuňte os na vašom vstupnom zariadení, aby ste ho "
 "priradili k tomuto ovládacímu prvku. Časový limit vyprší za {0} sekúnd."
+
+msgid "Enable All"
+msgstr ""
 
 msgid ""
 "Subscriptions will <span class=\"font-bold text-text-accent\">never</span> "
@@ -717,6 +720,10 @@ msgstr ""
 "Aktualizované priradenia pre ovládanie: {0} ({1}) k zariadeniu: {2}, "
 "ovládanie: {3}"
 
+msgid ""
+"Driving mode changed, press Cancel/MODE again to cycle through the modes."
+msgstr ""
+
 msgid "Pause When Unstable"
 msgstr "Pozastaviť v prípade nestability"
 
@@ -814,12 +821,12 @@ msgstr ""
 msgid "SDK Installed"
 msgstr "SDK je nainštalované"
 
+msgid "Current Speed"
+msgstr "Aktuálna rýchlosť"
+
 #, csharp-format
 msgid "Bound control {0} ({1}) to device {2} and control {3}"
 msgstr "Priradili sme ovládač {0} ({1}) k zariadeniu {2} a ovládanie {3}"
-
-msgid "Current Speed"
-msgstr "Aktuálna rýchlosť"
 
 msgid "miles per hour"
 msgstr "míle za hodinu"
@@ -1229,11 +1236,11 @@ msgstr "Nepodarilo sa pridať hru"
 msgid "Font file not found at {0}"
 msgstr "Súbor s písmom sa nenašiel v {0}"
 
-msgid "Changelog"
-msgstr "Zoznam zmien"
-
 msgid "No release notes available."
 msgstr "Poznámky k verzii nie sú k dispozícii."
+
+msgid "Changelog"
+msgstr "Zoznam zmien"
 
 #, csharp-format
 msgid "Detected a switch to {0}, waiting for its game data to be parsed."
@@ -1461,6 +1468,9 @@ msgstr ""
 msgid "Remember!"
 msgstr "Nezabudnite!"
 
+msgid "Disable All"
+msgstr ""
+
 msgid ""
 "Failed to fetch available plugins. Please check your internet connection."
 msgstr ""
@@ -1662,12 +1672,12 @@ msgid "Error initializing memory mapped file: {0}"
 msgstr "Chyba pri inicializácii súboru mapovaného v pamäti: {0}"
 
 #, csharp-format
-msgid "Assist Mode: <span class=\"text-text-accent font-bold\">{0}</span>"
-msgstr "Režim asistenta: <span class=\"text-text-accent font-bold\">{0}</span>"
-
-#, csharp-format
 msgid "Failed to load plugin from [gray]{0}[/]: {1}"
 msgstr "Nepodarilo sa načítať plugin z [gray]{0}[/]: {1}"
+
+#, csharp-format
+msgid "Assist Mode: <span class=\"text-text-accent font-bold\">{0}</span>"
+msgstr "Režim asistenta: <span class=\"text-text-accent font-bold\">{0}</span>"
 
 msgid "View Public Telemetry"
 msgstr "Zobraziť verejnú telemetriu"

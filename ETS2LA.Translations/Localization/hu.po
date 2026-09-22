@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-09-21 21:01:15+0300\n"
+"POT-Creation-Date: 2026-09-22 11:12:01+0300\n"
 "PO-Revision-Date: 2026-09-21 15:01+0000\n"
 "Last-Translator: delilevente <delilevente@ets2la.com>\n"
 "Language-Team: Hungarian <http://weblate.ets2la.com/projects/ets2la/ets2la/"
@@ -235,11 +235,11 @@ msgstr "Pluginok telepítése"
 msgid "Show Fewer Logs"
 msgstr ""
 
-msgid "I won't leave ETS2LA unattended"
-msgstr ""
-
 #, csharp-format
 msgid "Error while downloading update: {0}"
+msgstr ""
+
+msgid "I won't leave ETS2LA unattended"
 msgstr ""
 
 msgid "Keyboard"
@@ -298,6 +298,9 @@ msgstr ""
 msgid ""
 "Press a button or move an axis on your input device to bind it to this "
 "control. This will time out in {0} seconds."
+msgstr ""
+
+msgid "Enable All"
 msgstr ""
 
 msgid ""
@@ -647,6 +650,10 @@ msgstr ""
 msgid "Updated bindings for control: {0} ({1}) to Device: {2}, Control: {3}"
 msgstr ""
 
+msgid ""
+"Driving mode changed, press Cancel/MODE again to cycle through the modes."
+msgstr ""
+
 msgid "Pause When Unstable"
 msgstr ""
 
@@ -735,12 +742,12 @@ msgstr ""
 msgid "SDK Installed"
 msgstr "SDK telepítve"
 
+msgid "Current Speed"
+msgstr "Jelenlegi sebesség"
+
 #, csharp-format
 msgid "Bound control {0} ({1}) to device {2} and control {3}"
 msgstr ""
-
-msgid "Current Speed"
-msgstr "Jelenlegi sebesség"
 
 msgid "miles per hour"
 msgstr "mérföld per óra"
@@ -1099,10 +1106,10 @@ msgstr ""
 msgid "Font file not found at {0}"
 msgstr ""
 
-msgid "Changelog"
+msgid "No release notes available."
 msgstr ""
 
-msgid "No release notes available."
+msgid "Changelog"
 msgstr ""
 
 #, csharp-format
@@ -1307,6 +1314,9 @@ msgstr ""
 msgid "Remember!"
 msgstr "Ne feledd!"
 
+msgid "Disable All"
+msgstr ""
+
 msgid ""
 "Failed to fetch available plugins. Please check your internet connection."
 msgstr ""
@@ -1482,11 +1492,11 @@ msgid "Error initializing memory mapped file: {0}"
 msgstr ""
 
 #, csharp-format
-msgid "Assist Mode: <span class=\"text-text-accent font-bold\">{0}</span>"
+msgid "Failed to load plugin from [gray]{0}[/]: {1}"
 msgstr ""
 
 #, csharp-format
-msgid "Failed to load plugin from [gray]{0}[/]: {1}"
+msgid "Assist Mode: <span class=\"text-text-accent font-bold\">{0}</span>"
 msgstr ""
 
 msgid "View Public Telemetry"

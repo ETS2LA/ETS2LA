@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-09-21 21:01:15+0300\n"
+"POT-Creation-Date: 2026-09-22 11:12:01+0300\n"
 "PO-Revision-Date: 2026-08-26 18:07+0000\n"
 "Last-Translator: phucc <phucc@ets2la.com>\n"
 "Language-Team: Vietnamese <http://weblate.ets2la.com/projects/ets2la/ets2la/"
@@ -248,12 +248,12 @@ msgstr ""
 msgid "Show Fewer Logs"
 msgstr ""
 
-msgid "I won't leave ETS2LA unattended"
-msgstr ""
-
 #, csharp-format
 msgid "Error while downloading update: {0}"
 msgstr "Lỗi khi đang tải bản cập nhật: {0}"
+
+msgid "I won't leave ETS2LA unattended"
+msgstr ""
 
 msgid "Keyboard"
 msgstr "Bàn phím"
@@ -318,6 +318,9 @@ msgid ""
 msgstr ""
 "Nhấn một nút hoặc gạt cần/trục trên vô lăng/tay cầm để gán phím. Thao tác sẽ "
 "hết hạn trong {0} giây."
+
+msgid "Enable All"
+msgstr ""
 
 msgid ""
 "Subscriptions will <span class=\"font-bold text-text-accent\">never</span> "
@@ -689,6 +692,10 @@ msgstr ""
 msgid "Updated bindings for control: {0} ({1}) to Device: {2}, Control: {3}"
 msgstr ""
 
+msgid ""
+"Driving mode changed, press Cancel/MODE again to cycle through the modes."
+msgstr ""
+
 msgid "Pause When Unstable"
 msgstr ""
 
@@ -778,12 +785,12 @@ msgstr ""
 msgid "SDK Installed"
 msgstr "Đã cài đặt SDK"
 
+msgid "Current Speed"
+msgstr "Tốc độ hiện tại"
+
 #, csharp-format
 msgid "Bound control {0} ({1}) to device {2} and control {3}"
 msgstr ""
-
-msgid "Current Speed"
-msgstr "Tốc độ hiện tại"
 
 msgid "miles per hour"
 msgstr ""
@@ -1157,11 +1164,11 @@ msgstr "Thêm trò chơi không thành công"
 msgid "Font file not found at {0}"
 msgstr ""
 
-msgid "Changelog"
-msgstr ""
-
 msgid "No release notes available."
 msgstr "Hiện không có ghi chú cập nhật nào."
+
+msgid "Changelog"
+msgstr ""
 
 #, csharp-format
 msgid "Detected a switch to {0}, waiting for its game data to be parsed."
@@ -1364,6 +1371,9 @@ msgstr ""
 msgid "Remember!"
 msgstr ""
 
+msgid "Disable All"
+msgstr ""
+
 msgid ""
 "Failed to fetch available plugins. Please check your internet connection."
 msgstr ""
@@ -1549,12 +1559,12 @@ msgid "Error initializing memory mapped file: {0}"
 msgstr ""
 
 #, csharp-format
-msgid "Assist Mode: <span class=\"text-text-accent font-bold\">{0}</span>"
-msgstr ""
-
-#, csharp-format
 msgid "Failed to load plugin from [gray]{0}[/]: {1}"
 msgstr "Nạp plugin không thành công từ [gray]{0}[/]: {1}"
+
+#, csharp-format
+msgid "Assist Mode: <span class=\"text-text-accent font-bold\">{0}</span>"
+msgstr ""
 
 msgid "View Public Telemetry"
 msgstr "Xem dữ liệu thu thập từ xa công khai"

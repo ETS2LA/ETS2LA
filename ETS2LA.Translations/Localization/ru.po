@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-09-21 21:01:15+0300\n"
+"POT-Creation-Date: 2026-09-22 11:12:01+0300\n"
 "PO-Revision-Date: 2026-09-09 11:08+0000\n"
 "Last-Translator: Tema <tema@ets2la.com>\n"
 "Language-Team: Russian <http://weblate.ets2la.com/projects/ets2la/ets2la/ru/"
@@ -261,12 +261,12 @@ msgstr "Установить плагины"
 msgid "Show Fewer Logs"
 msgstr "Показать меньше записей журнала"
 
-msgid "I won't leave ETS2LA unattended"
-msgstr "Я не буду оставлять ETS2LA без присмотра"
-
 #, csharp-format
 msgid "Error while downloading update: {0}"
 msgstr "Ошибка при загрузке обновления: {0}"
+
+msgid "I won't leave ETS2LA unattended"
+msgstr "Я не буду оставлять ETS2LA без присмотра"
 
 msgid "Keyboard"
 msgstr "Клавиатура"
@@ -332,6 +332,9 @@ msgid ""
 msgstr ""
 "Нажмите кнопку или переместите ось на устройстве ввода, чтобы привязать этот "
 "ввод к элементу управления. Время ожидания истечёт через {0} секунд."
+
+msgid "Enable All"
+msgstr ""
 
 msgid ""
 "Subscriptions will <span class=\"font-bold text-text-accent\">never</span> "
@@ -719,6 +722,10 @@ msgstr ""
 "Привязки элемента управления {0} ({1}) обновлены: устройство: {2}, элемент: "
 "{3}"
 
+msgid ""
+"Driving mode changed, press Cancel/MODE again to cycle through the modes."
+msgstr ""
+
 msgid "Pause When Unstable"
 msgstr "Приостанавливать при нестабильности"
 
@@ -815,12 +822,12 @@ msgstr "Здесь можно включить плагины, установл�
 msgid "SDK Installed"
 msgstr "SDK установлен"
 
+msgid "Current Speed"
+msgstr "Текущая скорость"
+
 #, csharp-format
 msgid "Bound control {0} ({1}) to device {2} and control {3}"
 msgstr "Элемент управления {0} ({1}) привязан к устройству {2} и элементу {3}"
-
-msgid "Current Speed"
-msgstr "Текущая скорость"
 
 msgid "miles per hour"
 msgstr "мили в час"
@@ -1227,11 +1234,11 @@ msgstr "Не удалось добавить игру"
 msgid "Font file not found at {0}"
 msgstr "Файл шрифта не найден по пути {0}"
 
-msgid "Changelog"
-msgstr "Список изменений"
-
 msgid "No release notes available."
 msgstr "Список изменений недоступен."
+
+msgid "Changelog"
+msgstr "Список изменений"
 
 #, csharp-format
 msgid "Detected a switch to {0}, waiting for its game data to be parsed."
@@ -1457,6 +1464,9 @@ msgstr ""
 msgid "Remember!"
 msgstr "Помните!"
 
+msgid "Disable All"
+msgstr ""
+
 msgid ""
 "Failed to fetch available plugins. Please check your internet connection."
 msgstr ""
@@ -1658,13 +1668,13 @@ msgid "Error initializing memory mapped file: {0}"
 msgstr "Ошибка при инициализации файла, отображаемого в память: {0}"
 
 #, csharp-format
+msgid "Failed to load plugin from [gray]{0}[/]: {1}"
+msgstr "Не удалось загрузить плагин из [gray]{0}[/]: {1}"
+
+#, csharp-format
 msgid "Assist Mode: <span class=\"text-text-accent font-bold\">{0}</span>"
 msgstr ""
 "Режим ассистентов: <span class=\"text-text-accent font-bold\">{0}</span>"
-
-#, csharp-format
-msgid "Failed to load plugin from [gray]{0}[/]: {1}"
-msgstr "Не удалось загрузить плагин из [gray]{0}[/]: {1}"
 
 msgid "View Public Telemetry"
 msgstr "Просмотреть общедоступную телеметрию"

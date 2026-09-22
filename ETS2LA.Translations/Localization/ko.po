@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-09-21 21:01:15+0300\n"
+"POT-Creation-Date: 2026-09-22 11:12:01+0300\n"
 "PO-Revision-Date: 2026-09-13 12:43+0000\n"
 "Last-Translator: bot_lapis <botlapis@ets2la.com>\n"
 "Language-Team: Korean <http://weblate.ets2la.com/projects/ets2la/ets2la/ko/"
@@ -251,12 +251,12 @@ msgstr "플러그인 설치"
 msgid "Show Fewer Logs"
 msgstr "로그 적게 보기"
 
-msgid "I won't leave ETS2LA unattended"
-msgstr "ETS2LA를 방치하지 않겠습니다"
-
 #, csharp-format
 msgid "Error while downloading update: {0}"
 msgstr "업데이트를 다운로드하는 중 오류가 발생했습니다: {0}"
+
+msgid "I won't leave ETS2LA unattended"
+msgstr "ETS2LA를 방치하지 않겠습니다"
 
 msgid "Keyboard"
 msgstr "키보드"
@@ -320,6 +320,9 @@ msgid ""
 msgstr ""
 "입력 장치에서 버튼을 누르거나 축을 움직여 이 컨트롤에 바인딩하세요. {0}초 후"
 "에 시간 초과됩니다."
+
+msgid "Enable All"
+msgstr ""
 
 msgid ""
 "Subscriptions will <span class=\"font-bold text-text-accent\">never</span> "
@@ -693,6 +696,10 @@ msgid "Updated bindings for control: {0} ({1}) to Device: {2}, Control: {3}"
 msgstr ""
 "컨트롤 {0} ({1})의 바인딩을 장치 {2}, 컨트롤 {3}(으)로 업데이트했습니다"
 
+msgid ""
+"Driving mode changed, press Cancel/MODE again to cycle through the modes."
+msgstr ""
+
 msgid "Pause When Unstable"
 msgstr "불안정 시 일시정지"
 
@@ -784,12 +791,12 @@ msgstr "이전 단계에서 설치한 플러그인을 여기에서 활성화할 
 msgid "SDK Installed"
 msgstr "SDK 설치됨"
 
+msgid "Current Speed"
+msgstr "현재 속도"
+
 #, csharp-format
 msgid "Bound control {0} ({1}) to device {2} and control {3}"
 msgstr "컨트롤 {0} ({1})을(를) 장치 {2}, 컨트롤 {3}에 바인딩했습니다"
-
-msgid "Current Speed"
-msgstr "현재 속도"
 
 msgid "miles per hour"
 msgstr "마일/시간"
@@ -1154,10 +1161,10 @@ msgstr ""
 msgid "Font file not found at {0}"
 msgstr ""
 
-msgid "Changelog"
+msgid "No release notes available."
 msgstr ""
 
-msgid "No release notes available."
+msgid "Changelog"
 msgstr ""
 
 #, csharp-format
@@ -1362,6 +1369,9 @@ msgstr ""
 msgid "Remember!"
 msgstr ""
 
+msgid "Disable All"
+msgstr ""
+
 msgid ""
 "Failed to fetch available plugins. Please check your internet connection."
 msgstr ""
@@ -1539,11 +1549,11 @@ msgid "Error initializing memory mapped file: {0}"
 msgstr ""
 
 #, csharp-format
-msgid "Assist Mode: <span class=\"text-text-accent font-bold\">{0}</span>"
+msgid "Failed to load plugin from [gray]{0}[/]: {1}"
 msgstr ""
 
 #, csharp-format
-msgid "Failed to load plugin from [gray]{0}[/]: {1}"
+msgid "Assist Mode: <span class=\"text-text-accent font-bold\">{0}</span>"
 msgstr ""
 
 msgid "View Public Telemetry"
