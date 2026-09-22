@@ -3,8 +3,11 @@
 - Removed redundant settings that were accidentally left in the settings pages.
 - Implemented a toggle mode for overlay interaction. **This is now the default behavior.** You can change this in `Settings - Display`.
 - You can now refresh catalogue plugins without restarting ETS2LA.
+- Add option to completely disable overlay rendering. Please do note that this will break all features that rely on the overlay, including AR and the HUD. This can be changed in `Settings - Display`.
+- Display settings now has clearer behaviour when disabling AR rendering or the overlay by disabling their respective settings.
+- `Switch` components now have a `Class` field to override their tailwind styling.
 
-**This update cannot be automatically downloaded due to a bug in the updater. Please download the latest version from GitHub or CNB.**
+**This update (5051) cannot be automatically downloaded due to a bug in the updater. Please download the latest version from GitHub or CNB, later updates will be available through the updater from 5051 onwards.**
 ### ETS2LA C# 2026.9.5051 (Nightly)
 - Added option to keep the ETS2LA window on top of other windows. This can be turned on in Settings - Display.
 - Changing the ETS2LA volume now plays an example sound to preview the volume level.

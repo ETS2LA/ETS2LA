@@ -9,6 +9,9 @@
     public bool Value { get; set; }
 
     [Parameter]
+    public string? Class { get; set; }
+
+    [Parameter]
     public EventCallback<bool> ValueChanged { get; set; }
 
     [Parameter]
@@ -22,7 +25,7 @@
     }
 }
 
-<div class="flex flex-col gap-1">
+<div class="flex flex-col gap-1 @Class">
     <div class="flex justify-between items-center">
         <p>@Title</p>
         <button type="button"

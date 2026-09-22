@@ -11,7 +11,7 @@ public class WindowSettings
     public int Height = 720;
 
     public int Zoom = 100;
-    public bool StayOnTop = false;
+    public bool StayOnTop = true;
 
     public int OnboardingStep = 0;
     public bool HasCompletedOnboarding = false;

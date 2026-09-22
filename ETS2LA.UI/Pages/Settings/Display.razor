@@ -46,6 +46,21 @@
         get => SupportedLanguages.FindIndex(l => l.Code == StateSettingsHandler.Current.GetSettings().DisplayLanguage?.Code);
     }
 
+    private bool DisableOverlay
+    {
+        get => OverlaySettingsHandler.Current.GetSettings().DisableOverlay;
+        set 
+        {
+            var settings = OverlaySettingsHandler.Current.GetSettings();
+            settings.DisableOverlay = value;
+            OverlaySettingsHandler.Current.Save();
+            UserInterfaceUtils.AskForRestart(
+                "Restart Required",
+                "Changing this option requires a restart of ETS2LA to take effect. Restart now?"
+            );
+        }
+    }
+
     private bool OverlayInteractionIsToggle
     {
         get => OverlaySettingsHandler.Current.GetSettings().OverlayInteractionIsToggle;
@@ -238,22 +253,29 @@
             ValueChanged="@((bool value) => StayOnTop = value)" />
 
     <Separator Label=@(_("Overlay")) Class="mt-8" />
+    <Switch Title=@(_("Disable Overlay"))
+            Description=@(_("Disables the overlay entirely. This will fix the black screen issue at the cost of breaking all features that rely on the overlay, including AR and the HUD."))
+            Value="@DisableOverlay"
+            ValueChanged="@((bool value) => DisableOverlay = value)" />
     <Switch Title=@(_("Keybind is Toggle"))
             Description=@(_("When enabled, the overlay will toggle between interaction and non-interaction mode when you press it's keybind. When disabled, the overlay will only be interactive while you hold down the keybind."))
             Value="@OverlaySettingsHandler.Current.GetSettings().OverlayInteractionIsToggle"
+            Class="@(!DisableOverlay ? "" : "opacity-30 pointer-events-none")"
             ValueChanged="@((bool value) => OverlayInteractionIsToggle = value)" />
     <Switch Title=@(_("Support Multiple Viewports"))
             Description=@(_("This allows ETS2LA to render in multiple viewports, meaning you can move overlay windows to any monitor."))
             Value="@SupportMultipleViewports"
+            Class="@(!DisableOverlay ? "" : "opacity-30 pointer-events-none")"
             ValueChanged="@((bool value) => SupportMultipleViewports = value)" />
     <Switch Title=@(_("Limit Overlay Framerate"))
             Description=@(_("In most situations, over half of ETS2LA's CPU use is consumed by the overlay. Limiting the framerate will reduce CPU usage."))
             Value="@LimitOverlayFramerate"
+            Class="@(!DisableOverlay ? "" : "opacity-30 pointer-events-none")"
             ValueChanged="@((bool value) => LimitOverlayFramerate = value)" />
     <Slider Title=@(_("Max Overlay Framerate"))
             Description=@(_("Currently running at {0} FPS.", CurrentARFramerate))
             Suffix="FPS"
-            Class="@(LimitOverlayFramerate ? "" : "opacity-30 pointer-events-none")"
+            Class="@((LimitOverlayFramerate && !DisableOverlay) ? "" : "opacity-30 pointer-events-none")"
             Min="10"
             Max="120"
             Value="@MaxOverlayFramerate"
@@ -263,18 +285,22 @@
     <Switch Title=@(_("Render AR Elements"))
             Description=@(_("We can render elements in the game world using the overlay. This will use additional CPU and GPU resources."))
             Value="@RenderARElements"
+            Class="@(!DisableOverlay ? "" : "opacity-30 pointer-events-none")"
             ValueChanged="@((bool value) => RenderARElements = value)" />
     <Switch Title=@(_("Simplified Graphics"))
             Description=@(_("Using simplified graphics can improve performance on lower-end hardware, or fix situations in which advanced features like shaders are not supported."))
+            Class="@((!DisableOverlay && RenderARElements) ? "" : "opacity-30 pointer-events-none")"
             Value="@SimplifiedGraphics"
             ValueChanged="@((bool value) => SimplifiedGraphics = value)" />
     <Switch Title=@(_("Stop Rendering When Game is Paused"))
             Description=@(_("When the game reports itself being paused, ETS2LA won't render AR elements."))
+            Class="@((!DisableOverlay && RenderARElements) ? "" : "opacity-30 pointer-events-none")"
             Value="@StopRenderingWhenGamePaused"
             ValueChanged="@((bool value) => StopRenderingWhenGamePaused = value)" />
     <Slider Title=@(_("Max Render Distance"))
             Suffix="m"
             Description=@(_("The maximum distance at which 3D elements will be rendered. Lowering this can be used to improve performance on lower-end hardware."))
+            Class="@((!DisableOverlay && RenderARElements) ? "" : "opacity-30 pointer-events-none")"
             Min="50"
             Max="512"
             Value="@MaxRenderDistance"

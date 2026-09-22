@@ -137,6 +137,13 @@ public class OverlayHandler
 
     private void RenderLoop()
     {
+        if (overlaySettings.DisableOverlay)
+        {
+            Logger.Error(_("Overlay is disabled in settings, skipping initialization."));
+            AR = new ARRenderer(null); // null renderer, won't actually do anything
+            return;
+        }
+
         if(!InitGLFW())
         {
             Logger.Error(_("Failed to initialize overlay, OpenGL initialization failed."));
@@ -620,6 +627,12 @@ public class OverlayHandler
 
     public void RegisterWindow(WindowDefinition def, Action renderAction, Optional<Action> renderContextMenuAction = default)
     {
+        if (overlaySettings.DisableOverlay)
+        {
+            Logger.Warn(_("Overlay is disabled in settings, skipping window registration for {0}.", def.Title));
+            return;
+        }
+
         foreach (var window in windows)
         {
             if (window.Definition.Title == def.Title)

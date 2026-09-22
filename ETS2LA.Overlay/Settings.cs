@@ -9,6 +9,7 @@ public class OverlaySettings
     public int MaxFramerate = 30;
     public bool SupportMultipleViewports = false;
     public bool OverlayInteractionIsToggle = true;
+    public bool DisableOverlay = false;
 
     // AR
     public bool RenderAR = true;
