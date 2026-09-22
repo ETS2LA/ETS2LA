@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
 "POT-Creation-Date: 2026-09-22 22:35:36+0300\n"
-"PO-Revision-Date: 2026-09-09 11:08+0000\n"
+"PO-Revision-Date: 2026-09-22 23:01+0000\n"
 "Last-Translator: McAs13 <tsumiguel@ets2la.com>\n"
 "Language-Team: Spanish (American) <http://weblate.ets2la.com/projects/ets2la/"
 "ets2la/es_US/>\n"
@@ -30,7 +30,7 @@ msgid "Sorry"
 msgstr "Lo siento"
 
 msgid "Stay on Top"
-msgstr ""
+msgstr "Mantener siempre visible"
 
 msgid "Display"
 msgstr "Pantalla"
@@ -52,6 +52,9 @@ msgid ""
 "Keep the ETS2LA window on top of other windows. If you want to use the "
 "visualization on a single monitor setup, this is recommended."
 msgstr ""
+"Mantiene la ventana de ETS2LA por encima de otras ventanas. Si quieres usar "
+"la visualización en una configuración de un solo monitor, se recomienda esta "
+"opción."
 
 #, csharp-format
 msgid "Control with ID '{0}' not found for updating bindings."
@@ -96,7 +99,7 @@ msgid "Become a GitHub Sponsor"
 msgstr "Conviértete en GitHub Sponsor"
 
 msgid "If you've not yet installed it, you can find it in the catalogue."
-msgstr ""
+msgstr "Si aún no lo has instalado, puedes encontrarlo en el catálogo."
 
 #, csharp-format
 msgid "Installed {0}"
@@ -155,6 +158,8 @@ msgstr "El enlace para el control {0} ({1}) agotó el tiempo de espera."
 msgid ""
 "Library plugin with ID [gray]{0}[/] is already loaded, skipping duplicate."
 msgstr ""
+"El plugin de biblioteca con ID [gray]{0}[/] ya está cargado, se omitirá el "
+"duplicado."
 
 msgid "Dashboard"
 msgstr "Panel de control"
@@ -193,6 +198,8 @@ msgstr "km/h"
 
 msgid "Overlay is disabled in settings, skipping initialization."
 msgstr ""
+"La superposición está desactivada en la configuración, se omitirá la "
+"inicialización."
 
 msgid ""
 "ETS2LA will display information on top of the game. You can interact with "
@@ -336,7 +343,7 @@ msgstr ""
 "este control. Esto expirará en {0} segundos."
 
 msgid "Enable All"
-msgstr ""
+msgstr "Activar todo"
 
 msgid ""
 "Subscriptions will <span class=\"font-bold text-text-accent\">never</span> "
