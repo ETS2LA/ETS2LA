@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-09-22 11:12:01+0300\n"
+"POT-Creation-Date: 2026-09-22 22:35:36+0300\n"
 "PO-Revision-Date: 2026-08-26 18:07+0000\n"
 "Last-Translator: phucc <phucc@ets2la.com>\n"
 "Language-Team: Vietnamese <http://weblate.ets2la.com/projects/ets2la/ets2la/"
@@ -185,6 +185,9 @@ msgstr ""
 msgid "km/h"
 msgstr "km/h"
 
+msgid "Overlay is disabled in settings, skipping initialization."
+msgstr ""
+
 msgid ""
 "ETS2LA will display information on top of the game. You can interact with "
 "these overlay elements using <span class=\"text-text-accent font-"
@@ -242,10 +245,10 @@ msgstr "Giao diện"
 msgid "Additional"
 msgstr "Bổ sung"
 
-msgid "Install Plugins"
+msgid "Show Fewer Logs"
 msgstr ""
 
-msgid "Show Fewer Logs"
+msgid "Install Plugins"
 msgstr ""
 
 #, csharp-format
@@ -338,6 +341,11 @@ msgid ""
 msgstr ""
 "Dịch vụ không khả dụng. Máy chủ hiện tại không thể xử lí yêu cầu do quá tải "
 "hoặc đang bảo trì."
+
+msgid ""
+"Disables the overlay entirely. This is useful if you want to use ETS2LA "
+"without the overlay, or if you are experiencing issues with the overlay."
+msgstr ""
 
 msgid "Enabled"
 msgstr ""
@@ -785,12 +793,12 @@ msgstr ""
 msgid "SDK Installed"
 msgstr "Đã cài đặt SDK"
 
-msgid "Current Speed"
-msgstr "Tốc độ hiện tại"
-
 #, csharp-format
 msgid "Bound control {0} ({1}) to device {2} and control {3}"
 msgstr ""
+
+msgid "Current Speed"
+msgstr "Tốc độ hiện tại"
 
 msgid "miles per hour"
 msgstr ""
@@ -921,11 +929,11 @@ msgstr "Trang này sẽ được thêm vào trong phiên bản sắp tới."
 msgid "Plugin with ID [gray]{0}[/] is already loaded, skipping duplicate."
 msgstr ""
 
-msgid "You are running the latest version."
-msgstr ""
-
 #, csharp-format
 msgid "Failed to download plugin with ID {0} from {1}. Status code: {2}"
+msgstr ""
+
+msgid "You are running the latest version."
 msgstr ""
 
 msgid "No plugins found."
@@ -1010,6 +1018,9 @@ msgstr ""
 msgid "I understand, now let me in!"
 msgstr ""
 
+msgid "Disable Overlay"
+msgstr ""
+
 msgid ""
 "The maximum distance at which 3D elements will be rendered. Lowering this "
 "can be used to improve performance on lower-end hardware."
@@ -1079,6 +1090,12 @@ msgstr "Bình thường"
 
 msgid "Unknown Control"
 msgstr "Nút điều khiển không xác định"
+
+msgid ""
+"When enabled, the overlay will toggle between interaction and non-"
+"interaction mode when you press it's keybind. When disabled, the overlay "
+"will only be interactive while you hold down the keybind."
+msgstr ""
 
 msgid "pounds"
 msgstr ""
@@ -1164,11 +1181,11 @@ msgstr "Thêm trò chơi không thành công"
 msgid "Font file not found at {0}"
 msgstr ""
 
-msgid "No release notes available."
-msgstr "Hiện không có ghi chú cập nhật nào."
-
 msgid "Changelog"
 msgstr ""
+
+msgid "No release notes available."
+msgstr "Hiện không có ghi chú cập nhật nào."
 
 #, csharp-format
 msgid "Detected a switch to {0}, waiting for its game data to be parsed."
@@ -1383,6 +1400,10 @@ msgid "feet"
 msgstr ""
 
 #, csharp-format
+msgid "Overlay is disabled in settings, skipping window registration for {0}."
+msgstr ""
+
+#, csharp-format
 msgid "Successfully installed plugin {0} ({1}, {2})"
 msgstr "Đã cài đặt thành công plugin {0} ({1},{2})"
 
@@ -1566,11 +1587,11 @@ msgstr "Nạp plugin không thành công từ [gray]{0}[/]: {1}"
 msgid "Assist Mode: <span class=\"text-text-accent font-bold\">{0}</span>"
 msgstr ""
 
-msgid "View Public Telemetry"
-msgstr "Xem dữ liệu thu thập từ xa công khai"
-
 msgid "Adjust the volume of the audio output."
 msgstr ""
+
+msgid "View Public Telemetry"
+msgstr "Xem dữ liệu thu thập từ xa công khai"
 
 #, csharp-format
 msgid ""
@@ -1582,6 +1603,9 @@ msgstr ""
 
 #, csharp-format
 msgid "Registered control: {0} [gray italic]({1})[/]"
+msgstr ""
+
+msgid "Keybind is Toggle"
 msgstr ""
 
 msgid ""

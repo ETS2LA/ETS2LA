@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-09-22 11:12:01+0300\n"
+"POT-Creation-Date: 2026-09-22 22:35:36+0300\n"
 "PO-Revision-Date: 2026-09-09 11:08+0000\n"
 "Last-Translator: McAs13 <tsumiguel@ets2la.com>\n"
 "Language-Team: Spanish (American) <http://weblate.ets2la.com/projects/ets2la/"
@@ -191,6 +191,9 @@ msgstr "Contáctanos en Discord"
 msgid "km/h"
 msgstr "km/h"
 
+msgid "Overlay is disabled in settings, skipping initialization."
+msgstr ""
+
 msgid ""
 "ETS2LA will display information on top of the game. You can interact with "
 "these overlay elements using <span class=\"text-text-accent font-"
@@ -253,11 +256,11 @@ msgstr "Visual"
 msgid "Additional"
 msgstr "Adicional"
 
-msgid "Install Plugins"
-msgstr "Instalar plugins"
-
 msgid "Show Fewer Logs"
 msgstr "Mostrar menos registros"
+
+msgid "Install Plugins"
+msgstr "Instalar plugins"
 
 #, csharp-format
 msgid "Error while downloading update: {0}"
@@ -351,6 +354,11 @@ msgid ""
 msgstr ""
 "Servicio no disponible. El servidor no puede procesar la solicitud "
 "actualmente debido a una sobrecarga temporal o mantenimiento."
+
+msgid ""
+"Disables the overlay entirely. This is useful if you want to use ETS2LA "
+"without the overlay, or if you are experiencing issues with the overlay."
+msgstr ""
 
 msgid "Enabled"
 msgstr "Activado"
@@ -820,12 +828,12 @@ msgstr "Aquí puedes habilitar los plugins que instalamos en un paso anterior."
 msgid "SDK Installed"
 msgstr "SDK instalado"
 
-msgid "Current Speed"
-msgstr "Velocidad actual"
-
 #, csharp-format
 msgid "Bound control {0} ({1}) to device {2} and control {3}"
 msgstr "Control {0} ({1}) vinculado al dispositivo {2} y control {3}"
+
+msgid "Current Speed"
+msgstr "Velocidad actual"
 
 msgid "miles per hour"
 msgstr "millas por hora"
@@ -968,13 +976,13 @@ msgstr "Esta página se implementará en una futura actualización."
 msgid "Plugin with ID [gray]{0}[/] is already loaded, skipping duplicate."
 msgstr ""
 
-msgid "You are running the latest version."
-msgstr "Estás usando la última versión."
-
 #, csharp-format
 msgid "Failed to download plugin with ID {0} from {1}. Status code: {2}"
 msgstr ""
 "Error al descargar el plugin con ID {0} desde {1}. Código de estado: {2}"
+
+msgid "You are running the latest version."
+msgstr "Estás usando la última versión."
 
 msgid "No plugins found."
 msgstr "No se encontraron plugins."
@@ -1066,6 +1074,9 @@ msgstr ""
 msgid "I understand, now let me in!"
 msgstr "¡Entiendo, ahora déjame entrar!"
 
+msgid "Disable Overlay"
+msgstr ""
+
 msgid ""
 "The maximum distance at which 3D elements will be rendered. Lowering this "
 "can be used to improve performance on lower-end hardware."
@@ -1142,6 +1153,12 @@ msgstr "Normal"
 
 msgid "Unknown Control"
 msgstr "Control desconocido"
+
+msgid ""
+"When enabled, the overlay will toggle between interaction and non-"
+"interaction mode when you press it's keybind. When disabled, the overlay "
+"will only be interactive while you hold down the keybind."
+msgstr ""
 
 msgid "pounds"
 msgstr "libras"
@@ -1234,11 +1251,11 @@ msgstr "Error al añadir el juego"
 msgid "Font file not found at {0}"
 msgstr "No se encontró el archivo de fuente en {0}"
 
-msgid "No release notes available."
-msgstr "No hay notas de la versión disponibles."
-
 msgid "Changelog"
 msgstr "Registro de cambios"
+
+msgid "No release notes available."
+msgstr "No hay notas de la versión disponibles."
 
 #, csharp-format
 msgid "Detected a switch to {0}, waiting for its game data to be parsed."
@@ -1478,6 +1495,10 @@ msgid "feet"
 msgstr "pies"
 
 #, csharp-format
+msgid "Overlay is disabled in settings, skipping window registration for {0}."
+msgstr ""
+
+#, csharp-format
 msgid "Successfully installed plugin {0} ({1}, {2})"
 msgstr "Plugin {0} instalado correctamente ({1}, {2})"
 
@@ -1677,11 +1698,11 @@ msgid "Assist Mode: <span class=\"text-text-accent font-bold\">{0}</span>"
 msgstr ""
 "Modo de asistencia: <span class=\"text-text-accent font-bold\">{0}</span>"
 
-msgid "View Public Telemetry"
-msgstr "Ver telemetría pública"
-
 msgid "Adjust the volume of the audio output."
 msgstr "Ajusta el volumen de la salida de audio."
+
+msgid "View Public Telemetry"
+msgstr "Ver telemetría pública"
 
 #, csharp-format
 msgid ""
@@ -1696,6 +1717,9 @@ msgstr "Comportamiento de SET"
 #, csharp-format
 msgid "Registered control: {0} [gray italic]({1})[/]"
 msgstr "Control registrado: {0} [gray italic]({1})[/]"
+
+msgid "Keybind is Toggle"
+msgstr ""
 
 msgid ""
 "You'll have to reinstall the SDK for <span class=\"text-text-accent font-"

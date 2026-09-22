@@ -2,8 +2,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-09-22 11:12:01+0300\n"
-"PO-Revision-Date: 2026-09-21 15:01+0000\n"
+"POT-Creation-Date: 2026-09-22 22:35:36+0300\n"
+"PO-Revision-Date: 2026-09-22 19:40+0000\n"
 "Last-Translator: Lun <lun@ets2la.com>\n"
 "Language-Team: Chinese (Traditional Han script) <http://weblate.ets2la.com/"
 "projects/ets2la/ets2la/zh_Hant/>\n"
@@ -28,7 +28,7 @@ msgid "Sorry"
 msgstr "抱歉"
 
 msgid "Stay on Top"
-msgstr ""
+msgstr "視窗置頂"
 
 msgid "Display"
 msgstr "顯示"
@@ -50,6 +50,8 @@ msgid ""
 "Keep the ETS2LA window on top of other windows. If you want to use the "
 "visualization on a single monitor setup, this is recommended."
 msgstr ""
+"讓 ETS2LA 視窗保持顯示在其他視窗的最上層。如果你想在單螢幕配置下使用視覺化功"
+"能，建議啟用此選項。"
 
 #, csharp-format
 msgid "Control with ID '{0}' not found for updating bindings."
@@ -179,6 +181,9 @@ msgstr "透過 Discord 聯絡我們"
 msgid "km/h"
 msgstr "km/h"
 
+msgid "Overlay is disabled in settings, skipping initialization."
+msgstr ""
+
 msgid ""
 "ETS2LA will display information on top of the game. You can interact with "
 "these overlay elements using <span class=\"text-text-accent font-"
@@ -240,11 +245,11 @@ msgstr "視覺提示"
 msgid "Additional"
 msgstr "其他"
 
-msgid "Install Plugins"
-msgstr "安裝插件"
-
 msgid "Show Fewer Logs"
 msgstr "顯示較少記錄"
+
+msgid "Install Plugins"
+msgstr "安裝插件"
 
 #, csharp-format
 msgid "Error while downloading update: {0}"
@@ -315,7 +320,7 @@ msgstr ""
 "按下輸入裝置上的按鍵或操作任一軸，即可綁定此控制項。將在 {0} 秒後逾時。"
 
 msgid "Enable All"
-msgstr ""
+msgstr "啟用所有插件"
 
 msgid ""
 "Subscriptions will <span class=\"font-bold text-text-accent\">never</span> "
@@ -331,6 +336,11 @@ msgid ""
 "Service unavailable. The server is currently unable to handle the request "
 "due to temporary overloading or maintenance."
 msgstr "服務暫時無法使用。伺服器目前因暫時過載或維護而無法處理此請求。"
+
+msgid ""
+"Disables the overlay entirely. This is useful if you want to use ETS2LA "
+"without the overlay, or if you are experiencing issues with the overlay."
+msgstr ""
 
 msgid "Enabled"
 msgstr "已啟用"
@@ -678,7 +688,7 @@ msgstr "已將控制項 {0}（{1}）的綁定更新為裝置 {2}、控制項 {3}
 
 msgid ""
 "Driving mode changed, press Cancel/MODE again to cycle through the modes."
-msgstr ""
+msgstr "駕駛模式已變更，再次按下「取消/模式」即可循環切換駕駛模式。"
 
 msgid "Pause When Unstable"
 msgstr "不穩定時暫停"
@@ -769,12 +779,12 @@ msgstr "你可以在這裡啟用我們在先前步驟中安裝的插件。"
 msgid "SDK Installed"
 msgstr "SDK 已安裝"
 
-msgid "Current Speed"
-msgstr "目前速度"
-
 #, csharp-format
 msgid "Bound control {0} ({1}) to device {2} and control {3}"
 msgstr "已將控制項 {0}（{1}）綁定至裝置 {2} 的控制項 {3}"
+
+msgid "Current Speed"
+msgstr "目前速度"
 
 msgid "miles per hour"
 msgstr "英里每小時"
@@ -909,12 +919,12 @@ msgstr "此頁面將於後續更新中實作。"
 msgid "Plugin with ID [gray]{0}[/] is already loaded, skipping duplicate."
 msgstr "ID 為 [gray]{0}[/] 的插件已載入，跳過重複項目。"
 
-msgid "You are running the latest version."
-msgstr "你目前使用的是最新版本。"
-
 #, csharp-format
 msgid "Failed to download plugin with ID {0} from {1}. Status code: {2}"
 msgstr "從 {1} 下載 ID 為 {0} 的插件失敗。狀態碼：{2}"
+
+msgid "You are running the latest version."
+msgstr "你目前使用的是最新版本。"
 
 msgid "No plugins found."
 msgstr "找不到任何插件。"
@@ -996,6 +1006,9 @@ msgstr ""
 msgid "I understand, now let me in!"
 msgstr "我知道了，現在讓我進去吧！"
 
+msgid "Disable Overlay"
+msgstr ""
+
 msgid ""
 "The maximum distance at which 3D elements will be rendered. Lowering this "
 "can be used to improve performance on lower-end hardware."
@@ -1065,6 +1078,12 @@ msgstr "標準"
 
 msgid "Unknown Control"
 msgstr "未知控制項"
+
+msgid ""
+"When enabled, the overlay will toggle between interaction and non-"
+"interaction mode when you press it's keybind. When disabled, the overlay "
+"will only be interactive while you hold down the keybind."
+msgstr ""
 
 msgid "pounds"
 msgstr "磅"
@@ -1151,11 +1170,11 @@ msgstr "遊戲新增失敗"
 msgid "Font file not found at {0}"
 msgstr "找不到字型檔案：{0}"
 
-msgid "No release notes available."
-msgstr "沒有可用的版本說明。"
-
 msgid "Changelog"
 msgstr "更新日誌"
+
+msgid "No release notes available."
+msgstr "沒有可用的版本說明。"
 
 #, csharp-format
 msgid "Detected a switch to {0}, waiting for its game data to be parsed."
@@ -1362,7 +1381,7 @@ msgid "Remember!"
 msgstr "請記住！"
 
 msgid "Disable All"
-msgstr ""
+msgstr "停用所有插件"
 
 msgid ""
 "Failed to fetch available plugins. Please check your internet connection."
@@ -1370,6 +1389,10 @@ msgstr "可用插件取得失敗。請檢查網路連線。"
 
 msgid "feet"
 msgstr "英尺"
+
+#, csharp-format
+msgid "Overlay is disabled in settings, skipping window registration for {0}."
+msgstr ""
 
 #, csharp-format
 msgid "Successfully installed plugin {0} ({1}, {2})"
@@ -1551,11 +1574,11 @@ msgstr "從 [gray]{0}[/] 載入插件失敗：{1}"
 msgid "Assist Mode: <span class=\"text-text-accent font-bold\">{0}</span>"
 msgstr "輔助模式：<span class=\"text-text-accent font-bold\">{0}</span>"
 
-msgid "View Public Telemetry"
-msgstr "查看公開遙測資料"
-
 msgid "Adjust the volume of the audio output."
 msgstr "調整音訊輸出的音量。"
+
+msgid "View Public Telemetry"
+msgstr "查看公開遙測資料"
 
 #, csharp-format
 msgid ""
@@ -1568,6 +1591,9 @@ msgstr "SET 按鍵行為"
 #, csharp-format
 msgid "Registered control: {0} [gray italic]({1})[/]"
 msgstr "已註冊控制項：{0} [gray italic]({1})[/]"
+
+msgid "Keybind is Toggle"
+msgstr ""
 
 msgid ""
 "You'll have to reinstall the SDK for <span class=\"text-text-accent font-"
