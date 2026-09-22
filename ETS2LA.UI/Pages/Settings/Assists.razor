@@ -124,7 +124,7 @@
 
 <div class="flex flex-col w-108 m-5 ml-8 gap-6">
     <Separator Label=@(_("Keybind Behaviour")) />
-    <Listbox Title=@(_("SET Behaviour"))
+    <!-- <Listbox Title=@(_("SET Behaviour"))
              Description=@(_("When pressing the SET keybind, what should ETS2LA set as the current cruise control speed?"))
              Options="@SetSpeedBehaviourOptions"
              SelectedIndex="@(Array.IndexOf(SetSpeedBehaviourOptions.ToArray(), TranslateSetSpeedBehaviourOptions[AssistanceSettings.Current.SetSpeedBehaviourOption] ?? string.Empty))"
@@ -132,7 +132,7 @@
                 var settings = AssistanceSettings.Current;
                 settings.SetSpeedBehaviourOption = (SetSpeedBehaviour)index;
                 AssistanceSettings.Current.Save();
-             })" />
+             })" /> -->
     <Slider Title=@(_("Speed Control Step Size"))
             Description=@(_("The step size for changing the cruise control speed."))
             Suffix="@DisplayUnits()"

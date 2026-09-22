@@ -95,6 +95,11 @@
                 var settings = DataSettings.Current;
                 settings.DataFidelity = fidelity;
                 DataSettings.Current.Save();
+                InvokeAsync(StateHasChanged);
+                UserInterfaceUtils.AskForRestart(
+                    _("Restart Required"),
+                    _("Changing this option requires a restart of ETS2LA to take effect. Restart now?")
+                );
              })" />
     <div class="flex flex-col gap-2">
         @if (DataSettings.Current.DataFidelity == DataFidelity.Low) {
