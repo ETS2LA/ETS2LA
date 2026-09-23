@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-09-23 14:32:18+0300\n"
-"PO-Revision-Date: 2026-09-23 14:32:19+0300\n"
+"POT-Creation-Date: 2026-09-23 14:45:09+0300\n"
+"PO-Revision-Date: 2026-09-23 14:45:10+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -55,8 +55,8 @@ msgid ""
 "visualization on a single monitor setup, this is recommended."
 msgstr ""
 
-#: ../../../ETS2LA.Controls/Windows/SharpDXControlsBackend.cs:186
 #: ../../../ETS2LA.Controls/Linux/SDL3ControlsBackend.cs:165
+#: ../../../ETS2LA.Controls/Windows/SharpDXControlsBackend.cs:186
 #, csharp-format
 msgid "Control with ID '{0}' not found for updating bindings."
 msgstr ""
@@ -298,12 +298,12 @@ msgstr ""
 msgid "Additional"
 msgstr ""
 
-#: ../../../ETS2LA.Overlay/Window/Console.cs:54
-msgid "Show Fewer Logs"
-msgstr ""
-
 #: ../../../ETS2LA.UI/Pages/Onboarding/Steps/PluginStep.razor:56
 msgid "Install Plugins"
+msgstr ""
+
+#: ../../../ETS2LA.Overlay/Window/Console.cs:54
+msgid "Show Fewer Logs"
 msgstr ""
 
 #: ../../../ETS2LA.Networking/Updates/Handler.cs:81
@@ -906,8 +906,8 @@ msgid ""
 "has only slight differences to metric."
 msgstr ""
 
-#: ../../../ETS2LA.Controls/Windows/SharpDXControlsBackend.cs:170
 #: ../../../ETS2LA.Controls/Linux/SDL3ControlsBackend.cs:149
+#: ../../../ETS2LA.Controls/Windows/SharpDXControlsBackend.cs:170
 #, csharp-format
 msgid "Control with ID '{0}' not found for unregistration."
 msgstr ""
@@ -1048,8 +1048,8 @@ msgstr ""
 msgid "Download progress: {0}%"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Plugins/Catalogue.razor:110
 #: ../../../ETS2LA.UI/Pages/Plugins/Manager.razor:157
+#: ../../../ETS2LA.UI/Pages/Plugins/Catalogue.razor:110
 msgid "Search for plugins..."
 msgstr ""
 
@@ -1159,8 +1159,8 @@ msgstr ""
 msgid "You are running the latest version."
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Plugins/Catalogue.razor:146
 #: ../../../ETS2LA.UI/Pages/Plugins/Manager.razor:198
+#: ../../../ETS2LA.UI/Pages/Plugins/Catalogue.razor:146
 msgid "No plugins found."
 msgstr ""
 
@@ -1320,11 +1320,11 @@ msgstr ""
 msgid "Disabled plugin: [bold]{0}[/]"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/OverlayStep.razor:27
 #: ../../../ETS2LA.UI/Pages/Onboarding/Steps/ControlsStep.razor:48
 #: ../../../ETS2LA.UI/Pages/Onboarding/Steps/SDKStep.razor:17
-#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/EnsureGameClosed.razor:52
 #: ../../../ETS2LA.UI/Pages/Onboarding/Steps/PluginStep.razor:57
+#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/OverlayStep.razor:27
+#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/EnsureGameClosed.razor:52
 msgid "Continue"
 msgstr ""
 
@@ -1434,8 +1434,8 @@ msgstr ""
 msgid "Steering Sensitivity"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Settings/Assists.razor:207
 #: ../../../ETS2LA.UI/Pages/Plugins/Manager.razor:226
+#: ../../../ETS2LA.UI/Pages/Settings/Assists.razor:207
 msgid "Disabled"
 msgstr ""
 
@@ -1995,11 +1995,11 @@ msgstr ""
 msgid "Target Speed: <span class=\"text-text-accent font-bold\">{0} {1}</span>"
 msgstr ""
 
-#: ../../../ETS2LA.Game/SDK/Camera.cs:130
 #: ../../../ETS2LA.Game/SDK/Navigation.cs:122
-#: ../../../ETS2LA.Game/SDK/Semaphores.cs:176
 #: ../../../ETS2LA.Game/SDK/ParkedVehicles.cs:108
 #: ../../../ETS2LA.Game/SDK/Traffic.cs:159
+#: ../../../ETS2LA.Game/SDK/Camera.cs:130
+#: ../../../ETS2LA.Game/SDK/Semaphores.cs:176
 #, csharp-format
 msgid "Error initializing memory mapped file: {0}"
 msgstr ""
@@ -2215,13 +2215,13 @@ msgstr ""
 msgid "Starting download..."
 msgstr ""
 
+#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/EnsureGameClosed.razor:31
+msgid "Game is still running"
+msgstr ""
+
 #: ../../../ETS2LA.UI/Pages/Settings/Data.razor:12
 #: ../../../ETS2LA.UI/Pages/Settings/Data.razor:20
 msgid "High"
-msgstr ""
-
-#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/EnsureGameClosed.razor:31
-msgid "Game is still running"
 msgstr ""
 
 #: ../../../ETS2LA.UI/Pages/Onboarding/Steps/DisclaimerStep1.razor:15
