@@ -4,16 +4,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
 "POT-Creation-Date: 2026-09-23 14:45:09+0300\n"
-"PO-Revision-Date: 2026-09-11 13:17+0000\n"
+"PO-Revision-Date: 2026-09-23 18:04+0000\n"
 "Last-Translator: Kubex70 <kubex70@ets2la.com>\n"
-"Language-Team: Polish <http://weblate.ets2la.com/projects/ets2la/ets2la/pl/"
-">\n"
+"Language-Team: Polish <http://weblate.ets2la.com/projects/ets2la/ets2la/pl/>"
+"\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
-"|| n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && "
+"(n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 5.14.3\n"
 
 msgid ""
@@ -31,7 +31,7 @@ msgid "Sorry"
 msgstr "Przepraszam"
 
 msgid "Stay on Top"
-msgstr ""
+msgstr "Zostaw na wierzchu"
 
 msgid "Display"
 msgstr "Wyświetlanie"
@@ -53,6 +53,8 @@ msgid ""
 "Keep the ETS2LA window on top of other windows. If you want to use the "
 "visualization on a single monitor setup, this is recommended."
 msgstr ""
+"Utrzymuj okno ETS2LA na wierzchu (nad innymi oknami). Jest to zalecane, "
+"jeśli chcesz korzystać z wizualizacji na konfiguracji z jednym monitorem."
 
 #, csharp-format
 msgid "Control with ID '{0}' not found for updating bindings."
@@ -98,7 +100,7 @@ msgid "Become a GitHub Sponsor"
 msgstr "Zostań sponsorem na GitHubie"
 
 msgid "If you've not yet installed it, you can find it in the catalogue."
-msgstr ""
+msgstr "Jeśli jeszcze go nie zainstalowałeś, znajdziesz go w katalogu."
 
 #, csharp-format
 msgid "Installed {0}"
@@ -158,9 +160,11 @@ msgstr "Upłynął limit czasu przypisywania klawisza {0} ({1})."
 msgid ""
 "Library plugin with ID [gray]{0}[/] is already loaded, skipping duplicate."
 msgstr ""
+"Plugin biblioteki o identyfikatorze [gray]{0}[/] jest już załadowany; "
+"pomijanie duplikatu."
 
 msgid "Successfully opened memory for output."
-msgstr ""
+msgstr "Pomyślnie otwarto pamięć do zapisu."
 
 msgid "Dashboard"
 msgstr "Panel"
@@ -198,7 +202,7 @@ msgid "km/h"
 msgstr "km/h"
 
 msgid "Overlay is disabled in settings, skipping initialization."
-msgstr ""
+msgstr "Nakładka jest wyłączona w ustawieniach; pomijanie inicjalizacji."
 
 msgid ""
 "ETS2LA will display information on top of the game. You can interact with "
@@ -233,6 +237,9 @@ msgid ""
 "closed</span>. You can start the game after completing the onboarding "
 "process."
 msgstr ""
+"Upewnij się, że <span class=\"text-text-accent font-bold\">ETS2 i ATS są "
+"zamknięte</span>. Będziesz mógł uruchomić grę po zakończeniu procesu "
+"wprowadzającego."
 
 #, csharp-format
 msgid "Error rendering window {0}: {1}"
@@ -348,7 +355,7 @@ msgstr ""
 "tym elementem sterującym. Czas oczekiwania wygaśnie za {0} sekund."
 
 msgid "Enable All"
-msgstr ""
+msgstr "Włącz wszystko"
 
 msgid ""
 "Subscriptions will <span class=\"font-bold text-text-accent\">never</span> "
@@ -390,6 +397,8 @@ msgid ""
 "Memory not available for output, please ensure the game is running and "
 "reinstall the SDK if necessary."
 msgstr ""
+"Brak pamięci dostępnej dla danych wyjściowych; upewnij się, że gra jest "
+"uruchomiona, i w razie potrzeby zainstaluj ponownie pakiet SDK."
 
 #, csharp-format
 msgid "Latest Version: {0}"
@@ -458,7 +467,7 @@ msgid "Contact Us"
 msgstr "Skontaktuj się z nami"
 
 msgid "An error occurred while checking for updates."
-msgstr ""
+msgstr "Wystąpił błąd podczas sprawdzania dostępności aktualizacji."
 
 #, csharp-format
 msgid "Copied '{0}' to '{1}'"
@@ -560,7 +569,7 @@ msgid "Late"
 msgstr "Późno"
 
 msgid "Please enable the Visualization Sockets plugin."
-msgstr ""
+msgstr "Proszę włączyć plugin Visualization Sockets."
 
 msgid "Force Map Load"
 msgstr "Wymuś załadowanie mapy"
@@ -708,6 +717,9 @@ msgid ""
 "cost of breaking all features that rely on the overlay, including AR and the "
 "HUD."
 msgstr ""
+"Całkowicie wyłącza nakładkę. Rozwiąże to problem czarnego ekranu, ale "
+"spowoduje niedziałanie wszystkich funkcji zależnych od nakładki, w tym AR i "
+"HUD-u."
 
 msgid "Warnings & Overrides"
 msgstr "Ostrzeżenia i obejścia"
@@ -750,6 +762,8 @@ msgstr ""
 msgid ""
 "Driving mode changed, press Cancel/MODE again to cycle through the modes."
 msgstr ""
+"Zmieniono tryb jazdy, naciśnij ponownie przycisk Anuluj/TRYB, aby przełączać "
+"się między trybami."
 
 msgid "Pause When Unstable"
 msgstr "Wstrzymaj, gdy jest niestabilny"
@@ -997,6 +1011,7 @@ msgstr "Ta strona zostanie wdrożona w przyszłej aktualizacji."
 #, csharp-format
 msgid "Plugin with ID [gray]{0}[/] is already loaded, skipping duplicate."
 msgstr ""
+"Plugin o identyfikatorze [gray]{0}[/] jest już załadowany; pomijam duplikat."
 
 #, csharp-format
 msgid "Failed to download plugin with ID {0} from {1}. Status code: {2}"
@@ -1027,7 +1042,7 @@ msgstr ""
 "Domyślnie jest to zgodne z grą."
 
 msgid "Before we begin."
-msgstr ""
+msgstr "Zanim zaczniemy."
 
 #, csharp-format
 msgid "Error while applying update: {0}"
@@ -1102,7 +1117,7 @@ msgid "I understand, now let me in!"
 msgstr "Rozumiem, teraz mnie wpuść!"
 
 msgid "Disable Overlay"
-msgstr ""
+msgstr "Wyłącz nakładkę"
 
 msgid ""
 "The maximum distance at which 3D elements will be rendered. Lowering this "
@@ -1186,6 +1201,10 @@ msgid ""
 "interaction mode when you press it's keybind. When disabled, the overlay "
 "will only be interactive while you hold down the keybind."
 msgstr ""
+"Po włączeniu tej opcji naciśnięcie przypisanego klawisza będzie przełączać "
+"nakładkę między trybem interakcji a trybem bez interakcji. Po jej wyłączeniu "
+"nakładka będzie interaktywna tylko wtedy, gdy przytrzymasz przypisany "
+"klawisz."
 
 msgid "pounds"
 msgstr "funty"
@@ -1485,7 +1504,7 @@ msgstr ""
 "dostępnych źródeł."
 
 msgid "Error Checking for Updates"
-msgstr ""
+msgstr "Błąd podczas sprawdzania aktualizacji"
 
 msgid "Speed Limit"
 msgstr "Ograniczenie prędkości"
@@ -1512,7 +1531,7 @@ msgid "Remember!"
 msgstr "Pamiętaj!"
 
 msgid "Disable All"
-msgstr ""
+msgstr "Wyłącz wszystko"
 
 msgid ""
 "Failed to fetch available plugins. Please check your internet connection."
@@ -1525,9 +1544,10 @@ msgstr "stopy"
 #, csharp-format
 msgid "Overlay is disabled in settings, skipping window registration for {0}."
 msgstr ""
+"Nakładka jest wyłączona w ustawieniach, pomijanie rejestracji okna dla {0}."
 
 msgid "Please close the game before continuing with the onboarding process."
-msgstr ""
+msgstr "Proszę zamknąć grę przed kontynuowaniem procesu wdrażania."
 
 #, csharp-format
 msgid "Successfully installed plugin {0} ({1}, {2})"
@@ -1560,6 +1580,8 @@ msgid ""
 "If you see a fully black screen, see the FAQ at <span class=\"description "
 "hover:underline\">ets2la.com</span>."
 msgstr ""
+"Jeśli widzisz całkowicie czarny ekran, zapoznaj się z sekcją FAQ na stronie "
+"<span class=\"description hover:underline\">ets2la.com</span>."
 
 msgid "Settings"
 msgstr "Ustawienia"
@@ -1753,7 +1775,7 @@ msgid "Registered control: {0} [gray italic]({1})[/]"
 msgstr "Zarejestrowano sterowanie: {0} [gray italic]({1})[/]"
 
 msgid "Keybind is Toggle"
-msgstr ""
+msgstr "Przypisany klawisz działa w trybie przełączania"
 
 msgid ""
 "You'll have to reinstall the SDK for <span class=\"text-text-accent font-"
@@ -1900,7 +1922,7 @@ msgid "Starting download..."
 msgstr "Rozpoczęcie pobierania..."
 
 msgid "Game is still running"
-msgstr ""
+msgstr "Gra nadal działa"
 
 msgid "High"
 msgstr "Wysokie"
