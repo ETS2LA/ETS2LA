@@ -1,5 +1,6 @@
 using ETS2LA.Logging;
 using ETS2LA.Backend.Events;
+using static ETS2LA.Translations.T;
 
 using System.Diagnostics;
 using System.IO.MemoryMappedFiles;
@@ -98,8 +99,8 @@ public class GameOutput
             modernAccessor = null;
         }
 
-        Logging.Logger.Debug(MemoryAccessAvailable ? "Successfully opened memory for output." 
-                                                  : "Memory not available for output.");
+        Logging.Logger.Debug(MemoryAccessAvailable ? _("Successfully opened memory for output.")
+                                                  : _("Memory not available for output, please ensure the game is running and reinstall the SDK if necessary."));
         SinceTriedMemoryAccess.Restart();
     }
 
