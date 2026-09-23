@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
 "POT-Creation-Date: 2026-09-22 22:35:36+0300\n"
-"PO-Revision-Date: 2026-09-23 07:46+0000\n"
+"PO-Revision-Date: 2026-09-23 07:49+0000\n"
 "Last-Translator: Lun <lun@ets2la.com>\n"
 "Language-Team: Chinese (Traditional Han script) <http://weblate.ets2la.com/"
 "projects/ets2la/ets2la/zh_Hant/>\n"
@@ -1084,7 +1084,8 @@ msgid ""
 "When enabled, the overlay will toggle between interaction and non-"
 "interaction mode when you press it's keybind. When disabled, the overlay "
 "will only be interactive while you hold down the keybind."
-msgstr ""
+msgstr "啟用後，按下對應按鍵時，疊加層會在互動模式與非互動模式之間切換。停用後，只有"
+"在按住該按鍵時，才能與疊加層互動。"
 
 msgid "pounds"
 msgstr "磅"
@@ -1393,7 +1394,7 @@ msgstr "英尺"
 
 #, csharp-format
 msgid "Overlay is disabled in settings, skipping window registration for {0}."
-msgstr ""
+msgstr "疊加層已在設定中停用，略過 {0} 的視窗註冊。"
 
 #, csharp-format
 msgid "Successfully installed plugin {0} ({1}, {2})"
