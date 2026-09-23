@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-09-22 22:33:27+0300\n"
-"PO-Revision-Date: 2026-09-22 22:33:27+0300\n"
+"POT-Creation-Date: 2026-09-23 14:30:57+0300\n"
+"PO-Revision-Date: 2026-09-23 14:30:57+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -115,8 +115,8 @@ msgstr ""
 msgid "Error loading map data from '{0}': {1}"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Settings/Data.razor:11
 #: ../../../ETS2LA.UI/Pages/Settings/Assists.razor:53
+#: ../../../ETS2LA.UI/Pages/Settings/Data.razor:11
 msgid "Medium"
 msgstr ""
 
@@ -174,6 +174,10 @@ msgid ""
 "Library plugin with ID [gray]{0}[/] is already loaded, skipping duplicate."
 msgstr ""
 
+#: ../../../ETS2LA.Game/Output/Output.cs:102
+msgid "Successfully opened memory for output."
+msgstr ""
+
 #: ../../../ETS2LA.UI/Shared/Layouts/MainLayout.razor:43
 msgid "Dashboard"
 msgstr ""
@@ -226,7 +230,7 @@ msgid ""
 "Interaction</span>. Try it!"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/WelcomeStep.razor:72
+#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/WelcomeStep.razor:78
 msgid "If you can't interact with the Window, press CTRL+R."
 msgstr ""
 
@@ -234,7 +238,7 @@ msgstr ""
 msgid "The step size for changing the cruise control speed."
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/WelcomeStep.razor:51
+#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/WelcomeStep.razor:56
 msgid "Welcome to ETS2LA!"
 msgstr ""
 
@@ -246,6 +250,12 @@ msgstr ""
 
 #: ../../../ETS2LA.Game/Installation.cs:267
 msgid "Initializing..."
+msgstr ""
+
+#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/EnsureGameClosed.razor:48
+msgid ""
+"Please ensure <span class=\"text-text-accent font-bold\">ETS2 and ATS are "
+"closed</span>. You can start the game after completing the onboarding process."
 msgstr ""
 
 #: ../../../ETS2LA.Overlay/Overlay.cs:437
@@ -288,21 +298,21 @@ msgstr ""
 msgid "Additional"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/PluginStep.razor:56
-msgid "Install Plugins"
-msgstr ""
-
 #: ../../../ETS2LA.Overlay/Window/Console.cs:54
 msgid "Show Fewer Logs"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/DisclaimerStep1.razor:21
-msgid "I won't leave ETS2LA unattended"
+#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/PluginStep.razor:56
+msgid "Install Plugins"
 msgstr ""
 
 #: ../../../ETS2LA.Networking/Updates/Handler.cs:81
 #, csharp-format
 msgid "Error while downloading update: {0}"
+msgstr ""
+
+#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/DisclaimerStep1.razor:21
+msgid "I won't leave ETS2LA unattended"
 msgstr ""
 
 #: ../../../ETS2LA.UI/Pages/Settings/Controls.razor:74
@@ -403,12 +413,6 @@ msgid ""
 "to temporary overloading or maintenance."
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Settings/Display.razor:257
-msgid ""
-"Disables the overlay entirely. This is useful if you want to use ETS2LA "
-"without the overlay, or if you are experiencing issues with the overlay."
-msgstr ""
-
 #: ../../../ETS2LA.UI/Pages/Plugins/Manager.razor:222
 msgid "Enabled"
 msgstr ""
@@ -426,6 +430,12 @@ msgstr ""
 #: ../../../ETS2LA.UI/Pages/Onboarding/Steps/ControlsStep.razor:42
 #, csharp-format
 msgid "Assists Enabled: <span class=\"text-text-accent font-bold\">{0}</span>"
+msgstr ""
+
+#: ../../../ETS2LA.Game/Output/Output.cs:103
+msgid ""
+"Memory not available for output, please ensure the game is running and "
+"reinstall the SDK if necessary."
 msgstr ""
 
 #: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:164
@@ -802,6 +812,13 @@ msgstr ""
 msgid "Collision Avoidance"
 msgstr ""
 
+#: ../../../ETS2LA.UI/Pages/Settings/Display.razor:257
+msgid ""
+"Disables the overlay entirely. This will fix the black screen issue at the "
+"cost of breaking all features that rely on the overlay, including AR and the "
+"HUD."
+msgstr ""
+
 #: ../../../ETS2LA.UI/Pages/Settings/Assists.razor:187
 msgid "Warnings & Overrides"
 msgstr ""
@@ -1031,8 +1048,8 @@ msgstr ""
 msgid "Download progress: {0}%"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Plugins/Catalogue.razor:110
 #: ../../../ETS2LA.UI/Pages/Plugins/Manager.razor:157
+#: ../../../ETS2LA.UI/Pages/Plugins/Catalogue.razor:110
 msgid "Search for plugins..."
 msgstr ""
 
@@ -1142,8 +1159,8 @@ msgstr ""
 msgid "You are running the latest version."
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Plugins/Catalogue.razor:146
 #: ../../../ETS2LA.UI/Pages/Plugins/Manager.razor:198
+#: ../../../ETS2LA.UI/Pages/Plugins/Catalogue.razor:146
 msgid "No plugins found."
 msgstr ""
 
@@ -1161,6 +1178,10 @@ msgstr ""
 msgid ""
 "Adjust the quality of the curves used for path planning and visualization. By "
 "default this matches the game."
+msgstr ""
+
+#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/EnsureGameClosed.razor:47
+msgid "Before we begin."
 msgstr ""
 
 #: ../../../ETS2LA.Networking/Updates/Handler.cs:94
@@ -1299,10 +1320,11 @@ msgstr ""
 msgid "Disabled plugin: [bold]{0}[/]"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/SDKStep.razor:17
 #: ../../../ETS2LA.UI/Pages/Onboarding/Steps/ControlsStep.razor:48
-#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/PluginStep.razor:57
+#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/SDKStep.razor:17
 #: ../../../ETS2LA.UI/Pages/Onboarding/Steps/OverlayStep.razor:27
+#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/PluginStep.razor:57
+#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/EnsureGameClosed.razor:52
 msgid "Continue"
 msgstr ""
 
@@ -1661,7 +1683,7 @@ msgstr ""
 msgid "ETS2LA is running."
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/WelcomeStep.razor:65
+#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/WelcomeStep.razor:70
 msgid "Restart"
 msgstr ""
 
@@ -1719,7 +1741,7 @@ msgstr ""
 msgid "This might take a while... ({0}/{1})"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/WelcomeStep.razor:52
+#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/WelcomeStep.razor:57
 msgid ""
 "Please complete this <span class=\"text-text-accent font-bold\">short</span> "
 "onboarding process to get started."
@@ -1740,6 +1762,15 @@ msgstr ""
 
 #: ../../../ETS2LA.State/Units.cs:193
 msgid "feet"
+msgstr ""
+
+#: ../../../ETS2LA.Overlay/Overlay.cs:632
+#, csharp-format
+msgid "Overlay is disabled in settings, skipping window registration for {0}."
+msgstr ""
+
+#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/EnsureGameClosed.razor:32
+msgid "Please close the game before continuing with the onboarding process."
 msgstr ""
 
 #: ../../../ETS2LA.Networking/Plugins/client.cs:225
@@ -1776,6 +1807,12 @@ msgstr ""
 
 #: ../../../ETS2LA.UI/Pages/Settings/Display.razor:241
 msgid "Window"
+msgstr ""
+
+#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/WelcomeStep.razor:79
+msgid ""
+"If you see a fully black screen, see the FAQ at <span class=\"description "
+"hover:underline\">ets2la.com</span>."
 msgstr ""
 
 #: ../../../ETS2LA.UI/Shared/Layouts/MainLayout.razor:61
@@ -1903,14 +1940,14 @@ msgstr ""
 msgid "Recommended Plugins"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Settings/SDK.razor:58
-msgid "Game added"
-msgstr ""
-
 #: ../../../ETS2LA.UI/Pages/Settings/Assists.razor:206
 msgid ""
 "The maximum speed ETS2LA will accelerate to. It might still drift over this "
 "limit due to momentum."
+msgstr ""
+
+#: ../../../ETS2LA.UI/Pages/Settings/SDK.razor:58
+msgid "Game added"
 msgstr ""
 
 #: ../../../ETS2LA.Game/Installation.cs:334
@@ -1959,17 +1996,12 @@ msgid "Target Speed: <span class=\"text-text-accent font-bold\">{0} {1}</span>"
 msgstr ""
 
 #: ../../../ETS2LA.Game/SDK/Navigation.cs:122
-#: ../../../ETS2LA.Game/SDK/ParkedVehicles.cs:108
 #: ../../../ETS2LA.Game/SDK/Camera.cs:130
+#: ../../../ETS2LA.Game/SDK/ParkedVehicles.cs:108
 #: ../../../ETS2LA.Game/SDK/Traffic.cs:159
 #: ../../../ETS2LA.Game/SDK/Semaphores.cs:176
 #, csharp-format
 msgid "Error initializing memory mapped file: {0}"
-msgstr ""
-
-#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/ControlsStep.razor:43
-#, csharp-format
-msgid "Assist Mode: <span class=\"text-text-accent font-bold\">{0}</span>"
 msgstr ""
 
 #: ../../../ETS2LA.Backend/PluginHandler/Handler.cs:204
@@ -1977,6 +2009,11 @@ msgstr ""
 #: ../../../ETS2LA.Backend/PluginHandler/Handler.cs:217
 #, csharp-format
 msgid "Failed to load plugin from [gray]{0}[/]: {1}"
+msgstr ""
+
+#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/ControlsStep.razor:43
+#, csharp-format
+msgid "Assist Mode: <span class=\"text-text-accent font-bold\">{0}</span>"
 msgstr ""
 
 #: ../../../ETS2LA.UI/Pages/Settings/Telemetry.razor:28
@@ -2183,6 +2220,10 @@ msgstr ""
 msgid "High"
 msgstr ""
 
+#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/EnsureGameClosed.razor:31
+msgid "Game is still running"
+msgstr ""
+
 #: ../../../ETS2LA.UI/Pages/Onboarding/Steps/DisclaimerStep1.razor:15
 msgid "Final Disclaimer <span class=\"description\">1/2</span>"
 msgstr ""
@@ -2277,7 +2318,7 @@ msgstr ""
 msgid "Keybind Behaviour"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/WelcomeStep.razor:68
+#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/WelcomeStep.razor:73
 msgid "Next"
 msgstr ""
 

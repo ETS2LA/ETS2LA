@@ -16,6 +16,7 @@
     private void NextStep()
     {
         transitionOut = true;
+        InvokeAsync(StateHasChanged);
         Task.Delay(300).ContinueWith(_ => {
             InvokeAsync(() => {
                 transitionOut = false;
@@ -37,27 +38,30 @@
             <WelcomeStep OnNext="NextStep" />
             break;
         case 1:
-            <SDKStep OnNext="NextStep" />
+            <EnsureGameClosed OnNext="NextStep" />
             break;
         case 2:
-            <SDKReminderStep OnNext="NextStep" />
+            <SDKStep OnNext="NextStep" />
             break;
         case 3:
-            <OverlayStep OnNext="NextStep" />
+            <SDKReminderStep OnNext="NextStep" />
             break;
         case 4:
-            <ControlsStep OnNext="NextStep" />
+            <OverlayStep OnNext="NextStep" />
             break;
         case 5:
-            <PluginStep OnNext="NextStep" />
+            <ControlsStep OnNext="NextStep" />
             break;
         case 6:
-            <DisclaimerStep1 OnNext="NextStep" />
+            <PluginStep OnNext="NextStep" />
             break;
         case 7:
-            <DisclaimerStep2 OnNext="NextStep" />
+            <DisclaimerStep1 OnNext="NextStep" />
             break;
         case 8:
+            <DisclaimerStep2 OnNext="NextStep" />
+            break;
+        case 9:
             <FinishStep />
             break;
     }

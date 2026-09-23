@@ -44,6 +44,11 @@
     {
         UserInterfaceUtils.Restart();
     }
+
+    private void OpenFAQ()
+    {
+        UserInterfaceUtils.OpenUrl("https://ets2la.com/help/faq");
+    }
 }
 
 <div class="flex flex-col gap-2">
@@ -69,5 +74,8 @@
         }
     </div>
 
-    <p class="description pt-1">@_("If you can't interact with the Window, press CTRL+R.")</p>
+    <div class="flex flex-col gap-1 mt-1">
+        <p class="description">@_("If you can't interact with the Window, press CTRL+R.")</p>
+        <p class="description" @onclick="OpenFAQ">@((MarkupString)_("If you see a fully black screen, see the FAQ at <span class=\"description hover:underline\">ets2la.com</span>."))</p>
+    </div>
 </div>

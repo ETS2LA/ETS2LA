@@ -1,28 +1,30 @@
-### ETS2LA C# 2026.9.5068 (Nightly)
-- Updated sponsors.
-- Removed redundant settings that were accidentally left in the settings pages.
-- Implemented a toggle mode for overlay interaction. **This is now the default behavior.** You can change this in `Settings - Display`.
-- You can now refresh catalogue plugins without restarting ETS2LA.
-- Add option to completely disable overlay rendering. Please do note that this will break all features that rely on the overlay, including AR and the HUD. This can be changed in `Settings - Display`.
-- Display settings now has clearer behaviour when disabling AR rendering or the overlay by disabling their respective settings.
-- `Switch` components now have a `Class` field to override their tailwind styling.
-
-**This update (5051) cannot be automatically downloaded due to a bug in the updater. Please download the latest version from GitHub or CNB, later updates will be available through the updater from 5051 onwards.**
-### ETS2LA C# 2026.9.5051 (Nightly)
-- Added option to keep the ETS2LA window on top of other windows. This can be turned on in Settings - Display.
-- Changing the ETS2LA volume now plays an example sound to preview the volume level.
-- Fixed updater bug.
-- Added notification when changing driving modes. This will hopefully alleviate confusion about what mode you are in until the new HUD is implemented.
+**If your ETS2LA version is below 2026.9.5051, you need to install this update manually by downloading the installer again!**
+### ETS2LA C# 2026.9.XXXX
+#### UI Updates
+- Visualization page is now implemented. Requires `VisualizationSockets` plugin available in the catalogue. This is now a recommended plugin installed during the onboarding.
 - You can now do the following actions in the plugin manager:
     - Enable/Disable all plugins.
     - Open the plugin folder in your default file manager.
     - Reload plugins at runtime. This will unload and reload all plugins, mainly useful for developers.
-
-### ETS2LA C# 2026.9.5040 (Nightly)
-- Prevent loading duplicated libraries or plugins. In some cases this could cause a crash on startup.
-- Fixed race condition when removing notifications.
-- Visualization page is now implemented. Requires `VisualizationSockets` plugin.
 - Notifications will now go transparent if hovered. This allows you to interact with elements below them.
+- Onboarding will now make sure the game is closed *before* SDK installation. This should prevent issues with `Memory not available for output` errors.
+- Updated the default controls image in the onboarding.
+- Added option to keep the ETS2LA window on top of other windows. This can be turned on in Settings - Display.
+- Removed redundant settings that were accidentally left in the settings pages.
+- Implemented a toggle mode for overlay interaction. **This is now the default behavior.** You can change this in `Settings - Display`.
+- You can now refresh catalogue plugins without restarting ETS2LA.
+- Added option to completely disable overlay rendering. Please do note that this will break all features that rely on the overlay, including AR and the HUD. This can be changed in `Settings - Display`.
+- Display settings now has clearer behaviour when disabling AR rendering or the overlay by disabling their respective settings.
+- `Switch` components now have a `Class` field to override their tailwind styling.
+- Changing the ETS2LA volume now plays an example sound to preview the volume level.
+- Added notification when changing driving modes. This will hopefully alleviate confusion about what mode you are in until the new HUD is implemented.
+- Improved updater page header styling.
+
+#### Bug Fixes and Other Changes
+- Fixed updater bug.
+- Fixed race condition when removing notifications.
+- `Memory not available for output` will now describe how the error can be fixed.
+- Prevent loading duplicated libraries or plugins. In some cases this could cause a crash on startup.
 
 #### Thank you to today's sponsor... You!
 Development is possible thanks to our [sponsors](https://github.com/sponsors/Tumppi066). Please consider supporting if you like the project and have the means to do so.

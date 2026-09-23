@@ -185,6 +185,11 @@ h3 {
   font-weight: 600;
 }
 
+h4 {
+  color: var(--text-h);
+  font-weight: 600;
+}
+
 .button {
   color: var(--text-h);
   background-color: var(--control-bg-dark);

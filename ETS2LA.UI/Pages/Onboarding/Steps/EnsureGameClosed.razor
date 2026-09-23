@@ -1,0 +1,54 @@
+@using ETS2LA.State;
+@using ETS2LA.Logging;
+@using ETS2LA.UI.Shared.Components;
+@using ETS2LA.Notifications;
+
+@using ETS2LA.Translations;
+@using static ETS2LA.Translations.Languages;
+
+@code {
+    [Parameter]
+    public Action OnNext { get; set; }
+
+    [Parameter]
+    public Action OnPrevious { get; set; }
+
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+    }
+
+    private void ContinueIfGameClosed()
+    {
+        var searchFor = new List<string> { "eurotrucks2", "ats" };
+        var processes = System.Diagnostics.Process.GetProcesses();
+        var gameProcesses = processes.Where(p => searchFor.Any(s => p.ProcessName.ToLower().Contains(s))).ToList();
+        if (gameProcesses.Count > 0)
+        {
+            Logger.Info("Game is still running, cannot continue onboarding.");
+            NotificationHandler.Current.SendNotification(new ETS2LA.Notifications.Notification{
+                Id = "ETS2LA.UI.Onboarding.EnsureGameClosed.GameRunning",
+                Title = _("Game is still running"),
+                Content = _("Please close the game before continuing with the onboarding process."),
+                IsProgressIndeterminate = false,
+                Level = NotificationLevel.Warning,
+                CloseAfter = 2f
+            });
+            return;
+        }
+
+        Logger.Info("Game is closed, continuing onboarding.");
+        OnNext?.Invoke();
+    }
+}
+
+<div class="flex flex-col gap-2 max-w-108">
+    <div class="flex flex-col gap-1">
+        <h3>@(_("Before we begin."))</h3>
+        <p>@((MarkupString)(_("Please ensure <span class=\"text-text-accent font-bold\">ETS2 and ATS are closed</span>. You can start the game after completing the onboarding process.")))</p>
+    </div>
+
+    <div class="flex gap-2 mt-2">
+        <button class="button w-full!" @onclick="ContinueIfGameClosed">@_("Continue")</button>
+    </div>
+</div>
