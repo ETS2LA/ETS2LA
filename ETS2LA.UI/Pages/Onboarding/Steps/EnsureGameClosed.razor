@@ -20,7 +20,7 @@
 
     private void ContinueIfGameClosed()
     {
-        var searchFor = new List<string> { "eurotrucks2", "ats" };
+        var searchFor = new List<string> { "eurotrucks2", "amtrucks" };
         var processes = System.Diagnostics.Process.GetProcesses();
         var gameProcesses = processes.Where(p => searchFor.Any(s => p.ProcessName.ToLower().Contains(s))).ToList();
         if (gameProcesses.Count > 0)
