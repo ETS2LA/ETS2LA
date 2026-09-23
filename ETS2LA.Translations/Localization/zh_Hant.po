@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
 "POT-Creation-Date: 2026-09-22 22:35:36+0300\n"
-"PO-Revision-Date: 2026-09-22 19:40+0000\n"
+"PO-Revision-Date: 2026-09-23 07:44+0000\n"
 "Last-Translator: Lun <lun@ets2la.com>\n"
 "Language-Team: Chinese (Traditional Han script) <http://weblate.ets2la.com/"
 "projects/ets2la/ets2la/zh_Hant/>\n"
@@ -146,7 +146,7 @@ msgstr "控制項 {0}（{1}）的綁定已逾時。"
 #, csharp-format
 msgid ""
 "Library plugin with ID [gray]{0}[/] is already loaded, skipping duplicate."
-msgstr "ID 為 [gray]{0}[/] 的函式庫插件已載入，將跳過重複項目。"
+msgstr "ID 為 [gray]{0}[/] 的函式庫插件已載入，將略過重複項目。"
 
 msgid "Dashboard"
 msgstr "首頁"
@@ -182,7 +182,7 @@ msgid "km/h"
 msgstr "km/h"
 
 msgid "Overlay is disabled in settings, skipping initialization."
-msgstr ""
+msgstr "疊加層已在設定中停用，略過初始化。"
 
 msgid ""
 "ETS2LA will display information on top of the game. You can interact with "
@@ -340,7 +340,8 @@ msgstr "服務暫時無法使用。伺服器目前因暫時過載或維護而無
 msgid ""
 "Disables the overlay entirely. This is useful if you want to use ETS2LA "
 "without the overlay, or if you are experiencing issues with the overlay."
-msgstr ""
+msgstr "完全停用疊加層。如果你想在不使用疊加層的情況下使用 ETS2LA，或是在使用疊加層時"
+"遇到問題，這個選項會很有用。"
 
 msgid "Enabled"
 msgstr "已啟用"
@@ -917,7 +918,7 @@ msgstr "此頁面將於後續更新中實作。"
 
 #, csharp-format
 msgid "Plugin with ID [gray]{0}[/] is already loaded, skipping duplicate."
-msgstr "ID 為 [gray]{0}[/] 的插件已載入，跳過重複項目。"
+msgstr "ID 為 [gray]{0}[/] 的插件已載入，略過重複項目。"
 
 #, csharp-format
 msgid "Failed to download plugin with ID {0} from {1}. Status code: {2}"
