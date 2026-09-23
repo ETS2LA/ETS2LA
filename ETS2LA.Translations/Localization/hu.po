@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-09-22 22:35:36+0300\n"
+"POT-Creation-Date: 2026-09-23 14:45:09+0300\n"
 "PO-Revision-Date: 2026-09-21 15:01+0000\n"
 "Last-Translator: delilevente <delilevente@ets2la.com>\n"
 "Language-Team: Hungarian <http://weblate.ets2la.com/projects/ets2la/ets2la/"
@@ -144,6 +144,9 @@ msgid ""
 "Library plugin with ID [gray]{0}[/] is already loaded, skipping duplicate."
 msgstr ""
 
+msgid "Successfully opened memory for output."
+msgstr ""
+
 msgid "Dashboard"
 msgstr "Irányítópult"
 
@@ -201,6 +204,12 @@ msgstr ""
 msgid "Initializing..."
 msgstr "Telepítés..."
 
+msgid ""
+"Please ensure <span class=\"text-text-accent font-bold\">ETS2 and ATS are "
+"closed</span>. You can start the game after completing the onboarding "
+"process."
+msgstr ""
+
 #, csharp-format
 msgid "Error rendering window {0}: {1}"
 msgstr ""
@@ -232,11 +241,11 @@ msgstr ""
 msgid "Additional"
 msgstr ""
 
-msgid "Show Fewer Logs"
-msgstr ""
-
 msgid "Install Plugins"
 msgstr "Pluginok telepítése"
+
+msgid "Show Fewer Logs"
+msgstr ""
 
 #, csharp-format
 msgid "Error while downloading update: {0}"
@@ -319,11 +328,6 @@ msgid ""
 "due to temporary overloading or maintenance."
 msgstr ""
 
-msgid ""
-"Disables the overlay entirely. This is useful if you want to use ETS2LA "
-"without the overlay, or if you are experiencing issues with the overlay."
-msgstr ""
-
 msgid "Enabled"
 msgstr "Engedélyezve"
 
@@ -338,6 +342,11 @@ msgstr ""
 
 #, csharp-format
 msgid "Assists Enabled: <span class=\"text-text-accent font-bold\">{0}</span>"
+msgstr ""
+
+msgid ""
+"Memory not available for output, please ensure the game is running and "
+"reinstall the SDK if necessary."
 msgstr ""
 
 #, csharp-format
@@ -626,6 +635,12 @@ msgstr ""
 msgid "Collision Avoidance"
 msgstr ""
 
+msgid ""
+"Disables the overlay entirely. This will fix the black screen issue at the "
+"cost of breaking all features that rely on the overlay, including AR and the "
+"HUD."
+msgstr ""
+
 msgid "Warnings & Overrides"
 msgstr ""
 
@@ -750,12 +765,12 @@ msgstr ""
 msgid "SDK Installed"
 msgstr "SDK telepítve"
 
+msgid "Current Speed"
+msgstr "Jelenlegi sebesség"
+
 #, csharp-format
 msgid "Bound control {0} ({1}) to device {2} and control {3}"
 msgstr ""
-
-msgid "Current Speed"
-msgstr "Jelenlegi sebesség"
 
 msgid "miles per hour"
 msgstr "mérföld per óra"
@@ -900,6 +915,9 @@ msgstr ""
 msgid ""
 "Adjust the quality of the curves used for path planning and visualization. "
 "By default this matches the game."
+msgstr ""
+
+msgid "Before we begin."
 msgstr ""
 
 #, csharp-format
@@ -1345,6 +1363,9 @@ msgstr "láb"
 msgid "Overlay is disabled in settings, skipping window registration for {0}."
 msgstr ""
 
+msgid "Please close the game before continuing with the onboarding process."
+msgstr ""
+
 #, csharp-format
 msgid "Successfully installed plugin {0} ({1}, {2})"
 msgstr "Plugin sikeresen telepítve {0} ({1}, {2})"
@@ -1371,6 +1392,11 @@ msgstr "K"
 
 msgid "Window"
 msgstr "Ablak"
+
+msgid ""
+"If you see a fully black screen, see the FAQ at <span class=\"description "
+"hover:underline\">ets2la.com</span>."
+msgstr ""
 
 msgid "Settings"
 msgstr "Beállítások"
@@ -1520,10 +1546,10 @@ msgstr ""
 msgid "Assist Mode: <span class=\"text-text-accent font-bold\">{0}</span>"
 msgstr ""
 
-msgid "Adjust the volume of the audio output."
+msgid "View Public Telemetry"
 msgstr ""
 
-msgid "View Public Telemetry"
+msgid "Adjust the volume of the audio output."
 msgstr ""
 
 #, csharp-format
@@ -1672,6 +1698,9 @@ msgstr "Érvénytelen mappa"
 
 msgid "Starting download..."
 msgstr "Letöltés indítása..."
+
+msgid "Game is still running"
+msgstr ""
 
 msgid "High"
 msgstr "Magas"

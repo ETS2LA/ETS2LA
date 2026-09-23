@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-09-22 22:35:36+0300\n"
+"POT-Creation-Date: 2026-09-23 14:45:09+0300\n"
 "PO-Revision-Date: 2026-09-13 12:43+0000\n"
 "Last-Translator: bot_lapis <botlapis@ets2la.com>\n"
 "Language-Team: Korean <http://weblate.ets2la.com/projects/ets2la/ets2la/ko/"
@@ -149,6 +149,9 @@ msgid ""
 "Library plugin with ID [gray]{0}[/] is already loaded, skipping duplicate."
 msgstr ""
 
+msgid "Successfully opened memory for output."
+msgstr ""
+
 msgid "Dashboard"
 msgstr "계기판"
 
@@ -214,6 +217,12 @@ msgstr ""
 msgid "Initializing..."
 msgstr "초기화 중..."
 
+msgid ""
+"Please ensure <span class=\"text-text-accent font-bold\">ETS2 and ATS are "
+"closed</span>. You can start the game after completing the onboarding "
+"process."
+msgstr ""
+
 #, csharp-format
 msgid "Error rendering window {0}: {1}"
 msgstr "창 {0}을(를) 렌더링하는 중 오류가 발생했습니다: {1}"
@@ -248,11 +257,11 @@ msgstr "비주얼"
 msgid "Additional"
 msgstr "추가"
 
-msgid "Show Fewer Logs"
-msgstr "로그 적게 보기"
-
 msgid "Install Plugins"
 msgstr "플러그인 설치"
+
+msgid "Show Fewer Logs"
+msgstr "로그 적게 보기"
 
 #, csharp-format
 msgid "Error while downloading update: {0}"
@@ -344,11 +353,6 @@ msgstr ""
 "서비스를 이용할 수 없습니다. 서버가 일시적인 과부하 또는 점검으로 인해 현재 "
 "요청을 처리할 수 없습니다."
 
-msgid ""
-"Disables the overlay entirely. This is useful if you want to use ETS2LA "
-"without the overlay, or if you are experiencing issues with the overlay."
-msgstr ""
-
 msgid "Enabled"
 msgstr "활성화됨"
 
@@ -367,6 +371,11 @@ msgstr "선택한 파일이 존재하지 않습니다."
 msgid "Assists Enabled: <span class=\"text-text-accent font-bold\">{0}</span>"
 msgstr ""
 "보조 기능 활성화됨: <span class=\"text-text-accent font-bold\">{0}</span>"
+
+msgid ""
+"Memory not available for output, please ensure the game is running and "
+"reinstall the SDK if necessary."
+msgstr ""
 
 #, csharp-format
 msgid "Latest Version: {0}"
@@ -667,6 +676,12 @@ msgstr "AR 렌더링 중 오류가 발생했습니다: {0}"
 msgid "Collision Avoidance"
 msgstr "충돌 방지"
 
+msgid ""
+"Disables the overlay entirely. This will fix the black screen issue at the "
+"cost of breaking all features that rely on the overlay, including AR and the "
+"HUD."
+msgstr ""
+
 msgid "Warnings & Overrides"
 msgstr "경고 및 재정의"
 
@@ -799,12 +814,12 @@ msgstr "이전 단계에서 설치한 플러그인을 여기에서 활성화할 
 msgid "SDK Installed"
 msgstr "SDK 설치됨"
 
+msgid "Current Speed"
+msgstr "현재 속도"
+
 #, csharp-format
 msgid "Bound control {0} ({1}) to device {2} and control {3}"
 msgstr "컨트롤 {0} ({1})을(를) 장치 {2}, 컨트롤 {3}에 바인딩했습니다"
-
-msgid "Current Speed"
-msgstr "현재 속도"
 
 msgid "miles per hour"
 msgstr "마일/시간"
@@ -952,6 +967,9 @@ msgstr ""
 msgid ""
 "Adjust the quality of the curves used for path planning and visualization. "
 "By default this matches the game."
+msgstr ""
+
+msgid "Before we begin."
 msgstr ""
 
 #, csharp-format
@@ -1400,6 +1418,9 @@ msgstr ""
 msgid "Overlay is disabled in settings, skipping window registration for {0}."
 msgstr ""
 
+msgid "Please close the game before continuing with the onboarding process."
+msgstr ""
+
 #, csharp-format
 msgid "Successfully installed plugin {0} ({1}, {2})"
 msgstr "플러그인 {0} ({1}, {2})이(가) 정상적으로 설치되었습니다"
@@ -1425,6 +1446,11 @@ msgid "K"
 msgstr "K"
 
 msgid "Window"
+msgstr ""
+
+msgid ""
+"If you see a fully black screen, see the FAQ at <span class=\"description "
+"hover:underline\">ets2la.com</span>."
 msgstr ""
 
 msgid "Settings"
@@ -1577,10 +1603,10 @@ msgstr ""
 msgid "Assist Mode: <span class=\"text-text-accent font-bold\">{0}</span>"
 msgstr ""
 
-msgid "Adjust the volume of the audio output."
+msgid "View Public Telemetry"
 msgstr ""
 
-msgid "View Public Telemetry"
+msgid "Adjust the volume of the audio output."
 msgstr ""
 
 #, csharp-format
@@ -1728,6 +1754,9 @@ msgid "Invalid directory"
 msgstr ""
 
 msgid "Starting download..."
+msgstr ""
+
+msgid "Game is still running"
 msgstr ""
 
 msgid "High"

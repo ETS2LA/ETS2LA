@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-09-22 22:35:36+0300\n"
+"POT-Creation-Date: 2026-09-23 14:45:09+0300\n"
 "PO-Revision-Date: 2026-09-09 11:08+0000\n"
 "Last-Translator: Pastel <pastel@ets2la.com>\n"
 "Language-Team: Japanese <http://weblate.ets2la.com/projects/ets2la/ets2la/ja/"
@@ -153,6 +153,9 @@ msgid ""
 "Library plugin with ID [gray]{0}[/] is already loaded, skipping duplicate."
 msgstr ""
 
+msgid "Successfully opened memory for output."
+msgstr ""
+
 msgid "Dashboard"
 msgstr "ダッシュボード"
 
@@ -219,6 +222,12 @@ msgstr ""
 msgid "Initializing..."
 msgstr "初期化中..."
 
+msgid ""
+"Please ensure <span class=\"text-text-accent font-bold\">ETS2 and ATS are "
+"closed</span>. You can start the game after completing the onboarding "
+"process."
+msgstr ""
+
 #, csharp-format
 msgid "Error rendering window {0}: {1}"
 msgstr "ウィンドウ {0} の描画中にエラーが発生しました: {1}"
@@ -253,11 +262,11 @@ msgstr "ビジュアル"
 msgid "Additional"
 msgstr "その他"
 
-msgid "Show Fewer Logs"
-msgstr "ログの表示数を減らす"
-
 msgid "Install Plugins"
 msgstr "プラグインのインストール"
+
+msgid "Show Fewer Logs"
+msgstr "ログの表示数を減らす"
 
 #, csharp-format
 msgid "Error while downloading update: {0}"
@@ -351,11 +360,6 @@ msgstr ""
 "サービスをご利用いただけません。一時的な負荷の集中またはメンテナンスのため、"
 "現在サーバーはリクエストを処理できません。"
 
-msgid ""
-"Disables the overlay entirely. This is useful if you want to use ETS2LA "
-"without the overlay, or if you are experiencing issues with the overlay."
-msgstr ""
-
 msgid "Enabled"
 msgstr "有効"
 
@@ -374,6 +378,11 @@ msgstr "選択したファイルは存在しません。"
 #, csharp-format
 msgid "Assists Enabled: <span class=\"text-text-accent font-bold\">{0}</span>"
 msgstr "アシスト有効：<span class=\"text-text-accent font-bold\">{0}</span>"
+
+msgid ""
+"Memory not available for output, please ensure the game is running and "
+"reinstall the SDK if necessary."
+msgstr ""
 
 #, csharp-format
 msgid "Latest Version: {0}"
@@ -680,6 +689,12 @@ msgstr "ARレンダリングのエラー:{0}"
 msgid "Collision Avoidance"
 msgstr "衝突回避"
 
+msgid ""
+"Disables the overlay entirely. This will fix the black screen issue at the "
+"cost of breaking all features that rely on the overlay, including AR and the "
+"HUD."
+msgstr ""
+
 msgid "Warnings & Overrides"
 msgstr "警告とオーバーライド"
 
@@ -816,13 +831,13 @@ msgstr "ここで、前の手順でインストールしたプラグインを有
 msgid "SDK Installed"
 msgstr "SDKがインストールされました"
 
+msgid "Current Speed"
+msgstr "現在の速度"
+
 #, csharp-format
 msgid "Bound control {0} ({1}) to device {2} and control {3}"
 msgstr ""
 "コントロール {0} ({1}) をデバイス {2} およびコントロール {3} に紐付けました"
-
-msgid "Current Speed"
-msgstr "現在の速度"
 
 msgid "miles per hour"
 msgstr "マイル毎時"
@@ -994,6 +1009,9 @@ msgid ""
 msgstr ""
 "経路計画やビジュアライゼーションに使用する曲線の品質を調整します。デフォルト"
 "ではゲームと同じ設定になっています。"
+
+msgid "Before we begin."
+msgstr ""
 
 #, csharp-format
 msgid "Error while applying update: {0}"
@@ -1481,6 +1499,9 @@ msgstr "フィート"
 msgid "Overlay is disabled in settings, skipping window registration for {0}."
 msgstr ""
 
+msgid "Please close the game before continuing with the onboarding process."
+msgstr ""
+
 #, csharp-format
 msgid "Successfully installed plugin {0} ({1}, {2})"
 msgstr "プラグイン {0}（{1}、{2}）のインストールに成功しました"
@@ -1507,6 +1528,11 @@ msgstr "K"
 
 msgid "Window"
 msgstr "ウィンドウ"
+
+msgid ""
+"If you see a fully black screen, see the FAQ at <span class=\"description "
+"hover:underline\">ets2la.com</span>."
+msgstr ""
 
 msgid "Settings"
 msgstr "設定"
@@ -1678,11 +1704,11 @@ msgstr "プラグインを [gray]{0}[/] から読み込めませんでした: {1
 msgid "Assist Mode: <span class=\"text-text-accent font-bold\">{0}</span>"
 msgstr "アシストモード: <span class=\"text-text-accent font-bold\">{0}</span>"
 
-msgid "Adjust the volume of the audio output."
-msgstr "音声出力の音量を調整します。"
-
 msgid "View Public Telemetry"
 msgstr "公開テレメトリを表示"
+
+msgid "Adjust the volume of the audio output."
+msgstr "音声出力の音量を調整します。"
 
 #, csharp-format
 msgid ""
@@ -1845,6 +1871,9 @@ msgstr "無効なディレクトリ"
 
 msgid "Starting download..."
 msgstr "ダウンロードを開始します..."
+
+msgid "Game is still running"
+msgstr ""
 
 msgid "High"
 msgstr "高"

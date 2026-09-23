@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-09-22 22:35:36+0300\n"
+"POT-Creation-Date: 2026-09-23 14:45:09+0300\n"
 "PO-Revision-Date: 2026-09-11 13:17+0000\n"
 "Last-Translator: Kubex70 <kubex70@ets2la.com>\n"
 "Language-Team: Polish <http://weblate.ets2la.com/projects/ets2la/ets2la/pl/"
@@ -159,6 +159,9 @@ msgid ""
 "Library plugin with ID [gray]{0}[/] is already loaded, skipping duplicate."
 msgstr ""
 
+msgid "Successfully opened memory for output."
+msgstr ""
+
 msgid "Dashboard"
 msgstr "Panel"
 
@@ -225,6 +228,12 @@ msgstr ""
 msgid "Initializing..."
 msgstr "Inicjalizacja..."
 
+msgid ""
+"Please ensure <span class=\"text-text-accent font-bold\">ETS2 and ATS are "
+"closed</span>. You can start the game after completing the onboarding "
+"process."
+msgstr ""
+
 #, csharp-format
 msgid "Error rendering window {0}: {1}"
 msgstr "Błąd renderowania okna {0}: {1}"
@@ -259,11 +268,11 @@ msgstr "Wizualne"
 msgid "Additional"
 msgstr "Dodatkowe"
 
-msgid "Show Fewer Logs"
-msgstr "Pokaż mniej dzienników"
-
 msgid "Install Plugins"
 msgstr "Zainstaluj pluginy"
+
+msgid "Show Fewer Logs"
+msgstr "Pokaż mniej dzienników"
 
 #, csharp-format
 msgid "Error while downloading update: {0}"
@@ -358,11 +367,6 @@ msgstr ""
 "Usługa niedostępna. Serwer nie może obecnie obsłużyć żądania z powodu "
 "tymczasowego przeciążenia lub konserwacji."
 
-msgid ""
-"Disables the overlay entirely. This is useful if you want to use ETS2LA "
-"without the overlay, or if you are experiencing issues with the overlay."
-msgstr ""
-
 msgid "Enabled"
 msgstr "Włączono"
 
@@ -381,6 +385,11 @@ msgstr "Wybrany plik nie istnieje."
 msgid "Assists Enabled: <span class=\"text-text-accent font-bold\">{0}</span>"
 msgstr ""
 "Wspomaganie właczone: <span class=\"text-text-accent font-bold\">{0}</span>"
+
+msgid ""
+"Memory not available for output, please ensure the game is running and "
+"reinstall the SDK if necessary."
+msgstr ""
 
 #, csharp-format
 msgid "Latest Version: {0}"
@@ -694,6 +703,12 @@ msgstr "Błąd w renderowaniu AR: {0}"
 msgid "Collision Avoidance"
 msgstr "Unikanie kolizji"
 
+msgid ""
+"Disables the overlay entirely. This will fix the black screen issue at the "
+"cost of breaking all features that rely on the overlay, including AR and the "
+"HUD."
+msgstr ""
+
 msgid "Warnings & Overrides"
 msgstr "Ostrzeżenia i obejścia"
 
@@ -835,12 +850,12 @@ msgstr ""
 msgid "SDK Installed"
 msgstr "Zainstalowano zestaw SDK"
 
+msgid "Current Speed"
+msgstr "Aktualna prędkość"
+
 #, csharp-format
 msgid "Bound control {0} ({1}) to device {2} and control {3}"
 msgstr "Powiąż sterowanie {0} ({1}) z urządzeniem {2} i sterowaniem {3}"
-
-msgid "Current Speed"
-msgstr "Aktualna prędkość"
 
 msgid "miles per hour"
 msgstr "mile na godzinę"
@@ -1010,6 +1025,9 @@ msgid ""
 msgstr ""
 "Dostosuj jakość krzywych używanych do planowania i wizualizacji ścieżki. "
 "Domyślnie jest to zgodne z grą."
+
+msgid "Before we begin."
+msgstr ""
 
 #, csharp-format
 msgid "Error while applying update: {0}"
@@ -1508,6 +1526,9 @@ msgstr "stopy"
 msgid "Overlay is disabled in settings, skipping window registration for {0}."
 msgstr ""
 
+msgid "Please close the game before continuing with the onboarding process."
+msgstr ""
+
 #, csharp-format
 msgid "Successfully installed plugin {0} ({1}, {2})"
 msgstr "Pomyślnie zainstalowano plugin {0} ({1},{2})"
@@ -1534,6 +1555,11 @@ msgstr "K"
 
 msgid "Window"
 msgstr "Okno"
+
+msgid ""
+"If you see a fully black screen, see the FAQ at <span class=\"description "
+"hover:underline\">ets2la.com</span>."
+msgstr ""
 
 msgid "Settings"
 msgstr "Ustawienia"
@@ -1706,11 +1732,11 @@ msgid "Assist Mode: <span class=\"text-text-accent font-bold\">{0}</span>"
 msgstr ""
 "Tryb wspomagania: <span class=\"text-text-accent font-bold\">{0}</span>"
 
-msgid "Adjust the volume of the audio output."
-msgstr "Dostosuj głośność wyjścia audio."
-
 msgid "View Public Telemetry"
 msgstr "Wyświetl telemetrię publiczną"
+
+msgid "Adjust the volume of the audio output."
+msgstr "Dostosuj głośność wyjścia audio."
 
 #, csharp-format
 msgid ""
@@ -1872,6 +1898,9 @@ msgstr "Nieprawidłowy katalog"
 
 msgid "Starting download..."
 msgstr "Rozpoczęcie pobierania..."
+
+msgid "Game is still running"
+msgstr ""
 
 msgid "High"
 msgstr "Wysokie"

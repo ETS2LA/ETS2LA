@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-09-22 22:35:36+0300\n"
+"POT-Creation-Date: 2026-09-23 14:45:09+0300\n"
 "PO-Revision-Date: 2026-09-22 23:08+0000\n"
 "Last-Translator: McAs13 <tsumiguel@ets2la.com>\n"
 "Language-Team: Spanish (American) <http://weblate.ets2la.com/projects/ets2la/"
@@ -161,6 +161,9 @@ msgstr ""
 "El plugin de biblioteca con ID [gray]{0}[/] ya está cargado, se omitirá el "
 "duplicado."
 
+msgid "Successfully opened memory for output."
+msgstr ""
+
 msgid "Dashboard"
 msgstr "Panel de control"
 
@@ -229,6 +232,12 @@ msgstr ""
 msgid "Initializing..."
 msgstr "Inicializando..."
 
+msgid ""
+"Please ensure <span class=\"text-text-accent font-bold\">ETS2 and ATS are "
+"closed</span>. You can start the game after completing the onboarding "
+"process."
+msgstr ""
+
 #, csharp-format
 msgid "Error rendering window {0}: {1}"
 msgstr "Error al renderizar la ventana {0}: {1}"
@@ -263,11 +272,11 @@ msgstr "Visual"
 msgid "Additional"
 msgstr "Adicional"
 
-msgid "Show Fewer Logs"
-msgstr "Mostrar menos registros"
-
 msgid "Install Plugins"
 msgstr "Instalar plugins"
+
+msgid "Show Fewer Logs"
+msgstr "Mostrar menos registros"
 
 #, csharp-format
 msgid "Error while downloading update: {0}"
@@ -362,13 +371,6 @@ msgstr ""
 "Servicio no disponible. El servidor no puede procesar la solicitud "
 "actualmente debido a una sobrecarga temporal o mantenimiento."
 
-msgid ""
-"Disables the overlay entirely. This is useful if you want to use ETS2LA "
-"without the overlay, or if you are experiencing issues with the overlay."
-msgstr ""
-"Desactiva la superposición por completo. Esto es útil si quieres usar ETS2LA "
-"sin la superposición, o si estás teniendo problemas con ella."
-
 msgid "Enabled"
 msgstr "Activado"
 
@@ -388,6 +390,11 @@ msgstr "El archivo seleccionado no existe."
 msgid "Assists Enabled: <span class=\"text-text-accent font-bold\">{0}</span>"
 msgstr ""
 "Asistencias activadas: <span class=\"text-text-accent font-bold\">{0}</span>"
+
+msgid ""
+"Memory not available for output, please ensure the game is running and "
+"reinstall the SDK if necessary."
+msgstr ""
 
 #, csharp-format
 msgid "Latest Version: {0}"
@@ -698,6 +705,12 @@ msgstr "Error al renderizar RA: {0}"
 msgid "Collision Avoidance"
 msgstr "Prevención de colisiones"
 
+msgid ""
+"Disables the overlay entirely. This will fix the black screen issue at the "
+"cost of breaking all features that rely on the overlay, including AR and the "
+"HUD."
+msgstr ""
+
 msgid "Warnings & Overrides"
 msgstr "Advertencias y anulaciones"
 
@@ -839,12 +852,12 @@ msgstr "Aquí puedes habilitar los plugins que instalamos en un paso anterior."
 msgid "SDK Installed"
 msgstr "SDK instalado"
 
+msgid "Current Speed"
+msgstr "Velocidad actual"
+
 #, csharp-format
 msgid "Bound control {0} ({1}) to device {2} and control {3}"
 msgstr "Control {0} ({1}) vinculado al dispositivo {2} y control {3}"
-
-msgid "Current Speed"
-msgstr "Velocidad actual"
 
 msgid "miles per hour"
 msgstr "millas por hora"
@@ -985,7 +998,8 @@ msgstr "Esta página se implementará en una futura actualización."
 
 #, csharp-format
 msgid "Plugin with ID [gray]{0}[/] is already loaded, skipping duplicate."
-msgstr "El plugin con ID [gray]{0}[/] ya está cargado, se omitirá el duplicado."
+msgstr ""
+"El plugin con ID [gray]{0}[/] ya está cargado, se omitirá el duplicado."
 
 #, csharp-format
 msgid "Failed to download plugin with ID {0} from {1}. Status code: {2}"
@@ -1014,6 +1028,9 @@ msgid ""
 msgstr ""
 "Ajusta la calidad de las curvas usadas para la planificación de rutas y la "
 "visualización. Por defecto, esto coincide con el juego."
+
+msgid "Before we begin."
+msgstr ""
 
 #, csharp-format
 msgid "Error while applying update: {0}"
@@ -1514,6 +1531,9 @@ msgstr ""
 "La superposición está desactivada en la configuración, se omitirá el "
 "registro de la ventana para {0}."
 
+msgid "Please close the game before continuing with the onboarding process."
+msgstr ""
+
 #, csharp-format
 msgid "Successfully installed plugin {0} ({1}, {2})"
 msgstr "Plugin {0} instalado correctamente ({1}, {2})"
@@ -1540,6 +1560,11 @@ msgstr "K"
 
 msgid "Window"
 msgstr "Ventana"
+
+msgid ""
+"If you see a fully black screen, see the FAQ at <span class=\"description "
+"hover:underline\">ets2la.com</span>."
+msgstr ""
 
 msgid "Settings"
 msgstr "Configuración"
@@ -1714,11 +1739,11 @@ msgid "Assist Mode: <span class=\"text-text-accent font-bold\">{0}</span>"
 msgstr ""
 "Modo de asistencia: <span class=\"text-text-accent font-bold\">{0}</span>"
 
-msgid "Adjust the volume of the audio output."
-msgstr "Ajusta el volumen de la salida de audio."
-
 msgid "View Public Telemetry"
 msgstr "Ver telemetría pública"
+
+msgid "Adjust the volume of the audio output."
+msgstr "Ajusta el volumen de la salida de audio."
 
 #, csharp-format
 msgid ""
@@ -1881,6 +1906,9 @@ msgstr "Directorio no válido"
 
 msgid "Starting download..."
 msgstr "Iniciando descarga..."
+
+msgid "Game is still running"
+msgstr ""
 
 msgid "High"
 msgstr "Alto"
@@ -2056,6 +2084,13 @@ msgstr "Añadiendo mod: {0}"
 #, csharp-format
 msgid "Not all dependencies for plugin {0} are installed."
 msgstr "No todas las dependencias para el plugin {0} están instaladas."
+
+#~ msgid ""
+#~ "Disables the overlay entirely. This is useful if you want to use ETS2LA "
+#~ "without the overlay, or if you are experiencing issues with the overlay."
+#~ msgstr ""
+#~ "Desactiva la superposición por completo. Esto es útil si quieres usar "
+#~ "ETS2LA sin la superposición, o si estás teniendo problemas con ella."
 
 #~ msgid ""
 #~ "Increases the current value (e.g. target speed) by one step. Without any "

@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-09-22 22:35:36+0300\n"
+"POT-Creation-Date: 2026-09-23 14:45:09+0300\n"
 "PO-Revision-Date: 2026-09-21 15:01+0000\n"
 "Last-Translator: Lun <lun@ets2la.com>\n"
 "Language-Team: Chinese (Simplified Han script) <http://weblate.ets2la.com/"
@@ -151,6 +151,9 @@ msgid ""
 "Library plugin with ID [gray]{0}[/] is already loaded, skipping duplicate."
 msgstr ""
 
+msgid "Successfully opened memory for output."
+msgstr ""
+
 msgid "Dashboard"
 msgstr "仪表盘"
 
@@ -214,6 +217,12 @@ msgstr ""
 msgid "Initializing..."
 msgstr "正在初始化..."
 
+msgid ""
+"Please ensure <span class=\"text-text-accent font-bold\">ETS2 and ATS are "
+"closed</span>. You can start the game after completing the onboarding "
+"process."
+msgstr ""
+
 #, csharp-format
 msgid "Error rendering window {0}: {1}"
 msgstr "渲染窗口 {0} 时发生错误：{1}"
@@ -248,11 +257,11 @@ msgstr "视觉提示"
 msgid "Additional"
 msgstr "其他"
 
-msgid "Show Fewer Logs"
-msgstr "显示更少日志"
-
 msgid "Install Plugins"
 msgstr "安装插件"
+
+msgid "Show Fewer Logs"
+msgstr "显示更少日志"
 
 #, csharp-format
 msgid "Error while downloading update: {0}"
@@ -340,11 +349,6 @@ msgid ""
 "due to temporary overloading or maintenance."
 msgstr "服务不可用。由于暂时过载或者维护目的，服务器目前无法处理请求。"
 
-msgid ""
-"Disables the overlay entirely. This is useful if you want to use ETS2LA "
-"without the overlay, or if you are experiencing issues with the overlay."
-msgstr ""
-
 msgid "Enabled"
 msgstr "启用"
 
@@ -363,6 +367,11 @@ msgstr "选中的文件不存在。"
 msgid "Assists Enabled: <span class=\"text-text-accent font-bold\">{0}</span>"
 msgstr ""
 "辅助功能启用状态：<span class=\"text-text-accent font-bold\">{0}</span>"
+
+msgid ""
+"Memory not available for output, please ensure the game is running and "
+"reinstall the SDK if necessary."
+msgstr ""
 
 #, csharp-format
 msgid "Latest Version: {0}"
@@ -655,6 +664,12 @@ msgstr "AR 渲染时发生错误：{0}"
 msgid "Collision Avoidance"
 msgstr "防碰撞"
 
+msgid ""
+"Disables the overlay entirely. This will fix the black screen issue at the "
+"cost of breaking all features that rely on the overlay, including AR and the "
+"HUD."
+msgstr ""
+
 msgid "Warnings & Overrides"
 msgstr "警告与"
 
@@ -782,12 +797,12 @@ msgstr "您可以在此处启用我们在上一步安装的插件。"
 msgid "SDK Installed"
 msgstr "已安装SDK"
 
+msgid "Current Speed"
+msgstr "当前速度"
+
 #, csharp-format
 msgid "Bound control {0} ({1}) to device {2} and control {3}"
 msgstr "已将控件 {0}（{1}）绑定至设备 {2} 的控件 {3}"
-
-msgid "Current Speed"
-msgstr "当前速度"
 
 msgid "miles per hour"
 msgstr "英里每小时"
@@ -944,6 +959,9 @@ msgid ""
 "Adjust the quality of the curves used for path planning and visualization. "
 "By default this matches the game."
 msgstr "调整用于路径规划与可视化的曲线质量。默认会与游戏保持一致。"
+
+msgid "Before we begin."
+msgstr ""
 
 #, csharp-format
 msgid "Error while applying update: {0}"
@@ -1397,6 +1415,9 @@ msgstr "英尺"
 msgid "Overlay is disabled in settings, skipping window registration for {0}."
 msgstr ""
 
+msgid "Please close the game before continuing with the onboarding process."
+msgstr ""
+
 #, csharp-format
 msgid "Successfully installed plugin {0} ({1}, {2})"
 msgstr "已成功安装插件 {0}（{1}，{2}）"
@@ -1423,6 +1444,11 @@ msgstr "K"
 
 msgid "Window"
 msgstr "窗口"
+
+msgid ""
+"If you see a fully black screen, see the FAQ at <span class=\"description "
+"hover:underline\">ets2la.com</span>."
+msgstr ""
 
 msgid "Settings"
 msgstr "设置"
@@ -1577,11 +1603,11 @@ msgstr "从 [gray]{0}[/] 加载插件失败：{1}"
 msgid "Assist Mode: <span class=\"text-text-accent font-bold\">{0}</span>"
 msgstr "辅助模式：<span class=\"text-text-accent font-bold\">{0}</span>"
 
-msgid "Adjust the volume of the audio output."
-msgstr "调整音频输出的音量。"
-
 msgid "View Public Telemetry"
 msgstr "查看公开遥测数据"
+
+msgid "Adjust the volume of the audio output."
+msgstr "调整音频输出的音量。"
 
 #, csharp-format
 msgid ""
@@ -1734,6 +1760,9 @@ msgstr "目录无效"
 
 msgid "Starting download..."
 msgstr "正在下载..."
+
+msgid "Game is still running"
+msgstr ""
 
 msgid "High"
 msgstr "高"

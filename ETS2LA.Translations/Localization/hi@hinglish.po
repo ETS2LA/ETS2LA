@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-09-22 22:35:36+0300\n"
+"POT-Creation-Date: 2026-09-23 14:45:09+0300\n"
 "PO-Revision-Date: 2026-08-25 11:19+0000\n"
 "Last-Translator: Artyz <artyz@ets2la.com>\n"
 "Language-Team: Hindi (Hinglish) <http://weblate.ets2la.com/projects/ets2la/"
@@ -143,6 +143,9 @@ msgid ""
 "Library plugin with ID [gray]{0}[/] is already loaded, skipping duplicate."
 msgstr ""
 
+msgid "Successfully opened memory for output."
+msgstr ""
+
 msgid "Dashboard"
 msgstr ""
 
@@ -200,6 +203,12 @@ msgstr ""
 msgid "Initializing..."
 msgstr ""
 
+msgid ""
+"Please ensure <span class=\"text-text-accent font-bold\">ETS2 and ATS are "
+"closed</span>. You can start the game after completing the onboarding "
+"process."
+msgstr ""
+
 #, csharp-format
 msgid "Error rendering window {0}: {1}"
 msgstr "Window render karne mein error aayi {0}:{1}"
@@ -231,11 +240,11 @@ msgstr "Visual"
 msgid "Additional"
 msgstr "Additional"
 
-msgid "Show Fewer Logs"
-msgstr ""
-
 msgid "Install Plugins"
 msgstr "Install plugins"
+
+msgid "Show Fewer Logs"
+msgstr ""
 
 #, csharp-format
 msgid "Error while downloading update: {0}"
@@ -318,11 +327,6 @@ msgid ""
 "due to temporary overloading or maintenance."
 msgstr ""
 
-msgid ""
-"Disables the overlay entirely. This is useful if you want to use ETS2LA "
-"without the overlay, or if you are experiencing issues with the overlay."
-msgstr ""
-
 msgid "Enabled"
 msgstr ""
 
@@ -337,6 +341,11 @@ msgstr ""
 
 #, csharp-format
 msgid "Assists Enabled: <span class=\"text-text-accent font-bold\">{0}</span>"
+msgstr ""
+
+msgid ""
+"Memory not available for output, please ensure the game is running and "
+"reinstall the SDK if necessary."
 msgstr ""
 
 #, csharp-format
@@ -627,6 +636,12 @@ msgstr ""
 msgid "Collision Avoidance"
 msgstr "Takkar Bachav"
 
+msgid ""
+"Disables the overlay entirely. This will fix the black screen issue at the "
+"cost of breaking all features that rely on the overlay, including AR and the "
+"HUD."
+msgstr ""
+
 msgid "Warnings & Overrides"
 msgstr ""
 
@@ -751,11 +766,11 @@ msgstr ""
 msgid "SDK Installed"
 msgstr ""
 
-#, csharp-format
-msgid "Bound control {0} ({1}) to device {2} and control {3}"
+msgid "Current Speed"
 msgstr ""
 
-msgid "Current Speed"
+#, csharp-format
+msgid "Bound control {0} ({1}) to device {2} and control {3}"
 msgstr ""
 
 msgid "miles per hour"
@@ -904,6 +919,9 @@ msgid ""
 msgstr ""
 "Path planning aur visualization ke liye use hone wali curves ki quality "
 "adjust karein. Default se ye game se match karti hai."
+
+msgid "Before we begin."
+msgstr ""
 
 #, csharp-format
 msgid "Error while applying update: {0}"
@@ -1359,6 +1377,9 @@ msgstr ""
 msgid "Overlay is disabled in settings, skipping window registration for {0}."
 msgstr ""
 
+msgid "Please close the game before continuing with the onboarding process."
+msgstr ""
+
 #, csharp-format
 msgid "Successfully installed plugin {0} ({1}, {2})"
 msgstr "Plugin {0} ({1},{2}) successfully install ho gaya hai"
@@ -1384,6 +1405,11 @@ msgid "K"
 msgstr "K"
 
 msgid "Window"
+msgstr ""
+
+msgid ""
+"If you see a fully black screen, see the FAQ at <span class=\"description "
+"hover:underline\">ets2la.com</span>."
 msgstr ""
 
 msgid "Settings"
@@ -1536,11 +1562,11 @@ msgstr ""
 msgid "Assist Mode: <span class=\"text-text-accent font-bold\">{0}</span>"
 msgstr ""
 
-msgid "Adjust the volume of the audio output."
-msgstr ""
-
 msgid "View Public Telemetry"
 msgstr "Public Telemetry Dekho"
+
+msgid "Adjust the volume of the audio output."
+msgstr ""
 
 #, csharp-format
 msgid ""
@@ -1692,6 +1718,9 @@ msgstr ""
 
 msgid "Starting download..."
 msgstr "Download shuru ho raha hai…"
+
+msgid "Game is still running"
+msgstr ""
 
 msgid "High"
 msgstr ""
