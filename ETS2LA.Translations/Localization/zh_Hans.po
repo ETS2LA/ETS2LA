@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
 "POT-Creation-Date: 2026-09-23 14:45:09+0300\n"
-"PO-Revision-Date: 2026-09-21 15:01+0000\n"
-"Last-Translator: Lun <lun@ets2la.com>\n"
+"PO-Revision-Date: 2026-09-23 18:04+0000\n"
+"Last-Translator: goodnightan <goodnightan@ets2la.com>\n"
 "Language-Team: Chinese (Simplified Han script) <http://weblate.ets2la.com/"
 "projects/ets2la/ets2la/zh_Hans/>\n"
 "Language: zh_Hans\n"
@@ -52,7 +52,8 @@ msgstr "匿名遥测"
 msgid ""
 "Keep the ETS2LA window on top of other windows. If you want to use the "
 "visualization on a single monitor setup, this is recommended."
-msgstr ""
+msgstr "让 ETS2LA 窗口始终显示在其他窗口之上。如果您使用单显示器设置并希望使用可视化"
+"界面，建议启用此选项。"
 
 #, csharp-format
 msgid "Control with ID '{0}' not found for updating bindings."
@@ -96,7 +97,7 @@ msgid "Become a GitHub Sponsor"
 msgstr "成为 GitHub 赞助者"
 
 msgid "If you've not yet installed it, you can find it in the catalogue."
-msgstr ""
+msgstr "如果您还没有安装，可以在插件目录中找到它。"
 
 #, csharp-format
 msgid "Installed {0}"
@@ -149,7 +150,7 @@ msgstr "控制 {0}（{1}）的绑定超时了。"
 #, csharp-format
 msgid ""
 "Library plugin with ID [gray]{0}[/] is already loaded, skipping duplicate."
-msgstr ""
+msgstr "ID 为 [gray]{0}[/] 的库插件已加载，跳过重复加载。"
 
 msgid "Successfully opened memory for output."
 msgstr ""
@@ -188,7 +189,7 @@ msgid "km/h"
 msgstr "km/h"
 
 msgid "Overlay is disabled in settings, skipping initialization."
-msgstr ""
+msgstr "已在设置中禁用叠加层，跳过初始化。"
 
 msgid ""
 "ETS2LA will display information on top of the game. You can interact with "
@@ -222,6 +223,8 @@ msgid ""
 "closed</span>. You can start the game after completing the onboarding "
 "process."
 msgstr ""
+"请确保 <span class=\"text-text-accent font-bold\">ETS2 和 ATS 均已关闭</span>"
+"。完成引导流程后，您即可启动游戏。"
 
 #, csharp-format
 msgid "Error rendering window {0}: {1}"
@@ -332,7 +335,7 @@ msgstr ""
 "按下设备上的按键或移动输入轴，以将其绑定到此按键设置。请在 {0} 秒内完成操作。"
 
 msgid "Enable All"
-msgstr ""
+msgstr "全部启用"
 
 msgid ""
 "Subscriptions will <span class=\"font-bold text-text-accent\">never</span> "
@@ -435,7 +438,7 @@ msgid "Contact Us"
 msgstr "联系我们"
 
 msgid "An error occurred while checking for updates."
-msgstr ""
+msgstr "检查更新时发生错误。"
 
 #, csharp-format
 msgid "Copied '{0}' to '{1}'"
@@ -532,7 +535,7 @@ msgid "Late"
 msgstr "较晚"
 
 msgid "Please enable the Visualization Sockets plugin."
-msgstr ""
+msgstr "请启用Visualization Sockets插件。"
 
 msgid "Force Map Load"
 msgstr "强制加载地图"
@@ -668,7 +671,8 @@ msgid ""
 "Disables the overlay entirely. This will fix the black screen issue at the "
 "cost of breaking all features that rely on the overlay, including AR and the "
 "HUD."
-msgstr ""
+msgstr "完全禁用叠加层。这样可以解决黑屏问题，但会导致所有依赖叠加层的功能失效，包括 "
+"AR 和 HUD。"
 
 msgid "Warnings & Overrides"
 msgstr "警告与"
@@ -706,7 +710,7 @@ msgstr "已将 {0}（{1}）的按键绑定到设备 {2}、 {3}"
 
 msgid ""
 "Driving mode changed, press Cancel/MODE again to cycle through the modes."
-msgstr ""
+msgstr "驾驶模式已更改，再次按下取消 / MODE 可循环切换驾驶模式。"
 
 msgid "Pause When Unstable"
 msgstr "不稳定时暂停"
@@ -935,7 +939,7 @@ msgstr "此页面将于后续更新中实现。"
 
 #, csharp-format
 msgid "Plugin with ID [gray]{0}[/] is already loaded, skipping duplicate."
-msgstr ""
+msgstr "ID 为 [gray]{0}[/] 的插件已加载，跳过重复加载。"
 
 #, csharp-format
 msgid "Failed to download plugin with ID {0} from {1}. Status code: {2}"
@@ -961,7 +965,7 @@ msgid ""
 msgstr "调整用于路径规划与可视化的曲线质量。默认会与游戏保持一致。"
 
 msgid "Before we begin."
-msgstr ""
+msgstr "在开始之前。"
 
 #, csharp-format
 msgid "Error while applying update: {0}"
@@ -1028,7 +1032,7 @@ msgid "I understand, now let me in!"
 msgstr "我明白了，现在让我进入！"
 
 msgid "Disable Overlay"
-msgstr ""
+msgstr "禁用叠加层"
 
 msgid ""
 "The maximum distance at which 3D elements will be rendered. Lowering this "
@@ -1104,7 +1108,8 @@ msgid ""
 "When enabled, the overlay will toggle between interaction and non-"
 "interaction mode when you press it's keybind. When disabled, the overlay "
 "will only be interactive while you hold down the keybind."
-msgstr ""
+msgstr "启用后，按下对应按键时，叠加层将在交互和非交互模式之间切换。禁用后，只有在按"
+"住对应按键时，叠加层才会处于交互状态。"
 
 msgid "pounds"
 msgstr "磅"
@@ -1376,7 +1381,7 @@ msgid ""
 msgstr "尝试将更新源更改为“{0}”，但在可用源中找不到该源。"
 
 msgid "Error Checking for Updates"
-msgstr ""
+msgstr "检查更新时出错"
 
 msgid "Speed Limit"
 msgstr "限速"
@@ -1402,7 +1407,7 @@ msgid "Remember!"
 msgstr "请记住！"
 
 msgid "Disable All"
-msgstr ""
+msgstr "全部禁用"
 
 msgid ""
 "Failed to fetch available plugins. Please check your internet connection."
@@ -1413,10 +1418,10 @@ msgstr "英尺"
 
 #, csharp-format
 msgid "Overlay is disabled in settings, skipping window registration for {0}."
-msgstr ""
+msgstr "设置中已禁用叠加层，跳过窗口 {0} 的注册。"
 
 msgid "Please close the game before continuing with the onboarding process."
-msgstr ""
+msgstr "请先关闭游戏，然后再继续引导流程。"
 
 #, csharp-format
 msgid "Successfully installed plugin {0} ({1}, {2})"
@@ -1449,6 +1454,8 @@ msgid ""
 "If you see a fully black screen, see the FAQ at <span class=\"description "
 "hover:underline\">ets2la.com</span>."
 msgstr ""
+"如果您看到完全黑屏，请查看 <span class=\"description hover:underline\""
+">ets2la.com</span> 上的常见问题解答。"
 
 msgid "Settings"
 msgstr "设置"
@@ -1622,7 +1629,7 @@ msgid "Registered control: {0} [gray italic]({1})[/]"
 msgstr "已注册控件：{0} [gray italic]({1})[/]"
 
 msgid "Keybind is Toggle"
-msgstr ""
+msgstr "按键绑定为切换模式"
 
 msgid ""
 "You'll have to reinstall the SDK for <span class=\"text-text-accent font-"
@@ -1762,7 +1769,7 @@ msgid "Starting download..."
 msgstr "正在下载..."
 
 msgid "Game is still running"
-msgstr ""
+msgstr "游戏仍在运行"
 
 msgid "High"
 msgstr "高"
