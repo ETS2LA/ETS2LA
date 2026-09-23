@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
 "POT-Creation-Date: 2026-09-23 14:45:09+0300\n"
-"PO-Revision-Date: 2026-09-09 11:08+0000\n"
+"PO-Revision-Date: 2026-09-23 18:04+0000\n"
 "Last-Translator: Pastel <pastel@ets2la.com>\n"
 "Language-Team: Japanese <http://weblate.ets2la.com/projects/ets2la/ets2la/ja/"
 ">\n"
@@ -28,7 +28,7 @@ msgid "Sorry"
 msgstr "すみません"
 
 msgid "Stay on Top"
-msgstr ""
+msgstr "常に最前面に表示"
 
 msgid "Display"
 msgstr "ディスプレイ"
@@ -49,7 +49,8 @@ msgstr "匿名テレメトリ"
 msgid ""
 "Keep the ETS2LA window on top of other windows. If you want to use the "
 "visualization on a single monitor setup, this is recommended."
-msgstr ""
+msgstr "ETS2LAのウィンドウを他のウィンドウより常に前面に表示します。1台のモニターでビ"
+"ジュアライゼーションを使用する場合に推奨されます。"
 
 #, csharp-format
 msgid "Control with ID '{0}' not found for updating bindings."
@@ -94,7 +95,7 @@ msgid "Become a GitHub Sponsor"
 msgstr "GitHubスポンサーになる"
 
 msgid "If you've not yet installed it, you can find it in the catalogue."
-msgstr ""
+msgstr "まだインストールしていない場合は、カタログから探すことができます。"
 
 #, csharp-format
 msgid "Installed {0}"
@@ -151,10 +152,11 @@ msgstr "操作 {0}（{1}）の割り当てがタイムアウトしました。"
 #, csharp-format
 msgid ""
 "Library plugin with ID [gray]{0}[/] is already loaded, skipping duplicate."
-msgstr ""
+msgstr "ID [gray]{0}[/] のライブラリプラグインはすでに読み込まれているため、重複をス"
+"キップします。"
 
 msgid "Successfully opened memory for output."
-msgstr ""
+msgstr "出力用のメモリの割り当てに成功しました。"
 
 msgid "Dashboard"
 msgstr "ダッシュボード"
@@ -192,7 +194,7 @@ msgid "km/h"
 msgstr "km/h"
 
 msgid "Overlay is disabled in settings, skipping initialization."
-msgstr ""
+msgstr "設定でオーバーレイが無効になっているため、初期化をスキップします。"
 
 msgid ""
 "ETS2LA will display information on top of the game. You can interact with "
@@ -227,6 +229,8 @@ msgid ""
 "closed</span>. You can start the game after completing the onboarding "
 "process."
 msgstr ""
+"<span class=\"text-text-accent font-bold\">ETS2とATSが終了していることを確認"
+"してください</span>。オンボーディングが完了した後にゲームを起動できます。"
 
 #, csharp-format
 msgid "Error rendering window {0}: {1}"
@@ -340,7 +344,7 @@ msgstr ""
 "さい。この操作は{0}秒後にタイムアウトします。"
 
 msgid "Enable All"
-msgstr ""
+msgstr "すべて有効にする"
 
 msgid ""
 "Subscriptions will <span class=\"font-bold text-text-accent\">never</span> "
@@ -382,7 +386,8 @@ msgstr "アシスト有効：<span class=\"text-text-accent font-bold\">{0}</spa
 msgid ""
 "Memory not available for output, please ensure the game is running and "
 "reinstall the SDK if necessary."
-msgstr ""
+msgstr "出力用のメモリを利用できません。ゲームが起動していることを確認し、必要に応じ"
+"てSDKを再インストールしてください。"
 
 #, csharp-format
 msgid "Latest Version: {0}"
@@ -452,7 +457,7 @@ msgid "Contact Us"
 msgstr "お問い合わせ"
 
 msgid "An error occurred while checking for updates."
-msgstr ""
+msgstr "アップデートの確認中にエラーが発生しました。"
 
 #, csharp-format
 msgid "Copied '{0}' to '{1}'"
@@ -551,7 +556,7 @@ msgid "Late"
 msgstr "遅い"
 
 msgid "Please enable the Visualization Sockets plugin."
-msgstr ""
+msgstr "Visualization Socketsプラグインを有効にしてください。"
 
 msgid "Force Map Load"
 msgstr "マップの読み込みを強制する"
@@ -694,6 +699,9 @@ msgid ""
 "cost of breaking all features that rely on the overlay, including AR and the "
 "HUD."
 msgstr ""
+"オーバーレイを完全に無効にします。これにより、画面が真っ黒になる問題は解決さ"
+"れますが、ARやHUDなど、オーバーレイに依存するすべての機能が使用できなくなりま"
+"す。"
 
 msgid "Warnings & Overrides"
 msgstr "警告とオーバーライド"
@@ -735,7 +743,8 @@ msgstr "操作 {0}（{1}）の割り当てをデバイス: {2}、操作: {3} に
 
 msgid ""
 "Driving mode changed, press Cancel/MODE again to cycle through the modes."
-msgstr ""
+msgstr "運転モードが変更されました。キャンセル／MODEボタンをもう一度押すと、モードを"
+"切り替えることができます。"
 
 msgid "Pause When Unstable"
 msgstr "不安定な場合は一時停止する"
@@ -979,7 +988,8 @@ msgstr "このページは今後のアップデートで実装される予定で
 
 #, csharp-format
 msgid "Plugin with ID [gray]{0}[/] is already loaded, skipping duplicate."
-msgstr ""
+msgstr "ID [gray]{0}[/] のプラグインはすでに読み込まれているため、重複をスキップしま"
+"す。"
 
 #, csharp-format
 msgid "Failed to download plugin with ID {0} from {1}. Status code: {2}"
@@ -1011,7 +1021,7 @@ msgstr ""
 "ではゲームと同じ設定になっています。"
 
 msgid "Before we begin."
-msgstr ""
+msgstr "始める前に。"
 
 #, csharp-format
 msgid "Error while applying update: {0}"
@@ -1081,7 +1091,7 @@ msgid "I understand, now let me in!"
 msgstr "理解しました。始めよう!"
 
 msgid "Disable Overlay"
-msgstr ""
+msgstr "オーバーレイを無効にする"
 
 msgid ""
 "The maximum distance at which 3D elements will be rendered. Lowering this "
@@ -1163,6 +1173,9 @@ msgid ""
 "interaction mode when you press it's keybind. When disabled, the overlay "
 "will only be interactive while you hold down the keybind."
 msgstr ""
+"有効にすると、キー割り当てを押すたびにオーバーレイが操作モードと非操作モード"
+"で切り替わります。無効にすると、キー割り当てを押している間だけオーバーレイを"
+"操作できます。"
 
 msgid "pounds"
 msgstr "ポンド"
@@ -1458,7 +1471,7 @@ msgstr ""
 "りませんでした。"
 
 msgid "Error Checking for Updates"
-msgstr ""
+msgstr "アップデートの確認中にエラーが発生しました"
 
 msgid "Speed Limit"
 msgstr "制限速度"
@@ -1484,7 +1497,7 @@ msgid "Remember!"
 msgstr "忘れないで！"
 
 msgid "Disable All"
-msgstr ""
+msgstr "すべて無効にする"
 
 msgid ""
 "Failed to fetch available plugins. Please check your internet connection."
@@ -1497,10 +1510,11 @@ msgstr "フィート"
 
 #, csharp-format
 msgid "Overlay is disabled in settings, skipping window registration for {0}."
-msgstr ""
+msgstr "設定でオーバーレイが無効になっているため、{0} のウィンドウ登録をスキップしま"
+"す。"
 
 msgid "Please close the game before continuing with the onboarding process."
-msgstr ""
+msgstr "オンボーディングの手続きを進める前に、ゲームを終了してください。"
 
 #, csharp-format
 msgid "Successfully installed plugin {0} ({1}, {2})"
@@ -1533,6 +1547,8 @@ msgid ""
 "If you see a fully black screen, see the FAQ at <span class=\"description "
 "hover:underline\">ets2la.com</span>."
 msgstr ""
+"画面が真っ黒になってしまう場合は、<span class=\"description hover:underline\""
+">ets2la.com</span>のFAQをご覧ください。"
 
 msgid "Settings"
 msgstr "設定"
