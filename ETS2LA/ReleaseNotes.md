@@ -1,4 +1,7 @@
 **If your ETS2LA version is below 2026.9.5051, you need to install this update manually by downloading the installer again!**
+### ETS2LA C# 2026.9.5092
+- Linux SDK update. Please reinstall the SDK from the settings.
+- Updated translations.
 ### ETS2LA C# 2026.9.5083
 #### UI Updates
 - Visualization page is now implemented. Requires `VisualizationSockets` plugin available in the catalogue. This is now a recommended plugin installed during the onboarding.
