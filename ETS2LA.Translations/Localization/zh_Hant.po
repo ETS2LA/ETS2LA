@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
 "POT-Creation-Date: 2026-09-23 14:45:09+0300\n"
-"PO-Revision-Date: 2026-09-23 07:56+0000\n"
+"PO-Revision-Date: 2026-09-24 16:57+0000\n"
 "Last-Translator: Lun <lun@ets2la.com>\n"
 "Language-Team: Chinese (Traditional Han script) <http://weblate.ets2la.com/"
 "projects/ets2la/ets2la/zh_Hant/>\n"
@@ -149,7 +149,7 @@ msgid ""
 msgstr "ID 為 [gray]{0}[/] 的函式庫插件已載入，將略過重複項目。"
 
 msgid "Successfully opened memory for output."
-msgstr ""
+msgstr "已成功開啟用於輸出的記憶體。"
 
 msgid "Dashboard"
 msgstr "首頁"
@@ -219,6 +219,8 @@ msgid ""
 "closed</span>. You can start the game after completing the onboarding "
 "process."
 msgstr ""
+"請確認 <span class=\"text-text-accent font-bold\">ETS2 與 ATS 已關閉</span>。"
+"完成初始設定流程後，即可啟動遊戲。"
 
 #, csharp-format
 msgid "Error rendering window {0}: {1}"
@@ -368,7 +370,7 @@ msgstr ""
 msgid ""
 "Memory not available for output, please ensure the game is running and "
 "reinstall the SDK if necessary."
-msgstr ""
+msgstr "用於輸出的記憶體無法使用，請確認遊戲正在執行，必要時請重新安裝 SDK。"
 
 #, csharp-format
 msgid "Latest Version: {0}"
@@ -665,7 +667,8 @@ msgid ""
 "Disables the overlay entirely. This will fix the black screen issue at the "
 "cost of breaking all features that rely on the overlay, including AR and the "
 "HUD."
-msgstr ""
+msgstr "完全停用疊加層。這可以解決全黑畫面問題，但會使所有依賴疊加層的功能無法使用，"
+"包括 AR 和 HUD。"
 
 msgid "Warnings & Overrides"
 msgstr "警告與行為"
@@ -958,7 +961,7 @@ msgid ""
 msgstr "調整用於路徑規劃與視覺化的曲線品質。預設會與遊戲保持一致。"
 
 msgid "Before we begin."
-msgstr ""
+msgstr "開始之前。"
 
 #, csharp-format
 msgid "Error while applying update: {0}"
@@ -1415,7 +1418,7 @@ msgid "Overlay is disabled in settings, skipping window registration for {0}."
 msgstr "疊加層已在設定中停用，略過 {0} 的視窗註冊。"
 
 msgid "Please close the game before continuing with the onboarding process."
-msgstr ""
+msgstr "請先關閉遊戲，再繼續進行初始設定流程。"
 
 #, csharp-format
 msgid "Successfully installed plugin {0} ({1}, {2})"
@@ -1448,6 +1451,8 @@ msgid ""
 "If you see a fully black screen, see the FAQ at <span class=\"description "
 "hover:underline\">ets2la.com</span>."
 msgstr ""
+"如果遇到全黑畫面，請前往 <span class=\"description hover:underline\""
+">ets2la.com</span> 查看常見問題。"
 
 msgid "Settings"
 msgstr "設定"
@@ -1761,7 +1766,7 @@ msgid "Starting download..."
 msgstr "正在開始下載..."
 
 msgid "Game is still running"
-msgstr ""
+msgstr "遊戲仍在執行中"
 
 msgid "High"
 msgstr "高"
