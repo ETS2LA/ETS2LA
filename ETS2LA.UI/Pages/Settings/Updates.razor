@@ -37,8 +37,29 @@
 
     protected override async Task OnInitializedAsync()
     {
-        Task.Run(() => CheckForUpdates());
+        #if !DEBUG
+            Task.Run(() => CheckForUpdates());
+        #else
+            // You can test rendering your release notes here:
+            string releaseNotes = 
+"""
+**If your ETS2LA version is below 2026.9.5051, you need to install this update manually by downloading the installer again!**
+### ETS2LA C# 2026.9.5096
+- Added new `Experimental` setting `Enable Memory Output for Pedals` which allows ETS2LA to control throttle and brake using direct memory editing. This might not work on some systems, but allows for control even while tabbed out of the game. If you enable this and it doesn't work, please report the issue on our Discord server.
+- Fixed overlay text rendering when language is set to Vietnamese.
+
+#### Thank you to today's sponsor... You!
+Development is possible thanks to our [sponsors](https://github.com/sponsors/Tumppi066). Please consider supporting if you like the project and have the means to do so.
+
+![sponsors badge](https://readme-contribs.as93.net/sponsors/Tumppi066?perRow=8)
+
+Many thanks to those who've decided to remain anonymous as well! All your support is greatly appreciated.
+""";
+
+            RenderedContent = new MarkupString(Markdown.ToHtml(releaseNotes, Pipeline));
+        #endif
     }
+
 
     private void CheckForUpdates()
     {
@@ -175,7 +196,7 @@
     <div class="flex flex-col gap-1">
         @if (RenderedContent != null)
         {
-            <div class="[&_ul]:list-disc [&_ul]:pl-5 [&_ol]:list-decimal [&_ol]:pl-5 [&_p]:mb-2 [&_h1]:mb-3 [&_h2]:mb-3 [&_h3]:mb-3 [&_h4]:mb-2 [&_h4]:mt-2 [&_li]:mb-1 [&_strong]:text-text-accent [&_code]:text-description [&_code]:bg-control-bg [&_code]:rounded-sm [&_code]:px-1  whitespace-normal">
+            <div class="[&_img]:max-w-[410px] [&_ul]:list-disc [&_ul]:pl-5 [&_ol]:list-decimal [&_ol]:pl-5 [&_p]:mb-2 [&_h1]:mb-3 [&_h2]:mb-3 [&_h3]:mb-3 [&_h4]:mb-1 [&_h4]:mt-4 [&_li]:mb-1 [&_strong]:text-text-accent [&_code]:text-description [&_code]:bg-control-bg [&_code]:rounded-sm [&_code]:px-1  whitespace-normal">
                 @RenderedContent
             </div>
         }

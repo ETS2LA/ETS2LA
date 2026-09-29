@@ -20,6 +20,8 @@
     };
 
     bool alreadyChecked = false;
+    bool sponsorBadgeLoaded = false;
+    bool sponsorBadgeFailed = false;
 
     protected override void OnInitialized()
     {
@@ -90,6 +92,23 @@
     {
         UserInterfaceUtils.OpenUrl(url);
     }
+
+    void OnSponsorBadgeLoaded()
+    {
+        sponsorBadgeLoaded = true;
+        sponsorBadgeFailed = false;
+    }
+
+    void OnSponsorBadgeFailed()
+    {
+        sponsorBadgeLoaded = false;
+        sponsorBadgeFailed = true;
+    }
+
+    void OpenSponsorPage()
+    {
+        UserInterfaceUtils.OpenUrl("https://github.com/sponsors/Tumppi066");
+    }
 }
 
 <div class="flex flex-col p-6 w-130">
@@ -99,13 +118,27 @@
             <a href="" target="_blank" class="button button-accent mt-4 w-full!" @onclick=@(() => OpenInBrowser("https://github.com/sponsors/Tumppi066"))>@_("Become a GitHub Sponsor")</a>
         </div>
     </div>
+    
     <div class="mt-3 ml-4">
-        <p class="font-semibold description">@(_("Thank you to the following people for their ongoing support:"))</p>
-        <ul class="list-disc pl-6 description">
-            @foreach (var sponsor in Sponsors)
-            {
-                <li>@sponsor</li>
-            }
-        </ul>
+        @if (sponsorBadgeFailed)
+        {
+            <p class="font-semibold description">@(_("Thank you to the following people for their ongoing support:"))</p>
+            <ul class="list-disc pl-6 description">
+                @foreach (var sponsor in Sponsors)
+                {
+                    <li>@sponsor</li>
+                }
+            </ul>
+        }
     </div>
+
+    @if (!sponsorBadgeFailed)
+    {
+        <p class="font-semibold description mt-3 ml-4">@(_("Thank you to the following people for their ongoing support:"))</p>
+    }
+    <img src="https://readme-contribs.as93.net/sponsors/Tumppi066?perRow=8" alt="sponsors badge" class="@(sponsorBadgeLoaded ? "" : "hidden")" @onload="OnSponsorBadgeLoaded" @onerror="OnSponsorBadgeFailed" @onclick="OpenSponsorPage" style="cursor: pointer;" />
+    @if (!sponsorBadgeFailed)
+    {
+        <p class="description ml-4">@(_("And to those who've decided to remain anonymous!"))</p>
+    }
 </div>

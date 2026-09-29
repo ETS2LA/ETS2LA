@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-09-29 18:10:42+0300\n"
-"PO-Revision-Date: 2026-09-29 18:10:42+0300\n"
+"POT-Creation-Date: 2026-09-29 18:52:36+0300\n"
+"PO-Revision-Date: 2026-09-29 18:52:36+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -55,8 +55,8 @@ msgid ""
 "visualization on a single monitor setup, this is recommended."
 msgstr ""
 
-#: ../../../ETS2LA.Controls/Linux/SDL3ControlsBackend.cs:165
 #: ../../../ETS2LA.Controls/Windows/SharpDXControlsBackend.cs:186
+#: ../../../ETS2LA.Controls/Linux/SDL3ControlsBackend.cs:165
 #, csharp-format
 msgid "Control with ID '{0}' not found for updating bindings."
 msgstr ""
@@ -97,7 +97,7 @@ msgid ""
 "speedlimit."
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Home.razor:98
+#: ../../../ETS2LA.UI/Pages/Home.razor:118
 msgid "Become a GitHub Sponsor"
 msgstr ""
 
@@ -115,8 +115,8 @@ msgstr ""
 msgid "Error loading map data from '{0}': {1}"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Settings/Data.razor:11
 #: ../../../ETS2LA.UI/Pages/Settings/Assists.razor:53
+#: ../../../ETS2LA.UI/Pages/Settings/Data.razor:11
 msgid "Medium"
 msgstr ""
 
@@ -182,8 +182,8 @@ msgstr ""
 msgid "Dashboard"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Home.razor:69
-#: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:75
+#: ../../../ETS2LA.UI/Pages/Home.razor:72
+#: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:96
 msgid "Update Available"
 msgstr ""
 
@@ -302,12 +302,12 @@ msgstr ""
 msgid "Additional"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/PluginStep.razor:56
-msgid "Install Plugins"
-msgstr ""
-
 #: ../../../ETS2LA.Overlay/Window/Console.cs:54
 msgid "Show Fewer Logs"
+msgstr ""
+
+#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/PluginStep.razor:56
+msgid "Install Plugins"
 msgstr ""
 
 #: ../../../ETS2LA.Networking/Updates/Handler.cs:81
@@ -341,7 +341,7 @@ msgstr ""
 msgid "Fast"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:171
+#: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:192
 msgid "Install Update and Restart"
 msgstr ""
 
@@ -360,8 +360,8 @@ msgstr ""
 msgid "Successfully uninstalled plugin with ID {0}."
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Home.razor:80
-#: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:108
+#: ../../../ETS2LA.UI/Pages/Home.razor:83
+#: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:129
 msgid "No Update Available"
 msgstr ""
 
@@ -380,8 +380,8 @@ msgstr ""
 msgid "Update to {0}"
 msgstr ""
 
-#: ../../../ETS2LA.Controls/Linux/SDL3ControlsBackend.cs:180
 #: ../../../ETS2LA.Controls/Windows/SharpDXControlsBackend.cs:201
+#: ../../../ETS2LA.Controls/Linux/SDL3ControlsBackend.cs:180
 #, csharp-format
 msgid "Control with ID '{0}' not found for updating axis behavior."
 msgstr ""
@@ -442,12 +442,12 @@ msgid ""
 "reinstall the SDK if necessary."
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:164
+#: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:185
 #, csharp-format
 msgid "Latest Version: {0}"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:88
+#: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:109
 msgid "Translating release notes..."
 msgstr ""
 
@@ -465,7 +465,7 @@ msgstr ""
 msgid "Render AR Elements"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:164
+#: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:185
 msgid "Unchanged / Unavailable"
 msgstr ""
 
@@ -508,14 +508,14 @@ msgstr ""
 msgid "Backend shutdown complete."
 msgstr ""
 
-#: ../../../ETS2LA.Controls/Linux/SDL3ControlsBackend.cs:121
 #: ../../../ETS2LA.Controls/Windows/SharpDXControlsBackend.cs:141
+#: ../../../ETS2LA.Controls/Linux/SDL3ControlsBackend.cs:121
 #, csharp-format
 msgid "Control with ID '{0}' not found for event subscription."
 msgstr ""
 
-#: ../../../ETS2LA.Controls/Linux/SDL3ControlsBackend.cs:156
 #: ../../../ETS2LA.Controls/Windows/SharpDXControlsBackend.cs:166
+#: ../../../ETS2LA.Controls/Linux/SDL3ControlsBackend.cs:156
 #, csharp-format
 msgid "Unregistered control: {0} ({1})"
 msgstr ""
@@ -524,8 +524,8 @@ msgstr ""
 msgid "Contact Us"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Home.razor:56
-#: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:63
+#: ../../../ETS2LA.UI/Pages/Home.razor:59
+#: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:84
 msgid "An error occurred while checking for updates."
 msgstr ""
 
@@ -716,7 +716,7 @@ msgid ""
 "here."
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:161
+#: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:182
 #, csharp-format
 msgid "Current Version: {0}"
 msgstr ""
@@ -858,8 +858,8 @@ msgstr ""
 msgid "Failed to load library plugin from [gray]{0}[/]: {1}"
 msgstr ""
 
-#: ../../../ETS2LA.Controls/Linux/SDL3ControlsBackend.cs:172
 #: ../../../ETS2LA.Controls/Windows/SharpDXControlsBackend.cs:182
+#: ../../../ETS2LA.Controls/Linux/SDL3ControlsBackend.cs:172
 #, csharp-format
 msgid "Updated bindings for control: {0} ({1}) to Device: {2}, Control: {3}"
 msgstr ""
@@ -910,8 +910,8 @@ msgid ""
 "has only slight differences to metric."
 msgstr ""
 
-#: ../../../ETS2LA.Controls/Linux/SDL3ControlsBackend.cs:149
 #: ../../../ETS2LA.Controls/Windows/SharpDXControlsBackend.cs:170
+#: ../../../ETS2LA.Controls/Linux/SDL3ControlsBackend.cs:149
 #, csharp-format
 msgid "Control with ID '{0}' not found for unregistration."
 msgstr ""
@@ -1047,7 +1047,7 @@ msgid ""
 "be installed in Documents/Euro Truck Simulator 2/mod."
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:123
+#: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:144
 #, csharp-format
 msgid "Download progress: {0}%"
 msgstr ""
@@ -1158,13 +1158,13 @@ msgstr ""
 msgid "Failed to download plugin with ID {0} from {1}. Status code: {2}"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Home.razor:81
-#: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:109
+#: ../../../ETS2LA.UI/Pages/Home.razor:84
+#: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:130
 msgid "You are running the latest version."
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Plugins/Catalogue.razor:146
 #: ../../../ETS2LA.UI/Pages/Plugins/Manager.razor:198
+#: ../../../ETS2LA.UI/Pages/Plugins/Catalogue.razor:146
 msgid "No plugins found."
 msgstr ""
 
@@ -1286,7 +1286,7 @@ msgstr[1] ""
 msgid "Metric"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Home.razor:97
+#: ../../../ETS2LA.UI/Pages/Home.razor:117
 msgid ""
 "Like ETS2LA? Consider supporting us by becoming a <span class=\"font-bold "
 "text-text-accent\">GitHub Sponsor</span> to cover ongoing development and "
@@ -1313,8 +1313,8 @@ msgstr ""
 msgid "Failed to read log file at '{0}': {1}"
 msgstr ""
 
-#: ../../../ETS2LA.Controls/Linux/SDL3ControlsBackend.cs:186
 #: ../../../ETS2LA.Controls/Windows/SharpDXControlsBackend.cs:197
+#: ../../../ETS2LA.Controls/Linux/SDL3ControlsBackend.cs:186
 #, csharp-format
 msgid "Updated axis behavior for control: {0} ({1}) to {2}"
 msgstr ""
@@ -1425,8 +1425,8 @@ msgid ""
 "Installation at '{0}' is not currently running, waiting for load of profile."
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:122
-#: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:138
+#: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:143
+#: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:159
 msgid "Downloading Update"
 msgstr ""
 
@@ -1451,8 +1451,8 @@ msgstr ""
 msgid "{0}"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Home.razor:40
-#: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:48
+#: ../../../ETS2LA.UI/Pages/Home.razor:43
+#: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:69
 msgid ""
 "This might take a while depending on your internet connection and the source."
 msgstr ""
@@ -1493,12 +1493,12 @@ msgstr ""
 msgid "Font file not found at {0}"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:81
-msgid "No release notes available."
-msgstr ""
-
 #: ../../../ETS2LA.UI/Pages/Plugins/Catalogue.razor:170
 msgid "Changelog"
+msgstr ""
+
+#: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:102
+msgid "No release notes available."
 msgstr ""
 
 #: ../../../ETS2LA.State/Program.cs:68
@@ -1651,8 +1651,8 @@ msgstr ""
 msgid "kilometers per hour"
 msgstr ""
 
-#: ../../../ETS2LA.Controls/Linux/SDL3ControlsBackend.cs:133
 #: ../../../ETS2LA.Controls/Windows/SharpDXControlsBackend.cs:152
+#: ../../../ETS2LA.Controls/Linux/SDL3ControlsBackend.cs:133
 #, csharp-format
 msgid "Control with ID '{0}' not found for event unsubscription."
 msgstr ""
@@ -1727,8 +1727,8 @@ msgid ""
 "sources."
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Home.razor:55
-#: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:62
+#: ../../../ETS2LA.UI/Pages/Home.razor:58
+#: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:83
 msgid "Error Checking for Updates"
 msgstr ""
 
@@ -1831,8 +1831,8 @@ msgstr ""
 msgid "Error Loading File"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Home.razor:70
-#: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:76
+#: ../../../ETS2LA.UI/Pages/Home.razor:73
+#: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:97
 #, csharp-format
 msgid "A new update is available: {0}"
 msgstr ""
@@ -2003,11 +2003,11 @@ msgstr ""
 msgid "Target Speed: <span class=\"text-text-accent font-bold\">{0} {1}</span>"
 msgstr ""
 
-#: ../../../ETS2LA.Game/SDK/Camera.cs:130
-#: ../../../ETS2LA.Game/SDK/ParkedVehicles.cs:108
 #: ../../../ETS2LA.Game/SDK/Navigation.cs:122
+#: ../../../ETS2LA.Game/SDK/ParkedVehicles.cs:108
 #: ../../../ETS2LA.Game/SDK/Traffic.cs:159
 #: ../../../ETS2LA.Game/SDK/Semaphores.cs:176
+#: ../../../ETS2LA.Game/SDK/Camera.cs:130
 #, csharp-format
 msgid "Error initializing memory mapped file: {0}"
 msgstr ""
@@ -2024,12 +2024,12 @@ msgstr ""
 msgid "Assist Mode: <span class=\"text-text-accent font-bold\">{0}</span>"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Settings/Telemetry.razor:28
-msgid "View Public Telemetry"
-msgstr ""
-
 #: ../../../ETS2LA.UI/Pages/Settings/Audio.razor:24
 msgid "Adjust the volume of the audio output."
+msgstr ""
+
+#: ../../../ETS2LA.UI/Pages/Settings/Telemetry.razor:28
+msgid "View Public Telemetry"
 msgstr ""
 
 #: ../../../ETS2LA.Networking/Updates/Handler.cs:135
@@ -2042,8 +2042,8 @@ msgstr ""
 msgid "SET Behaviour"
 msgstr ""
 
-#: ../../../ETS2LA.Controls/Linux/SDL3ControlsBackend.cs:113
 #: ../../../ETS2LA.Controls/Windows/SharpDXControlsBackend.cs:133
+#: ../../../ETS2LA.Controls/Linux/SDL3ControlsBackend.cs:113
 #, csharp-format
 msgid "Registered control: {0} [gray italic]({1})[/]"
 msgstr ""
@@ -2067,7 +2067,8 @@ msgstr ""
 msgid "Binding Timed Out"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Home.razor:102
+#: ../../../ETS2LA.UI/Pages/Home.razor:125
+#: ../../../ETS2LA.UI/Pages/Home.razor:137
 msgid "Thank you to the following people for their ongoing support:"
 msgstr ""
 
@@ -2219,7 +2220,7 @@ msgstr ""
 msgid "Invalid directory"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:139
+#: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:160
 msgid "Starting download..."
 msgstr ""
 
@@ -2246,9 +2247,9 @@ msgid ""
 "you when using Adaptive Cruise Control."
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Home.razor:70
-#: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:76
-#: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:161
+#: ../../../ETS2LA.UI/Pages/Home.razor:73
+#: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:97
+#: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:182
 msgid "Unknown Version"
 msgstr ""
 
@@ -2285,8 +2286,8 @@ msgid_plural "Discovered {0} manually installed plugins."
 msgstr[0] ""
 msgstr[1] ""
 
-#: ../../../ETS2LA.UI/Pages/Home.razor:39
-#: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:47
+#: ../../../ETS2LA.UI/Pages/Home.razor:42
+#: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:68
 msgid "Checking for updates..."
 msgstr ""
 
@@ -2398,6 +2399,10 @@ msgstr ""
 msgid ""
 "Changing this option requires a restart of ETS2LA to take effect. Restart "
 "now?"
+msgstr ""
+
+#: ../../../ETS2LA.UI/Pages/Home.razor:142
+msgid "And to those who've decided to remain anonymous!"
 msgstr ""
 
 #: ../../../ETS2LA.Networking/Plugins/client.cs:52

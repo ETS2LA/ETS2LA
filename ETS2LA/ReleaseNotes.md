@@ -1,17 +1,13 @@
 **If your ETS2LA version is below 2026.9.5051, you need to install this update manually by downloading the installer again!**
-### ETS2LA C# 2026.9.5096
-- Added new `Experimental` setting `Enable Memory Output for Pedals` which allows ETS2LA to control throttle and brake using direct memory editing. This might not work on some systems, but allows for control even while tabbed out of the game. If you enable this and it doesn't work, please report the issue on our Discord server.
-- Fixed overlay text rendering when language is set to Vietnamese.
+### ETS2LA C# 2026.9.XXXX
+- Improved sponsor displays when the current computer can access GitHub.
 
 #### Thank you to today's sponsor... You!
 Development is possible thanks to our [sponsors](https://github.com/sponsors/Tumppi066). Please consider supporting if you like the project and have the means to do so.
-- AkhtiveLzz
-- Lun011666
-- luuukske
-- McAs13
-- Private Sponsor
-- Private Sponsor
-- All our [previous sponsors](https://github.com/sponsors/Tumppi066)
+
+![sponsors badge](https://readme-contribs.as93.net/sponsors/Tumppi066?perRow=8)
+
+Many thanks to those who've decided to remain anonymous as well! All your support is greatly appreciated.
 
 ---
 <!-- Content inside ETS2LA will be cutoff at the line above, do not place lines inside the changelog. -->
