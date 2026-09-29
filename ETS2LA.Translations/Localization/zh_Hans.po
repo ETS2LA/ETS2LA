@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-09-23 14:45:09+0300\n"
+"POT-Creation-Date: 2026-09-29 18:11:01+0300\n"
 "PO-Revision-Date: 2026-09-23 23:49+0000\n"
 "Last-Translator: goodnightan <goodnightan@ets2la.com>\n"
 "Language-Team: Chinese (Simplified Han script) <http://weblate.ets2la.com/"
@@ -52,7 +52,8 @@ msgstr "匿名遥测"
 msgid ""
 "Keep the ETS2LA window on top of other windows. If you want to use the "
 "visualization on a single monitor setup, this is recommended."
-msgstr "让 ETS2LA 窗口始终显示在其他窗口之上。如果您使用单显示器设置并希望使用可视化"
+msgstr ""
+"让 ETS2LA 窗口始终显示在其他窗口之上。如果您使用单显示器设置并希望使用可视化"
 "界面，建议启用此选项。"
 
 #, csharp-format
@@ -223,8 +224,8 @@ msgid ""
 "closed</span>. You can start the game after completing the onboarding "
 "process."
 msgstr ""
-"请确保 <span class=\"text-text-accent font-bold\">ETS2 和 ATS 均已关闭</span>"
-"。完成引导流程后，您即可启动游戏。"
+"请确保 <span class=\"text-text-accent font-bold\">ETS2 和 ATS 均已关闭</"
+"span>。完成引导流程后，您即可启动游戏。"
 
 #, csharp-format
 msgid "Error rendering window {0}: {1}"
@@ -246,6 +247,9 @@ msgstr ""
 "ETS2LA 要求您安装我们的 <span class=\"text-text-accent font-bold\">SDK</"
 "span> 才能开始使用。请至少为 <span class=\"text-text-accent font-bold\">一款"
 "游戏</span> 安装 SDK 以继续。"
+
+msgid "Enable Memory Output for Pedals"
+msgstr ""
 
 #, csharp-format
 msgid "Successfully updated plugin with ID {0}."
@@ -671,7 +675,8 @@ msgid ""
 "Disables the overlay entirely. This will fix the black screen issue at the "
 "cost of breaking all features that rely on the overlay, including AR and the "
 "HUD."
-msgstr "完全禁用叠加层。这样可以解决黑屏问题，但会导致所有依赖叠加层的功能失效，包括 "
+msgstr ""
+"完全禁用叠加层。这样可以解决黑屏问题，但会导致所有依赖叠加层的功能失效，包括 "
 "AR 和 HUD。"
 
 msgid "Warnings & Overrides"
@@ -1108,7 +1113,8 @@ msgid ""
 "When enabled, the overlay will toggle between interaction and non-"
 "interaction mode when you press it's keybind. When disabled, the overlay "
 "will only be interactive while you hold down the keybind."
-msgstr "启用后，按下对应按键时，叠加层将在交互和非交互模式之间切换。禁用后，只有在按"
+msgstr ""
+"启用后，按下对应按键时，叠加层将在交互和非交互模式之间切换。禁用后，只有在按"
 "住对应按键时，叠加层才会处于交互状态。"
 
 msgid "pounds"
@@ -1179,6 +1185,9 @@ msgstr "没有可用的更新。"
 #, csharp-format
 msgid "Error rendering overlay: {0}"
 msgstr "渲染叠加层时发生错误：{0}"
+
+msgid "You may need to restart the game to apply this change."
+msgstr ""
 
 msgid "Off"
 msgstr "关闭"
@@ -1454,8 +1463,8 @@ msgid ""
 "If you see a fully black screen, see the FAQ at <span class=\"description "
 "hover:underline\">ets2la.com</span>."
 msgstr ""
-"如果您看到完全黑屏，请查看 <span class=\"description hover:underline\""
-">ets2la.com</span> 上的常见问题解答。"
+"如果您看到完全黑屏，请查看 <span class=\"description "
+"hover:underline\">ets2la.com</span> 上的常见问题解答。"
 
 msgid "Settings"
 msgstr "设置"
@@ -1768,11 +1777,11 @@ msgstr "目录无效"
 msgid "Starting download..."
 msgstr "正在下载..."
 
-msgid "Game is still running"
-msgstr "游戏仍在运行"
-
 msgid "High"
 msgstr "高"
+
+msgid "Game is still running"
+msgstr "游戏仍在运行"
 
 msgid "Final Disclaimer <span class=\"description\">1/2</span>"
 msgstr "最终免责声明 <span class=\"description\">1/2</span>"
@@ -1926,6 +1935,13 @@ msgstr "互动模式"
 #, csharp-format
 msgid "Adding mod: {0}"
 msgstr "正在添加模组：{0}"
+
+msgid ""
+"Allows ETS2LA to control throttle and brake using direct memory editing. "
+"This might not work on some systems, but allows for control even while "
+"tabbed out of the game. If you enable this and it doesn't work, please "
+"report the issue on our Discord server."
+msgstr ""
 
 #, csharp-format
 msgid "Not all dependencies for plugin {0} are installed."

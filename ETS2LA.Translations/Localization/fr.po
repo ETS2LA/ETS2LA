@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-09-23 14:45:09+0300\n"
+"POT-Creation-Date: 2026-09-29 18:11:01+0300\n"
 "PO-Revision-Date: 2026-08-30 16:09+0000\n"
 "Last-Translator: retroposition <retroposition@ets2la.com>\n"
 "Language-Team: French <http://weblate.ets2la.com/projects/ets2la/ets2la/fr/"
@@ -253,6 +253,9 @@ msgstr ""
 "ETS2LA nécessite l'installation de notre <span class=\"text-text-accent font-"
 "bold\">SDK</span> pour commencer. Veuillez installer le SDK pour <span "
 "class=\"text-text-accent font-bold\">au moins un jeu</span> pour continuer."
+
+msgid "Enable Memory Output for Pedals"
+msgstr ""
 
 #, csharp-format
 msgid "Successfully updated plugin with ID {0}."
@@ -1265,6 +1268,9 @@ msgstr "Aucune mise à jour disponible."
 msgid "Error rendering overlay: {0}"
 msgstr "Erreur lors du rendu de l'overlay : {0}"
 
+msgid "You may need to restart the game to apply this change."
+msgstr ""
+
 msgid "Off"
 msgstr "Désactivé"
 
@@ -1908,11 +1914,11 @@ msgstr "Répertoire non valide"
 msgid "Starting download..."
 msgstr "Téléchargement en cours..."
 
-msgid "Game is still running"
-msgstr ""
-
 msgid "High"
 msgstr "Élevé"
+
+msgid "Game is still running"
+msgstr ""
 
 msgid "Final Disclaimer <span class=\"description\">1/2</span>"
 msgstr "Avertissement final <span class=\"description\">1/2</span>"
@@ -2081,6 +2087,13 @@ msgstr "Mode d'interaction"
 #, csharp-format
 msgid "Adding mod: {0}"
 msgstr "Ajout du mod : {0}"
+
+msgid ""
+"Allows ETS2LA to control throttle and brake using direct memory editing. "
+"This might not work on some systems, but allows for control even while "
+"tabbed out of the game. If you enable this and it doesn't work, please "
+"report the issue on our Discord server."
+msgstr ""
 
 #, csharp-format
 msgid "Not all dependencies for plugin {0} are installed."

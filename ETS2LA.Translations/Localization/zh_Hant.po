@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-09-23 14:45:09+0300\n"
+"POT-Creation-Date: 2026-09-29 18:11:01+0300\n"
 "PO-Revision-Date: 2026-09-24 16:57+0000\n"
 "Last-Translator: Lun <lun@ets2la.com>\n"
 "Language-Team: Chinese (Traditional Han script) <http://weblate.ets2la.com/"
@@ -242,6 +242,9 @@ msgstr ""
 "若要開始使用 ETS2LA，你需要安裝我們的 <span class=\"text-text-accent font-"
 "bold\">SDK</span>。請為 <span class=\"text-text-accent font-bold\">至少一款遊"
 "戲</span> 安裝 SDK 才能繼續。"
+
+msgid "Enable Memory Output for Pedals"
+msgstr ""
 
 #, csharp-format
 msgid "Successfully updated plugin with ID {0}."
@@ -667,7 +670,8 @@ msgid ""
 "Disables the overlay entirely. This will fix the black screen issue at the "
 "cost of breaking all features that rely on the overlay, including AR and the "
 "HUD."
-msgstr "完全停用疊加層。這可以解決全黑畫面問題，但會使所有依賴疊加層的功能無法使用，"
+msgstr ""
+"完全停用疊加層。這可以解決全黑畫面問題，但會使所有依賴疊加層的功能無法使用，"
 "包括 AR 和 HUD。"
 
 msgid "Warnings & Overrides"
@@ -1177,6 +1181,9 @@ msgstr "沒有可用的更新。"
 msgid "Error rendering overlay: {0}"
 msgstr "渲染疊加層時發生錯誤：{0}"
 
+msgid "You may need to restart the game to apply this change."
+msgstr ""
+
 msgid "Off"
 msgstr "關閉"
 
@@ -1451,8 +1458,8 @@ msgid ""
 "If you see a fully black screen, see the FAQ at <span class=\"description "
 "hover:underline\">ets2la.com</span>."
 msgstr ""
-"如果遇到全黑畫面，請前往 <span class=\"description hover:underline\""
-">ets2la.com</span> 查看常見問題。"
+"如果遇到全黑畫面，請前往 <span class=\"description "
+"hover:underline\">ets2la.com</span> 查看常見問題。"
 
 msgid "Settings"
 msgstr "設定"
@@ -1765,11 +1772,11 @@ msgstr "目錄無效"
 msgid "Starting download..."
 msgstr "正在開始下載..."
 
-msgid "Game is still running"
-msgstr "遊戲仍在執行中"
-
 msgid "High"
 msgstr "高"
+
+msgid "Game is still running"
+msgstr "遊戲仍在執行中"
 
 msgid "Final Disclaimer <span class=\"description\">1/2</span>"
 msgstr "最後提醒 <span class=\"description\">1/2</span>"
@@ -1923,6 +1930,13 @@ msgstr "互動模式"
 #, csharp-format
 msgid "Adding mod: {0}"
 msgstr "正在新增模組：{0}"
+
+msgid ""
+"Allows ETS2LA to control throttle and brake using direct memory editing. "
+"This might not work on some systems, but allows for control even while "
+"tabbed out of the game. If you enable this and it doesn't work, please "
+"report the issue on our Discord server."
+msgstr ""
 
 #, csharp-format
 msgid "Not all dependencies for plugin {0} are installed."

@@ -2,11 +2,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-09-23 14:45:09+0300\n"
+"POT-Creation-Date: 2026-09-29 18:11:01+0300\n"
 "PO-Revision-Date: 2026-09-24 16:57+0000\n"
 "Last-Translator: Ketchup1812 <ketchup1812@ets2la.com>\n"
-"Language-Team: Slovak <http://weblate.ets2la.com/projects/ets2la/ets2la/sk/>"
-"\n"
+"Language-Team: Slovak <http://weblate.ets2la.com/projects/ets2la/ets2la/sk/"
+">\n"
 "Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -257,6 +257,9 @@ msgstr ""
 "class=\"text-text-accent font-bold\">SDK</span>. Ak chcete pokračovať, "
 "nainštalujte si prosím SDK pre <span class=\"text-text-accent font-"
 "bold\">aspoň jednu hru</span>."
+
+msgid "Enable Memory Output for Pedals"
+msgstr ""
 
 #, csharp-format
 msgid "Successfully updated plugin with ID {0}."
@@ -1271,6 +1274,9 @@ msgstr "Nie sú k dispozícii žiadne aktualizácie."
 msgid "Error rendering overlay: {0}"
 msgstr "Chyba pri vykresľovaní prekrývacieho prvku: {0}"
 
+msgid "You may need to restart the game to apply this change."
+msgstr ""
+
 msgid "Off"
 msgstr "Vypnúť"
 
@@ -1913,11 +1919,11 @@ msgstr "Neplatný adresár"
 msgid "Starting download..."
 msgstr "Začína sa sťahovanie..."
 
-msgid "Game is still running"
-msgstr "Hra stále beží"
-
 msgid "High"
 msgstr "Vysoká"
+
+msgid "Game is still running"
+msgstr "Hra stále beží"
 
 msgid "Final Disclaimer <span class=\"description\">1/2</span>"
 msgstr "Záverečné varovanie <span class=\"description\">1/2</span>"
@@ -2085,6 +2091,13 @@ msgstr "Režim interakcie"
 #, csharp-format
 msgid "Adding mod: {0}"
 msgstr "Pridávam mód:{0}"
+
+msgid ""
+"Allows ETS2LA to control throttle and brake using direct memory editing. "
+"This might not work on some systems, but allows for control even while "
+"tabbed out of the game. If you enable this and it doesn't work, please "
+"report the issue on our Discord server."
+msgstr ""
 
 #, csharp-format
 msgid "Not all dependencies for plugin {0} are installed."

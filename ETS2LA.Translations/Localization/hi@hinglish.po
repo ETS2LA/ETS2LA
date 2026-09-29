@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-09-23 14:45:09+0300\n"
+"POT-Creation-Date: 2026-09-29 18:11:01+0300\n"
 "PO-Revision-Date: 2026-08-25 11:19+0000\n"
 "Last-Translator: Artyz <artyz@ets2la.com>\n"
 "Language-Team: Hindi (Hinglish) <http://weblate.ets2la.com/projects/ets2la/"
@@ -225,6 +225,9 @@ msgid ""
 "ETS2LA requires you to install our <span class=\"text-text-accent font-"
 "bold\">SDK</span> to get started. Please install the SDK for <span "
 "class=\"text-text-accent font-bold\">at least one game</span> to continue."
+msgstr ""
+
+msgid "Enable Memory Output for Pedals"
 msgstr ""
 
 #, csharp-format
@@ -1135,6 +1138,9 @@ msgstr ""
 msgid "Error rendering overlay: {0}"
 msgstr ""
 
+msgid "You may need to restart the game to apply this change."
+msgstr ""
+
 msgid "Off"
 msgstr ""
 
@@ -1719,10 +1725,10 @@ msgstr ""
 msgid "Starting download..."
 msgstr "Download shuru ho raha hai…"
 
-msgid "Game is still running"
+msgid "High"
 msgstr ""
 
-msgid "High"
+msgid "Game is still running"
 msgstr ""
 
 msgid "Final Disclaimer <span class=\"description\">1/2</span>"
@@ -1878,6 +1884,13 @@ msgstr "Interaction Mode"
 
 #, csharp-format
 msgid "Adding mod: {0}"
+msgstr ""
+
+msgid ""
+"Allows ETS2LA to control throttle and brake using direct memory editing. "
+"This might not work on some systems, but allows for control even while "
+"tabbed out of the game. If you enable this and it doesn't work, please "
+"report the issue on our Discord server."
 msgstr ""
 
 #, csharp-format

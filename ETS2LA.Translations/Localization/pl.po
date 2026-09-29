@@ -3,17 +3,17 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-09-23 14:45:09+0300\n"
+"POT-Creation-Date: 2026-09-29 18:11:01+0300\n"
 "PO-Revision-Date: 2026-09-23 18:04+0000\n"
 "Last-Translator: Kubex70 <kubex70@ets2la.com>\n"
-"Language-Team: Polish <http://weblate.ets2la.com/projects/ets2la/ets2la/pl/>"
-"\n"
+"Language-Team: Polish <http://weblate.ets2la.com/projects/ets2la/ets2la/pl/"
+">\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && "
-"(n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 5.14.3\n"
 
 msgid ""
@@ -261,6 +261,9 @@ msgstr ""
 "Aby móc korzystać z ETS2LA, musisz zainstalować nasz <span class=\"text-text-"
 "accent font-bold\">SDK</span>. Zainstaluj SDK dla <span class=\"text-text-"
 "accent font-bold\">co najmniej jednej gry</span>, aby kontynuować."
+
+msgid "Enable Memory Output for Pedals"
+msgstr ""
 
 #, csharp-format
 msgid "Successfully updated plugin with ID {0}."
@@ -1280,6 +1283,9 @@ msgstr "Brak dostępnych aktualizacji."
 msgid "Error rendering overlay: {0}"
 msgstr "Błąd renderowania nakładki: {0}"
 
+msgid "You may need to restart the game to apply this change."
+msgstr ""
+
 msgid "Off"
 msgstr "Wyłączony"
 
@@ -1921,11 +1927,11 @@ msgstr "Nieprawidłowy katalog"
 msgid "Starting download..."
 msgstr "Rozpoczęcie pobierania..."
 
-msgid "Game is still running"
-msgstr "Gra nadal działa"
-
 msgid "High"
 msgstr "Wysokie"
+
+msgid "Game is still running"
+msgstr "Gra nadal działa"
 
 msgid "Final Disclaimer <span class=\"description\">1/2</span>"
 msgstr "Ostateczne ostrzeżenie <span class=\"description\">1/2</span>"
@@ -2094,6 +2100,13 @@ msgstr "Tryb interakcji"
 #, csharp-format
 msgid "Adding mod: {0}"
 msgstr "Dodawanie moda: {0}"
+
+msgid ""
+"Allows ETS2LA to control throttle and brake using direct memory editing. "
+"This might not work on some systems, but allows for control even while "
+"tabbed out of the game. If you enable this and it doesn't work, please "
+"report the issue on our Discord server."
+msgstr ""
 
 #, csharp-format
 msgid "Not all dependencies for plugin {0} are installed."

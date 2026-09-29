@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-09-23 14:45:09+0300\n"
+"POT-Creation-Date: 2026-09-29 18:11:01+0300\n"
 "PO-Revision-Date: 2026-09-13 12:43+0000\n"
 "Last-Translator: bot_lapis <botlapis@ets2la.com>\n"
 "Language-Team: Korean <http://weblate.ets2la.com/projects/ets2la/ets2la/ko/"
@@ -243,6 +243,9 @@ msgstr ""
 "ETS2LA를 시작하려면 저희 <span class=\"text-text-accent font-bold\">SDK</"
 "span>를 설치해야 합니다. 계속하려면 <span class=\"text-text-accent font-"
 "bold\">최소 한 개의 게임</span>용 SDK를 설치해주세요."
+
+msgid "Enable Memory Output for Pedals"
+msgstr ""
 
 #, csharp-format
 msgid "Successfully updated plugin with ID {0}."
@@ -1180,6 +1183,9 @@ msgstr ""
 msgid "Error rendering overlay: {0}"
 msgstr ""
 
+msgid "You may need to restart the game to apply this change."
+msgstr ""
+
 msgid "Off"
 msgstr ""
 
@@ -1756,10 +1762,10 @@ msgstr ""
 msgid "Starting download..."
 msgstr ""
 
-msgid "Game is still running"
+msgid "High"
 msgstr ""
 
-msgid "High"
+msgid "Game is still running"
 msgstr ""
 
 msgid "Final Disclaimer <span class=\"description\">1/2</span>"
@@ -1911,6 +1917,13 @@ msgstr "인터랙션 모드"
 
 #, csharp-format
 msgid "Adding mod: {0}"
+msgstr ""
+
+msgid ""
+"Allows ETS2LA to control throttle and brake using direct memory editing. "
+"This might not work on some systems, but allows for control even while "
+"tabbed out of the game. If you enable this and it doesn't work, please "
+"report the issue on our Discord server."
 msgstr ""
 
 #, csharp-format

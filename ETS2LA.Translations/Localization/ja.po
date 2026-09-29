@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-09-23 14:45:09+0300\n"
+"POT-Creation-Date: 2026-09-29 18:11:01+0300\n"
 "PO-Revision-Date: 2026-09-24 18:57+0000\n"
 "Last-Translator: Pastel <pastel@ets2la.com>\n"
 "Language-Team: Japanese <http://weblate.ets2la.com/projects/ets2la/ets2la/ja/"
@@ -49,7 +49,8 @@ msgstr "匿名テレメトリ"
 msgid ""
 "Keep the ETS2LA window on top of other windows. If you want to use the "
 "visualization on a single monitor setup, this is recommended."
-msgstr "ETS2LAのウィンドウを他のウィンドウより常に前面に表示します。1台のモニターでビ"
+msgstr ""
+"ETS2LAのウィンドウを他のウィンドウより常に前面に表示します。1台のモニターでビ"
 "ジュアライゼーションを使用する場合に推奨されます。"
 
 #, csharp-format
@@ -152,7 +153,8 @@ msgstr "操作 {0}（{1}）の割り当てがタイムアウトしました。"
 #, csharp-format
 msgid ""
 "Library plugin with ID [gray]{0}[/] is already loaded, skipping duplicate."
-msgstr "ID [gray]{0}[/] のライブラリプラグインはすでに読み込まれているため、重複をス"
+msgstr ""
+"ID [gray]{0}[/] のライブラリプラグインはすでに読み込まれているため、重複をス"
 "キップします。"
 
 msgid "Successfully opened memory for output."
@@ -183,7 +185,8 @@ msgstr "ログをさらに表示"
 msgid ""
 "Cracked games or demos will block our SDK from loading. They do not work, "
 "and we don't intend to fix this."
-msgstr "クラックされたゲームやデモ版では、SDKが読み込まれなくなります。この問題を修正"
+msgstr ""
+"クラックされたゲームやデモ版では、SDKが読み込まれなくなります。この問題を修正"
 "する予定はありません。"
 
 msgid "Contact us on Discord"
@@ -251,6 +254,9 @@ msgstr ""
 "ETS2LAを開始するには、<span class=\"text-text-accent font-bold\">SDK</span>を"
 "インストールする必要があります。続行するには、<span class=\"text-text-accent "
 "font-bold\">少なくとも1つのゲーム</span>にSDKをインストールしてください。"
+
+msgid "Enable Memory Output for Pedals"
+msgstr ""
 
 #, csharp-format
 msgid "Successfully updated plugin with ID {0}."
@@ -385,7 +391,8 @@ msgstr "アシスト有効：<span class=\"text-text-accent font-bold\">{0}</spa
 msgid ""
 "Memory not available for output, please ensure the game is running and "
 "reinstall the SDK if necessary."
-msgstr "出力用のメモリを利用できません。ゲームが起動していることを確認し、必要に応じ"
+msgstr ""
+"出力用のメモリを利用できません。ゲームが起動していることを確認し、必要に応じ"
 "てSDKを再インストールしてください。"
 
 #, csharp-format
@@ -742,7 +749,8 @@ msgstr "操作 {0}（{1}）の割り当てをデバイス: {2}、操作: {3} に
 
 msgid ""
 "Driving mode changed, press Cancel/MODE again to cycle through the modes."
-msgstr "運転モードが変更されました。キャンセル／MODEボタンをもう一度押すと、モードを"
+msgstr ""
+"運転モードが変更されました。キャンセル／MODEボタンをもう一度押すと、モードを"
 "切り替えることができます。"
 
 msgid "Pause When Unstable"
@@ -987,7 +995,8 @@ msgstr "このページは今後のアップデートで実装される予定で
 
 #, csharp-format
 msgid "Plugin with ID [gray]{0}[/] is already loaded, skipping duplicate."
-msgstr "ID [gray]{0}[/] のプラグインはすでに読み込まれているため、重複をスキップしま"
+msgstr ""
+"ID [gray]{0}[/] のプラグインはすでに読み込まれているため、重複をスキップしま"
 "す。"
 
 #, csharp-format
@@ -1249,6 +1258,9 @@ msgstr "アップデートはありません。"
 msgid "Error rendering overlay: {0}"
 msgstr "オーバーレイの表示中にエラーが発生しました: {0}"
 
+msgid "You may need to restart the game to apply this change."
+msgstr ""
+
 msgid "Off"
 msgstr "オフ"
 
@@ -1509,7 +1521,8 @@ msgstr "フィート"
 
 #, csharp-format
 msgid "Overlay is disabled in settings, skipping window registration for {0}."
-msgstr "設定でオーバーレイが無効になっているため、{0} のウィンドウ登録をスキップしま"
+msgstr ""
+"設定でオーバーレイが無効になっているため、{0} のウィンドウ登録をスキップしま"
 "す。"
 
 msgid "Please close the game before continuing with the onboarding process."
@@ -1546,8 +1559,8 @@ msgid ""
 "If you see a fully black screen, see the FAQ at <span class=\"description "
 "hover:underline\">ets2la.com</span>."
 msgstr ""
-"画面が真っ黒になってしまう場合は、<span class=\"description hover:underline\""
-">ets2la.com</span>のFAQをご覧ください。"
+"画面が真っ黒になってしまう場合は、<span class=\"description "
+"hover:underline\">ets2la.com</span>のFAQをご覧ください。"
 
 msgid "Settings"
 msgstr "設定"
@@ -1887,11 +1900,11 @@ msgstr "無効なディレクトリ"
 msgid "Starting download..."
 msgstr "ダウンロードを開始します..."
 
-msgid "Game is still running"
-msgstr "ゲームはまだ実行中です"
-
 msgid "High"
 msgstr "高"
+
+msgid "Game is still running"
+msgstr "ゲームはまだ実行中です"
 
 msgid "Final Disclaimer <span class=\"description\">1/2</span>"
 msgstr "最終免責事項 <span class=\"description\">1/2</span>"
@@ -2057,6 +2070,13 @@ msgstr "インタラクションモード"
 #, csharp-format
 msgid "Adding mod: {0}"
 msgstr "MODを追加: {0}"
+
+msgid ""
+"Allows ETS2LA to control throttle and brake using direct memory editing. "
+"This might not work on some systems, but allows for control even while "
+"tabbed out of the game. If you enable this and it doesn't work, please "
+"report the issue on our Discord server."
+msgstr ""
 
 #, csharp-format
 msgid "Not all dependencies for plugin {0} are installed."
