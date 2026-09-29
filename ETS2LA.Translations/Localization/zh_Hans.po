@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-09-29 18:11:01+0300\n"
+"POT-Creation-Date: 2026-09-29 18:52:56+0300\n"
 "PO-Revision-Date: 2026-09-23 23:49+0000\n"
 "Last-Translator: goodnightan <goodnightan@ets2la.com>\n"
 "Language-Team: Chinese (Simplified Han script) <http://weblate.ets2la.com/"
@@ -270,12 +270,12 @@ msgstr "安装插件"
 msgid "Show Fewer Logs"
 msgstr "显示更少日志"
 
+msgid "I won't leave ETS2LA unattended"
+msgstr "我不会在无人看管的情况下运行 ETS2LA"
+
 #, csharp-format
 msgid "Error while downloading update: {0}"
 msgstr "下载更新时发生错误：{0}"
-
-msgid "I won't leave ETS2LA unattended"
-msgstr "我不会在无人看管的情况下运行 ETS2LA"
 
 msgid "Keyboard"
 msgstr "键盘"
@@ -806,12 +806,12 @@ msgstr "您可以在此处启用我们在上一步安装的插件。"
 msgid "SDK Installed"
 msgstr "已安装SDK"
 
-msgid "Current Speed"
-msgstr "当前速度"
-
 #, csharp-format
 msgid "Bound control {0} ({1}) to device {2} and control {3}"
 msgstr "已将控件 {0}（{1}）绑定至设备 {2} 的控件 {3}"
+
+msgid "Current Speed"
+msgstr "当前速度"
 
 msgid "miles per hour"
 msgstr "英里每小时"
@@ -946,12 +946,12 @@ msgstr "此页面将于后续更新中实现。"
 msgid "Plugin with ID [gray]{0}[/] is already loaded, skipping duplicate."
 msgstr "ID 为 [gray]{0}[/] 的插件已加载，跳过重复加载。"
 
+msgid "You are running the latest version."
+msgstr "你正在使用最新版本。"
+
 #, csharp-format
 msgid "Failed to download plugin with ID {0} from {1}. Status code: {2}"
 msgstr "从 {1} 下载 ID 为 {0} 的插件失败。状态码：{2}"
-
-msgid "You are running the latest version."
-msgstr "你正在使用最新版本。"
 
 msgid "No plugins found."
 msgstr "找不到任何插件。"
@@ -1026,15 +1026,15 @@ msgstr ""
 msgid "Failed to install latest version of plugin with ID {0}."
 msgstr "ID 为 {0} 的插件最新版本安装失败。"
 
+msgid "I understand, now let me in!"
+msgstr "我明白了，现在让我进入！"
+
 #, csharp-format
 msgid ""
 "If you think this is a bug, please report it in the {0}Discord Server{1} or "
 "on {2}GitHub{3}."
 msgstr ""
 "如果你认为这是一个错误，请在 {0}Discord 服务器{1} 或 {2}GitHub{3} 报告。"
-
-msgid "I understand, now let me in!"
-msgstr "我明白了，现在让我进入！"
 
 msgid "Disable Overlay"
 msgstr "禁用叠加层"
@@ -1908,6 +1908,9 @@ msgid ""
 "Changing this option requires a restart of ETS2LA to take effect. Restart "
 "now?"
 msgstr "变更此选项后需要重新启动 ETS2LA 才能生效。要立即重新启动吗？"
+
+msgid "And to those who've decided to remain anonymous!"
+msgstr ""
 
 msgid "Plugin Installer"
 msgstr "插件安装器"

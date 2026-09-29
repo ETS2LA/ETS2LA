@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-09-29 18:11:01+0300\n"
+"POT-Creation-Date: 2026-09-29 18:52:56+0300\n"
 "PO-Revision-Date: 2026-09-24 16:57+0000\n"
 "Last-Translator: Ketchup1812 <ketchup1812@ets2la.com>\n"
 "Language-Team: Slovak <http://weblate.ets2la.com/projects/ets2la/ets2la/sk/"
@@ -280,12 +280,12 @@ msgstr "Nainštalujte pluginy"
 msgid "Show Fewer Logs"
 msgstr "Zobraziť menej záznamov"
 
+msgid "I won't leave ETS2LA unattended"
+msgstr "Nenechám ETS2LA bez dozoru"
+
 #, csharp-format
 msgid "Error while downloading update: {0}"
 msgstr "Chyba pri sťahovaní aktualizácie: {0}"
-
-msgid "I won't leave ETS2LA unattended"
-msgstr "Nenechám ETS2LA bez dozoru"
 
 msgid "Keyboard"
 msgstr "Klávesnica"
@@ -859,12 +859,12 @@ msgstr ""
 msgid "SDK Installed"
 msgstr "SDK je nainštalované"
 
-msgid "Current Speed"
-msgstr "Aktuálna rýchlosť"
-
 #, csharp-format
 msgid "Bound control {0} ({1}) to device {2} and control {3}"
 msgstr "Priradili sme ovládač {0} ({1}) k zariadeniu {2} a ovládanie {3}"
+
+msgid "Current Speed"
+msgstr "Aktuálna rýchlosť"
 
 msgid "miles per hour"
 msgstr "míle za hodinu"
@@ -1009,12 +1009,12 @@ msgstr "Táto stránka bude sprístupnená v budúcej aktualizácii."
 msgid "Plugin with ID [gray]{0}[/] is already loaded, skipping duplicate."
 msgstr "Plugin s ID [gray]{0}[/] je už načítaný, duplicitný sa preskočí."
 
+msgid "You are running the latest version."
+msgstr "Používate najnovšiu verziu."
+
 #, csharp-format
 msgid "Failed to download plugin with ID {0} from {1}. Status code: {2}"
 msgstr "Nepodarilo sa stiahnuť plugin s ID {0} z {1}. Kód stavu: {2}"
-
-msgid "You are running the latest version."
-msgstr "Používate najnovšiu verziu."
 
 msgid "No plugins found."
 msgstr "Nenašli sa žiadne pluginy."
@@ -1100,6 +1100,9 @@ msgstr ""
 msgid "Failed to install latest version of plugin with ID {0}."
 msgstr "Nepodarilo sa nainštalovať najnovšiu verziu pluginu s ID {0}."
 
+msgid "I understand, now let me in!"
+msgstr "Rozumiem, tak ma teraz pusťte dnu!"
+
 #, csharp-format
 msgid ""
 "If you think this is a bug, please report it in the {0}Discord Server{1} or "
@@ -1107,9 +1110,6 @@ msgid ""
 msgstr ""
 "Ak si myslíte, že ide o chybu, nahláste ju prosím na {0}Discord serveri{1} "
 "alebo na {2}GitHube{3}."
-
-msgid "I understand, now let me in!"
-msgstr "Rozumiem, tak ma teraz pusťte dnu!"
 
 msgid "Disable Overlay"
 msgstr "Vypnúť prekrývanie"
@@ -2060,6 +2060,9 @@ msgid ""
 msgstr ""
 "Aby sa táto zmena uplatnila, je potrebné reštartovať ETS2LA. Chcete "
 "reštartovať teraz?"
+
+msgid "And to those who've decided to remain anonymous!"
+msgstr ""
 
 msgid "Plugin Installer"
 msgstr "Plugin inštalátor"

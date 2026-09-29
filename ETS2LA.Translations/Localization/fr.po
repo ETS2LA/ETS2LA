@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-09-29 18:11:01+0300\n"
+"POT-Creation-Date: 2026-09-29 18:52:56+0300\n"
 "PO-Revision-Date: 2026-08-30 16:09+0000\n"
 "Last-Translator: retroposition <retroposition@ets2la.com>\n"
 "Language-Team: French <http://weblate.ets2la.com/projects/ets2la/ets2la/fr/"
@@ -276,12 +276,12 @@ msgstr "Installer les plugins"
 msgid "Show Fewer Logs"
 msgstr "Afficher moins de journaux"
 
+msgid "I won't leave ETS2LA unattended"
+msgstr "Je ne laisserai pas ETS2LA sans surveillance"
+
 #, csharp-format
 msgid "Error while downloading update: {0}"
 msgstr "Erreur lors du téléchargement de la mise à jour : {0}"
-
-msgid "I won't leave ETS2LA unattended"
-msgstr "Je ne laisserai pas ETS2LA sans surveillance"
 
 msgid "Keyboard"
 msgstr "Clavier"
@@ -857,12 +857,12 @@ msgstr ""
 msgid "SDK Installed"
 msgstr "SDK installé"
 
-msgid "Current Speed"
-msgstr "Vitesse actuelle"
-
 #, csharp-format
 msgid "Bound control {0} ({1}) to device {2} and control {3}"
 msgstr "Commande {0} ({1}) associée au périphérique {2} et à la commande {3}"
+
+msgid "Current Speed"
+msgstr "Vitesse actuelle"
 
 msgid "miles per hour"
 msgstr "miles par heure"
@@ -1008,13 +1008,13 @@ msgstr "Cette page sera implémentée dans une future mise à jour."
 msgid "Plugin with ID [gray]{0}[/] is already loaded, skipping duplicate."
 msgstr ""
 
+msgid "You are running the latest version."
+msgstr "Vous utilisez la dernière version."
+
 #, csharp-format
 msgid "Failed to download plugin with ID {0} from {1}. Status code: {2}"
 msgstr ""
 "Échec du téléchargement du plugin avec l'ID {0} depuis {1}. Code d'état : {2}"
-
-msgid "You are running the latest version."
-msgstr "Vous utilisez la dernière version."
 
 msgid "No plugins found."
 msgstr "Aucun plugin trouvé."
@@ -1099,6 +1099,9 @@ msgid "Failed to install latest version of plugin with ID {0}."
 msgstr ""
 "Échec de l'installation de la dernière version du plugin avec l'ID {0}."
 
+msgid "I understand, now let me in!"
+msgstr "J'ai compris, laissez-moi entrer !"
+
 #, csharp-format
 msgid ""
 "If you think this is a bug, please report it in the {0}Discord Server{1} or "
@@ -1106,9 +1109,6 @@ msgid ""
 msgstr ""
 "Si vous pensez qu'il s'agit d'un bug, veuillez le signaler sur le {0}serveur "
 "Discord{1} ou sur {2}GitHub{3}."
-
-msgid "I understand, now let me in!"
-msgstr "J'ai compris, laissez-moi entrer !"
 
 msgid "Disable Overlay"
 msgstr ""
@@ -2056,6 +2056,9 @@ msgid ""
 msgstr ""
 "La modification de cette option nécessite un redémarrage d'ETS2LA pour "
 "prendre effet. Redémarrer maintenant ?"
+
+msgid "And to those who've decided to remain anonymous!"
+msgstr ""
 
 msgid "Plugin Installer"
 msgstr "Installateur de plugins"

@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-09-29 18:11:01+0300\n"
+"POT-Creation-Date: 2026-09-29 18:52:56+0300\n"
 "PO-Revision-Date: 2026-09-23 18:04+0000\n"
 "Last-Translator: Kubex70 <kubex70@ets2la.com>\n"
 "Language-Team: Polish <http://weblate.ets2la.com/projects/ets2la/ets2la/pl/"
@@ -284,12 +284,12 @@ msgstr "Zainstaluj pluginy"
 msgid "Show Fewer Logs"
 msgstr "Pokaż mniej dzienników"
 
+msgid "I won't leave ETS2LA unattended"
+msgstr "Nie zostawie ETS2LA bez nadzoru"
+
 #, csharp-format
 msgid "Error while downloading update: {0}"
 msgstr "Błąd podczas pobierania aktualizacji: {0}"
-
-msgid "I won't leave ETS2LA unattended"
-msgstr "Nie zostawie ETS2LA bez nadzoru"
 
 msgid "Keyboard"
 msgstr "Klawiatura"
@@ -867,12 +867,12 @@ msgstr ""
 msgid "SDK Installed"
 msgstr "Zainstalowano zestaw SDK"
 
-msgid "Current Speed"
-msgstr "Aktualna prędkość"
-
 #, csharp-format
 msgid "Bound control {0} ({1}) to device {2} and control {3}"
 msgstr "Powiąż sterowanie {0} ({1}) z urządzeniem {2} i sterowaniem {3}"
+
+msgid "Current Speed"
+msgstr "Aktualna prędkość"
 
 msgid "miles per hour"
 msgstr "mile na godzinę"
@@ -1016,13 +1016,13 @@ msgid "Plugin with ID [gray]{0}[/] is already loaded, skipping duplicate."
 msgstr ""
 "Plugin o identyfikatorze [gray]{0}[/] jest już załadowany; pomijam duplikat."
 
+msgid "You are running the latest version."
+msgstr "Używasz najnowszej wersji."
+
 #, csharp-format
 msgid "Failed to download plugin with ID {0} from {1}. Status code: {2}"
 msgstr ""
 "Nie udało się pobrać pluginu o identyfikatorze {0} z {1}. Kod stanu: {2}"
-
-msgid "You are running the latest version."
-msgstr "Używasz najnowszej wersji."
 
 msgid "No plugins found."
 msgstr "Nie znaleziono pluginów."
@@ -1108,6 +1108,9 @@ msgid "Failed to install latest version of plugin with ID {0}."
 msgstr ""
 "Nie udało się zainstalować najnowszej wersji pluginu o identyfikatorze {0}."
 
+msgid "I understand, now let me in!"
+msgstr "Rozumiem, teraz mnie wpuść!"
+
 #, csharp-format
 msgid ""
 "If you think this is a bug, please report it in the {0}Discord Server{1} or "
@@ -1115,9 +1118,6 @@ msgid ""
 msgstr ""
 "Jeśli uważasz, że to błąd, zgłoś to na {0}serwerze Discord{1} lub na {2}"
 "GitHubie{3}."
-
-msgid "I understand, now let me in!"
-msgstr "Rozumiem, teraz mnie wpuść!"
 
 msgid "Disable Overlay"
 msgstr "Wyłącz nakładkę"
@@ -2069,6 +2069,9 @@ msgid ""
 msgstr ""
 "Zmiana tej opcji wymaga ponownego uruchomienia ETS2LA, aby zaczęła "
 "obowiązywać. Uruchomić ponownie teraz?"
+
+msgid "And to those who've decided to remain anonymous!"
+msgstr ""
 
 msgid "Plugin Installer"
 msgstr "Instalator pluginów"

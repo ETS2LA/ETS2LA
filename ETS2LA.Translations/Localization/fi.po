@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-09-29 18:11:01+0300\n"
+"POT-Creation-Date: 2026-09-29 18:52:56+0300\n"
 "PO-Revision-Date: 2026-09-21 20:12+0000\n"
 "Last-Translator: Tumppi066 <contact@ets2la.com>\n"
 "Language-Team: Finnish <http://weblate.ets2la.com/projects/ets2la/ets2la/fi/"
@@ -275,12 +275,12 @@ msgstr "Asenna Lisäosat"
 msgid "Show Fewer Logs"
 msgstr "Näytä vähemmän lokeja"
 
+msgid "I won't leave ETS2LA unattended"
+msgstr "En jätä sovellusta vahtimatta"
+
 #, csharp-format
 msgid "Error while downloading update: {0}"
 msgstr "Virhe päivityksen latauksessa: {0}"
-
-msgid "I won't leave ETS2LA unattended"
-msgstr "En jätä sovellusta vahtimatta"
 
 msgid "Keyboard"
 msgstr "Näppäimistö"
@@ -844,12 +844,12 @@ msgstr "Voit käynnistää aikaisemmin asentamamme lisäosat täältä."
 msgid "SDK Installed"
 msgstr "SDK asennettu"
 
-msgid "Current Speed"
-msgstr "Nykyinen Nopeus"
-
 #, csharp-format
 msgid "Bound control {0} ({1}) to device {2} and control {3}"
 msgstr "Ohjäinmääritys {0} ({1}) määritelty laitteen {2} painikkeeseen {3}"
+
+msgid "Current Speed"
+msgstr "Nykyinen Nopeus"
 
 msgid "miles per hour"
 msgstr "mailia tunnissa"
@@ -992,12 +992,12 @@ msgstr "Tämä sivu rakennetaan tulevassa päivityksessä."
 msgid "Plugin with ID [gray]{0}[/] is already loaded, skipping duplicate."
 msgstr "Lisäosa ID:llä [gray]{0}[/] on jo ladattu, ohitetaan duplikaatti."
 
+msgid "You are running the latest version."
+msgstr "Sinulla on uusin versio."
+
 #, csharp-format
 msgid "Failed to download plugin with ID {0} from {1}. Status code: {2}"
 msgstr "Lisäosan {0} lataus epäonnistui osoitteesta {1} koodilla {2}"
-
-msgid "You are running the latest version."
-msgstr "Sinulla on uusin versio."
 
 msgid "No plugins found."
 msgstr "Lisäosia ei löytynyt."
@@ -1079,6 +1079,9 @@ msgstr ""
 msgid "Failed to install latest version of plugin with ID {0}."
 msgstr "Virhe lisäosan {0} uusimman version latauksessa."
 
+msgid "I understand, now let me in!"
+msgstr "Ymmärrän, päästä jo sisään!"
+
 #, csharp-format
 msgid ""
 "If you think this is a bug, please report it in the {0}Discord Server{1} or "
@@ -1086,9 +1089,6 @@ msgid ""
 msgstr ""
 "Jos uskot tämän olevan pikku bugi, kerro meille {0}Discordissa{1} tai {2}"
 "GitHubissa{3}, jotta kärpäslätkä ohjataan oikeaan paikkaan."
-
-msgid "I understand, now let me in!"
-msgstr "Ymmärrän, päästä jo sisään!"
 
 msgid "Disable Overlay"
 msgstr ""
@@ -2020,6 +2020,9 @@ msgid ""
 msgstr ""
 "Tämän asetuksen muuttaminen vaatii sovelluksen uudelleenkäynnistystä. "
 "Tehdäänkö tämä nyt?"
+
+msgid "And to those who've decided to remain anonymous!"
+msgstr ""
 
 msgid "Plugin Installer"
 msgstr "Lisäosien asentaja"
