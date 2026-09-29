@@ -298,13 +298,14 @@ public class GameOutput
                 }
                 else if (propName == "acceleration")
                 {
-                    #if LINUX
-                        // The Linux game plugin writes the throttle to the analog 'aforward'
-                        // input mix, so this works as expected.
+                    if (GameSettings.Current.EnableModernOutputForPedals) 
+                    {
                         WriteFloat(modernAccessor, 13, weightedValue);
                         WriteBool(modernAccessor, 17, weightedValue != 0.0f);
                         WriteDouble(modernAccessor, 18, time);
-                    # else
+                    }
+                    else 
+                    {
                         if (weightedValue > 0)
                         {
                             WriteFloat(legacyAccessor, legacyShmOffsets["aforward"], weightedValue);
@@ -315,7 +316,7 @@ public class GameOutput
                             WriteFloat(legacyAccessor, legacyShmOffsets["abackward"], -weightedValue);
                             WriteFloat(legacyAccessor, legacyShmOffsets["aforward"], 0);
                         }
-                    # endif
+                    }
                 }
                 else
                 {

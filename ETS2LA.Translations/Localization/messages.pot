@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-09-23 14:45:09+0300\n"
-"PO-Revision-Date: 2026-09-23 14:45:10+0300\n"
+"POT-Creation-Date: 2026-09-29 18:05:06+0300\n"
+"PO-Revision-Date: 2026-09-29 18:05:06+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -55,8 +55,8 @@ msgid ""
 "visualization on a single monitor setup, this is recommended."
 msgstr ""
 
-#: ../../../ETS2LA.Controls/Linux/SDL3ControlsBackend.cs:165
 #: ../../../ETS2LA.Controls/Windows/SharpDXControlsBackend.cs:186
+#: ../../../ETS2LA.Controls/Linux/SDL3ControlsBackend.cs:165
 #, csharp-format
 msgid "Control with ID '{0}' not found for updating bindings."
 msgstr ""
@@ -281,6 +281,10 @@ msgid ""
 "class=\"text-text-accent font-bold\">at least one game</span> to continue."
 msgstr ""
 
+#: ../../../ETS2LA.UI/Pages/Settings/Experiments.razor:40
+msgid "Enable Memory Output for Pedals"
+msgstr ""
+
 #: ../../../ETS2LA.Networking/Plugins/client.cs:253
 #, csharp-format
 msgid "Successfully updated plugin with ID {0}."
@@ -306,13 +310,13 @@ msgstr ""
 msgid "Show Fewer Logs"
 msgstr ""
 
+#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/DisclaimerStep1.razor:21
+msgid "I won't leave ETS2LA unattended"
+msgstr ""
+
 #: ../../../ETS2LA.Networking/Updates/Handler.cs:81
 #, csharp-format
 msgid "Error while downloading update: {0}"
-msgstr ""
-
-#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/DisclaimerStep1.razor:21
-msgid "I won't leave ETS2LA unattended"
 msgstr ""
 
 #: ../../../ETS2LA.UI/Pages/Settings/Controls.razor:74
@@ -906,8 +910,8 @@ msgid ""
 "has only slight differences to metric."
 msgstr ""
 
-#: ../../../ETS2LA.Controls/Linux/SDL3ControlsBackend.cs:149
 #: ../../../ETS2LA.Controls/Windows/SharpDXControlsBackend.cs:170
+#: ../../../ETS2LA.Controls/Linux/SDL3ControlsBackend.cs:149
 #, csharp-format
 msgid "Control with ID '{0}' not found for unregistration."
 msgstr ""
@@ -997,6 +1001,12 @@ msgstr ""
 msgid "Limit Overlay Framerate"
 msgstr ""
 
+#: ../../../ETS2LA.UI/Pages/Settings/Experiments.razor:45
+msgid ""
+"You <span class=\"italic\">may</span> need to restart the game to apply this "
+"change."
+msgstr ""
+
 #: ../../../ETS2LA.UI/Shared/Layouts/MainLayout.razor:55
 msgid "Wiki / FAQ"
 msgstr ""
@@ -1048,8 +1058,8 @@ msgstr ""
 msgid "Download progress: {0}%"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Plugins/Manager.razor:157
 #: ../../../ETS2LA.UI/Pages/Plugins/Catalogue.razor:110
+#: ../../../ETS2LA.UI/Pages/Plugins/Manager.razor:157
 msgid "Search for plugins..."
 msgstr ""
 
@@ -1149,18 +1159,18 @@ msgstr ""
 msgid "Plugin with ID [gray]{0}[/] is already loaded, skipping duplicate."
 msgstr ""
 
-#: ../../../ETS2LA.Networking/Plugins/client.cs:190
-#, csharp-format
-msgid "Failed to download plugin with ID {0} from {1}. Status code: {2}"
-msgstr ""
-
 #: ../../../ETS2LA.UI/Pages/Home.razor:81
 #: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:109
 msgid "You are running the latest version."
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Plugins/Manager.razor:198
+#: ../../../ETS2LA.Networking/Plugins/client.cs:190
+#, csharp-format
+msgid "Failed to download plugin with ID {0} from {1}. Status code: {2}"
+msgstr ""
+
 #: ../../../ETS2LA.UI/Pages/Plugins/Catalogue.razor:146
+#: ../../../ETS2LA.UI/Pages/Plugins/Manager.razor:198
 msgid "No plugins found."
 msgstr ""
 
@@ -1320,11 +1330,11 @@ msgstr ""
 msgid "Disabled plugin: [bold]{0}[/]"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/ControlsStep.razor:48
 #: ../../../ETS2LA.UI/Pages/Onboarding/Steps/SDKStep.razor:17
-#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/PluginStep.razor:57
+#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/ControlsStep.razor:48
 #: ../../../ETS2LA.UI/Pages/Onboarding/Steps/OverlayStep.razor:27
 #: ../../../ETS2LA.UI/Pages/Onboarding/Steps/EnsureGameClosed.razor:52
+#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/PluginStep.razor:57
 msgid "Continue"
 msgstr ""
 
@@ -1434,8 +1444,8 @@ msgstr ""
 msgid "Steering Sensitivity"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Plugins/Manager.razor:226
 #: ../../../ETS2LA.UI/Pages/Settings/Assists.razor:207
+#: ../../../ETS2LA.UI/Pages/Plugins/Manager.razor:226
 msgid "Disabled"
 msgstr ""
 
@@ -1485,12 +1495,12 @@ msgstr ""
 msgid "Font file not found at {0}"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Plugins/Catalogue.razor:170
-msgid "Changelog"
-msgstr ""
-
 #: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:81
 msgid "No release notes available."
+msgstr ""
+
+#: ../../../ETS2LA.UI/Pages/Plugins/Catalogue.razor:170
+msgid "Changelog"
 msgstr ""
 
 #: ../../../ETS2LA.State/Program.cs:68
@@ -1979,7 +1989,7 @@ msgid ""
 "unresponsive / disables itself for other reasons."
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Settings/Experiments.razor:19
+#: ../../../ETS2LA.UI/Pages/Settings/Experiments.razor:37
 msgid ""
 "Render the vision cameras in the game world. This is useful for debugging, "
 "but can cause performance issues."
@@ -1996,12 +2006,17 @@ msgid "Target Speed: <span class=\"text-text-accent font-bold\">{0} {1}</span>"
 msgstr ""
 
 #: ../../../ETS2LA.Game/SDK/Navigation.cs:122
-#: ../../../ETS2LA.Game/SDK/ParkedVehicles.cs:108
-#: ../../../ETS2LA.Game/SDK/Traffic.cs:159
 #: ../../../ETS2LA.Game/SDK/Camera.cs:130
+#: ../../../ETS2LA.Game/SDK/ParkedVehicles.cs:108
 #: ../../../ETS2LA.Game/SDK/Semaphores.cs:176
+#: ../../../ETS2LA.Game/SDK/Traffic.cs:159
 #, csharp-format
 msgid "Error initializing memory mapped file: {0}"
+msgstr ""
+
+#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/ControlsStep.razor:43
+#, csharp-format
+msgid "Assist Mode: <span class=\"text-text-accent font-bold\">{0}</span>"
 msgstr ""
 
 #: ../../../ETS2LA.Backend/PluginHandler/Handler.cs:204
@@ -2011,17 +2026,12 @@ msgstr ""
 msgid "Failed to load plugin from [gray]{0}[/]: {1}"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/ControlsStep.razor:43
-#, csharp-format
-msgid "Assist Mode: <span class=\"text-text-accent font-bold\">{0}</span>"
+#: ../../../ETS2LA.UI/Pages/Settings/Audio.razor:24
+msgid "Adjust the volume of the audio output."
 msgstr ""
 
 #: ../../../ETS2LA.UI/Pages/Settings/Telemetry.razor:28
 msgid "View Public Telemetry"
-msgstr ""
-
-#: ../../../ETS2LA.UI/Pages/Settings/Audio.razor:24
-msgid "Adjust the volume of the audio output."
 msgstr ""
 
 #: ../../../ETS2LA.Networking/Updates/Handler.cs:135
@@ -2172,7 +2182,7 @@ msgstr ""
 msgid "Initializing GLFW Version: {0}"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Settings/Experiments.razor:18
+#: ../../../ETS2LA.UI/Pages/Settings/Experiments.razor:36
 msgid "Render Vision Cameras"
 msgstr ""
 
@@ -2215,13 +2225,13 @@ msgstr ""
 msgid "Starting download..."
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/EnsureGameClosed.razor:31
-msgid "Game is still running"
-msgstr ""
-
 #: ../../../ETS2LA.UI/Pages/Settings/Data.razor:12
 #: ../../../ETS2LA.UI/Pages/Settings/Data.razor:20
 msgid "High"
+msgstr ""
+
+#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/EnsureGameClosed.razor:31
+msgid "Game is still running"
 msgstr ""
 
 #: ../../../ETS2LA.UI/Pages/Onboarding/Steps/DisclaimerStep1.razor:15
@@ -2425,6 +2435,14 @@ msgstr ""
 #: ../../../ETS2LA.Game/Installation.cs:198
 #, csharp-format
 msgid "Adding mod: {0}"
+msgstr ""
+
+#: ../../../ETS2LA.UI/Pages/Settings/Experiments.razor:41
+msgid ""
+"Allows ETS2LA to control throttle and brake using direct memory editing. This "
+"might not work on some systems, but allows for control even while tabbed out "
+"of the game. If you enable this and it doesn't work, please report the issue "
+"on our Discord server."
 msgstr ""
 
 #: ../../../ETS2LA.Networking/Plugins/client.cs:177

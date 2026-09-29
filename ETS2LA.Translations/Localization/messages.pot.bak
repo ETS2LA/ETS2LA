@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-09-23 14:32:18+0300\n"
-"PO-Revision-Date: 2026-09-23 14:32:19+0300\n"
+"POT-Creation-Date: 2026-09-29 18:03:21+0300\n"
+"PO-Revision-Date: 2026-09-29 18:03:22+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -55,8 +55,8 @@ msgid ""
 "visualization on a single monitor setup, this is recommended."
 msgstr ""
 
-#: ../../../ETS2LA.Controls/Windows/SharpDXControlsBackend.cs:186
 #: ../../../ETS2LA.Controls/Linux/SDL3ControlsBackend.cs:165
+#: ../../../ETS2LA.Controls/Windows/SharpDXControlsBackend.cs:186
 #, csharp-format
 msgid "Control with ID '{0}' not found for updating bindings."
 msgstr ""
@@ -281,6 +281,10 @@ msgid ""
 "class=\"text-text-accent font-bold\">at least one game</span> to continue."
 msgstr ""
 
+#: ../../../ETS2LA.UI/Pages/Settings/Experiments.razor:37
+msgid "Enable Memory Output for Pedals"
+msgstr ""
+
 #: ../../../ETS2LA.Networking/Plugins/client.cs:253
 #, csharp-format
 msgid "Successfully updated plugin with ID {0}."
@@ -298,12 +302,12 @@ msgstr ""
 msgid "Additional"
 msgstr ""
 
-#: ../../../ETS2LA.Overlay/Window/Console.cs:54
-msgid "Show Fewer Logs"
-msgstr ""
-
 #: ../../../ETS2LA.UI/Pages/Onboarding/Steps/PluginStep.razor:56
 msgid "Install Plugins"
+msgstr ""
+
+#: ../../../ETS2LA.Overlay/Window/Console.cs:54
+msgid "Show Fewer Logs"
 msgstr ""
 
 #: ../../../ETS2LA.Networking/Updates/Handler.cs:81
@@ -376,8 +380,8 @@ msgstr ""
 msgid "Update to {0}"
 msgstr ""
 
-#: ../../../ETS2LA.Controls/Windows/SharpDXControlsBackend.cs:201
 #: ../../../ETS2LA.Controls/Linux/SDL3ControlsBackend.cs:180
+#: ../../../ETS2LA.Controls/Windows/SharpDXControlsBackend.cs:201
 #, csharp-format
 msgid "Control with ID '{0}' not found for updating axis behavior."
 msgstr ""
@@ -504,14 +508,14 @@ msgstr ""
 msgid "Backend shutdown complete."
 msgstr ""
 
-#: ../../../ETS2LA.Controls/Windows/SharpDXControlsBackend.cs:141
 #: ../../../ETS2LA.Controls/Linux/SDL3ControlsBackend.cs:121
+#: ../../../ETS2LA.Controls/Windows/SharpDXControlsBackend.cs:141
 #, csharp-format
 msgid "Control with ID '{0}' not found for event subscription."
 msgstr ""
 
-#: ../../../ETS2LA.Controls/Windows/SharpDXControlsBackend.cs:166
 #: ../../../ETS2LA.Controls/Linux/SDL3ControlsBackend.cs:156
+#: ../../../ETS2LA.Controls/Windows/SharpDXControlsBackend.cs:166
 #, csharp-format
 msgid "Unregistered control: {0} ({1})"
 msgstr ""
@@ -812,15 +816,15 @@ msgstr ""
 msgid "Collision Avoidance"
 msgstr ""
 
+#: ../../../ETS2LA.UI/Pages/Settings/Assists.razor:187
+msgid "Warnings & Overrides"
+msgstr ""
+
 #: ../../../ETS2LA.UI/Pages/Settings/Display.razor:257
 msgid ""
 "Disables the overlay entirely. This will fix the black screen issue at the "
 "cost of breaking all features that rely on the overlay, including AR and the "
 "HUD."
-msgstr ""
-
-#: ../../../ETS2LA.UI/Pages/Settings/Assists.razor:187
-msgid "Warnings & Overrides"
 msgstr ""
 
 #: ../../../ETS2LA.UI/Pages/Settings/Data.razor:59
@@ -854,8 +858,8 @@ msgstr ""
 msgid "Failed to load library plugin from [gray]{0}[/]: {1}"
 msgstr ""
 
-#: ../../../ETS2LA.Controls/Windows/SharpDXControlsBackend.cs:182
 #: ../../../ETS2LA.Controls/Linux/SDL3ControlsBackend.cs:172
+#: ../../../ETS2LA.Controls/Windows/SharpDXControlsBackend.cs:182
 #, csharp-format
 msgid "Updated bindings for control: {0} ({1}) to Device: {2}, Control: {3}"
 msgstr ""
@@ -906,8 +910,8 @@ msgid ""
 "has only slight differences to metric."
 msgstr ""
 
-#: ../../../ETS2LA.Controls/Windows/SharpDXControlsBackend.cs:170
 #: ../../../ETS2LA.Controls/Linux/SDL3ControlsBackend.cs:149
+#: ../../../ETS2LA.Controls/Windows/SharpDXControlsBackend.cs:170
 #, csharp-format
 msgid "Control with ID '{0}' not found for unregistration."
 msgstr ""
@@ -966,13 +970,13 @@ msgstr[1] ""
 msgid "Pascals"
 msgstr ""
 
+#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/FinishStep.razor:24
+msgid "You can enable the plugins we installed in a previous step here."
+msgstr ""
+
 #: ../../../ETS2LA.Backend/PluginHandler/Handler.cs:465
 #, csharp-format
 msgid "Failed to disable {0}: {1}"
-msgstr ""
-
-#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/FinishStep.razor:24
-msgid "You can enable the plugins we installed in a previous step here."
 msgstr ""
 
 #: ../../../ETS2LA.Game/Installation.cs:402
@@ -995,6 +999,12 @@ msgstr ""
 
 #: ../../../ETS2LA.UI/Pages/Settings/Display.razor:270
 msgid "Limit Overlay Framerate"
+msgstr ""
+
+#: ../../../ETS2LA.UI/Pages/Settings/Experiments.razor:42
+msgid ""
+"You <span class=\"italic\">may</span> need to restart the game to apply this "
+"change."
 msgstr ""
 
 #: ../../../ETS2LA.UI/Shared/Layouts/MainLayout.razor:55
@@ -1309,8 +1319,8 @@ msgstr ""
 msgid "Failed to read log file at '{0}': {1}"
 msgstr ""
 
-#: ../../../ETS2LA.Controls/Windows/SharpDXControlsBackend.cs:197
 #: ../../../ETS2LA.Controls/Linux/SDL3ControlsBackend.cs:186
+#: ../../../ETS2LA.Controls/Windows/SharpDXControlsBackend.cs:197
 #, csharp-format
 msgid "Updated axis behavior for control: {0} ({1}) to {2}"
 msgstr ""
@@ -1320,8 +1330,8 @@ msgstr ""
 msgid "Disabled plugin: [bold]{0}[/]"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/OverlayStep.razor:27
 #: ../../../ETS2LA.UI/Pages/Onboarding/Steps/ControlsStep.razor:48
+#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/OverlayStep.razor:27
 #: ../../../ETS2LA.UI/Pages/Onboarding/Steps/SDKStep.razor:17
 #: ../../../ETS2LA.UI/Pages/Onboarding/Steps/EnsureGameClosed.razor:52
 #: ../../../ETS2LA.UI/Pages/Onboarding/Steps/PluginStep.razor:57
@@ -1485,12 +1495,12 @@ msgstr ""
 msgid "Font file not found at {0}"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Plugins/Catalogue.razor:170
-msgid "Changelog"
-msgstr ""
-
 #: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:81
 msgid "No release notes available."
+msgstr ""
+
+#: ../../../ETS2LA.UI/Pages/Plugins/Catalogue.razor:170
+msgid "Changelog"
 msgstr ""
 
 #: ../../../ETS2LA.State/Program.cs:68
@@ -1643,8 +1653,8 @@ msgstr ""
 msgid "kilometers per hour"
 msgstr ""
 
-#: ../../../ETS2LA.Controls/Windows/SharpDXControlsBackend.cs:152
 #: ../../../ETS2LA.Controls/Linux/SDL3ControlsBackend.cs:133
+#: ../../../ETS2LA.Controls/Windows/SharpDXControlsBackend.cs:152
 #, csharp-format
 msgid "Control with ID '{0}' not found for event unsubscription."
 msgstr ""
@@ -1852,10 +1862,10 @@ msgstr ""
 
 #: ../../../ETS2LA.UI/Utils.cs:55
 #: ../../../ETS2LA.UI/Pages/Settings/Telemetry.razor:16
-#: ../../../ETS2LA.UI/Pages/Settings/Data.razor:32
-#: ../../../ETS2LA.UI/Pages/Settings/Data.razor:100
 #: ../../../ETS2LA.UI/Pages/Settings/Display.razor:167
 #: ../../../ETS2LA.UI/Pages/Settings/Display.razor:199
+#: ../../../ETS2LA.UI/Pages/Settings/Data.razor:32
+#: ../../../ETS2LA.UI/Pages/Settings/Data.razor:100
 msgid "Restart Required"
 msgstr ""
 
@@ -1979,7 +1989,7 @@ msgid ""
 "unresponsive / disables itself for other reasons."
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Settings/Experiments.razor:19
+#: ../../../ETS2LA.UI/Pages/Settings/Experiments.razor:34
 msgid ""
 "Render the vision cameras in the game world. This is useful for debugging, "
 "but can cause performance issues."
@@ -1995,9 +2005,9 @@ msgstr ""
 msgid "Target Speed: <span class=\"text-text-accent font-bold\">{0} {1}</span>"
 msgstr ""
 
+#: ../../../ETS2LA.Game/SDK/Semaphores.cs:176
 #: ../../../ETS2LA.Game/SDK/Camera.cs:130
 #: ../../../ETS2LA.Game/SDK/Navigation.cs:122
-#: ../../../ETS2LA.Game/SDK/Semaphores.cs:176
 #: ../../../ETS2LA.Game/SDK/ParkedVehicles.cs:108
 #: ../../../ETS2LA.Game/SDK/Traffic.cs:159
 #, csharp-format
@@ -2016,12 +2026,12 @@ msgstr ""
 msgid "Assist Mode: <span class=\"text-text-accent font-bold\">{0}</span>"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Settings/Telemetry.razor:28
-msgid "View Public Telemetry"
-msgstr ""
-
 #: ../../../ETS2LA.UI/Pages/Settings/Audio.razor:24
 msgid "Adjust the volume of the audio output."
+msgstr ""
+
+#: ../../../ETS2LA.UI/Pages/Settings/Telemetry.razor:28
+msgid "View Public Telemetry"
 msgstr ""
 
 #: ../../../ETS2LA.Networking/Updates/Handler.cs:135
@@ -2034,8 +2044,8 @@ msgstr ""
 msgid "SET Behaviour"
 msgstr ""
 
-#: ../../../ETS2LA.Controls/Windows/SharpDXControlsBackend.cs:133
 #: ../../../ETS2LA.Controls/Linux/SDL3ControlsBackend.cs:113
+#: ../../../ETS2LA.Controls/Windows/SharpDXControlsBackend.cs:133
 #, csharp-format
 msgid "Registered control: {0} [gray italic]({1})[/]"
 msgstr ""
@@ -2172,7 +2182,7 @@ msgstr ""
 msgid "Initializing GLFW Version: {0}"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Settings/Experiments.razor:18
+#: ../../../ETS2LA.UI/Pages/Settings/Experiments.razor:33
 msgid "Render Vision Cameras"
 msgstr ""
 
@@ -2384,9 +2394,9 @@ msgstr ""
 
 #: ../../../ETS2LA.UI/Utils.cs:56
 #: ../../../ETS2LA.UI/Pages/Settings/Telemetry.razor:17
+#: ../../../ETS2LA.UI/Pages/Settings/Display.razor:168
 #: ../../../ETS2LA.UI/Pages/Settings/Data.razor:33
 #: ../../../ETS2LA.UI/Pages/Settings/Data.razor:101
-#: ../../../ETS2LA.UI/Pages/Settings/Display.razor:168
 msgid ""
 "Changing this option requires a restart of ETS2LA to take effect. Restart "
 "now?"
@@ -2405,16 +2415,16 @@ msgstr ""
 msgid "Display Units: "
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Settings/Display.razor:226
-msgid ""
-"The language ETS2LA will be displayed at. Translations are provided by the "
-"community, we cannot guarantee their accuracy."
-msgstr ""
-
 #: ../../../ETS2LA.UI/Pages/Settings/Data.razor:121
 msgid ""
 "Warning: Your system has less than 20GB of RAM. You can only select up to "
 "High."
+msgstr ""
+
+#: ../../../ETS2LA.UI/Pages/Settings/Display.razor:226
+msgid ""
+"The language ETS2LA will be displayed at. Translations are provided by the "
+"community, we cannot guarantee their accuracy."
 msgstr ""
 
 #: ../../../ETS2LA.Overlay/Overlay.cs:305
@@ -2425,6 +2435,14 @@ msgstr ""
 #: ../../../ETS2LA.Game/Installation.cs:198
 #, csharp-format
 msgid "Adding mod: {0}"
+msgstr ""
+
+#: ../../../ETS2LA.UI/Pages/Settings/Experiments.razor:38
+msgid ""
+"Allows ETS2LA to control throttle and brake using direct memory editing. This "
+"might not work on some systems, but allows for control even while tabbed out "
+"of the game. If you enable this and it doesn't work, please report the issue "
+"on our Discord server."
 msgstr ""
 
 #: ../../../ETS2LA.Networking/Plugins/client.cs:177

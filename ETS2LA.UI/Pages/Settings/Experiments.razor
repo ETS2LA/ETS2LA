@@ -2,6 +2,10 @@
 @layout Shared.Layouts.SettingsLayout
 @using ETS2LA.UI.Shared.Components
 @using ETS2LA.ML
+@using ETS2LA.Game
+@using static ETS2LA.Translations.T;
+
+
 
 @code {
     private bool RenderVisionCameras {
@@ -12,6 +16,20 @@
             MLSettings.Current.Save();
         }
     }
+
+    private bool MemoryOutputChanged = false;
+
+    private bool EnableModernOutputForPedals {
+        get => GameSettings.Current.EnableModernOutputForPedals;
+        set {
+            var settings = GameSettings.Current;
+            if (value != settings.EnableModernOutputForPedals) {
+                MemoryOutputChanged = true;
+                settings.EnableModernOutputForPedals = value;
+                GameSettings.Current.Save();
+            }
+        }
+    }
 }
 
 <div class="flex flex-col w-108 m-5 ml-8 gap-6">
@@ -19,4 +37,11 @@
             Description=@(_("Render the vision cameras in the game world. This is useful for debugging, but can cause performance issues."))
             Value="@RenderVisionCameras"
             ValueChanged="@(value => RenderVisionCameras = value)" />
+    <Switch Title=@(_("Enable Memory Output for Pedals"))
+            Description=@(_("Allows ETS2LA to control throttle and brake using direct memory editing. This might not work on some systems, but allows for control even while tabbed out of the game. If you enable this and it doesn't work, please report the issue on our Discord server."))
+            Value="@EnableModernOutputForPedals"
+            ValueChanged="@(value => EnableModernOutputForPedals = value)" />
+    @if (MemoryOutputChanged) {
+        <p class="text-sm text-text-accent">@((MarkupString)_("You may need to restart the game to apply this change."))</p>
+    }
 </div>
