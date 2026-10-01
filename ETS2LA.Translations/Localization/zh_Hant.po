@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
 "POT-Creation-Date: 2026-09-29 18:52:56+0300\n"
-"PO-Revision-Date: 2026-09-24 16:57+0000\n"
+"PO-Revision-Date: 2026-10-01 12:53+0000\n"
 "Last-Translator: Lun <lun@ets2la.com>\n"
 "Language-Team: Chinese (Traditional Han script) <http://weblate.ets2la.com/"
 "projects/ets2la/ets2la/zh_Hant/>\n"
@@ -244,7 +244,7 @@ msgstr ""
 "戲</span> 安裝 SDK 才能繼續。"
 
 msgid "Enable Memory Output for Pedals"
-msgstr ""
+msgstr "啟用踏板記憶體輸出"
 
 #, csharp-format
 msgid "Successfully updated plugin with ID {0}."
@@ -1182,7 +1182,7 @@ msgid "Error rendering overlay: {0}"
 msgstr "渲染疊加層時發生錯誤：{0}"
 
 msgid "You may need to restart the game to apply this change."
-msgstr ""
+msgstr "你可能需要重新啟動遊戲才能套用此變更。"
 
 msgid "Off"
 msgstr "關閉"
@@ -1905,7 +1905,7 @@ msgid ""
 msgstr "變更此選項後需要重新啟動 ETS2LA 才能生效。要立即重新啟動嗎？"
 
 msgid "And to those who've decided to remain anonymous!"
-msgstr ""
+msgstr "也感謝所有選擇匿名支持我們的人！"
 
 msgid "Plugin Installer"
 msgstr "插件安裝器"
@@ -1940,6 +1940,9 @@ msgid ""
 "tabbed out of the game. If you enable this and it doesn't work, please "
 "report the issue on our Discord server."
 msgstr ""
+"允許 ETS2LA 透過直接編輯記憶體來控制油門與煞車。此功能在部分系統上可能無法正"
+"常運作，但即使切換到遊戲以外的視窗，仍可進行控制。如果啟用後無法運作，請到我"
+"們的 Discord 伺服器回報問題。"
 
 #, csharp-format
 msgid "Not all dependencies for plugin {0} are installed."
