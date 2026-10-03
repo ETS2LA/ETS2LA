@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-09-29 18:52:56+0300\n"
+"POT-Creation-Date: 2026-10-03 11:56:15+0300\n"
 "PO-Revision-Date: 2026-09-23 04:37+0000\n"
 "Last-Translator: Tema <tema@ets2la.com>\n"
 "Language-Team: Russian <http://weblate.ets2la.com/projects/ets2la/ets2la/ru/"
@@ -134,6 +134,9 @@ msgstr "Не удалось включить зависимость: {0}"
 msgid "Main"
 msgstr "Основное"
 
+msgid "Only Show Official News"
+msgstr ""
+
 #, csharp-format
 msgid ""
 "Version {0} of plugin with ID {1} is not compatible with the current "
@@ -213,6 +216,9 @@ msgstr "Если вы не можете взаимодействовать с о
 
 msgid "The step size for changing the cruise control speed."
 msgstr "Шаг изменения скорости круиз-контроля."
+
+msgid "Press anywhere outside the dialog to close it."
+msgstr ""
 
 msgid "Welcome to ETS2LA!"
 msgstr "Добро пожаловать в ETS2LA!"
@@ -390,6 +396,11 @@ msgstr ""
 "Ассистенты включены: <span class=\"text-text-accent font-bold\">{0}</span>"
 
 msgid ""
+"Only show news articles from official sources, such as the ETS2LA team or "
+"it's developers."
+msgstr ""
+
+msgid ""
 "Memory not available for output, please ensure the game is running and "
 "reinstall the SDK if necessary."
 msgstr ""
@@ -480,6 +491,11 @@ msgstr "Не удалось инициализировать бэкенд ImGui 
 
 msgid "Support Multiple Viewports"
 msgstr "Поддержка нескольких окон"
+
+msgid ""
+"Consider supporting us by becoming a <span class=\"font-bold text-text-"
+"l\">GitHub Sponsor</span> to cover ongoing development and operational costs."
+msgstr ""
 
 msgid "You took a wrong turn!"
 msgstr "Вы свернули не туда!"
@@ -841,22 +857,22 @@ msgstr[2] "Найдено {0} префабов"
 msgid "Pascals"
 msgstr "Паскали"
 
+msgid "You can enable the plugins we installed in a previous step here."
+msgstr "Здесь можно включить плагины, установленные на предыдущем шаге."
+
 #, csharp-format
 msgid "Failed to disable {0}: {1}"
 msgstr "Не удалось отключить {0}: {1}"
 
-msgid "You can enable the plugins we installed in a previous step here."
-msgstr "Здесь можно включить плагины, установленные на предыдущем шаге."
-
 msgid "SDK Installed"
 msgstr "SDK установлен"
+
+msgid "Current Speed"
+msgstr "Текущая скорость"
 
 #, csharp-format
 msgid "Bound control {0} ({1}) to device {2} and control {3}"
 msgstr "Элемент управления {0} ({1}) привязан к устройству {2} и элементу {3}"
-
-msgid "Current Speed"
-msgstr "Текущая скорость"
 
 msgid "miles per hour"
 msgstr "мили в час"
@@ -972,6 +988,9 @@ msgstr ""
 "<span class=\"text-warning\">Предупреждение: экстремальный уровень "
 "использует значительный объём ОЗУ. Ожидайте использования более 10 ГБ.</span>"
 
+msgid "GitHub Sponsorship"
+msgstr ""
+
 msgid "Restart and Continue"
 msgstr "Перезапустить и продолжить"
 
@@ -1003,6 +1022,11 @@ msgstr "У вас установлена последняя версия."
 #, csharp-format
 msgid "Failed to download plugin with ID {0} from {1}. Status code: {2}"
 msgstr "Не удалось скачать плагин с ID {0} из {1}. Код состояния: {2}"
+
+msgid ""
+"Show news articles about plugin updates, be that official or 3rd party "
+"plugins."
+msgstr ""
 
 msgid "No plugins found."
 msgstr "Плагины не найдены."
@@ -1061,6 +1085,10 @@ msgstr[0] "Найден {0} узел"
 msgstr[1] "Найдено {0} узла"
 msgstr[2] "Найдено {0} узлов"
 
+#, csharp-format
+msgid "<span class=\"font-semibold\">{0}</span> until {1}"
+msgstr ""
+
 msgid "Did you remember to restart after installing them?"
 msgstr "Не забыли перезапустить ETS2LA после установки?"
 
@@ -1117,15 +1145,6 @@ msgstr[2] "Получено {0} плагинов из {1}"
 msgid "Metric"
 msgstr "Метрическая система"
 
-msgid ""
-"Like ETS2LA? Consider supporting us by becoming a <span class=\"font-bold "
-"text-text-accent\">GitHub Sponsor</span> to cover ongoing development and "
-"operational costs."
-msgstr ""
-"Нравится ETS2LA? Поддержите проект, став <span class=\"font-bold text-text-"
-"accent\">спонсором на GitHub</span>, чтобы помочь покрыть постоянные расходы "
-"на разработку и обслуживание."
-
 msgid "Error in telemetry update loop."
 msgstr "Ошибка в цикле обновления телеметрии."
 
@@ -1171,6 +1190,10 @@ msgstr "Ошибка в цикле обновления припаркованн
 msgid "The plugin was enabled successfully."
 msgstr "Плагин успешно включён."
 
+#, csharp-format
+msgid "<span class=\"font-semibold\">{0}</span> at {1}"
+msgstr ""
+
 msgid "Normal"
 msgstr "Нормально"
 
@@ -1185,6 +1208,9 @@ msgstr ""
 "При включении оверлей будет переключаться между режимами взаимодействия и "
 "бездействия при нажатии назначенной клавиши. При отключении оверлей будет "
 "интерактивным только пока вы удерживаете назначенную клавишу."
+
+msgid "Latest News"
+msgstr ""
 
 msgid "pounds"
 msgstr "фунты"
@@ -1280,11 +1306,11 @@ msgstr "Не удалось добавить игру"
 msgid "Font file not found at {0}"
 msgstr "Файл шрифта не найден по пути {0}"
 
-msgid "Changelog"
-msgstr "Список изменений"
-
 msgid "No release notes available."
 msgstr "Список изменений недоступен."
+
+msgid "Changelog"
+msgstr "Список изменений"
 
 #, csharp-format
 msgid "Detected a switch to {0}, waiting for its game data to be parsed."
@@ -1726,13 +1752,13 @@ msgid "Error initializing memory mapped file: {0}"
 msgstr "Ошибка инициализации проецируемого в память файла: {0}"
 
 #, csharp-format
-msgid "Failed to load plugin from [gray]{0}[/]: {1}"
-msgstr "Не удалось загрузить плагин из [gray]{0}[/]: {1}"
-
-#, csharp-format
 msgid "Assist Mode: <span class=\"text-text-accent font-bold\">{0}</span>"
 msgstr ""
 "Режим ассистентов: <span class=\"text-text-accent font-bold\">{0}</span>"
+
+#, csharp-format
+msgid "Failed to load plugin from [gray]{0}[/]: {1}"
+msgstr "Не удалось загрузить плагин из [gray]{0}[/]: {1}"
 
 msgid "View Public Telemetry"
 msgstr "Просмотреть общедоступные данные телеметрии"
@@ -2078,6 +2104,12 @@ msgstr "Режим взаимодействия"
 msgid "Adding mod: {0}"
 msgstr "Добавление мода: {0}"
 
+msgid "Like ETS2LA?"
+msgstr ""
+
+msgid "Show Plugin Updates"
+msgstr ""
+
 msgid ""
 "Allows ETS2LA to control throttle and brake using direct memory editing. "
 "This might not work on some systems, but allows for control even while "
@@ -2088,6 +2120,15 @@ msgstr ""
 #, csharp-format
 msgid "Not all dependencies for plugin {0} are installed."
 msgstr "Не все зависимости для плагина {0} установлены."
+
+#~ msgid ""
+#~ "Like ETS2LA? Consider supporting us by becoming a <span class=\"font-bold "
+#~ "text-text-accent\">GitHub Sponsor</span> to cover ongoing development and "
+#~ "operational costs."
+#~ msgstr ""
+#~ "Нравится ETS2LA? Поддержите проект, став <span class=\"font-bold text-"
+#~ "text-accent\">спонсором на GitHub</span>, чтобы помочь покрыть постоянные "
+#~ "расходы на разработку и обслуживание."
 
 #~ msgid ""
 #~ "Disables the overlay entirely. This is useful if you want to use ETS2LA "

@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-09-29 18:52:56+0300\n"
+"POT-Creation-Date: 2026-10-03 11:56:15+0300\n"
 "PO-Revision-Date: 2026-09-24 18:57+0000\n"
 "Last-Translator: Pastel <pastel@ets2la.com>\n"
 "Language-Team: Japanese <http://weblate.ets2la.com/projects/ets2la/ets2la/ja/"
@@ -133,6 +133,9 @@ msgstr "依存関係の有効化に失敗しました: {0}"
 msgid "Main"
 msgstr "メイン"
 
+msgid "Only Show Official News"
+msgstr ""
+
 #, csharp-format
 msgid ""
 "Version {0} of plugin with ID {1} is not compatible with the current "
@@ -212,6 +215,9 @@ msgstr "ウィンドウが操作できない場合は CTRL+R キーを押して�
 
 msgid "The step size for changing the cruise control speed."
 msgstr "クルーズコントロールの速度を変更する際の刻み幅です。"
+
+msgid "Press anywhere outside the dialog to close it."
+msgstr ""
 
 msgid "Welcome to ETS2LA!"
 msgstr "ETS2LAへようこそ！"
@@ -389,6 +395,11 @@ msgid "Assists Enabled: <span class=\"text-text-accent font-bold\">{0}</span>"
 msgstr "アシスト有効：<span class=\"text-text-accent font-bold\">{0}</span>"
 
 msgid ""
+"Only show news articles from official sources, such as the ETS2LA team or "
+"it's developers."
+msgstr ""
+
+msgid ""
 "Memory not available for output, please ensure the game is running and "
 "reinstall the SDK if necessary."
 msgstr ""
@@ -483,6 +494,11 @@ msgstr "ImGui Impl OpenGL3 の初期化に失敗しました"
 
 msgid "Support Multiple Viewports"
 msgstr "複数のビューポートに対応"
+
+msgid ""
+"Consider supporting us by becoming a <span class=\"font-bold text-text-"
+"l\">GitHub Sponsor</span> to cover ongoing development and operational costs."
+msgstr ""
 
 msgid "You took a wrong turn!"
 msgstr "道を間違えました！"
@@ -837,23 +853,23 @@ msgstr[0] "{0}個のプレハブが見つかりました"
 msgid "Pascals"
 msgstr "パスカル"
 
+msgid "You can enable the plugins we installed in a previous step here."
+msgstr "ここで、前の手順でインストールしたプラグインを有効にできます。"
+
 #, csharp-format
 msgid "Failed to disable {0}: {1}"
 msgstr "{0} の無効化に失敗しました: {1}"
 
-msgid "You can enable the plugins we installed in a previous step here."
-msgstr "ここで、前の手順でインストールしたプラグインを有効にできます。"
-
 msgid "SDK Installed"
 msgstr "SDKがインストールされました"
+
+msgid "Current Speed"
+msgstr "現在の速度"
 
 #, csharp-format
 msgid "Bound control {0} ({1}) to device {2} and control {3}"
 msgstr ""
 "コントロール {0} ({1}) をデバイス {2} およびコントロール {3} に紐付けました"
-
-msgid "Current Speed"
-msgstr "現在の速度"
 
 msgid "miles per hour"
 msgstr "マイル毎時"
@@ -972,6 +988,9 @@ msgstr ""
 "います。<span class=\"text-warning\">警告：Extremeは大量のRAMを消費するため、"
 "10GB以上の使用が見込まれます。</span>"
 
+msgid "GitHub Sponsorship"
+msgstr ""
+
 msgid "Restart and Continue"
 msgstr "再起動して続行"
 
@@ -1007,6 +1026,11 @@ msgid "Failed to download plugin with ID {0} from {1}. Status code: {2}"
 msgstr ""
 "ID {0} のプラグインを {1} からダウンロードできませんでした。ステータスコー"
 "ド: {2}"
+
+msgid ""
+"Show news articles about plugin updates, be that official or 3rd party "
+"plugins."
+msgstr ""
 
 msgid "No plugins found."
 msgstr "プラグインが見つかりませんでした。"
@@ -1063,6 +1087,10 @@ msgid "found {0} node"
 msgid_plural "found {0} nodes"
 msgstr[0] "{0} 個のノードを検出"
 
+#, csharp-format
+msgid "<span class=\"font-semibold\">{0}</span> until {1}"
+msgstr ""
+
 msgid "Did you remember to restart after installing them?"
 msgstr "インストール後に再起動しましたか?"
 
@@ -1116,15 +1144,6 @@ msgstr[0] "{1} から {0} 個のプラグインを取得しました"
 msgid "Metric"
 msgstr "メートル法"
 
-msgid ""
-"Like ETS2LA? Consider supporting us by becoming a <span class=\"font-bold "
-"text-text-accent\">GitHub Sponsor</span> to cover ongoing development and "
-"operational costs."
-msgstr ""
-"ETS2LAがお好きですか？継続的な開発や運営費用を賄うため、<span class=\"font-"
-"bold text-text-accent\">GitHubスポンサー</span>になって、私たちを支援していた"
-"だけませんか。"
-
 msgid "Error in telemetry update loop."
 msgstr "テレメトリ更新処理でエラーが発生しました。"
 
@@ -1170,6 +1189,10 @@ msgstr "駐車車両の更新処理でエラーが発生しました。"
 msgid "The plugin was enabled successfully."
 msgstr "プラグインが正常に有効化されました。"
 
+#, csharp-format
+msgid "<span class=\"font-semibold\">{0}</span> at {1}"
+msgstr ""
+
 msgid "Normal"
 msgstr "標準"
 
@@ -1184,6 +1207,9 @@ msgstr ""
 "有効にすると、キー割り当てを押すたびにオーバーレイが操作モードと非操作モード"
 "で切り替わります。無効にすると、キー割り当てを押している間だけオーバーレイを"
 "操作できます。"
+
+msgid "Latest News"
+msgstr ""
 
 msgid "pounds"
 msgstr "ポンド"
@@ -1277,11 +1303,11 @@ msgstr "ゲームの追加に失敗しました"
 msgid "Font file not found at {0}"
 msgstr "フォントファイルが {0} に見つかりません"
 
-msgid "Changelog"
-msgstr "変更履歴"
-
 msgid "No release notes available."
 msgstr "リリースノートはありません。"
+
+msgid "Changelog"
+msgstr "変更履歴"
 
 #, csharp-format
 msgid "Detected a switch to {0}, waiting for its game data to be parsed."
@@ -1725,12 +1751,12 @@ msgid "Error initializing memory mapped file: {0}"
 msgstr "メモリマップファイルの初期化中にエラーが発生しました: {0}"
 
 #, csharp-format
-msgid "Failed to load plugin from [gray]{0}[/]: {1}"
-msgstr "プラグインを [gray]{0}[/] から読み込めませんでした: {1}"
-
-#, csharp-format
 msgid "Assist Mode: <span class=\"text-text-accent font-bold\">{0}</span>"
 msgstr "アシストモード: <span class=\"text-text-accent font-bold\">{0}</span>"
+
+#, csharp-format
+msgid "Failed to load plugin from [gray]{0}[/]: {1}"
+msgstr "プラグインを [gray]{0}[/] から読み込めませんでした: {1}"
 
 msgid "View Public Telemetry"
 msgstr "公開テレメトリを表示"
@@ -2074,6 +2100,12 @@ msgstr "インタラクションモード"
 msgid "Adding mod: {0}"
 msgstr "MODを追加: {0}"
 
+msgid "Like ETS2LA?"
+msgstr ""
+
+msgid "Show Plugin Updates"
+msgstr ""
+
 msgid ""
 "Allows ETS2LA to control throttle and brake using direct memory editing. "
 "This might not work on some systems, but allows for control even while "
@@ -2084,6 +2116,15 @@ msgstr ""
 #, csharp-format
 msgid "Not all dependencies for plugin {0} are installed."
 msgstr "プラグイン {0} に必要な依存関係がすべてインストールされていません。"
+
+#~ msgid ""
+#~ "Like ETS2LA? Consider supporting us by becoming a <span class=\"font-bold "
+#~ "text-text-accent\">GitHub Sponsor</span> to cover ongoing development and "
+#~ "operational costs."
+#~ msgstr ""
+#~ "ETS2LAがお好きですか？継続的な開発や運営費用を賄うため、<span "
+#~ "class=\"font-bold text-text-accent\">GitHubスポンサー</span>になって、私た"
+#~ "ちを支援していただけませんか。"
 
 #~ msgid ""
 #~ "Increases the current value (e.g. target speed) by one step. Without any "

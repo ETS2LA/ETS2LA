@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-09-29 18:52:56+0300\n"
+"POT-Creation-Date: 2026-10-03 11:56:15+0300\n"
 "PO-Revision-Date: 2026-08-26 00:24+0000\n"
 "Last-Translator: svllyu <svllyu@ets2la.com>\n"
 "Language-Team: Estonian <http://weblate.ets2la.com/projects/ets2la/ets2la/et/"
@@ -120,6 +120,9 @@ msgstr ""
 msgid "Main"
 msgstr "Peamine"
 
+msgid "Only Show Official News"
+msgstr ""
+
 #, csharp-format
 msgid ""
 "Version {0} of plugin with ID {1} is not compatible with the current "
@@ -192,6 +195,9 @@ msgid "If you can't interact with the Window, press CTRL+R."
 msgstr ""
 
 msgid "The step size for changing the cruise control speed."
+msgstr ""
+
+msgid "Press anywhere outside the dialog to close it."
 msgstr ""
 
 msgid "Welcome to ETS2LA!"
@@ -349,6 +355,11 @@ msgid "Assists Enabled: <span class=\"text-text-accent font-bold\">{0}</span>"
 msgstr ""
 
 msgid ""
+"Only show news articles from official sources, such as the ETS2LA team or "
+"it's developers."
+msgstr ""
+
+msgid ""
 "Memory not available for output, please ensure the game is running and "
 "reinstall the SDK if necessary."
 msgstr ""
@@ -434,6 +445,11 @@ msgid "Failed to init ImGui Impl OpenGL3"
 msgstr ""
 
 msgid "Support Multiple Viewports"
+msgstr ""
+
+msgid ""
+"Consider supporting us by becoming a <span class=\"font-bold text-text-"
+"l\">GitHub Sponsor</span> to cover ongoing development and operational costs."
 msgstr ""
 
 msgid "You took a wrong turn!"
@@ -760,21 +776,21 @@ msgstr[1] ""
 msgid "Pascals"
 msgstr ""
 
-#, csharp-format
-msgid "Failed to disable {0}: {1}"
+msgid "You can enable the plugins we installed in a previous step here."
 msgstr ""
 
-msgid "You can enable the plugins we installed in a previous step here."
+#, csharp-format
+msgid "Failed to disable {0}: {1}"
 msgstr ""
 
 msgid "SDK Installed"
 msgstr ""
 
-#, csharp-format
-msgid "Bound control {0} ({1}) to device {2} and control {3}"
+msgid "Current Speed"
 msgstr ""
 
-msgid "Current Speed"
+#, csharp-format
+msgid "Bound control {0} ({1}) to device {2} and control {3}"
 msgstr ""
 
 msgid "miles per hour"
@@ -877,6 +893,9 @@ msgid ""
 "expect over 10GB of usage.</span>"
 msgstr ""
 
+msgid "GitHub Sponsorship"
+msgstr ""
+
 msgid "Restart and Continue"
 msgstr ""
 
@@ -904,6 +923,11 @@ msgstr ""
 
 #, csharp-format
 msgid "Failed to download plugin with ID {0} from {1}. Status code: {2}"
+msgstr ""
+
+msgid ""
+"Show news articles about plugin updates, be that official or 3rd party "
+"plugins."
 msgstr ""
 
 msgid "No plugins found."
@@ -960,6 +984,10 @@ msgid_plural "found {0} nodes"
 msgstr[0] "leiti {0} sõlme"
 msgstr[1] "leiti {0} sõlmi"
 
+#, csharp-format
+msgid "<span class=\"font-semibold\">{0}</span> until {1}"
+msgstr ""
+
 msgid "Did you remember to restart after installing them?"
 msgstr ""
 
@@ -1008,12 +1036,6 @@ msgstr[1] ""
 msgid "Metric"
 msgstr ""
 
-msgid ""
-"Like ETS2LA? Consider supporting us by becoming a <span class=\"font-bold "
-"text-text-accent\">GitHub Sponsor</span> to cover ongoing development and "
-"operational costs."
-msgstr ""
-
 msgid "Error in telemetry update loop."
 msgstr ""
 
@@ -1057,6 +1079,10 @@ msgstr ""
 msgid "The plugin was enabled successfully."
 msgstr ""
 
+#, csharp-format
+msgid "<span class=\"font-semibold\">{0}</span> at {1}"
+msgstr ""
+
 msgid "Normal"
 msgstr ""
 
@@ -1067,6 +1093,9 @@ msgid ""
 "When enabled, the overlay will toggle between interaction and non-"
 "interaction mode when you press it's keybind. When disabled, the overlay "
 "will only be interactive while you hold down the keybind."
+msgstr ""
+
+msgid "Latest News"
 msgstr ""
 
 msgid "pounds"
@@ -1155,10 +1184,10 @@ msgstr "Mängu lisamine ebaõnnestus"
 msgid "Font file not found at {0}"
 msgstr ""
 
-msgid "Changelog"
+msgid "No release notes available."
 msgstr ""
 
-msgid "No release notes available."
+msgid "Changelog"
 msgstr ""
 
 #, csharp-format
@@ -1555,11 +1584,11 @@ msgid "Error initializing memory mapped file: {0}"
 msgstr ""
 
 #, csharp-format
-msgid "Failed to load plugin from [gray]{0}[/]: {1}"
+msgid "Assist Mode: <span class=\"text-text-accent font-bold\">{0}</span>"
 msgstr ""
 
 #, csharp-format
-msgid "Assist Mode: <span class=\"text-text-accent font-bold\">{0}</span>"
+msgid "Failed to load plugin from [gray]{0}[/]: {1}"
 msgstr ""
 
 msgid "View Public Telemetry"
@@ -1877,6 +1906,12 @@ msgstr "Puudutus Mode"
 
 #, csharp-format
 msgid "Adding mod: {0}"
+msgstr ""
+
+msgid "Like ETS2LA?"
+msgstr ""
+
+msgid "Show Plugin Updates"
 msgstr ""
 
 msgid ""

@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-09-29 18:52:56+0300\n"
+"POT-Creation-Date: 2026-10-03 11:56:15+0300\n"
 "PO-Revision-Date: 2026-09-19 12:33+0000\n"
 "Last-Translator: ABOY <aboy@ets2la.com>\n"
 "Language-Team: German <http://weblate.ets2la.com/projects/ets2la/ets2la/de/"
@@ -133,6 +133,9 @@ msgstr "Fehlgeschlagenes Aktivieren der Abhängigkeit: {0}"
 msgid "Main"
 msgstr "Haupt"
 
+msgid "Only Show Official News"
+msgstr ""
+
 #, csharp-format
 msgid ""
 "Version {0} of plugin with ID {1} is not compatible with the current "
@@ -208,6 +211,9 @@ msgstr "Wenn du nicht mit dem Fesnter interagieren kannst, drücke STRG+R."
 
 msgid "The step size for changing the cruise control speed."
 msgstr "Die Schrittweite zur Änderung der Cruise-Control-Geschwindigkeit."
+
+msgid "Press anywhere outside the dialog to close it."
+msgstr ""
 
 msgid "Welcome to ETS2LA!"
 msgstr "Willkommen zu ETS2LA!"
@@ -382,6 +388,11 @@ msgid "Assists Enabled: <span class=\"text-text-accent font-bold\">{0}</span>"
 msgstr ""
 
 msgid ""
+"Only show news articles from official sources, such as the ETS2LA team or "
+"it's developers."
+msgstr ""
+
+msgid ""
 "Memory not available for output, please ensure the game is running and "
 "reinstall the SDK if necessary."
 msgstr ""
@@ -471,6 +482,11 @@ msgstr "Fehler beim Initialisieren von ImGui Impl OpenGL3"
 
 msgid "Support Multiple Viewports"
 msgstr "Mehrere Ansichten unterstützen"
+
+msgid ""
+"Consider supporting us by becoming a <span class=\"font-bold text-text-"
+"l\">GitHub Sponsor</span> to cover ongoing development and operational costs."
+msgstr ""
 
 msgid "You took a wrong turn!"
 msgstr "Du hast die falsche Abbiegung genommen!"
@@ -827,22 +843,22 @@ msgstr[1] "{0} Prefabs gefunden"
 msgid "Pascals"
 msgstr "Pascal"
 
+msgid "You can enable the plugins we installed in a previous step here."
+msgstr "Hier kannst du die Plugins von vorher aktivieren."
+
 #, csharp-format
 msgid "Failed to disable {0}: {1}"
 msgstr "Fehlgeschlagenes Deaktivieren von {0}: {1}"
 
-msgid "You can enable the plugins we installed in a previous step here."
-msgstr "Hier kannst du die Plugins von vorher aktivieren."
-
 msgid "SDK Installed"
 msgstr "SDK installiert"
+
+msgid "Current Speed"
+msgstr "Aktuelle Geschwindigkeit"
 
 #, csharp-format
 msgid "Bound control {0} ({1}) to device {2} and control {3}"
 msgstr "Steuerung {0} ({1}) wurde an Gerät {2} und Steuerung {3} gebunden"
-
-msgid "Current Speed"
-msgstr "Aktuelle Geschwindigkeit"
 
 msgid "miles per hour"
 msgstr "Meilen pro Stunde"
@@ -965,6 +981,9 @@ msgstr ""
 "verbraucht erhebliche Mengen an RAM, erwarten Sie eine Nutzung von über 10 "
 "GB.</span>"
 
+msgid "GitHub Sponsorship"
+msgstr ""
+
 #, fuzzy
 msgid "Restart and Continue"
 msgstr "Neustarten und weitermachen"
@@ -999,6 +1018,11 @@ msgid "Failed to download plugin with ID {0} from {1}. Status code: {2}"
 msgstr ""
 "Fehlgeschlagenes Herunterladen des Plugins mit der ID {0} von {1}. "
 "Statuscode: {2}"
+
+msgid ""
+"Show news articles about plugin updates, be that official or 3rd party "
+"plugins."
+msgstr ""
 
 msgid "No plugins found."
 msgstr "Keine Plugins gefunden."
@@ -1057,6 +1081,10 @@ msgid_plural "found {0} nodes"
 msgstr[0] "{0} Punkt gefunden"
 msgstr[1] "{0} Punkte gefunden"
 
+#, csharp-format
+msgid "<span class=\"font-semibold\">{0}</span> until {1}"
+msgstr ""
+
 msgid "Did you remember to restart after installing them?"
 msgstr "Hast du dran gedacht nach dem Installieren neu zu starten?"
 
@@ -1112,12 +1140,6 @@ msgstr[1] "{0} Plugins von {1} abgerufen"
 msgid "Metric"
 msgstr "Metrisch"
 
-msgid ""
-"Like ETS2LA? Consider supporting us by becoming a <span class=\"font-bold "
-"text-text-accent\">GitHub Sponsor</span> to cover ongoing development and "
-"operational costs."
-msgstr ""
-
 msgid "Error in telemetry update loop."
 msgstr "Fehler im Telemetrie-Aktualisierungsloop."
 
@@ -1163,6 +1185,10 @@ msgstr "Fehler in der Parkfahrzeug-Aktualisierungsloop."
 msgid "The plugin was enabled successfully."
 msgstr "Das Plugin wurde erfolgreich aktiviert."
 
+#, csharp-format
+msgid "<span class=\"font-semibold\">{0}</span> at {1}"
+msgstr ""
+
 msgid "Normal"
 msgstr "Normal"
 
@@ -1173,6 +1199,9 @@ msgid ""
 "When enabled, the overlay will toggle between interaction and non-"
 "interaction mode when you press it's keybind. When disabled, the overlay "
 "will only be interactive while you hold down the keybind."
+msgstr ""
+
+msgid "Latest News"
 msgstr ""
 
 msgid "pounds"
@@ -1268,11 +1297,11 @@ msgstr "Fehlgeschlagen beim Hinzufügen des Spiels"
 msgid "Font file not found at {0}"
 msgstr "Schriftdatei unter {0} nicht gefunden"
 
-msgid "Changelog"
-msgstr "Änderungsprotokoll"
-
 msgid "No release notes available."
 msgstr "Es liegen keine Versionshinweise vor."
+
+msgid "Changelog"
+msgstr "Änderungsprotokoll"
 
 #, csharp-format
 msgid "Detected a switch to {0}, waiting for its game data to be parsed."
@@ -1708,12 +1737,12 @@ msgid "Error initializing memory mapped file: {0}"
 msgstr "Fehler beim Initialisieren der Speicherabbilddatei: {0}"
 
 #, csharp-format
-msgid "Failed to load plugin from [gray]{0}[/]: {1}"
-msgstr "Fehler beim Laden des Plugins von [gray]{0}[/]: {1}"
-
-#, csharp-format
 msgid "Assist Mode: <span class=\"text-text-accent font-bold\">{0}</span>"
 msgstr ""
+
+#, csharp-format
+msgid "Failed to load plugin from [gray]{0}[/]: {1}"
+msgstr "Fehler beim Laden des Plugins von [gray]{0}[/]: {1}"
 
 msgid "View Public Telemetry"
 msgstr "Öffentliche Telemetrie anzeigen"
@@ -2056,6 +2085,12 @@ msgstr "Interaktionsmodus"
 #, csharp-format
 msgid "Adding mod: {0}"
 msgstr "Füge Mod hinzu: {0}"
+
+msgid "Like ETS2LA?"
+msgstr ""
+
+msgid "Show Plugin Updates"
+msgstr ""
 
 msgid ""
 "Allows ETS2LA to control throttle and brake using direct memory editing. "

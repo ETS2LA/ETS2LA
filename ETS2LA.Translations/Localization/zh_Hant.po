@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-09-29 18:52:56+0300\n"
+"POT-Creation-Date: 2026-10-03 11:56:15+0300\n"
 "PO-Revision-Date: 2026-10-01 12:53+0000\n"
 "Last-Translator: Lun <lun@ets2la.com>\n"
 "Language-Team: Chinese (Traditional Han script) <http://weblate.ets2la.com/"
@@ -128,6 +128,9 @@ msgstr "依賴項目啟用失敗：{0}"
 msgid "Main"
 msgstr "主要"
 
+msgid "Only Show Official News"
+msgstr ""
+
 #, csharp-format
 msgid ""
 "Version {0} of plugin with ID {1} is not compatible with the current "
@@ -200,6 +203,9 @@ msgstr "如果無法操作視窗，請按 CTRL+R。"
 
 msgid "The step size for changing the cruise control speed."
 msgstr "調整巡航速度時，每次變更的級距。"
+
+msgid "Press anywhere outside the dialog to close it."
+msgstr ""
 
 msgid "Welcome to ETS2LA!"
 msgstr "歡迎使用 ETS2LA！"
@@ -371,6 +377,11 @@ msgstr ""
 "輔助功能啟用狀態：<span class=\"text-text-accent font-bold\">{0}</span>"
 
 msgid ""
+"Only show news articles from official sources, such as the ETS2LA team or "
+"it's developers."
+msgstr ""
+
+msgid ""
 "Memory not available for output, please ensure the game is running and "
 "reinstall the SDK if necessary."
 msgstr "用於輸出的記憶體無法使用，請確認遊戲正在執行，必要時請重新安裝 SDK。"
@@ -457,6 +468,11 @@ msgstr "ImGui OpenGL3 實作初始化失敗"
 
 msgid "Support Multiple Viewports"
 msgstr "支援多螢幕顯示"
+
+msgid ""
+"Consider supporting us by becoming a <span class=\"font-bold text-text-"
+"l\">GitHub Sponsor</span> to cover ongoing development and operational costs."
+msgstr ""
 
 msgid "You took a wrong turn!"
 msgstr "你走錯路了！"
@@ -791,22 +807,22 @@ msgstr[0] "找到 {0} 個預製件"
 msgid "Pascals"
 msgstr "帕斯卡"
 
+msgid "You can enable the plugins we installed in a previous step here."
+msgstr "你可以在這裡啟用我們在先前步驟中安裝的插件。"
+
 #, csharp-format
 msgid "Failed to disable {0}: {1}"
 msgstr "停用 {0} 失敗：{1}"
 
-msgid "You can enable the plugins we installed in a previous step here."
-msgstr "你可以在這裡啟用我們在先前步驟中安裝的插件。"
-
 msgid "SDK Installed"
 msgstr "SDK 已安裝"
+
+msgid "Current Speed"
+msgstr "目前速度"
 
 #, csharp-format
 msgid "Bound control {0} ({1}) to device {2} and control {3}"
 msgstr "已將控制項 {0}（{1}）綁定至裝置 {2} 的控制項 {3}"
-
-msgid "Current Speed"
-msgstr "目前速度"
 
 msgid "miles per hour"
 msgstr "英里每小時"
@@ -918,6 +934,9 @@ msgstr ""
 "此設定包含所有可用資料，其中大部分為重複資訊。<span class=\"text-warning\">警"
 "告：「極高」會使用大量記憶體，預期使用量將超過 10GB。</span>"
 
+msgid "GitHub Sponsorship"
+msgstr ""
+
 msgid "Restart and Continue"
 msgstr "重新啟動並繼續"
 
@@ -947,6 +966,11 @@ msgstr "你目前使用的是最新版本。"
 #, csharp-format
 msgid "Failed to download plugin with ID {0} from {1}. Status code: {2}"
 msgstr "從 {1} 下載 ID 為 {0} 的插件失敗。狀態碼：{2}"
+
+msgid ""
+"Show news articles about plugin updates, be that official or 3rd party "
+"plugins."
+msgstr ""
 
 msgid "No plugins found."
 msgstr "找不到任何插件。"
@@ -998,6 +1022,10 @@ msgid "found {0} node"
 msgid_plural "found {0} nodes"
 msgstr[0] "找到 {0} 個節點"
 
+#, csharp-format
+msgid "<span class=\"font-semibold\">{0}</span> until {1}"
+msgstr ""
+
 msgid "Did you remember to restart after installing them?"
 msgstr "安裝後有記得重新啟動嗎？"
 
@@ -1047,14 +1075,6 @@ msgstr[0] "已從 {1} 取得 {0} 個插件"
 msgid "Metric"
 msgstr "公制"
 
-msgid ""
-"Like ETS2LA? Consider supporting us by becoming a <span class=\"font-bold "
-"text-text-accent\">GitHub Sponsor</span> to cover ongoing development and "
-"operational costs."
-msgstr ""
-"喜歡 ETS2LA 嗎？可以考慮成為 <span class=\"font-bold text-text-"
-"accent\">GitHub 贊助者</span> 來支持我們，以協助支付持續開發與營運的成本。"
-
 msgid "Error in telemetry update loop."
 msgstr "遙測更新時發生錯誤。"
 
@@ -1098,6 +1118,10 @@ msgstr "停放車輛更新時發生錯誤。"
 msgid "The plugin was enabled successfully."
 msgstr "插件已成功啟用。"
 
+#, csharp-format
+msgid "<span class=\"font-semibold\">{0}</span> at {1}"
+msgstr ""
+
 msgid "Normal"
 msgstr "標準"
 
@@ -1111,6 +1135,9 @@ msgid ""
 msgstr ""
 "啟用後，按下對應按鍵時，疊加層會在互動模式與非互動模式之間切換。停用後，只有"
 "在按住該按鍵時，才能與疊加層互動。"
+
+msgid "Latest News"
+msgstr ""
 
 msgid "pounds"
 msgstr "磅"
@@ -1200,11 +1227,11 @@ msgstr "遊戲新增失敗"
 msgid "Font file not found at {0}"
 msgstr "找不到字型檔案：{0}"
 
-msgid "Changelog"
-msgstr "更新日誌"
-
 msgid "No release notes available."
 msgstr "沒有可用的版本說明。"
+
+msgid "Changelog"
+msgstr "更新日誌"
 
 #, csharp-format
 msgid "Detected a switch to {0}, waiting for its game data to be parsed."
@@ -1607,12 +1634,12 @@ msgid "Error initializing memory mapped file: {0}"
 msgstr "初始化記憶體對應檔案時發生錯誤：{0}"
 
 #, csharp-format
-msgid "Failed to load plugin from [gray]{0}[/]: {1}"
-msgstr "從 [gray]{0}[/] 載入插件失敗：{1}"
-
-#, csharp-format
 msgid "Assist Mode: <span class=\"text-text-accent font-bold\">{0}</span>"
 msgstr "輔助模式：<span class=\"text-text-accent font-bold\">{0}</span>"
+
+#, csharp-format
+msgid "Failed to load plugin from [gray]{0}[/]: {1}"
+msgstr "從 [gray]{0}[/] 載入插件失敗：{1}"
 
 msgid "View Public Telemetry"
 msgstr "查看公開遙測資料"
@@ -1934,6 +1961,12 @@ msgstr "互動模式"
 msgid "Adding mod: {0}"
 msgstr "正在新增模組：{0}"
 
+msgid "Like ETS2LA?"
+msgstr ""
+
+msgid "Show Plugin Updates"
+msgstr ""
+
 msgid ""
 "Allows ETS2LA to control throttle and brake using direct memory editing. "
 "This might not work on some systems, but allows for control even while "
@@ -1947,6 +1980,14 @@ msgstr ""
 #, csharp-format
 msgid "Not all dependencies for plugin {0} are installed."
 msgstr "插件 {0} 的依賴項目尚未全部安裝。"
+
+#~ msgid ""
+#~ "Like ETS2LA? Consider supporting us by becoming a <span class=\"font-bold "
+#~ "text-text-accent\">GitHub Sponsor</span> to cover ongoing development and "
+#~ "operational costs."
+#~ msgstr ""
+#~ "喜歡 ETS2LA 嗎？可以考慮成為 <span class=\"font-bold text-text-"
+#~ "accent\">GitHub 贊助者</span> 來支持我們，以協助支付持續開發與營運的成本。"
 
 #~ msgid ""
 #~ "Disables the overlay entirely. This is useful if you want to use ETS2LA "

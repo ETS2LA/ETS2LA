@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-09-29 18:52:56+0300\n"
+"POT-Creation-Date: 2026-10-03 11:56:15+0300\n"
 "PO-Revision-Date: 2026-09-04 20:02+0000\n"
 "Last-Translator: Kivanc <kivanc@ets2la.com>\n"
 "Language-Team: Turkish <http://weblate.ets2la.com/projects/ets2la/ets2la/tr/"
@@ -132,6 +132,9 @@ msgstr "Bağımlılık etkinleştirilemedi: {0}"
 msgid "Main"
 msgstr "Ana"
 
+msgid "Only Show Official News"
+msgstr ""
+
 #, csharp-format
 msgid ""
 "Version {0} of plugin with ID {1} is not compatible with the current "
@@ -206,6 +209,9 @@ msgid "If you can't interact with the Window, press CTRL+R."
 msgstr "Pencereyle etkileşim kuramıyorsanız, CTRL+R tuşlarına basın."
 
 msgid "The step size for changing the cruise control speed."
+msgstr ""
+
+msgid "Press anywhere outside the dialog to close it."
 msgstr ""
 
 msgid "Welcome to ETS2LA!"
@@ -384,6 +390,11 @@ msgid "Assists Enabled: <span class=\"text-text-accent font-bold\">{0}</span>"
 msgstr ""
 
 msgid ""
+"Only show news articles from official sources, such as the ETS2LA team or "
+"it's developers."
+msgstr ""
+
+msgid ""
 "Memory not available for output, please ensure the game is running and "
 "reinstall the SDK if necessary."
 msgstr ""
@@ -473,6 +484,11 @@ msgid "Failed to init ImGui Impl OpenGL3"
 msgstr "ImGui Impl OpenGL3 başlatılamadı"
 
 msgid "Support Multiple Viewports"
+msgstr ""
+
+msgid ""
+"Consider supporting us by becoming a <span class=\"font-bold text-text-"
+"l\">GitHub Sponsor</span> to cover ongoing development and operational costs."
 msgstr ""
 
 msgid "You took a wrong turn!"
@@ -817,22 +833,22 @@ msgstr[1] ""
 msgid "Pascals"
 msgstr ""
 
+msgid "You can enable the plugins we installed in a previous step here."
+msgstr "Bir önceki adımda yüklenen eklentileri buradan etkinleştirebilirsiniz."
+
 #, csharp-format
 msgid "Failed to disable {0}: {1}"
 msgstr "{0} devre dışı bırakılamadı: {1}"
 
-msgid "You can enable the plugins we installed in a previous step here."
-msgstr "Bir önceki adımda yüklenen eklentileri buradan etkinleştirebilirsiniz."
-
 msgid "SDK Installed"
 msgstr "SDK Yüklendi"
+
+msgid "Current Speed"
+msgstr "Mevcut Hız"
 
 #, csharp-format
 msgid "Bound control {0} ({1}) to device {2} and control {3}"
 msgstr ""
-
-msgid "Current Speed"
-msgstr "Mevcut Hız"
 
 msgid "miles per hour"
 msgstr "mil/saat"
@@ -941,6 +957,9 @@ msgid ""
 "expect over 10GB of usage.</span>"
 msgstr ""
 
+msgid "GitHub Sponsorship"
+msgstr ""
+
 msgid "Restart and Continue"
 msgstr "Yeniden Başlat ve Devam Et"
 
@@ -971,6 +990,11 @@ msgstr "En son sürümü kullanıyorsunuz."
 
 #, csharp-format
 msgid "Failed to download plugin with ID {0} from {1}. Status code: {2}"
+msgstr ""
+
+msgid ""
+"Show news articles about plugin updates, be that official or 3rd party "
+"plugins."
 msgstr ""
 
 msgid "No plugins found."
@@ -1023,6 +1047,10 @@ msgid "found {0} node"
 msgid_plural "found {0} nodes"
 msgstr[0] "{0} node bulundu"
 msgstr[1] "found {0} node"
+
+#, csharp-format
+msgid "<span class=\"font-semibold\">{0}</span> until {1}"
+msgstr ""
 
 msgid "Did you remember to restart after installing them?"
 msgstr ""
@@ -1078,12 +1106,6 @@ msgstr[1] ""
 msgid "Metric"
 msgstr "Metrik"
 
-msgid ""
-"Like ETS2LA? Consider supporting us by becoming a <span class=\"font-bold "
-"text-text-accent\">GitHub Sponsor</span> to cover ongoing development and "
-"operational costs."
-msgstr ""
-
 msgid "Error in telemetry update loop."
 msgstr "Telemetri güncelleme döngüsünde hata."
 
@@ -1129,6 +1151,10 @@ msgstr "Park halindeki araçların güncelleme döngüsünde hata."
 msgid "The plugin was enabled successfully."
 msgstr ""
 
+#, csharp-format
+msgid "<span class=\"font-semibold\">{0}</span> at {1}"
+msgstr ""
+
 msgid "Normal"
 msgstr "Normal"
 
@@ -1139,6 +1165,9 @@ msgid ""
 "When enabled, the overlay will toggle between interaction and non-"
 "interaction mode when you press it's keybind. When disabled, the overlay "
 "will only be interactive while you hold down the keybind."
+msgstr ""
+
+msgid "Latest News"
 msgstr ""
 
 msgid "pounds"
@@ -1231,11 +1260,11 @@ msgstr "Oyun eklenemedi"
 msgid "Font file not found at {0}"
 msgstr "Yazı tipi dosyası şu konumda bulunamadı: {0}"
 
-msgid "Changelog"
-msgstr "Değişiklik Günlüğü"
-
 msgid "No release notes available."
 msgstr "Sürüm notları mevcut değil."
+
+msgid "Changelog"
+msgstr "Değişiklik Günlüğü"
 
 #, csharp-format
 msgid "Detected a switch to {0}, waiting for its game data to be parsed."
@@ -1645,11 +1674,11 @@ msgid "Error initializing memory mapped file: {0}"
 msgstr ""
 
 #, csharp-format
-msgid "Failed to load plugin from [gray]{0}[/]: {1}"
+msgid "Assist Mode: <span class=\"text-text-accent font-bold\">{0}</span>"
 msgstr ""
 
 #, csharp-format
-msgid "Assist Mode: <span class=\"text-text-accent font-bold\">{0}</span>"
+msgid "Failed to load plugin from [gray]{0}[/]: {1}"
 msgstr ""
 
 msgid "View Public Telemetry"
@@ -1964,6 +1993,12 @@ msgstr "Etkileşim Modu"
 
 #, csharp-format
 msgid "Adding mod: {0}"
+msgstr ""
+
+msgid "Like ETS2LA?"
+msgstr ""
+
+msgid "Show Plugin Updates"
 msgstr ""
 
 msgid ""

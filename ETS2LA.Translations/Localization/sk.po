@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-09-29 18:52:56+0300\n"
+"POT-Creation-Date: 2026-10-03 11:56:15+0300\n"
 "PO-Revision-Date: 2026-09-24 16:57+0000\n"
 "Last-Translator: Ketchup1812 <ketchup1812@ets2la.com>\n"
 "Language-Team: Slovak <http://weblate.ets2la.com/projects/ets2la/ets2la/sk/"
@@ -133,6 +133,9 @@ msgstr "Nepodarilo sa aktivovať závislosť: {0}"
 msgid "Main"
 msgstr "Hlavné"
 
+msgid "Only Show Official News"
+msgstr ""
+
 #, csharp-format
 msgid ""
 "Version {0} of plugin with ID {1} is not compatible with the current "
@@ -214,6 +217,9 @@ msgstr "Ak nemôžete interagovať s oknom, stlačte klávesovú skratku CTRL+R.
 
 msgid "The step size for changing the cruise control speed."
 msgstr "Veľkosť kroku pri zmene rýchlosti tempomatu."
+
+msgid "Press anywhere outside the dialog to close it."
+msgstr ""
 
 msgid "Welcome to ETS2LA!"
 msgstr "Vitajte v ETS2LA!"
@@ -392,6 +398,11 @@ msgstr ""
 "Asisnenti zapnutý: <span class=\"text-text-accent font-bold\">{0}</span>"
 
 msgid ""
+"Only show news articles from official sources, such as the ETS2LA team or "
+"it's developers."
+msgstr ""
+
+msgid ""
 "Memory not available for output, please ensure the game is running and "
 "reinstall the SDK if necessary."
 msgstr ""
@@ -484,6 +495,11 @@ msgstr "Nepodarilo sa inicializovať ImGui Impl OpenGL3"
 
 msgid "Support Multiple Viewports"
 msgstr "Podpora viacerých zobrazení"
+
+msgid ""
+"Consider supporting us by becoming a <span class=\"font-bold text-text-"
+"l\">GitHub Sponsor</span> to cover ongoing development and operational costs."
+msgstr ""
 
 msgid "You took a wrong turn!"
 msgstr "Zabočil si nesprávne!"
@@ -848,23 +864,23 @@ msgstr[2] "Bolo nájdených {0} prefabov"
 msgid "Pascals"
 msgstr "Pascali"
 
-#, csharp-format
-msgid "Failed to disable {0}: {1}"
-msgstr "Nepodarilo sa vypnúť {0}: {1}"
-
 msgid "You can enable the plugins we installed in a previous step here."
 msgstr ""
 "Tu môžete aktivovať pluginy, ktoré sme nainštalovali v predchádzajúcom kroku."
 
+#, csharp-format
+msgid "Failed to disable {0}: {1}"
+msgstr "Nepodarilo sa vypnúť {0}: {1}"
+
 msgid "SDK Installed"
 msgstr "SDK je nainštalované"
+
+msgid "Current Speed"
+msgstr "Aktuálna rýchlosť"
 
 #, csharp-format
 msgid "Bound control {0} ({1}) to device {2} and control {3}"
 msgstr "Priradili sme ovládač {0} ({1}) k zariadeniu {2} a ovládanie {3}"
-
-msgid "Current Speed"
-msgstr "Aktuálna rýchlosť"
 
 msgid "miles per hour"
 msgstr "míle za hodinu"
@@ -984,6 +1000,9 @@ msgstr ""
 "spotrebúva značné množstvo pamäte RAM, počítajte s využitím viac ako 10 GB.</"
 "span>"
 
+msgid "GitHub Sponsorship"
+msgstr ""
+
 msgid "Restart and Continue"
 msgstr "Reštartovať a pokračovať"
 
@@ -1015,6 +1034,11 @@ msgstr "Používate najnovšiu verziu."
 #, csharp-format
 msgid "Failed to download plugin with ID {0} from {1}. Status code: {2}"
 msgstr "Nepodarilo sa stiahnuť plugin s ID {0} z {1}. Kód stavu: {2}"
+
+msgid ""
+"Show news articles about plugin updates, be that official or 3rd party "
+"plugins."
+msgstr ""
 
 msgid "No plugins found."
 msgstr "Nenašli sa žiadne pluginy."
@@ -1075,6 +1099,10 @@ msgstr[0] "Bol nájdený {0} uzol"
 msgstr[1] "Boli nájdené {0} uzly"
 msgstr[2] "Bolo nájdených {0} uzlov"
 
+#, csharp-format
+msgid "<span class=\"font-semibold\">{0}</span> until {1}"
+msgstr ""
+
 msgid "Did you remember to restart after installing them?"
 msgstr "Nezabudli ste po ich inštalácii reštartovať?"
 
@@ -1131,15 +1159,6 @@ msgstr[2] "Načítal som {0} pluginov z {1}"
 msgid "Metric"
 msgstr "Metrická"
 
-msgid ""
-"Like ETS2LA? Consider supporting us by becoming a <span class=\"font-bold "
-"text-text-accent\">GitHub Sponsor</span> to cover ongoing development and "
-"operational costs."
-msgstr ""
-"Páči sa vám ETS2LA? Zvážte, či by ste nás nemohli podporiť tým, že sa "
-"stanete <span class=\"font-bold text-text-accent\">sponzorom na GitHube</"
-"span>, čím pomôžete pokryť náklady na vývoj a prevádzku."
-
 msgid "Error in telemetry update loop."
 msgstr "Chyba v cykle aktualizácie telemetrických údajov."
 
@@ -1185,6 +1204,10 @@ msgstr "Chyba v cykle aktualizácie zaparkovaných vozidiel."
 msgid "The plugin was enabled successfully."
 msgstr "Plugin bol úspešne aktivovaný."
 
+#, csharp-format
+msgid "<span class=\"font-semibold\">{0}</span> at {1}"
+msgstr ""
+
 msgid "Normal"
 msgstr "Normálne"
 
@@ -1200,6 +1223,9 @@ msgstr ""
 "interaktívnym a neinteraktívnym režimom po stlačení priradenej klávesy. Ak "
 "je táto funkcia vypnutá, prekrývací panel bude interaktívny len počas "
 "stlačenia priradenej klávesy."
+
+msgid "Latest News"
+msgstr ""
 
 msgid "pounds"
 msgstr "libry"
@@ -1293,11 +1319,11 @@ msgstr "Nepodarilo sa pridať hru"
 msgid "Font file not found at {0}"
 msgstr "Súbor s písmom sa nenašiel v {0}"
 
-msgid "Changelog"
-msgstr "Zoznam zmien"
-
 msgid "No release notes available."
 msgstr "Poznámky k verzii nie sú k dispozícii."
+
+msgid "Changelog"
+msgstr "Zoznam zmien"
 
 #, csharp-format
 msgid "Detected a switch to {0}, waiting for its game data to be parsed."
@@ -1745,12 +1771,12 @@ msgid "Error initializing memory mapped file: {0}"
 msgstr "Chyba pri inicializácii súboru mapovaného v pamäti: {0}"
 
 #, csharp-format
-msgid "Failed to load plugin from [gray]{0}[/]: {1}"
-msgstr "Nepodarilo sa načítať plugin z [gray]{0}[/]: {1}"
-
-#, csharp-format
 msgid "Assist Mode: <span class=\"text-text-accent font-bold\">{0}</span>"
 msgstr "Režim asistenta: <span class=\"text-text-accent font-bold\">{0}</span>"
+
+#, csharp-format
+msgid "Failed to load plugin from [gray]{0}[/]: {1}"
+msgstr "Nepodarilo sa načítať plugin z [gray]{0}[/]: {1}"
 
 msgid "View Public Telemetry"
 msgstr "Zobraziť verejnú telemetriu"
@@ -2095,6 +2121,12 @@ msgstr "Režim interakcie"
 msgid "Adding mod: {0}"
 msgstr "Pridávam mód:{0}"
 
+msgid "Like ETS2LA?"
+msgstr ""
+
+msgid "Show Plugin Updates"
+msgstr ""
+
 msgid ""
 "Allows ETS2LA to control throttle and brake using direct memory editing. "
 "This might not work on some systems, but allows for control even while "
@@ -2105,6 +2137,15 @@ msgstr ""
 #, csharp-format
 msgid "Not all dependencies for plugin {0} are installed."
 msgstr "Nie sú nainštalované všetky závislosti pre plugin {0}."
+
+#~ msgid ""
+#~ "Like ETS2LA? Consider supporting us by becoming a <span class=\"font-bold "
+#~ "text-text-accent\">GitHub Sponsor</span> to cover ongoing development and "
+#~ "operational costs."
+#~ msgstr ""
+#~ "Páči sa vám ETS2LA? Zvážte, či by ste nás nemohli podporiť tým, že sa "
+#~ "stanete <span class=\"font-bold text-text-accent\">sponzorom na GitHube</"
+#~ "span>, čím pomôžete pokryť náklady na vývoj a prevádzku."
 
 #~ msgid ""
 #~ "Disables the overlay entirely. This is useful if you want to use ETS2LA "
