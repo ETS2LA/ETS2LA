@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
 "POT-Creation-Date: 2026-10-03 11:56:15+0300\n"
-"PO-Revision-Date: 2026-09-23 23:49+0000\n"
+"PO-Revision-Date: 2026-10-03 16:36+0000\n"
 "Last-Translator: goodnightan <goodnightan@ets2la.com>\n"
 "Language-Team: Chinese (Simplified Han script) <http://weblate.ets2la.com/"
 "projects/ets2la/ets2la/zh_Hans/>\n"
@@ -134,7 +134,7 @@ msgid "Main"
 msgstr "主菜单"
 
 msgid "Only Show Official News"
-msgstr ""
+msgstr "仅显示官方新闻"
 
 #, csharp-format
 msgid ""
@@ -210,7 +210,7 @@ msgid "The step size for changing the cruise control speed."
 msgstr "调整巡航速度时的步长。"
 
 msgid "Press anywhere outside the dialog to close it."
-msgstr ""
+msgstr "点击对话框外的任意位置即可关闭。"
 
 msgid "Welcome to ETS2LA!"
 msgstr "欢迎使用ETS2LA！"
@@ -255,7 +255,7 @@ msgstr ""
 "游戏</span> 安装 SDK 以继续。"
 
 msgid "Enable Memory Output for Pedals"
-msgstr ""
+msgstr "启用踏板的内存输出"
 
 #, csharp-format
 msgid "Successfully updated plugin with ID {0}."
@@ -384,7 +384,7 @@ msgstr ""
 msgid ""
 "Only show news articles from official sources, such as the ETS2LA team or "
 "it's developers."
-msgstr ""
+msgstr "仅显示官方来源的新闻文章，例如 ETS2LA 团队或其开发者。"
 
 msgid ""
 "Memory not available for output, please ensure the game is running and "
@@ -478,6 +478,8 @@ msgid ""
 "Consider supporting us by becoming a <span class=\"font-bold text-text-"
 "l\">GitHub Sponsor</span> to cover ongoing development and operational costs."
 msgstr ""
+"考虑成为 <span class=\"font-bold text-text-l\">GitHub 赞助者</span>，帮助我们"
+"承担持续开发和运营所需的费用。"
 
 msgid "You took a wrong turn!"
 msgstr "你走错路了！"
@@ -940,7 +942,7 @@ msgstr ""
 "告：极致模式会占用大量内存，预计内存使用量将超过 10GB。</span>"
 
 msgid "GitHub Sponsorship"
-msgstr ""
+msgstr "GitHub 赞助"
 
 msgid "Restart and Continue"
 msgstr "重启并继续"
@@ -975,7 +977,7 @@ msgstr "从 {1} 下载 ID 为 {0} 的插件失败。状态码：{2}"
 msgid ""
 "Show news articles about plugin updates, be that official or 3rd party "
 "plugins."
-msgstr ""
+msgstr "显示有关插件更新的新闻文章，包括官方插件和第三方插件。"
 
 msgid "No plugins found."
 msgstr "找不到任何插件。"
@@ -1029,7 +1031,7 @@ msgstr[0] "找到 {0} 个节点"
 
 #, csharp-format
 msgid "<span class=\"font-semibold\">{0}</span> until {1}"
-msgstr ""
+msgstr "<span class=\"font-semibold\">{0}</span> 直到 {1}"
 
 msgid "Did you remember to restart after installing them?"
 msgstr "您是否在安装后重启程序？"
@@ -1125,7 +1127,7 @@ msgstr "插件已成功启用。"
 
 #, csharp-format
 msgid "<span class=\"font-semibold\">{0}</span> at {1}"
-msgstr ""
+msgstr "<span class=\"font-semibold\">{0}</span> 于 {1}"
 
 msgid "Normal"
 msgstr "标准"
@@ -1142,7 +1144,7 @@ msgstr ""
 "住对应按键时，叠加层才会处于交互状态。"
 
 msgid "Latest News"
-msgstr ""
+msgstr "最新新闻"
 
 msgid "pounds"
 msgstr "磅"
@@ -1214,7 +1216,7 @@ msgid "Error rendering overlay: {0}"
 msgstr "渲染叠加层时发生错误：{0}"
 
 msgid "You may need to restart the game to apply this change."
-msgstr ""
+msgstr "您可能需要重启游戏才能应用此更改。"
 
 msgid "Off"
 msgstr "关闭"
@@ -1937,7 +1939,7 @@ msgid ""
 msgstr "变更此选项后需要重新启动 ETS2LA 才能生效。要立即重新启动吗？"
 
 msgid "And to those who've decided to remain anonymous!"
-msgstr ""
+msgstr "以及那些选择保持匿名的朋友们！"
 
 msgid "Plugin Installer"
 msgstr "插件安装器"
@@ -1967,10 +1969,10 @@ msgid "Adding mod: {0}"
 msgstr "正在添加模组：{0}"
 
 msgid "Like ETS2LA?"
-msgstr ""
+msgstr "喜欢 ETS2LA 吗？"
 
 msgid "Show Plugin Updates"
-msgstr ""
+msgstr "显示插件更新"
 
 msgid ""
 "Allows ETS2LA to control throttle and brake using direct memory editing. "
@@ -1978,6 +1980,9 @@ msgid ""
 "tabbed out of the game. If you enable this and it doesn't work, please "
 "report the issue on our Discord server."
 msgstr ""
+"允许 ETS2LA 通过直接修改内存来控制油门和刹车。此功能可能无法在某些系统上正常"
+"工作，但即使切换到游戏外，也仍可进行控制。如果启用此功能后无法正常工作，请在"
+"我们的 Discord 服务器上报告问题。"
 
 #, csharp-format
 msgid "Not all dependencies for plugin {0} are installed."
