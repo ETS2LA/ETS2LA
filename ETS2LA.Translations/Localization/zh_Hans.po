@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-10-03 11:56:15+0300\n"
+"POT-Creation-Date: 2026-10-03 20:25:14+0300\n"
 "PO-Revision-Date: 2026-10-03 16:36+0000\n"
 "Last-Translator: goodnightan <goodnightan@ets2la.com>\n"
 "Language-Team: Chinese (Simplified Han script) <http://weblate.ets2la.com/"
@@ -270,18 +270,18 @@ msgstr "视觉提示"
 msgid "Additional"
 msgstr "其他"
 
-msgid "Install Plugins"
-msgstr "安装插件"
-
 msgid "Show Fewer Logs"
 msgstr "显示更少日志"
 
-msgid "I won't leave ETS2LA unattended"
-msgstr "我不会在无人看管的情况下运行 ETS2LA"
+msgid "Install Plugins"
+msgstr "安装插件"
 
 #, csharp-format
 msgid "Error while downloading update: {0}"
 msgstr "下载更新时发生错误：{0}"
+
+msgid "I won't leave ETS2LA unattended"
+msgstr "我不会在无人看管的情况下运行 ETS2LA"
 
 msgid "Keyboard"
 msgstr "键盘"
@@ -814,22 +814,22 @@ msgstr[0] "找到 {0} 个预制件"
 msgid "Pascals"
 msgstr "帕斯卡（压力单位）"
 
-msgid "You can enable the plugins we installed in a previous step here."
-msgstr "您可以在此处启用我们在上一步安装的插件。"
-
 #, csharp-format
 msgid "Failed to disable {0}: {1}"
 msgstr "停用 {0} 失败:{1}"
 
+msgid "You can enable the plugins we installed in a previous step here."
+msgstr "您可以在此处启用我们在上一步安装的插件。"
+
 msgid "SDK Installed"
 msgstr "已安装SDK"
-
-msgid "Current Speed"
-msgstr "当前速度"
 
 #, csharp-format
 msgid "Bound control {0} ({1}) to device {2} and control {3}"
 msgstr "已将控件 {0}（{1}）绑定至设备 {2} 的控件 {3}"
+
+msgid "Current Speed"
+msgstr "当前速度"
 
 msgid "miles per hour"
 msgstr "英里每小时"
@@ -1056,15 +1056,15 @@ msgstr ""
 msgid "Failed to install latest version of plugin with ID {0}."
 msgstr "ID 为 {0} 的插件最新版本安装失败。"
 
-msgid "I understand, now let me in!"
-msgstr "我明白了，现在让我进入！"
-
 #, csharp-format
 msgid ""
 "If you think this is a bug, please report it in the {0}Discord Server{1} or "
 "on {2}GitHub{3}."
 msgstr ""
 "如果你认为这是一个错误，请在 {0}Discord 服务器{1} 或 {2}GitHub{3} 报告。"
+
+msgid "I understand, now let me in!"
+msgstr "我明白了，现在让我进入！"
 
 msgid "Disable Overlay"
 msgstr "禁用叠加层"
@@ -1234,11 +1234,11 @@ msgstr "游戏添加失败"
 msgid "Font file not found at {0}"
 msgstr "找不到字体文件：{0}"
 
-msgid "No release notes available."
-msgstr "暂无更新日志。"
-
 msgid "Changelog"
 msgstr "更新日志"
+
+msgid "No release notes available."
+msgstr "暂无更新日志。"
 
 #, csharp-format
 msgid "Detected a switch to {0}, waiting for its game data to be parsed."
@@ -1346,6 +1346,9 @@ msgstr ""
 
 msgid "Account"
 msgstr "账户"
+
+msgid "Translate News Articles"
+msgstr ""
 
 #, csharp-format
 msgid "Found {0} (version: {1}) at '{2}'"
@@ -1641,12 +1644,12 @@ msgid "Error initializing memory mapped file: {0}"
 msgstr "初始化内存映射文件时发生错误：{0}"
 
 #, csharp-format
-msgid "Assist Mode: <span class=\"text-text-accent font-bold\">{0}</span>"
-msgstr "辅助模式：<span class=\"text-text-accent font-bold\">{0}</span>"
-
-#, csharp-format
 msgid "Failed to load plugin from [gray]{0}[/]: {1}"
 msgstr "从 [gray]{0}[/] 加载插件失败：{1}"
+
+#, csharp-format
+msgid "Assist Mode: <span class=\"text-text-accent font-bold\">{0}</span>"
+msgstr "辅助模式：<span class=\"text-text-accent font-bold\">{0}</span>"
 
 msgid "View Public Telemetry"
 msgstr "查看公开遥测数据"
@@ -1814,6 +1817,11 @@ msgstr "游戏仍在运行"
 
 msgid "Final Disclaimer <span class=\"description\">1/2</span>"
 msgstr "最终免责声明 <span class=\"description\">1/2</span>"
+
+msgid ""
+"Translate news articles to your selected display language. This may take a "
+"while depending on the number of articles and your internet connection."
+msgstr ""
 
 msgid "Map Data Parsed"
 msgstr "地图数据解析完成"

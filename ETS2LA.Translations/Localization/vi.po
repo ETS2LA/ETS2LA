@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-10-03 11:56:15+0300\n"
+"POT-Creation-Date: 2026-10-03 20:25:14+0300\n"
 "PO-Revision-Date: 2026-08-26 18:07+0000\n"
 "Last-Translator: phucc <phucc@ets2la.com>\n"
 "Language-Team: Vietnamese <http://weblate.ets2la.com/projects/ets2la/ets2la/"
@@ -263,18 +263,18 @@ msgstr "Giao diện"
 msgid "Additional"
 msgstr "Bổ sung"
 
-msgid "Install Plugins"
-msgstr ""
-
 msgid "Show Fewer Logs"
 msgstr ""
 
-msgid "I won't leave ETS2LA unattended"
+msgid "Install Plugins"
 msgstr ""
 
 #, csharp-format
 msgid "Error while downloading update: {0}"
 msgstr "Lỗi khi đang tải bản cập nhật: {0}"
+
+msgid "I won't leave ETS2LA unattended"
+msgstr ""
 
 msgid "Keyboard"
 msgstr "Bàn phím"
@@ -817,22 +817,22 @@ msgstr[1] ""
 msgid "Pascals"
 msgstr "Pascals"
 
-msgid "You can enable the plugins we installed in a previous step here."
-msgstr ""
-
 #, csharp-format
 msgid "Failed to disable {0}: {1}"
+msgstr ""
+
+msgid "You can enable the plugins we installed in a previous step here."
 msgstr ""
 
 msgid "SDK Installed"
 msgstr "Đã cài đặt SDK"
 
-msgid "Current Speed"
-msgstr "Tốc độ hiện tại"
-
 #, csharp-format
 msgid "Bound control {0} ({1}) to device {2} and control {3}"
 msgstr ""
+
+msgid "Current Speed"
+msgstr "Tốc độ hiện tại"
 
 msgid "miles per hour"
 msgstr ""
@@ -1058,13 +1058,13 @@ msgstr ""
 msgid "Failed to install latest version of plugin with ID {0}."
 msgstr ""
 
-msgid "I understand, now let me in!"
-msgstr ""
-
 #, csharp-format
 msgid ""
 "If you think this is a bug, please report it in the {0}Discord Server{1} or "
 "on {2}GitHub{3}."
+msgstr ""
+
+msgid "I understand, now let me in!"
 msgstr ""
 
 msgid "Disable Overlay"
@@ -1234,11 +1234,11 @@ msgstr "Thêm trò chơi không thành công"
 msgid "Font file not found at {0}"
 msgstr ""
 
-msgid "No release notes available."
-msgstr "Hiện không có ghi chú cập nhật nào."
-
 msgid "Changelog"
 msgstr ""
+
+msgid "No release notes available."
+msgstr "Hiện không có ghi chú cập nhật nào."
 
 #, csharp-format
 msgid "Detected a switch to {0}, waiting for its game data to be parsed."
@@ -1344,6 +1344,9 @@ msgid ""
 msgstr ""
 
 msgid "Account"
+msgstr ""
+
+msgid "Translate News Articles"
 msgstr ""
 
 #, csharp-format
@@ -1641,12 +1644,12 @@ msgid "Error initializing memory mapped file: {0}"
 msgstr ""
 
 #, csharp-format
-msgid "Assist Mode: <span class=\"text-text-accent font-bold\">{0}</span>"
-msgstr ""
-
-#, csharp-format
 msgid "Failed to load plugin from [gray]{0}[/]: {1}"
 msgstr "Nạp plugin không thành công từ [gray]{0}[/]: {1}"
+
+#, csharp-format
+msgid "Assist Mode: <span class=\"text-text-accent font-bold\">{0}</span>"
+msgstr ""
 
 msgid "View Public Telemetry"
 msgstr "Xem dữ liệu thu thập từ xa công khai"
@@ -1811,6 +1814,11 @@ msgstr ""
 
 msgid "Final Disclaimer <span class=\"description\">1/2</span>"
 msgstr "Lưu ý cuối cùng <span class=\"description\">1/2</span>"
+
+msgid ""
+"Translate news articles to your selected display language. This may take a "
+"while depending on the number of articles and your internet connection."
+msgstr ""
 
 msgid "Map Data Parsed"
 msgstr "Đã phân tích dữ liệu bản đồ"

@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-10-03 11:56:15+0300\n"
+"POT-Creation-Date: 2026-10-03 20:25:14+0300\n"
 "PO-Revision-Date: 2026-08-25 11:19+0000\n"
 "Last-Translator: Artyz <artyz@ets2la.com>\n"
 "Language-Team: Hindi (Hinglish) <http://weblate.ets2la.com/projects/ets2la/"
@@ -249,17 +249,17 @@ msgstr "Visual"
 msgid "Additional"
 msgstr "Additional"
 
-msgid "Install Plugins"
-msgstr "Install plugins"
-
 msgid "Show Fewer Logs"
 msgstr ""
 
-msgid "I won't leave ETS2LA unattended"
-msgstr ""
+msgid "Install Plugins"
+msgstr "Install plugins"
 
 #, csharp-format
 msgid "Error while downloading update: {0}"
+msgstr ""
+
+msgid "I won't leave ETS2LA unattended"
 msgstr ""
 
 msgid "Keyboard"
@@ -775,21 +775,21 @@ msgstr[1] ""
 msgid "Pascals"
 msgstr ""
 
-msgid "You can enable the plugins we installed in a previous step here."
-msgstr ""
-
 #, csharp-format
 msgid "Failed to disable {0}: {1}"
+msgstr ""
+
+msgid "You can enable the plugins we installed in a previous step here."
 msgstr ""
 
 msgid "SDK Installed"
 msgstr ""
 
-msgid "Current Speed"
-msgstr ""
-
 #, csharp-format
 msgid "Bound control {0} ({1}) to device {2} and control {3}"
+msgstr ""
+
+msgid "Current Speed"
 msgstr ""
 
 msgid "miles per hour"
@@ -1010,13 +1010,13 @@ msgstr ""
 msgid "Failed to install latest version of plugin with ID {0}."
 msgstr ""
 
-msgid "I understand, now let me in!"
-msgstr ""
-
 #, csharp-format
 msgid ""
 "If you think this is a bug, please report it in the {0}Discord Server{1} or "
 "on {2}GitHub{3}."
+msgstr ""
+
+msgid "I understand, now let me in!"
 msgstr ""
 
 msgid "Disable Overlay"
@@ -1186,10 +1186,10 @@ msgstr ""
 msgid "Font file not found at {0}"
 msgstr ""
 
-msgid "No release notes available."
+msgid "Changelog"
 msgstr ""
 
-msgid "Changelog"
+msgid "No release notes available."
 msgstr ""
 
 #, csharp-format
@@ -1295,6 +1295,9 @@ msgid ""
 msgstr ""
 
 msgid "Account"
+msgstr ""
+
+msgid "Translate News Articles"
 msgstr ""
 
 #, csharp-format
@@ -1590,11 +1593,11 @@ msgid "Error initializing memory mapped file: {0}"
 msgstr ""
 
 #, csharp-format
-msgid "Assist Mode: <span class=\"text-text-accent font-bold\">{0}</span>"
+msgid "Failed to load plugin from [gray]{0}[/]: {1}"
 msgstr ""
 
 #, csharp-format
-msgid "Failed to load plugin from [gray]{0}[/]: {1}"
+msgid "Assist Mode: <span class=\"text-text-accent font-bold\">{0}</span>"
 msgstr ""
 
 msgid "View Public Telemetry"
@@ -1761,6 +1764,11 @@ msgid "Game is still running"
 msgstr ""
 
 msgid "Final Disclaimer <span class=\"description\">1/2</span>"
+msgstr ""
+
+msgid ""
+"Translate news articles to your selected display language. This may take a "
+"while depending on the number of articles and your internet connection."
 msgstr ""
 
 msgid "Map Data Parsed"

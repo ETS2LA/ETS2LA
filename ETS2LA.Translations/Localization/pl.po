@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-10-03 11:56:15+0300\n"
+"POT-Creation-Date: 2026-10-03 20:25:14+0300\n"
 "PO-Revision-Date: 2026-09-23 18:04+0000\n"
 "Last-Translator: Kubex70 <kubex70@ets2la.com>\n"
 "Language-Team: Polish <http://weblate.ets2la.com/projects/ets2la/ets2la/pl/"
@@ -284,18 +284,18 @@ msgstr "Wizualne"
 msgid "Additional"
 msgstr "Dodatkowe"
 
-msgid "Install Plugins"
-msgstr "Zainstaluj pluginy"
-
 msgid "Show Fewer Logs"
 msgstr "Pokaż mniej dzienników"
 
-msgid "I won't leave ETS2LA unattended"
-msgstr "Nie zostawie ETS2LA bez nadzoru"
+msgid "Install Plugins"
+msgstr "Zainstaluj pluginy"
 
 #, csharp-format
 msgid "Error while downloading update: {0}"
 msgstr "Błąd podczas pobierania aktualizacji: {0}"
+
+msgid "I won't leave ETS2LA unattended"
+msgstr "Nie zostawie ETS2LA bez nadzoru"
 
 msgid "Keyboard"
 msgstr "Klawiatura"
@@ -872,23 +872,23 @@ msgstr[2] "Znaleziono {0} prefabrykaty"
 msgid "Pascals"
 msgstr "Paskale"
 
-msgid "You can enable the plugins we installed in a previous step here."
-msgstr ""
-"Tutaj możesz włączyć pluginy, które zainstalowaliśmy w poprzednim kroku."
-
 #, csharp-format
 msgid "Failed to disable {0}: {1}"
 msgstr "Nie udało się wyłączyć {0}: {1}"
 
+msgid "You can enable the plugins we installed in a previous step here."
+msgstr ""
+"Tutaj możesz włączyć pluginy, które zainstalowaliśmy w poprzednim kroku."
+
 msgid "SDK Installed"
 msgstr "Zainstalowano zestaw SDK"
-
-msgid "Current Speed"
-msgstr "Aktualna prędkość"
 
 #, csharp-format
 msgid "Bound control {0} ({1}) to device {2} and control {3}"
 msgstr "Powiąż sterowanie {0} ({1}) z urządzeniem {2} i sterowaniem {3}"
+
+msgid "Current Speed"
+msgstr "Aktualna prędkość"
 
 msgid "miles per hour"
 msgstr "mile na godzinę"
@@ -1136,9 +1136,6 @@ msgid "Failed to install latest version of plugin with ID {0}."
 msgstr ""
 "Nie udało się zainstalować najnowszej wersji pluginu o identyfikatorze {0}."
 
-msgid "I understand, now let me in!"
-msgstr "Rozumiem, teraz mnie wpuść!"
-
 #, csharp-format
 msgid ""
 "If you think this is a bug, please report it in the {0}Discord Server{1} or "
@@ -1146,6 +1143,9 @@ msgid ""
 msgstr ""
 "Jeśli uważasz, że to błąd, zgłoś to na {0}serwerze Discord{1} lub na {2}"
 "GitHubie{3}."
+
+msgid "I understand, now let me in!"
+msgstr "Rozumiem, teraz mnie wpuść!"
 
 msgid "Disable Overlay"
 msgstr "Wyłącz nakładkę"
@@ -1328,11 +1328,11 @@ msgstr "Nie udało się dodać gry"
 msgid "Font file not found at {0}"
 msgstr "Nie znaleziono pliku czcionki w {0}"
 
-msgid "No release notes available."
-msgstr "Brak dostępnych informacji o wydaniu."
-
 msgid "Changelog"
 msgstr "Dziennik zmian"
+
+msgid "No release notes available."
+msgstr "Brak dostępnych informacji o wydaniu."
 
 #, csharp-format
 msgid "Detected a switch to {0}, waiting for its game data to be parsed."
@@ -1453,6 +1453,9 @@ msgstr ""
 
 msgid "Account"
 msgstr "Konto"
+
+msgid "Translate News Articles"
+msgstr ""
 
 #, csharp-format
 msgid "Found {0} (version: {1}) at '{2}'"
@@ -1778,13 +1781,13 @@ msgid "Error initializing memory mapped file: {0}"
 msgstr "Błąd inicjalizacji pliku mapowanego w pamięci: {0}"
 
 #, csharp-format
+msgid "Failed to load plugin from [gray]{0}[/]: {1}"
+msgstr "Nie udało się załadować pluginu z [gray]{0}[/]: {1}"
+
+#, csharp-format
 msgid "Assist Mode: <span class=\"text-text-accent font-bold\">{0}</span>"
 msgstr ""
 "Tryb wspomagania: <span class=\"text-text-accent font-bold\">{0}</span>"
-
-#, csharp-format
-msgid "Failed to load plugin from [gray]{0}[/]: {1}"
-msgstr "Nie udało się załadować pluginu z [gray]{0}[/]: {1}"
 
 msgid "View Public Telemetry"
 msgstr "Wyświetl telemetrię publiczną"
@@ -1961,6 +1964,11 @@ msgstr "Gra nadal działa"
 
 msgid "Final Disclaimer <span class=\"description\">1/2</span>"
 msgstr "Ostateczne ostrzeżenie <span class=\"description\">1/2</span>"
+
+msgid ""
+"Translate news articles to your selected display language. This may take a "
+"while depending on the number of articles and your internet connection."
+msgstr ""
 
 msgid "Map Data Parsed"
 msgstr "Przeanalizowano dane mapy"

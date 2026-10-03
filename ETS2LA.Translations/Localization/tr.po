@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-10-03 11:56:15+0300\n"
+"POT-Creation-Date: 2026-10-03 20:25:14+0300\n"
 "PO-Revision-Date: 2026-09-04 20:02+0000\n"
 "Last-Translator: Kivanc <kivanc@ets2la.com>\n"
 "Language-Team: Turkish <http://weblate.ets2la.com/projects/ets2la/ets2la/tr/"
@@ -271,18 +271,18 @@ msgstr "Görsel"
 msgid "Additional"
 msgstr "Ek olarak"
 
-msgid "Install Plugins"
-msgstr "Eklentileri Yükle"
-
 msgid "Show Fewer Logs"
 msgstr "Daha az günlük göster"
 
-msgid "I won't leave ETS2LA unattended"
-msgstr ""
+msgid "Install Plugins"
+msgstr "Eklentileri Yükle"
 
 #, csharp-format
 msgid "Error while downloading update: {0}"
 msgstr "Güncelleme indirilirken hata oluştu: {0}"
+
+msgid "I won't leave ETS2LA unattended"
+msgstr ""
 
 msgid "Keyboard"
 msgstr "Klavye"
@@ -833,22 +833,22 @@ msgstr[1] ""
 msgid "Pascals"
 msgstr ""
 
-msgid "You can enable the plugins we installed in a previous step here."
-msgstr "Bir önceki adımda yüklenen eklentileri buradan etkinleştirebilirsiniz."
-
 #, csharp-format
 msgid "Failed to disable {0}: {1}"
 msgstr "{0} devre dışı bırakılamadı: {1}"
 
+msgid "You can enable the plugins we installed in a previous step here."
+msgstr "Bir önceki adımda yüklenen eklentileri buradan etkinleştirebilirsiniz."
+
 msgid "SDK Installed"
 msgstr "SDK Yüklendi"
-
-msgid "Current Speed"
-msgstr "Mevcut Hız"
 
 #, csharp-format
 msgid "Bound control {0} ({1}) to device {2} and control {3}"
 msgstr ""
+
+msgid "Current Speed"
+msgstr "Mevcut Hız"
 
 msgid "miles per hour"
 msgstr "mil/saat"
@@ -1076,9 +1076,6 @@ msgstr ""
 msgid "Failed to install latest version of plugin with ID {0}."
 msgstr ""
 
-msgid "I understand, now let me in!"
-msgstr ""
-
 #, csharp-format
 msgid ""
 "If you think this is a bug, please report it in the {0}Discord Server{1} or "
@@ -1086,6 +1083,9 @@ msgid ""
 msgstr ""
 "Bunun bir hata olduğunu düşünüyorsanız, lütfen bunu {0}Discord "
 "Sunucusunda{1} veya {2}GitHub'da{3} bildirin."
+
+msgid "I understand, now let me in!"
+msgstr ""
 
 msgid "Disable Overlay"
 msgstr ""
@@ -1260,11 +1260,11 @@ msgstr "Oyun eklenemedi"
 msgid "Font file not found at {0}"
 msgstr "Yazı tipi dosyası şu konumda bulunamadı: {0}"
 
-msgid "No release notes available."
-msgstr "Sürüm notları mevcut değil."
-
 msgid "Changelog"
 msgstr "Değişiklik Günlüğü"
+
+msgid "No release notes available."
+msgstr "Sürüm notları mevcut değil."
 
 #, csharp-format
 msgid "Detected a switch to {0}, waiting for its game data to be parsed."
@@ -1376,6 +1376,9 @@ msgstr ""
 
 msgid "Account"
 msgstr "Hesap"
+
+msgid "Translate News Articles"
+msgstr ""
 
 #, csharp-format
 msgid "Found {0} (version: {1}) at '{2}'"
@@ -1674,11 +1677,11 @@ msgid "Error initializing memory mapped file: {0}"
 msgstr ""
 
 #, csharp-format
-msgid "Assist Mode: <span class=\"text-text-accent font-bold\">{0}</span>"
+msgid "Failed to load plugin from [gray]{0}[/]: {1}"
 msgstr ""
 
 #, csharp-format
-msgid "Failed to load plugin from [gray]{0}[/]: {1}"
+msgid "Assist Mode: <span class=\"text-text-accent font-bold\">{0}</span>"
 msgstr ""
 
 msgid "View Public Telemetry"
@@ -1841,6 +1844,11 @@ msgid "Game is still running"
 msgstr ""
 
 msgid "Final Disclaimer <span class=\"description\">1/2</span>"
+msgstr ""
+
+msgid ""
+"Translate news articles to your selected display language. This may take a "
+"while depending on the number of articles and your internet connection."
 msgstr ""
 
 msgid "Map Data Parsed"
