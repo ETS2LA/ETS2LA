@@ -43,7 +43,14 @@
             // You can test rendering your release notes here:
             string releaseNotes = 
 """
-
+### ETS2LA C# 2026.10.5109
+- `Feat` Implemented *Card* component, plugins can now also use this via *ETS2LA.UI.Components*.
+- `Feat` Anonymous telemetry now logs the user's selected display language. We'll use this to try and figure out which regions are using ETS2LA the most.
+- `Bug` *Force Map Load* is now implemented. It was accidentally removed in a previous update to the data loader.
+- `Bug` Fixed *Catalogue* and *Manager* page layout issues when plugins' descriptions weren't long enough to fill the card horizontally.
+- `Bug` Fixed *SDK* page layout issues when some game installation folders were longer than others.
+- `Bug` Fixed crash where *ETS2LA.ML.Vision* could crash due to missing road data.
+- `Translation` Update for *Finnish*, *Slovak*, *Chinese (Traditional)*, *Chinese (Simplified)*, *Spanish (American)*.
 """;
 
             RenderedContent = new MarkupString(Markdown.ToHtml(releaseNotes, Pipeline));

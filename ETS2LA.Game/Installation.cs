@@ -162,7 +162,7 @@ public class Installation
     private bool ParseActual()
     {
         var logs = GetLogFileContents();
-        if(!DataUtils.IsRunningBasedOnLogs(logs))
+        if(!DataSettings.Current.ForceMapLoad && !DataUtils.IsRunningBasedOnLogs(logs))
         {
             Logger.Warn(_("Installation at '{0}' is not currently running, waiting for load of profile.", Path));
             return false;

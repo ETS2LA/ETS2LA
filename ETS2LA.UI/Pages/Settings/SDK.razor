@@ -73,7 +73,7 @@
                 var instance = controlInstances[i];
                 var installed = instance.IsSDKInstalled(instance.Version);
 
-                <div class="flex flex-col rounded-sm bg-control-bg-dark border p-4 gap-3 border-bg-darker">
+                <div class="flex flex-col justify-between rounded-sm bg-control-bg-dark border p-4 gap-3 border-bg-darker">
                     <div class="flex flex-col gap-1">
                         <p>@(UserInterfaceUtils.ClassnameWithSpaces(@instance.Type.ToString()) + "  -  " + instance.Version.ToString())</p>
                         @if (!IsOnboarding)

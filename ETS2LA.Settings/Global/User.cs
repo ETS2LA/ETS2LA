@@ -10,6 +10,11 @@ public class UserSettings
     public string UserId { get; set; } = Guid.NewGuid().ToString();
     public bool IsTelemetryEnabled { get; set; } = true;
 
+    // Duplicated from StateSettings to avoid circular dependencies,
+    // this also only stores the language code.
+    // TODO: Maybe figure out a better way to do this?
+    public string DisplayLanguage { get; set; } = "en";
+
     [NonSerialized]
     private SettingsHandler? _settingsHandler;
 
@@ -23,6 +28,7 @@ public class UserSettings
             {
                 UserId = loadedSettings.UserId;
                 IsTelemetryEnabled = loadedSettings.IsTelemetryEnabled;
+                DisplayLanguage = loadedSettings.DisplayLanguage;
             }
             else
             {
@@ -43,5 +49,6 @@ public class UserSettings
     {
         UserId = newSettings.UserId;
         IsTelemetryEnabled = newSettings.IsTelemetryEnabled;
+        DisplayLanguage = newSettings.DisplayLanguage;
     }
 }

@@ -6,6 +6,7 @@ using ETS2LA.Telemetry;
 using ETS2LA.Translations;
 using ETS2LA.State;
 using ETS2LA.Backend.Plugins;
+using ETS2LA.Settings.Global;
 
 using System.Globalization;
 using System.Runtime.InteropServices;
@@ -182,6 +183,8 @@ static class Utils
         var culture = new CultureInfo(cultureCode);
         CultureInfo.CurrentCulture = culture;
         CultureInfo.CurrentUICulture = culture;
+
+        UserSettings.Current.DisplayLanguage = cultureCode;
     }
 }
 

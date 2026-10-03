@@ -1,6 +1,7 @@
 using System.Diagnostics;
 using System.Diagnostics.Metrics;
 using System.Runtime.InteropServices;
+
 using ETS2LA.Logging;
 using ETS2LA.Settings.Global;
 
@@ -37,10 +38,12 @@ public static class AnonymousUser
 {
     public static Dictionary<string, object> GetUserProperties()
     {
-        string userId = UserSettings.Current.UserId;
+        var userId = UserSettings.Current.UserId;
+        var language = UserSettings.Current.DisplayLanguage;
         return new Dictionary<string, object>
         {
-            { "user.id", userId }
+            { "user.id", userId },
+            { "user.language", language }
         };
     }
 }

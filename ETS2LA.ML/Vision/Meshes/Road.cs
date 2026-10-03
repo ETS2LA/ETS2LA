@@ -103,24 +103,30 @@ public static class VisionRoadUtils
 
         foreach (var road in nearbyRoads.Values)
         {
-            ParsedRoad parsedRoad = new ParsedRoad(road);
-            float resolution = RoadUtils.GetRoadResolution(road);
-            float length = road.Length;
+            try
+            {                
+                ParsedRoad parsedRoad = new ParsedRoad(road);
+                float resolution = RoadUtils.GetRoadResolution(road);
+                float length = road.Length;
 
-            if (length <= 0) continue;
-            float stepLength = 1 / length * resolution;
+                if (length <= 0) continue;
+                float stepLength = 1 / length * resolution;
 
-            ExtractLanes(roadLineBuffer, parsedRoad, Side.Left, stepLength);
-            ExtractLanes(roadLineBuffer, parsedRoad, Side.Right, stepLength);
+                ExtractLanes(roadLineBuffer, parsedRoad, Side.Left, stepLength);
+                ExtractLanes(roadLineBuffer, parsedRoad, Side.Right, stepLength);
+            } catch { }
         }
 
         foreach (var prefab in nearbyPrefabs.Values)
         {
-            var ppd = PpdFileHandler.Current.GetPpdFile(prefab.Model.ToString());
-            if (ppd is not PrefabDescriptor desc)
-                continue;
+            try
+            {
+                var ppd = PpdFileHandler.Current.GetPpdFile(prefab.Model.ToString());
+                if (ppd is not PrefabDescriptor desc)
+                    continue;
 
-            ExtractPrefabCurves(roadLineBuffer, desc, prefab);
+                ExtractPrefabCurves(roadLineBuffer, desc, prefab);                
+            } catch { }
         }
 
         return roadLineBuffer;

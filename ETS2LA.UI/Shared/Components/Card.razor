@@ -1,0 +1,49 @@
+@code {
+    [Parameter]
+    public string? Title { get; set; } = string.Empty;
+
+    [Parameter]
+    public string? Subtitle { get; set; } = string.Empty;
+
+    [Parameter]
+    public EventCallback? OnSubtitleClick { get; set; }
+
+    [Parameter]
+    public RenderFragment? ChildContent { get; set; }
+
+    [Parameter]
+    public string Class { get; set; } = string.Empty;
+
+    [Parameter]
+    public string ContainerClass { get; set; } = string.Empty;
+
+    private void OnSubtitleClickInvoke()
+    {
+        if (OnSubtitleClick.HasValue)
+        {
+            OnSubtitleClick.Value.InvokeAsync();
+        }
+    }
+}
+
+<div class=@($"flex flex-col w-full gap-2 {ContainerClass}")>
+    @if (!string.IsNullOrEmpty(Title) || !string.IsNullOrEmpty(Subtitle))
+    {
+        <div class="flex mx-4 justify-between items-center">
+            <div class="flex flex-col gap-1">
+                @if (!string.IsNullOrEmpty(Title))
+                {
+                    <p class="font-semibold description">@Title</p>
+                }
+                @if (!string.IsNullOrEmpty(Subtitle))
+                {
+                    <p class=@($"font-semibold description transition-colors {(OnSubtitleClick.HasValue ? "hover:text-text-l hover:underline" : "")}") @onclick="OnSubtitleClickInvoke">@Subtitle</p>
+                }
+            </div>
+        </div>
+    }
+
+    <div class=@($"flex flex-col w-full bg-control-bg-dark border p-4 gap-6 transition-all border-bg-darker rounded-sm {Class}")>
+        @ChildContent
+    </div>
+</div>
