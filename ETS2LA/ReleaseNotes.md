@@ -1,4 +1,4 @@
-### ETS2LA C# 2026.10.5109
+### ETS2LA C# 2026.10.5111
 - `feat` Implemented *Card* component, plugins can now also use this via *ETS2LA.UI.Components*.
 - `feat` Anonymous telemetry now logs the user's selected display language. We'll use this to try and figure out which regions are using ETS2LA the most.
 - `fix` *Force Map Load* is now implemented. It was accidentally removed in a previous update to the data loader.
