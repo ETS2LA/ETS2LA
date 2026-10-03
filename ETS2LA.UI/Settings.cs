@@ -13,8 +13,14 @@ public class WindowSettings
     public int Zoom = 100;
     public bool StayOnTop = true;
 
+    // Onboarding
     public int OnboardingStep = 0;
     public bool HasCompletedOnboarding = false;
+
+    // News
+    public bool ShowPluginUpdates = true;
+    public bool OnlyFromOfficialUsers = true;
+    public bool TranslateNews = true;
 
     [NonSerialized]
     private static readonly Lazy<WindowSettings> _instance = new(() => new WindowSettings(loadSettings: true));
@@ -45,6 +51,9 @@ public class WindowSettings
                 StayOnTop = loadedSettings.StayOnTop;
                 OnboardingStep = loadedSettings.OnboardingStep;
                 HasCompletedOnboarding = loadedSettings.HasCompletedOnboarding;
+                ShowPluginUpdates = loadedSettings.ShowPluginUpdates;
+                OnlyFromOfficialUsers = loadedSettings.OnlyFromOfficialUsers;
+                TranslateNews = loadedSettings.TranslateNews;
             }
             _settingsHandler.RegisterListener<WindowSettings>("WindowSettings.json", OnSettingsChanged);
         }
@@ -67,5 +76,8 @@ public class WindowSettings
         StayOnTop = newSettings.StayOnTop;
         OnboardingStep = newSettings.OnboardingStep;
         HasCompletedOnboarding = newSettings.HasCompletedOnboarding;
+        ShowPluginUpdates = newSettings.ShowPluginUpdates;
+        OnlyFromOfficialUsers = newSettings.OnlyFromOfficialUsers;
+        TranslateNews = newSettings.TranslateNews;
     }
 }

@@ -1,6 +1,8 @@
 ﻿using ETS2LA.Networking.Settings;
 using ETS2LA.Networking.Plugins;
 using ETS2LA.Networking.Updates;
+using ETS2LA.Networking.News;
+
 namespace ETS2LA.Networking;
 
 public class NetworkingClient
@@ -15,6 +17,7 @@ public class NetworkingClient
     };
 
     public PluginApiClient Plugins { get; } = new();
+    public NewsApiClient News { get; } = new();
 
     public NetworkingClient()
     {
@@ -31,5 +34,6 @@ public class NetworkingClient
         }
 
         Plugins.FetchAvailablePluginsAsync();
+        News.FetchAvailableNewsAsync();
     }
 }

@@ -115,9 +115,16 @@ public static class T
     }
 }
 
+
 public class DynamicTranslationTask
 {
-    private GoogleTranslator translator = new GoogleTranslator();
+    private AggregateTranslator translator = new AggregateTranslator(new ITranslator[]
+    {
+        new GoogleTranslator(),
+        new GoogleTranslator2(),
+        new BingTranslator(),
+        new YandexTranslator()
+    });
 
     public event Action<string>? OnTranslationCompleted;
     public string SourceText { get; private set; } = string.Empty;

@@ -106,7 +106,7 @@
     @if (isHovered && !string.IsNullOrEmpty(Content))
     {
         <div style="@(autoOrigin == "cursor" ? $"top: {y}px; left: {x}px;" : "")" 
-             class="@(autoOrigin == "cursor" ? "fixed" : "absolute") @PositionClasses p-2 rounded-sm bg-control-bg border border-border z-50 pointer-events-none text-xs [&_ul]:list-disc [&_ul]:pl-5 [&_ol]:list-decimal [&_ol]:pl-5 whitespace-normal min-w-[max-content]">
+             class="@(autoOrigin == "cursor" ? "fixed" : "absolute") @PositionClasses p-1 rounded-sm bg-control-bg border border-border z-50 pointer-events-none text-xs [&_ul]:list-disc [&_ul]:pl-5 [&_ol]:list-decimal [&_ol]:pl-5 whitespace-normal min-w-[max-content]">
             @RenderedContent
         </div>
     }

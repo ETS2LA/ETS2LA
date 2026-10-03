@@ -1,0 +1,33 @@
+@code {
+    [Parameter]
+    public bool Open { get; set; }
+
+    [Parameter]
+    public EventCallback<bool> OpenChanged { get; set; }
+
+    [Parameter]
+    public RenderFragment? ChildContent { get; set; }
+
+    [Parameter]
+    public string Class { get; set; } = string.Empty;
+
+    private async Task Close()
+    {
+        Open = false;
+        await OpenChanged.InvokeAsync(false);
+    }
+}
+
+@if (Open)
+{
+    <div class="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4"
+         role="presentation"
+         @onclick="Close">
+        <div class="w-full max-w-lg rounded-md border border-border bg-bg p-4 shadow-lg @Class"
+             role="dialog"
+             aria-modal="true"
+             @onclick:stopPropagation>
+            @ChildContent
+        </div>
+    </div>
+}

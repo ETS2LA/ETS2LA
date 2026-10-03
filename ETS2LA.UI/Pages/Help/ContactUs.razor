@@ -1,4 +1,5 @@
 @page "/help/contact"
+@using ETS2LA.UI.Shared.Components
 
 @code {
     void OpenInBrowser(string url)
@@ -11,6 +12,10 @@
     <h3>@(_("Sorry"))</h3>
     <p class="description">@((MarkupString)(_("This page hasn't been created yet, but it's coming <i>soon</i>.")))</p>
     <p class="description">@((MarkupString)(_("For now, please contact us on GitHub or Discord.")))</p>
-    <button class="button mt-2" @onclick=@(() => OpenInBrowser("https://github.com/ETS2LA/ETS2LA/issues"))>@(_("Contact us on GitHub"))</button>
-    <button class="button mt-2" @onclick=@(() => OpenInBrowser("https://ets2la.com/discord"))>@(_("Contact us on Discord"))</button>
+    <Tooltip Content="https://github.com/ETS2LA/ETS2LA/issues" Origin="top" Class="mt-2 w-56">
+        <button class="button w-56!" @onclick=@(() => OpenInBrowser("https://github.com/ETS2LA/ETS2LA/issues"))>@(_("Contact us on GitHub"))</button>
+    </Tooltip>
+    <Tooltip Content="https://ets2la.com/discord" Origin="top" Class="mt-2 w-56">
+        <button class="button w-56!" @onclick=@(() => OpenInBrowser("https://ets2la.com/discord"))>@(_("Contact us on Discord"))</button>
+    </Tooltip>
 </div>

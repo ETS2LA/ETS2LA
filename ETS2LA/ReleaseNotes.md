@@ -1,6 +1,9 @@
-**If your ETS2LA version is below 2026.9.5051, you need to install this update manually by downloading the installer again!**
-### ETS2LA C# 2026.9.XXXX
+### ETS2LA C# 2026.10.5100
 - Improved sponsor displays when the current computer can access GitHub.
+- Dynamic translation tasks will now run through multiple translation providers. In the following order: Google, Bing, Yandex. We now additionally have a second Google Translate provider.
+- Added news articles into the dashboard page. This update also finally implements `service` side features that we've needed for a while. I can now start implementing more feature that require server side support.
+  - These are automatically translated into your selected language. The translation can however be disabled.
+- Implemented `Dialog` component, plugins can now also use this via `ETS2LA.UI.Components`.
 
 #### Thank you to today's sponsor... You!
 Development is possible thanks to our [sponsors](https://github.com/sponsors/Tumppi066). Please consider supporting if you like the project and have the means to do so.

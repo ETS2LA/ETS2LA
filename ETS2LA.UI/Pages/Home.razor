@@ -1,12 +1,18 @@
 @page "/"
 @inject NavigationManager Navigation
 @using static ETS2LA.Translations.T
+@using ETS2LA.Translations
 
+@using ETS2LA.UI.Shared.Components
 @using Velopack
 @using Velopack.Logging
 @using Velopack.Sources
+@using ETS2LA.State
+@using ETS2LA.Networking
 @using ETS2LA.Networking.Updates
+@using ETS2LA.Networking.News
 @using ETS2LA.Notifications
+@using Markdig
 
 @code {
     List<string> Sponsors = new List<string>
@@ -23,6 +29,27 @@
     bool sponsorBadgeLoaded = false;
     bool sponsorBadgeFailed = false;
 
+    bool NewsSettingsDialogOpen = false;
+
+    private static readonly MarkdownPipeline Pipeline = 
+        new MarkdownPipelineBuilder().UseAdvancedExtensions().Build();
+
+    class ArticleWrapper
+    {
+        public Article Article { get; set; }
+        public bool IsExpanded { get; set; } = false;
+
+        public string RenderedTitle;
+        public string RenderedContentSummary;
+        public string RenderedContent;
+
+        public string TranslatedTitle { get; set; } = string.Empty;
+        public string TranslatedContentSummary { get; set; } = string.Empty;
+        public string TranslatedContent { get; set; } = string.Empty;
+    }
+
+    List<ArticleWrapper> ArticleWrappers = new List<ArticleWrapper>();
+
     protected override void OnInitialized()
     {
         base.OnInitialized();
@@ -32,7 +59,65 @@
         }
 
         if (!alreadyChecked)
+        {
             Task.Run(() => CheckForUpdates());
+            Task.Run(() => LoadNewsArticles());
+            alreadyChecked = true;
+        }
+
+    }
+
+    private async void LoadNewsArticles()
+    {
+        var language = StateSettingsHandler.Current.GetSettings().DisplayLanguage;
+        foreach (var article in NetworkingClient.Current.News.Articles)
+        {
+            var containsPluginUpdate = article.Content.Contains("plugin update", StringComparison.OrdinalIgnoreCase) || article.Content.Contains("library update", StringComparison.OrdinalIgnoreCase);
+            var official = article.Author.Equals("ETS2LA Team", StringComparison.OrdinalIgnoreCase) || article.Author.Equals("Tumppi066", StringComparison.OrdinalIgnoreCase);
+            if (!WindowSettings.Current.ShowPluginUpdates && containsPluginUpdate)
+                continue;
+            if (WindowSettings.Current.OnlyFromOfficialUsers && !official)
+                continue;
+            
+            ArticleWrappers.Add(new ArticleWrapper { 
+                Article = article,
+                RenderedTitle = Markdown.ToHtml(article.Title ?? string.Empty, Pipeline),
+                RenderedContentSummary = Markdown.ToHtml(article.ContentSummary ?? string.Empty, Pipeline),
+                RenderedContent = Markdown.ToHtml(article.Content ?? string.Empty, Pipeline)
+            });
+        }
+        
+        InvokeAsync(StateHasChanged);
+        if (!WindowSettings.Current.TranslateNews || language.Code == "en")
+            return;
+
+        foreach (var wrapper in ArticleWrappers)
+        {
+            var titleTranslationTask = new DynamicTranslationTask(wrapper.Article.Title ?? string.Empty, language.Code.Replace("_", "-"));
+            var contentSummaryTranslationTask = new DynamicTranslationTask(wrapper.Article.ContentSummary ?? string.Empty, language.Code.Replace("_", "-"));
+            var contentTranslationTask = new DynamicTranslationTask(wrapper.Article.Content ?? string.Empty, language.Code.Replace("_", "-"));
+
+            titleTranslationTask.OnTranslationCompleted += (translatedText) => {
+                wrapper.TranslatedTitle = translatedText;
+                wrapper.RenderedTitle = Markdown.ToHtml(translatedText, Pipeline);
+            };
+            contentSummaryTranslationTask.OnTranslationCompleted += (translatedText) => {
+                wrapper.TranslatedContentSummary = translatedText;
+                wrapper.RenderedContentSummary = Markdown.ToHtml(translatedText, Pipeline);
+            };
+            contentTranslationTask.OnTranslationCompleted += (translatedText) => {
+                wrapper.TranslatedContent = translatedText;
+                wrapper.RenderedContent = Markdown.ToHtml(translatedText, Pipeline);
+            };
+
+            await Task.WhenAll(
+                Task.Run(() => titleTranslationTask.StartTranslationAsync()),
+                Task.Run(() => contentSummaryTranslationTask.StartTranslationAsync()),
+                Task.Run(() => contentTranslationTask.StartTranslationAsync())
+            );
+            
+            InvokeAsync(StateHasChanged);
+        }
     }
 
     private void CheckForUpdates()
@@ -62,7 +147,6 @@
             });
             return;
         }
-        alreadyChecked = true;
 
         if (latestUpdateInfo != null)
         {
@@ -111,34 +195,110 @@
     }
 }
 
-<div class="flex flex-col p-6 w-130">
-    <div class="flex flex-col justify-between rounded-sm bg-control-bg-dark border p-4  border-bg-darker">
-        <div class="mt-2 flex flex-col w-full">
-            <p>@((MarkupString)(_("Like ETS2LA? Consider supporting us by becoming a <span class=\"font-bold text-text-accent\">GitHub Sponsor</span> to cover ongoing development and operational costs.")))</p>
-            <a href="" target="_blank" class="button button-accent mt-4 w-full!" @onclick=@(() => OpenInBrowser("https://github.com/sponsors/Tumppi066"))>@_("Become a GitHub Sponsor")</a>
+<div class="flex flex-col w-full gap-10 p-6 lg:flex-row lg:gap-6">
+    <div class="flex flex-col w-130">
+        <div class="flex mx-4 mb-2 justify-between">
+            <p class="font-semibold description">@(_("Latest News"))</p>
+            <p class="font-semibold description hover:underline hover:text-text-l transition-colors" @onclick="() => NewsSettingsDialogOpen = true">@(_("Settings"))</p>
+        </div>
+        <div class="flex flex-col gap-2">
+            @foreach (var wrapper in ArticleWrappers)
+            {
+                bool expanded = wrapper.IsExpanded;
+                string borderColor = expanded ? "border-accent-dark" : "border-bg-darker";
+                string backgroundColor = wrapper.Article.Importance switch
+                {
+                    Importance.Critical => "bg-accent-dark/50",
+                    Importance.Warning => "bg-accent-dark/30",
+                    _ => "bg-control-bg-dark"
+                };
+
+                <div class=@($"flex flex-col w-full {backgroundColor} border p-4 transition-all {borderColor} rounded-sm") @onmouseenter="() => wrapper.IsExpanded = true" @onmouseleave="() => wrapper.IsExpanded = false">
+                    <p class="font-semibold">@((MarkupString)wrapper.RenderedTitle)</p>
+                    <div class=@($"grid transition-all duration-150 ease-in-out {(expanded ? "grid-rows-[0fr] opacity-0" : "grid-rows-[1fr] opacity-100")}")>
+                        <div class="overflow-hidden">
+                            <p class="description mt-1">@((MarkupString)wrapper.RenderedContentSummary)</p>
+                        </div>
+                    </div>
+                    <div class=@($"grid transition-all duration-150 ease-in-out {(expanded ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0")}")>
+                        <div class="overflow-hidden">
+                            <p class="text-[12px] text-text-l/80 mt-1">@((MarkupString)wrapper.RenderedContent)</p>
+                        </div>
+                    </div>
+
+                    @if (expanded)
+                    {
+                        @if (wrapper.Article.ExpiresAt.HasValue)
+                        {
+                            <p class="description mt-2">@((MarkupString)_("<span class=\"font-semibold\">{0}</span> until {1}", wrapper.Article.Author, wrapper.Article.ExpiresAt.Value))</p>
+                        }
+                        else
+                        {
+                            <p class="description mt-2">@((MarkupString)_("<span class=\"font-semibold\">{0}</span> at {1}", wrapper.Article.Author, wrapper.Article.CreatedAt))</p>
+                        }
+                    }
+                    else
+                    {
+                        <p class="description mt-2 font-semibold">@wrapper.Article.Author</p>
+                    }
+                </div>
+            }
         </div>
     </div>
-    
-    <div class="mt-3 ml-4">
-        @if (sponsorBadgeFailed)
+
+    <div class="flex flex-col w-130">
+        <p class="font-semibold description ml-4 mb-2">@(_("GitHub Sponsorship"))</p>
+
+        <div class="flex flex-col justify-between rounded-sm bg-control-bg-dark border p-4 border-bg-darker">
+            <p class="font-semibold">@(_("Like ETS2LA?"))</p>
+            <p class="description mt-1">@((MarkupString)(_("Consider supporting us by becoming a <span class=\"font-bold text-text-l\">GitHub Sponsor</span> to cover ongoing development and operational costs.")))</p>
+            <Tooltip Content="https://github.com/sponsors/Tumppi066" Origin="top" Class="mt-4">
+                <button class="button w-full! rounded-sm!" @onclick=@(() => OpenInBrowser("https://github.com/sponsors/Tumppi066"))>@_("Become a GitHub Sponsor")</button>
+            </Tooltip>
+        </div>
+        
+        <div class="mt-3 ml-4">
+            @if (sponsorBadgeFailed)
+            {
+                <p class="font-semibold description">@(_("Thank you to the following people for their ongoing support:"))</p>
+                <ul class="list-disc pl-6 description">
+                    @foreach (var sponsor in Sponsors)
+                    {
+                        <li>@sponsor</li>
+                    }
+                </ul>
+            }
+        </div>
+
+        @if (!sponsorBadgeFailed)
         {
-            <p class="font-semibold description">@(_("Thank you to the following people for their ongoing support:"))</p>
-            <ul class="list-disc pl-6 description">
-                @foreach (var sponsor in Sponsors)
-                {
-                    <li>@sponsor</li>
-                }
-            </ul>
+            <p class="font-semibold description mt-3 ml-4">@(_("Thank you to the following people for their ongoing support:"))</p>
+        }
+        <img src="https://readme-contribs.as93.net/sponsors/Tumppi066?perRow=8" alt="sponsors badge" class="@(sponsorBadgeLoaded ? "" : "hidden")" @onload="OnSponsorBadgeLoaded" @onerror="OnSponsorBadgeFailed" @onclick="OpenSponsorPage" style="cursor: pointer;" />
+        @if (!sponsorBadgeFailed)
+        {
+            <p class="description ml-4">@(_("And to those who've decided to remain anonymous!"))</p>
         }
     </div>
 
-    @if (!sponsorBadgeFailed)
-    {
-        <p class="font-semibold description mt-3 ml-4">@(_("Thank you to the following people for their ongoing support:"))</p>
-    }
-    <img src="https://readme-contribs.as93.net/sponsors/Tumppi066?perRow=8" alt="sponsors badge" class="@(sponsorBadgeLoaded ? "" : "hidden")" @onload="OnSponsorBadgeLoaded" @onerror="OnSponsorBadgeFailed" @onclick="OpenSponsorPage" style="cursor: pointer;" />
-    @if (!sponsorBadgeFailed)
-    {
-        <p class="description ml-4">@(_("And to those who've decided to remain anonymous!"))</p>
-    }
+    <Dialog Open="@NewsSettingsDialogOpen" OpenChanged="@((bool value) => NewsSettingsDialogOpen = value)">
+        <div class="flex flex-col gap-4">
+            <Switch Title=@_("Show Plugin Updates")
+                    Description=@_("Show news articles about plugin updates, be that official or 3rd party plugins.")
+                    Value="@WindowSettings.Current.ShowPluginUpdates"
+                    ValueChanged="@((bool value) => WindowSettings.Current.ShowPluginUpdates = value)" />
+            <Separator />
+            <Switch Title=@_("Only Show Official News")
+                    Description=@_("Only show news articles from official sources, such as the ETS2LA team or it's developers.")
+                    Value="@WindowSettings.Current.OnlyFromOfficialUsers"
+                    ValueChanged="@((bool value) => WindowSettings.Current.OnlyFromOfficialUsers = value)" />
+            <Separator />
+            <Switch Title=@_("Translate News Articles")
+                    Description=@_("Translate news articles to your selected display language. This may take a while depending on the number of articles and your internet connection.")
+                    Value="@WindowSettings.Current.TranslateNews"
+                    ValueChanged="@((bool value) => WindowSettings.Current.TranslateNews = value)" />
+            <Separator />
+            <p class="description mt-2">@_("Press anywhere outside the dialog to close it.")</p>
+        </div>
+    </Dialog>
 </div>
