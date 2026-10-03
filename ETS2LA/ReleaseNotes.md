@@ -1,4 +1,4 @@
-### ETS2LA C# 2026.10.5100
+### ETS2LA C# 2026.10.5103
 - Improved sponsor displays when the current computer can access GitHub.
 - Dynamic translation tasks will now run through multiple translation providers. In the following order: Google, Bing, Yandex. We now additionally have a second Google Translate provider.
 - Added news articles into the dashboard page. This update also finally implements `service` side features that we've needed for a while. I can now start implementing more feature that require server side support.
