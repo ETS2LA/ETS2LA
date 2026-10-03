@@ -3,10 +3,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
 "POT-Creation-Date: 2026-10-03 11:56:15+0300\n"
-"PO-Revision-Date: 2026-09-21 20:12+0000\n"
+"PO-Revision-Date: 2026-10-03 16:36+0000\n"
 "Last-Translator: Tumppi066 <contact@ets2la.com>\n"
-"Language-Team: Finnish <http://weblate.ets2la.com/projects/ets2la/ets2la/fi/"
-">\n"
+"Language-Team: Finnish <http://weblate.ets2la.com/projects/ets2la/ets2la/fi/>"
+"\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -135,7 +135,7 @@ msgid "Main"
 msgstr "Pääasialliset"
 
 msgid "Only Show Official News"
-msgstr ""
+msgstr "Näytä vain viralliset uutiset"
 
 #, csharp-format
 msgid ""
@@ -161,7 +161,7 @@ msgid ""
 msgstr "Kirjasto ID:llä [gray]{0}[/] on jo ladattu, ohitetaan duplikaatti."
 
 msgid "Successfully opened memory for output."
-msgstr ""
+msgstr "Avattiin komentojen lähetyksen muisti onnistuneesti."
 
 msgid "Dashboard"
 msgstr "Etusivu"
@@ -199,7 +199,7 @@ msgid "km/h"
 msgstr "km/h"
 
 msgid "Overlay is disabled in settings, skipping initialization."
-msgstr ""
+msgstr "Peitekuva on poistettu käytöstä, ohitetaan käynnistys."
 
 msgid ""
 "ETS2LA will display information on top of the game. You can interact with "
@@ -217,7 +217,7 @@ msgid "The step size for changing the cruise control speed."
 msgstr "Vakionopeudensäätimen nopeuden säädön askelkoko."
 
 msgid "Press anywhere outside the dialog to close it."
-msgstr ""
+msgstr "Paina dialogin ulkopuolelle sulkeaksesi sen."
 
 msgid "Welcome to ETS2LA!"
 msgstr "Tervetuloa ETS2LA:han!"
@@ -237,6 +237,8 @@ msgid ""
 "closed</span>. You can start the game after completing the onboarding "
 "process."
 msgstr ""
+"Varmistathan että <span class=\"text-text-accent font-bold\">ETS2 ja ATS "
+"ovat suljettu</span>. Voit käynnistää pelin uudelleen perehdytyksen jälkeen."
 
 #, csharp-format
 msgid "Error rendering window {0}: {1}"
@@ -260,7 +262,7 @@ msgstr ""
 "bold\">ainakin yhteen peliin</span> jatkaaksesi."
 
 msgid "Enable Memory Output for Pedals"
-msgstr ""
+msgstr "Käytä muistinmuokkausta polkimien ohjaukseen"
 
 #, csharp-format
 msgid "Successfully updated plugin with ID {0}."
@@ -353,7 +355,7 @@ msgstr ""
 "{0} sekunttia."
 
 msgid "Enable All"
-msgstr ""
+msgstr "Käynnistä kaikki"
 
 msgid ""
 "Subscriptions will <span class=\"font-bold text-text-accent\">never</span> "
@@ -398,11 +400,15 @@ msgid ""
 "Only show news articles from official sources, such as the ETS2LA team or "
 "it's developers."
 msgstr ""
+"Näytä uutiset vain virallisista lähteistä, kuten ETS2LAn tiimiltä ja sen "
+"kehittäjiltä."
 
 msgid ""
 "Memory not available for output, please ensure the game is running and "
 "reinstall the SDK if necessary."
 msgstr ""
+"Komentojen lähetyksen muistia ei saatu avattua, varmista että peli on "
+"käynnissä ja asenna SDK uudelleen jos tarpeellista."
 
 #, csharp-format
 msgid "Latest Version: {0}"
@@ -497,6 +503,8 @@ msgid ""
 "Consider supporting us by becoming a <span class=\"font-bold text-text-"
 "l\">GitHub Sponsor</span> to cover ongoing development and operational costs."
 msgstr ""
+"Voit tukea meitä <span class=\"font-bold text-text-l\">GitHub Sponsor</span> "
+"sivuston kautta. Huomaa, että suomalaisille tämä ei ole mahdollista."
 
 msgid "You took a wrong turn!"
 msgstr "Käännyit väärään suuntaan!"
@@ -721,6 +729,9 @@ msgid ""
 "cost of breaking all features that rely on the overlay, including AR and the "
 "HUD."
 msgstr ""
+"Poistaa peitekuvan käytöstä. Tämä korjaa \"mustan ruudun\" ongelman, mutta "
+"et voi käyttää mitään peitekuvaa vaativia ominaisuuksia kuten AR tai HUD "
+"renderöintiä."
 
 msgid "Warnings & Overrides"
 msgstr "Varoitukset ja pakotukset"
@@ -763,7 +774,7 @@ msgstr ""
 
 msgid ""
 "Driving mode changed, press Cancel/MODE again to cycle through the modes."
-msgstr ""
+msgstr "Ajomoodi vaihdettu. Paina Keskeytä/MODE nappia vaihtaaksesi moodia."
 
 msgid "Pause When Unstable"
 msgstr "Pysäytä peli jos vaarallinen"
@@ -984,7 +995,7 @@ msgstr ""
 "käyttää järjettömän määrän muistia, odota reilusti yli 10GB käyttöä.</span>"
 
 msgid "GitHub Sponsorship"
-msgstr ""
+msgstr "GitHub Sponsorointi"
 
 msgid "Restart and Continue"
 msgstr "Käynnistä uudelleen ja jatka"
@@ -1022,6 +1033,7 @@ msgid ""
 "Show news articles about plugin updates, be that official or 3rd party "
 "plugins."
 msgstr ""
+"Näytä uutisia lisäosien päivityksista, virallisista sekä kolmannen osapuolen."
 
 msgid "No plugins found."
 msgstr "Lisäosia ei löytynyt."
@@ -1044,7 +1056,7 @@ msgstr ""
 "näyttämiseen käytetään."
 
 msgid "Before we begin."
-msgstr ""
+msgstr "Ennen kuin aloitamme."
 
 #, csharp-format
 msgid "Error while applying update: {0}"
@@ -1081,7 +1093,7 @@ msgstr[1] "{0} pistettä"
 
 #, csharp-format
 msgid "<span class=\"font-semibold\">{0}</span> until {1}"
-msgstr ""
+msgstr "<span class=\"font-semibold\">{0}</span>, {1} asti"
 
 msgid "Did you remember to restart after installing them?"
 msgstr "Muistitko käynnistää sovelluksen uudelleen asennuksen jälkeen?"
@@ -1119,7 +1131,7 @@ msgstr ""
 "GitHubissa{3}, jotta kärpäslätkä ohjataan oikeaan paikkaan."
 
 msgid "Disable Overlay"
-msgstr ""
+msgstr "Poista peitekuva käytöstä"
 
 msgid ""
 "The maximum distance at which 3D elements will be rendered. Lowering this "
@@ -1184,7 +1196,7 @@ msgstr "Lisäosa käynnistetiin onnistuneesti."
 
 #, csharp-format
 msgid "<span class=\"font-semibold\">{0}</span> at {1}"
-msgstr ""
+msgstr "<span class=\"font-semibold\">{0}</span>, lähetetty {1}"
 
 msgid "Normal"
 msgstr "Normaali"
@@ -1197,9 +1209,12 @@ msgid ""
 "interaction mode when you press it's keybind. When disabled, the overlay "
 "will only be interactive while you hold down the keybind."
 msgstr ""
+"Kun käytössä, peitekuva siirtyy interaktio ja normaalimuotojen välillä "
+"\"toggle\" tyylisesti. Kun poistettu käytöstä, sinun täytyy painaa nappia "
+"pohjaan."
 
 msgid "Latest News"
-msgstr ""
+msgstr "Viimeisimmät uutiset"
 
 msgid "pounds"
 msgstr "paunaa"
@@ -1276,6 +1291,7 @@ msgstr "Virhe peitekuvan renderöinnissä: {0}"
 
 msgid "You may need to restart the game to apply this change."
 msgstr ""
+"Sinun täytyy ehkä käynnistää peli uudelleen tämän asetuksen muuton jälkeen."
 
 msgid "Off"
 msgstr "Pois"
@@ -1524,7 +1540,7 @@ msgid "Remember!"
 msgstr "Muistathan!"
 
 msgid "Disable All"
-msgstr ""
+msgstr "Sulje kaikki"
 
 msgid ""
 "Failed to fetch available plugins. Please check your internet connection."
@@ -1537,10 +1553,10 @@ msgstr "jalkaa"
 
 #, csharp-format
 msgid "Overlay is disabled in settings, skipping window registration for {0}."
-msgstr ""
+msgstr "Peitekuva poistettu käytöstä, ohitetaan ikkunan {0} rekisteröinti."
 
 msgid "Please close the game before continuing with the onboarding process."
-msgstr ""
+msgstr "Suljethan pelin ennen perehdytyksen jatkamista."
 
 #, csharp-format
 msgid "Successfully installed plugin {0} ({1}, {2})"
@@ -1573,6 +1589,8 @@ msgid ""
 "If you see a fully black screen, see the FAQ at <span class=\"description "
 "hover:underline\">ets2la.com</span>."
 msgstr ""
+"Jos näet täysin mustan ruudun, katso FAQ <span class="
+"\"description hover:underline\">ets2la.com:ssa</span>."
 
 msgid "Settings"
 msgstr "Asetukset"
@@ -1761,7 +1779,7 @@ msgid "Registered control: {0} [gray italic]({1})[/]"
 msgstr "Rekisteröitiin ohjainmääritys {0} [gray italic]({1})[/]"
 
 msgid "Keybind is Toggle"
-msgstr ""
+msgstr "Painike on \"Toggle\""
 
 msgid ""
 "You'll have to reinstall the SDK for <span class=\"text-text-accent font-"
@@ -1912,7 +1930,7 @@ msgid "High"
 msgstr "Korkea"
 
 msgid "Game is still running"
-msgstr ""
+msgstr "Peli on yhä käynnissä"
 
 msgid "Final Disclaimer <span class=\"description\">1/2</span>"
 msgstr "Viimeiset huomiot <span class=\"description\">1/2</span>"
@@ -2048,7 +2066,7 @@ msgstr ""
 "Tehdäänkö tämä nyt?"
 
 msgid "And to those who've decided to remain anonymous!"
-msgstr ""
+msgstr "Kiitämme myös heitä, jotka ovat tukeneet meitä anonyymisti!"
 
 msgid "Plugin Installer"
 msgstr "Lisäosien asentaja"
@@ -2082,10 +2100,10 @@ msgid "Adding mod: {0}"
 msgstr "Lisätään modia: {0}"
 
 msgid "Like ETS2LA?"
-msgstr ""
+msgstr "Pidätkö ETS2LA:sta?"
 
 msgid "Show Plugin Updates"
-msgstr ""
+msgstr "Näytä lisäosien päivitykset"
 
 msgid ""
 "Allows ETS2LA to control throttle and brake using direct memory editing. "
@@ -2093,6 +2111,9 @@ msgid ""
 "tabbed out of the game. If you enable this and it doesn't work, please "
 "report the issue on our Discord server."
 msgstr ""
+"Antaa sovelluksen ohjata polkimien paikkaa suoralla muistimuokkauksella. Ei "
+"välttämättä toimi kaikilla laitteilla, mutta toimii myös kun et ole pelin "
+"ikkunassa. Voit siis avata mm. nettiselaimen kun ETS2LA ajaa."
 
 #, csharp-format
 msgid "Not all dependencies for plugin {0} are installed."
