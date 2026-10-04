@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-10-03 20:25:14+0300\n"
+"POT-Creation-Date: 2026-10-04 19:33:16+0300\n"
 "PO-Revision-Date: 2026-09-04 20:02+0000\n"
 "Last-Translator: Kivanc <kivanc@ets2la.com>\n"
 "Language-Team: Turkish <http://weblate.ets2la.com/projects/ets2la/ets2la/tr/"
@@ -129,11 +129,11 @@ msgstr "{0} ({1}) kontrolü için bağlama işlemi başlatılıyor"
 msgid "Failed to enable dependency: {0}"
 msgstr "Bağımlılık etkinleştirilemedi: {0}"
 
-msgid "Main"
-msgstr "Ana"
-
 msgid "Only Show Official News"
 msgstr ""
+
+msgid "Main"
+msgstr "Ana"
 
 #, csharp-format
 msgid ""
@@ -152,6 +152,9 @@ msgstr[1] ""
 #, csharp-format
 msgid "Binding for control {0} ({1}) timed out."
 msgstr "{0} ({1}) kontrolü için bağlama işlemi zaman aşımına uğradı."
+
+msgid "Remove Account"
+msgstr ""
 
 #, csharp-format
 msgid ""
@@ -217,6 +220,9 @@ msgstr ""
 msgid "Welcome to ETS2LA!"
 msgstr "ETS2LA'ya Hoş Geldiniz!"
 
+msgid "Account Removal Failed"
+msgstr ""
+
 msgid ""
 "<span class=\"text-text-accent\"))>Success!</span> You can find more plugins "
 "in the catalogue later."
@@ -265,6 +271,9 @@ msgstr "{0} ID'li eklenti başarıyla güncellendi."
 msgid "Look in the top left corner."
 msgstr "Sol üst köşeye bakın."
 
+msgid "Failed to log out. Please try again."
+msgstr ""
+
 msgid "Visual"
 msgstr "Görsel"
 
@@ -277,12 +286,12 @@ msgstr "Daha az günlük göster"
 msgid "Install Plugins"
 msgstr "Eklentileri Yükle"
 
+msgid "I won't leave ETS2LA unattended"
+msgstr ""
+
 #, csharp-format
 msgid "Error while downloading update: {0}"
 msgstr "Güncelleme indirilirken hata oluştu: {0}"
-
-msgid "I won't leave ETS2LA unattended"
-msgstr ""
 
 msgid "Keyboard"
 msgstr "Klavye"
@@ -302,6 +311,10 @@ msgstr "GLFW penceresi oluşturulamadı"
 msgid "Fast"
 msgstr "Hızlı"
 
+#, csharp-format
+msgid "You are currently logged in as {0}."
+msgstr ""
+
 msgid "Install Update and Restart"
 msgstr "Güncellemeyi yükleyin ve yeniden başlatın"
 
@@ -314,6 +327,9 @@ msgid ""
 msgstr ""
 "ETS2LA'nın gerekli direksiyon hareketlerine nasıl tepki vereceğini "
 "ayarlayın. Bu ayar, örneğin ETS2LA'nın şerit değiştirme hızını belirler."
+
+msgid "Logout Successful"
+msgstr ""
 
 #, csharp-format
 msgid "Successfully uninstalled plugin with ID {0}."
@@ -351,14 +367,6 @@ msgstr ""
 
 msgid "Enable All"
 msgstr ""
-
-msgid ""
-"Subscriptions will <span class=\"font-bold text-text-accent\">never</span> "
-"be required for using ETS2LA. They are a way you can support the development."
-msgstr ""
-"ETS2LA'yı kullanmak için abonelik <span class=\"font-bold text-text-"
-"accent\">asla</span>zorunlu tutulmayacaktır. Abonelikler, geliştirme "
-"sürecine destek olabilmenizin bir yoludur."
 
 msgid "Data Parsing"
 msgstr "Veri Ayrıştırma"
@@ -412,6 +420,10 @@ msgstr "'{0}' adresinden sürüm okunamadı: {1}"
 
 msgid "Are you sure?"
 msgstr "Emin misin?"
+
+#, csharp-format
+msgid "You have successfully logged in as {0}."
+msgstr ""
 
 msgid "Render AR Elements"
 msgstr ""
@@ -570,6 +582,9 @@ msgstr ""
 msgid "Force Map Load"
 msgstr "Harita Yüklemeyi Zorla"
 
+msgid "Your account has been successfully removed."
+msgstr ""
+
 #, csharp-format
 msgid "Failed to uninstall SDK version '{0}' from '{1}': {2}"
 msgstr "'{1}' konumundaki '{0}' SDK sürümü kaldırılamadı: {2}"
@@ -618,13 +633,6 @@ msgstr "Uyarı: Yetersiz RAM"
 msgid "Error Loading Map Data"
 msgstr "Harita Verileri Yüklenirken Hata Oluştu"
 
-msgid ""
-"You'll register, login, and manage your account settings and subscriptions "
-"here."
-msgstr ""
-"Buradan kayıt olabilir, giriş yapabilir, hesap ayarlarınızı ve "
-"aboneliklerinizi yönetebilirsiniz."
-
 #, csharp-format
 msgid "Current Version: {0}"
 msgstr "Mevcut sürüm: {0}"
@@ -638,6 +646,9 @@ msgstr ""
 
 msgid "Slow"
 msgstr "Yavaş"
+
+msgid "Login Failed"
+msgstr ""
 
 msgid ""
 "Authentication is required. The client must authenticate itself to get the "
@@ -669,6 +680,9 @@ msgstr ""
 
 msgid "Audio"
 msgstr "Ses"
+
+msgid "Login Error"
+msgstr ""
 
 #, csharp-format
 msgid "{0} m/s ({1} in {2})"
@@ -776,9 +790,6 @@ msgstr "Ses dosyası {0} oynatılırken hata oluştu: {1}"
 msgid "Controls Backend shutdown complete, all controls saved."
 msgstr ""
 
-msgid "Anonymous"
-msgstr "Anonim"
-
 msgid ""
 "The units ETS2LA will use when displaying information to a user. Scientific "
 "has only slight differences to metric."
@@ -803,6 +814,14 @@ msgstr ""
 
 #, csharp-format
 msgid "Plugin with ID {0} not found in available plugins."
+msgstr ""
+
+msgid "Confirm Account Removal"
+msgstr ""
+
+msgid ""
+"Removing your account will delete all your data from our servers. This "
+"action cannot be undone."
 msgstr ""
 
 msgid "Manager"
@@ -833,6 +852,9 @@ msgstr[1] ""
 msgid "Pascals"
 msgstr ""
 
+msgid "Account Removal Error"
+msgstr ""
+
 #, csharp-format
 msgid "Failed to disable {0}: {1}"
 msgstr "{0} devre dışı bırakılamadı: {1}"
@@ -840,15 +862,18 @@ msgstr "{0} devre dışı bırakılamadı: {1}"
 msgid "You can enable the plugins we installed in a previous step here."
 msgstr "Bir önceki adımda yüklenen eklentileri buradan etkinleştirebilirsiniz."
 
+msgid "Login"
+msgstr ""
+
 msgid "SDK Installed"
 msgstr "SDK Yüklendi"
+
+msgid "Current Speed"
+msgstr "Mevcut Hız"
 
 #, csharp-format
 msgid "Bound control {0} ({1}) to device {2} and control {3}"
 msgstr ""
-
-msgid "Current Speed"
-msgstr "Mevcut Hız"
 
 msgid "miles per hour"
 msgstr "mil/saat"
@@ -933,6 +958,9 @@ msgstr ""
 msgid "bar"
 msgstr "bar"
 
+msgid "Account Removed"
+msgstr ""
+
 msgid ""
 "Couldn't connect to the game. Please open ETS2 or ATS and enable the SDK."
 msgstr ""
@@ -977,9 +1005,6 @@ msgstr ""
 
 msgid "Not Connected"
 msgstr "Bağlı Değil"
-
-msgid "This page will be implemented in a future update."
-msgstr "Bu sayfa, gelecek bir güncellemede kullanıma sunulacaktır."
 
 #, csharp-format
 msgid "Plugin with ID [gray]{0}[/] is already loaded, skipping duplicate."
@@ -1047,6 +1072,9 @@ msgid "found {0} node"
 msgid_plural "found {0} nodes"
 msgstr[0] "{0} node bulundu"
 msgstr[1] "found {0} node"
+
+msgid "Open Source"
+msgstr ""
 
 #, csharp-format
 msgid "<span class=\"font-semibold\">{0}</span> until {1}"
@@ -1218,6 +1246,9 @@ msgstr ""
 msgid "Simplified Graphics"
 msgstr "Sadeleştirilmiş Grafikler"
 
+msgid "Failed to log in. Please check your credentials and try again."
+msgstr ""
+
 msgid "Steering Sensitivity"
 msgstr "Direksiyon Hassasiyeti"
 
@@ -1250,6 +1281,10 @@ msgstr "Kapalı"
 msgid "L"
 msgstr "L"
 
+msgid ""
+"An error occurred while trying to log in. Please try again later. Error: "
+msgstr ""
+
 msgid "Installing..."
 msgstr ""
 
@@ -1278,8 +1313,15 @@ msgstr ""
 msgid "Version {0} not found for plugin with ID {1}."
 msgstr ""
 
+msgid ""
+"An error occurred while trying to log out. Please try again later. Error: "
+msgstr ""
+
 msgid "Invalid file"
 msgstr "Geçersiz dosya"
+
+msgid "Login Successful"
+msgstr ""
 
 #, csharp-format
 msgid "Discovered {0} library in total"
@@ -1305,6 +1347,9 @@ msgid ""
 msgstr ""
 "'{0}' konumuna elle eklenen oyun artık bir yürütülebilir oyun dosyası "
 "içermediğinden atlanıyor."
+
+msgid "Logout Error"
+msgstr ""
 
 #, csharp-format
 msgid "Found {0} game installation."
@@ -1529,6 +1574,11 @@ msgid "Window"
 msgstr "Pencere"
 
 msgid ""
+"You cannot register an account yet, this page is only for logging in with an "
+"existing developer account."
+msgstr ""
+
+msgid ""
 "If you see a fully black screen, see the FAQ at <span class=\"description "
 "hover:underline\">ets2la.com</span>."
 msgstr ""
@@ -1623,6 +1673,9 @@ msgid ""
 msgstr ""
 
 msgid "Recommended Plugins"
+msgstr ""
+
+msgid "Failed to remove account. Please try again."
 msgstr ""
 
 msgid ""
@@ -1753,6 +1806,9 @@ msgstr ""
 msgid "This game was found at"
 msgstr ""
 
+msgid "You have successfully logged out."
+msgstr ""
+
 msgid "Data Quality"
 msgstr ""
 
@@ -1834,6 +1890,9 @@ msgstr ""
 msgid "Invalid directory"
 msgstr ""
 
+msgid "Logout"
+msgstr ""
+
 msgid "Starting download..."
 msgstr ""
 
@@ -1876,6 +1935,11 @@ msgid "Desired Speed: "
 msgstr ""
 
 msgid "meters"
+msgstr ""
+
+msgid ""
+"An error occurred while trying to remove your account. Please try again "
+"later. Error: "
 msgstr ""
 
 msgid "°C"
@@ -1960,6 +2024,9 @@ msgstr ""
 msgid "Snap to each 10 {0}"
 msgstr ""
 
+msgid "Logout Failed"
+msgstr ""
+
 #, csharp-format
 msgid "Created plugin directory: [gray]{0}[/]"
 msgstr ""
@@ -2019,6 +2086,28 @@ msgstr ""
 #, csharp-format
 msgid "Not all dependencies for plugin {0} are installed."
 msgstr ""
+
+#~ msgid ""
+#~ "Subscriptions will <span class=\"font-bold text-text-accent\">never</"
+#~ "span> be required for using ETS2LA. They are a way you can support the "
+#~ "development."
+#~ msgstr ""
+#~ "ETS2LA'yı kullanmak için abonelik <span class=\"font-bold text-text-"
+#~ "accent\">asla</span>zorunlu tutulmayacaktır. Abonelikler, geliştirme "
+#~ "sürecine destek olabilmenizin bir yoludur."
+
+#~ msgid ""
+#~ "You'll register, login, and manage your account settings and "
+#~ "subscriptions here."
+#~ msgstr ""
+#~ "Buradan kayıt olabilir, giriş yapabilir, hesap ayarlarınızı ve "
+#~ "aboneliklerinizi yönetebilirsiniz."
+
+#~ msgid "Anonymous"
+#~ msgstr "Anonim"
+
+#~ msgid "This page will be implemented in a future update."
+#~ msgstr "Bu sayfa, gelecek bir güncellemede kullanıma sunulacaktır."
 
 #, csharp-format
 #~ msgid "Ignored DBus exception: {0}"

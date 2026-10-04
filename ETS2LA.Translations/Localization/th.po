@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-10-03 20:25:14+0300\n"
+"POT-Creation-Date: 2026-10-04 19:33:16+0300\n"
 "PO-Revision-Date: 2026-09-17 08:43+0000\n"
 "Last-Translator: cooper153826 <cooper153826@ets2la.com>\n"
 "Language-Team: Thai <http://weblate.ets2la.com/projects/ets2la/ets2la/th/>\n"
@@ -116,11 +116,11 @@ msgstr ""
 msgid "Failed to enable dependency: {0}"
 msgstr ""
 
-msgid "Main"
-msgstr "หน้าหลัก"
-
 msgid "Only Show Official News"
 msgstr ""
+
+msgid "Main"
+msgstr "หน้าหลัก"
 
 #, csharp-format
 msgid ""
@@ -135,6 +135,9 @@ msgstr[0] "เจอ {0} ถนน"
 
 #, csharp-format
 msgid "Binding for control {0} ({1}) timed out."
+msgstr ""
+
+msgid "Remove Account"
 msgstr ""
 
 #, csharp-format
@@ -200,6 +203,9 @@ msgstr ""
 msgid "Welcome to ETS2LA!"
 msgstr "ยินดีต้อนรับสู่ ETS2LA!"
 
+msgid "Account Removal Failed"
+msgstr ""
+
 msgid ""
 "<span class=\"text-text-accent\"))>Success!</span> You can find more plugins "
 "in the catalogue later."
@@ -247,6 +253,9 @@ msgstr "อัปเดตปลั๊กอินสำเร็จแล้ว
 msgid "Look in the top left corner."
 msgstr "มองไปที่มุมซ้ายบน"
 
+msgid "Failed to log out. Please try again."
+msgstr ""
+
 msgid "Visual"
 msgstr "ภาพ"
 
@@ -259,12 +268,12 @@ msgstr "แสดงน้อยลง"
 msgid "Install Plugins"
 msgstr "ติดตั้งปลั๊กอิน"
 
+msgid "I won't leave ETS2LA unattended"
+msgstr "ฉันจะไม่ทิ้ง ETS2LA แบบไม่ดูแล"
+
 #, csharp-format
 msgid "Error while downloading update: {0}"
 msgstr "เกิดข้อผิดพลาดระหว่างดาวโหลดอัปเดต: {0}"
-
-msgid "I won't leave ETS2LA unattended"
-msgstr "ฉันจะไม่ทิ้ง ETS2LA แบบไม่ดูแล"
 
 msgid "Keyboard"
 msgstr "คีย์บอร์ด"
@@ -282,6 +291,10 @@ msgstr ""
 msgid "Fast"
 msgstr "เร็ว"
 
+#, csharp-format
+msgid "You are currently logged in as {0}."
+msgstr ""
+
 msgid "Install Update and Restart"
 msgstr "ติดตั้งอัปเดตและรีสตาร์ท"
 
@@ -291,6 +304,9 @@ msgstr "คุณภาพการโค้ง"
 msgid ""
 "Adjust how ETS2LA will respond to necessary steering changes. This for "
 "example controls how quickly ETS2LA will lane-change."
+msgstr ""
+
+msgid "Logout Successful"
 msgstr ""
 
 #, csharp-format
@@ -325,11 +341,6 @@ msgid ""
 msgstr ""
 
 msgid "Enable All"
-msgstr ""
-
-msgid ""
-"Subscriptions will <span class=\"font-bold text-text-accent\">never</span> "
-"be required for using ETS2LA. They are a way you can support the development."
 msgstr ""
 
 msgid "Data Parsing"
@@ -380,6 +391,10 @@ msgstr ""
 
 msgid "Are you sure?"
 msgstr "คุณแน่ใจไหม?"
+
+#, csharp-format
+msgid "You have successfully logged in as {0}."
+msgstr ""
 
 msgid "Render AR Elements"
 msgstr ""
@@ -528,6 +543,9 @@ msgstr ""
 msgid "Force Map Load"
 msgstr "บังคับโหลดแผนที่"
 
+msgid "Your account has been successfully removed."
+msgstr ""
+
 #, csharp-format
 msgid "Failed to uninstall SDK version '{0}' from '{1}': {2}"
 msgstr "ถอนการติดตั้ง SDK เวอร์ชั่น '{0}' จาก '{1}': {2} ล้มเหลว"
@@ -576,11 +594,6 @@ msgstr ""
 msgid "Error Loading Map Data"
 msgstr ""
 
-msgid ""
-"You'll register, login, and manage your account settings and subscriptions "
-"here."
-msgstr ""
-
 #, csharp-format
 msgid "Current Version: {0}"
 msgstr "เวอร์ชั่นปัจจุบัน: {0}"
@@ -594,6 +607,9 @@ msgstr ""
 
 msgid "Slow"
 msgstr "ช้า"
+
+msgid "Login Failed"
+msgstr ""
 
 msgid ""
 "Authentication is required. The client must authenticate itself to get the "
@@ -623,6 +639,9 @@ msgstr ""
 
 msgid "Audio"
 msgstr "เสียง"
+
+msgid "Login Error"
+msgstr ""
 
 #, csharp-format
 msgid "{0} m/s ({1} in {2})"
@@ -722,9 +741,6 @@ msgstr "เกิดข้อผิดพลาดระหว่างเล่
 msgid "Controls Backend shutdown complete, all controls saved."
 msgstr ""
 
-msgid "Anonymous"
-msgstr ""
-
 msgid ""
 "The units ETS2LA will use when displaying information to a user. Scientific "
 "has only slight differences to metric."
@@ -746,6 +762,14 @@ msgstr ""
 
 #, csharp-format
 msgid "Plugin with ID {0} not found in available plugins."
+msgstr ""
+
+msgid "Confirm Account Removal"
+msgstr ""
+
+msgid ""
+"Removing your account will delete all your data from our servers. This "
+"action cannot be undone."
 msgstr ""
 
 msgid "Manager"
@@ -776,6 +800,9 @@ msgstr[1] ""
 msgid "Pascals"
 msgstr ""
 
+msgid "Account Removal Error"
+msgstr ""
+
 #, csharp-format
 msgid "Failed to disable {0}: {1}"
 msgstr "ปิดการใช้งาน {0} ล้มเหลว : {1}"
@@ -783,15 +810,18 @@ msgstr "ปิดการใช้งาน {0} ล้มเหลว : {1}"
 msgid "You can enable the plugins we installed in a previous step here."
 msgstr ""
 
-msgid "SDK Installed"
+msgid "Login"
 msgstr ""
 
-#, csharp-format
-msgid "Bound control {0} ({1}) to device {2} and control {3}"
+msgid "SDK Installed"
 msgstr ""
 
 msgid "Current Speed"
 msgstr "ความเร็วตอนนี้"
+
+#, csharp-format
+msgid "Bound control {0} ({1}) to device {2} and control {3}"
+msgstr ""
 
 msgid "miles per hour"
 msgstr "ไมล์ต่อชั่วโมง"
@@ -872,6 +902,9 @@ msgstr ""
 msgid "bar"
 msgstr ""
 
+msgid "Account Removed"
+msgstr ""
+
 msgid ""
 "Couldn't connect to the game. Please open ETS2 or ATS and enable the SDK."
 msgstr ""
@@ -910,9 +943,6 @@ msgstr ""
 
 msgid "Not Connected"
 msgstr "ไม่ได้เชื่อมต่อ"
-
-msgid "This page will be implemented in a future update."
-msgstr ""
 
 #, csharp-format
 msgid "Plugin with ID [gray]{0}[/] is already loaded, skipping duplicate."
@@ -977,6 +1007,9 @@ msgid "found {0} node"
 msgid_plural "found {0} nodes"
 msgstr[0] ""
 msgstr[1] ""
+
+msgid "Open Source"
+msgstr ""
 
 #, csharp-format
 msgid "<span class=\"font-semibold\">{0}</span> until {1}"
@@ -1138,6 +1171,9 @@ msgstr "กำลังโหลดอัปเดต"
 msgid "Simplified Graphics"
 msgstr ""
 
+msgid "Failed to log in. Please check your credentials and try again."
+msgstr ""
+
 msgid "Steering Sensitivity"
 msgstr ""
 
@@ -1168,6 +1204,10 @@ msgstr "ปิด"
 msgid "L"
 msgstr ""
 
+msgid ""
+"An error occurred while trying to log in. Please try again later. Error: "
+msgstr ""
+
 msgid "Installing..."
 msgstr "กำลังติดตั้ง..."
 
@@ -1196,8 +1236,15 @@ msgstr ""
 msgid "Version {0} not found for plugin with ID {1}."
 msgstr "เวอร์ชั่น {0} ไม่เจอสำหรับปลั๊กอินด้วยไอดี {1}"
 
+msgid ""
+"An error occurred while trying to log out. Please try again later. Error: "
+msgstr ""
+
 msgid "Invalid file"
 msgstr "ไฟล์ไม่ถูกต้อง"
+
+msgid "Login Successful"
+msgstr ""
 
 #, csharp-format
 msgid "Discovered {0} library in total"
@@ -1219,6 +1266,9 @@ msgstr ""
 #, csharp-format
 msgid ""
 "Manually added game at '{0}' no longer contains a game executable, skipping."
+msgstr ""
+
+msgid "Logout Error"
 msgstr ""
 
 #, csharp-format
@@ -1432,6 +1482,11 @@ msgid "Window"
 msgstr "หน้าต่าง"
 
 msgid ""
+"You cannot register an account yet, this page is only for logging in with an "
+"existing developer account."
+msgstr ""
+
+msgid ""
 "If you see a fully black screen, see the FAQ at <span class=\"description "
 "hover:underline\">ets2la.com</span>."
 msgstr ""
@@ -1525,6 +1580,9 @@ msgid ""
 msgstr ""
 
 msgid "Recommended Plugins"
+msgstr ""
+
+msgid "Failed to remove account. Please try again."
 msgstr ""
 
 msgid ""
@@ -1654,6 +1712,9 @@ msgstr "แปลโดย:"
 msgid "This game was found at"
 msgstr "เกมนี้เจอที่"
 
+msgid "You have successfully logged out."
+msgstr ""
+
 msgid "Data Quality"
 msgstr "คุณภาพข้อมูล"
 
@@ -1735,6 +1796,9 @@ msgstr ""
 msgid "Invalid directory"
 msgstr ""
 
+msgid "Logout"
+msgstr ""
+
 msgid "Starting download..."
 msgstr "กำลังเริ่มต้นดาวโหลด..."
 
@@ -1778,6 +1842,11 @@ msgstr ""
 
 msgid "meters"
 msgstr "เมตร"
+
+msgid ""
+"An error occurred while trying to remove your account. Please try again "
+"later. Error: "
+msgstr ""
 
 msgid "°C"
 msgstr "°C"
@@ -1859,6 +1928,9 @@ msgstr ""
 
 #, csharp-format
 msgid "Snap to each 10 {0}"
+msgstr ""
+
+msgid "Logout Failed"
 msgstr ""
 
 #, csharp-format

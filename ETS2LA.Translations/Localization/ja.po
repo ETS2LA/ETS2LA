@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-10-03 20:25:14+0300\n"
+"POT-Creation-Date: 2026-10-04 19:33:16+0300\n"
 "PO-Revision-Date: 2026-09-24 18:57+0000\n"
 "Last-Translator: Pastel <pastel@ets2la.com>\n"
 "Language-Team: Japanese <http://weblate.ets2la.com/projects/ets2la/ets2la/ja/"
@@ -130,11 +130,11 @@ msgstr "操作 {0}（{1}）の割り当てを開始"
 msgid "Failed to enable dependency: {0}"
 msgstr "依存関係の有効化に失敗しました: {0}"
 
-msgid "Main"
-msgstr "メイン"
-
 msgid "Only Show Official News"
 msgstr ""
+
+msgid "Main"
+msgstr "メイン"
 
 #, csharp-format
 msgid ""
@@ -152,6 +152,9 @@ msgstr[0] "{0}件の道路が見つかりました"
 #, csharp-format
 msgid "Binding for control {0} ({1}) timed out."
 msgstr "操作 {0}（{1}）の割り当てがタイムアウトしました。"
+
+msgid "Remove Account"
+msgstr ""
 
 #, csharp-format
 msgid ""
@@ -222,6 +225,9 @@ msgstr ""
 msgid "Welcome to ETS2LA!"
 msgstr "ETS2LAへようこそ！"
 
+msgid "Account Removal Failed"
+msgstr ""
+
 msgid ""
 "<span class=\"text-text-accent\"))>Success!</span> You can find more plugins "
 "in the catalogue later."
@@ -271,6 +277,9 @@ msgstr "ID {0} のプラグインの更新に成功しました。"
 msgid "Look in the top left corner."
 msgstr "左上の隅を見てください。"
 
+msgid "Failed to log out. Please try again."
+msgstr ""
+
 msgid "Visual"
 msgstr "ビジュアル"
 
@@ -283,12 +292,12 @@ msgstr "ログの表示数を減らす"
 msgid "Install Plugins"
 msgstr "プラグインのインストール"
 
+msgid "I won't leave ETS2LA unattended"
+msgstr "ETS2LAを無人で動作させません"
+
 #, csharp-format
 msgid "Error while downloading update: {0}"
 msgstr "アップデートのダウンロード中にエラーが発生しました:{0}"
-
-msgid "I won't leave ETS2LA unattended"
-msgstr "ETS2LAを無人で動作させません"
 
 msgid "Keyboard"
 msgstr "キーボード"
@@ -308,6 +317,10 @@ msgstr "GLFWウィンドウの作成に失敗しました"
 msgid "Fast"
 msgstr "早い"
 
+#, csharp-format
+msgid "You are currently logged in as {0}."
+msgstr ""
+
 msgid "Install Update and Restart"
 msgstr "更新をインストールして再起動"
 
@@ -320,6 +333,9 @@ msgid ""
 msgstr ""
 "ETS2LAが必要なステアリング操作にどのように反応するかを調整します。これにより"
 "ETS2LAが車線変更を行う速度を制御できます。"
+
+msgid "Logout Successful"
+msgstr ""
 
 #, csharp-format
 msgid "Successfully uninstalled plugin with ID {0}."
@@ -356,14 +372,6 @@ msgstr ""
 
 msgid "Enable All"
 msgstr "すべて有効にする"
-
-msgid ""
-"Subscriptions will <span class=\"font-bold text-text-accent\">never</span> "
-"be required for using ETS2LA. They are a way you can support the development."
-msgstr ""
-"ETS2LAの利用に、<span class=\"font-bold text-text-accent\">決して</span> サブ"
-"スクリプションは必要ありません。サブスクリプションは開発を支援するための手段"
-"の一つです。"
 
 msgid "Data Parsing"
 msgstr "データの解析"
@@ -419,6 +427,10 @@ msgstr "'{0}' からバージョンを読み込めませんでした: {1}"
 
 msgid "Are you sure?"
 msgstr "本当に良いですか？"
+
+#, csharp-format
+msgid "You have successfully logged in as {0}."
+msgstr ""
 
 msgid "Render AR Elements"
 msgstr "AR要素を描画する"
@@ -583,6 +595,9 @@ msgstr "Visualization Socketsプラグインを有効にしてください。"
 msgid "Force Map Load"
 msgstr "マップの読み込みを強制する"
 
+msgid "Your account has been successfully removed."
+msgstr ""
+
 #, csharp-format
 msgid "Failed to uninstall SDK version '{0}' from '{1}': {2}"
 msgstr "SDKバージョン「{0}」を「{1}」からアンインストールできませんでした: {2}"
@@ -630,13 +645,6 @@ msgstr "警告 : RAMが不足しています"
 msgid "Error Loading Map Data"
 msgstr "地図データの読み込みに失敗しました"
 
-msgid ""
-"You'll register, login, and manage your account settings and subscriptions "
-"here."
-msgstr ""
-"ここではアカウントの登録・ログイン、アカウント設定やサブスクリプションの管理"
-"を行うことができます。"
-
 #, csharp-format
 msgid "Current Version: {0}"
 msgstr "現在のバージョン: {0}"
@@ -650,6 +658,9 @@ msgstr "速度制御の刻み幅"
 
 msgid "Slow"
 msgstr "遅い"
+
+msgid "Login Failed"
+msgstr ""
 
 msgid ""
 "Authentication is required. The client must authenticate itself to get the "
@@ -681,6 +692,9 @@ msgstr "ID {0} のインストール済みプラグインが見つかりませ�
 
 msgid "Audio"
 msgstr "オーディオ"
+
+msgid "Login Error"
+msgstr ""
 
 #, csharp-format
 msgid "{0} m/s ({1} in {2})"
@@ -795,9 +809,6 @@ msgstr ""
 "制御システムのバックエンドのシャットダウンが完了しました。すべての制御設定が"
 "保存されました。"
 
-msgid "Anonymous"
-msgstr "匿名"
-
 msgid ""
 "The units ETS2LA will use when displaying information to a user. Scientific "
 "has only slight differences to metric."
@@ -826,6 +837,14 @@ msgstr "プラグイン {0} の終了に失敗しました: {1}"
 msgid "Plugin with ID {0} not found in available plugins."
 msgstr "ID {0} のプラグインが利用可能なプラグインの中にありません。"
 
+msgid "Confirm Account Removal"
+msgstr ""
+
+msgid ""
+"Removing your account will delete all your data from our servers. This "
+"action cannot be undone."
+msgstr ""
+
 msgid "Manager"
 msgstr "マネージャー"
 
@@ -853,6 +872,9 @@ msgstr[0] "{0}個のプレハブが見つかりました"
 msgid "Pascals"
 msgstr "パスカル"
 
+msgid "Account Removal Error"
+msgstr ""
+
 #, csharp-format
 msgid "Failed to disable {0}: {1}"
 msgstr "{0} の無効化に失敗しました: {1}"
@@ -860,16 +882,19 @@ msgstr "{0} の無効化に失敗しました: {1}"
 msgid "You can enable the plugins we installed in a previous step here."
 msgstr "ここで、前の手順でインストールしたプラグインを有効にできます。"
 
+msgid "Login"
+msgstr ""
+
 msgid "SDK Installed"
 msgstr "SDKがインストールされました"
+
+msgid "Current Speed"
+msgstr "現在の速度"
 
 #, csharp-format
 msgid "Bound control {0} ({1}) to device {2} and control {3}"
 msgstr ""
 "コントロール {0} ({1}) をデバイス {2} およびコントロール {3} に紐付けました"
-
-msgid "Current Speed"
-msgstr "現在の速度"
 
 msgid "miles per hour"
 msgstr "マイル毎時"
@@ -960,6 +985,9 @@ msgstr ""
 msgid "bar"
 msgstr "bar"
 
+msgid "Account Removed"
+msgstr ""
+
 msgid ""
 "Couldn't connect to the game. Please open ETS2 or ATS and enable the SDK."
 msgstr ""
@@ -1008,9 +1036,6 @@ msgstr "「{0}」のインストール先のマップ読み込みに失敗しま
 
 msgid "Not Connected"
 msgstr "接続されていません"
-
-msgid "This page will be implemented in a future update."
-msgstr "このページは今後のアップデートで実装される予定です。"
 
 #, csharp-format
 msgid "Plugin with ID [gray]{0}[/] is already loaded, skipping duplicate."
@@ -1086,6 +1111,9 @@ msgstr ""
 msgid "found {0} node"
 msgid_plural "found {0} nodes"
 msgstr[0] "{0} 個のノードを検出"
+
+msgid "Open Source"
+msgstr ""
 
 #, csharp-format
 msgid "<span class=\"font-semibold\">{0}</span> until {1}"
@@ -1263,6 +1291,9 @@ msgstr "アップデートをダウンロード中"
 msgid "Simplified Graphics"
 msgstr "簡略化されたグラフィック"
 
+msgid "Failed to log in. Please check your credentials and try again."
+msgstr ""
+
 msgid "Steering Sensitivity"
 msgstr "ステアリングの感度"
 
@@ -1292,6 +1323,10 @@ msgstr "オフ"
 
 msgid "L"
 msgstr "L"
+
+msgid ""
+"An error occurred while trying to log in. Please try again later. Error: "
+msgstr ""
 
 msgid "Installing..."
 msgstr "インストール中..."
@@ -1323,8 +1358,15 @@ msgstr "現在{0} FPSで動作しています。"
 msgid "Version {0} not found for plugin with ID {1}."
 msgstr "ID {1} のプラグインに対応するバージョン {0} が見つかりませんでした。"
 
+msgid ""
+"An error occurred while trying to log out. Please try again later. Error: "
+msgstr ""
+
 msgid "Invalid file"
 msgstr "無効なファイル"
+
+msgid "Login Successful"
+msgstr ""
 
 #, csharp-format
 msgid "Discovered {0} library in total"
@@ -1350,6 +1392,9 @@ msgid ""
 msgstr ""
 "「{0}」に手動で追加されたゲームに実行ファイルが見つからないため、スキップしま"
 "した。"
+
+msgid "Logout Error"
+msgstr ""
 
 #, csharp-format
 msgid "Found {0} game installation."
@@ -1585,6 +1630,11 @@ msgid "Window"
 msgstr "ウィンドウ"
 
 msgid ""
+"You cannot register an account yet, this page is only for logging in with an "
+"existing developer account."
+msgstr ""
+
+msgid ""
 "If you see a fully black screen, see the FAQ at <span class=\"description "
 "hover:underline\">ets2la.com</span>."
 msgstr ""
@@ -1692,6 +1742,9 @@ msgstr ""
 
 msgid "Recommended Plugins"
 msgstr "おすすめのプラグイン"
+
+msgid "Failed to remove account. Please try again."
+msgstr ""
 
 msgid ""
 "The maximum speed ETS2LA will accelerate to. It might still drift over this "
@@ -1841,6 +1894,9 @@ msgstr "翻訳者:"
 msgid "This game was found at"
 msgstr "このゲームが見つかった場所"
 
+msgid "You have successfully logged out."
+msgstr ""
+
 msgid "Data Quality"
 msgstr "データの品質"
 
@@ -1926,6 +1982,9 @@ msgstr "オーバーレイを除いたCPU使用率（％）"
 msgid "Invalid directory"
 msgstr "無効なディレクトリ"
 
+msgid "Logout"
+msgstr ""
+
 msgid "Starting download..."
 msgstr "ダウンロードを開始します..."
 
@@ -1974,6 +2033,11 @@ msgstr "希望速度: "
 
 msgid "meters"
 msgstr "メートル"
+
+msgid ""
+"An error occurred while trying to remove your account. Please try again "
+"later. Error: "
+msgstr ""
 
 msgid "°C"
 msgstr "°C"
@@ -2060,6 +2124,9 @@ msgstr "最終的な免責事項 <span class=\"description\">2/2</span>"
 msgid "Snap to each 10 {0}"
 msgstr "10 {0}ごとにスナップ"
 
+msgid "Logout Failed"
+msgstr ""
+
 #, csharp-format
 msgid "Created plugin directory: [gray]{0}[/]"
 msgstr "プラグインディレクトリを作成しました：[gray]{0}[/]"
@@ -2124,6 +2191,28 @@ msgstr ""
 #, csharp-format
 msgid "Not all dependencies for plugin {0} are installed."
 msgstr "プラグイン {0} に必要な依存関係がすべてインストールされていません。"
+
+#~ msgid ""
+#~ "Subscriptions will <span class=\"font-bold text-text-accent\">never</"
+#~ "span> be required for using ETS2LA. They are a way you can support the "
+#~ "development."
+#~ msgstr ""
+#~ "ETS2LAの利用に、<span class=\"font-bold text-text-accent\">決して</span> "
+#~ "サブスクリプションは必要ありません。サブスクリプションは開発を支援するため"
+#~ "の手段の一つです。"
+
+#~ msgid ""
+#~ "You'll register, login, and manage your account settings and "
+#~ "subscriptions here."
+#~ msgstr ""
+#~ "ここではアカウントの登録・ログイン、アカウント設定やサブスクリプションの管"
+#~ "理を行うことができます。"
+
+#~ msgid "Anonymous"
+#~ msgstr "匿名"
+
+#~ msgid "This page will be implemented in a future update."
+#~ msgstr "このページは今後のアップデートで実装される予定です。"
 
 #~ msgid ""
 #~ "Like ETS2LA? Consider supporting us by becoming a <span class=\"font-bold "

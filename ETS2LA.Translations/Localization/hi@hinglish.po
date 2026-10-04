@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-10-03 20:25:14+0300\n"
+"POT-Creation-Date: 2026-10-04 19:33:16+0300\n"
 "PO-Revision-Date: 2026-08-25 11:19+0000\n"
 "Last-Translator: Artyz <artyz@ets2la.com>\n"
 "Language-Team: Hindi (Hinglish) <http://weblate.ets2la.com/projects/ets2la/"
@@ -117,11 +117,11 @@ msgstr ""
 msgid "Failed to enable dependency: {0}"
 msgstr ""
 
-msgid "Main"
-msgstr "Mukhya"
-
 msgid "Only Show Official News"
 msgstr ""
+
+msgid "Main"
+msgstr "Mukhya"
 
 #, csharp-format
 msgid ""
@@ -139,6 +139,9 @@ msgstr[1] ""
 
 #, csharp-format
 msgid "Binding for control {0} ({1}) timed out."
+msgstr ""
+
+msgid "Remove Account"
 msgstr ""
 
 #, csharp-format
@@ -201,6 +204,9 @@ msgstr ""
 msgid "Welcome to ETS2LA!"
 msgstr ""
 
+msgid "Account Removal Failed"
+msgstr ""
+
 msgid ""
 "<span class=\"text-text-accent\"))>Success!</span> You can find more plugins "
 "in the catalogue later."
@@ -243,6 +249,9 @@ msgstr ""
 msgid "Look in the top left corner."
 msgstr ""
 
+msgid "Failed to log out. Please try again."
+msgstr ""
+
 msgid "Visual"
 msgstr "Visual"
 
@@ -255,11 +264,11 @@ msgstr ""
 msgid "Install Plugins"
 msgstr "Install plugins"
 
-#, csharp-format
-msgid "Error while downloading update: {0}"
+msgid "I won't leave ETS2LA unattended"
 msgstr ""
 
-msgid "I won't leave ETS2LA unattended"
+#, csharp-format
+msgid "Error while downloading update: {0}"
 msgstr ""
 
 msgid "Keyboard"
@@ -278,6 +287,10 @@ msgstr "GLFW window banane mein failure ho gayi"
 msgid "Fast"
 msgstr "Tez"
 
+#, csharp-format
+msgid "You are currently logged in as {0}."
+msgstr ""
+
 msgid "Install Update and Restart"
 msgstr "Update ko install aur restart karo"
 
@@ -287,6 +300,9 @@ msgstr ""
 msgid ""
 "Adjust how ETS2LA will respond to necessary steering changes. This for "
 "example controls how quickly ETS2LA will lane-change."
+msgstr ""
+
+msgid "Logout Successful"
 msgstr ""
 
 #, csharp-format
@@ -321,11 +337,6 @@ msgid ""
 msgstr ""
 
 msgid "Enable All"
-msgstr ""
-
-msgid ""
-"Subscriptions will <span class=\"font-bold text-text-accent\">never</span> "
-"be required for using ETS2LA. They are a way you can support the development."
 msgstr ""
 
 msgid "Data Parsing"
@@ -374,6 +385,10 @@ msgid "Failed to read version from '{0}': {1}"
 msgstr ""
 
 msgid "Are you sure?"
+msgstr ""
+
+#, csharp-format
+msgid "You have successfully logged in as {0}."
 msgstr ""
 
 msgid "Render AR Elements"
@@ -525,6 +540,9 @@ msgstr ""
 msgid "Force Map Load"
 msgstr ""
 
+msgid "Your account has been successfully removed."
+msgstr ""
+
 #, csharp-format
 msgid "Failed to uninstall SDK version '{0}' from '{1}': {2}"
 msgstr ""
@@ -573,11 +591,6 @@ msgstr ""
 msgid "Error Loading Map Data"
 msgstr ""
 
-msgid ""
-"You'll register, login, and manage your account settings and subscriptions "
-"here."
-msgstr ""
-
 #, csharp-format
 msgid "Current Version: {0}"
 msgstr ""
@@ -590,6 +603,9 @@ msgid "Speed Control Step Size"
 msgstr ""
 
 msgid "Slow"
+msgstr ""
+
+msgid "Login Failed"
 msgstr ""
 
 msgid ""
@@ -621,6 +637,9 @@ msgid "Installed plugin with ID {0} not found."
 msgstr ""
 
 msgid "Audio"
+msgstr ""
+
+msgid "Login Error"
 msgstr ""
 
 #, csharp-format
@@ -721,9 +740,6 @@ msgstr ""
 msgid "Controls Backend shutdown complete, all controls saved."
 msgstr ""
 
-msgid "Anonymous"
-msgstr ""
-
 msgid ""
 "The units ETS2LA will use when displaying information to a user. Scientific "
 "has only slight differences to metric."
@@ -745,6 +761,14 @@ msgstr "Plugin {0} shutdown nahi ho paya: {1}"
 
 #, csharp-format
 msgid "Plugin with ID {0} not found in available plugins."
+msgstr ""
+
+msgid "Confirm Account Removal"
+msgstr ""
+
+msgid ""
+"Removing your account will delete all your data from our servers. This "
+"action cannot be undone."
 msgstr ""
 
 msgid "Manager"
@@ -775,6 +799,9 @@ msgstr[1] ""
 msgid "Pascals"
 msgstr ""
 
+msgid "Account Removal Error"
+msgstr ""
+
 #, csharp-format
 msgid "Failed to disable {0}: {1}"
 msgstr ""
@@ -782,14 +809,17 @@ msgstr ""
 msgid "You can enable the plugins we installed in a previous step here."
 msgstr ""
 
+msgid "Login"
+msgstr ""
+
 msgid "SDK Installed"
+msgstr ""
+
+msgid "Current Speed"
 msgstr ""
 
 #, csharp-format
 msgid "Bound control {0} ({1}) to device {2} and control {3}"
-msgstr ""
-
-msgid "Current Speed"
 msgstr ""
 
 msgid "miles per hour"
@@ -871,6 +901,9 @@ msgstr ""
 msgid "bar"
 msgstr "bar"
 
+msgid "Account Removed"
+msgstr ""
+
 msgid ""
 "Couldn't connect to the game. Please open ETS2 or ATS and enable the SDK."
 msgstr ""
@@ -908,9 +941,6 @@ msgid "Failed to load map for installation at '{0}'"
 msgstr ""
 
 msgid "Not Connected"
-msgstr ""
-
-msgid "This page will be implemented in a future update."
 msgstr ""
 
 #, csharp-format
@@ -983,6 +1013,9 @@ msgid "found {0} node"
 msgid_plural "found {0} nodes"
 msgstr[0] "Mil gaya {0} node"
 msgstr[1] "{0} nodes mil gaya"
+
+msgid "Open Source"
+msgstr ""
 
 #, csharp-format
 msgid "<span class=\"font-semibold\">{0}</span> until {1}"
@@ -1146,6 +1179,9 @@ msgstr ""
 msgid "Simplified Graphics"
 msgstr ""
 
+msgid "Failed to log in. Please check your credentials and try again."
+msgstr ""
+
 msgid "Steering Sensitivity"
 msgstr ""
 
@@ -1176,6 +1212,10 @@ msgstr ""
 msgid "L"
 msgstr ""
 
+msgid ""
+"An error occurred while trying to log in. Please try again later. Error: "
+msgstr ""
+
 msgid "Installing..."
 msgstr "Installing…"
 
@@ -1204,7 +1244,14 @@ msgstr ""
 msgid "Version {0} not found for plugin with ID {1}."
 msgstr ""
 
+msgid ""
+"An error occurred while trying to log out. Please try again later. Error: "
+msgstr ""
+
 msgid "Invalid file"
+msgstr ""
+
+msgid "Login Successful"
 msgstr ""
 
 #, csharp-format
@@ -1227,6 +1274,9 @@ msgstr ""
 #, csharp-format
 msgid ""
 "Manually added game at '{0}' no longer contains a game executable, skipping."
+msgstr ""
+
+msgid "Logout Error"
 msgstr ""
 
 #, csharp-format
@@ -1446,6 +1496,11 @@ msgid "Window"
 msgstr ""
 
 msgid ""
+"You cannot register an account yet, this page is only for logging in with an "
+"existing developer account."
+msgstr ""
+
+msgid ""
 "If you see a fully black screen, see the FAQ at <span class=\"description "
 "hover:underline\">ets2la.com</span>."
 msgstr ""
@@ -1539,6 +1594,9 @@ msgid ""
 msgstr ""
 
 msgid "Recommended Plugins"
+msgstr ""
+
+msgid "Failed to remove account. Please try again."
 msgstr ""
 
 msgid ""
@@ -1673,6 +1731,9 @@ msgstr "Anuvadak:"
 msgid "This game was found at"
 msgstr ""
 
+msgid "You have successfully logged out."
+msgstr ""
+
 msgid "Data Quality"
 msgstr ""
 
@@ -1754,6 +1815,9 @@ msgstr ""
 msgid "Invalid directory"
 msgstr ""
 
+msgid "Logout"
+msgstr ""
+
 msgid "Starting download..."
 msgstr "Download shuru ho raha hai…"
 
@@ -1799,6 +1863,11 @@ msgid "Desired Speed: "
 msgstr "Kitni speed chahte: "
 
 msgid "meters"
+msgstr ""
+
+msgid ""
+"An error occurred while trying to remove your account. Please try again "
+"later. Error: "
 msgstr ""
 
 msgid "°C"
@@ -1881,6 +1950,9 @@ msgstr "Aakhri Disclaimer <span class=\"description\">2/2</span>"
 
 #, csharp-format
 msgid "Snap to each 10 {0}"
+msgstr ""
+
+msgid "Logout Failed"
 msgstr ""
 
 #, csharp-format

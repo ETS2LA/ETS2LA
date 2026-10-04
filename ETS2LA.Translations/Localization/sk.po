@@ -2,11 +2,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-10-03 20:25:14+0300\n"
+"POT-Creation-Date: 2026-10-04 19:33:16+0300\n"
 "PO-Revision-Date: 2026-10-04 16:36+0000\n"
 "Last-Translator: Ketchup1812 <ketchup1812@ets2la.com>\n"
-"Language-Team: Slovak <http://weblate.ets2la.com/projects/ets2la/ets2la/sk/>"
-"\n"
+"Language-Team: Slovak <http://weblate.ets2la.com/projects/ets2la/ets2la/sk/"
+">\n"
 "Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -130,11 +130,11 @@ msgstr "Začínam mapovať klávesi pre ovládací prvok {0} ({1})"
 msgid "Failed to enable dependency: {0}"
 msgstr "Nepodarilo sa aktivovať závislosť: {0}"
 
-msgid "Main"
-msgstr "Hlavné"
-
 msgid "Only Show Official News"
 msgstr "Zobraziť iba oficiálne noviny"
+
+msgid "Main"
+msgstr "Hlavné"
 
 #, csharp-format
 msgid ""
@@ -154,6 +154,9 @@ msgstr[2] "Bolo nájdených {0} ciest"
 #, csharp-format
 msgid "Binding for control {0} ({1}) timed out."
 msgstr "Vypršal časový limit pre mapovanie ovládacieho prvku {0} ({1})."
+
+msgid "Remove Account"
+msgstr ""
 
 #, csharp-format
 msgid ""
@@ -224,6 +227,9 @@ msgstr "Kliknutím kamkoľvek mimo dialógového okna ho zatvoríte."
 msgid "Welcome to ETS2LA!"
 msgstr "Vitajte v ETS2LA!"
 
+msgid "Account Removal Failed"
+msgstr ""
+
 msgid ""
 "<span class=\"text-text-accent\"))>Success!</span> You can find more plugins "
 "in the catalogue later."
@@ -274,6 +280,9 @@ msgstr "Plugin s ID {0} bol úspešne aktualizovaný."
 msgid "Look in the top left corner."
 msgstr "Pozrite sa do ľavého horného rohu."
 
+msgid "Failed to log out. Please try again."
+msgstr ""
+
 msgid "Visual"
 msgstr "Vizuál"
 
@@ -286,12 +295,12 @@ msgstr "Zobraziť menej záznamov"
 msgid "Install Plugins"
 msgstr "Nainštalujte pluginy"
 
+msgid "I won't leave ETS2LA unattended"
+msgstr "Nenechám ETS2LA bez dozoru"
+
 #, csharp-format
 msgid "Error while downloading update: {0}"
 msgstr "Chyba pri sťahovaní aktualizácie: {0}"
-
-msgid "I won't leave ETS2LA unattended"
-msgstr "Nenechám ETS2LA bez dozoru"
 
 msgid "Keyboard"
 msgstr "Klávesnica"
@@ -311,6 +320,10 @@ msgstr "Nepodarilo sa vytvoriť okno GLFW"
 msgid "Fast"
 msgstr "Rýchlo"
 
+#, csharp-format
+msgid "You are currently logged in as {0}."
+msgstr ""
+
 msgid "Install Update and Restart"
 msgstr "Nainštalujte aktualizáciu a reštartujte"
 
@@ -323,6 +336,9 @@ msgid ""
 msgstr ""
 "Nastavte, ako bude ETS2LA reagovať na potrebné dotočenie volantom. Týmto "
 "nastavením sa napríklad určuje, ako rýchlo bude ETS2LA meniť jazdný pruh."
+
+msgid "Logout Successful"
+msgstr ""
 
 #, csharp-format
 msgid "Successfully uninstalled plugin with ID {0}."
@@ -359,13 +375,6 @@ msgstr ""
 
 msgid "Enable All"
 msgstr "Zapnúť všetky"
-
-msgid ""
-"Subscriptions will <span class=\"font-bold text-text-accent\">never</span> "
-"be required for using ETS2LA. They are a way you can support the development."
-msgstr ""
-"Predplatné nebude <span class=\"font-bold text-text-accent\">nikdy</span> "
-"potrebné na používanie ETS2LA. Je to spôsob, ako môžete podporiť vývoj."
 
 msgid "Data Parsing"
 msgstr "Dáta Mapy"
@@ -424,6 +433,10 @@ msgstr "Nepodarilo sa načítať verziu z „{0}“: {1}"
 
 msgid "Are you sure?"
 msgstr "Ste si istí?"
+
+#, csharp-format
+msgid "You have successfully logged in as {0}."
+msgstr ""
 
 msgid "Render AR Elements"
 msgstr "Vykresliť prvky AR"
@@ -592,6 +605,9 @@ msgstr "Prosím, aktivujte plugin Visualization Sockets."
 msgid "Force Map Load"
 msgstr "Vynútiť načítanie mapy"
 
+msgid "Your account has been successfully removed."
+msgstr ""
+
 #, csharp-format
 msgid "Failed to uninstall SDK version '{0}' from '{1}': {2}"
 msgstr "Nepodarilo sa odinštalovať verziu SDK „{0}“ z „{1}“: {2}"
@@ -642,13 +658,6 @@ msgstr "Upozornenie: Nedostatočná pamäť RAM"
 msgid "Error Loading Map Data"
 msgstr "Chyba pri načítaní údajov mapy"
 
-msgid ""
-"You'll register, login, and manage your account settings and subscriptions "
-"here."
-msgstr ""
-"Tu sa zaregistrujete, prihlásite a budete spravovať nastavenia svojho účtu a "
-"predplatné."
-
 #, csharp-format
 msgid "Current Version: {0}"
 msgstr "Aktuálna verzia: {0}"
@@ -662,6 +671,9 @@ msgstr "Veľkosť kroku regulácie rýchlosti"
 
 msgid "Slow"
 msgstr "Pomaly"
+
+msgid "Login Failed"
+msgstr ""
 
 msgid ""
 "Authentication is required. The client must authenticate itself to get the "
@@ -694,6 +706,9 @@ msgstr "Nenašiel sa nainštalovaný plugin s ID {0}."
 
 msgid "Audio"
 msgstr "Zvuk"
+
+msgid "Login Error"
+msgstr ""
 
 #, csharp-format
 msgid "{0} m/s ({1} in {2})"
@@ -809,9 +824,6 @@ msgstr ""
 "Vypnutie backendu mapovania kláves bolo úspešné, všetky mapovania klávesov "
 "boli uložené."
 
-msgid "Anonymous"
-msgstr "Anonymný"
-
 msgid ""
 "The units ETS2LA will use when displaying information to a user. Scientific "
 "has only slight differences to metric."
@@ -839,6 +851,14 @@ msgstr "Nepodarilo sa vypnúť plugin {0}: {1}"
 #, csharp-format
 msgid "Plugin with ID {0} not found in available plugins."
 msgstr "Plugin s ID {0} nebol nájdený medzi dostupnými pluginmi."
+
+msgid "Confirm Account Removal"
+msgstr ""
+
+msgid ""
+"Removing your account will delete all your data from our servers. This "
+"action cannot be undone."
+msgstr ""
 
 msgid "Manager"
 msgstr "Manažér"
@@ -869,6 +889,9 @@ msgstr[2] "Bolo nájdených {0} prefabov"
 msgid "Pascals"
 msgstr "Pascali"
 
+msgid "Account Removal Error"
+msgstr ""
+
 #, csharp-format
 msgid "Failed to disable {0}: {1}"
 msgstr "Nepodarilo sa vypnúť {0}: {1}"
@@ -877,15 +900,18 @@ msgid "You can enable the plugins we installed in a previous step here."
 msgstr ""
 "Tu môžete aktivovať pluginy, ktoré sme nainštalovali v predchádzajúcom kroku."
 
+msgid "Login"
+msgstr ""
+
 msgid "SDK Installed"
 msgstr "SDK je nainštalované"
+
+msgid "Current Speed"
+msgstr "Aktuálna rýchlosť"
 
 #, csharp-format
 msgid "Bound control {0} ({1}) to device {2} and control {3}"
 msgstr "Priradili sme ovládač {0} ({1}) k zariadeniu {2} a ovládanie {3}"
-
-msgid "Current Speed"
-msgstr "Aktuálna rýchlosť"
 
 msgid "miles per hour"
 msgstr "míle za hodinu"
@@ -975,6 +1001,9 @@ msgstr ""
 msgid "bar"
 msgstr "bar"
 
+msgid "Account Removed"
+msgstr ""
+
 msgid ""
 "Couldn't connect to the game. Please open ETS2 or ATS and enable the SDK."
 msgstr ""
@@ -1025,9 +1054,6 @@ msgstr "Nepodarilo sa načítať mapu pre inštaláciu v umiestnení „{0}“"
 
 msgid "Not Connected"
 msgstr "Nie je pripojený"
-
-msgid "This page will be implemented in a future update."
-msgstr "Táto stránka bude sprístupnená v budúcej aktualizácii."
 
 #, csharp-format
 msgid "Plugin with ID [gray]{0}[/] is already loaded, skipping duplicate."
@@ -1105,6 +1131,9 @@ msgid_plural "found {0} nodes"
 msgstr[0] "Bol nájdený {0} uzol"
 msgstr[1] "Boli nájdené {0} uzly"
 msgstr[2] "Bolo nájdených {0} uzlov"
+
+msgid "Open Source"
+msgstr ""
 
 #, csharp-format
 msgid "<span class=\"font-semibold\">{0}</span> until {1}"
@@ -1285,6 +1314,9 @@ msgstr "Sťahovanie aktualizácie"
 msgid "Simplified Graphics"
 msgstr "Zjednodušená grafika"
 
+msgid "Failed to log in. Please check your credentials and try again."
+msgstr ""
+
 msgid "Steering Sensitivity"
 msgstr "Citlivosť zatáčania"
 
@@ -1316,6 +1348,10 @@ msgstr "Vypnúť"
 msgid "L"
 msgstr "L"
 
+msgid ""
+"An error occurred while trying to log in. Please try again later. Error: "
+msgstr ""
+
 msgid "Installing..."
 msgstr "Inštaluje sa..."
 
@@ -1344,8 +1380,15 @@ msgstr "V súčasnosti beží rýchlosťou {0} FPS."
 msgid "Version {0} not found for plugin with ID {1}."
 msgstr "Verzia {0} nebola nájdená pre plugin s ID {1}."
 
+msgid ""
+"An error occurred while trying to log out. Please try again later. Error: "
+msgstr ""
+
 msgid "Invalid file"
 msgstr "Neplatný súbor"
+
+msgid "Login Successful"
+msgstr ""
 
 #, csharp-format
 msgid "Discovered {0} library in total"
@@ -1373,6 +1416,9 @@ msgid ""
 msgstr ""
 "Hra pridaná ručne v priečinku „{0}“ už neobsahuje spustiteľný súbor hry, "
 "preto sa preskočí."
+
+msgid "Logout Error"
+msgstr ""
 
 #, csharp-format
 msgid "Found {0} game installation."
@@ -1610,6 +1656,11 @@ msgid "Window"
 msgstr "Okno"
 
 msgid ""
+"You cannot register an account yet, this page is only for logging in with an "
+"existing developer account."
+msgstr ""
+
+msgid ""
 "If you see a fully black screen, see the FAQ at <span class=\"description "
 "hover:underline\">ets2la.com</span>."
 msgstr ""
@@ -1718,6 +1769,9 @@ msgstr ""
 
 msgid "Recommended Plugins"
 msgstr "Odporúčané pluginy"
+
+msgid "Failed to remove account. Please try again."
+msgstr ""
 
 msgid ""
 "The maximum speed ETS2LA will accelerate to. It might still drift over this "
@@ -1869,6 +1923,9 @@ msgstr "Preložil:"
 msgid "This game was found at"
 msgstr "Túto hru sme našli v"
 
+msgid "You have successfully logged out."
+msgstr ""
+
 msgid "Data Quality"
 msgstr "Kvalita údajov"
 
@@ -1952,6 +2009,9 @@ msgstr "Percentuálny podiel voľného času procesora bez prekrývania"
 msgid "Invalid directory"
 msgstr "Neplatný adresár"
 
+msgid "Logout"
+msgstr ""
+
 msgid "Starting download..."
 msgstr "Začína sa sťahovanie..."
 
@@ -2002,6 +2062,11 @@ msgstr "Požadovaná rýchlosť: "
 
 msgid "meters"
 msgstr "metre"
+
+msgid ""
+"An error occurred while trying to remove your account. Please try again "
+"later. Error: "
+msgstr ""
 
 msgid "°C"
 msgstr "°C"
@@ -2089,6 +2154,9 @@ msgstr "Záverečné upozornenie <span class=\"description\">2/2</span>"
 msgid "Snap to each 10 {0}"
 msgstr "Zarovnať po každých 10 {0}"
 
+msgid "Logout Failed"
+msgstr ""
+
 #, csharp-format
 msgid "Created plugin directory: [gray]{0}[/]"
 msgstr "Vytvoril sa adresár pluginov: [gray]{0}[/]"
@@ -2158,6 +2226,27 @@ msgstr ""
 #, csharp-format
 msgid "Not all dependencies for plugin {0} are installed."
 msgstr "Nie sú nainštalované všetky závislosti pre plugin {0}."
+
+#~ msgid ""
+#~ "Subscriptions will <span class=\"font-bold text-text-accent\">never</"
+#~ "span> be required for using ETS2LA. They are a way you can support the "
+#~ "development."
+#~ msgstr ""
+#~ "Predplatné nebude <span class=\"font-bold text-text-accent\">nikdy</span> "
+#~ "potrebné na používanie ETS2LA. Je to spôsob, ako môžete podporiť vývoj."
+
+#~ msgid ""
+#~ "You'll register, login, and manage your account settings and "
+#~ "subscriptions here."
+#~ msgstr ""
+#~ "Tu sa zaregistrujete, prihlásite a budete spravovať nastavenia svojho "
+#~ "účtu a predplatné."
+
+#~ msgid "Anonymous"
+#~ msgstr "Anonymný"
+
+#~ msgid "This page will be implemented in a future update."
+#~ msgstr "Táto stránka bude sprístupnená v budúcej aktualizácii."
 
 #~ msgid ""
 #~ "Like ETS2LA? Consider supporting us by becoming a <span class=\"font-bold "

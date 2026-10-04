@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-10-03 20:25:14+0300\n"
+"POT-Creation-Date: 2026-10-04 19:33:16+0300\n"
 "PO-Revision-Date: 2026-10-03 16:36+0000\n"
 "Last-Translator: Tumppi066 <contact@ets2la.com>\n"
 "Language-Team: Finnish <http://weblate.ets2la.com/projects/ets2la/ets2la/fi/"
@@ -131,11 +131,11 @@ msgstr "Aloitetaan ohjausmäärityksen {0} ({1}) uudelleenmääritys"
 msgid "Failed to enable dependency: {0}"
 msgstr "Virhe vaatimuksen käynnistyksen yhteydessä: {0}"
 
-msgid "Main"
-msgstr "Pääasialliset"
-
 msgid "Only Show Official News"
 msgstr "Näytä vain viralliset uutiset"
+
+msgid "Main"
+msgstr "Pääasialliset"
 
 #, csharp-format
 msgid ""
@@ -154,6 +154,9 @@ msgstr[1] "{0} tietä"
 #, csharp-format
 msgid "Binding for control {0} ({1}) timed out."
 msgstr "Ohjainmäärityksen {0} ({1}) määritys aikakatkaistiin."
+
+msgid "Remove Account"
+msgstr ""
 
 #, csharp-format
 msgid ""
@@ -222,6 +225,9 @@ msgstr "Paina dialogin ulkopuolelle sulkeaksesi sen."
 msgid "Welcome to ETS2LA!"
 msgstr "Tervetuloa ETS2LA:han!"
 
+msgid "Account Removal Failed"
+msgstr ""
+
 msgid ""
 "<span class=\"text-text-accent\"))>Success!</span> You can find more plugins "
 "in the catalogue later."
@@ -271,6 +277,9 @@ msgstr "Lisäosa {0} päivitettiin onnistuneesti."
 msgid "Look in the top left corner."
 msgstr "Katso vasempaan yläkulmaan."
 
+msgid "Failed to log out. Please try again."
+msgstr ""
+
 msgid "Visual"
 msgstr "Visuaalinen"
 
@@ -283,12 +292,12 @@ msgstr "Näytä vähemmän lokeja"
 msgid "Install Plugins"
 msgstr "Asenna Lisäosat"
 
+msgid "I won't leave ETS2LA unattended"
+msgstr "En jätä sovellusta vahtimatta"
+
 #, csharp-format
 msgid "Error while downloading update: {0}"
 msgstr "Virhe päivityksen latauksessa: {0}"
-
-msgid "I won't leave ETS2LA unattended"
-msgstr "En jätä sovellusta vahtimatta"
 
 msgid "Keyboard"
 msgstr "Näppäimistö"
@@ -306,6 +315,10 @@ msgstr "Virhe GLFW ikkunan avaamisessa"
 msgid "Fast"
 msgstr "Nopea"
 
+#, csharp-format
+msgid "You are currently logged in as {0}."
+msgstr ""
+
 msgid "Install Update and Restart"
 msgstr "Asenna päivitys ja käynnistä uudelleen"
 
@@ -318,6 +331,9 @@ msgid ""
 msgstr ""
 "Säädä miten ETS2LA reagoi tarpeellisiin ohjausliikkeisiin. Tämä esimerkiksi "
 "säätää miten nopeasti vaihdamme kaistaa."
+
+msgid "Logout Successful"
+msgstr ""
 
 #, csharp-format
 msgid "Successfully uninstalled plugin with ID {0}."
@@ -356,14 +372,6 @@ msgstr ""
 
 msgid "Enable All"
 msgstr "Käynnistä kaikki"
-
-msgid ""
-"Subscriptions will <span class=\"font-bold text-text-accent\">never</span> "
-"be required for using ETS2LA. They are a way you can support the development."
-msgstr ""
-"Tilaaminen ei tule <span class=\"font-bold text-text-accent\">koskaan</span> "
-"olemaan tarpeellinen sovelluksen käyttöä varten. Se on vain tapa tukea "
-"kehitystä :)"
 
 msgid "Data Parsing"
 msgstr "Karttadatan Lataaminen"
@@ -423,6 +431,10 @@ msgstr "Version määritys paikasta {0} epäonnistui: {1}"
 
 msgid "Are you sure?"
 msgstr "Oletko varma?"
+
+#, csharp-format
+msgid "You have successfully logged in as {0}."
+msgstr ""
 
 msgid "Render AR Elements"
 msgstr "Renderöi AR (3D) elementit"
@@ -591,6 +603,9 @@ msgstr "Käynnistä \"Visualization Sockets\" lisäosa ensin."
 msgid "Force Map Load"
 msgstr "Pakota kartan lataus"
 
+msgid "Your account has been successfully removed."
+msgstr ""
+
 #, csharp-format
 msgid "Failed to uninstall SDK version '{0}' from '{1}': {2}"
 msgstr "SDK:n version {0} poistaminen paikasta {1} epäonnistui: {2}"
@@ -639,12 +654,6 @@ msgstr "Varoitus: Muistu (RAM) ei ole riittävä"
 msgid "Error Loading Map Data"
 msgstr "Virhe ladattaessa karttadataa"
 
-msgid ""
-"You'll register, login, and manage your account settings and subscriptions "
-"here."
-msgstr ""
-"Rekisteröidyt, kirjaudut, ja muokkaat tiliäsi ja tilauksiasi tällä sivulla."
-
 #, csharp-format
 msgid "Current Version: {0}"
 msgstr "Nykyinen versio: {0}"
@@ -658,6 +667,9 @@ msgstr "Nopeuden valinnan askelkoko"
 
 msgid "Slow"
 msgstr "Hidas"
+
+msgid "Login Failed"
+msgstr ""
 
 msgid ""
 "Authentication is required. The client must authenticate itself to get the "
@@ -689,6 +701,9 @@ msgstr "Asennettua lisäosaa ID:llä {0} ei löydy."
 
 msgid "Audio"
 msgstr "Ääni"
+
+msgid "Login Error"
+msgstr ""
 
 #, csharp-format
 msgid "{0} m/s ({1} in {2})"
@@ -802,9 +817,6 @@ msgstr ""
 "Ohjainmäärityksen taustapalvelun asetukset tallennettu ja suljettu "
 "onnistuneesti."
 
-msgid "Anonymous"
-msgstr "Anonyymi"
-
 msgid ""
 "The units ETS2LA will use when displaying information to a user. Scientific "
 "has only slight differences to metric."
@@ -832,6 +844,14 @@ msgstr "Lisäosan {0} sulkeminen epäonnistui: {1}"
 #, csharp-format
 msgid "Plugin with ID {0} not found in available plugins."
 msgstr "Lisäosaa {0} ei löydetty."
+
+msgid "Confirm Account Removal"
+msgstr ""
+
+msgid ""
+"Removing your account will delete all your data from our servers. This "
+"action cannot be undone."
+msgstr ""
 
 msgid "Manager"
 msgstr "Hallinta"
@@ -861,6 +881,9 @@ msgstr[1] "Löydettiin {0} risteystä"
 msgid "Pascals"
 msgstr "Paskalia"
 
+msgid "Account Removal Error"
+msgstr ""
+
 #, csharp-format
 msgid "Failed to disable {0}: {1}"
 msgstr "Virhe lisäosan {0} sulkemisessa: {1}"
@@ -868,15 +891,18 @@ msgstr "Virhe lisäosan {0} sulkemisessa: {1}"
 msgid "You can enable the plugins we installed in a previous step here."
 msgstr "Voit käynnistää aikaisemmin asentamamme lisäosat täältä."
 
+msgid "Login"
+msgstr ""
+
 msgid "SDK Installed"
 msgstr "SDK asennettu"
+
+msgid "Current Speed"
+msgstr "Nykyinen Nopeus"
 
 #, csharp-format
 msgid "Bound control {0} ({1}) to device {2} and control {3}"
 msgstr "Ohjäinmääritys {0} ({1}) määritelty laitteen {2} painikkeeseen {3}"
-
-msgid "Current Speed"
-msgstr "Nykyinen Nopeus"
 
 msgid "miles per hour"
 msgstr "mailia tunnissa"
@@ -965,6 +991,9 @@ msgstr ""
 msgid "bar"
 msgstr "bar"
 
+msgid "Account Removed"
+msgstr ""
+
 msgid ""
 "Couldn't connect to the game. Please open ETS2 or ATS and enable the SDK."
 msgstr ""
@@ -1014,9 +1043,6 @@ msgstr "Karttadatan lataus epäonnistui pelille paikassa {0}"
 
 msgid "Not Connected"
 msgstr "Laite irrotettu"
-
-msgid "This page will be implemented in a future update."
-msgstr "Tämä sivu rakennetaan tulevassa päivityksessä."
 
 #, csharp-format
 msgid "Plugin with ID [gray]{0}[/] is already loaded, skipping duplicate."
@@ -1090,6 +1116,9 @@ msgid "found {0} node"
 msgid_plural "found {0} nodes"
 msgstr[0] "{0} piste"
 msgstr[1] "{0} pistettä"
+
+msgid "Open Source"
+msgstr ""
 
 #, csharp-format
 msgid "<span class=\"font-semibold\">{0}</span> until {1}"
@@ -1267,6 +1296,9 @@ msgstr "Ladataan päivitystä"
 msgid "Simplified Graphics"
 msgstr "Yksinkertaistetut grafiikat"
 
+msgid "Failed to log in. Please check your credentials and try again."
+msgstr ""
+
 msgid "Steering Sensitivity"
 msgstr "Ohjauksen herkkyys"
 
@@ -1299,6 +1331,10 @@ msgstr "Pois"
 msgid "L"
 msgstr "L"
 
+msgid ""
+"An error occurred while trying to log in. Please try again later. Error: "
+msgstr ""
+
 msgid "Installing..."
 msgstr "Asennetaan..."
 
@@ -1329,8 +1365,15 @@ msgstr "Tämänhetkinen virkistystaajuus {0} FPS."
 msgid "Version {0} not found for plugin with ID {1}."
 msgstr "Lisäosalle {1} ei löytynyt versiota {0}."
 
+msgid ""
+"An error occurred while trying to log out. Please try again later. Error: "
+msgstr ""
+
 msgid "Invalid file"
 msgstr "Virheellinen tiedosto"
+
+msgid "Login Successful"
+msgstr ""
 
 #, csharp-format
 msgid "Discovered {0} library in total"
@@ -1357,6 +1400,9 @@ msgid ""
 msgstr ""
 "Manuaalisesti lisätyllä pelillä paikassa {0} ei enää ole "
 "käynnistystiedostoa, ohitetaan."
+
+msgid "Logout Error"
+msgstr ""
 
 #, csharp-format
 msgid "Found {0} game installation."
@@ -1589,6 +1635,11 @@ msgid "Window"
 msgstr "Ikkuna"
 
 msgid ""
+"You cannot register an account yet, this page is only for logging in with an "
+"existing developer account."
+msgstr ""
+
+msgid ""
 "If you see a fully black screen, see the FAQ at <span class=\"description "
 "hover:underline\">ets2la.com</span>."
 msgstr ""
@@ -1694,6 +1745,9 @@ msgstr ""
 
 msgid "Recommended Plugins"
 msgstr "Suositellut lisäosat"
+
+msgid "Failed to remove account. Please try again."
+msgstr ""
 
 msgid ""
 "The maximum speed ETS2LA will accelerate to. It might still drift over this "
@@ -1843,6 +1897,9 @@ msgstr "Kääntäjänä toimi:"
 msgid "This game was found at"
 msgstr "Tämä peli löytyi"
 
+msgid "You have successfully logged out."
+msgstr ""
+
 msgid "Data Quality"
 msgstr "Karttadatan Laatu"
 
@@ -1926,6 +1983,9 @@ msgstr "Peitekuvan vapaan prosessoriajan määrä"
 msgid "Invalid directory"
 msgstr "Virheellinen kansio"
 
+msgid "Logout"
+msgstr ""
+
 msgid "Starting download..."
 msgstr "Aloitetaan lataus..."
 
@@ -1971,6 +2031,11 @@ msgstr "Tavoitenopeus: "
 
 msgid "meters"
 msgstr "metriä"
+
+msgid ""
+"An error occurred while trying to remove your account. Please try again "
+"later. Error: "
+msgstr ""
 
 msgid "°C"
 msgstr "°C"
@@ -2058,6 +2123,9 @@ msgstr "Viimeiset huomiot <span class=\"description\">2/2</span>"
 msgid "Snap to each 10 {0}"
 msgstr "Lovita jokaiseen 10 {0}"
 
+msgid "Logout Failed"
+msgstr ""
+
 #, csharp-format
 msgid "Created plugin directory: [gray]{0}[/]"
 msgstr "Luotiin lisäosan kansio: [gray]{0}[/]"
@@ -2126,6 +2194,28 @@ msgstr ""
 #, csharp-format
 msgid "Not all dependencies for plugin {0} are installed."
 msgstr "Lisäosan {0} kaikkia vaatimuksia ei ole ladattu."
+
+#~ msgid ""
+#~ "Subscriptions will <span class=\"font-bold text-text-accent\">never</"
+#~ "span> be required for using ETS2LA. They are a way you can support the "
+#~ "development."
+#~ msgstr ""
+#~ "Tilaaminen ei tule <span class=\"font-bold text-text-accent\">koskaan</"
+#~ "span> olemaan tarpeellinen sovelluksen käyttöä varten. Se on vain tapa "
+#~ "tukea kehitystä :)"
+
+#~ msgid ""
+#~ "You'll register, login, and manage your account settings and "
+#~ "subscriptions here."
+#~ msgstr ""
+#~ "Rekisteröidyt, kirjaudut, ja muokkaat tiliäsi ja tilauksiasi tällä "
+#~ "sivulla."
+
+#~ msgid "Anonymous"
+#~ msgstr "Anonyymi"
+
+#~ msgid "This page will be implemented in a future update."
+#~ msgstr "Tämä sivu rakennetaan tulevassa päivityksessä."
 
 #~ msgid ""
 #~ "Like ETS2LA? Consider supporting us by becoming a <span class=\"font-bold "

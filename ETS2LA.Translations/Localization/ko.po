@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-10-03 20:25:14+0300\n"
+"POT-Creation-Date: 2026-10-04 19:33:16+0300\n"
 "PO-Revision-Date: 2026-09-13 12:43+0000\n"
 "Last-Translator: bot_lapis <botlapis@ets2la.com>\n"
 "Language-Team: Korean <http://weblate.ets2la.com/projects/ets2la/ets2la/ko/"
@@ -125,11 +125,11 @@ msgstr "컨트롤 {0} ({1})에 대한 바인딩 시작"
 msgid "Failed to enable dependency: {0}"
 msgstr "종속성 {0}을(를) 활성화하지 못했습니다"
 
-msgid "Main"
-msgstr "메인"
-
 msgid "Only Show Official News"
 msgstr ""
+
+msgid "Main"
+msgstr "메인"
 
 #, csharp-format
 msgid ""
@@ -146,6 +146,9 @@ msgstr[0] "도로 {0}개를 찾았습니다"
 #, csharp-format
 msgid "Binding for control {0} ({1}) timed out."
 msgstr "컨트롤 {0} ({1})의 바인딩 시간이 초과되었습니다."
+
+msgid "Remove Account"
+msgstr ""
 
 #, csharp-format
 msgid ""
@@ -213,6 +216,9 @@ msgstr ""
 msgid "Welcome to ETS2LA!"
 msgstr "ETS2LA에 오신 것을 환영합니다!"
 
+msgid "Account Removal Failed"
+msgstr ""
+
 msgid ""
 "<span class=\"text-text-accent\"))>Success!</span> You can find more plugins "
 "in the catalogue later."
@@ -260,6 +266,9 @@ msgstr "ID {0}인 플러그인을 성공적으로 업데이트했습니다."
 msgid "Look in the top left corner."
 msgstr "왼쪽 상단 모서리를 보세요."
 
+msgid "Failed to log out. Please try again."
+msgstr ""
+
 msgid "Visual"
 msgstr "비주얼"
 
@@ -272,12 +281,12 @@ msgstr "로그 적게 보기"
 msgid "Install Plugins"
 msgstr "플러그인 설치"
 
+msgid "I won't leave ETS2LA unattended"
+msgstr "ETS2LA를 방치하지 않겠습니다"
+
 #, csharp-format
 msgid "Error while downloading update: {0}"
 msgstr "업데이트를 다운로드하는 중 오류가 발생했습니다: {0}"
-
-msgid "I won't leave ETS2LA unattended"
-msgstr "ETS2LA를 방치하지 않겠습니다"
 
 msgid "Keyboard"
 msgstr "키보드"
@@ -296,6 +305,10 @@ msgstr "GLFW 창을 여는 데 실패했습니다"
 msgid "Fast"
 msgstr "고속"
 
+#, csharp-format
+msgid "You are currently logged in as {0}."
+msgstr ""
+
 msgid "Install Update and Restart"
 msgstr "업데이트 설치 후 재시작"
 
@@ -308,6 +321,9 @@ msgid ""
 msgstr ""
 "ETS2LA가 필요한 조향 변경에 어떻게 반응할지 조정합니다. 예를 들어 ETS2LA가 얼"
 "마나 빠르게 차선을 변경할지 제어합니다."
+
+msgid "Logout Successful"
+msgstr ""
 
 #, csharp-format
 msgid "Successfully uninstalled plugin with ID {0}."
@@ -344,13 +360,6 @@ msgstr ""
 
 msgid "Enable All"
 msgstr ""
-
-msgid ""
-"Subscriptions will <span class=\"font-bold text-text-accent\">never</span> "
-"be required for using ETS2LA. They are a way you can support the development."
-msgstr ""
-"구독은 ETS2LA 사용에 <span class=\"font-bold text-text-accent\">절대</span> "
-"필요하지 않습니다. 구독은 개발을 후원하는 방법입니다."
 
 msgid "Data Parsing"
 msgstr "데이터 파싱"
@@ -404,6 +413,10 @@ msgstr "{0}'에서 버전을 읽지 못했습니다: {1}"
 
 msgid "Are you sure?"
 msgstr "확실합니까?"
+
+#, csharp-format
+msgid "You have successfully logged in as {0}."
+msgstr ""
 
 msgid "Render AR Elements"
 msgstr "AR 요소 렌더링"
@@ -565,6 +578,9 @@ msgstr ""
 msgid "Force Map Load"
 msgstr "맵 강제 로드"
 
+msgid "Your account has been successfully removed."
+msgstr ""
+
 #, csharp-format
 msgid "Failed to uninstall SDK version '{0}' from '{1}': {2}"
 msgstr "SDK 버전 '{0}'을(를) '{1}'에서 제거하지 못했습니다: {2}"
@@ -612,11 +628,6 @@ msgstr "경고: RAM 부족"
 msgid "Error Loading Map Data"
 msgstr "맵 데이터 로드 오류"
 
-msgid ""
-"You'll register, login, and manage your account settings and subscriptions "
-"here."
-msgstr "여기에서 등록, 로그인, 계정 설정 및 구독을 관리할 수 있습니다."
-
 #, csharp-format
 msgid "Current Version: {0}"
 msgstr "현재 버전: {0}"
@@ -630,6 +641,9 @@ msgstr "속도 제어 단계 크기"
 
 msgid "Slow"
 msgstr "느림"
+
+msgid "Login Failed"
+msgstr ""
 
 msgid ""
 "Authentication is required. The client must authenticate itself to get the "
@@ -660,6 +674,9 @@ msgstr "설치된 ID {0} 플러그인을 찾을 수 없습니다."
 
 msgid "Audio"
 msgstr "오디오"
+
+msgid "Login Error"
+msgstr ""
 
 #, csharp-format
 msgid "{0} m/s ({1} in {2})"
@@ -766,9 +783,6 @@ msgstr "오디오 파일 {0}을(를) 재생하는 중 오류가 발생했습니�
 msgid "Controls Backend shutdown complete, all controls saved."
 msgstr "컨트롤 백엔드 종료 완료, 모든 컨트롤이 저장되었습니다."
 
-msgid "Anonymous"
-msgstr "익명"
-
 msgid ""
 "The units ETS2LA will use when displaying information to a user. Scientific "
 "has only slight differences to metric."
@@ -795,6 +809,14 @@ msgstr "플러그인 {0}을(를) 종료하지 못했습니다: {1}"
 #, csharp-format
 msgid "Plugin with ID {0} not found in available plugins."
 msgstr "ID {0}인 플러그인을 사용 가능한 플러그인 목록에서 찾을 수 없습니다."
+
+msgid "Confirm Account Removal"
+msgstr ""
+
+msgid ""
+"Removing your account will delete all your data from our servers. This "
+"action cannot be undone."
+msgstr ""
 
 msgid "Manager"
 msgstr "관리자"
@@ -823,6 +845,9 @@ msgstr[0] "프리팹 {0}개를 찾았습니다"
 msgid "Pascals"
 msgstr "파스칼"
 
+msgid "Account Removal Error"
+msgstr ""
+
 #, csharp-format
 msgid "Failed to disable {0}: {1}"
 msgstr "{0}을(를) 비활성화하지 못했습니다: {1}"
@@ -830,15 +855,18 @@ msgstr "{0}을(를) 비활성화하지 못했습니다: {1}"
 msgid "You can enable the plugins we installed in a previous step here."
 msgstr "이전 단계에서 설치한 플러그인을 여기에서 활성화할 수 있습니다."
 
+msgid "Login"
+msgstr ""
+
 msgid "SDK Installed"
 msgstr "SDK 설치됨"
+
+msgid "Current Speed"
+msgstr "현재 속도"
 
 #, csharp-format
 msgid "Bound control {0} ({1}) to device {2} and control {3}"
 msgstr "컨트롤 {0} ({1})을(를) 장치 {2}, 컨트롤 {3}에 바인딩했습니다"
-
-msgid "Current Speed"
-msgstr "현재 속도"
 
 msgid "miles per hour"
 msgstr "마일/시간"
@@ -922,6 +950,9 @@ msgstr ""
 msgid "bar"
 msgstr "bar"
 
+msgid "Account Removed"
+msgstr ""
+
 msgid ""
 "Couldn't connect to the game. Please open ETS2 or ATS and enable the SDK."
 msgstr ""
@@ -959,9 +990,6 @@ msgid "Failed to load map for installation at '{0}'"
 msgstr ""
 
 msgid "Not Connected"
-msgstr ""
-
-msgid "This page will be implemented in a future update."
 msgstr ""
 
 #, csharp-format
@@ -1030,6 +1058,9 @@ msgstr ""
 msgid "found {0} node"
 msgid_plural "found {0} nodes"
 msgstr[0] "{0}개의 노드가 발견되었습니다"
+
+msgid "Open Source"
+msgstr ""
 
 #, csharp-format
 msgid "<span class=\"font-semibold\">{0}</span> until {1}"
@@ -1191,6 +1222,9 @@ msgstr ""
 msgid "Simplified Graphics"
 msgstr ""
 
+msgid "Failed to log in. Please check your credentials and try again."
+msgstr ""
+
 msgid "Steering Sensitivity"
 msgstr ""
 
@@ -1221,6 +1255,10 @@ msgstr ""
 msgid "L"
 msgstr ""
 
+msgid ""
+"An error occurred while trying to log in. Please try again later. Error: "
+msgstr ""
+
 msgid "Installing..."
 msgstr ""
 
@@ -1249,7 +1287,14 @@ msgstr ""
 msgid "Version {0} not found for plugin with ID {1}."
 msgstr ""
 
+msgid ""
+"An error occurred while trying to log out. Please try again later. Error: "
+msgstr ""
+
 msgid "Invalid file"
+msgstr ""
+
+msgid "Login Successful"
 msgstr ""
 
 #, csharp-format
@@ -1272,6 +1317,9 @@ msgstr ""
 #, csharp-format
 msgid ""
 "Manually added game at '{0}' no longer contains a game executable, skipping."
+msgstr ""
+
+msgid "Logout Error"
 msgstr ""
 
 #, csharp-format
@@ -1487,6 +1535,11 @@ msgid "Window"
 msgstr ""
 
 msgid ""
+"You cannot register an account yet, this page is only for logging in with an "
+"existing developer account."
+msgstr ""
+
+msgid ""
 "If you see a fully black screen, see the FAQ at <span class=\"description "
 "hover:underline\">ets2la.com</span>."
 msgstr ""
@@ -1580,6 +1633,9 @@ msgid ""
 msgstr ""
 
 msgid "Recommended Plugins"
+msgstr ""
+
+msgid "Failed to remove account. Please try again."
 msgstr ""
 
 msgid ""
@@ -1710,6 +1766,9 @@ msgstr ""
 msgid "This game was found at"
 msgstr ""
 
+msgid "You have successfully logged out."
+msgstr ""
+
 msgid "Data Quality"
 msgstr ""
 
@@ -1791,6 +1850,9 @@ msgstr ""
 msgid "Invalid directory"
 msgstr ""
 
+msgid "Logout"
+msgstr ""
+
 msgid "Starting download..."
 msgstr ""
 
@@ -1833,6 +1895,11 @@ msgid "Desired Speed: "
 msgstr ""
 
 msgid "meters"
+msgstr ""
+
+msgid ""
+"An error occurred while trying to remove your account. Please try again "
+"later. Error: "
 msgstr ""
 
 msgid "°C"
@@ -1916,6 +1983,9 @@ msgstr ""
 msgid "Snap to each 10 {0}"
 msgstr ""
 
+msgid "Logout Failed"
+msgstr ""
+
 #, csharp-format
 msgid "Created plugin directory: [gray]{0}[/]"
 msgstr ""
@@ -1975,6 +2045,22 @@ msgstr ""
 #, csharp-format
 msgid "Not all dependencies for plugin {0} are installed."
 msgstr ""
+
+#~ msgid ""
+#~ "Subscriptions will <span class=\"font-bold text-text-accent\">never</"
+#~ "span> be required for using ETS2LA. They are a way you can support the "
+#~ "development."
+#~ msgstr ""
+#~ "구독은 ETS2LA 사용에 <span class=\"font-bold text-text-accent\">절대</"
+#~ "span> 필요하지 않습니다. 구독은 개발을 후원하는 방법입니다."
+
+#~ msgid ""
+#~ "You'll register, login, and manage your account settings and "
+#~ "subscriptions here."
+#~ msgstr "여기에서 등록, 로그인, 계정 설정 및 구독을 관리할 수 있습니다."
+
+#~ msgid "Anonymous"
+#~ msgstr "익명"
 
 #, csharp-format
 #~ msgid "Ignored DBus exception: {0}"

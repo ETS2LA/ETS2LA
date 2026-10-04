@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-10-03 20:25:14+0300\n"
+"POT-Creation-Date: 2026-10-04 19:33:16+0300\n"
 "PO-Revision-Date: 2026-10-04 16:36+0000\n"
 "Last-Translator: Lun <lun@ets2la.com>\n"
 "Language-Team: Chinese (Traditional Han script) <http://weblate.ets2la.com/"
@@ -125,11 +125,11 @@ msgstr "開始綁定控制項 {0}（{1}）"
 msgid "Failed to enable dependency: {0}"
 msgstr "依賴項目啟用失敗：{0}"
 
-msgid "Main"
-msgstr "主要"
-
 msgid "Only Show Official News"
 msgstr "僅顯示官方新聞"
+
+msgid "Main"
+msgstr "主要"
 
 #, csharp-format
 msgid ""
@@ -145,6 +145,9 @@ msgstr[0] "找到 {0} 個道路"
 #, csharp-format
 msgid "Binding for control {0} ({1}) timed out."
 msgstr "控制項 {0}（{1}）的綁定已逾時。"
+
+msgid "Remove Account"
+msgstr ""
 
 #, csharp-format
 msgid ""
@@ -210,6 +213,9 @@ msgstr "點擊對話框外的任意位置即可關閉。"
 msgid "Welcome to ETS2LA!"
 msgstr "歡迎使用 ETS2LA！"
 
+msgid "Account Removal Failed"
+msgstr ""
+
 msgid ""
 "<span class=\"text-text-accent\"))>Success!</span> You can find more plugins "
 "in the catalogue later."
@@ -259,6 +265,9 @@ msgstr "已成功更新 ID 為 {0} 的插件。"
 msgid "Look in the top left corner."
 msgstr "請看左上角。"
 
+msgid "Failed to log out. Please try again."
+msgstr ""
+
 msgid "Visual"
 msgstr "視覺提示"
 
@@ -271,12 +280,12 @@ msgstr "顯示較少記錄"
 msgid "Install Plugins"
 msgstr "安裝插件"
 
+msgid "I won't leave ETS2LA unattended"
+msgstr "我不會讓 ETS2LA 在無人監督下運行"
+
 #, csharp-format
 msgid "Error while downloading update: {0}"
 msgstr "下載更新時發生錯誤：{0}"
-
-msgid "I won't leave ETS2LA unattended"
-msgstr "我不會讓 ETS2LA 在無人監督下運行"
 
 msgid "Keyboard"
 msgstr "鍵盤"
@@ -294,6 +303,10 @@ msgstr "GLFW 視窗建立失敗"
 msgid "Fast"
 msgstr "快"
 
+#, csharp-format
+msgid "You are currently logged in as {0}."
+msgstr ""
+
 msgid "Install Update and Restart"
 msgstr "安裝更新並重新啟動"
 
@@ -306,6 +319,9 @@ msgid ""
 msgstr ""
 "調整 ETS2LA 對必要轉向調整的反應方式。例如，此設定會控制 ETS2LA 變換車道的速"
 "度。"
+
+msgid "Logout Successful"
+msgstr ""
 
 #, csharp-format
 msgid "Successfully uninstalled plugin with ID {0}."
@@ -341,13 +357,6 @@ msgstr ""
 
 msgid "Enable All"
 msgstr "啟用所有插件"
-
-msgid ""
-"Subscriptions will <span class=\"font-bold text-text-accent\">never</span> "
-"be required for using ETS2LA. They are a way you can support the development."
-msgstr ""
-"使用 ETS2LA <span class=\"font-bold text-text-accent\">永遠</span>不需要訂"
-"閱。訂閱只是支持開發的一種方式。"
 
 msgid "Data Parsing"
 msgstr "資料解析"
@@ -399,6 +408,10 @@ msgstr "從「{0}」讀取版本資訊失敗：{1}"
 
 msgid "Are you sure?"
 msgstr "你確定嗎？"
+
+#, csharp-format
+msgid "You have successfully logged in as {0}."
+msgstr ""
 
 msgid "Render AR Elements"
 msgstr "渲染 AR 元素"
@@ -557,6 +570,9 @@ msgstr "請啟用 Visualization Sockets 插件。"
 msgid "Force Map Load"
 msgstr "強制載入地圖"
 
+msgid "Your account has been successfully removed."
+msgstr ""
+
 #, csharp-format
 msgid "Failed to uninstall SDK version '{0}' from '{1}': {2}"
 msgstr "無法從「{1}」解除安裝 SDK 版本「{0}」：{2}"
@@ -604,11 +620,6 @@ msgstr "警告：記憶體不足"
 msgid "Error Loading Map Data"
 msgstr "載入地圖資料時發生錯誤"
 
-msgid ""
-"You'll register, login, and manage your account settings and subscriptions "
-"here."
-msgstr "你可以在這裡註冊、登入，以及管理帳號設定和訂閱。"
-
 #, csharp-format
 msgid "Current Version: {0}"
 msgstr "目前版本：{0}"
@@ -622,6 +633,9 @@ msgstr "巡航速度調整級距"
 
 msgid "Slow"
 msgstr "慢"
+
+msgid "Login Failed"
+msgstr ""
 
 msgid ""
 "Authentication is required. The client must authenticate itself to get the "
@@ -651,6 +665,9 @@ msgstr "找不到 ID 為 {0} 的已安裝插件。"
 
 msgid "Audio"
 msgstr "音訊"
+
+msgid "Login Error"
+msgstr ""
 
 #, csharp-format
 msgid "{0} m/s ({1} in {2})"
@@ -754,9 +771,6 @@ msgstr "播放音訊檔案 {0} 時發生錯誤：{1}"
 msgid "Controls Backend shutdown complete, all controls saved."
 msgstr "控制後端已關閉，所有控制項已儲存。"
 
-msgid "Anonymous"
-msgstr "訪客"
-
 msgid ""
 "The units ETS2LA will use when displaying information to a user. Scientific "
 "has only slight differences to metric."
@@ -781,6 +795,14 @@ msgstr "關閉插件 {0} 失敗：{1}"
 #, csharp-format
 msgid "Plugin with ID {0} not found in available plugins."
 msgstr "在可用插件中找不到 ID 為 {0} 的插件。"
+
+msgid "Confirm Account Removal"
+msgstr ""
+
+msgid ""
+"Removing your account will delete all your data from our servers. This "
+"action cannot be undone."
+msgstr ""
 
 msgid "Manager"
 msgstr "管理"
@@ -809,6 +831,9 @@ msgstr[0] "找到 {0} 個預製件"
 msgid "Pascals"
 msgstr "帕斯卡"
 
+msgid "Account Removal Error"
+msgstr ""
+
 #, csharp-format
 msgid "Failed to disable {0}: {1}"
 msgstr "停用 {0} 失敗：{1}"
@@ -816,15 +841,18 @@ msgstr "停用 {0} 失敗：{1}"
 msgid "You can enable the plugins we installed in a previous step here."
 msgstr "你可以在這裡啟用我們在先前步驟中安裝的插件。"
 
+msgid "Login"
+msgstr ""
+
 msgid "SDK Installed"
 msgstr "SDK 已安裝"
+
+msgid "Current Speed"
+msgstr "目前速度"
 
 #, csharp-format
 msgid "Bound control {0} ({1}) to device {2} and control {3}"
 msgstr "已將控制項 {0}（{1}）綁定至裝置 {2} 的控制項 {3}"
-
-msgid "Current Speed"
-msgstr "目前速度"
 
 msgid "miles per hour"
 msgstr "英里每小時"
@@ -911,6 +939,9 @@ msgstr ""
 msgid "bar"
 msgstr "bar"
 
+msgid "Account Removed"
+msgstr ""
+
 msgid ""
 "Couldn't connect to the game. Please open ETS2 or ATS and enable the SDK."
 msgstr "無法連接至遊戲。請開啟 ETS2 或 ATS，並啟用 SDK。"
@@ -954,9 +985,6 @@ msgstr "載入遊戲安裝位置「{0}」的地圖失敗"
 
 msgid "Not Connected"
 msgstr "未連接"
-
-msgid "This page will be implemented in a future update."
-msgstr "此頁面將於後續更新中實作。"
 
 #, csharp-format
 msgid "Plugin with ID [gray]{0}[/] is already loaded, skipping duplicate."
@@ -1023,6 +1051,9 @@ msgstr ""
 msgid "found {0} node"
 msgid_plural "found {0} nodes"
 msgstr[0] "找到 {0} 個節點"
+
+msgid "Open Source"
+msgstr ""
 
 #, csharp-format
 msgid "<span class=\"font-semibold\">{0}</span> until {1}"
@@ -1189,6 +1220,9 @@ msgstr "正在下載更新"
 msgid "Simplified Graphics"
 msgstr "簡化圖形"
 
+msgid "Failed to log in. Please check your credentials and try again."
+msgstr ""
+
 msgid "Steering Sensitivity"
 msgstr "轉向靈敏度"
 
@@ -1219,6 +1253,10 @@ msgstr "關閉"
 msgid "L"
 msgstr "L"
 
+msgid ""
+"An error occurred while trying to log in. Please try again later. Error: "
+msgstr ""
+
 msgid "Installing..."
 msgstr "安裝中..."
 
@@ -1247,8 +1285,15 @@ msgstr "目前以 {0} FPS 執行。"
 msgid "Version {0} not found for plugin with ID {1}."
 msgstr "找不到 ID 為 {1} 的插件版本 {0}。"
 
+msgid ""
+"An error occurred while trying to log out. Please try again later. Error: "
+msgstr ""
+
 msgid "Invalid file"
 msgstr "檔案無效"
+
+msgid "Login Successful"
+msgstr ""
 
 #, csharp-format
 msgid "Discovered {0} library in total"
@@ -1270,6 +1315,9 @@ msgstr "伺服器無法理解此請求，原因是語法無效或請求資料已
 msgid ""
 "Manually added game at '{0}' no longer contains a game executable, skipping."
 msgstr "手動新增的遊戲路徑「{0}」已找不到遊戲執行檔，將略過。"
+
+msgid "Logout Error"
+msgstr ""
 
 #, csharp-format
 msgid "Found {0} game installation."
@@ -1487,6 +1535,11 @@ msgid "Window"
 msgstr "視窗"
 
 msgid ""
+"You cannot register an account yet, this page is only for logging in with an "
+"existing developer account."
+msgstr ""
+
+msgid ""
 "If you see a fully black screen, see the FAQ at <span class=\"description "
 "hover:underline\">ets2la.com</span>."
 msgstr ""
@@ -1585,6 +1638,9 @@ msgstr ""
 
 msgid "Recommended Plugins"
 msgstr "推薦插件"
+
+msgid "Failed to remove account. Please try again."
+msgstr ""
 
 msgid ""
 "The maximum speed ETS2LA will accelerate to. It might still drift over this "
@@ -1720,6 +1776,9 @@ msgstr "翻譯者："
 msgid "This game was found at"
 msgstr "此遊戲位於"
 
+msgid "You have successfully logged out."
+msgstr ""
+
 msgid "Data Quality"
 msgstr "資料品質"
 
@@ -1801,6 +1860,9 @@ msgstr "疊加層 CPU 空閒時間百分比"
 msgid "Invalid directory"
 msgstr "目錄無效"
 
+msgid "Logout"
+msgstr ""
+
 msgid "Starting download..."
 msgstr "正在開始下載..."
 
@@ -1816,7 +1878,8 @@ msgstr "最後提醒 <span class=\"description\">1/2</span>"
 msgid ""
 "Translate news articles to your selected display language. This may take a "
 "while depending on the number of articles and your internet connection."
-msgstr "將新聞文章翻譯成你選擇的顯示語言。所需時間會視文章數量及網路連線狀況而定。"
+msgstr ""
+"將新聞文章翻譯成你選擇的顯示語言。所需時間會視文章數量及網路連線狀況而定。"
 
 msgid "Map Data Parsed"
 msgstr "地圖資料解析完成"
@@ -1846,6 +1909,11 @@ msgstr "目標速度： "
 
 msgid "meters"
 msgstr "公尺"
+
+msgid ""
+"An error occurred while trying to remove your account. Please try again "
+"later. Error: "
+msgstr ""
 
 msgid "°C"
 msgstr "°C"
@@ -1928,6 +1996,9 @@ msgstr "最後提醒 <span class=\"description\">2/2</span>"
 msgid "Snap to each 10 {0}"
 msgstr "對齊至 10 {0} 的倍數"
 
+msgid "Logout Failed"
+msgstr ""
+
 #, csharp-format
 msgid "Created plugin directory: [gray]{0}[/]"
 msgstr "已建立插件目錄：[gray]{0}[/]"
@@ -1990,6 +2061,25 @@ msgstr ""
 #, csharp-format
 msgid "Not all dependencies for plugin {0} are installed."
 msgstr "插件 {0} 的依賴項目尚未全部安裝。"
+
+#~ msgid ""
+#~ "Subscriptions will <span class=\"font-bold text-text-accent\">never</"
+#~ "span> be required for using ETS2LA. They are a way you can support the "
+#~ "development."
+#~ msgstr ""
+#~ "使用 ETS2LA <span class=\"font-bold text-text-accent\">永遠</span>不需要訂"
+#~ "閱。訂閱只是支持開發的一種方式。"
+
+#~ msgid ""
+#~ "You'll register, login, and manage your account settings and "
+#~ "subscriptions here."
+#~ msgstr "你可以在這裡註冊、登入，以及管理帳號設定和訂閱。"
+
+#~ msgid "Anonymous"
+#~ msgstr "訪客"
+
+#~ msgid "This page will be implemented in a future update."
+#~ msgstr "此頁面將於後續更新中實作。"
 
 #~ msgid ""
 #~ "Like ETS2LA? Consider supporting us by becoming a <span class=\"font-bold "
