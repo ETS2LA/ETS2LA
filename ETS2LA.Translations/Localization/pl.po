@@ -4,16 +4,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
 "POT-Creation-Date: 2026-10-04 19:33:16+0300\n"
-"PO-Revision-Date: 2026-09-23 18:04+0000\n"
+"PO-Revision-Date: 2026-10-05 12:09+0000\n"
 "Last-Translator: Kubex70 <kubex70@ets2la.com>\n"
-"Language-Team: Polish <http://weblate.ets2la.com/projects/ets2la/ets2la/pl/"
-">\n"
+"Language-Team: Polish <http://weblate.ets2la.com/projects/ets2la/ets2la/pl/>"
+"\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
-"|| n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && "
+"(n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 5.14.3\n"
 
 msgid ""
@@ -135,7 +135,7 @@ msgid "Failed to enable dependency: {0}"
 msgstr "Nie udało się włączyć zależności: {0}"
 
 msgid "Only Show Official News"
-msgstr ""
+msgstr "Pokaż tylko oficjalne wiadomości"
 
 msgid "Main"
 msgstr "Główne"
@@ -160,7 +160,7 @@ msgid "Binding for control {0} ({1}) timed out."
 msgstr "Upłynął limit czasu przypisywania klawisza {0} ({1})."
 
 msgid "Remove Account"
-msgstr ""
+msgstr "Usuń konto"
 
 #, csharp-format
 msgid ""
@@ -226,13 +226,13 @@ msgid "The step size for changing the cruise control speed."
 msgstr "Wielkość przeskoku zmiany prędkości tempomatu."
 
 msgid "Press anywhere outside the dialog to close it."
-msgstr ""
+msgstr "Kliknij w dowolnym miejscu poza oknem dialogowym, aby je zamknąć."
 
 msgid "Welcome to ETS2LA!"
 msgstr "Witamy w ETS2LA!"
 
 msgid "Account Removal Failed"
-msgstr ""
+msgstr "Usunięcie konta nie powiodło się"
 
 msgid ""
 "<span class=\"text-text-accent\"))>Success!</span> You can find more plugins "
@@ -275,7 +275,7 @@ msgstr ""
 "accent font-bold\">co najmniej jednej gry</span>, aby kontynuować."
 
 msgid "Enable Memory Output for Pedals"
-msgstr ""
+msgstr "Włącz wyjście pamięci dla pedałów"
 
 #, csharp-format
 msgid "Successfully updated plugin with ID {0}."
@@ -285,7 +285,7 @@ msgid "Look in the top left corner."
 msgstr "Spójrz w lewy górny róg."
 
 msgid "Failed to log out. Please try again."
-msgstr ""
+msgstr "Nie udało się wylogować. Spróbuj ponownie."
 
 msgid "Visual"
 msgstr "Wizualne"
@@ -326,7 +326,7 @@ msgstr "Szybko"
 
 #, csharp-format
 msgid "You are currently logged in as {0}."
-msgstr ""
+msgstr "Jesteś obecnie zalogowany jako {0}."
 
 msgid "Install Update and Restart"
 msgstr "Zainstaluj aktualizację i uruchom ponownie"
@@ -342,7 +342,7 @@ msgstr ""
 "jazdy. Na przykład, kontroluje to, jak szybko ETS2LA zmieni pas ruchu."
 
 msgid "Logout Successful"
-msgstr ""
+msgstr "Wylogowano pomyślnie"
 
 #, csharp-format
 msgid "Successfully uninstalled plugin with ID {0}."
@@ -893,7 +893,7 @@ msgid "Pascals"
 msgstr "Paskale"
 
 msgid "Account Removal Error"
-msgstr ""
+msgstr "Błąd usuwania konta"
 
 #, csharp-format
 msgid "Failed to disable {0}: {1}"
@@ -904,7 +904,7 @@ msgstr ""
 "Tutaj możesz włączyć pluginy, które zainstalowaliśmy w poprzednim kroku."
 
 msgid "Login"
-msgstr ""
+msgstr "Login"
 
 msgid "SDK Installed"
 msgstr "Zainstalowano zestaw SDK"
@@ -1006,7 +1006,7 @@ msgid "bar"
 msgstr "bar"
 
 msgid "Account Removed"
-msgstr ""
+msgstr "Konto usunięte"
 
 msgid ""
 "Couldn't connect to the game. Please open ETS2 or ATS and enable the SDK."
@@ -1036,7 +1036,7 @@ msgstr ""
 "znaczną ilość pamięci RAM, należy spodziewać się użycia ponad 10 GB.</span>"
 
 msgid "GitHub Sponsorship"
-msgstr ""
+msgstr "Sponsoring na GitHubie"
 
 msgid "Restart and Continue"
 msgstr "Uruchom ponownie i kontynuuj"
@@ -1073,6 +1073,8 @@ msgid ""
 "Show news articles about plugin updates, be that official or 3rd party "
 "plugins."
 msgstr ""
+"Wyświetlaj artykuły o aktualizacjach wtyczek – zarówno oficjalnych, jak i "
+"pochodzących od zewnętrznych twórców."
 
 msgid "No plugins found."
 msgstr "Nie znaleziono pluginów."
@@ -1133,11 +1135,11 @@ msgstr[1] "znaleziono {0} węzły"
 msgstr[2] "znaleziono {0} węzłów"
 
 msgid "Open Source"
-msgstr ""
+msgstr "Open Source"
 
 #, csharp-format
 msgid "<span class=\"font-semibold\">{0}</span> until {1}"
-msgstr ""
+msgstr "<span class=\"font-semibold\">{0}</span> do {1}"
 
 msgid "Did you remember to restart after installing them?"
 msgstr "Czy zapamiętałeś zrestartować po tym jak je zainstalowałeś?"
@@ -1243,7 +1245,7 @@ msgstr "Plugin został pomyślnie włączony."
 
 #, csharp-format
 msgid "<span class=\"font-semibold\">{0}</span> at {1}"
-msgstr ""
+msgstr "<span class=\"font-semibold\">{0}</span> o {1}"
 
 msgid "Normal"
 msgstr "Normalny"
@@ -1262,7 +1264,7 @@ msgstr ""
 "klawisz."
 
 msgid "Latest News"
-msgstr ""
+msgstr "Najnowsze wiadomości"
 
 msgid "pounds"
 msgstr "funty"
@@ -1318,6 +1320,7 @@ msgstr "Uproszczona grafika"
 
 msgid "Failed to log in. Please check your credentials and try again."
 msgstr ""
+"Logowanie nie powiodło się. Sprawdź swoje dane logowania i spróbuj ponownie."
 
 msgid "Steering Sensitivity"
 msgstr "Czułość układu kierowniczego"
