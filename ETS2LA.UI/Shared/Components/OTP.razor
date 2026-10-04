@@ -9,6 +9,9 @@
     public int Length { get; set; } = 6;
 
     [Parameter]
+    public int DashIndex { get; set; } = -1;
+
+    [Parameter]
     public string Value { get; set; } = string.Empty;
 
     [Parameter]
@@ -94,10 +97,14 @@
         <p class="description">@Description</p>
     </div>
 
-    <div class="flex gap-2">
+    <div class="flex gap-2 items-center">
         @for (int i = 0; i < Length; i++)
         {
             int index = i;
+            if (DashIndex >= 0 && index == DashIndex)
+            {
+                <div class="size-1.5 mx-1 rounded-xs bg-control-bg" />
+            }
             <input @ref="inputReferences[index]"
                 type="text"
                 inputmode="numeric"

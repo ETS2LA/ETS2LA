@@ -67,4 +67,54 @@ public class UserApiClient
 
         return null;
     }
+
+    public async Task<bool> Logout(User user)
+    {
+        try
+        {
+            var apiServer = NetworkingSettings.Current.CurrentApiServer;
+            if (apiServer == null)
+            {
+                throw new InvalidOperationException("CurrentApiServer is not set.");
+            }
+
+            using var httpClient = new HttpClient();
+            httpClient.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", user.JwtToken);
+            var response = await httpClient.PostAsync($"{apiServer.Value.BaseUrl}/users/logout", null);
+            response.EnsureSuccessStatusCode();
+
+            return true;
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Logout failed for user: {user.Username}. Exception: {ex.Message}");
+        }
+
+        return false;
+    }
+
+    public async Task<bool> RemoveAccount(User user)
+    {
+        try
+        {
+            var apiServer = NetworkingSettings.Current.CurrentApiServer;
+            if (apiServer == null)
+            {
+                throw new InvalidOperationException("CurrentApiServer is not set.");
+            }
+
+            using var httpClient = new HttpClient();
+            httpClient.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", user.JwtToken);
+            var response = await httpClient.DeleteAsync($"{apiServer.Value.BaseUrl}/users/remove");
+            response.EnsureSuccessStatusCode();
+
+            return true;
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Remove account failed for user: {user.Username}. Exception: {ex.Message}");
+        }
+
+        return false;
+    }
 }

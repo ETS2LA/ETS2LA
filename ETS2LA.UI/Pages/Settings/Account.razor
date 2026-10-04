@@ -1,5 +1,6 @@
 @page "/settings/account"
 @using ETS2LA.Networking
+@using ETS2LA.Networking.Users
 @using ETS2LA.Networking.Settings
 @using ETS2LA.UI.Shared.Components
 @using ETS2LA.Notifications
@@ -7,8 +8,12 @@
 @layout Shared.Layouts.SettingsLayout
 
 @code {
+    private User? CurrentUser => NetworkingSettings.Current.CurrentUser;
+
     private string Username { get; set; } = string.Empty;
     private string OtpCode { get; set; } = string.Empty;
+
+    private bool WantsToRemoveAccount { get; set; } = false;
 
     private async Task Login()
     {
@@ -53,21 +58,133 @@
             });
         }
     }
+
+    private async Task Logout()
+    {
+        try
+        {
+            bool success = await NetworkingClient.Current.UserClient.Logout(NetworkingSettings.Current.CurrentUser);
+
+            if (!success)
+            {
+                Logger.Warn($"Logout failed for user {CurrentUser?.Username}. Server did not acknowledge logout.");
+                NotificationHandler.Current.SendNotification(new Notifications.Notification
+                {
+                    Id = Guid.NewGuid().ToString(),
+                    Title = _("Logout Failed"),
+                    Content = _("Failed to log out. Please try again."),
+                    Level = NotificationLevel.Warning
+                });
+            }
+            else
+            {
+                Logger.Info($"User {CurrentUser?.Username} logged out successfully.");
+                NotificationHandler.Current.SendNotification(new Notifications.Notification
+                {
+                    Id = Guid.NewGuid().ToString(),
+                    Title = _("Logout Successful"),
+                    Content = _("You have successfully logged out."),
+                    Level = NotificationLevel.Success
+                });
+                NetworkingSettings.Current.CurrentUser = null;
+                NetworkingSettings.Current.Save();
+            }
+        }
+        catch (Exception ex)
+        {
+            Logger.Error($"An error occurred during logout for user {CurrentUser?.Username}: {ex.Message}");
+            NotificationHandler.Current.SendNotification(new Notifications.Notification
+            {
+                Id = Guid.NewGuid().ToString(),
+                Title = _("Logout Error"),
+                Content = _("An error occurred while trying to log out. Please try again later. Error: ") + ex.Message,
+                Level = NotificationLevel.Danger
+            });
+        }
+    }
+
+    private async Task RemoveAccount()
+    {
+        try
+        {
+            bool success = await NetworkingClient.Current.UserClient.RemoveAccount(NetworkingSettings.Current.CurrentUser);
+
+            if (!success)
+            {
+                Logger.Warn($"Account removal failed for user {CurrentUser?.Username}. Server did not acknowledge removal.");
+                NotificationHandler.Current.SendNotification(new Notifications.Notification
+                {
+                    Id = Guid.NewGuid().ToString(),
+                    Title = _("Account Removal Failed"),
+                    Content = _("Failed to remove account. Please try again."),
+                    Level = NotificationLevel.Warning
+                });
+            }
+            else
+            {
+                Logger.Info($"User {CurrentUser?.Username} account removed successfully.");
+                NotificationHandler.Current.SendNotification(new Notifications.Notification
+                {
+                    Id = Guid.NewGuid().ToString(),
+                    Title = _("Account Removed"),
+                    Content = _("Your account has been successfully removed."),
+                    Level = NotificationLevel.Success
+                });
+                NetworkingSettings.Current.CurrentUser = null;
+                NetworkingSettings.Current.Save();
+            }
+        }
+        catch (Exception ex)
+        {
+            Logger.Error($"An error occurred during account removal for user {CurrentUser?.Username}: {ex.Message}");
+            NotificationHandler.Current.SendNotification(new Notifications.Notification
+            {
+                Id = Guid.NewGuid().ToString(),
+                Title = _("Account Removal Error"),
+                Content = _("An error occurred while trying to remove your account. Please try again later. Error: ") + ex.Message,
+                Level = NotificationLevel.Danger
+            });
+        }
+    }
+
+    private void DialogClosed(bool value)
+    {
+        if (!value)
+        {
+            WantsToRemoveAccount = false;
+        }
+    }
 }
 
 <div class="flex flex-col w-108 m-5 ml-8 gap-4">
-    <Input Title="@(_("Username"))"
-            Description=""
-            @bind-Value="Username"
-            Placeholder="@(_("Username"))"
-            Class="w-full" />
+    @if (CurrentUser != null && CurrentUser.JwtToken != null && DateTime.UtcNow < CurrentUser.Expiry)
+    {
+        <p class="description">@(_("You are currently logged in as {0}.", CurrentUser.Username))</p>
+        <button class="button mt-2" @onclick="() => WantsToRemoveAccount = true">@(_("Remove Account"))</button>
+        <button class="button" @onclick="Logout">@(_("Logout"))</button>
 
-    <OTP Title="@(_("One Time Password"))"
-            Description="@(_("Enter the OTP generated by your authenticator app."))"
-            @bind-Value="OtpCode"
-            Length="6"
-            Class="w-full" />
-    
-    <button class="button mt-2" @onclick="Login">@(_("Login"))</button>
-    <p class="mt-2 description">@(_("You cannot register an account yet, this page is only for logging in with an existing developer account."))</p>
+        <Dialog Open="@WantsToRemoveAccount" OpenChanged="@(value => DialogClosed(value))" Class="w-full max-w-md">
+            <p>@(_("Removing your account will delete all your data from our servers. This action cannot be undone."))</p>
+            <button class="button button-accent w-full! mt-3" @onclick="RemoveAccount">@(_("Confirm Account Removal"))</button>
+            <p class="description mt-2">@_("Press anywhere outside the dialog to close it.")</p>
+        </Dialog>
+    }
+    else
+    {
+        <Input Title="@(_("Username"))"
+                Description=""
+                @bind-Value="Username"
+                Placeholder="@(_("Username"))"
+                Class="w-full" />
+
+        <OTP Title="@(_("One Time Password"))"
+                Description="@(_("Enter the OTP generated by your authenticator app."))"
+                @bind-Value="OtpCode"
+                Length="6"
+                DashIndex="3"
+                Class="w-full" />
+        
+        <button class="button mt-2" @onclick="Login">@(_("Login"))</button>
+        <p class="mt-2 description">@(_("You cannot register an account yet, this page is only for logging in with an existing developer account."))</p>
+    }
 </div>

@@ -13,8 +13,14 @@
 
     private async Task Close()
     {
-        Open = false;
-        await OpenChanged.InvokeAsync(false);
+        if (OpenChanged.HasDelegate)
+        {
+            await OpenChanged.InvokeAsync(false);
+        }
+        else
+        {
+            Open = false;
+        }
     }
 }
 
