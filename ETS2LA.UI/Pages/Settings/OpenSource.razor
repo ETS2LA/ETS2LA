@@ -1,0 +1,84 @@
+@page "/settings/opensource"
+@using ETS2LA.UI.Shared.Components
+@layout Shared.Layouts.SettingsLayout
+
+@code {
+    struct Project
+    {
+        public string Name { get; set; }
+        public string License { get; set; }
+        public string Description { get; set; }
+        public string Url { get; set; }
+    }
+
+    private List<Project> Projects = new List<Project>
+    {
+        new Project
+        {
+            Name = "ETS2LA",
+            License = "GPL-3.0",
+            Description = "ETS2LA is licensed under GPLv3. Any modifications to the software must also be released under the same license and the source code must be made available to the public.",
+            Url = "https://github.com/ETS2LA/ETS2LA"
+        },
+        new Project
+        {
+            Name = "ets2la-plugin",
+            License = "MIT",
+            Description = "While ETS2LA is licensed under GPLv3, it's game side plugin is licensed under MIT. This plugin is largely based on the work of dariowouters, and he remains the primary maintainer of the plugin. The plugin is used to read and write game memory for data not available via the SCS SDK.",
+            Url = "https://github.com/ETS2LA/plugin"
+        },
+        new Project
+        {
+            Name = "TruckLib",
+            License = "GPL-2.0",
+            Description = "We heavily rely on TruckLib for it's data loading and parsing. ETS2LA would not be where it is today without TruckLib and the work of its developer.",
+            Url = "https://github.com/sk-zk/TruckLib"
+        },
+        new Project
+        {
+            Name = "scs-sdk-plugin",
+            License = "MIT",
+            Description = "Originally created by nlhans, then later maintained by RenCloud and truckermudgeon, this plugin is used to read telemetry data from the SCS SDK.",
+            Url = "https://github.com/truckermudgeon/scs-sdk-plugin"
+        },
+        new Project
+        {
+            Name = "TruckSim Maps",
+            License = "GPL-3.0",
+            Description = "All our mapping data is based on TruckSim Maps. This project has done the tedious work of converting the SCS map data into a real world coordinate system for use in mapping libraries such as MapLibre.",
+            Url = "https://github.com/truckermudgeon/maps"
+        },
+        new Project
+        {
+            Name = "NuGet Packages",
+            License = "Various",
+            Description = "We use various NuGet packages in ETS2LA. Please refer to the source code and the NuGet package manager for a full list of packages and their respective licenses.",
+            Url = "https://www.nuget.org/"
+        },
+        new Project
+        {
+            Name = "NPM Packages",
+            License = "Various",
+            Description = "We use various NPM packages in our Visualization. Please refer to the source code and an NPM compatible package manager for a full list of packages and their respective licenses.",
+            Url = "https://github.com/ETS2LA/visualization/blob/main/bun.lock"
+        },
+    };
+
+    private void OpenUrl(string url)
+    {
+        UserInterfaceUtils.OpenUrl(url);
+    }
+}
+
+<div class="flex flex-col w-108 m-5 ml-8 gap-3">
+    @foreach (var project in Projects)
+    {
+        <div class="flex flex-col gap-1">
+            <Tooltip Content=@project.Url Class="w-fit">
+                <p class="font-semibold hover:underline hover:cursor-pointer" @onclick="() => OpenUrl(project.Url)">@project.Name</p>
+            </Tooltip>
+            <p class="description">@project.Description</p>
+            <p class="description">License: @project.License</p>
+        </div>
+    }
+</div>

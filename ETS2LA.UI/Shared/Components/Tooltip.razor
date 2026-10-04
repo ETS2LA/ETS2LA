@@ -100,7 +100,9 @@
      @ref="tooltipElement"
      @onmouseenter="HandleMouseEnter"
      @onmouseleave="HandleMouseLeave"
-     @onmousemove="HandleMouseMove">
+     @onmousemove="HandleMouseMove"
+    >
+    
     @ChildContent
 
     @if (isHovered && !string.IsNullOrEmpty(Content))

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-10-03 20:20:27+0300\n"
-"PO-Revision-Date: 2026-10-03 20:20:27+0300\n"
+"POT-Creation-Date: 2026-10-04 17:37:58+0300\n"
+"PO-Revision-Date: 2026-10-04 17:37:58+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -187,7 +187,7 @@ msgid "Dashboard"
 msgstr ""
 
 #: ../../../ETS2LA.UI/Pages/Home.razor:156
-#: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:93
+#: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:86
 msgid "Update Available"
 msgstr ""
 
@@ -310,21 +310,21 @@ msgstr ""
 msgid "Additional"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/PluginStep.razor:56
-msgid "Install Plugins"
-msgstr ""
-
 #: ../../../ETS2LA.Overlay/Window/Console.cs:54
 msgid "Show Fewer Logs"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/DisclaimerStep1.razor:21
-msgid "I won't leave ETS2LA unattended"
+#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/PluginStep.razor:56
+msgid "Install Plugins"
 msgstr ""
 
 #: ../../../ETS2LA.Networking/Updates/Handler.cs:81
 #, csharp-format
 msgid "Error while downloading update: {0}"
+msgstr ""
+
+#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/DisclaimerStep1.razor:21
+msgid "I won't leave ETS2LA unattended"
 msgstr ""
 
 #: ../../../ETS2LA.UI/Pages/Settings/Controls.razor:74
@@ -349,7 +349,7 @@ msgstr ""
 msgid "Fast"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:189
+#: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:182
 msgid "Install Update and Restart"
 msgstr ""
 
@@ -369,7 +369,7 @@ msgid "Successfully uninstalled plugin with ID {0}."
 msgstr ""
 
 #: ../../../ETS2LA.UI/Pages/Home.razor:167
-#: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:126
+#: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:119
 msgid "No Update Available"
 msgstr ""
 
@@ -456,12 +456,12 @@ msgid ""
 "reinstall the SDK if necessary."
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:182
+#: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:175
 #, csharp-format
 msgid "Latest Version: {0}"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:106
+#: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:99
 msgid "Translating release notes..."
 msgstr ""
 
@@ -479,7 +479,7 @@ msgstr ""
 msgid "Render AR Elements"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:182
+#: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:175
 msgid "Unchanged / Unavailable"
 msgstr ""
 
@@ -539,7 +539,7 @@ msgid "Contact Us"
 msgstr ""
 
 #: ../../../ETS2LA.UI/Pages/Home.razor:144
-#: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:81
+#: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:74
 msgid "An error occurred while checking for updates."
 msgstr ""
 
@@ -736,7 +736,7 @@ msgid ""
 "here."
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:179
+#: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:172
 #, csharp-format
 msgid "Current Version: {0}"
 msgstr ""
@@ -836,15 +836,15 @@ msgstr ""
 msgid "Collision Avoidance"
 msgstr ""
 
+#: ../../../ETS2LA.UI/Pages/Settings/Assists.razor:187
+msgid "Warnings & Overrides"
+msgstr ""
+
 #: ../../../ETS2LA.UI/Pages/Settings/Display.razor:257
 msgid ""
 "Disables the overlay entirely. This will fix the black screen issue at the "
 "cost of breaking all features that rely on the overlay, including AR and the "
 "HUD."
-msgstr ""
-
-#: ../../../ETS2LA.UI/Pages/Settings/Assists.razor:187
-msgid "Warnings & Overrides"
 msgstr ""
 
 #: ../../../ETS2LA.UI/Pages/Settings/Data.razor:59
@@ -930,8 +930,8 @@ msgid ""
 "has only slight differences to metric."
 msgstr ""
 
-#: ../../../ETS2LA.Controls/Linux/SDL3ControlsBackend.cs:149
 #: ../../../ETS2LA.Controls/Windows/SharpDXControlsBackend.cs:170
+#: ../../../ETS2LA.Controls/Linux/SDL3ControlsBackend.cs:149
 #, csharp-format
 msgid "Control with ID '{0}' not found for unregistration."
 msgstr ""
@@ -1067,7 +1067,7 @@ msgid ""
 "be installed in Documents/Euro Truck Simulator 2/mod."
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:141
+#: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:134
 #, csharp-format
 msgid "Download progress: {0}%"
 msgstr ""
@@ -1178,7 +1178,7 @@ msgid "Plugin with ID [gray]{0}[/] is already loaded, skipping duplicate."
 msgstr ""
 
 #: ../../../ETS2LA.UI/Pages/Home.razor:168
-#: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:127
+#: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:120
 msgid "You are running the latest version."
 msgstr ""
 
@@ -1227,7 +1227,7 @@ msgstr ""
 msgid "Following Distance"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Shared/Layouts/SettingsLayout.razor:38
+#: ../../../ETS2LA.UI/Shared/Layouts/SettingsLayout.razor:39
 msgid "Check For Updates"
 msgstr ""
 
@@ -1253,6 +1253,10 @@ msgid "found {0} node"
 msgid_plural "found {0} nodes"
 msgstr[0] ""
 msgstr[1] ""
+
+#: ../../../ETS2LA.UI/Shared/Layouts/SettingsLayout.razor:38
+msgid "Open Source"
+msgstr ""
 
 #: ../../../ETS2LA.UI/Pages/Home.razor:233
 #, csharp-format
@@ -1288,15 +1292,15 @@ msgstr ""
 msgid "Failed to install latest version of plugin with ID {0}."
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/DisclaimerStep2.razor:21
-msgid "I understand, now let me in!"
-msgstr ""
-
 #: ../../../ETS2LA.UI/Pages/Error.razor:51
 #, csharp-format
 msgid ""
 "If you think this is a bug, please report it in the {0}Discord Server{1} or "
 "on {2}GitHub{3}."
+msgstr ""
+
+#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/DisclaimerStep2.razor:21
+msgid "I understand, now let me in!"
 msgstr ""
 
 #: ../../../ETS2LA.UI/Pages/Settings/Display.razor:256
@@ -1462,8 +1466,8 @@ msgid ""
 "Installation at '{0}' is not currently running, waiting for load of profile."
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:140
-#: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:156
+#: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:133
+#: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:149
 msgid "Downloading Update"
 msgstr ""
 
@@ -1475,8 +1479,8 @@ msgstr ""
 msgid "Steering Sensitivity"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Settings/Assists.razor:207
 #: ../../../ETS2LA.UI/Pages/Plugins/Manager.razor:226
+#: ../../../ETS2LA.UI/Pages/Settings/Assists.razor:207
 msgid "Disabled"
 msgstr ""
 
@@ -1489,7 +1493,7 @@ msgid "{0}"
 msgstr ""
 
 #: ../../../ETS2LA.UI/Pages/Home.razor:128
-#: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:66
+#: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:59
 msgid ""
 "This might take a while depending on your internet connection and the source."
 msgstr ""
@@ -1534,7 +1538,7 @@ msgstr ""
 msgid "Changelog"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:99
+#: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:92
 msgid "No release notes available."
 msgstr ""
 
@@ -1640,8 +1644,8 @@ msgstr ""
 msgid "Responsiveness"
 msgstr ""
 
-#: ../../../ETS2LA.Game/Data/Classes.cs:130
 #: ../../../ETS2LA.Game/Installation.cs:266
+#: ../../../ETS2LA.Game/Data/Classes.cs:130
 msgid "Parsing Map Data"
 msgstr ""
 
@@ -1769,7 +1773,7 @@ msgid ""
 msgstr ""
 
 #: ../../../ETS2LA.UI/Pages/Home.razor:143
-#: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:80
+#: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:73
 msgid "Error Checking for Updates"
 msgstr ""
 
@@ -1874,7 +1878,7 @@ msgid "Error Loading File"
 msgstr ""
 
 #: ../../../ETS2LA.UI/Pages/Home.razor:157
-#: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:94
+#: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:87
 #, csharp-format
 msgid "A new update is available: {0}"
 msgstr ""
@@ -2054,16 +2058,16 @@ msgstr ""
 msgid "Error initializing memory mapped file: {0}"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/ControlsStep.razor:43
-#, csharp-format
-msgid "Assist Mode: <span class=\"text-text-accent font-bold\">{0}</span>"
-msgstr ""
-
 #: ../../../ETS2LA.Backend/PluginHandler/Handler.cs:204
 #: ../../../ETS2LA.Backend/PluginHandler/Handler.cs:212
 #: ../../../ETS2LA.Backend/PluginHandler/Handler.cs:217
 #, csharp-format
 msgid "Failed to load plugin from [gray]{0}[/]: {1}"
+msgstr ""
+
+#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/ControlsStep.razor:43
+#, csharp-format
+msgid "Assist Mode: <span class=\"text-text-accent font-bold\">{0}</span>"
 msgstr ""
 
 #: ../../../ETS2LA.UI/Pages/Settings/Telemetry.razor:28
@@ -2262,7 +2266,7 @@ msgstr ""
 msgid "Invalid directory"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:157
+#: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:150
 msgid "Starting download..."
 msgstr ""
 
@@ -2296,8 +2300,8 @@ msgid ""
 msgstr ""
 
 #: ../../../ETS2LA.UI/Pages/Home.razor:157
-#: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:94
-#: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:179
+#: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:87
+#: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:172
 msgid "Unknown Version"
 msgstr ""
 
@@ -2335,7 +2339,7 @@ msgstr[0] ""
 msgstr[1] ""
 
 #: ../../../ETS2LA.UI/Pages/Home.razor:127
-#: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:65
+#: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:58
 msgid "Checking for updates..."
 msgstr ""
 
