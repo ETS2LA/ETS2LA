@@ -1,0 +1,51 @@
+@code {
+    [Parameter, EditorRequired]
+    public string Title { get; set; } = string.Empty;
+
+    [Parameter, EditorRequired]
+    public string Description { get; set; } = string.Empty;
+
+    [Parameter]
+    public string Value { get; set; } = string.Empty;
+
+    [Parameter]
+    public EventCallback<string> ValueChanged { get; set; }
+
+    [Parameter]
+    public string Type { get; set; } = "text";
+
+    [Parameter]
+    public string Placeholder { get; set; } = string.Empty;
+
+    [Parameter]
+    public bool Disabled { get; set; }
+
+    [Parameter]
+    public string Class { get; set; } = string.Empty;
+
+    [Parameter(CaptureUnmatchedValues = true)]
+    public IReadOnlyDictionary<string, object> AdditionalAttributes { get; set; } = new Dictionary<string, object>();
+
+    private async Task UpdateValue(ChangeEventArgs args)
+    {
+        if (Disabled) return;
+
+        Value = args.Value?.ToString() ?? string.Empty;
+        await ValueChanged.InvokeAsync(Value);
+    }
+}
+
+<div class="flex flex-col gap-2 @Class">
+    <div class="flex flex-col">
+        <p>@Title</p>
+        <p class="description">@Description</p>
+    </div>
+
+    <input type="@Type"
+           value="@Value"
+           placeholder="@Placeholder"
+           disabled="@Disabled"
+           class="w-full h-11 px-4 rounded-md bg-control-bg border border-control-bg focus:outline-none focus:ring-1 focus:ring-accent focus:ring-offset-1 focus:ring-offset-control"
+           @oninput="UpdateValue"
+           @attributes="AdditionalAttributes" />
+</div>

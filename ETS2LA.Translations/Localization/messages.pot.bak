@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-10-04 17:37:58+0300\n"
-"PO-Revision-Date: 2026-10-04 17:37:58+0300\n"
+"POT-Creation-Date: 2026-10-04 18:53:08+0300\n"
+"PO-Revision-Date: 2026-10-04 18:53:08+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -55,8 +55,8 @@ msgid ""
 "visualization on a single monitor setup, this is recommended."
 msgstr ""
 
-#: ../../../ETS2LA.Controls/Linux/SDL3ControlsBackend.cs:165
 #: ../../../ETS2LA.Controls/Windows/SharpDXControlsBackend.cs:186
+#: ../../../ETS2LA.Controls/Linux/SDL3ControlsBackend.cs:165
 #, csharp-format
 msgid "Control with ID '{0}' not found for updating bindings."
 msgstr ""
@@ -310,21 +310,21 @@ msgstr ""
 msgid "Additional"
 msgstr ""
 
+#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/PluginStep.razor:56
+msgid "Install Plugins"
+msgstr ""
+
 #: ../../../ETS2LA.Overlay/Window/Console.cs:54
 msgid "Show Fewer Logs"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/PluginStep.razor:56
-msgid "Install Plugins"
+#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/DisclaimerStep1.razor:21
+msgid "I won't leave ETS2LA unattended"
 msgstr ""
 
 #: ../../../ETS2LA.Networking/Updates/Handler.cs:81
 #, csharp-format
 msgid "Error while downloading update: {0}"
-msgstr ""
-
-#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/DisclaimerStep1.razor:21
-msgid "I won't leave ETS2LA unattended"
 msgstr ""
 
 #: ../../../ETS2LA.UI/Pages/Settings/Controls.razor:74
@@ -388,8 +388,8 @@ msgstr ""
 msgid "Update to {0}"
 msgstr ""
 
-#: ../../../ETS2LA.Controls/Linux/SDL3ControlsBackend.cs:180
 #: ../../../ETS2LA.Controls/Windows/SharpDXControlsBackend.cs:201
+#: ../../../ETS2LA.Controls/Linux/SDL3ControlsBackend.cs:180
 #, csharp-format
 msgid "Control with ID '{0}' not found for updating axis behavior."
 msgstr ""
@@ -407,12 +407,6 @@ msgstr ""
 
 #: ../../../ETS2LA.UI/Pages/Plugins/Manager.razor:185
 msgid "Enable All"
-msgstr ""
-
-#: ../../../ETS2LA.UI/Pages/Settings/Account.razor:7
-msgid ""
-"Subscriptions will <span class=\"font-bold text-text-accent\">never</span> be "
-"required for using ETS2LA. They are a way you can support the development."
 msgstr ""
 
 #: ../../../ETS2LA.UI/Shared/Layouts/SettingsLayout.razor:14
@@ -473,6 +467,11 @@ msgstr ""
 
 #: ../../../ETS2LA.UI/IPC.cs:56
 msgid "Are you sure?"
+msgstr ""
+
+#: ../../../ETS2LA.UI/Pages/Settings/Account.razor:27
+#, csharp-format
+msgid "You have successfully logged in as {0}."
 msgstr ""
 
 #: ../../../ETS2LA.UI/Pages/Settings/Display.razor:285
@@ -730,12 +729,6 @@ msgstr ""
 msgid "Error Loading Map Data"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Settings/Account.razor:6
-msgid ""
-"You'll register, login, and manage your account settings and subscriptions "
-"here."
-msgstr ""
-
 #: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:172
 #, csharp-format
 msgid "Current Version: {0}"
@@ -753,6 +746,10 @@ msgstr ""
 #: ../../../ETS2LA.UI/Pages/Settings/Assists.razor:13
 #: ../../../ETS2LA.UI/Pages/Settings/Assists.razor:21
 msgid "Slow"
+msgstr ""
+
+#: ../../../ETS2LA.UI/Pages/Settings/Account.razor:37
+msgid "Login Failed"
 msgstr ""
 
 #: ../../../ETS2LA.UI/Pages/Error.razor:13
@@ -790,6 +787,10 @@ msgstr ""
 
 #: ../../../ETS2LA.UI/Shared/Layouts/SettingsLayout.razor:20
 msgid "Audio"
+msgstr ""
+
+#: ../../../ETS2LA.UI/Pages/Settings/Account.razor:49
+msgid "Login Error"
 msgstr ""
 
 #: ../../../ETS2LA.Overlay/Window/StateWindow.cs:50
@@ -999,6 +1000,10 @@ msgstr ""
 msgid "You can enable the plugins we installed in a previous step here."
 msgstr ""
 
+#: ../../../ETS2LA.UI/Pages/Settings/Account.razor:70
+msgid "Login"
+msgstr ""
+
 #: ../../../ETS2LA.Game/Installation.cs:402
 msgid "SDK Installed"
 msgstr ""
@@ -1168,10 +1173,6 @@ msgstr ""
 msgid "Not Connected"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Settings/Account.razor:5
-msgid "This page will be implemented in a future update."
-msgstr ""
-
 #: ../../../ETS2LA.Backend/PluginHandler/Handler.cs:187
 #, csharp-format
 msgid "Plugin with ID [gray]{0}[/] is already loaded, skipping duplicate."
@@ -1292,15 +1293,15 @@ msgstr ""
 msgid "Failed to install latest version of plugin with ID {0}."
 msgstr ""
 
+#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/DisclaimerStep2.razor:21
+msgid "I understand, now let me in!"
+msgstr ""
+
 #: ../../../ETS2LA.UI/Pages/Error.razor:51
 #, csharp-format
 msgid ""
 "If you think this is a bug, please report it in the {0}Discord Server{1} or "
 "on {2}GitHub{3}."
-msgstr ""
-
-#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/DisclaimerStep2.razor:21
-msgid "I understand, now let me in!"
 msgstr ""
 
 #: ../../../ETS2LA.UI/Pages/Settings/Display.razor:256
@@ -1475,12 +1476,16 @@ msgstr ""
 msgid "Simplified Graphics"
 msgstr ""
 
+#: ../../../ETS2LA.UI/Pages/Settings/Account.razor:38
+msgid "Failed to log in. Please check your credentials and try again."
+msgstr ""
+
 #: ../../../ETS2LA.UI/Pages/Settings/Assists.razor:150
 msgid "Steering Sensitivity"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Plugins/Manager.razor:226
 #: ../../../ETS2LA.UI/Pages/Settings/Assists.razor:207
+#: ../../../ETS2LA.UI/Pages/Plugins/Manager.razor:226
 msgid "Disabled"
 msgstr ""
 
@@ -1521,6 +1526,11 @@ msgstr ""
 msgid "L"
 msgstr ""
 
+#: ../../../ETS2LA.UI/Pages/Settings/Account.razor:50
+msgid ""
+"An error occurred while trying to log in. Please try again later. Error: "
+msgstr ""
+
 #: ../../../ETS2LA.UI/Pages/Onboarding/Steps/PluginStep.razor:62
 msgid "Installing..."
 msgstr ""
@@ -1534,12 +1544,12 @@ msgstr ""
 msgid "Font file not found at {0}"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Plugins/Catalogue.razor:170
-msgid "Changelog"
-msgstr ""
-
 #: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:92
 msgid "No release notes available."
+msgstr ""
+
+#: ../../../ETS2LA.UI/Pages/Plugins/Catalogue.razor:170
+msgid "Changelog"
 msgstr ""
 
 #: ../../../ETS2LA.State/Program.cs:68
@@ -1560,6 +1570,10 @@ msgstr ""
 #: ../../../ETS2LA.UI/Pages/Settings/SDK.razor:39
 #: ../../../ETS2LA.UI/Pages/Settings/SDK.razor:45
 msgid "Invalid file"
+msgstr ""
+
+#: ../../../ETS2LA.UI/Pages/Settings/Account.razor:26
+msgid "Login Successful"
 msgstr ""
 
 #: ../../../ETS2LA.Backend/PluginHandler/Handler.cs:120
@@ -1862,6 +1876,12 @@ msgstr ""
 msgid "Window"
 msgstr ""
 
+#: ../../../ETS2LA.UI/Pages/Settings/Account.razor:71
+msgid ""
+"You cannot register an account yet, this page is only for logging in with an "
+"existing developer account."
+msgstr ""
+
 #: ../../../ETS2LA.UI/Pages/Onboarding/Steps/WelcomeStep.razor:79
 msgid ""
 "If you see a fully black screen, see the FAQ at <span class=\"description "
@@ -2049,8 +2069,8 @@ msgstr ""
 msgid "Target Speed: <span class=\"text-text-accent font-bold\">{0} {1}</span>"
 msgstr ""
 
-#: ../../../ETS2LA.Game/SDK/ParkedVehicles.cs:108
 #: ../../../ETS2LA.Game/SDK/Navigation.cs:122
+#: ../../../ETS2LA.Game/SDK/ParkedVehicles.cs:108
 #: ../../../ETS2LA.Game/SDK/Camera.cs:130
 #: ../../../ETS2LA.Game/SDK/Semaphores.cs:176
 #: ../../../ETS2LA.Game/SDK/Traffic.cs:159
@@ -2058,16 +2078,16 @@ msgstr ""
 msgid "Error initializing memory mapped file: {0}"
 msgstr ""
 
+#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/ControlsStep.razor:43
+#, csharp-format
+msgid "Assist Mode: <span class=\"text-text-accent font-bold\">{0}</span>"
+msgstr ""
+
 #: ../../../ETS2LA.Backend/PluginHandler/Handler.cs:204
 #: ../../../ETS2LA.Backend/PluginHandler/Handler.cs:212
 #: ../../../ETS2LA.Backend/PluginHandler/Handler.cs:217
 #, csharp-format
 msgid "Failed to load plugin from [gray]{0}[/]: {1}"
-msgstr ""
-
-#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/ControlsStep.razor:43
-#, csharp-format
-msgid "Assist Mode: <span class=\"text-text-accent font-bold\">{0}</span>"
 msgstr ""
 
 #: ../../../ETS2LA.UI/Pages/Settings/Telemetry.razor:28

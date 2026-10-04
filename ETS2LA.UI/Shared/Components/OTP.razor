@@ -1,0 +1,114 @@
+@code {
+    [Parameter, EditorRequired]
+    public string Title { get; set; } = string.Empty;
+
+    [Parameter, EditorRequired]
+    public string Description { get; set; } = string.Empty;
+
+    [Parameter]
+    public int Length { get; set; } = 6;
+
+    [Parameter]
+    public string Value { get; set; } = string.Empty;
+
+    [Parameter]
+    public EventCallback<string> ValueChanged { get; set; }
+
+    [Parameter]
+    public EventCallback<string> OnComplete { get; set; }
+
+    [Parameter]
+    public bool Disabled { get; set; }
+
+    [Parameter]
+    public string Class { get; set; } = string.Empty;
+
+    private readonly List<ElementReference> inputReferences = new();
+
+    public OTP()
+    {
+        for (int i = 0; i < Length; i++)
+        {
+            inputReferences.Add(new ElementReference());
+        }
+    }
+
+    protected override void OnParametersSet()
+    {
+        Length = Math.Max(1, Length);
+        Value = GetDigits(Value)[..Math.Min(Value.Length, Length)];
+    }
+
+    private string GetDigits(string value)
+    {
+        return new string(value.Where(char.IsDigit).ToArray());
+    }
+
+    private string GetDigit(int index)
+    {
+        return index < Value.Length ? Value[index].ToString() : string.Empty;
+    }
+
+    private async Task UpdateValue(int index, ChangeEventArgs args)
+    {
+        if (Disabled) return;
+
+        string digit = GetDigits(args.Value?.ToString() ?? string.Empty);
+        string updatedValue = Value.PadRight(Length)[..Length];
+
+        if (digit.Length > 0)
+        {
+            updatedValue = updatedValue.Remove(index, 1).Insert(index, digit[..1]);
+            updatedValue = updatedValue.TrimEnd();
+        }
+        else
+        {
+            updatedValue = updatedValue.Remove(index, 1).TrimEnd();
+        }
+
+        Value = updatedValue;
+        await ValueChanged.InvokeAsync(Value);
+
+        if (digit.Length > 0 && index < Length - 1)
+        {
+            await inputReferences[index + 1].FocusAsync();
+        }
+
+        if (Value.Length == Length)
+        {
+            await OnComplete.InvokeAsync(Value);
+        }
+    }
+
+    private async Task HandleKeyDown(int index, KeyboardEventArgs args)
+    {
+        if (Disabled || args.Key != "Backspace" || index == 0 || GetDigit(index).Length > 0) return;
+
+        await inputReferences[index - 1].FocusAsync();
+    }
+}
+
+<div class="flex flex-col gap-2 @Class">
+    <div class="flex flex-col">
+        <p>@Title</p>
+        <p class="description">@Description</p>
+    </div>
+
+    <div class="flex gap-2">
+        @for (int i = 0; i < Length; i++)
+        {
+            int index = i;
+            <input @ref="inputReferences[index]"
+                type="text"
+                inputmode="numeric"
+                pattern="[0-9]*"
+                maxlength="1"
+                autocomplete="@(index == 0 ? "one-time-code" : "off")"
+                value="@GetDigit(index)"
+                disabled="@Disabled"
+                class="w-11 h-11 rounded-md bg-control-bg border border-control-bg text-center focus:outline-none focus:ring-1 focus:ring-accent focus:ring-offset-1 focus:ring-offset-control"
+                @oninput="@(args => UpdateValue(index, args))"
+                @onkeydown="@(args => HandleKeyDown(index, args))" />
+        }
+    </div>
+</div>

@@ -1,6 +1,7 @@
 @using ETS2LA.UI.Shared.Overlays
 @using ETS2LA.UI.Shared.Components
 @using ETS2LA.Logging;
+@using ETS2LA.Networking.Settings;
 
 @inherits LayoutComponentBase
 
@@ -59,7 +60,7 @@
       <div class=@("w-full h-full relative" + (WindowState.Current.IsSidebarOpen ? " opacity-100" : " opacity-0") + " transition-opacity duration-200 ease-in-out")>
         <div class="flex flex-col w-full gap-0 bottom-4 absolute">
           <SidebarButton Name=@(_("Settings")) Path="/settings" />
-          <SidebarButton Name=@(_("Anonymous")) Path="/settings/account" />
+          <SidebarButton Name=@NetworkingSettings.Current.CurrentUser.Username Path="/settings/account" />
         </div>
       </div>
     </div>

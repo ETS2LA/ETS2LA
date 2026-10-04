@@ -18,6 +18,7 @@ public class NetworkingClient
 
     public PluginApiClient Plugins { get; } = new();
     public NewsApiClient News { get; } = new();
+    public UserApiClient UserClient { get; } = new();
 
     public NetworkingClient()
     {
