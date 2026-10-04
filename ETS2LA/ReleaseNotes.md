@@ -1,18 +1,7 @@
-### ETS2LA C# 2026.10.5111
-- `feat` Implemented *Card* component, plugins can now also use this via *ETS2LA.UI.Components*.
-- `feat` Anonymous telemetry now logs the user's selected display language. We'll use this to try and figure out which regions are using ETS2LA the most.
-- `fix` *Force Map Load* is now implemented. It was accidentally removed in a previous update to the data loader.
-- `fix` Fixed *Catalogue* and *Manager* page layout issues when plugins' descriptions weren't long enough to fill the card horizontally.
-- `fix` Fixed *SDK* page layout issues when some game installation folders were longer than others.
-- `fix` Fixed crash caused by *ETS2LA.ML.Vision* due to missing road data.
-- `translation` Update for Finnish, Slovak, Chinese (Traditional), Chinese (Simplified), Spanish (American).
-
-### ETS2LA C# 2026.10.5103
-- `feat` Improved sponsor displays when the current computer can access GitHub.
-- `feat` Dynamic translation tasks will now run through multiple translation providers. In the following order: Google, Bing, Yandex. We now additionally have a second Google Translate provider.
-- `feat` Added news articles into the dashboard page. This update also finally implements *service* side features that we've needed for a while. I can now start implementing more feature that require server side support.
-  - These are automatically translated into your selected language. The translation can however be disabled.
-- `feat` Implemented *Dialog* component, plugins can now also use this via *ETS2LA.UI.Components*.
+### ETS2LA C# 2026.10.5115
+- `feat` Added *Open Source* page to the settings menu. This page lists all open source projects used in ETS2LA and links to their repositories.
+- `feat` Added *Input*, *OTP* components to *ETS2LA.UI.Components*.
+- `feat` Added ETS2LA account login/management support to *ETS2LA.Networking*. Note that this is only available for developers, and won't be used by the public for at least a few more weeks.
 
 #### Thank you to today's sponsor... You!
 Development is possible thanks to our [sponsors](https://github.com/sponsors/Tumppi066). Please consider supporting if you like the project and have the means to do so.
