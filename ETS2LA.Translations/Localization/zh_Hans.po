@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
 "POT-Creation-Date: 2026-10-04 19:33:16+0300\n"
-"PO-Revision-Date: 2026-10-04 16:36+0000\n"
+"PO-Revision-Date: 2026-10-06 00:06+0000\n"
 "Last-Translator: goodnightan <goodnightan@ets2la.com>\n"
 "Language-Team: Chinese (Simplified Han script) <http://weblate.ets2la.com/"
 "projects/ets2la/ets2la/zh_Hans/>\n"
@@ -152,7 +152,7 @@ msgid "Binding for control {0} ({1}) timed out."
 msgstr "控制 {0}（{1}）的绑定超时了。"
 
 msgid "Remove Account"
-msgstr ""
+msgstr "删除账户"
 
 #, csharp-format
 msgid ""
@@ -219,7 +219,7 @@ msgid "Welcome to ETS2LA!"
 msgstr "欢迎使用ETS2LA！"
 
 msgid "Account Removal Failed"
-msgstr ""
+msgstr "移除账户失败"
 
 msgid ""
 "<span class=\"text-text-accent\"))>Success!</span> You can find more plugins "
@@ -271,7 +271,7 @@ msgid "Look in the top left corner."
 msgstr "看看左上角。"
 
 msgid "Failed to log out. Please try again."
-msgstr ""
+msgstr "退出登录失败。请重试。"
 
 msgid "Visual"
 msgstr "视觉提示"
@@ -310,7 +310,7 @@ msgstr "快"
 
 #, csharp-format
 msgid "You are currently logged in as {0}."
-msgstr ""
+msgstr "您当前已登录 {0}。"
 
 msgid "Install Update and Restart"
 msgstr "安装更新并重启"
@@ -326,7 +326,7 @@ msgstr ""
 "度。"
 
 msgid "Logout Successful"
-msgstr ""
+msgstr "退出登录成功"
 
 #, csharp-format
 msgid "Successfully uninstalled plugin with ID {0}."
@@ -416,7 +416,7 @@ msgstr "你确定吗？"
 
 #, csharp-format
 msgid "You have successfully logged in as {0}."
-msgstr ""
+msgstr "您已成功以 {0} 身份登录。"
 
 msgid "Render AR Elements"
 msgstr "渲染 AR 元素"
@@ -576,7 +576,7 @@ msgid "Force Map Load"
 msgstr "强制加载地图"
 
 msgid "Your account has been successfully removed."
-msgstr ""
+msgstr "您的账户已成功删除。"
 
 #, csharp-format
 msgid "Failed to uninstall SDK version '{0}' from '{1}': {2}"
@@ -640,7 +640,7 @@ msgid "Slow"
 msgstr "慢"
 
 msgid "Login Failed"
-msgstr ""
+msgstr "登录失败"
 
 msgid ""
 "Authentication is required. The client must authenticate itself to get the "
@@ -672,7 +672,7 @@ msgid "Audio"
 msgstr "音频"
 
 msgid "Login Error"
-msgstr ""
+msgstr "登录错误"
 
 #, csharp-format
 msgid "{0} m/s ({1} in {2})"
@@ -802,12 +802,12 @@ msgid "Plugin with ID {0} not found in available plugins."
 msgstr "在可用插件中找不到 ID 为 {0} 的插件。"
 
 msgid "Confirm Account Removal"
-msgstr ""
+msgstr "确认移除账户"
 
 msgid ""
 "Removing your account will delete all your data from our servers. This "
 "action cannot be undone."
-msgstr ""
+msgstr "移除账户将删除您在我们服务器上的所有数据。此操作无法撤销。"
 
 msgid "Manager"
 msgstr "插件管理"
@@ -837,7 +837,7 @@ msgid "Pascals"
 msgstr "帕斯卡（压力单位）"
 
 msgid "Account Removal Error"
-msgstr ""
+msgstr "移除账户错误"
 
 #, csharp-format
 msgid "Failed to disable {0}: {1}"
@@ -847,7 +847,7 @@ msgid "You can enable the plugins we installed in a previous step here."
 msgstr "您可以在此处启用我们在上一步安装的插件。"
 
 msgid "Login"
-msgstr ""
+msgstr "登录"
 
 msgid "SDK Installed"
 msgstr "已安装SDK"
@@ -945,7 +945,7 @@ msgid "bar"
 msgstr "bar"
 
 msgid "Account Removed"
-msgstr ""
+msgstr "账户已删除"
 
 msgid ""
 "Couldn't connect to the game. Please open ETS2 or ATS and enable the SDK."
@@ -1058,7 +1058,7 @@ msgid_plural "found {0} nodes"
 msgstr[0] "找到 {0} 个节点"
 
 msgid "Open Source"
-msgstr ""
+msgstr "开源代码库"
 
 #, csharp-format
 msgid "<span class=\"font-semibold\">{0}</span> until {1}"
@@ -1226,7 +1226,7 @@ msgid "Simplified Graphics"
 msgstr "简化图形"
 
 msgid "Failed to log in. Please check your credentials and try again."
-msgstr ""
+msgstr "登录失败。请检查您的登录凭据后重试。"
 
 msgid "Steering Sensitivity"
 msgstr "转向灵敏度"
@@ -1260,7 +1260,7 @@ msgstr "L"
 
 msgid ""
 "An error occurred while trying to log in. Please try again later. Error: "
-msgstr ""
+msgstr "登录时发生错误。请稍后重试。错误： "
 
 msgid "Installing..."
 msgstr "安装中..."
@@ -1292,13 +1292,13 @@ msgstr "找不到 ID 为 {1} 的插件版本 {0}。"
 
 msgid ""
 "An error occurred while trying to log out. Please try again later. Error: "
-msgstr ""
+msgstr "退出登录时发生错误。请稍后重试。错误： "
 
 msgid "Invalid file"
 msgstr "文件无效"
 
 msgid "Login Successful"
-msgstr ""
+msgstr "登录成功"
 
 #, csharp-format
 msgid "Discovered {0} library in total"
@@ -1322,7 +1322,7 @@ msgid ""
 msgstr "手动添加的游戏路径“{0}”中找不到游戏可执行文件，将略过。"
 
 msgid "Logout Error"
-msgstr ""
+msgstr "退出登录错误"
 
 #, csharp-format
 msgid "Found {0} game installation."
@@ -1542,7 +1542,7 @@ msgstr "窗口"
 msgid ""
 "You cannot register an account yet, this page is only for logging in with an "
 "existing developer account."
-msgstr ""
+msgstr "您目前还无法注册账户，此页面仅用于登录已有的开发者账户。"
 
 msgid ""
 "If you see a fully black screen, see the FAQ at <span class=\"description "
@@ -1645,7 +1645,7 @@ msgid "Recommended Plugins"
 msgstr "推荐插件"
 
 msgid "Failed to remove account. Please try again."
-msgstr ""
+msgstr "删除账户失败。请重试。"
 
 msgid ""
 "The maximum speed ETS2LA will accelerate to. It might still drift over this "
@@ -1782,7 +1782,7 @@ msgid "This game was found at"
 msgstr "此游戏位于"
 
 msgid "You have successfully logged out."
-msgstr ""
+msgstr "您已成功退出登录。"
 
 msgid "Data Quality"
 msgstr "数据质量"
@@ -1866,7 +1866,7 @@ msgid "Invalid directory"
 msgstr "目录无效"
 
 msgid "Logout"
-msgstr ""
+msgstr "退出登录"
 
 msgid "Starting download..."
 msgstr "正在下载..."
@@ -1919,7 +1919,7 @@ msgstr "米"
 msgid ""
 "An error occurred while trying to remove your account. Please try again "
 "later. Error: "
-msgstr ""
+msgstr "删除账户时发生错误。请稍后重试。错误： "
 
 msgid "°C"
 msgstr "°C"
@@ -2003,7 +2003,7 @@ msgid "Snap to each 10 {0}"
 msgstr "对齐至 10 {0} 的倍数"
 
 msgid "Logout Failed"
-msgstr ""
+msgstr "退出登录失败"
 
 #, csharp-format
 msgid "Created plugin directory: [gray]{0}[/]"
