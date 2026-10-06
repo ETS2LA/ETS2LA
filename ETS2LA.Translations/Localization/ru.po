@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
 "POT-Creation-Date: 2026-10-04 19:33:16+0300\n"
-"PO-Revision-Date: 2026-10-06 05:43+0000\n"
+"PO-Revision-Date: 2026-10-07 22:38+0000\n"
 "Last-Translator: Tema <tema@ets2la.com>\n"
 "Language-Team: Russian <http://weblate.ets2la.com/projects/ets2la/ets2la/ru/>"
 "\n"
@@ -81,7 +81,7 @@ msgid ""
 "When changing the speed, snap to the nearest 10. i.e. 37 -> 39 -> 40 -> 42..."
 msgstr ""
 "При изменении скорости значение будет автоматически привязываться к "
-"ближайшему шагу 10, например: 37 → 39 → 40 → 42…"
+"ближайшему десятку, например: 37 → 39 → 40 → 42…"
 
 msgid "kg"
 msgstr "кг"
@@ -157,7 +157,7 @@ msgid "Binding for control {0} ({1}) timed out."
 msgstr "Время ожидания привязки элемента управления {0} ({1}) истекло."
 
 msgid "Remove Account"
-msgstr "Удалить Аккаунт"
+msgstr "Удалить аккаунт"
 
 #, csharp-format
 msgid ""
@@ -221,13 +221,13 @@ msgid "The step size for changing the cruise control speed."
 msgstr "Шаг изменения скорости круиз-контроля."
 
 msgid "Press anywhere outside the dialog to close it."
-msgstr "Нажмите в любом месте за пределами диалогового окна, чтобы закрытьего."
+msgstr "Нажмите в любом месте за пределами диалогового окна, чтобы закрыть его."
 
 msgid "Welcome to ETS2LA!"
 msgstr "Добро пожаловать в ETS2LA!"
 
 msgid "Account Removal Failed"
-msgstr ""
+msgstr "Не удалось удалить аккаунт."
 
 msgid ""
 "<span class=\"text-text-accent\"))>Success!</span> You can find more plugins "
@@ -244,8 +244,9 @@ msgid ""
 "closed</span>. You can start the game after completing the onboarding "
 "process."
 msgstr ""
-"Убедитесь, что <span class=\"text-text-accent font-bold\">ETS2 и ATSзакрыты</"
-"span>. Вы сможете запустить игру после завершенияпервоначальной настройки."
+"Убедитесь, что <span class=\"text-text-accent font-bold\">ETS2 и ATS "
+"закрыты</span>. После завершения первоначальной настройки вы сможете "
+"запустить игру."
 
 #, csharp-format
 msgid "Error rendering window {0}: {1}"
@@ -279,7 +280,7 @@ msgid "Look in the top left corner."
 msgstr "Посмотрите в левый верхний угол."
 
 msgid "Failed to log out. Please try again."
-msgstr ""
+msgstr "Не удалось выйти из аккаунта. Попробуйте ещё раз."
 
 msgid "Visual"
 msgstr "Визуальное"
@@ -320,7 +321,7 @@ msgstr "Быстро"
 
 #, csharp-format
 msgid "You are currently logged in as {0}."
-msgstr ""
+msgstr "Вы вошли в аккаунт как {0}."
 
 msgid "Install Update and Restart"
 msgstr "Установить обновление и перезапустить"
@@ -337,7 +338,7 @@ msgstr ""
 "между полосами."
 
 msgid "Logout Successful"
-msgstr ""
+msgstr "Выход из аккаунта выполнен успешно."
 
 #, csharp-format
 msgid "Successfully uninstalled plugin with ID {0}."
@@ -394,7 +395,7 @@ msgid ""
 "plugins."
 msgstr ""
 "Определяет, насколько заранее ETS2LA будет реагировать на возможные "
-"столкновения. Отключение этого параметра полностью выключает предотвращение "
+"столкновения. Отключение этого параметра выключает предотвращение "
 "столкновений независимо от включённых плагинов."
 
 msgid "The selected file does not exist."
@@ -409,15 +410,15 @@ msgid ""
 "Only show news articles from official sources, such as the ETS2LA team or "
 "it's developers."
 msgstr ""
-"Показывать только новости из официальных источников, например откоманды "
+"Показывать только новости из официальных источников, например от команды "
 "ETS2LA или её разработчиков."
 
 msgid ""
 "Memory not available for output, please ensure the game is running and "
 "reinstall the SDK if necessary."
 msgstr ""
-"Память недоступна для вывода. Убедитесь, что игра запущена, и "
-"принеобходимости переустановите SDK."
+"Память недоступна для вывода. Убедитесь, что игра запущена, и при "
+"необходимости переустановите SDK."
 
 #, csharp-format
 msgid "Latest Version: {0}"
@@ -435,7 +436,7 @@ msgstr "Вы уверены?"
 
 #, csharp-format
 msgid "You have successfully logged in as {0}."
-msgstr ""
+msgstr "Вы успешно вошли в аккаунт как {0}."
 
 msgid "Render AR Elements"
 msgstr "Отображать AR-элементы"
@@ -483,7 +484,7 @@ msgstr "Элемент управления с ID '{0}' не найден для
 
 #, csharp-format
 msgid "Unregistered control: {0} ({1})"
-msgstr "Отмена регистрации элемента управления: {0} ({1})"
+msgstr "Регистрация элемента управления отменена: {0} ({1})"
 
 msgid "Contact Us"
 msgstr "Связаться с нами"
@@ -514,9 +515,9 @@ msgid ""
 "Consider supporting us by becoming a <span class=\"font-bold text-text-"
 "l\">GitHub Sponsor</span> to cover ongoing development and operational costs."
 msgstr ""
-"Рассмотрите возможность поддержать нас, оформив <spanclass=\"font-bold text-"
-"text-l\">спонсорство на GitHub</span>, чтобыпокрыть текущие расходы на "
-"разработку и обслуживание."
+"Поддержите нас, став <span class=\"font-bold text-text-l\">спонсором на "
+"GitHub</span>. Это поможет покрыть текущие расходы на разработку и "
+"обслуживание."
 
 msgid "You took a wrong turn!"
 msgstr "Вы свернули не туда!"
@@ -606,7 +607,7 @@ msgid "Force Map Load"
 msgstr "Принудительная загрузка карты"
 
 msgid "Your account has been successfully removed."
-msgstr ""
+msgstr "Ваш аккаунт успешно удалён."
 
 #, csharp-format
 msgid "Failed to uninstall SDK version '{0}' from '{1}': {2}"
@@ -672,7 +673,7 @@ msgid "Slow"
 msgstr "Медленно"
 
 msgid "Login Failed"
-msgstr ""
+msgstr "Не удалось войти в аккаунт."
 
 msgid ""
 "Authentication is required. The client must authenticate itself to get the "
@@ -706,7 +707,7 @@ msgid "Audio"
 msgstr "Аудио"
 
 msgid "Login Error"
-msgstr ""
+msgstr "Ошибка входа в аккаунт."
 
 #, csharp-format
 msgid "{0} m/s ({1} in {2})"
@@ -721,8 +722,8 @@ msgid ""
 "Adjust how quickly ETS2LA will respond to desired changes in acceleration. "
 "Emergency braking is not affected."
 msgstr ""
-"Настройте, насколько быстро ETS2LA будет реагировать на изменения ускорения. "
-"На экстренное торможение этот параметр не влияет."
+"Настройте, насколько быстро ETS2LA будет реагировать на необходимые "
+"изменения ускорения. На экстренное торможение этот параметр не влияет."
 
 msgid "Display Units"
 msgstr "Единицы измерения"
@@ -748,8 +749,8 @@ msgid ""
 "cost of breaking all features that rely on the overlay, including AR and the "
 "HUD."
 msgstr ""
-"Полностью отключает оверлей. Это устранит проблему чёрного экрана, нонарушит "
-"работу всех функций, зависящих от оверлея, включая AR и HUD."
+"Полностью отключает оверлей. Это устранит проблему чёрного экрана, но "
+"нарушит работу всех функций, зависящих от оверлея, включая AR и HUD."
 
 msgid "Warnings & Overrides"
 msgstr "Предупреждения и переопределения"
@@ -851,12 +852,14 @@ msgid "Plugin with ID {0} not found in available plugins."
 msgstr "Плагин с ID {0} не найден среди доступных плагинов."
 
 msgid "Confirm Account Removal"
-msgstr ""
+msgstr "Подтверждение удаления аккаунта"
 
 msgid ""
 "Removing your account will delete all your data from our servers. This "
 "action cannot be undone."
 msgstr ""
+"Удаление аккаунта приведёт к удалению всех ваших данных с наших серверов. "
+"Это действие нельзя отменить."
 
 msgid "Manager"
 msgstr "Менеджер"
@@ -888,17 +891,17 @@ msgid "Pascals"
 msgstr "Паскали"
 
 msgid "Account Removal Error"
-msgstr ""
+msgstr "Ошибка при удалении аккаунта."
 
 #, csharp-format
 msgid "Failed to disable {0}: {1}"
 msgstr "Не удалось отключить {0}: {1}"
 
 msgid "You can enable the plugins we installed in a previous step here."
-msgstr "Здесь можно включить плагины, установленные на предыдущем шаге."
+msgstr "Здесь можно включить плагины, которые мы установили на предыдущем шаге."
 
 msgid "Login"
-msgstr ""
+msgstr "Войти"
 
 msgid "SDK Installed"
 msgstr "SDK установлен"
@@ -999,7 +1002,7 @@ msgid "bar"
 msgstr "бар"
 
 msgid "Account Removed"
-msgstr ""
+msgstr "Аккаунт удалён."
 
 msgid ""
 "Couldn't connect to the game. Please open ETS2 or ATS and enable the SDK."
@@ -1025,7 +1028,7 @@ msgid ""
 msgstr ""
 "Этот режим включает все доступные данные, большая часть которых избыточна. "
 "<span class=\"text-warning\">Предупреждение: экстремальный уровень "
-"использует значительный объём ОЗУ. Ожидайте использования более 10 ГБ.</span>"
+"использует значительный объём ОЗУ и может потреблять более 10 ГБ.</span>"
 
 msgid "GitHub Sponsorship"
 msgstr "Спонсорство на GitHub"
@@ -1063,7 +1066,8 @@ msgid ""
 "Show news articles about plugin updates, be that official or 3rd party "
 "plugins."
 msgstr ""
-"Показывать новости об обновлениях плагинов — как официальных, так исторонних."
+"Показывать новости об обновлениях плагинов — как официальных, так и "
+"сторонних."
 
 msgid "No plugins found."
 msgstr "Плагины не найдены."
@@ -1072,7 +1076,8 @@ msgid ""
 "When pressing the SET keybind, what should ETS2LA set as the current cruise "
 "control speed?"
 msgstr ""
-"Какую скорость круиз-контроля должна установить ETS2LA при нажатии SET?"
+"Какую текущую скорость круиз-контроля должна установить ETS2LA при нажатии "
+"SET?"
 
 msgid "The selected directory does not exist."
 msgstr "Выбранный каталог не существует."
@@ -1123,7 +1128,7 @@ msgstr[1] "Найдено {0} узла"
 msgstr[2] "Найдено {0} узлов"
 
 msgid "Open Source"
-msgstr ""
+msgstr "Открытый исходный код"
 
 #, csharp-format
 msgid "<span class=\"font-semibold\">{0}</span> until {1}"
@@ -1245,9 +1250,9 @@ msgid ""
 "interaction mode when you press it's keybind. When disabled, the overlay "
 "will only be interactive while you hold down the keybind."
 msgstr ""
-"При включении оверлей будет переключаться между режимами взаимодействия и "
-"бездействия при нажатии назначенной клавиши. При отключении оверлей будет "
-"интерактивным только пока вы удерживаете назначенную клавишу."
+"При включении оверлей будет переключаться между интерактивным и "
+"неинтерактивным режимами при нажатии назначенной клавиши. При отключении "
+"оверлей будет интерактивным только во время удержания этой клавиши."
 
 msgid "Latest News"
 msgstr "Последние новости"
@@ -1306,6 +1311,7 @@ msgstr "Упрощённая графика"
 
 msgid "Failed to log in. Please check your credentials and try again."
 msgstr ""
+"Не удалось войти в аккаунт. Проверьте данные для входа и попробуйте ещё раз."
 
 msgid "Steering Sensitivity"
 msgstr "Чувствительность рулевого управления"
@@ -1332,7 +1338,7 @@ msgstr "Ошибка при отображении оверлея: {0}"
 
 msgid "You may need to restart the game to apply this change."
 msgstr ""
-"Чтобы применить это изменение, возможно, потребуется перезапуститьигру."
+"Чтобы применить это изменение, возможно, потребуется перезапустить игру."
 
 msgid "Off"
 msgstr "Выкл."
@@ -1342,7 +1348,7 @@ msgstr "л"
 
 msgid ""
 "An error occurred while trying to log in. Please try again later. Error: "
-msgstr ""
+msgstr "При попытке входа произошла ошибка. Повторите попытку позже. Ошибка: "
 
 msgid "Installing..."
 msgstr "Установка..."
@@ -1374,13 +1380,13 @@ msgstr "Версия {0} не найдена для плагина с ID {1}."
 
 msgid ""
 "An error occurred while trying to log out. Please try again later. Error: "
-msgstr ""
+msgstr "При попытке выхода произошла ошибка. Повторите попытку позже. Ошибка: "
 
 msgid "Invalid file"
 msgstr "Недопустимый файл"
 
 msgid "Login Successful"
-msgstr ""
+msgstr "Вход в аккаунт выполнен успешно."
 
 #, csharp-format
 msgid "Discovered {0} library in total"
@@ -1410,7 +1416,7 @@ msgstr ""
 "пропускаем."
 
 msgid "Logout Error"
-msgstr ""
+msgstr "Ошибка выхода из аккаунта."
 
 #, csharp-format
 msgid "Found {0} game installation."
@@ -1445,8 +1451,8 @@ msgid ""
 "driving."
 msgstr ""
 "Чтобы быстрее начать работу, установите наши <span class=\"text-text-accent "
-"font-bold\">рекомендуемые</span> плагины. В них есть всё необходимое, чтобы "
-"начать движение."
+"font-bold\">рекомендуемые</span> плагины. В них есть всё необходимое для "
+"начала движения."
 
 #, csharp-format
 msgid "An error occurred while loading map data: {0}"
@@ -1615,8 +1621,7 @@ msgstr ""
 "Оверлей отключён в настройках, поэтому регистрация окна {0} пропускается."
 
 msgid "Please close the game before continuing with the onboarding process."
-msgstr ""
-"Пожалуйста, закройте игру, прежде чем продолжить первоначальнуюнастройку."
+msgstr "Закройте игру перед продолжением первоначальной настройки."
 
 #, csharp-format
 msgid "Successfully installed plugin {0} ({1}, {2})"
@@ -1649,13 +1654,16 @@ msgid ""
 "You cannot register an account yet, this page is only for logging in with an "
 "existing developer account."
 msgstr ""
+"Вы пока не можете зарегистрировать аккаунт: эта страница предназначена "
+"только для входа в существующий аккаунт разработчика."
 
 msgid ""
 "If you see a fully black screen, see the FAQ at <span class=\"description "
 "hover:underline\">ets2la.com</span>."
 msgstr ""
-"Если вы видите полностью чёрный экран, ознакомьтесь с частозадаваемыми "
-"вопросами на <span class=\"descriptionhover:underline\">ets2la.com</span>."
+"Если вы видите полностью чёрный экран, ознакомьтесь с разделом часто "
+"задаваемых вопросов на <span class=\"description hover:underline\""
+">ets2la.com</span>."
 
 msgid "Settings"
 msgstr "Настройки"
@@ -1718,7 +1726,8 @@ msgstr ""
 #, csharp-format
 msgid "Cannot enable plugin {0} because dependency {1} failed to enable."
 msgstr ""
-"Не удалось включить плагин {0}, потому что зависимость {1} не включилась."
+"Не удалось включить плагин {0}, потому что не удалось включить зависимость "
+"{1}."
 
 #, csharp-format
 msgid "Discovered {0} manually installed library"
@@ -1760,7 +1769,7 @@ msgid "Recommended Plugins"
 msgstr "Рекомендуемые плагины"
 
 msgid "Failed to remove account. Please try again."
-msgstr ""
+msgstr "Не удалось удалить аккаунт. Попробуйте ещё раз."
 
 msgid ""
 "The maximum speed ETS2LA will accelerate to. It might still drift over this "
@@ -1821,7 +1830,7 @@ msgstr ""
 
 #, csharp-format
 msgid "Error initializing memory mapped file: {0}"
-msgstr "Ошибка инициализации проецируемого в память файла: {0}"
+msgstr "Ошибка инициализации файла, отображаемого в память: {0}"
 
 #, csharp-format
 msgid "Failed to load plugin from [gray]{0}[/]: {1}"
@@ -1833,7 +1842,7 @@ msgstr ""
 "Режим ассистентов: <span class=\"text-text-accent font-bold\">{0}</span>"
 
 msgid "View Public Telemetry"
-msgstr "Просмотреть общедоступные данные телеметрии"
+msgstr "Просмотреть общедоступную телеметрию"
 
 msgid "Adjust the volume of the audio output."
 msgstr "Настройте громкость звукового вывода."
@@ -1871,7 +1880,7 @@ msgid "Binding Timed Out"
 msgstr "Время ожидания привязки истекло"
 
 msgid "Thank you to the following people for their ongoing support:"
-msgstr "Благодарим за постоянную поддержку:"
+msgstr "Благодарим следующих людей за постоянную поддержку:"
 
 msgid "Changes will take effect after restarting the application."
 msgstr "Изменения вступят в силу после перезапуска приложения."
@@ -1913,7 +1922,7 @@ msgid "This game was found at"
 msgstr "Игра найдена по пути"
 
 msgid "You have successfully logged out."
-msgstr ""
+msgstr "Вы успешно вышли из аккаунта."
 
 msgid "Data Quality"
 msgstr "Качество данных"
@@ -2000,7 +2009,7 @@ msgid "Invalid directory"
 msgstr "Недопустимый каталог"
 
 msgid "Logout"
-msgstr ""
+msgstr "Выйти"
 
 msgid "Starting download..."
 msgstr "Начало загрузки..."
@@ -2018,8 +2027,8 @@ msgid ""
 "Translate news articles to your selected display language. This may take a "
 "while depending on the number of articles and your internet connection."
 msgstr ""
-"Переводить новости на выбранный язык интерфейса. Это может занятьнекоторое "
-"время в зависимости от количества статей и скоростиинтернет-соединения."
+"Переводит новости на выбранный язык интерфейса. Это может занять некоторое "
+"время в зависимости от количества статей и скорости интернет-соединения."
 
 msgid "Map Data Parsed"
 msgstr "Данные карты обработаны"
@@ -2057,6 +2066,8 @@ msgid ""
 "An error occurred while trying to remove your account. Please try again "
 "later. Error: "
 msgstr ""
+"При попытке удалить аккаунт произошла ошибка. Повторите попытку позже. "
+"Ошибка: "
 
 msgid "°C"
 msgstr "°C"
@@ -2108,7 +2119,7 @@ msgid "Demo Window"
 msgstr "Демонстрационное окно"
 
 msgid "Help"
-msgstr "Помощь"
+msgstr "Справка"
 
 #, csharp-format
 msgid "Skipped stale plugin shadow directory [gray]{0}[/]: {1}"
@@ -2146,7 +2157,7 @@ msgid "Snap to each 10 {0}"
 msgstr "Привязывать к значениям, кратным 10 {0}"
 
 msgid "Logout Failed"
-msgstr ""
+msgstr "Не удалось выйти из аккаунта."
 
 #, csharp-format
 msgid "Created plugin directory: [gray]{0}[/]"
@@ -2209,10 +2220,10 @@ msgid ""
 "tabbed out of the game. If you enable this and it doesn't work, please "
 "report the issue on our Discord server."
 msgstr ""
-"Позволяет ETS2LA управлять педалями газа и тормоза через "
-"прямоередактирование памяти. На некоторых системах это может не работать,но "
-"такое управление возможно даже когда игра свёрнута. Если вывключите эту "
-"опцию и она не будет работать, сообщите о проблеме нанашем сервере Discord."
+"Позволяет ETS2LA управлять педалями газа и тормоза с помощью прямого "
+"редактирования памяти. На некоторых системах это может не работать, зато "
+"управление будет доступно даже при свёрнутой игре. Если вы включите эту "
+"опцию и она не будет работать, сообщите о проблеме на нашем сервере Discord."
 
 #, csharp-format
 msgid "Not all dependencies for plugin {0} are installed."
