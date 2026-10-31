@@ -5,7 +5,15 @@ public enum UserRole
 {
     User,
     Admin,
-    Developer
+    Developer,
+    Supporter
+}
+
+[Serializable]
+public enum Region
+{
+    Global,
+    MainlandChina
 }
 
 [Serializable]
@@ -16,6 +24,7 @@ public class User
     public string JwtToken { get; set; } = string.Empty;
     public DateTime Expiry { get; set; } = DateTime.MinValue;
     public UserRole Role { get; set; } = UserRole.User;
+    public Region Region { get; set; } = Region.Global;
     public PaddleCustomer? Paddle { get; set; } = null;
 }
 

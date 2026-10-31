@@ -1,9 +1,6 @@
-### ETS2LA C# 2026.10.5215
-- `feat` Added Privacy Policy to the onboarding.
-- `feat` Added Privacy Policy when you're registering an account.
-- `feat` Updated release format to be more readable and easier to navigate for new users.
-- `fix` Fixed the FAQ page URL and styling. It now correctly opens ets2la.com.
-- `translation` Translation updates for Slovak, Spanish and Traditional Chinese.
+### ETS2LA C# 2026.10.5231
+- `fix` Fixed a bug that could cause login to fail even if the backend responds correctly.
+- `translation` Translation updates for Finnish, Spanish, Chinese (both), Slovak, Russian, and Polish.
 
 #### Thank you to today's sponsor... You!
 Development is possible thanks to our [sponsors](https://github.com/sponsors/Tumppi066). Please consider supporting if you like the project and have the means to do so.
