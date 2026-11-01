@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-11-01 20:58:14+0200\n"
+"POT-Creation-Date: 2026-11-01 21:07:42+0200\n"
 "PO-Revision-Date: 2026-11-01 18:59+0000\n"
 "Last-Translator: Lun <lun@ets2la.com>\n"
 "Language-Team: Chinese (Traditional Han script) <http://weblate.ets2la.com/"
@@ -1775,14 +1775,14 @@ msgstr "使用者名稱最多只能包含 {0} 個字元。"
 msgid "Enable Memory Output for Pedals"
 msgstr "啟用踏板記憶體輸出"
 
+msgid "kilometers per hour"
+msgstr "公里每小時"
+
 msgid ""
 "User folder paths are hidden automatically. Review the log for other "
 "personal information before sending."
 msgstr ""
 "使用者資料夾路徑會自動隱藏。傳送前，請先檢查日誌中是否包含其他個人資料。"
-
-msgid "kilometers per hour"
-msgstr "公里每小時"
 
 #, csharp-format
 msgid "Enabled plugin: [bold]{0}[/]"
