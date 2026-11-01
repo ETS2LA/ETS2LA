@@ -11,6 +11,7 @@
     <ProjectReference Include="..\ETS2LA.Backend\ETS2LA.Backend.csproj" />
     <ProjectReference Include="..\ETS2LA.Settings\ETS2LA.Settings.csproj" />
     <ProjectReference Include="..\ETS2LA.Logging\ETS2LA.Logging.csproj" />
+    <ProjectReference Include="..\ETS2LA.Telemetry\ETS2LA.Telemetry.csproj" />
     <ProjectReference Include="..\ETS2LA.Notifications\ETS2LA.Notifications.csproj" />
   </ItemGroup>
 

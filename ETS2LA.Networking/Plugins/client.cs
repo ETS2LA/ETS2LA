@@ -4,6 +4,7 @@ using ETS2LA.Backend;
 using ETS2LA.Backend.Events;
 using ETS2LA.Backend.Plugins;
 using ETS2LA.Notifications;
+using ETS2LA.Telemetry;
 using static ETS2LA.Translations.T;
 using ETS2LA.Logging;
 
@@ -25,6 +26,29 @@ public class PluginApiClient
         PropertyNameCaseInsensitive = true,
         Converters = { new System.Text.Json.Serialization.JsonStringEnumConverter() }
     };
+
+    public PluginApiClient()
+    {
+        // The anonymous telemetry enable/disable for these is handled at the backend level:
+        // https://github.com/ETS2LA/ETS2LA/blob/ed07361369af065b05018de8d050299d40872952/ETS2LA/Program.cs#L82
+        // so we don't need to check for that here. The logs just don't go anywhere if the telemetry is disabled.
+
+        Events.Current.Subscribe<string>("ETS2LA.Plugins.Installed", async (pluginId) =>
+        {
+            AppAnalytics.LogEvent("plugin.installed", new Dictionary<string, string>
+            {
+                { "plugin.id", pluginId },
+            });
+        });
+
+        Events.Current.Subscribe<string>("ETS2LA.Plugins.Uninstalled", async (pluginId) =>
+        {
+            AppAnalytics.LogEvent("plugin.uninstalled", new Dictionary<string, string>
+            {
+                { "plugin.id", pluginId },
+            });
+        });
+    }
 
     private void Log(string message, NotificationLevel level = NotificationLevel.Information)
     {
