@@ -355,15 +355,9 @@ public class PluginHandler
         return LoadedLibraryPlugins.FirstOrDefault(p => p.Info.Id == pluginId);
     }
 
-    public bool EnablePlugin(IPlugin? plugin = null, string? pluginId = null)
+    // TODO: Remove this in future versions:
+    private bool EnableLegacyDependencies(IPlugin plugin)
     {
-        plugin ??= GetPluginById(pluginId!);
-        if (plugin == null)
-        {
-            Logger.Warn(_("Tried to enable {0}, but it was not found among loaded plugins.", pluginId ?? "Unknown"));
-            return false;
-        }
-
         var dependencies = plugin.Info.Dependencies;
         foreach (var dependencyId in dependencies)
         {
@@ -397,6 +391,66 @@ public class PluginHandler
                     return false;
                 }
             }
+        }
+        return true;
+    }
+
+    private bool EnableDependencies(IPlugin plugin)
+    {
+        var dependencies = plugin.Info.DependsOn;
+        foreach (var dependencyDef in dependencies)
+        {
+            var dependency = GetPluginById(dependencyDef.Id);
+            if (dependency == null) {
+                if (GetLibraryPluginById(dependencyDef.Id) == null)
+                {
+                    NotificationHandler.Current.SendNotification(new Notification
+                    {
+                        Id = $"Backend.PluginHandler.MissingDependency.{plugin.Info.Id}",
+                        Title = _("{0}", plugin.Info.Name),
+                        Content = _("Missing dependency: {0}", dependencyDef.Id),
+                        Level = NotificationLevel.Danger
+                    });
+                    Logger.Warn(_("Cannot enable plugin {0} because dependency {1} was not found.", plugin.Info.Name, dependencyDef.Id));
+                    return false;
+                }
+            }
+            if (dependency != null && !dependency._IsRunning)
+            {                    
+                var success = EnablePlugin(dependency);
+                if (!success)                    {
+                    NotificationHandler.Current.SendNotification(new Notification
+                    {
+                        Id = $"Backend.PluginHandler.FailedDependency.{dependency.Info.Id}",
+                        Title = _("{0}", plugin.Info.Name),
+                        Content = _("Failed to enable dependency: {0}", dependency.Info.Name),
+                        Level = NotificationLevel.Danger
+                    });
+                    Logger.Warn(_("Cannot enable plugin {0} because dependency {1} failed to enable.", plugin.Info.Name, dependency.Info.Name));
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
+
+    public bool EnablePlugin(IPlugin? plugin = null, string? pluginId = null)
+    {
+        plugin ??= GetPluginById(pluginId!);
+        if (plugin == null)
+        {
+            Logger.Warn(_("Tried to enable {0}, but it was not found among loaded plugins.", pluginId ?? "Unknown"));
+            return false;
+        }
+
+        if (!EnableLegacyDependencies(plugin))
+        {
+            return false;
+        }
+
+        if (!EnableDependencies(plugin))
+        {
+            return false;
         }
 
         try

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-11-01 17:23:40+0200\n"
-"PO-Revision-Date: 2026-11-01 17:23:41+0200\n"
+"POT-Creation-Date: 2026-11-01 17:28:26+0200\n"
+"PO-Revision-Date: 2026-11-01 17:28:27+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -27,7 +27,7 @@ msgid ""
 "overlay windows to any monitor."
 msgstr ""
 
-#: ../../../ETS2LA.Backend/PluginHandler/Handler.cs:450
+#: ../../../ETS2LA.Backend/PluginHandler/Handler.cs:504
 #, csharp-format
 msgid "Tried to disable {0}, but it was not found among loaded plugins."
 msgstr ""
@@ -282,7 +282,8 @@ msgstr ""
 msgid "Use this button to extend the sidebar."
 msgstr ""
 
-#: ../../../ETS2LA.Backend/PluginHandler/Handler.cs:381
+#: ../../../ETS2LA.Backend/PluginHandler/Handler.cs:375
+#: ../../../ETS2LA.Backend/PluginHandler/Handler.cs:414
 #, csharp-format
 msgid "Cannot enable plugin {0} because dependency {1} was not found."
 msgstr ""
@@ -408,7 +409,8 @@ msgstr ""
 msgid "Open Externally"
 msgstr ""
 
-#: ../../../ETS2LA.Backend/PluginHandler/Handler.cs:396
+#: ../../../ETS2LA.Backend/PluginHandler/Handler.cs:390
+#: ../../../ETS2LA.Backend/PluginHandler/Handler.cs:429
 #, csharp-format
 msgid "Cannot enable plugin {0} because dependency {1} failed to enable."
 msgstr ""
@@ -423,12 +425,12 @@ msgstr ""
 msgid "Login Error"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Settings/SDK.razor:58
-msgid "The game has been added successfully."
-msgstr ""
-
 #: ../../../ETS2LA.UI/Shared/Layouts/SettingsLayout.razor:54
 msgid "Check For Updates"
+msgstr ""
+
+#: ../../../ETS2LA.UI/Pages/Settings/SDK.razor:58
+msgid "The game has been added successfully."
 msgstr ""
 
 #: ../../../ETS2LA.Game/SDK/Semaphores.cs:146
@@ -465,8 +467,8 @@ msgstr ""
 msgid "Error in telemetry update loop."
 msgstr ""
 
-#: ../../../ETS2LA.Controls/Linux/SDL3ControlsBackend.cs:172
 #: ../../../ETS2LA.Controls/Windows/SharpDXControlsBackend.cs:182
+#: ../../../ETS2LA.Controls/Linux/SDL3ControlsBackend.cs:172
 #, csharp-format
 msgid "Updated bindings for control: {0} ({1}) to Device: {2}, Control: {3}"
 msgstr ""
@@ -492,7 +494,8 @@ msgstr ""
 msgid "Error rendering context menu for window {0}: {1}"
 msgstr ""
 
-#: ../../../ETS2LA.Backend/PluginHandler/Handler.cs:378
+#: ../../../ETS2LA.Backend/PluginHandler/Handler.cs:372
+#: ../../../ETS2LA.Backend/PluginHandler/Handler.cs:411
 #, csharp-format
 msgid "Missing dependency: {0}"
 msgstr ""
@@ -520,9 +523,11 @@ msgid "Pause When Unstable"
 msgstr ""
 
 #: ../../../ETS2LA.Backend/PluginHandler/Handler.cs:213
-#: ../../../ETS2LA.Backend/PluginHandler/Handler.cs:377
-#: ../../../ETS2LA.Backend/PluginHandler/Handler.cs:392
-#: ../../../ETS2LA.Backend/PluginHandler/Handler.cs:411
+#: ../../../ETS2LA.Backend/PluginHandler/Handler.cs:371
+#: ../../../ETS2LA.Backend/PluginHandler/Handler.cs:386
+#: ../../../ETS2LA.Backend/PluginHandler/Handler.cs:410
+#: ../../../ETS2LA.Backend/PluginHandler/Handler.cs:425
+#: ../../../ETS2LA.Backend/PluginHandler/Handler.cs:465
 #, csharp-format
 msgid "{0}"
 msgstr ""
@@ -695,8 +700,8 @@ msgstr ""
 msgid "Update to {0} from {1}"
 msgstr ""
 
-#: ../../../ETS2LA.Controls/Linux/SDL3ControlsBackend.cs:156
 #: ../../../ETS2LA.Controls/Windows/SharpDXControlsBackend.cs:166
+#: ../../../ETS2LA.Controls/Linux/SDL3ControlsBackend.cs:156
 #, csharp-format
 msgid "Unregistered control: {0} ({1})"
 msgstr ""
@@ -793,7 +798,7 @@ msgstr ""
 msgid "Dashboard"
 msgstr ""
 
-#: ../../../ETS2LA.Backend/PluginHandler/Handler.cs:363
+#: ../../../ETS2LA.Backend/PluginHandler/Handler.cs:442
 #, csharp-format
 msgid "Tried to enable {0}, but it was not found among loaded plugins."
 msgstr ""
@@ -943,8 +948,8 @@ msgstr ""
 msgid "Loading map data from '{0}'"
 msgstr ""
 
-#: ../../../ETS2LA.Controls/Linux/SDL3ControlsBackend.cs:133
 #: ../../../ETS2LA.Controls/Windows/SharpDXControlsBackend.cs:152
+#: ../../../ETS2LA.Controls/Linux/SDL3ControlsBackend.cs:133
 #, csharp-format
 msgid "Control with ID '{0}' not found for event unsubscription."
 msgstr ""
@@ -1132,7 +1137,7 @@ msgstr ""
 msgid "Console"
 msgstr ""
 
-#: ../../../ETS2LA.Backend/PluginHandler/Handler.cs:457
+#: ../../../ETS2LA.Backend/PluginHandler/Handler.cs:511
 #, csharp-format
 msgid "Disabled plugin: [bold]{0}[/]"
 msgstr ""
@@ -1185,7 +1190,7 @@ msgstr ""
 msgid "Game is still running"
 msgstr ""
 
-#: ../../../ETS2LA.Backend/PluginHandler/Handler.cs:465
+#: ../../../ETS2LA.Backend/PluginHandler/Handler.cs:519
 #, csharp-format
 msgid "Failed to disable {0}: {1}"
 msgstr ""
@@ -1317,7 +1322,7 @@ msgstr ""
 msgid "Error playing audio file {0}: {1}"
 msgstr ""
 
-#: ../../../ETS2LA.Backend/PluginHandler/Handler.cs:412
+#: ../../../ETS2LA.Backend/PluginHandler/Handler.cs:466
 msgid "The plugin was enabled successfully."
 msgstr ""
 
@@ -1406,7 +1411,7 @@ msgid "Failed to log out. Please try again."
 msgstr ""
 
 #: ../../../ETS2LA.Backend/PluginHandler/Handler.cs:207
-#: ../../../ETS2LA.Backend/PluginHandler/Handler.cs:429
+#: ../../../ETS2LA.Backend/PluginHandler/Handler.cs:483
 #, csharp-format
 msgid "LoaderException: {0}"
 msgstr ""
@@ -1552,7 +1557,8 @@ msgid ""
 "Please log in again if you wish to use server-side features."
 msgstr ""
 
-#: ../../../ETS2LA.Backend/PluginHandler/Handler.cs:393
+#: ../../../ETS2LA.Backend/PluginHandler/Handler.cs:387
+#: ../../../ETS2LA.Backend/PluginHandler/Handler.cs:426
 #, csharp-format
 msgid "Failed to enable dependency: {0}"
 msgstr ""
@@ -1593,8 +1599,8 @@ msgstr ""
 msgid "Account"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Settings/Assists.razor:204
 #: ../../../ETS2LA.UI/Pages/Plugins/Manager.razor:226
+#: ../../../ETS2LA.UI/Pages/Settings/Assists.razor:204
 msgid "Disabled"
 msgstr ""
 
@@ -1676,11 +1682,11 @@ msgid ""
 "we don't intend to fix this."
 msgstr ""
 
+#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/ControlsStep.razor:48
 #: ../../../ETS2LA.UI/Pages/Onboarding/Steps/EnsureGameClosed.razor:52
 #: ../../../ETS2LA.UI/Pages/Onboarding/Steps/PluginStep.razor:57
-#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/ControlsStep.razor:48
-#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/PrivacyPolicyStep.razor:51
 #: ../../../ETS2LA.UI/Pages/Onboarding/Steps/OverlayStep.razor:27
+#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/PrivacyPolicyStep.razor:51
 #: ../../../ETS2LA.UI/Pages/Onboarding/Steps/SDKStep.razor:17
 msgid "Continue"
 msgstr ""
@@ -2021,15 +2027,15 @@ msgstr ""
 msgid "Changed update source to '{0}'."
 msgstr ""
 
+#: ../../../ETS2LA.State/Units.cs:228
+#: ../../../ETS2LA.State/Units.cs:302
+msgid "K"
+msgstr ""
+
 #: ../../../ETS2LA.UI/Pages/Settings/Account/LoginFlow.razor:239
 msgid ""
 "You'll be asked to save an OTP authentication code after registration. We do "
 "not store or ask for passwords, as those aren't required for authentication."
-msgstr ""
-
-#: ../../../ETS2LA.State/Units.cs:228
-#: ../../../ETS2LA.State/Units.cs:302
-msgid "K"
 msgstr ""
 
 #: ../../../ETS2LA.UI/Pages/Onboarding/Steps/WelcomeStep.razor:73
@@ -2049,9 +2055,9 @@ msgstr ""
 msgid "Acceleration Response"
 msgstr ""
 
-#: ../../../ETS2LA.Backend/PluginHandler/Handler.cs:426
-#: ../../../ETS2LA.Backend/PluginHandler/Handler.cs:434
-#: ../../../ETS2LA.Backend/PluginHandler/Handler.cs:439
+#: ../../../ETS2LA.Backend/PluginHandler/Handler.cs:480
+#: ../../../ETS2LA.Backend/PluginHandler/Handler.cs:488
+#: ../../../ETS2LA.Backend/PluginHandler/Handler.cs:493
 #, csharp-format
 msgid "Failed enable {0}: {1}"
 msgstr ""
@@ -2139,7 +2145,7 @@ msgid ""
 "in game map."
 msgstr ""
 
-#: ../../../ETS2LA.Backend/PluginHandler/Handler.cs:435
+#: ../../../ETS2LA.Backend/PluginHandler/Handler.cs:489
 #, csharp-format
 msgid "Inner Exception: {0}"
 msgstr ""
@@ -2211,7 +2217,7 @@ msgstr ""
 msgid "Playing sound: {0}"
 msgstr ""
 
-#: ../../../ETS2LA.Backend/PluginHandler/Handler.cs:406
+#: ../../../ETS2LA.Backend/PluginHandler/Handler.cs:460
 #, csharp-format
 msgid "Enabled plugin: [bold]{0}[/]"
 msgstr ""
@@ -2403,8 +2409,8 @@ msgid ""
 "When receiving a speedlimit of {0} {1}, we will set the speed to {2} {3}."
 msgstr ""
 
-#: ../../../ETS2LA.Game/SDK/Navigation.cs:122
 #: ../../../ETS2LA.Game/SDK/ParkedVehicles.cs:108
+#: ../../../ETS2LA.Game/SDK/Navigation.cs:122
 #: ../../../ETS2LA.Game/SDK/Camera.cs:130
 #: ../../../ETS2LA.Game/SDK/Semaphores.cs:176
 #: ../../../ETS2LA.Game/SDK/Traffic.cs:159
@@ -2538,8 +2544,8 @@ msgstr ""
 msgid "m/s"
 msgstr ""
 
-#: ../../../ETS2LA.Controls/Linux/SDL3ControlsBackend.cs:186
 #: ../../../ETS2LA.Controls/Windows/SharpDXControlsBackend.cs:197
+#: ../../../ETS2LA.Controls/Linux/SDL3ControlsBackend.cs:186
 #, csharp-format
 msgid "Updated axis behavior for control: {0} ({1}) to {2}"
 msgstr ""

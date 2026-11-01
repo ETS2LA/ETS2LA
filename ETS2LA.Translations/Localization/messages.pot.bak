@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-11-01 17:22:46+0200\n"
-"PO-Revision-Date: 2026-11-01 17:22:47+0200\n"
+"POT-Creation-Date: 2026-11-01 17:23:40+0200\n"
+"PO-Revision-Date: 2026-11-01 17:23:41+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -423,12 +423,12 @@ msgstr ""
 msgid "Login Error"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Shared/Layouts/SettingsLayout.razor:54
-msgid "Check For Updates"
-msgstr ""
-
 #: ../../../ETS2LA.UI/Pages/Settings/SDK.razor:58
 msgid "The game has been added successfully."
+msgstr ""
+
+#: ../../../ETS2LA.UI/Shared/Layouts/SettingsLayout.razor:54
+msgid "Check For Updates"
 msgstr ""
 
 #: ../../../ETS2LA.Game/SDK/Semaphores.cs:146
@@ -465,8 +465,8 @@ msgstr ""
 msgid "Error in telemetry update loop."
 msgstr ""
 
-#: ../../../ETS2LA.Controls/Windows/SharpDXControlsBackend.cs:182
 #: ../../../ETS2LA.Controls/Linux/SDL3ControlsBackend.cs:172
+#: ../../../ETS2LA.Controls/Windows/SharpDXControlsBackend.cs:182
 #, csharp-format
 msgid "Updated bindings for control: {0} ({1}) to Device: {2}, Control: {3}"
 msgstr ""
@@ -695,8 +695,8 @@ msgstr ""
 msgid "Update to {0} from {1}"
 msgstr ""
 
-#: ../../../ETS2LA.Controls/Windows/SharpDXControlsBackend.cs:166
 #: ../../../ETS2LA.Controls/Linux/SDL3ControlsBackend.cs:156
+#: ../../../ETS2LA.Controls/Windows/SharpDXControlsBackend.cs:166
 #, csharp-format
 msgid "Unregistered control: {0} ({1})"
 msgstr ""
@@ -943,8 +943,8 @@ msgstr ""
 msgid "Loading map data from '{0}'"
 msgstr ""
 
-#: ../../../ETS2LA.Controls/Windows/SharpDXControlsBackend.cs:152
 #: ../../../ETS2LA.Controls/Linux/SDL3ControlsBackend.cs:133
+#: ../../../ETS2LA.Controls/Windows/SharpDXControlsBackend.cs:152
 #, csharp-format
 msgid "Control with ID '{0}' not found for event unsubscription."
 msgstr ""
@@ -1065,8 +1065,8 @@ msgstr ""
 msgid "kg"
 msgstr ""
 
-#: ../../../ETS2LA.Game/Data/Classes.cs:130
 #: ../../../ETS2LA.Game/Installation.cs:266
+#: ../../../ETS2LA.Game/Data/Classes.cs:130
 msgid "Parsing Map Data"
 msgstr ""
 
@@ -1477,8 +1477,8 @@ msgstr ""
 msgid "Removing manually added installation at '{0}'"
 msgstr ""
 
-#: ../../../ETS2LA.Controls/Windows/SharpDXControlsBackend.cs:170
 #: ../../../ETS2LA.Controls/Linux/SDL3ControlsBackend.cs:149
+#: ../../../ETS2LA.Controls/Windows/SharpDXControlsBackend.cs:170
 #, csharp-format
 msgid "Control with ID '{0}' not found for unregistration."
 msgstr ""
@@ -1676,12 +1676,12 @@ msgid ""
 "we don't intend to fix this."
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/ControlsStep.razor:48
-#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/OverlayStep.razor:27
-#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/PrivacyPolicyStep.razor:51
-#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/SDKStep.razor:17
 #: ../../../ETS2LA.UI/Pages/Onboarding/Steps/EnsureGameClosed.razor:52
 #: ../../../ETS2LA.UI/Pages/Onboarding/Steps/PluginStep.razor:57
+#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/ControlsStep.razor:48
+#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/PrivacyPolicyStep.razor:51
+#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/OverlayStep.razor:27
+#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/SDKStep.razor:17
 msgid "Continue"
 msgstr ""
 
@@ -2021,15 +2021,15 @@ msgstr ""
 msgid "Changed update source to '{0}'."
 msgstr ""
 
-#: ../../../ETS2LA.State/Units.cs:228
-#: ../../../ETS2LA.State/Units.cs:302
-msgid "K"
-msgstr ""
-
 #: ../../../ETS2LA.UI/Pages/Settings/Account/LoginFlow.razor:239
 msgid ""
 "You'll be asked to save an OTP authentication code after registration. We do "
 "not store or ask for passwords, as those aren't required for authentication."
+msgstr ""
+
+#: ../../../ETS2LA.State/Units.cs:228
+#: ../../../ETS2LA.State/Units.cs:302
+msgid "K"
 msgstr ""
 
 #: ../../../ETS2LA.UI/Pages/Onboarding/Steps/WelcomeStep.razor:73
@@ -2367,8 +2367,8 @@ msgid_plural "Discovered {0} manually installed libraries."
 msgstr[0] ""
 msgstr[1] ""
 
-#: ../../../ETS2LA.Controls/Windows/SharpDXControlsBackend.cs:186
 #: ../../../ETS2LA.Controls/Linux/SDL3ControlsBackend.cs:165
+#: ../../../ETS2LA.Controls/Windows/SharpDXControlsBackend.cs:186
 #, csharp-format
 msgid "Control with ID '{0}' not found for updating bindings."
 msgstr ""
@@ -2404,8 +2404,8 @@ msgid ""
 msgstr ""
 
 #: ../../../ETS2LA.Game/SDK/Navigation.cs:122
-#: ../../../ETS2LA.Game/SDK/Camera.cs:130
 #: ../../../ETS2LA.Game/SDK/ParkedVehicles.cs:108
+#: ../../../ETS2LA.Game/SDK/Camera.cs:130
 #: ../../../ETS2LA.Game/SDK/Semaphores.cs:176
 #: ../../../ETS2LA.Game/SDK/Traffic.cs:159
 #, csharp-format
@@ -2440,8 +2440,8 @@ msgstr ""
 msgid "Show Plugin Updates"
 msgstr ""
 
-#: ../../../ETS2LA.Controls/Windows/SharpDXControlsBackend.cs:201
 #: ../../../ETS2LA.Controls/Linux/SDL3ControlsBackend.cs:180
+#: ../../../ETS2LA.Controls/Windows/SharpDXControlsBackend.cs:201
 #, csharp-format
 msgid "Control with ID '{0}' not found for updating axis behavior."
 msgstr ""
@@ -2538,8 +2538,8 @@ msgstr ""
 msgid "m/s"
 msgstr ""
 
-#: ../../../ETS2LA.Controls/Windows/SharpDXControlsBackend.cs:197
 #: ../../../ETS2LA.Controls/Linux/SDL3ControlsBackend.cs:186
+#: ../../../ETS2LA.Controls/Windows/SharpDXControlsBackend.cs:197
 #, csharp-format
 msgid "Updated axis behavior for control: {0} ({1}) to {2}"
 msgstr ""
