@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
 "POT-Creation-Date: 2026-10-27 15:26:18+0200\n"
-"PO-Revision-Date: 2026-10-31 20:43+0000\n"
+"PO-Revision-Date: 2026-11-01 06:12+0000\n"
 "Last-Translator: bot_lapis <botlapis@ets2la.com>\n"
 "Language-Team: Korean <http://weblate.ets2la.com/projects/ets2la/ets2la/ko/>"
 "\n"
@@ -53,8 +53,8 @@ msgid ""
 "This chatbot is provided for free by <span class=\"text-text-l\">Lun011666</"
 "span>.<br/>For the sake of the community, we ask you not to abuse access."
 msgstr ""
-"이 챗봇은 <span class=\"text-text-l\">Lun011666</span>님이 무료로 제공합니다."
-"커뮤니티를 위해 접근 권한을 남용하지 말아 주시기를 부탁드립니다."
+"이 챗봇은 <span class=\"text-text-l\">Lun011666</span>.<br/>님이 무료로 제공"
+"합니다.커뮤니티를 위해 접근 권한을 남용하지 말아 주시기를 부탁드립니다."
 
 msgid ""
 "Memory not available for output, please ensure the game is running and "
@@ -78,7 +78,7 @@ msgid "Please close the game before continuing with the onboarding process."
 msgstr "온보딩 과정을 계속하기 전에 게임을 종료해 주세요."
 
 msgid "Fast"
-msgstr "고속"
+msgstr "빠름"
 
 #, csharp-format
 msgid "Failed to unload plugin load context: {0}"
@@ -152,7 +152,7 @@ msgid "Networking"
 msgstr "네트워킹"
 
 msgid "liters"
-msgstr "리터"
+msgstr "리터 (L)"
 
 #, csharp-format
 msgid "found {0} node"
@@ -188,7 +188,7 @@ msgstr "오버레이 프레임 제한"
 
 #, csharp-format
 msgid "Failed to acquire joystick [gray italic]({0})[/]: {1}"
-msgstr "조이스틱 [gray italic]({0})[/]을(를) 가져오지 못했습니다: {1}"
+msgstr "조이스틱을 가져오지 못했습니다. [gray italic]({0})[/]: {1}"
 
 msgid ""
 "An error occurred while trying to register. Please try again later. Error: "
@@ -254,7 +254,7 @@ msgstr "처리 중..."
 
 #, csharp-format
 msgid "Found {0} (version: {1}) at '{2}'"
-msgstr "'{2}'에서 {0}(버전: {1})을(를) 찾았습니다."
+msgstr "'{2}'에서 {0}(버전: {1})을(를) 찾았습니다"
 
 #, csharp-format
 msgid "Failed to shutdown plugin {0}: {1}"
@@ -311,7 +311,7 @@ msgid "Initializing GLFW..."
 msgstr "GLFW 초기화 중..."
 
 msgid "Anonymous Telemetry"
-msgstr "익명 데이터 수집"
+msgstr "익명 텔레메트리"
 
 msgid "Please log in before using the chatbot."
 msgstr "챗봇을 사용하기 전에 로그인해 주세요."
@@ -395,10 +395,10 @@ msgid "Request cancelled."
 msgstr "요청이 취소되었습니다."
 
 msgid "Extreme"
-msgstr "극한"
+msgstr "익스트림"
 
 msgid "gal"
-msgstr "gal"
+msgstr "gal (갤런)"
 
 #, csharp-format
 msgid "Error rendering context menu for window {0}: {1}"
@@ -527,7 +527,7 @@ msgid "Logout Failed"
 msgstr "로그아웃 실패"
 
 msgid "kilograms"
-msgstr "킬로그램"
+msgstr "킬로그램 (kg)"
 
 #, csharp-format
 msgid "Error rendering overlay: {0}"
@@ -543,7 +543,7 @@ msgid "Imperial"
 msgstr "영국식 단위"
 
 msgid "feet"
-msgstr "피트"
+msgstr "피트 (ft)"
 
 msgid "Collision Avoidance"
 msgstr "충돌 방지"
@@ -681,7 +681,7 @@ msgstr ""
 "는 SET처럼 작동합니다. 즉, 현재 속도를 제한 속도로 설정합니다."
 
 msgid "°F"
-msgstr "°F"
+msgstr "화씨 (°F)"
 
 msgid "Telemetry"
 msgstr "텔레메트리"
@@ -711,7 +711,7 @@ msgid "SDK Installed"
 msgstr "SDK 설치됨"
 
 msgid "meters"
-msgstr "미터"
+msgstr "미터 (m)"
 
 #, csharp-format
 msgid "No valid versions found for plugin with ID {0}."
@@ -725,7 +725,7 @@ msgid "Successfully installed plugin {0} ({1}, {2})"
 msgstr "플러그인 {0} ({1}, {2})이(가) 정상적으로 설치되었습니다"
 
 msgid "°C"
-msgstr "°C"
+msgstr "섭씨 (°C)"
 
 msgid "Not Connected"
 msgstr "연결되지 않음"
@@ -852,13 +852,16 @@ msgstr "<span class=\"font-bold\">계속</span>을 클릭하면 당사의 개인
 "동의하게 됩니다."
 
 msgid "Simplified Graphics"
-msgstr ""
+msgstr "간소화된 그래픽"
 
 msgid ""
 "Send using <span class=\"text-text-l\">Enter</span>, new line with <span "
 "class=\"text-text-l\">Shift+Enter</span>. Some basic information is sent "
 "along with each message, <span class=\"text-text-l\">click to display</span>."
 msgstr ""
+"<span class=\"text-text-l\">Enter</span>로 전송하고, <span class=\"text-text-"
+"l\">Shift+Enter</span>로 줄바꿈합니다. 각 메시지와 함께 몇 가지 기본 정보가 "
+"전송되며, <span class=\"text-text-l\">클릭하여 표시</span>합니다."
 
 #, csharp-format
 msgid "No game executable found in '{0}', not adding it as an installation."
@@ -866,10 +869,10 @@ msgstr ""
 "{0}'에서 게임 실행 파일을 찾을 수 없어 설치 항목으로 추가하지 않습니다."
 
 msgid "kg"
-msgstr "kg"
+msgstr "킬로그램 (kg)"
 
 msgid "Parsing Map Data"
-msgstr ""
+msgstr "맵 데이터 파싱 중"
 
 msgid ""
 "How early ETS2LA will attempt to respond to possible collisions. Turning "
@@ -884,69 +887,73 @@ msgid ""
 "find your mods are not loading properly, try enabling this option. This is "
 "known to be required for RusMap."
 msgstr ""
+"일부 모드는 japan.mbd 또는 russia.mbd와 같은 추가 맵을 구현합니다. 모드가 제"
+"대로 로드되지 않는 경우 이 옵션을 활성화해 보세요. 이 옵션은 RusMap에 필요하"
+"다고 알려져 있습니다."
 
 #, csharp-format
 msgid "Apparent plugin directory {0} does not exist."
 msgstr "명시된 플러그인 디렉터리 {0}이(가) 존재하지 않습니다."
 
 msgid "Please see the logs for more information."
-msgstr ""
+msgstr "자세한 내용은 로그를 확인하세요."
 
 msgid "An error occurred while checking for updates."
-msgstr ""
+msgstr "업데이트 확인 중 오류가 발생했습니다."
 
 msgid "I understand, now let me in!"
-msgstr ""
+msgstr "이해했어요, 이제 들여보내 주세요!"
 
 #, csharp-format
 msgid ""
 "You are currently logged in as <span class=\"text-text-l\">{0}</span>. [{1}]"
-msgstr ""
+msgstr "현재 <span class=\"text-text-l\">{0}</span>(으)로 로그인되어 있습니다. [{1}]"
 
 msgid "Disable Overlay"
-msgstr ""
+msgstr "오버레이 비활성화"
 
 msgid "show"
 msgstr "보기"
 
 msgid "Data Quality"
-msgstr ""
+msgstr "데이터 품질"
 
 msgid "Unpacking Mods"
-msgstr ""
+msgstr "모드 압축 해제 중"
 
 #, csharp-format
 msgid "<span class=\"font-semibold\">{0}</span> at {1}"
-msgstr ""
+msgstr "<span class=\"font-semibold\">{0}</span> 위치: {1}"
 
 msgid "Console"
-msgstr ""
+msgstr "콘솔"
 
 #, csharp-format
 msgid "Disabled plugin: [bold]{0}[/]"
-msgstr ""
+msgstr "비활성화된 플러그인: [bold]{0}[/]"
 
 #, csharp-format
 msgid "Installation at '{0}' has already been parsed."
-msgstr ""
+msgstr "'{0}'의 설치본은 이미 파싱되었습니다."
 
 msgid "Please enable the Visualization Sockets plugin."
-msgstr ""
+msgstr "Visualization Sockets 플러그인을 활성화해 주세요."
 
 msgid "Pa"
-msgstr ""
+msgstr "Pa (파스칼)"
 
 msgid ""
 "Removing your account will delete all your data from our servers. This "
 "action cannot be undone."
-msgstr ""
+msgstr "계정을 제거하면 서버에서 모든 데이터가 삭제됩니다. 이 작업은 되돌릴 수 없습니"
+"다."
 
 msgid "Unknown Version"
-msgstr ""
+msgstr "알 수 없는 버전"
 
 #, csharp-format
 msgid "Your username must be at least {0} characters long."
-msgstr ""
+msgstr "사용자 이름은 최소 {0}자 이상이어야 합니다."
 
 msgid ""
 "Too many requests. You have sent too many requests in a given amount of time."
@@ -954,13 +961,13 @@ msgstr "요청이 너무 많습니다. 주어진 시간 내에 너무 많은 요
 
 #, csharp-format
 msgid "An error occurred while loading file '{0}': {1}"
-msgstr ""
+msgstr "'{0}' 파일을 로드하는 중 오류가 발생했습니다: {1}"
 
 msgid "Hide Installed"
-msgstr ""
+msgstr "설치된 항목 숨기기"
 
 msgid "Game is still running"
-msgstr ""
+msgstr "게임이 아직 실행 중입니다"
 
 #, csharp-format
 msgid "Failed to disable {0}: {1}"
@@ -969,13 +976,15 @@ msgstr "{0}을(를) 비활성화하지 못했습니다: {1}"
 msgid ""
 "The language ETS2LA will be displayed at. Translations are provided by the "
 "community, we cannot guarantee their accuracy."
-msgstr ""
+msgstr "ETS2LA가 표시될 언어입니다. 번역은 커뮤니티에서 제공되므로 정확성을 보장할 수"
+" 없습니다."
 
 #, csharp-format
 msgid ""
 "Cannot uninstall plugin with ID {0} because the following installed plugins "
 "depend on it: {1}"
-msgstr ""
+msgstr "ID가 {0}인 플러그인은 다음 설치된 플러그인들이 이에 의존하고 있으므로 제거할 "
+"수 없습니다: {1}"
 
 #, csharp-format
 msgid "Error while downloading update: {0}"
@@ -992,12 +1001,15 @@ msgid ""
 "if you use 3rd party plugins. Select Yes to continue anyway and accept the "
 "risk."
 msgstr ""
+"ETS2LA가 시스템 관리자 권한으로 실행 중입니다. 타사 플러그인을 사용하는 경우 "
+"시스템이 위험해질 수 있습니다. 계속 진행하고 위험을 감수하려면 예를 선택하세"
+"요."
 
 msgid "Traffic Lights"
-msgstr ""
+msgstr "신호등"
 
 msgid "Finished loading plugins"
-msgstr ""
+msgstr "플러그인 로드 완료"
 
 msgid ""
 "<span class=\"text-text-accent\"))>Success!</span> You can find more plugins "
@@ -1011,17 +1023,17 @@ msgid "Parsing installation at '{0}' (version: {1})"
 msgstr "{0}'의 설치 항목을 파싱하는 중 (버전: {1})"
 
 msgid "Gates"
-msgstr ""
+msgstr "게이트"
 
 #, csharp-format
 msgid "Binding {0}"
-msgstr ""
+msgstr "{0} 바인딩 중"
 
 msgid "You are not logged in. Open this page again to login."
-msgstr ""
+msgstr "로그인되어 있지 않습니다. 로그인하려면 이 페이지를 다시 열어 주세요."
 
 msgid "You may need to restart the game to apply this change."
-msgstr ""
+msgstr "이 변경 사항을 적용하려면 게임을 다시 시작해야 할 수 있습니다."
 
 msgid "Look in the top left corner."
 msgstr "왼쪽 상단 모서리를 보세요."
@@ -1029,7 +1041,8 @@ msgstr "왼쪽 상단 모서리를 보세요."
 msgid ""
 "We will pause the game when we detect instability or the steering is "
 "unresponsive / disables itself for other reasons."
-msgstr ""
+msgstr "게임이 불안정하거나 조향이 응답하지 않거나 다른 이유로 스스로 비활성화되는 것"
+"을 감지하면 게임을 일시정지합니다."
 
 #, csharp-format
 msgid "Discovered {0} manually installed plugin."
@@ -1044,16 +1057,16 @@ msgid "Failed to discover Dlls: {0}"
 msgstr "DLL 검색 실패: {0}"
 
 msgid "Remove Account"
-msgstr ""
+msgstr "계정 제거"
 
 msgid "Binding Successful"
 msgstr "바인딩 성공"
 
 msgid "Before we begin."
-msgstr ""
+msgstr "시작하기 전에."
 
 msgid "Error Checking for Updates"
-msgstr ""
+msgstr "업데이트 확인 오류"
 
 msgid "Chime"
 msgstr "알림음"
@@ -1061,27 +1074,28 @@ msgstr "알림음"
 msgid ""
 "Parsing will continue, however information contained in this file won't be "
 "available to ETS2LA."
-msgstr ""
+msgstr "파싱은 계속되지만, 이 파일에 포함된 정보는 ETS2LA에서 사용할 수 없게 됩니다."
 
 #, csharp-format
 msgid "Error playing audio file {0}: {1}"
 msgstr "오디오 파일 {0}을(를) 재생하는 중 오류가 발생했습니다: {1}"
 
 msgid "The plugin was enabled successfully."
-msgstr ""
+msgstr "플러그인이 성공적으로 활성화되었습니다."
 
 #, csharp-format
 msgid ""
 "Failed to clean plugin shadow directory [gray]{0}[/], it will be removed on "
 "the next startup: {1}"
-msgstr ""
+msgstr "플러그인 섀도 디렉터리 [gray]{0}[/]을(를) 정리하지 못했습니다. 다음 시작 시 "
+"제거됩니다: {1}"
 
 msgid "Settings"
-msgstr ""
+msgstr "설정"
 
 msgid ""
 "How ETS2LA will warn you about exceeding the speed limit by a major amount."
-msgstr ""
+msgstr "ETS2LA가 속도 제한을 크게 초과할 때 경고하는 방식입니다."
 
 #, csharp-format
 msgid "Error loading '{0}': {1}"
@@ -1089,7 +1103,7 @@ msgstr "{0}'을(를) 불러오는 중 오류가 발생했습니다: {1}"
 
 #, csharp-format
 msgid "<span class=\"font-semibold\">{0}</span> until {1}"
-msgstr ""
+msgstr "{1}까지 <span class=\"font-semibold\">{0}</span>"
 
 #, csharp-format
 msgid "Discovered {0} plugins in total."
@@ -1098,7 +1112,7 @@ msgstr[0] "총 {0}개의 플러그인을 발견했습니다."
 
 #, csharp-format
 msgid "Failed to install latest version of plugin with ID {0}."
-msgstr ""
+msgstr "ID가 {0}인 플러그인의 최신 버전을 설치하지 못했습니다."
 
 msgid "Initializing..."
 msgstr "초기화 중..."
@@ -1107,14 +1121,14 @@ msgid "Undetermined"
 msgstr "확인되지 않음"
 
 msgid "meters per second"
-msgstr "초당 미터"
+msgstr "미터/초 (m/s)"
 
 msgid "Overlay Interaction"
 msgstr "오버레이 제어"
 
 #, csharp-format
 msgid "Snap to each 10 {0}"
-msgstr ""
+msgstr "10 {0} 간격으로 스냅"
 
 #, csharp-format
 msgid "Failed to uninstall SDK version '{0}' from '{1}': {2}"
@@ -1125,27 +1139,30 @@ msgid "No download URL found for plugin with ID {0} in region {1}."
 msgstr "리전 {1}에서 ID {0} 플러그인의 다운로드 주소를 찾지 못했습니다."
 
 msgid "High"
-msgstr ""
+msgstr "높음"
 
 #, csharp-format
 msgid "Installed plugin with ID {0} not found."
 msgstr "설치된 ID {0} 플러그인을 찾을 수 없습니다."
 
 msgid "Failed to log out. Please try again."
-msgstr ""
+msgstr "로그아웃하지 못했습니다. 다시 시도해 주세요."
 
 #, csharp-format
 msgid "LoaderException: {0}"
 msgstr "로더 예외: {0}"
 
 msgid "Registration Failed"
-msgstr ""
+msgstr "등록 실패"
 
 msgid ""
 "We don't sell or transfer your personal data to any third parties, in fact, "
 "we don't even collect it. However, we are still obligated to display and "
 "acquire your consent before proceeding."
 msgstr ""
+"당사는 귀하의 개인 데이터를 제3자에게 판매하거나 이전하지 않으며, 실제로 수집"
+"조차 하지 않습니다. 그러나 당사는 여전히 진행하기 전에 귀하의 동의를 고지하고"
+" 받아야 할 의무가 있습니다."
 
 msgid "Disable"
 msgstr "비활성화"
@@ -1158,36 +1175,36 @@ msgstr "업데이트 확인 중 오류가 발생했습니다: {0}"
 msgid ""
 "You have successfully registered as {0}. Please add the OTP code to your "
 "authentication app."
-msgstr ""
+msgstr "{0}(으)로 성공적으로 등록되었습니다. 인증 앱에 OTP 코드를 추가해 주세요."
 
 #, csharp-format
 msgid "Overlay is disabled in settings, skipping window registration for {0}."
-msgstr ""
+msgstr "설정에서 오버레이가 비활성화되어 있으므로 {0}의 창 등록을 건너뜁니다."
 
 msgid ""
 "Only show news articles from official sources, such as the ETS2LA team or "
 "it's developers."
-msgstr ""
+msgstr "공식 출처(예: ETS2LA 팀 또는 개발자)의 뉴스 기사만 표시합니다."
 
 msgid "Starting download..."
-msgstr ""
+msgstr "다운로드 시작 중..."
 
 msgid "Translating release notes..."
 msgstr "릴리스 노트 번역 중..."
 
 #, csharp-format
 msgid "Error in plugin {0} Tick: {1}"
-msgstr ""
+msgstr "플러그인 {0} Tick 오류: {1}"
 
 msgid "Chatbot"
-msgstr ""
+msgstr "챗봇"
 
 msgid "Normal"
-msgstr ""
+msgstr "보통"
 
 #, csharp-format
 msgid "Removing manually added installation at '{0}'"
-msgstr ""
+msgstr "'{0}'에서 수동으로 추가한 설치본을 제거하는 중입니다"
 
 #, csharp-format
 msgid "Control with ID '{0}' not found for unregistration."
@@ -1197,24 +1214,27 @@ msgid "If you can't interact with the Window, press CTRL+R."
 msgstr "창과 상호작용할 수 없다면 CTRL+R을 누르세요."
 
 msgid "Only copy this to trusted websites, it can do ANYTHING on your behalf."
-msgstr ""
+msgstr "이것은 신뢰할 수 있는 웹사이트에만 복사하세요. 이것은 귀하를 대신해 무엇이든 "
+"할 수 있습니다."
 
 msgid "Desired Speed: "
-msgstr ""
+msgstr "목표 속도: "
 
 msgid "Catalogue"
 msgstr "카탈로그"
 
 msgid "If you've not yet installed it, you can find it in the catalogue."
-msgstr ""
+msgstr "아직 설치하지 않으셨다면, 카탈로그에서 찾을 수 있습니다."
 
 msgid "Please enter a username."
-msgstr ""
+msgstr "사용자 이름을 입력해 주세요."
 
 msgid ""
 "If you see a fully black screen, see the FAQ at <span class=\"description "
 "hover:underline\">ets2la.com</span>."
 msgstr ""
+"완전히 검은 화면이 표시되면 <span class=\"description hover:underline\""
+">ets2la.com</span>의 FAQ를 참조하세요."
 
 #, csharp-format
 msgid "Current Version: {0}"
@@ -1231,7 +1251,7 @@ msgid "Unknown manifest type: {0}"
 msgstr "알 수 없는 매니페스트 유형: {0}"
 
 msgid "If you're streaming or recording, now's the time to hide this window."
-msgstr ""
+msgstr "스트리밍이나 녹화 중이라면, 지금이 이 창을 숨길 때입니다."
 
 msgid "The server timed out waiting for the request from the client."
 msgstr "서버가 클라이언트의 요청을 기다리다 시간 초과되었습니다."
@@ -1241,28 +1261,32 @@ msgid ""
 "class=\"text-warning\">Warning: Extreme uses significant amounts of RAM, "
 "expect over 10GB of usage.</span>"
 msgstr ""
+"이 설정은 사용 가능한 모든 데이터를 포함하며, 그 대부분은 중복입니다. <span "
+"class=\"text-warning\">경고: 익스트림은 상당한 양의 RAM을 사용하므로 10GB 이"
+"상의 사용량이 예상됩니다.</span>"
 
 msgid ""
 "Your session has expired or you don't have a connection to our servers. "
 "Please log in again if you wish to use server-side features."
-msgstr ""
+msgstr "세션이 만료되었거나 서버에 연결되어 있지 않습니다. 서버 측 기능을 사용하려면 "
+"다시 로그인해 주세요."
 
 #, csharp-format
 msgid "Failed to enable dependency: {0}"
 msgstr "종속성 {0}을(를) 활성화하지 못했습니다"
 
 msgid "View Public Telemetry"
-msgstr ""
+msgstr "공개 텔레메트리 보기"
 
 #, csharp-format
 msgid "Version {0} not found for plugin with ID {1}."
-msgstr ""
+msgstr "ID가 {1}인 플러그인의 버전 {0}을(를) 찾을 수 없습니다."
 
 msgid "Force Map Load"
 msgstr "맵 강제 로드"
 
 msgid "Volume"
-msgstr ""
+msgstr "볼륨"
 
 msgid "Manager"
 msgstr "관리자"
@@ -1273,24 +1297,25 @@ msgstr "파일을 찾을 수 없습니다: {0}"
 
 #, csharp-format
 msgid "A new update is available: {0}"
-msgstr ""
+msgstr "새 업데이트가 있습니다: {0}"
 
 msgid "Account"
-msgstr ""
+msgstr "계정"
 
 msgid "Disabled"
-msgstr ""
+msgstr "비활성화됨"
 
 msgid ""
 "You do not have permission to access this resource. The server understood "
 "the request but refuses to authorize it."
-msgstr ""
+msgstr "이 리소스에 접근할 권한이 없습니다. 서버가 요청을 이해했지만 승인을 거부했습"
+"니다."
 
 msgid "Back to Login"
-msgstr ""
+msgstr "로그인으로 돌아가기"
 
 msgid "Steering Sensitivity"
-msgstr ""
+msgstr "조향 감도"
 
 msgid "SDK Uninstallation Failed"
 msgstr "SDK 제거 실패"
@@ -1299,12 +1324,13 @@ msgid "Restart Now"
 msgstr "지금 재시작"
 
 msgid "Thank you to the following people for their ongoing support:"
-msgstr ""
+msgstr "지속적인 지원을 해주신 다음 분들께 감사드립니다:"
 
 msgid ""
 "Your username may only contain letters, numbers, underscores, hyphens and "
 "periods, and must start and end with a letter or number."
-msgstr ""
+msgstr "사용자 이름에는 문자, 숫자, 밑줄, 하이픈, 마침표만 포함할 수 있으며, 문자나 "
+"숫자로 시작하고 끝나야 합니다."
 
 #, csharp-format
 msgid "Error in AR rendering: {0}"
@@ -1313,29 +1339,30 @@ msgstr "AR 렌더링 중 오류가 발생했습니다: {0}"
 #, csharp-format
 msgid "Fetched {0} plugin from {1}"
 msgid_plural "Fetched {0} plugins from {1}"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{1}에서 {0} 플러그인을 가져왔습니다"
 
 msgid ""
 "Using simplified graphics can improve performance on lower-end hardware, or "
 "fix situations in which advanced features like shaders are not supported."
 msgstr ""
+"간소화된 그래픽을 사용하면 저사양 하드웨어에서 성능을 향상시키거나 셰이더와 "
+"같은 고급 기능이 지원되지 않는 상황을 해결할 수 있습니다."
 
 #, csharp-format
 msgid "Copied '{0}' to '{1}'"
 msgstr "{0}'을(를) '{1}'에 복사했습니다"
 
 msgid "Privacy Policy"
-msgstr ""
+msgstr "개인정보 처리방침"
 
 msgid "Controls Backend shutdown complete, all controls saved."
 msgstr "컨트롤 백엔드 종료 완료, 모든 컨트롤이 저장되었습니다."
 
 msgid "Full Self-Driving"
-msgstr ""
+msgstr "완전 자율 주행"
 
 msgid "SDKs are currently installed."
-msgstr ""
+msgstr "SDK가 현재 설치되어 있습니다."
 
 msgid ""
 "Cracked games or demos will block our SDK from loading. They do not work, "
@@ -1345,7 +1372,7 @@ msgstr ""
 "으며, 저희는 이를 수정할 의도가 없습니다."
 
 msgid "Continue"
-msgstr ""
+msgstr "계속"
 
 msgid "Window Zoom"
 msgstr "창 확대/축소"
@@ -1359,54 +1386,58 @@ msgstr ""
 
 #, csharp-format
 msgid "Successfully uninstalled SDK version '{0}' from '{1}'"
-msgstr ""
+msgstr "SDK 버전 '{0}'을(를) '{1}'에서 성공적으로 제거했습니다"
 
 #, csharp-format
 msgid "Error while applying update: {0}"
-msgstr ""
+msgstr "업데이트를 적용하는 중 오류가 발생했습니다: {0}"
 
 msgid "Main"
 msgstr "메인"
 
 #, csharp-format
 msgid "Deleted '{0}'"
-msgstr ""
+msgstr "'{0}' 삭제됨"
 
 msgid "You are running the latest version."
-msgstr ""
+msgstr "최신 버전을 실행 중입니다."
 
 #, csharp-format
 msgid "Failed to load plugin from [gray]{0}[/]: {1}"
-msgstr ""
+msgstr "[gray]{0}[/]에서 플러그인을 로드하지 못했습니다: {1}"
 
 #, csharp-format
 msgid "Finished parsing installation at '{0}'"
-msgstr ""
+msgstr "'{0}'의 설치본 파싱을 완료했습니다"
 
 msgid ""
 "Select which traffic rules ETS2LA should obey. More might be added later, "
 "and all plugins won't necessarily support all rules."
 msgstr ""
+"ETS2LA가 준수해야 할 교통 규칙을 선택하세요. 나중에 더 추가될 수 있으며, 모든"
+" 플러그인이 모든 규칙을 반드시 지원하는 것은 아닙니다."
 
 #, csharp-format
 msgid "Error in AR OpenGL pass: {0}"
-msgstr ""
+msgstr "AR OpenGL 패스 오류: {0}"
 
 #, csharp-format
 msgid ""
 "Library plugin with ID [gray]{0}[/] is already loaded, skipping duplicate."
-msgstr ""
+msgstr "ID가 [gray]{0}[/]인 라이브러리 플러그인은 이미 로드되어 있으므로 중복 항목을 "
+"건너뜁니다."
 
 msgid "Changes will take effect after restarting the application."
-msgstr ""
+msgstr "변경 사항은 애플리케이션을 다시 시작한 후 적용됩니다."
 
 msgid "Help"
-msgstr ""
+msgstr "도움말"
 
 msgid ""
 "The server cannot find the requested resource. The URL may be misspelled, or "
 "the resource has been removed."
-msgstr ""
+msgstr "서버에서 요청한 리소스를 찾을 수 없습니다. URL이 잘못 입력되었거나 리소스가 "
+"제거되었을 수 있습니다."
 
 msgid ""
 "Additionally, some communities like VTCs, Job Trackers and Leaderboards will "
@@ -1422,9 +1453,11 @@ msgid ""
 "In most situations, over half of ETS2LA's CPU use is consumed by the "
 "overlay. Limiting the framerate will reduce CPU usage."
 msgstr ""
+"대부분의 상황에서 ETS2LA CPU 사용량의 절반 이상이 오버레이에서 소비됩니다. 프"
+"레임레이트를 제한하면 CPU 사용량이 줄어듭니다."
 
 msgid "Cancel/MODE"
-msgstr ""
+msgstr "취소/MODE"
 
 msgid "Speed limit changed"
 msgstr "제한 속도 변경됨"
@@ -1434,33 +1467,33 @@ msgid "Successfully updated plugin with ID {0}."
 msgstr "ID {0}인 플러그인을 성공적으로 업데이트했습니다."
 
 msgid "Install"
-msgstr ""
+msgstr "설치"
 
 msgid "Window"
-msgstr ""
+msgstr "창"
 
 msgid "Select the game you wish to start."
-msgstr ""
+msgstr "시작할 게임을 선택하세요."
 
 msgid ""
 "An error occurred while trying to log out. Please try again later. Error: "
-msgstr ""
+msgstr "로그아웃하는 중 오류가 발생했습니다. 나중에 다시 시도해 주세요. 오류: "
 
 msgid "Assists"
-msgstr ""
+msgstr "어시스트"
 
 #, csharp-format
 msgid "Target Speed: <span class=\"text-text-accent font-bold\">{0} {1}</span>"
-msgstr ""
+msgstr "목표 속도: <span class=\"text-text-accent font-bold\">{0} {1}</span>"
 
 msgid "Overlay Font Size"
-msgstr ""
+msgstr "오버레이 글꼴 크기"
 
 msgid "Failed to add game"
-msgstr ""
+msgstr "게임을 추가하지 못했습니다"
 
 msgid "Vision Cameras"
-msgstr ""
+msgstr "비전 카메라"
 
 msgid ""
 "When changing the speed, snap to the nearest 10. i.e. 37 -> 39 -> 40 -> 42..."
@@ -1471,15 +1504,16 @@ msgid "Contact Us"
 msgstr "문의하기"
 
 msgid "Registration Error"
-msgstr ""
+msgstr "등록 오류"
 
 msgid "Restart"
-msgstr ""
+msgstr "재시작"
 
 msgid ""
 "Internal server error. The server encountered an unexpected condition that "
 "prevented it from fulfilling the request."
-msgstr ""
+msgstr "내부 서버 오류입니다. 서버에서 예기치 않은 상태가 발생하여 요청을 처리할 수 "
+"없었습니다."
 
 msgid "miles per hour"
 msgstr "마일/시간"
@@ -1494,11 +1528,10 @@ msgstr ""
 #, csharp-format
 msgid "Discovered {0} library in total"
 msgid_plural "Discovered {0} libraries in total."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "총 {0}개의 라이브러리를 발견했습니다."
 
 msgid "Account Removal Error"
-msgstr ""
+msgstr "계정 제거 오류"
 
 #, csharp-format
 msgid "Error rendering window {0}: {1}"
@@ -1506,7 +1539,7 @@ msgstr "창 {0}을(를) 렌더링하는 중 오류가 발생했습니다: {1}"
 
 #, csharp-format
 msgid "Click to {0} this window"
-msgstr ""
+msgstr "이 창을 {0}하려면 클릭하세요"
 
 msgid "Sorry"
 msgstr "죄송합니다"
@@ -1517,7 +1550,7 @@ msgstr ""
 "보조 기능 활성화됨: <span class=\"text-text-accent font-bold\">{0}</span>"
 
 msgid "Translated by:"
-msgstr ""
+msgstr "번역:"
 
 msgid "Failed to init ImGui Impl GLFW"
 msgstr "ImGui Impl GLFW 초기화 실패"
@@ -1528,12 +1561,12 @@ msgstr "이벤트 구독을 위한 '{0}' ID의 컨트롤을 찾을 수 없습니
 
 #, csharp-format
 msgid "Plugin '{0}' is missing its DLL at '{1}' and has been removed."
-msgstr "DLL 누락으로 인해 플러그인 '{0}'을(를) 제거했습니다 (경로: '{1}'"
+msgstr "플러그인 '{0}'의 DLL이 '{1}'에 없어 해당 플러그인이 제거되었습니다."
 
 #, csharp-format
 msgid ""
 "Manually added game at '{0}' no longer contains a game executable, skipping."
-msgstr ""
+msgstr "'{0}'에 수동으로 추가한 게임에 더 이상 게임 실행 파일이 없으므로 건너뜁니다."
 
 #, csharp-format
 msgid "Connected joystick: [bold]{0}[/] [gray italic]({1}, {2})[/]"
@@ -1542,23 +1575,24 @@ msgstr "조이스틱 연결됨: [bold]{0}[/] [gray italic]({1}, {2})[/]"
 msgid ""
 "We can render elements in the game world using the overlay. This will use "
 "additional CPU and GPU resources."
-msgstr ""
+msgstr "오버레이를 사용하여 게임 세계에 요소를 렌더링할 수 있습니다. 이 경우 추가 "
+"CPU 및 GPU 리소스가 사용됩니다."
 
 #, csharp-format
 msgid "Road template for {0} not found in SII file."
-msgstr ""
+msgstr "{0}에 대한 도로 템플릿을 SII 파일에서 찾을 수 없습니다."
 
 msgid "The selected file is not a core.scs file."
-msgstr ""
+msgstr "선택한 파일은 core.scs 파일이 아닙니다."
 
 msgid "Disable All"
-msgstr ""
+msgstr "모두 비활성화"
 
 msgid "ft"
-msgstr ""
+msgstr "피트 (ft)"
 
 msgid "Invalid directory"
-msgstr ""
+msgstr "잘못된 디렉터리"
 
 #, csharp-format
 msgid "This might take a while... ({0}/{1})"
@@ -1571,83 +1605,88 @@ msgid ""
 "Ensure you don't have any mods installed in the root directory. Those have "
 "to be installed in Documents/Euro Truck Simulator 2/mod."
 msgstr ""
+"루트 디렉터리에는 모드가 설치되어 있지 않아야 합니다. 해당 모드는 Documents/"
+"Euro Truck Simulator 2/mod에 설치해야 합니다."
 
 #, csharp-format
 msgid "Failed to read version from '{0}': {1}"
 msgstr "{0}'에서 버전을 읽지 못했습니다: {1}"
 
 msgid "Error in parked vehicles update loop."
-msgstr ""
+msgstr "주차된 차량 업데이트 루프에서 오류가 발생했습니다."
 
 msgid "Username Taken"
-msgstr ""
+msgstr "이미 사용 중인 사용자 이름입니다"
 
 msgid "This page hasn't been created yet, but it's coming <i>soon</i>."
-msgstr ""
+msgstr "이 페이지는 아직 생성되지 않았지만, <i>곧</i> 제공될 예정입니다."
 
 msgid "Backend shutdown complete."
 msgstr "백엔드 종료 완료."
 
 #, csharp-format
 msgid "Error rendering interaction mode window controls: {0}"
-msgstr ""
+msgstr "상호작용 모드 창 컨트롤을 렌더링하는 중 오류가 발생했습니다: {0}"
 
 #, csharp-format
 msgid "Failed to initialize SDL3 controls backend: {0}"
-msgstr ""
+msgstr "SDL3 컨트롤 백엔드를 초기화하지 못했습니다: {0}"
 
 msgid ""
 "Show news articles about plugin updates, be that official or 3rd party "
 "plugins."
-msgstr ""
+msgstr "공식 또는 타사 플러그인 여부에 관계없이 플러그인 업데이트에 관한 뉴스 기사를 "
+"표시합니다."
 
 #, csharp-format
 msgid "Failed to install dependency {0} for plugin {1}."
-msgstr ""
+msgstr "플러그인 {1}의 종속성 {0}을(를) 설치하지 못했습니다."
 
 msgid ""
 "Couldn't connect to the game. Please open ETS2 or ATS and enable the SDK."
-msgstr ""
+msgstr "게임에 연결할 수 없습니다. ETS2 또는 ATS를 열고 SDK를 활성화해 주세요."
 
 msgid "Scientific"
-msgstr ""
+msgstr "과학적"
 
 #, csharp-format
 msgid "Changed update source to '{0}'."
-msgstr ""
+msgstr "업데이트 소스를 '{0}'(으)로 변경했습니다."
 
 msgid "K"
-msgstr "K"
+msgstr "켈빈 (K)"
 
 msgid ""
 "You'll be asked to save an OTP authentication code after registration. We do "
 "not store or ask for passwords, as those aren't required for authentication."
 msgstr ""
+"등록 후 OTP 인증 코드를 저장하라는 요청을 받게 됩니다. 당사는 비밀번호를 저장"
+"하거나 요구하지 않으며, 인증에 필요하지 않기 때문입니다."
 
 msgid "Next"
-msgstr ""
+msgstr "다음"
 
 msgid "Driving"
 msgstr "주행"
 
 msgid "Acceleration Response"
-msgstr ""
+msgstr "가속 응답"
 
 #, csharp-format
 msgid "Failed enable {0}: {1}"
-msgstr ""
+msgstr "{0} 활성화 실패: {1}"
 
 msgid "Overlay is disabled in settings, skipping initialization."
-msgstr ""
+msgstr "설정에서 오버레이가 비활성화되어 있으므로 초기화를 건너뜁니다."
 
 msgid "Plugin Installer"
-msgstr ""
+msgstr "플러그인 설치 프로그램"
 
 msgid "Show More Logs"
 msgstr "로그 더 보기"
 
 msgid "The selected game executable was not found."
-msgstr ""
+msgstr "선택한 게임 실행 파일을 찾을 수 없습니다."
 
 #, csharp-format
 msgid ""
@@ -1660,19 +1699,19 @@ msgid "Support Multiple Viewports"
 msgstr "다중 뷰포트 지원"
 
 msgid "bar"
-msgstr "bar"
+msgstr "bar (바)"
 
 msgid "View Privacy Policy"
-msgstr ""
+msgstr "개인정보 처리방침 보기"
 
 msgid "Unknown Control"
-msgstr ""
+msgstr "알 수 없는 컨트롤"
 
 msgid "Warning: Insufficient RAM"
 msgstr "경고: RAM 부족"
 
 msgid "Translate News Articles"
-msgstr ""
+msgstr "뉴스 기사 번역"
 
 msgid ""
 "Authentication is required. The client must authenticate itself to get the "
@@ -1691,32 +1730,35 @@ msgstr ""
 "요."
 
 msgid "Final Disclaimer <span class=\"description\">1/2</span>"
-msgstr ""
+msgstr "최종 면책 조항 <span class=\"description\">1/2</span>"
 
 msgid ""
 "The following information is sent along with each message to help the "
 "chatbot provide better answers. It does not contain any personal information."
-msgstr ""
+msgstr "다음 정보는 챗봇이 더 나은 답변을 제공할 수 있도록 각 메시지와 함께 전송됩니"
+"다. 여기에는 개인 정보가 포함되지 않습니다."
 
 msgid ""
 "This setting drops redundant information while maintaining most detail "
 "objects (such as signs). Doesn't include any roads / intersections not shown "
 "in the in game map."
 msgstr ""
+"이 설정은 중복 정보를 제거하면서 대부분의 세부 객체(예: 표지판)를 유지합니다."
+" 게임 내 지도에 표시되지 않은 도로/교차로는 포함하지 않습니다."
 
 #, csharp-format
 msgid "Inner Exception: {0}"
-msgstr ""
+msgstr "내부 예외: {0}"
 
 #, csharp-format
 msgid "Plugin with ID {0} not found in available plugins."
 msgstr "ID {0}인 플러그인을 사용 가능한 플러그인 목록에서 찾을 수 없습니다."
 
 msgid "Restart Required"
-msgstr ""
+msgstr "재시작 필요"
 
 msgid "Logout Successful"
-msgstr ""
+msgstr "로그아웃 성공"
 
 msgid "Render AR Elements"
 msgstr "AR 요소 렌더링"
@@ -1733,40 +1775,42 @@ msgstr ""
 "에 시간 초과됩니다."
 
 msgid "Registration Successful"
-msgstr ""
+msgstr "등록 성공"
 
 msgid ""
 "Warning: Your system has less than 20GB of RAM. You can only select up to "
 "High."
-msgstr ""
+msgstr "경고: 시스템의 RAM이 20GB 미만입니다. 최대 '높음'까지만 선택할 수 있습니다."
 
 #, csharp-format
 msgid "Your username must be at most {0} characters long."
-msgstr ""
+msgstr "사용자 이름은 최대 {0}자여야 합니다."
 
 msgid "Enable Memory Output for Pedals"
-msgstr ""
+msgstr "페달용 메모리 출력 활성화"
 
 msgid "kilometers per hour"
-msgstr ""
+msgstr "시속 킬로미터 (km/h)"
 
 msgid ""
 "User folder paths are hidden automatically. Review the log for other "
 "personal information before sending."
-msgstr ""
+msgstr "사용자 폴더 경로는 자동으로 숨겨집니다. 전송하기 전에 로그에서 다른 개인 정보"
+"를 검토하세요."
 
 #, csharp-format
 msgid "Playing sound: {0}"
-msgstr ""
+msgstr "사운드 재생 중: {0}"
 
 #, csharp-format
 msgid "Enabled plugin: [bold]{0}[/]"
-msgstr ""
+msgstr "활성화된 플러그인: [bold]{0}[/]"
 
 msgid ""
 "Render the vision cameras in the game world. This is useful for debugging, "
 "but can cause performance issues."
-msgstr ""
+msgstr "게임 세계에 비전 카메라를 렌더링합니다. 디버깅에 유용하지만 성능 문제를 일으"
+"킬 수 있습니다."
 
 msgid "Failed to create GLFW window"
 msgstr "GLFW 창을 여는 데 실패했습니다"
@@ -1775,40 +1819,41 @@ msgid "Contact us on Discord"
 msgstr "Discord에서 문의하세요"
 
 msgid "Already have an account? Log in here."
-msgstr ""
+msgstr "이미 계정이 있으신가요? 여기에서 로그인하세요."
 
 msgid "Binding thread started with no control to bind."
-msgstr ""
+msgstr "바인딩할 컨트롤 없이 바인딩 스레드가 시작되었습니다."
 
 msgid ""
 "Failed to fetch available plugins. Please check your internet connection."
-msgstr ""
+msgstr "사용 가능한 플러그인을 가져오지 못했습니다. 인터넷 연결을 확인해 주세요."
 
 msgid "Game"
-msgstr ""
+msgstr "게임"
 
 msgid "Error in navigation update loop."
 msgstr "내비게이션 업데이트 루프에서 오류가 발생했습니다."
 
 msgid "Checking for updates..."
-msgstr ""
+msgstr "업데이트 확인 중..."
 
 msgid "Interaction Mode"
 msgstr "인터랙션 모드"
 
 msgid "Speedlimit Offset"
-msgstr ""
+msgstr "속도 제한 오프셋"
 
 msgid "Final Disclaimer <span class=\"description\">2/2</span>"
-msgstr ""
+msgstr "최종 면책 조항 <span class=\"description\">2/2</span>"
 
 msgid "L"
-msgstr ""
+msgstr "L (리터)"
 
 msgid ""
 "Some 3rd party websites might want access to your account.<br/>You can press "
 "the button below to display your JWT token."
-msgstr ""
+msgstr "일부 타사 웹사이트에서 귀하의 계정에 접근하려 할 수 있습니다.<br/>아래 버튼을"
+" 눌러 JWT 토큰을 표시할 수 있습니다."
 
 #, csharp-format
 msgid "Failed to load library plugin from [gray]{0}[/]: {1}"
@@ -1820,27 +1865,28 @@ msgstr "컨트롤 {0} ({1})의 바인딩 시간이 초과되었습니다."
 
 #, csharp-format
 msgid "Initializing GLFW Version: {0}"
-msgstr ""
+msgstr "GLFW 버전 초기화 중: {0}"
 
 #, csharp-format
 msgid ""
 "If you think this is a bug, please report it in the {0}Discord Server{1} or "
 "on {2}GitHub{3}."
-msgstr ""
+msgstr "이것이 버그라고 생각되면 {0}Discord 서버{1} 또는 {2}GitHub{3}에 보고해 주세요"
+"."
 
 msgid "Latest News"
-msgstr ""
+msgstr "최신 뉴스"
 
 #, csharp-format
 msgid "The username {0} is already taken. Please choose a different username."
-msgstr ""
+msgstr "사용자 이름 {0}은(는) 이미 사용 중입니다. 다른 사용자 이름을 선택해 주세요."
 
 #, csharp-format
 msgid "Successfully installed SDK version '{0}' to '{1}'"
-msgstr ""
+msgstr "SDK 버전 '{0}'을(를) '{1}'에 성공적으로 설치했습니다"
 
 msgid "Invalid Input"
-msgstr ""
+msgstr "잘못된 입력"
 
 msgid ""
 "Adjust the level of detail of the game data we use. Higher values use more "
@@ -1850,35 +1896,37 @@ msgstr ""
 "용하지만, 더 많은 정보를 포함합니다. 모든 수준은 동일하게 주행합니다."
 
 msgid "Account Removal Failed"
-msgstr ""
+msgstr "계정 제거 실패"
 
 msgid "Are you sure?"
 msgstr "확실합니까?"
 
 #, csharp-format
 msgid "Update available: {0}"
-msgstr ""
+msgstr "사용 가능한 업데이트: {0}"
 
 msgid ""
 "Please add the OTP code to your authentication app.<br/><span class=\"text-"
 "text-accent\">Do not close the page before you have added the code. We "
 "cannot recover accounts once they are created!</span>"
 msgstr ""
+"인증 앱에 OTP 코드를 추가해 주세요.<br/><span class=\"text-text-accent\">코드"
+"를 추가하기 전에 페이지를 닫지 마세요. 계정은 한 번 생성되면 복구할 수 없습니"
+"다!</span>"
 
 msgid "Game added"
-msgstr ""
+msgstr "게임 추가됨"
 
 msgid "Confirm Account Removal"
-msgstr ""
+msgstr "계정 제거 확인"
 
 msgid "Starting ETS2LA..."
-msgstr ""
+msgstr "ETS2LA 시작 중..."
 
 #, csharp-format
 msgid "Discovered {0} manually installed library"
 msgid_plural "Discovered {0} manually installed libraries."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "수동으로 설치된 라이브러리 {0}개를 발견했습니다."
 
 #, csharp-format
 msgid "Control with ID '{0}' not found for updating bindings."
@@ -1892,34 +1940,37 @@ msgid ""
 "this key acts like RES. Meaning it will resume the last set target speed. If "
 "a last target speed was not set, this key acts like SET."
 msgstr ""
+"현재 목표 속도를 한 단계 높입니다. 어시스트가 비활성화되어 있으면 이 키는 RES"
+"처럼 작동합니다. 즉, 마지막으로 설정한 목표 속도를 재개합니다. 마지막 목표 속"
+"도가 설정되지 않은 경우 이 키는 SET처럼 작동합니다."
 
 msgid "SET Behaviour"
-msgstr ""
+msgstr "SET 동작"
 
 msgid "Close"
-msgstr ""
+msgstr "닫기"
 
 #, csharp-format
 msgid "Assist Mode: <span class=\"text-text-accent font-bold\">{0}</span>"
-msgstr ""
+msgstr "어시스트 모드: <span class=\"text-text-accent font-bold\">{0}</span>"
 
 #, csharp-format
 msgid ""
 "When receiving a speedlimit of {0} {1}, we will set the speed to {2} {3}."
-msgstr ""
+msgstr "속도 제한 {0} {1}을(를) 수신하면, 속도를 {2} {3}(으)로 설정합니다."
 
 #, csharp-format
 msgid "Error initializing memory mapped file: {0}"
-msgstr ""
+msgstr "메모리 매핑 파일 초기화 오류: {0}"
 
 msgid "State Info"
 msgstr "상태 정보"
 
 msgid "Metric"
-msgstr ""
+msgstr "미터법"
 
 msgid "Render Vision Cameras"
-msgstr ""
+msgstr "비전 카메라 렌더링"
 
 msgid ""
 "Your system has less than 16GB of RAM. High data fidelity uses significant "
@@ -1930,10 +1981,10 @@ msgstr ""
 "며, 시스템이 불안정해질 수 있습니다. 더 낮은 충실도를 선택해주세요."
 
 msgid "Send log"
-msgstr ""
+msgstr "로그 전송"
 
 msgid "Show Plugin Updates"
-msgstr ""
+msgstr "플러그인 업데이트 표시"
 
 #, csharp-format
 msgid "Control with ID '{0}' not found for updating axis behavior."
@@ -1943,34 +1994,37 @@ msgid ""
 "Please complete this <span class=\"text-text-accent font-bold\">short</span> "
 "onboarding process to get started."
 msgstr ""
+"시작하려면 이 <span class=\"text-text-accent font-bold\">짧은</span> 온보딩 "
+"과정을 완료해 주세요."
 
 msgid ""
 "When pressing the SET keybind, what should ETS2LA set as the current cruise "
 "control speed?"
-msgstr ""
+msgstr "SET 키 바인드를 누를 때 ETS2LA가 현재 크루즈 컨트롤 속도로 무엇을 설정해야 합"
+"니까?"
 
 msgid ""
 "An error occurred while trying to log in. Please try again later. Error: "
-msgstr ""
+msgstr "로그인하는 중 오류가 발생했습니다. 나중에 다시 시도해 주세요. 오류: "
 
 #, csharp-format
 msgid "Failed to load map for installation at '{0}'"
-msgstr ""
+msgstr "'{0}'의 설치본에 대한 맵을 로드하지 못했습니다"
 
 #, csharp-format
 msgid "Received input from unknown joystick with instance ID {0}."
 msgstr "인스턴스 ID {0}인 알 수 없는 조이스틱에서 입력을 받았습니다."
 
 msgid "Stay on Top"
-msgstr ""
+msgstr "항상 위에 유지"
 
 msgid ""
 "An error occurred while trying to remove your account. Please try again "
 "later. Error: "
-msgstr ""
+msgstr "계정을 제거하는 중 오류가 발생했습니다. 나중에 다시 시도해 주세요. 오류: "
 
 msgid "Like ETS2LA?"
-msgstr ""
+msgstr "ETS2LA가 마음에 드시나요?"
 
 #, csharp-format
 msgid "Disconnected joystick: [gray italic]({0})[/]"
@@ -1984,10 +2038,10 @@ msgid "Select core.scs"
 msgstr "core.scs 선택"
 
 msgid "Speed Limits"
-msgstr ""
+msgstr "속도 제한"
 
 msgid "Register"
-msgstr ""
+msgstr "회원가입"
 
 #, csharp-format
 msgid "Error loading map data from '{0}': {1}"
@@ -2000,58 +2054,58 @@ msgid "The step size for changing the cruise control speed."
 msgstr "크루즈 컨트롤 속도를 변경할 때의 단계 크기입니다."
 
 msgid "Assist Level: "
-msgstr ""
+msgstr "어시스트 수준: "
 
 msgid "ETS2LA will offset the speedlimit by this percentage."
-msgstr ""
+msgstr "ETS2LA가 이 비율만큼 속도 제한을 보정합니다."
 
 msgid "m/s"
-msgstr ""
+msgstr "미터/초 (m/s)"
 
 #, csharp-format
 msgid "Updated axis behavior for control: {0} ({1}) to {2}"
-msgstr ""
+msgstr "컨트롤 {0} ({1})의 축 동작을 {2}(으)로 업데이트했습니다"
 
 msgid "Open Source"
-msgstr ""
+msgstr "오픈 소스"
 
 msgid "Uninstall"
 msgstr "삭제"
 
 msgid "Off"
-msgstr ""
+msgstr "꺼짐"
 
 #, csharp-format
 msgid "Created plugin directory: [gray]{0}[/]"
-msgstr ""
+msgstr "플러그인 디렉터리를 생성했습니다: [gray]{0}[/]"
 
 msgid "Late"
 msgstr "늦게"
 
 msgid "pounds"
-msgstr ""
+msgstr "파운드 (lb)"
 
 msgid "Contact us on GitHub"
 msgstr "GitHub에서 문의하세요"
 
 msgid "Lane Assist Only"
-msgstr ""
+msgstr "차선 보조 전용"
 
 msgid "Game SDK"
 msgstr "게임 SDK"
 
 #, csharp-format
 msgid "The username {0} is reserved. Please choose a different username."
-msgstr ""
+msgstr "사용자 이름 {0}은(는) 예약되어 있습니다. 다른 사용자 이름을 선택해 주세요."
 
 msgid "Decrease/SET"
-msgstr ""
+msgstr "감소/SET"
 
 msgid "km/h"
 msgstr "km/h"
 
 msgid "You must restart ETS2LA for the font size change to take effect."
-msgstr ""
+msgstr "글꼴 크기 변경을 적용하려면 ETS2LA를 재시작해야 합니다."
 
 msgid "Visual"
 msgstr "비주얼"
@@ -2061,6 +2115,8 @@ msgid ""
 "cost of breaking all features that rely on the overlay, including AR and the "
 "HUD."
 msgstr ""
+"오버레이를 완전히 비활성화합니다. 이렇게 하면 검은 화면 문제는 해결되지만, "
+"AR 및 HUD를 포함해 오버레이에 의존하는 모든 기능이 작동하지 않게 됩니다."
 
 msgid "Update Available"
 msgstr "업데이트 있음"
@@ -2069,7 +2125,7 @@ msgid "Current Speed"
 msgstr "현재 속도"
 
 msgid "Downloading Update"
-msgstr ""
+msgstr "업데이트 다운로드 중"
 
 #, csharp-format
 msgid "Update to {0}"
@@ -2080,25 +2136,25 @@ msgid "Bound control {0} ({1}) to device {2} and control {3}"
 msgstr "컨트롤 {0} ({1})을(를) 장치 {2}, 컨트롤 {3}에 바인딩했습니다"
 
 msgid "Display Language"
-msgstr ""
+msgstr "표시 언어"
 
 #, csharp-format
 msgid "Successfully uninstalled plugin with ID {0}."
 msgstr "ID {0}인 플러그인을 성공적으로 제거했습니다."
 
 msgid "SDK Installation"
-msgstr ""
+msgstr "SDK 설치"
 
 msgid "Far"
-msgstr ""
+msgstr "멀리"
 
 msgid ""
 "Driving mode changed, press Cancel/MODE again to cycle through the modes."
-msgstr ""
+msgstr "주행 모드가 변경되었습니다. 모드를 순환하려면 취소/MODE를 다시 누르세요."
 
 #, csharp-format
 msgid "Unloading parsed map data for installation at '{0}'"
-msgstr ""
+msgstr "'{0}'의 설치본에 대한 파싱된 맵 데이터를 언로드하는 중입니다"
 
 msgid "You took a wrong turn!"
 msgstr "길을 잘못 들었어요!"
@@ -2122,27 +2178,29 @@ msgid "Failed to refresh joysticks: {0}"
 msgstr "조이스틱을 새로고침하지 못했습니다: {0}"
 
 msgid "Failed to log in. Please check your credentials and try again."
-msgstr ""
+msgstr "로그인에 실패했습니다. 로그인 정보를 확인한 후 다시 시도해 주세요."
 
 msgid "Low"
 msgstr "낮음"
 
 msgid "ETS2LA is running."
-msgstr ""
+msgstr "ETS2LA가 실행 중입니다."
 
 msgid "gallons"
-msgstr ""
+msgstr "갤런 (gal)"
 
 #, csharp-format
 msgid ""
 "Tried to change update source to '{0}', but it was not found among available "
 "sources."
-msgstr ""
+msgstr "업데이트 소스를 '{0}'(으)로 변경하려고 했지만, 사용 가능한 소스 중에서 찾을 "
+"수 없습니다."
 
 msgid ""
 "The font size of the overlay. This can be used to scale the overlay to your "
 "monitor's DPI settings."
-msgstr ""
+msgstr "오버레이의 글꼴 크기입니다. 이 설정을 사용하여 오버레이를 모니터의 DPI 설정에"
+" 맞게 조정할 수 있습니다."
 
 msgid ""
 "The units ETS2LA will use when displaying information to a user. Scientific "
@@ -2152,10 +2210,10 @@ msgstr ""
 "과 약간의 차이만 있습니다."
 
 msgid "For now, please contact us on GitHub or Discord."
-msgstr ""
+msgstr "현재로서는 GitHub 또는 Discord를 통해 문의해 주세요."
 
 msgid "Your account has been successfully removed."
-msgstr ""
+msgstr "계정이 성공적으로 제거되었습니다."
 
 msgid ""
 "The request method is recognized by the server but is not supported by the "
@@ -2171,7 +2229,7 @@ msgstr "오버레이 프레임레이트 제한"
 
 #, csharp-format
 msgid "Not all dependencies for plugin {0} are installed."
-msgstr ""
+msgstr "플러그인 {0}의 모든 종속성이 설치되어 있지 않습니다."
 
 msgid ""
 "This setting drops redundant information while maintaining most detail "
@@ -2182,39 +2240,39 @@ msgstr ""
 
 #, csharp-format
 msgid "Failed to install SDK version '{0}' to '{1}': {2}"
-msgstr ""
+msgstr "SDK 버전 '{0}'을(를) '{1}'에 설치하지 못했습니다: {2}"
 
 msgid "• ETS2LA Developers, contact@ets2la.com, Poland."
-msgstr ""
+msgstr "• ETS2LA 개발자, contact@ets2la.com, 폴란드."
 
 msgid "Login"
-msgstr ""
+msgstr "로그인"
 
 #, csharp-format
 msgid "Latest Version: {0}"
 msgstr "최신 버전: {0}"
 
 msgid "Audio playback canceled"
-msgstr ""
+msgstr "오디오 재생이 취소되었습니다"
 
 msgid "Pascals"
-msgstr "파스칼"
+msgstr "파스칼 (Pa)"
 
 msgid "Button"
-msgstr ""
+msgstr "버튼"
 
 msgid "Overrides"
 msgstr "오버라이드"
 
 msgid "Remember!"
-msgstr ""
+msgstr "기억하세요!"
 
 msgid "You can enable the plugins we installed in a previous step here."
 msgstr "이전 단계에서 설치한 플러그인을 여기에서 활성화할 수 있습니다."
 
 #, csharp-format
 msgid "Loaded library plugin: [gray]{0}[/] from [gray]{1}[/]."
-msgstr ""
+msgstr "[gray]{1}[/]에서 라이브러리 플러그인을 로드했습니다: [gray]{0}[/]."
 
 msgid "Error in camera update loop."
 msgstr "카메라 업데이트 루프에서 오류가 발생했습니다."
@@ -2223,32 +2281,34 @@ msgid "Become a GitHub Sponsor"
 msgstr "GitHub에서 후원하기"
 
 msgid "Please log in to use the chatbot."
-msgstr ""
+msgstr "챗봇을 사용하려면 로그인해 주세요."
 
 msgid "No Update Available"
 msgstr "업데이트 없음"
 
 msgid "Your username may not contain repeated separators."
-msgstr ""
+msgstr "사용자 이름에는 구분 기호를 연속으로 포함할 수 없습니다."
 
 #, csharp-format
 msgid "Skipped stale plugin shadow directory [gray]{0}[/]: {1}"
 msgstr "오래된 플러그인 섀도우 디렉터리를 건너뛰었습니다 [gray]{0}[/]: {1}"
 
 msgid "Your account is not allowed to use the chatbot."
-msgstr ""
+msgstr "귀하의 계정은 챗봇을 사용할 수 없습니다."
 
 msgid ""
 "You'll have to reinstall the SDK for <span class=\"text-text-accent font-"
 "bold\">every game update</span>. You'll find the installation page in the "
 "settings."
 msgstr ""
+"<span class=\"text-text-accent font-bold\">게임이 업데이트될 때마다</span> SD"
+"K를 다시 설치해야 합니다. 설치 페이지는 설정에서 찾을 수 있습니다."
 
 msgid "Keybind is Toggle"
-msgstr ""
+msgstr "키 바인드가 토글 방식입니다"
 
 msgid "Waiting..."
-msgstr ""
+msgstr "대기 중..."
 
 msgid ""
 "Adjust how ETS2LA will respond to necessary steering changes. This for "
@@ -2258,17 +2318,16 @@ msgstr ""
 "마나 빠르게 차선을 변경할지 제어합니다."
 
 msgid "Increase/RES"
-msgstr ""
+msgstr "증가/RES"
 
 #, csharp-format
 msgid "Found {0} game installation."
 msgid_plural "Found {0} game installations."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "게임 설치 {0}개를 찾았습니다."
 
 #, csharp-format
 msgid "You are blocked until {1}.<br/>Reason: {0}"
-msgstr ""
+msgstr "{1}까지 차단되었습니다.<br/>사유: {0}"
 
 #, csharp-format
 msgid "found {0} road"
@@ -2280,34 +2339,37 @@ msgid ""
 "closed</span>. You can start the game after completing the onboarding "
 "process."
 msgstr ""
+"<span class=\"text-text-accent font-bold\">ETS2와 ATS가 종료되어 있는지</"
+"span> 확인해 주세요. 온보딩 과정을 완료한 후 게임을 시작할 수 있습니다."
 
 #, csharp-format
 msgid "Failed to download plugin with ID {0} from {1}. Status code: {2}"
-msgstr ""
+msgstr "ID가 {0}인 플러그인을 {1}에서 다운로드하지 못했습니다. 상태 코드: {2}"
 
 msgid "Open Update Page"
-msgstr ""
+msgstr "업데이트 페이지 열기"
 
 msgid "Maximum Speed"
 msgstr "최대 속도"
 
 msgid "Experiments"
-msgstr ""
+msgstr "실험 기능"
 
 #, csharp-format
 msgid "Failed to read log file at '{0}': {1}"
 msgstr "'{0}'에 있는 로그 파일 읽기 실패: {1}"
 
 msgid "Display JWT Token"
-msgstr ""
+msgstr "JWT 토큰 표시"
 
 msgid "Following Distance"
-msgstr ""
+msgstr "차간 거리"
 
 #, csharp-format
 msgid ""
 "Selected update source '{0}' not found, defaulting to first available source."
-msgstr ""
+msgstr "선택한 업데이트 소스 '{0}'을(를) 찾을 수 없어 사용 가능한 첫 번째 소스로 기본"
+" 설정합니다."
 
 #, csharp-format
 msgid "Installed {0}"
@@ -2316,7 +2378,8 @@ msgstr "{0} 설치됨"
 msgid ""
 "Keep the ETS2LA window on top of other windows. If you want to use the "
 "visualization on a single monitor setup, this is recommended."
-msgstr ""
+msgstr "ETS2LA 창을 다른 창 위에 유지합니다. 단일 모니터 설정에서 시각화를 사용하려는"
+" 경우 이 옵션을 권장합니다."
 
 msgid "SDK Uninstalled"
 msgstr "SDK 제거됨"
@@ -2325,13 +2388,15 @@ msgid ""
 "Consider supporting us by becoming a <span class=\"font-bold text-text-"
 "l\">GitHub Sponsor</span> to cover ongoing development and operational costs."
 msgstr ""
+"지속적인 개발 및 운영 비용을 충당하기 위해 <span class=\"font-bold text-text-"
+"l\">GitHub 후원자</span>가 되어 저희를 지원해 주시기 바랍니다."
 
 #, csharp-format
 msgid "Font file not found at {0}"
-msgstr ""
+msgstr "{0}에서 글꼴 파일을 찾을 수 없습니다"
 
 msgid "lbs"
-msgstr ""
+msgstr "파운드 (lbs)"
 
 msgid ""
 "Adjust how quickly ETS2LA will respond to desired changes in acceleration. "
