@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-11-01 17:28:26+0200\n"
+"POT-Creation-Date: 2026-11-01 20:58:14+0200\n"
 "PO-Revision-Date: 2026-10-28 00:04+0000\n"
 "Last-Translator: Tema <tema@ets2la.com>\n"
 "Language-Team: Russian <http://weblate.ets2la.com/projects/ets2la/ets2la/ru/"
@@ -221,6 +221,10 @@ msgstr "Демонстрационное окно"
 msgid "Installing..."
 msgstr "Установка..."
 
+#, csharp-format
+msgid "Legacy audio path detected: {0}"
+msgstr ""
+
 msgid ""
 "Adjust the distance ETS2LA will try to maintain from the vehicle in front of "
 "you when using Adaptive Cruise Control."
@@ -323,6 +327,9 @@ msgstr "Обработка сектора {0} из {1}..."
 
 msgid "Initializing GLFW..."
 msgstr "Инициализация GLFW..."
+
+msgid "Audio Settings"
+msgstr ""
 
 msgid "Anonymous Telemetry"
 msgstr "Анонимная телеметрия"
@@ -613,6 +620,9 @@ msgstr ""
 "детализации данных использует значительный объём ОЗУ и может привести к "
 "нестабильной работе системы. Выберите более низкий уровень детализации."
 
+msgid "No audio output device available"
+msgstr ""
+
 msgid "This game was found at"
 msgstr "Игра найдена по пути"
 
@@ -644,6 +654,10 @@ msgstr ""
 
 msgid "Failed to initialize SDL3 input backend."
 msgstr "Не удалось инициализировать бэкенд ввода SDL3."
+
+#, csharp-format
+msgid "Invalid audio job: {0}, does the file exist?"
+msgstr ""
 
 msgid "No release notes available."
 msgstr "Список изменений недоступен."
@@ -1136,6 +1150,9 @@ msgstr ""
 "Обработка продолжится, однако информация из этого файла будет недоступна "
 "ETS2LA."
 
+msgid "All driving assists have been disabled."
+msgstr ""
+
 #, csharp-format
 msgid "Error playing audio file {0}: {1}"
 msgstr "Ошибка воспроизведения аудиофайла {0}: {1}"
@@ -1271,6 +1288,9 @@ msgstr "Чат-бот"
 
 msgid "Normal"
 msgstr "Нормально"
+
+msgid "Assists Enabled"
+msgstr ""
 
 #, csharp-format
 msgid "Removing manually added installation at '{0}'"
@@ -1453,6 +1473,9 @@ msgstr ""
 
 msgid "Continue"
 msgstr "Продолжить"
+
+msgid "All driving assists have been enabled."
+msgstr ""
 
 msgid "Window Zoom"
 msgstr "Масштаб окна"
@@ -1645,6 +1668,9 @@ msgstr "Не удалось инициализировать бэкенд ImGui 
 #, csharp-format
 msgid "Control with ID '{0}' not found for event subscription."
 msgstr "Элемент управления с ID '{0}' не найден для подписки на событие."
+
+msgid "Assists Disabled"
+msgstr ""
 
 #, csharp-format
 msgid "Plugin '{0}' is missing its DLL at '{1}' and has been removed."
@@ -1894,9 +1920,6 @@ msgstr "Имя пользователя должно содержать не б�
 msgid "Enable Memory Output for Pedals"
 msgstr "Включить управление педалями через память игры"
 
-msgid "kilometers per hour"
-msgstr "километры в час"
-
 msgid ""
 "User folder paths are hidden automatically. Review the log for other "
 "personal information before sending."
@@ -1904,9 +1927,8 @@ msgstr ""
 "Пути к пользовательским папкам скрываются автоматически. Перед отправкой "
 "проверьте лог на наличие других личных данных."
 
-#, csharp-format
-msgid "Playing sound: {0}"
-msgstr "Воспроизведение звука: {0}"
+msgid "kilometers per hour"
+msgstr "километры в час"
 
 #, csharp-format
 msgid "Enabled plugin: [bold]{0}[/]"
@@ -2046,6 +2068,9 @@ msgstr[2] "Обнаружено {0} библиотек, установленны
 msgid "Control with ID '{0}' not found for updating bindings."
 msgstr "Элемент управления с ID '{0}' не найден для обновления привязок."
 
+msgid "Test Audio"
+msgstr ""
+
 msgid "Near"
 msgstr "Близко"
 
@@ -2145,6 +2170,12 @@ msgid ""
 msgstr ""
 "При попытке удалить аккаунт произошла ошибка. Повторите попытку позже. "
 "Ошибка: "
+
+#, csharp-format
+msgid ""
+"Target speed changed. Current speedlimit: {0} {1}. Offsets are carried over "
+"on speedlimit change."
+msgstr ""
 
 msgid "Like ETS2LA?"
 msgstr "Нравится ETS2LA?"
@@ -2545,6 +2576,10 @@ msgid ""
 msgstr ""
 "Настройте скорость реакции ETS2LA на заданные изменения ускорения. "
 "Экстренное торможение не зависит от этого параметра."
+
+#, csharp-format
+#~ msgid "Playing sound: {0}"
+#~ msgstr "Воспроизведение звука: {0}"
 
 #, csharp-format
 #~ msgid ""

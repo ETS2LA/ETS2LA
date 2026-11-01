@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-11-01 17:28:26+0200\n"
+"POT-Creation-Date: 2026-11-01 20:58:14+0200\n"
 "PO-Revision-Date: 2026-10-18 11:30+0000\n"
 "Last-Translator: Yhuyy <yhuyy@ets2la.com>\n"
 "Language-Team: Turkish <http://weblate.ets2la.com/projects/ets2la/ets2la/tr/"
@@ -223,6 +223,10 @@ msgstr "Demo Penceresi"
 msgid "Installing..."
 msgstr "Yükleniyor..."
 
+#, csharp-format
+msgid "Legacy audio path detected: {0}"
+msgstr ""
+
 msgid ""
 "Adjust the distance ETS2LA will try to maintain from the vehicle in front of "
 "you when using Adaptive Cruise Control."
@@ -320,6 +324,9 @@ msgstr "{0} / {1} numaralı sektör ayrıştırılıyor..."
 
 msgid "Initializing GLFW..."
 msgstr "GLFW başlatılıyor..."
+
+msgid "Audio Settings"
+msgstr ""
 
 msgid "Anonymous Telemetry"
 msgstr "Anonim Telemetri"
@@ -602,6 +609,9 @@ msgstr ""
 "önemli miktarda RAM kullanır ve sisteminizin dengesiz hale gelmesine neden "
 "olabilir. Lütfen daha düşük bir hassasiyet seviyesi seçin."
 
+msgid "No audio output device available"
+msgstr ""
+
 msgid "This game was found at"
 msgstr "Bu oyun şu konumda bulundu"
 
@@ -630,6 +640,10 @@ msgid "Don't have an account?<br/>Register a new one now, no emails required!"
 msgstr "Hesabınız yok mu?<br/>Hemen yeni bir tane oluşturun, e-posta gerekmez!"
 
 msgid "Failed to initialize SDL3 input backend."
+msgstr ""
+
+#, csharp-format
+msgid "Invalid audio job: {0}, does the file exist?"
 msgstr ""
 
 msgid "No release notes available."
@@ -1101,6 +1115,9 @@ msgid ""
 "available to ETS2LA."
 msgstr ""
 
+msgid "All driving assists have been disabled."
+msgstr ""
+
 #, csharp-format
 msgid "Error playing audio file {0}: {1}"
 msgstr "Ses dosyası {0} oynatılırken hata oluştu: {1}"
@@ -1228,6 +1245,9 @@ msgstr ""
 
 msgid "Normal"
 msgstr "Normal"
+
+msgid "Assists Enabled"
+msgstr ""
 
 #, csharp-format
 msgid "Removing manually added installation at '{0}'"
@@ -1396,6 +1416,9 @@ msgstr ""
 "ve bunu düzeltmeyi planlamıyoruz."
 
 msgid "Continue"
+msgstr ""
+
+msgid "All driving assists have been enabled."
 msgstr ""
 
 msgid "Window Zoom"
@@ -1580,6 +1603,9 @@ msgstr "ImGui Impl GLFW başlatılamadı"
 
 #, csharp-format
 msgid "Control with ID '{0}' not found for event subscription."
+msgstr ""
+
+msgid "Assists Disabled"
 msgstr ""
 
 #, csharp-format
@@ -1819,17 +1845,13 @@ msgstr ""
 msgid "Enable Memory Output for Pedals"
 msgstr ""
 
-msgid "kilometers per hour"
-msgstr "kilometre/saat"
-
 msgid ""
 "User folder paths are hidden automatically. Review the log for other "
 "personal information before sending."
 msgstr ""
 
-#, csharp-format
-msgid "Playing sound: {0}"
-msgstr ""
+msgid "kilometers per hour"
+msgstr "kilometre/saat"
 
 #, csharp-format
 msgid "Enabled plugin: [bold]{0}[/]"
@@ -1964,6 +1986,9 @@ msgstr[1] "Elle yüklenmiş {0} kütüphane tespit edildi."
 msgid "Control with ID '{0}' not found for updating bindings."
 msgstr ""
 
+msgid "Test Audio"
+msgstr ""
+
 msgid "Near"
 msgstr "Yakın"
 
@@ -2053,6 +2078,12 @@ msgid ""
 msgstr ""
 "Hesabınız kaldırılmaya çalışırken bir hata oluştu. Lütfen daha sonra tekrar "
 "deneyin. Hata: "
+
+#, csharp-format
+msgid ""
+"Target speed changed. Current speedlimit: {0} {1}. Offsets are carried over "
+"on speedlimit change."
+msgstr ""
 
 msgid "Like ETS2LA?"
 msgstr "ETS2LA'i seviyor musunuz?"

@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-11-01 17:28:26+0200\n"
+"POT-Creation-Date: 2026-11-01 20:58:14+0200\n"
 "PO-Revision-Date: 2026-10-20 09:37+0000\n"
 "Last-Translator: cooper153826 <cooper153826@ets2la.com>\n"
 "Language-Team: Thai <http://weblate.ets2la.com/projects/ets2la/ets2la/th/>\n"
@@ -205,6 +205,10 @@ msgstr "หน้าต่างสาธิต"
 msgid "Installing..."
 msgstr "กำลังติดตั้ง..."
 
+#, csharp-format
+msgid "Legacy audio path detected: {0}"
+msgstr ""
+
 msgid ""
 "Adjust the distance ETS2LA will try to maintain from the vehicle in front of "
 "you when using Adaptive Cruise Control."
@@ -297,6 +301,9 @@ msgstr "กำลังวิเคราะห์ Sector {0} จาก {1}..."
 
 msgid "Initializing GLFW..."
 msgstr "กำลังเริ่มต้น GLFW..."
+
+msgid "Audio Settings"
+msgstr ""
 
 msgid "Anonymous Telemetry"
 msgstr "ส่งข้อมูลการใช้งานแบบไม่ระบุตัวตน"
@@ -564,6 +571,9 @@ msgstr ""
 "ระบบของคุณมี RAM น้อยกว่า 20GB ระดับ Extreme Data Fidelity ใช้ RAM "
 "มากและอาจทำให้ระบบไม่เสถียร โปรดเลือกระดับที่ต่ำลง"
 
+msgid "No audio output device available"
+msgstr ""
+
 msgid "This game was found at"
 msgstr "เกมนี้เจอที่"
 
@@ -592,6 +602,10 @@ msgstr "ไม่มีบัญชี?<br/>สมัครสมาชิกใ
 
 msgid "Failed to initialize SDL3 input backend."
 msgstr "เริ่มต้น SDL3 Input Backend ไม่สำเร็จ"
+
+#, csharp-format
+msgid "Invalid audio job: {0}, does the file exist?"
+msgstr ""
 
 msgid "No release notes available."
 msgstr "ไม่มีบันทึกประจำเวอร์ชัน"
@@ -1046,6 +1060,9 @@ msgid ""
 "available to ETS2LA."
 msgstr "การวิเคราะห์จะดำเนินต่อ แต่ ETS2LA จะไม่สามารถใช้ข้อมูลในไฟล์นี้ได้"
 
+msgid "All driving assists have been disabled."
+msgstr ""
+
 #, csharp-format
 msgid "Error playing audio file {0}: {1}"
 msgstr "เกิดข้อผิดพลาดระหว่างเล่นเสียงไฟล์ {0}: {1}"
@@ -1168,6 +1185,9 @@ msgstr "Chatbot"
 
 msgid "Normal"
 msgstr "ปกติ"
+
+msgid "Assists Enabled"
+msgstr ""
 
 #, csharp-format
 msgid "Removing manually added installation at '{0}'"
@@ -1340,6 +1360,9 @@ msgstr ""
 
 msgid "Continue"
 msgstr "ดำเนินการต่อ"
+
+msgid "All driving assists have been enabled."
+msgstr ""
 
 msgid "Window Zoom"
 msgstr "ปรับขนาดหน้าต่าง"
@@ -1524,6 +1547,9 @@ msgstr "เริ่มต้น ImGui Impl GLFW ไม่สำเร็จ"
 #, csharp-format
 msgid "Control with ID '{0}' not found for event subscription."
 msgstr "ไม่พบ Control ID '{0}' สำหรับสมัครรับ Event"
+
+msgid "Assists Disabled"
+msgstr ""
 
 #, csharp-format
 msgid "Plugin '{0}' is missing its DLL at '{1}' and has been removed."
@@ -1754,17 +1780,13 @@ msgstr "Username ต้องมีความยาวไม่เกิน {0
 msgid "Enable Memory Output for Pedals"
 msgstr "เปิดใช้งาน Memory Output สำหรับแป้นเหยียบ"
 
-msgid "kilometers per hour"
-msgstr "กิโลเมตรต่อชั่วโมง"
-
 msgid ""
 "User folder paths are hidden automatically. Review the log for other "
 "personal information before sending."
 msgstr ""
 
-#, csharp-format
-msgid "Playing sound: {0}"
-msgstr "กำลังเล่นเสียง: {0}"
+msgid "kilometers per hour"
+msgstr "กิโลเมตรต่อชั่วโมง"
 
 #, csharp-format
 msgid "Enabled plugin: [bold]{0}[/]"
@@ -1896,6 +1918,9 @@ msgstr[0] "พบไลบรารีที่ติดตั้งด้วย
 msgid "Control with ID '{0}' not found for updating bindings."
 msgstr "ไม่พบ Control ID '{0}' สำหรับแก้ไขการกำหนดปุ่ม"
 
+msgid "Test Audio"
+msgstr ""
+
 msgid "Near"
 msgstr "ใกล้"
 
@@ -1984,6 +2009,12 @@ msgid ""
 "An error occurred while trying to remove your account. Please try again "
 "later. Error: "
 msgstr "เกิดข้อผิดพลาดขณะลบบัญชี โปรดลองอีกครั้งภายหลัง ข้อผิดพลาด: "
+
+#, csharp-format
+msgid ""
+"Target speed changed. Current speedlimit: {0} {1}. Offsets are carried over "
+"on speedlimit change."
+msgstr ""
 
 msgid "Like ETS2LA?"
 msgstr "ชอบ ETS2LA ไหม?"
@@ -2362,6 +2393,10 @@ msgid ""
 msgstr ""
 "ปรับความรวดเร็วที่ ETS2LA ตอบสนองต่อการเร่งความเร็วตามที่ต้องการ "
 "โดยไม่ส่งผลต่อการเบรกฉุกเฉิน"
+
+#, csharp-format
+#~ msgid "Playing sound: {0}"
+#~ msgstr "กำลังเล่นเสียง: {0}"
 
 #, csharp-format
 #~ msgid ""

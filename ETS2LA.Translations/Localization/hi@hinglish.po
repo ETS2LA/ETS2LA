@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-11-01 17:28:26+0200\n"
+"POT-Creation-Date: 2026-11-01 20:58:14+0200\n"
 "PO-Revision-Date: 2026-08-25 11:19+0000\n"
 "Last-Translator: Artyz <artyz@ets2la.com>\n"
 "Language-Team: Hindi (Hinglish) <http://weblate.ets2la.com/projects/ets2la/"
@@ -198,6 +198,10 @@ msgstr ""
 msgid "Installing..."
 msgstr "Installing…"
 
+#, csharp-format
+msgid "Legacy audio path detected: {0}"
+msgstr ""
+
 msgid ""
 "Adjust the distance ETS2LA will try to maintain from the vehicle in front of "
 "you when using Adaptive Cruise Control."
@@ -289,6 +293,9 @@ msgid "Parsing sector {0} of {1}..."
 msgstr ""
 
 msgid "Initializing GLFW..."
+msgstr ""
+
+msgid "Audio Settings"
 msgstr ""
 
 msgid "Anonymous Telemetry"
@@ -551,6 +558,9 @@ msgstr ""
 "ka istemal karti hai, aur isse aapka system unstable ho sakta hai. Please "
 "kam fidelity select kar."
 
+msgid "No audio output device available"
+msgstr ""
+
 msgid "This game was found at"
 msgstr ""
 
@@ -576,6 +586,10 @@ msgid "Don't have an account?<br/>Register a new one now, no emails required!"
 msgstr ""
 
 msgid "Failed to initialize SDL3 input backend."
+msgstr ""
+
+#, csharp-format
+msgid "Invalid audio job: {0}, does the file exist?"
 msgstr ""
 
 msgid "No release notes available."
@@ -1014,6 +1028,9 @@ msgid ""
 "available to ETS2LA."
 msgstr ""
 
+msgid "All driving assists have been disabled."
+msgstr ""
+
 #, csharp-format
 msgid "Error playing audio file {0}: {1}"
 msgstr ""
@@ -1135,6 +1152,9 @@ msgid "Chatbot"
 msgstr ""
 
 msgid "Normal"
+msgstr ""
+
+msgid "Assists Enabled"
 msgstr ""
 
 #, csharp-format
@@ -1295,6 +1315,9 @@ msgid ""
 msgstr ""
 
 msgid "Continue"
+msgstr ""
+
+msgid "All driving assists have been enabled."
 msgstr ""
 
 msgid "Window Zoom"
@@ -1465,6 +1488,9 @@ msgstr ""
 
 #, csharp-format
 msgid "Control with ID '{0}' not found for event subscription."
+msgstr ""
+
+msgid "Assists Disabled"
 msgstr ""
 
 #, csharp-format
@@ -1692,16 +1718,12 @@ msgstr ""
 msgid "Enable Memory Output for Pedals"
 msgstr ""
 
-msgid "kilometers per hour"
-msgstr ""
-
 msgid ""
 "User folder paths are hidden automatically. Review the log for other "
 "personal information before sending."
 msgstr ""
 
-#, csharp-format
-msgid "Playing sound: {0}"
+msgid "kilometers per hour"
 msgstr ""
 
 #, csharp-format
@@ -1832,6 +1854,9 @@ msgstr[1] "{0} manually installed libraries mil gayeen."
 msgid "Control with ID '{0}' not found for updating bindings."
 msgstr ""
 
+msgid "Test Audio"
+msgstr ""
+
 msgid "Near"
 msgstr ""
 
@@ -1915,6 +1940,12 @@ msgstr ""
 msgid ""
 "An error occurred while trying to remove your account. Please try again "
 "later. Error: "
+msgstr ""
+
+#, csharp-format
+msgid ""
+"Target speed changed. Current speedlimit: {0} {1}. Offsets are carried over "
+"on speedlimit change."
 msgstr ""
 
 msgid "Like ETS2LA?"

@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-11-01 17:28:26+0200\n"
+"POT-Creation-Date: 2026-11-01 20:58:14+0200\n"
 "PO-Revision-Date: 2026-10-28 22:46+0000\n"
 "Last-Translator: Ketchup1812 <ketchup1812@ets2la.com>\n"
 "Language-Team: Slovak <http://weblate.ets2la.com/projects/ets2la/ets2la/sk/"
@@ -224,6 +224,10 @@ msgstr "Ukážkové okno"
 msgid "Installing..."
 msgstr "Inštaluje sa..."
 
+#, csharp-format
+msgid "Legacy audio path detected: {0}"
+msgstr ""
+
 msgid ""
 "Adjust the distance ETS2LA will try to maintain from the vehicle in front of "
 "you when using Adaptive Cruise Control."
@@ -327,6 +331,9 @@ msgstr "Analyzovanie sektora {0} z {1}..."
 
 msgid "Initializing GLFW..."
 msgstr "Inicializácia GLFW..."
+
+msgid "Audio Settings"
+msgstr ""
 
 msgid "Anonymous Telemetry"
 msgstr "Anonymná telemetria"
@@ -616,6 +623,9 @@ msgstr ""
 "spotrebúva značné množstvo pamäte RAM a môže spôsobiť nestabilitu systému. "
 "Zvoľte prosím nižšiu úroveň údajov."
 
+msgid "No audio output device available"
+msgstr ""
+
 msgid "This game was found at"
 msgstr "Túto hru sme našli v"
 
@@ -648,6 +658,10 @@ msgstr ""
 
 msgid "Failed to initialize SDL3 input backend."
 msgstr "Nepodarilo sa inicializovať vstupný backend SDL3."
+
+#, csharp-format
+msgid "Invalid audio job: {0}, does the file exist?"
+msgstr ""
 
 msgid "No release notes available."
 msgstr "Poznámky k verzii nie sú k dispozícii."
@@ -1142,6 +1156,9 @@ msgstr ""
 "Analýza bude pokračovať, avšak informácie obsiahnuté v tomto súbore nebudú k "
 "dispozícii pre ETS2LA."
 
+msgid "All driving assists have been disabled."
+msgstr ""
+
 #, csharp-format
 msgid "Error playing audio file {0}: {1}"
 msgstr "Chyba pri prehrávaní zvukového súboru {0}: {1}"
@@ -1278,6 +1295,9 @@ msgstr "Chatbot"
 
 msgid "Normal"
 msgstr "Normálne"
+
+msgid "Assists Enabled"
+msgstr ""
 
 #, csharp-format
 msgid "Removing manually added installation at '{0}'"
@@ -1462,6 +1482,9 @@ msgstr ""
 
 msgid "Continue"
 msgstr "Pokračovať"
+
+msgid "All driving assists have been enabled."
+msgstr ""
 
 msgid "Window Zoom"
 msgstr "Zväčšenie okna"
@@ -1655,6 +1678,9 @@ msgstr "Nepodarilo sa inicializovať ImGui Impl GLFW"
 #, csharp-format
 msgid "Control with ID '{0}' not found for event subscription."
 msgstr "Kontrola s ID „{0}“ nebola nájdené pre predplatné."
+
+msgid "Assists Disabled"
+msgstr ""
 
 #, csharp-format
 msgid "Plugin '{0}' is missing its DLL at '{1}' and has been removed."
@@ -1903,9 +1929,6 @@ msgstr "Vaše používateľské meno smie mať najviac {0} znakov."
 msgid "Enable Memory Output for Pedals"
 msgstr "Povoliť výstup pamäte pre pedále"
 
-msgid "kilometers per hour"
-msgstr "kilometre za hodinu"
-
 msgid ""
 "User folder paths are hidden automatically. Review the log for other "
 "personal information before sending."
@@ -1913,9 +1936,8 @@ msgstr ""
 "Cesty k priečinkom používateľov sa automaticky skryjú. Pred odoslaním si "
 "skontrolujte log, či neobsahuje ďalšie osobné informácie."
 
-#, csharp-format
-msgid "Playing sound: {0}"
-msgstr "Prehrávanie zvuku: {0}"
+msgid "kilometers per hour"
+msgstr "kilometre za hodinu"
 
 #, csharp-format
 msgid "Enabled plugin: [bold]{0}[/]"
@@ -2057,6 +2079,9 @@ msgstr[2] "Zistených {0} ručne nainštalovaných knižníc."
 msgid "Control with ID '{0}' not found for updating bindings."
 msgstr "Kontrola s ID „{0}“ nebola nájdené pre aktualizáciu mapovania kláves."
 
+msgid "Test Audio"
+msgstr ""
+
 msgid "Near"
 msgstr "Blízko"
 
@@ -2153,6 +2178,12 @@ msgid ""
 msgstr ""
 "Pri pokuse o odstránenie vášho účtu došlo k chybe. Skúste to prosím neskôr. "
 "Chyba: "
+
+#, csharp-format
+msgid ""
+"Target speed changed. Current speedlimit: {0} {1}. Offsets are carried over "
+"on speedlimit change."
+msgstr ""
 
 msgid "Like ETS2LA?"
 msgstr "Páči sa vám ETS2LA?"
@@ -2554,6 +2585,10 @@ msgid ""
 msgstr ""
 "Nastavte, ako rýchlo bude ETS2LA reagovať na požadované zmeny zrýchlenia. "
 "Núdzové brzdenie tým nie je ovplyvnené."
+
+#, csharp-format
+#~ msgid "Playing sound: {0}"
+#~ msgstr "Prehrávanie zvuku: {0}"
 
 #, csharp-format
 #~ msgid ""
