@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-11-01 20:57:28+0200\n"
-"PO-Revision-Date: 2026-11-01 20:57:28+0200\n"
+"POT-Creation-Date: 2026-11-01 21:06:48+0200\n"
+"PO-Revision-Date: 2026-11-01 21:06:48+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -476,8 +476,8 @@ msgstr ""
 msgid "Error in telemetry update loop."
 msgstr ""
 
-#: ../../../ETS2LA.Controls/Linux/SDL3ControlsBackend.cs:172
 #: ../../../ETS2LA.Controls/Windows/SharpDXControlsBackend.cs:182
+#: ../../../ETS2LA.Controls/Linux/SDL3ControlsBackend.cs:172
 #, csharp-format
 msgid "Updated bindings for control: {0} ({1}) to Device: {2}, Control: {3}"
 msgstr ""
@@ -956,7 +956,7 @@ msgstr ""
 msgid "Game not found"
 msgstr ""
 
-#: ../../../ETS2LA.State/Program.cs:245
+#: ../../../ETS2LA.State/Program.cs:241
 #, csharp-format
 msgid "New limit {0} {1}"
 msgstr ""
@@ -1335,7 +1335,7 @@ msgid ""
 "available to ETS2LA."
 msgstr ""
 
-#: ../../../ETS2LA.State/Program.cs:263
+#: ../../../ETS2LA.State/Program.cs:259
 msgid "All driving assists have been disabled."
 msgstr ""
 
@@ -1499,8 +1499,8 @@ msgstr ""
 msgid "Normal"
 msgstr ""
 
-#: ../../../ETS2LA.State/Program.cs:320
-#: ../../../ETS2LA.State/Program.cs:374
+#: ../../../ETS2LA.State/Program.cs:361
+#: ../../../ETS2LA.State/Program.cs:398
 msgid "Assists Enabled"
 msgstr ""
 
@@ -1710,16 +1710,16 @@ msgid ""
 msgstr ""
 
 #: ../../../ETS2LA.UI/Pages/Onboarding/Steps/EnsureGameClosed.razor:52
-#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/PluginStep.razor:57
 #: ../../../ETS2LA.UI/Pages/Onboarding/Steps/ControlsStep.razor:48
-#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/PrivacyPolicyStep.razor:51
+#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/PluginStep.razor:57
 #: ../../../ETS2LA.UI/Pages/Onboarding/Steps/OverlayStep.razor:27
+#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/PrivacyPolicyStep.razor:51
 #: ../../../ETS2LA.UI/Pages/Onboarding/Steps/SDKStep.razor:17
 msgid "Continue"
 msgstr ""
 
-#: ../../../ETS2LA.State/Program.cs:321
-#: ../../../ETS2LA.State/Program.cs:375
+#: ../../../ETS2LA.State/Program.cs:362
+#: ../../../ETS2LA.State/Program.cs:399
 msgid "All driving assists have been enabled."
 msgstr ""
 
@@ -1818,7 +1818,7 @@ msgstr ""
 msgid "Cancel/MODE"
 msgstr ""
 
-#: ../../../ETS2LA.State/Program.cs:244
+#: ../../../ETS2LA.State/Program.cs:240
 msgid "Speed limit changed"
 msgstr ""
 
@@ -1943,7 +1943,7 @@ msgstr ""
 msgid "Control with ID '{0}' not found for event subscription."
 msgstr ""
 
-#: ../../../ETS2LA.State/Program.cs:262
+#: ../../../ETS2LA.State/Program.cs:258
 msgid "Assists Disabled"
 msgstr ""
 
@@ -2164,14 +2164,14 @@ msgid ""
 "limit due to momentum."
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/DisclaimerStep1.razor:15
-msgid "Final Disclaimer <span class=\"description\">1/2</span>"
-msgstr ""
-
 #: ../../../ETS2LA.UI/Pages/Help/Chatbot.razor:408
 msgid ""
 "The following information is sent along with each message to help the chatbot "
 "provide better answers. It does not contain any personal information."
+msgstr ""
+
+#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/DisclaimerStep1.razor:15
+msgid "Final Disclaimer <span class=\"description\">1/2</span>"
 msgstr ""
 
 #: ../../../ETS2LA.UI/Pages/Settings/Data.razor:109
@@ -2238,14 +2238,14 @@ msgstr ""
 msgid "Enable Memory Output for Pedals"
 msgstr ""
 
-#: ../../../ETS2LA.State/Units.cs:180
-msgid "kilometers per hour"
-msgstr ""
-
 #: ../../../ETS2LA.UI/Pages/Help/Chatbot.razor:416
 msgid ""
 "User folder paths are hidden automatically. Review the log for other personal "
 "information before sending."
+msgstr ""
+
+#: ../../../ETS2LA.State/Units.cs:180
+msgid "kilometers per hour"
 msgstr ""
 
 #: ../../../ETS2LA.Backend/PluginHandler/Handler.cs:460
@@ -2444,8 +2444,8 @@ msgid ""
 "When receiving a speedlimit of {0} {1}, we will set the speed to {2} {3}."
 msgstr ""
 
-#: ../../../ETS2LA.Game/SDK/ParkedVehicles.cs:108
 #: ../../../ETS2LA.Game/SDK/Navigation.cs:122
+#: ../../../ETS2LA.Game/SDK/ParkedVehicles.cs:108
 #: ../../../ETS2LA.Game/SDK/Camera.cs:130
 #: ../../../ETS2LA.Game/SDK/Semaphores.cs:176
 #: ../../../ETS2LA.Game/SDK/Traffic.cs:159
@@ -2527,8 +2527,7 @@ msgid ""
 "later. Error: "
 msgstr ""
 
-#: ../../../ETS2LA.State/Program.cs:349
-#: ../../../ETS2LA.State/Program.cs:403
+#: ../../../ETS2LA.State/Program.cs:319
 #, csharp-format
 msgid ""
 "Target speed changed. Current speedlimit: {0} {1}. Offsets are carried over "
@@ -2587,8 +2586,8 @@ msgstr ""
 msgid "m/s"
 msgstr ""
 
-#: ../../../ETS2LA.Controls/Linux/SDL3ControlsBackend.cs:186
 #: ../../../ETS2LA.Controls/Windows/SharpDXControlsBackend.cs:197
+#: ../../../ETS2LA.Controls/Linux/SDL3ControlsBackend.cs:186
 #, csharp-format
 msgid "Updated axis behavior for control: {0} ({1}) to {2}"
 msgstr ""
@@ -2701,7 +2700,7 @@ msgstr ""
 msgid "Far"
 msgstr ""
 
-#: ../../../ETS2LA.State/Program.cs:277
+#: ../../../ETS2LA.State/Program.cs:273
 msgid ""
 "Driving mode changed, press Cancel/MODE again to cycle through the modes."
 msgstr ""

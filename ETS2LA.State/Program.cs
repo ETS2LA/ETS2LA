@@ -288,10 +288,64 @@ public class ApplicationState
         }
     }
 
+    CancellationTokenSource increaseHeldToken;
+    CancellationTokenSource decreaseHeldToken;
+    private void KeybindHeldLoop(CancellationToken token, float mult)
+    {
+        bool firstRun = true;
+        while (!token.IsCancellationRequested)
+        {
+            switch (DisplayUnits)
+            {
+                case Units.Metric:
+                    float increaseMetric = UnitConversions.ToScientificUnits(UnitType.Speed, stateSettings.SpeedControlStepSize, Units.Metric);
+                    DesiredSpeed = SnapTo10s(increaseMetric * mult);
+                    break;
+                case Units.Imperial:
+                    float increaseImperial = UnitConversions.ToScientificUnits(UnitType.Speed, stateSettings.SpeedControlStepSize, Units.Imperial);
+                    DesiredSpeed = SnapTo10s(increaseImperial * mult);
+                    break;
+                case Units.Scientific:
+                    DesiredSpeed += stateSettings.SpeedControlStepSize * mult;
+                    break;
+            }
+
+            RoundToNearestUnit();
+            ApplyLimits();
+
+            NotificationHandler.Current.SendNotification(new Notification
+            {
+                Id = "ApplicationState.DesiredSpeedChanged",
+                Title = Math.Round(UnitConversions.FromScientificUnits(UnitType.Speed, DesiredSpeed, DisplayUnits), 0).ToString() + " " + UnitConversions.GetUnitAbbreviation(UnitType.Speed, DisplayUnits),
+                Content = _("Target speed changed. Current speedlimit: {0} {1}. Offsets are carried over on speedlimit change.", (int)Math.Round(UnitConversions.FromScientificUnits(UnitType.Speed, lastSpeedLimit, DisplayUnits), 0), UnitConversions.GetUnitAbbreviation(UnitType.Speed, DisplayUnits)),
+                CloseAfter = 2,
+            });
+
+            if (firstRun)
+            {
+                firstRun = false;
+                Thread.Sleep(500);
+            }
+            else
+            {
+                Thread.Sleep(200);
+            }
+        }
+    }
+
     private void HandleIncrease(object sender, ControlChangeEventArgs e)
     {
         bool b = (bool)e.NewValue;
-        if(b == true) return; // key down event
+        if(b == true)
+        {
+            increaseHeldToken = new CancellationTokenSource();
+            Task.Run(() => KeybindHeldLoop(increaseHeldToken.Token, 1.0f));
+        }
+        else
+        {
+            increaseHeldToken.Cancel();
+            increaseHeldToken.Dispose();
+        }
 
         // RES
         if (!EnableAssists)
@@ -319,38 +373,21 @@ public class ApplicationState
             });
             return;
         }
-
-        switch (DisplayUnits)
-        {
-            case Units.Metric:
-                float increaseMetric = UnitConversions.ToScientificUnits(UnitType.Speed, stateSettings.SpeedControlStepSize, Units.Metric);
-                DesiredSpeed = SnapTo10s(increaseMetric);
-                break;
-            case Units.Imperial:
-                float increaseImperial = UnitConversions.ToScientificUnits(UnitType.Speed, stateSettings.SpeedControlStepSize, Units.Imperial);
-                DesiredSpeed = SnapTo10s(increaseImperial);
-                break;
-            case Units.Scientific:
-                DesiredSpeed += stateSettings.SpeedControlStepSize;
-                break;
-        }
-
-        RoundToNearestUnit();
-        ApplyLimits();
-
-        NotificationHandler.Current.SendNotification(new Notification
-        {
-            Id = "ApplicationState.DesiredSpeedChanged",
-            Title = Math.Round(UnitConversions.FromScientificUnits(UnitType.Speed, DesiredSpeed, DisplayUnits), 0).ToString() + " " + UnitConversions.GetUnitAbbreviation(UnitType.Speed, DisplayUnits),
-            Content = _("Target speed changed. Current speedlimit: {0} {1}. Offsets are carried over on speedlimit change.", (int)Math.Round(UnitConversions.FromScientificUnits(UnitType.Speed, lastSpeedLimit, DisplayUnits), 0), UnitConversions.GetUnitAbbreviation(UnitType.Speed, DisplayUnits)),
-            CloseAfter = 2,
-        });
     }
 
     private void HandleDecrease(object sender, ControlChangeEventArgs e)
     {
         bool b = (bool)e.NewValue;
-        if(b == true) return; // key down event
+        if(b == true)
+        {
+            decreaseHeldToken = new CancellationTokenSource();
+            Task.Run(() => KeybindHeldLoop(decreaseHeldToken.Token, -1.0f));
+        }
+        else
+        {
+            decreaseHeldToken.Cancel();
+            decreaseHeldToken.Dispose();
+        }
 
         // SET
         if (!EnableAssists)
@@ -373,32 +410,6 @@ public class ApplicationState
             });
             return;
         }
-
-        switch (DisplayUnits)
-        {
-            case Units.Metric:
-                float decreaseMetric = UnitConversions.ToScientificUnits(UnitType.Speed, stateSettings.SpeedControlStepSize, Units.Metric);
-                DesiredSpeed = SnapTo10s(-decreaseMetric);
-                break;
-            case Units.Imperial:
-                float decreaseImperial = UnitConversions.ToScientificUnits(UnitType.Speed, stateSettings.SpeedControlStepSize, Units.Imperial);
-                DesiredSpeed = SnapTo10s(-decreaseImperial);
-                break;
-            case Units.Scientific:
-                DesiredSpeed -= stateSettings.SpeedControlStepSize;
-                break;
-        }
-
-        RoundToNearestUnit();
-        ApplyLimits();
-
-        NotificationHandler.Current.SendNotification(new Notification
-        {
-            Id = "ApplicationState.DesiredSpeedChanged",
-            Title = Math.Round(UnitConversions.FromScientificUnits(UnitType.Speed, DesiredSpeed, DisplayUnits), 0).ToString() + " " + UnitConversions.GetUnitAbbreviation(UnitType.Speed, DisplayUnits),
-            Content = _("Target speed changed. Current speedlimit: {0} {1}. Offsets are carried over on speedlimit change.", (int)Math.Round(UnitConversions.FromScientificUnits(UnitType.Speed, lastSpeedLimit, DisplayUnits), 0), UnitConversions.GetUnitAbbreviation(UnitType.Speed, DisplayUnits)),
-            CloseAfter = 2,
-        });
     }
 
 
