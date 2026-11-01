@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-11-01 21:07:42+0200\n"
+"POT-Creation-Date: 2026-11-01 23:03:06+0200\n"
 "PO-Revision-Date: 2026-08-26 00:24+0000\n"
 "Last-Translator: svllyu <svllyu@ets2la.com>\n"
 "Language-Team: Estonian <http://weblate.ets2la.com/projects/ets2la/ets2la/et/"
