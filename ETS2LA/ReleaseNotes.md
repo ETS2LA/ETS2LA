@@ -1,5 +1,5 @@
-### ETS2LA C# 2026.11.XXXX
-- `feat` Updated audio files. New ones copied from OpenPilot.
+### ETS2LA C# 2026.11.5250
+- `feat` Updated audio files. New sounds originate from OpenPilot, which are used in real life vehicles.
 - `feat` You can now hold the increase/decrease keybinds to continuously change the desired speed.
 - `feat` Added notifications for enabling/disabling assists and for changing the desired speed.
 - `feat` Added sounds for enabling/disabling assists as well as changing the driving mode.
