@@ -2,6 +2,7 @@
 @layout Shared.Layouts.SettingsLayout
 @using ETS2LA.UI.Shared.Components
 @using ETS2LA.Audio;
+@using ETS2LA.Logging;
 
 @code {
     public float Volume
@@ -13,13 +14,20 @@
             {
                 AudioHandler.Current.SetVolume(value / 100);
                 if (AudioHandler.Current.GetQueueLength() == 0)
-                    AudioHandler.Current.Queue("Assets/Sounds/prompt.mp3");
+                    AudioHandler.Current.Play(DefaultAudio.PreAlert, 1);
             }
         }
+    }
+
+    public void PlaySound(DefaultAudio audio)
+    {
+        Logger.Info($"Playing sound: {audio}");
+        AudioHandler.Current.Play(audio, 1);
     }
 }
 
 <div class="flex flex-col w-full p-5 px-8 gap-3">
+    <SectionTitle Title=@(_("Audio Settings")) />
     <Slider Title=@(_("Volume"))
             Description=@(_("Adjust the volume of the audio output."))
             Suffix="%"
@@ -27,4 +35,13 @@
             Max="100"
             Value="@Volume"
             ValueChanged="@((float value) => Volume = value)" />
+    <SectionTitle Title=@(_("Test Audio")) />
+    <div class="grid grid-cols-4 gap-3">
+        @foreach (var audio in Enum.GetValues<DefaultAudio>())
+        {
+            <button Class="button w-full!" @onclick="(() => PlaySound(audio))">
+                @audio
+            </button>
+        }
+    </div>
 </div>

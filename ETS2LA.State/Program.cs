@@ -10,6 +10,7 @@ using ETS2LA.Logging;
 using ETS2LA.Notifications;
 using static ETS2LA.Translations.T;
 using ETS2LA.Game.PmdFiles;
+using ETS2LA.Audio;
 
 using System.Collections.Generic;
 
@@ -163,18 +164,21 @@ public class ApplicationState
                 DesiredSpeed = (float)Math.Round(DesiredSpeed); // Round to nearest m/s
                 break;
         }
-
-        if (DesiredSpeed < 0)
-            DesiredSpeed = 0;
     }
 
     private void ApplyLimits()
     {
         float maxSpeed = AssistanceSettings.Current.MaximumSpeed;
         if (DesiredSpeed > maxSpeed && maxSpeed > 0)
+        {
             DesiredSpeed = maxSpeed;
-        if (DesiredSpeed < 0)
+            AudioHandler.Current.Play(DefaultAudio.Refuse, 1, overrideCurrent: true);
+        }
+        else if (DesiredSpeed < 0)
+        {
             DesiredSpeed = 0;
+            AudioHandler.Current.Play(DefaultAudio.Refuse, 1, overrideCurrent: true);
+        }
     }
 
     private float SnapTo10s(float increase)
@@ -229,6 +233,7 @@ public class ApplicationState
         DesiredSpeed = newSpeedLimit + (wasBelowLimit ? offset : 0);
         RoundToNearestUnit();
         ApplyLimits();
+
         NotificationHandler.Current.SendNotification(new Notification
         {
             Id = "ApplicationState.SpeedLimitChanged",
@@ -244,7 +249,16 @@ public class ApplicationState
 
         if (EnableAssists) 
         {
+            AudioHandler.Current.Play(DefaultAudio.Disengage, 1, overrideCurrent: true);
             EnableAssists = false;
+            NotificationHandler.Current.CloseNotification("ApplicationState.DesiredSpeedChanged");
+            NotificationHandler.Current.SendNotification(new Notification
+            {
+                Id = "ApplicationState.AssistStatus",
+                Title = _("Assists Disabled"),
+                Content = _("All driving assists have been disabled."),
+                CloseAfter = 2,
+            });
         }
         else
         {
@@ -258,6 +272,19 @@ public class ApplicationState
                 Title = DrivingModeTranslation[DrivingMode],
                 Content = _("Driving mode changed, press Cancel/MODE again to cycle through the modes.")
             });
+
+            switch (DrivingMode)
+            {
+                case DrivingMode.AdaptiveCruiseControlOnly:
+                    AudioHandler.Current.Play(DefaultAudio.PreAlert, 1, overrideCurrent: true);
+                    break;
+                case DrivingMode.FullSelfDriving:
+                    AudioHandler.Current.Play(DefaultAudio.SoftWarning, 1, overrideCurrent: true);
+                    break;
+                case DrivingMode.LaneAssistOnly:
+                    AudioHandler.Current.Play(DefaultAudio.PreAlert, 1, overrideCurrent: true);
+                    break;
+            }
         }
     }
 
@@ -282,6 +309,14 @@ public class ApplicationState
             }
 
             EnableAssists = true;
+            AudioHandler.Current.Play(DefaultAudio.Engage, 1, overrideCurrent: true);
+            NotificationHandler.Current.SendNotification(new Notification
+            {
+                Id = "ApplicationState.AssistStatus",
+                Title = _("Assists Enabled"),
+                Content = _("All driving assists have been enabled."),
+                CloseAfter = 2,
+            });
             return;
         }
 
@@ -302,6 +337,14 @@ public class ApplicationState
 
         RoundToNearestUnit();
         ApplyLimits();
+
+        NotificationHandler.Current.SendNotification(new Notification
+        {
+            Id = "ApplicationState.DesiredSpeedChanged",
+            Title = Math.Round(UnitConversions.FromScientificUnits(UnitType.Speed, DesiredSpeed, DisplayUnits), 0).ToString() + " " + UnitConversions.GetUnitAbbreviation(UnitType.Speed, DisplayUnits),
+            Content = _("Target speed changed. Current speedlimit: {0} {1}. Offsets are carried over on speedlimit change.", (int)Math.Round(UnitConversions.FromScientificUnits(UnitType.Speed, lastSpeedLimit, DisplayUnits), 0), UnitConversions.GetUnitAbbreviation(UnitType.Speed, DisplayUnits)),
+            CloseAfter = 2,
+        });
     }
 
     private void HandleDecrease(object sender, ControlChangeEventArgs e)
@@ -320,6 +363,14 @@ public class ApplicationState
                                stateSettings.FallbackSpeed);
 
             EnableAssists = true;
+            AudioHandler.Current.Play(DefaultAudio.Engage, 1, overrideCurrent: true);
+            NotificationHandler.Current.SendNotification(new Notification
+            {
+                Id = "ApplicationState.AssistStatus",
+                Title = _("Assists Enabled"),
+                Content = _("All driving assists have been enabled."),
+                CloseAfter = 2,
+            });
             return;
         }
 
@@ -340,6 +391,14 @@ public class ApplicationState
 
         RoundToNearestUnit();
         ApplyLimits();
+
+        NotificationHandler.Current.SendNotification(new Notification
+        {
+            Id = "ApplicationState.DesiredSpeedChanged",
+            Title = Math.Round(UnitConversions.FromScientificUnits(UnitType.Speed, DesiredSpeed, DisplayUnits), 0).ToString() + " " + UnitConversions.GetUnitAbbreviation(UnitType.Speed, DisplayUnits),
+            Content = _("Target speed changed. Current speedlimit: {0} {1}. Offsets are carried over on speedlimit change.", (int)Math.Round(UnitConversions.FromScientificUnits(UnitType.Speed, lastSpeedLimit, DisplayUnits), 0), UnitConversions.GetUnitAbbreviation(UnitType.Speed, DisplayUnits)),
+            CloseAfter = 2,
+        });
     }
 
 

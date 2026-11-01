@@ -2,6 +2,7 @@ using System.Collections.Concurrent;
 using ETS2LA.Logging;
 using ETS2LA.Settings;
 using static ETS2LA.Translations.T;
+using ETS2LA.Audio.Generator;
 
 using SoundFlow.Abstracts;
 using SoundFlow.Abstracts.Devices;
@@ -75,6 +76,68 @@ public class AudioHandler
     }
 
     /// <summary>
+    ///  Queues a default audio beep for playback. You can use Queue() to play
+    ///  custom audio.
+    /// </summary>
+    /// <param name="audio">Audio Type</param>
+    /// <param name="loopCount">How many times to loop the audio</param>
+    /// <param name="loopCondition">A function that returns a bool to determine if the audio should loop. If this is provided, loopCount is ignored.</param>
+    /// <param name="overrideCurrent">Whether to override the currently playing audio (and queue
+    /// <exception cref="ArgumentOutOfRangeException"></exception>
+    public void Play(DefaultAudio audio, int loopCount = 1, Func<bool>? loopCondition = null, bool overrideCurrent = false)
+    {
+        string filename;
+        switch (audio)
+        {
+            case DefaultAudio.Engage:
+                filename = "Assets/Sounds/engage.wav"; break;
+            case DefaultAudio.Disengage:
+                filename = "Assets/Sounds/disengage.wav"; break;
+            case DefaultAudio.Refuse:
+                filename = "Assets/Sounds/refuse.wav"; break;
+            case DefaultAudio.PreAlert:
+                filename = "Assets/Sounds/pre_alert.wav"; break;
+            case DefaultAudio.Warning:
+                filename = "Assets/Sounds/warning.wav"; break;
+            case DefaultAudio.Critical:
+                filename = "Assets/Sounds/critical.wav"; break;
+            case DefaultAudio.SoftWarning:
+                filename = "Assets/Sounds/soft_warning.wav"; break;
+            case DefaultAudio.SoftCritical:
+                filename = "Assets/Sounds/soft_critical.wav"; break;
+            default:
+                throw new ArgumentOutOfRangeException(nameof(audio), audio, null);
+        }
+
+        if (overrideCurrent)
+        {
+            while (_queue.TryDequeue(out AudioJob? x)) { }
+            
+            _currentCts?.Cancel();
+        }
+
+        _queue.Enqueue(new AudioJob(AudioJobType.File, filename, null, loopCondition, loopCount));
+    }
+
+    // Internal file to catch legacy paths (engage.mp3, disengage.mp3, etc.) and redirect them 
+    // to the new generated beeps. This will be removed once most plugins use the beeps instead.
+    // TODO: Remove this function in the future.
+    private bool CatchLegacyPaths(string filepath, int loopCount = 1)
+    {
+        if (filepath.EndsWith("engage.mp3", StringComparison.OrdinalIgnoreCase))
+        {
+            Play(DefaultAudio.Engage, loopCount);
+            return true;
+        }
+        else if (filepath.EndsWith("disengage.mp3", StringComparison.OrdinalIgnoreCase))
+        {
+            Play(DefaultAudio.Disengage, loopCount);
+            return true;
+        }
+        return false;
+    }
+
+    /// <summary>
     ///  Queue an audio file for playback.
     /// </summary>
     /// <param name="filepath">Filepath of the audio file to play.</param>
@@ -95,7 +158,13 @@ public class AudioHandler
             _currentCts?.Cancel();
         }
 
-        _queue.Enqueue(new AudioJob(filepath, null, loopCount));
+        if (CatchLegacyPaths(filepath, loopCount))
+        {
+            Logger.Warn(_("Legacy audio path detected: {0}", filepath));
+            return;
+        }
+
+        _queue.Enqueue(new AudioJob(AudioJobType.File, filepath, null, null, loopCount));
     }
 
     /// <summary>
@@ -105,7 +174,18 @@ public class AudioHandler
     /// <param name="loopCondition">The condition under which the audio should loop. (function with bool return)</param>
     public void Queue(string filepath, Func<bool> loopCondition)
     {
-         _queue.Enqueue(new AudioJob(filepath, loopCondition, 1));
+         _queue.Enqueue(new AudioJob(AudioJobType.File, filepath, null, loopCondition, 1));
+    }
+
+    /// <summary>
+    ///  Queue a generated audio provider for playback with a loop condition.
+    ///  This is useful for generated audio like beeps.
+    /// </summary>
+    /// <param name="data">The generated audio data to play.</param>
+    /// <param name="loopCondition">The condition under which the audio should loop. (function with bool return)</param>
+    public void Queue(RawDataProvider data, Func<bool> loopCondition)
+    {
+        _queue.Enqueue(new AudioJob(AudioJobType.Generated, "", data, loopCondition, 1));
     }
 
     private async Task ProcessAudioQueue()
@@ -143,7 +223,7 @@ public class AudioHandler
             }
             catch (Exception ex)
             {
-                Logger.Error(_("Error playing audio file {0}: {1}", job.Filename, ex.Message));
+                Logger.Error(_("Error playing audio file {0}: {1}", job.Filename ?? "(Raw Data)", ex.Message));
             }
             finally 
             {
@@ -156,12 +236,31 @@ public class AudioHandler
     private async Task PlaySound(AudioJob job, CancellationToken token)
     {
         if (token.IsCancellationRequested) return;
-        Logger.Info(_("Playing sound: {0}", job.Filename));
+        if (outputDevice == null)
+        {
+            Logger.Error(_("No audio output device available"));
+            return;
+        }
 
-        using var stream = File.OpenRead(job.Filename);
-        using var dataProvider = new AssetDataProvider(engine, format, stream);
+        ISoundDataProvider dataProvider;
+        if (job.Type == AudioJobType.File && !string.IsNullOrEmpty(job.Filename) && File.Exists(job.Filename))
+        {
+            using var stream = File.OpenRead(job.Filename);
+            dataProvider = new AssetDataProvider(engine, format, stream);
+        }
+        else if (job.Type == AudioJobType.Generated && job.Data != null)
+        {
+            Logger.Info("Playing generated audio job");
+            Logger.Info($"Generated audio job length: {job.Data.Length} samples");
+            dataProvider = job.Data;
+        }
+        else
+        {
+            Logger.Error(_("Invalid audio job: {0}, does the file exist?", job.Filename ?? "(Raw Data)"));
+            return;
+        }
+
         using var player = new SoundPlayer(engine, format, dataProvider);
-
         outputDevice.MasterMixer.AddComponent(player);
         try
         {

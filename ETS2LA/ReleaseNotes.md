@@ -1,6 +1,11 @@
-### ETS2LA C# 2026.10.5231
-- `fix` Fixed a bug that could cause login to fail even if the backend responds correctly.
-- `translation` Translation updates for Finnish, Spanish, Chinese (both), Slovak, Russian, and Polish.
+### ETS2LA C# 2026.11.XXXX
+- `feat` Updated audio files. New ones copied from OpenPilot.
+- `feat` Added notifications for enabling/disabling assists and for changing the desired speed.
+- `feat` Added sounds for enabling/disabling assists as well as changing the driving mode.
+- `feat` Added telemetry events for installing and uninstalling plugins.
+- `feat` Updated *ETS2LA.Networking* and *ETS2LA.State* to use *v2* plugin definitions.
+
+**DEVELOPERS:** This update changes *PluginInfo*, your existing info will work, but please update your plugins to use the new definitions!
 
 #### Thank you to today's sponsor... You!
 Development is possible thanks to our [sponsors](https://github.com/sponsors/Tumppi066). Please consider supporting if you like the project and have the means to do so.
