@@ -18,7 +18,10 @@ class ConsoleWindow : InternalWindow
             Flags = ImGuiWindowFlags.NoScrollbar | ImGuiWindowFlags.NoResize | ImGuiWindowFlags.NoSavedSettings | ImGuiWindowFlags.NoDecoration | ImGuiWindowFlags.AlwaysAutoResize,
             X = 10,
             Y = 10,
-            Alpha = 0.5f
+            Alpha = 0.5f,
+            #if !DEBUG
+            Open = false
+            #endif
         };
 
         Render = () =>

@@ -4,6 +4,8 @@
 - `feat` Added sounds for enabling/disabling assists as well as changing the driving mode.
 - `feat` Added telemetry events for installing and uninstalling plugins.
 - `feat` Updated *ETS2LA.Networking* and *ETS2LA.State* to use *v2* plugin definitions.
+- `feat` The *Console* overlay window will be disabled by default in release builds. You can still enable it via the *Overlay Interaction Mode*.
+- `feat` *ETS2LA.Overlay* now includes *Web* font styles, these are the fonts we use in the main UI (*Outfit*).
 
 **DEVELOPERS:** This update changes *PluginInfo*, your existing info will work, but please update your plugins to use the new definitions!
 

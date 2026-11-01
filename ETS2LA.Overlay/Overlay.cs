@@ -45,7 +45,11 @@ public enum FontStyle
     Regular,
     Medium,
     SemiBold,
-    Bold
+    Bold,
+    WebRegular,
+    WebMedium,
+    WebSemiBold,
+    WebBold,
 }
 
 public class OverlayHandler
@@ -524,6 +528,10 @@ public class OverlayHandler
             new Tuple<FontStyle, string>(FontStyle.Regular, Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Assets", "Fonts", $"{fontName}", $"{fontName}-Regular.ttf")),
             new Tuple<FontStyle, string>(FontStyle.SemiBold, Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Assets", "Fonts", $"{fontName}", $"{fontName}-SemiBold.ttf")),
             new Tuple<FontStyle, string>(FontStyle.Bold, Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Assets", "Fonts", $"{fontName}", $"{fontName}-Bold.ttf")),
+            new Tuple<FontStyle, string>(FontStyle.WebRegular, Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Assets", "Fonts", $"Outfit", $"Outfit-Regular.ttf")),
+            new Tuple<FontStyle, string>(FontStyle.WebMedium, Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Assets", "Fonts", $"Outfit", $"Outfit-Medium.ttf")),
+            new Tuple<FontStyle, string>(FontStyle.WebSemiBold, Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Assets", "Fonts", $"Outfit", $"Outfit-SemiBold.ttf")),
+            new Tuple<FontStyle, string>(FontStyle.WebBold, Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Assets", "Fonts", $"Outfit", $"Outfit-Bold.ttf")),
         };
 
         // Set fonts
