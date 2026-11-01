@@ -1,6 +1,8 @@
 // These classes HAVE to be matching with the classes in the backend.
 // Do not change them in any way, they're handled by the ETS2LA team!
 using ETS2LA.Logging;
+using ETS2LA.Networking.Settings;
+using ETS2LA.Shared;
 
 namespace ETS2LA.Networking.Plugins;
 
@@ -8,7 +10,7 @@ namespace ETS2LA.Networking.Plugins;
 public enum Region
 {
     Global,
-    China
+    MainlandChina
 }
 
 [Serializable]
@@ -26,7 +28,8 @@ public enum NetworkPluginTags
     Library,
     AIAssisted,
     OpenSource,
-    ClosedSource
+    ClosedSource,
+    VibeCoded
 }
 
 [Serializable]
@@ -53,55 +56,63 @@ public class NetworkPlugin
         return compatibleVersions.FirstOrDefault();
     }
 
-    private bool IsCompatible(Version currentVersion, string constraint)
+    private bool IsCompatible(Version currentVersion, PluginVersionSupport support)
     {
-        if (string.IsNullOrEmpty(constraint)) return true;
-
-        switch (constraint)
+        if (!string.IsNullOrEmpty(support.LowerBound))
         {
-            case var c when c.StartsWith("*"):
-                return true;
-            case var c when c.StartsWith("=="):
-                return currentVersion.ToString() == constraint.Substring(2);
-            case var c when c.StartsWith(">="):
-                if (Version.TryParse(constraint.Substring(2), out var minVersion))
-                    return currentVersion >= minVersion;
-                break;
-            case var c when c.StartsWith(">"):
-                if (Version.TryParse(constraint.Substring(1), out var minVersion2))
-                    return currentVersion > minVersion2;
-                break;
-            case var c when c.StartsWith("<="):
-                if (Version.TryParse(constraint.Substring(2), out var maxVersion))
-                    return currentVersion <= maxVersion;
-                break;
-            case var c when c.StartsWith("<"):
-                if (Version.TryParse(constraint.Substring(1), out var maxVersion2))
-                    return currentVersion < maxVersion2;
-                break;
-            default:
-                return System.Text.RegularExpressions.Regex.IsMatch(currentVersion.ToString(), constraint);
+            // if starts with >=, remove that
+            var lowerBound = support.LowerBound.StartsWith(">=") ? support.LowerBound[2..] : support.LowerBound;
+            if (Version.TryParse(lowerBound, out var lowerBoundVersion))
+            {
+                if (currentVersion < lowerBoundVersion)
+                    return false;
+            }
+            else { } // missing
         }
 
-        return false;
+        if (!string.IsNullOrEmpty(support.UpperBound))
+        {
+            // if starts with <=, remove that
+            var upperBound = support.UpperBound.StartsWith("<=") ? support.UpperBound[2..] : support.UpperBound;
+            if (Version.TryParse(upperBound, out var upperBoundVersion))
+            {
+                if (currentVersion > upperBoundVersion)
+                    return false;
+            }
+            else { } // missing
+        }
+
+        return true;
     }
 
     public bool IsCompatible(NetworkPluginVersion version, string appVersion, OperatingSystem os)
     {
-        return IsCompatible(Version.Parse(appVersion), version.AppVersion) && version.SupportedOperatingSystems.Contains(os);
+        return IsCompatible(Version.Parse(appVersion), version.AppVersion) 
+            && version.SupportedOperatingSystems.Contains(os) 
+            && version.SupportedRegions.Contains(
+                NetworkingSettings.Current?.CurrentApiServer?.Name == "China" ? Region.MainlandChina : Region.Global
+            );
     }
+}
+
+[Serializable]
+public class PluginVersionSupport
+{
+    public string? UpperBound { get; set; } = string.Empty;
+    public string? LowerBound { get; set; } = string.Empty;
 }
 
 [Serializable]
 public class NetworkPluginVersion
 {
     public string Version { get; set; } = string.Empty;
-    public string AppVersion { get; set; } = string.Empty;
+    public PluginVersionSupport AppVersion { get; set; } = new();
 
     public string Changelog { get; set; } = string.Empty;
     public string DllPath { get; set; } = string.Empty;
     
-    public List<string> Dependencies { get; set; } = new(); // Targets other Plugin.Id values
+    public List<PluginDependency> Dependencies { get; set; } = new();
     public List<OperatingSystem> SupportedOperatingSystems { get; set; } = new();
+    public List<Region> SupportedRegions { get; set; } = new();
     public Dictionary<Region, string> DownloadUrl { get; set; } = new();
 }

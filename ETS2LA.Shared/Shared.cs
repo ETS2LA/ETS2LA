@@ -165,6 +165,29 @@ public abstract class LibraryPlugin : ILibraryPlugin
     public abstract PluginInformation Info { get; }
 }
 
+
+/// <summary>
+///  Represents the supported version range of ETS2LA for a plugin.
+/// </summary>
+public class PluginVersionSupport
+{
+    public string? UpperBound { get; set; } = string.Empty;
+    public string? LowerBound { get; set; } = string.Empty;
+}
+
+/// <summary>
+///  Represents a dependency on another plugin. This is used to ensure that the 
+///  required plugins are loaded and enabled before enabling this plugin.
+/// </summary>
+[Serializable]
+public class PluginDependency
+{
+    public string Id { get; set; } = string.Empty;
+
+    // TODO: Use PluginVersionSupport on the service so we can replace this
+    public string? Version { get; set; } = string.Empty;
+}
+
 /// <summary>
 ///  Represents the basic information about a plugin.
 /// </summary>
@@ -184,7 +207,15 @@ public class PluginInformation
     ///  "1.*" -> any 1.x version <br/>
     ///  "<=1.2.3" -> any version up to and including 1.2.3 <br/>
     /// </summary>
+    [Obsolete("Use AppVersionSupport instead. This property will be removed in a future version.")]
     public string SupportedETS2LA { get; set; } = "*";
+
+    /// <summary>
+    ///  This property allows you to specify the supported version range of ETS2LA for your plugin.
+    ///  Usually you set a *lower bound* here, and only update the *upper bound* on the website when you
+    ///  release a new version of your plugin.
+    /// </summary>
+    public PluginVersionSupport AppVersionSupport { get; set; } = new PluginVersionSupport();
     
     /// <summary>
     ///  This is a URL to an icon. It's displayed as square thumbnails.
@@ -196,7 +227,15 @@ public class PluginInformation
     ///  enabled before enabling this plugin. <br/>If any of the required plugins are not found, this plugin will
     ///  not be loaded at all. Use another plugin's Id to reference it.
     /// </summary>
+    [Obsolete("Use DependsOn instead. This property will be removed in a future version.")]
     public List<string> Dependencies { get; set; } = new List<string>();
+
+    /// <summary>
+    ///  Select the plugins this one depends on. The backend will ensure these plugins are loaded and
+    ///  enabled before enabling this plugin. <br/>If any of the required plugins are not found,
+    ///  this plugin will not be loaded at all.
+    /// </summary>
+    public List<PluginDependency> DependsOn { get; set; } = new List<PluginDependency>();
 
     /// <summary>
     ///  Use commas to separate multiple authors.

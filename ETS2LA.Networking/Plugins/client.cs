@@ -18,6 +18,7 @@ namespace ETS2LA.Networking.Plugins;
 public class PluginApiClient
 {
     public List<NetworkPlugin> AvailablePlugins { get; private set; } = new List<NetworkPlugin>();
+    const string CurrentApiVersion = "v2";
 
     JsonSerializerOptions jsonOptions = new JsonSerializerOptions
     {
@@ -57,6 +58,7 @@ public class PluginApiClient
 
     public async Task FetchAvailablePluginsAsync()
     {
+        HttpResponseMessage? response = null;
         try
         {
             var apiServer = NetworkingSettings.Current.CurrentApiServer;
@@ -66,7 +68,7 @@ public class PluginApiClient
             }
 
             using var httpClient = new HttpClient();
-            var response = await httpClient.GetAsync($"{apiServer.Value.BaseUrl}/plugins");
+            response = await httpClient.GetAsync($"{apiServer.Value.BaseUrl}/plugins?version={CurrentApiVersion}");
             response.EnsureSuccessStatusCode();
 
             var jsonResponse = await response.Content.ReadAsStringAsync();
@@ -74,9 +76,13 @@ public class PluginApiClient
 
             Log(_n("Fetched {0} plugin from {1}", "Fetched {0} plugins from {1}", AvailablePlugins.Count, AvailablePlugins.Count, apiServer.Value.BaseUrl));
         }
-        catch
+        catch (Exception ex)
         {
-            Log(_("Failed to fetch available plugins. Please check your internet connection."), NotificationLevel.Danger);
+            Log(_("Failed to fetch available plugins. Please check your internet connection.") + $" {ex.Message}", NotificationLevel.Danger);
+            if (response != null)
+            {
+                Logger.Warn($"Content: {await response.Content.ReadAsStringAsync()}");
+            }
         }
     }
 
@@ -133,6 +139,12 @@ public class PluginApiClient
         }
         else
         {
+            if (plugin.Versions == null || plugin.Versions.Count == 0)
+            {
+                Log(_("No versions available for plugin with ID {0}.", pluginId), NotificationLevel.Warning);
+                return false;
+            }
+            
             targetVersion = plugin.Versions.FirstOrDefault(v => v.Version == version);
             if (targetVersion == null)
             {
@@ -147,9 +159,9 @@ public class PluginApiClient
         }
 
         // Downloading is done from whatever region the user is in
-        Region currentRegion = NetworkingSettings.Current.CurrentApiServer?.Name == "China" ? Region.China : Region.Global;
+        Region currentRegion = NetworkingSettings.Current.CurrentApiServer?.Name == "China" ? Region.MainlandChina : Region.Global;
         string downloadUrl = targetVersion.DownloadUrl.FirstOrDefault(d => d.Key == Region.Global).Value;
-        if (currentRegion == Region.China)
+        if (currentRegion == Region.MainlandChina)
             downloadUrl = downloadUrl.Replace("ets2la.com", "ets2la.cn");
 
         if (string.IsNullOrEmpty(downloadUrl))
@@ -161,13 +173,14 @@ public class PluginApiClient
         if (targetVersion.Dependencies.Count > 0)
         {
             bool allDependenciesInstalled = true;
-            foreach (var dependencyId in targetVersion.Dependencies)
+            foreach (var dependency in targetVersion.Dependencies)
             {
-                if (!InstalledPluginManifest.Current.InstalledPlugins.Any(p => p.Id == dependencyId))
+                // TODO: Check if the dependency is also of the correct version here! For now not necessary...
+                if (!InstalledPluginManifest.Current.InstalledPlugins.Any(p => p.Id == dependency.Id))
                 {
-                    if (!InstallPlugin(dependencyId))
+                    if (!InstallPlugin(dependency.Id, string.IsNullOrEmpty(dependency.Version) ? null : dependency.Version))
                     {
-                        Log(_("Failed to install dependency {0} for plugin {1}.", dependencyId, pluginId), NotificationLevel.Warning);
+                        Log(_("Failed to install dependency {0} for plugin {1}.", dependency.Id, pluginId), NotificationLevel.Warning);
                         allDependenciesInstalled = false;
                     }
                 }
@@ -267,7 +280,8 @@ public class PluginApiClient
         {
             // Scan for other plugins that depend on this one.
             var dependentPlugins = InstalledPluginManifest.Current.InstalledPlugins
-                .Where(p => p.Dependencies.Contains(installedPlugin.Value.Id));
+                .Where(p => p.Dependencies.Any(d => d.Id == pluginId))
+                .ToList();
             if (dependentPlugins.Any())
             {
                 string dependentPluginIds = string.Join(", ", dependentPlugins.Select(p => p.Id));

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-10-27 15:26:18+0200\n"
-"PO-Revision-Date: 2026-10-27 15:26:19+0200\n"
+"POT-Creation-Date: 2026-11-01 17:23:40+0200\n"
+"PO-Revision-Date: 2026-11-01 17:23:41+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -70,7 +70,7 @@ msgid_plural "Loaded {0} plugins from the Plugins folder."
 msgstr[0] ""
 msgstr[1] ""
 
-#: ../../../ETS2LA.Networking/Plugins/Client.cs:233
+#: ../../../ETS2LA.Networking/Plugins/client.cs:246
 #, csharp-format
 msgid "No update available for plugin with ID {0}."
 msgstr ""
@@ -423,12 +423,12 @@ msgstr ""
 msgid "Login Error"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Shared/Layouts/SettingsLayout.razor:54
-msgid "Check For Updates"
-msgstr ""
-
 #: ../../../ETS2LA.UI/Pages/Settings/SDK.razor:58
 msgid "The game has been added successfully."
+msgstr ""
+
+#: ../../../ETS2LA.UI/Shared/Layouts/SettingsLayout.razor:54
+msgid "Check For Updates"
 msgstr ""
 
 #: ../../../ETS2LA.Game/SDK/Semaphores.cs:146
@@ -465,8 +465,8 @@ msgstr ""
 msgid "Error in telemetry update loop."
 msgstr ""
 
-#: ../../../ETS2LA.Controls/Windows/SharpDXControlsBackend.cs:182
 #: ../../../ETS2LA.Controls/Linux/SDL3ControlsBackend.cs:172
+#: ../../../ETS2LA.Controls/Windows/SharpDXControlsBackend.cs:182
 #, csharp-format
 msgid "Updated bindings for control: {0} ({1}) to Device: {2}, Control: {3}"
 msgstr ""
@@ -695,8 +695,8 @@ msgstr ""
 msgid "Update to {0} from {1}"
 msgstr ""
 
-#: ../../../ETS2LA.Controls/Windows/SharpDXControlsBackend.cs:166
 #: ../../../ETS2LA.Controls/Linux/SDL3ControlsBackend.cs:156
+#: ../../../ETS2LA.Controls/Windows/SharpDXControlsBackend.cs:166
 #, csharp-format
 msgid "Unregistered control: {0} ({1})"
 msgstr ""
@@ -775,7 +775,7 @@ msgstr ""
 msgid "Speed Limit Warning"
 msgstr ""
 
-#: ../../../ETS2LA.Networking/Plugins/Client.cs:116
+#: ../../../ETS2LA.Networking/Plugins/client.cs:122
 #, csharp-format
 msgid "Plugin with ID {0} not found."
 msgstr ""
@@ -876,8 +876,8 @@ msgstr ""
 msgid "meters"
 msgstr ""
 
-#: ../../../ETS2LA.Networking/Plugins/Client.cs:104
-#: ../../../ETS2LA.Networking/Plugins/Client.cs:129
+#: ../../../ETS2LA.Networking/Plugins/client.cs:110
+#: ../../../ETS2LA.Networking/Plugins/client.cs:135
 #, csharp-format
 msgid "No valid versions found for plugin with ID {0}."
 msgstr ""
@@ -886,7 +886,7 @@ msgstr ""
 msgid "GitHub Sponsorship"
 msgstr ""
 
-#: ../../../ETS2LA.Networking/Plugins/Client.cs:225
+#: ../../../ETS2LA.Networking/Plugins/client.cs:238
 #, csharp-format
 msgid "Successfully installed plugin {0} ({1}, {2})"
 msgstr ""
@@ -943,8 +943,8 @@ msgstr ""
 msgid "Loading map data from '{0}'"
 msgstr ""
 
-#: ../../../ETS2LA.Controls/Windows/SharpDXControlsBackend.cs:152
 #: ../../../ETS2LA.Controls/Linux/SDL3ControlsBackend.cs:133
+#: ../../../ETS2LA.Controls/Windows/SharpDXControlsBackend.cs:152
 #, csharp-format
 msgid "Control with ID '{0}' not found for event unsubscription."
 msgstr ""
@@ -1083,7 +1083,7 @@ msgid ""
 "to be required for RusMap."
 msgstr ""
 
-#: ../../../ETS2LA.Networking/Plugins/Client.cs:290
+#: ../../../ETS2LA.Networking/Plugins/client.cs:304
 #, csharp-format
 msgid "Apparent plugin directory {0} does not exist."
 msgstr ""
@@ -1196,7 +1196,7 @@ msgid ""
 "community, we cannot guarantee their accuracy."
 msgstr ""
 
-#: ../../../ETS2LA.Networking/Plugins/Client.cs:274
+#: ../../../ETS2LA.Networking/Plugins/client.cs:288
 #, csharp-format
 msgid ""
 "Cannot uninstall plugin with ID {0} because the following installed plugins "
@@ -1355,7 +1355,7 @@ msgid_plural "Discovered {0} plugins in total."
 msgstr[0] ""
 msgstr[1] ""
 
-#: ../../../ETS2LA.Networking/Plugins/Client.cs:247
+#: ../../../ETS2LA.Networking/Plugins/client.cs:260
 #, csharp-format
 msgid "Failed to install latest version of plugin with ID {0}."
 msgstr ""
@@ -1386,7 +1386,7 @@ msgstr ""
 msgid "Failed to uninstall SDK version '{0}' from '{1}': {2}"
 msgstr ""
 
-#: ../../../ETS2LA.Networking/Plugins/Client.cs:157
+#: ../../../ETS2LA.Networking/Plugins/client.cs:169
 #, csharp-format
 msgid "No download URL found for plugin with ID {0} in region {1}."
 msgstr ""
@@ -1396,7 +1396,7 @@ msgstr ""
 msgid "High"
 msgstr ""
 
-#: ../../../ETS2LA.Networking/Plugins/Client.cs:262
+#: ../../../ETS2LA.Networking/Plugins/client.cs:275
 #, csharp-format
 msgid "Installed plugin with ID {0} not found."
 msgstr ""
@@ -1477,8 +1477,8 @@ msgstr ""
 msgid "Removing manually added installation at '{0}'"
 msgstr ""
 
-#: ../../../ETS2LA.Controls/Windows/SharpDXControlsBackend.cs:170
 #: ../../../ETS2LA.Controls/Linux/SDL3ControlsBackend.cs:149
+#: ../../../ETS2LA.Controls/Windows/SharpDXControlsBackend.cs:170
 #, csharp-format
 msgid "Control with ID '{0}' not found for unregistration."
 msgstr ""
@@ -1561,7 +1561,7 @@ msgstr ""
 msgid "View Public Telemetry"
 msgstr ""
 
-#: ../../../ETS2LA.Networking/Plugins/Client.cs:139
+#: ../../../ETS2LA.Networking/Plugins/client.cs:151
 #, csharp-format
 msgid "Version {0} not found for plugin with ID {1}."
 msgstr ""
@@ -1636,7 +1636,7 @@ msgstr ""
 msgid "Error in AR rendering: {0}"
 msgstr ""
 
-#: ../../../ETS2LA.Networking/Plugins/Client.cs:75
+#: ../../../ETS2LA.Networking/Plugins/client.cs:77
 #, csharp-format
 msgid "Fetched {0} plugin from {1}"
 msgid_plural "Fetched {0} plugins from {1}"
@@ -1784,7 +1784,7 @@ msgstr ""
 msgid "Speed limit changed"
 msgstr ""
 
-#: ../../../ETS2LA.Networking/Plugins/Client.cs:253
+#: ../../../ETS2LA.Networking/Plugins/client.cs:266
 #, csharp-format
 msgid "Successfully updated plugin with ID {0}."
 msgstr ""
@@ -1905,7 +1905,7 @@ msgstr ""
 msgid "Control with ID '{0}' not found for event subscription."
 msgstr ""
 
-#: ../../../ETS2LA.Backend/PluginHandler/Settings.cs:57
+#: ../../../ETS2LA.Backend/PluginHandler/Settings.cs:58
 #, csharp-format
 msgid "Plugin '{0}' is missing its DLL at '{1}' and has been removed."
 msgstr ""
@@ -2001,7 +2001,7 @@ msgid ""
 "plugins."
 msgstr ""
 
-#: ../../../ETS2LA.Networking/Plugins/Client.cs:170
+#: ../../../ETS2LA.Networking/Plugins/client.cs:183
 #, csharp-format
 msgid "Failed to install dependency {0} for plugin {1}."
 msgstr ""
@@ -2021,19 +2021,24 @@ msgstr ""
 msgid "Changed update source to '{0}'."
 msgstr ""
 
-#: ../../../ETS2LA.State/Units.cs:228
-#: ../../../ETS2LA.State/Units.cs:302
-msgid "K"
-msgstr ""
-
 #: ../../../ETS2LA.UI/Pages/Settings/Account/LoginFlow.razor:239
 msgid ""
 "You'll be asked to save an OTP authentication code after registration. We do "
 "not store or ask for passwords, as those aren't required for authentication."
 msgstr ""
 
+#: ../../../ETS2LA.State/Units.cs:228
+#: ../../../ETS2LA.State/Units.cs:302
+msgid "K"
+msgstr ""
+
 #: ../../../ETS2LA.UI/Pages/Onboarding/Steps/WelcomeStep.razor:73
 msgid "Next"
+msgstr ""
+
+#: ../../../ETS2LA.Networking/Plugins/client.cs:144
+#, csharp-format
+msgid "No versions available for plugin with ID {0}."
 msgstr ""
 
 #: ../../../ETS2LA.UI/Shared/Layouts/SettingsLayout.razor:27
@@ -2055,7 +2060,7 @@ msgstr ""
 msgid "Overlay is disabled in settings, skipping initialization."
 msgstr ""
 
-#: ../../../ETS2LA.Networking/Plugins/Client.cs:52
+#: ../../../ETS2LA.Networking/Plugins/client.cs:53
 msgid "Plugin Installer"
 msgstr ""
 
@@ -2067,7 +2072,7 @@ msgstr ""
 msgid "The selected game executable was not found."
 msgstr ""
 
-#: ../../../ETS2LA.Networking/Plugins/Client.cs:144
+#: ../../../ETS2LA.Networking/Plugins/client.cs:156
 #, csharp-format
 msgid ""
 "Version {0} of plugin with ID {1} is not compatible with the current "
@@ -2139,7 +2144,7 @@ msgstr ""
 msgid "Inner Exception: {0}"
 msgstr ""
 
-#: ../../../ETS2LA.Networking/Plugins/Client.cs:88
+#: ../../../ETS2LA.Networking/Plugins/client.cs:94
 #, csharp-format
 msgid "Plugin with ID {0} not found in available plugins."
 msgstr ""
@@ -2233,7 +2238,7 @@ msgstr ""
 msgid "Binding thread started with no control to bind."
 msgstr ""
 
-#: ../../../ETS2LA.Networking/Plugins/Client.cs:79
+#: ../../../ETS2LA.Networking/Plugins/client.cs:81
 msgid ""
 "Failed to fetch available plugins. Please check your internet connection."
 msgstr ""
@@ -2362,8 +2367,8 @@ msgid_plural "Discovered {0} manually installed libraries."
 msgstr[0] ""
 msgstr[1] ""
 
-#: ../../../ETS2LA.Controls/Windows/SharpDXControlsBackend.cs:186
 #: ../../../ETS2LA.Controls/Linux/SDL3ControlsBackend.cs:165
+#: ../../../ETS2LA.Controls/Windows/SharpDXControlsBackend.cs:186
 #, csharp-format
 msgid "Control with ID '{0}' not found for updating bindings."
 msgstr ""
@@ -2435,8 +2440,8 @@ msgstr ""
 msgid "Show Plugin Updates"
 msgstr ""
 
-#: ../../../ETS2LA.Controls/Windows/SharpDXControlsBackend.cs:201
 #: ../../../ETS2LA.Controls/Linux/SDL3ControlsBackend.cs:180
+#: ../../../ETS2LA.Controls/Windows/SharpDXControlsBackend.cs:201
 #, csharp-format
 msgid "Control with ID '{0}' not found for updating axis behavior."
 msgstr ""
@@ -2533,8 +2538,8 @@ msgstr ""
 msgid "m/s"
 msgstr ""
 
-#: ../../../ETS2LA.Controls/Windows/SharpDXControlsBackend.cs:197
 #: ../../../ETS2LA.Controls/Linux/SDL3ControlsBackend.cs:186
+#: ../../../ETS2LA.Controls/Windows/SharpDXControlsBackend.cs:197
 #, csharp-format
 msgid "Updated axis behavior for control: {0} ({1}) to {2}"
 msgstr ""
@@ -2634,7 +2639,7 @@ msgstr ""
 msgid "Display Language"
 msgstr ""
 
-#: ../../../ETS2LA.Networking/Plugins/Client.cs:300
+#: ../../../ETS2LA.Networking/Plugins/client.cs:314
 #, csharp-format
 msgid "Successfully uninstalled plugin with ID {0}."
 msgstr ""
@@ -2665,7 +2670,7 @@ msgstr ""
 msgid "Unchanged / Unavailable"
 msgstr ""
 
-#: ../../../ETS2LA.Networking/Plugins/Client.cs:240
+#: ../../../ETS2LA.Networking/Plugins/client.cs:253
 #, csharp-format
 msgid "Failed to uninstall current version of plugin with ID {0}."
 msgstr ""
@@ -2742,7 +2747,7 @@ msgstr ""
 msgid "Limit Overlay Framerate"
 msgstr ""
 
-#: ../../../ETS2LA.Networking/Plugins/Client.cs:177
+#: ../../../ETS2LA.Networking/Plugins/client.cs:190
 #, csharp-format
 msgid "Not all dependencies for plugin {0} are installed."
 msgstr ""
@@ -2881,7 +2886,7 @@ msgid ""
 "closed</span>. You can start the game after completing the onboarding process."
 msgstr ""
 
-#: ../../../ETS2LA.Networking/Plugins/Client.cs:190
+#: ../../../ETS2LA.Networking/Plugins/client.cs:203
 #, csharp-format
 msgid "Failed to download plugin with ID {0} from {1}. Status code: {2}"
 msgstr ""

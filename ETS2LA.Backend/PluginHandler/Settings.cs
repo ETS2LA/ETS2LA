@@ -1,6 +1,7 @@
 using ETS2LA.Settings;
 using ETS2LA.Logging;
 using static ETS2LA.Translations.T;
+using ETS2LA.Shared;
 
 namespace ETS2LA.Backend.Plugins;
 
@@ -17,7 +18,7 @@ public struct InstalledPlugin
     public string Id { get; set; }
     public string Version { get; set; }
     public string DllPath { get; set; }
-    public List<string> Dependencies { get; set; }
+    public List<PluginDependency> Dependencies { get; set; }
     public PluginType Type { get; set; }
 }
 
