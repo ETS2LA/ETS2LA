@@ -2,8 +2,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-11-01 17:28:26+0200\n"
-"PO-Revision-Date: 2026-10-27 15:46+0000\n"
+"POT-Creation-Date: 2026-11-01 20:58:14+0200\n"
+"PO-Revision-Date: 2026-11-01 18:59+0000\n"
 "Last-Translator: Lun <lun@ets2la.com>\n"
 "Language-Team: Chinese (Traditional Han script) <http://weblate.ets2la.com/"
 "projects/ets2la/ets2la/zh_Hant/>\n"
@@ -207,6 +207,10 @@ msgstr "示範視窗"
 msgid "Installing..."
 msgstr "安裝中..."
 
+#, csharp-format
+msgid "Legacy audio path detected: {0}"
+msgstr ""
+
 msgid ""
 "Adjust the distance ETS2LA will try to maintain from the vehicle in front of "
 "you when using Adaptive Cruise Control."
@@ -299,6 +303,9 @@ msgstr "正在解析區塊 {0}/{1}..."
 
 msgid "Initializing GLFW..."
 msgstr "正在初始化 GLFW..."
+
+msgid "Audio Settings"
+msgstr ""
 
 msgid "Anonymous Telemetry"
 msgstr "匿名遙測"
@@ -564,6 +571,9 @@ msgstr ""
 "你的系統記憶體少於 20GB。資料精細度設為「極高」時會使用大量記憶體，可能導致系"
 "統不穩定。請選擇較低的資料精細度。"
 
+msgid "No audio output device available"
+msgstr ""
+
 msgid "This game was found at"
 msgstr "此遊戲位於"
 
@@ -592,6 +602,10 @@ msgstr "還沒有帳號嗎？<br/>立即註冊新帳號，無需提供電子郵�
 
 msgid "Failed to initialize SDL3 input backend."
 msgstr "SDL3 輸入後端初始化失敗。"
+
+#, csharp-format
+msgid "Invalid audio job: {0}, does the file exist?"
+msgstr ""
 
 msgid "No release notes available."
 msgstr "沒有可用的版本說明。"
@@ -1049,6 +1063,9 @@ msgid ""
 "available to ETS2LA."
 msgstr "解析仍會繼續，但此檔案中的資訊將無法供 ETS2LA 使用。"
 
+msgid "All driving assists have been disabled."
+msgstr ""
+
 #, csharp-format
 msgid "Error playing audio file {0}: {1}"
 msgstr "播放音訊檔案 {0} 時發生錯誤：{1}"
@@ -1172,6 +1189,9 @@ msgstr "聊天機器人"
 
 msgid "Normal"
 msgstr "標準"
+
+msgid "Assists Enabled"
+msgstr ""
 
 #, csharp-format
 msgid "Removing manually added installation at '{0}'"
@@ -1343,6 +1363,9 @@ msgstr ""
 
 msgid "Continue"
 msgstr "繼續"
+
+msgid "All driving assists have been enabled."
+msgstr ""
 
 msgid "Window Zoom"
 msgstr "視窗縮放"
@@ -1521,6 +1544,9 @@ msgstr "ImGui GLFW 實作初始化失敗"
 msgid "Control with ID '{0}' not found for event subscription."
 msgstr "訂閱事件時找不到 ID 為「{0}」的控制項。"
 
+msgid "Assists Disabled"
+msgstr ""
+
 #, csharp-format
 msgid "Plugin '{0}' is missing its DLL at '{1}' and has been removed."
 msgstr "插件「{0}」在「{1}」找不到 DLL，已將該插件移除。"
@@ -1628,7 +1654,7 @@ msgstr "下一步"
 
 #, csharp-format
 msgid "No versions available for plugin with ID {0}."
-msgstr ""
+msgstr "ID 為 {0} 的插件沒有可用版本。"
 
 msgid "Driving"
 msgstr "駕駛"
@@ -1749,18 +1775,14 @@ msgstr "使用者名稱最多只能包含 {0} 個字元。"
 msgid "Enable Memory Output for Pedals"
 msgstr "啟用踏板記憶體輸出"
 
-msgid "kilometers per hour"
-msgstr "公里每小時"
-
 msgid ""
 "User folder paths are hidden automatically. Review the log for other "
 "personal information before sending."
 msgstr ""
 "使用者資料夾路徑會自動隱藏。傳送前，請先檢查日誌中是否包含其他個人資料。"
 
-#, csharp-format
-msgid "Playing sound: {0}"
-msgstr "正在播放音效：{0}"
+msgid "kilometers per hour"
+msgstr "公里每小時"
 
 #, csharp-format
 msgid "Enabled plugin: [bold]{0}[/]"
@@ -1892,6 +1914,9 @@ msgstr[0] "發現 {0} 個手動安裝的函式庫。"
 msgid "Control with ID '{0}' not found for updating bindings."
 msgstr "更新綁定時找不到 ID 為「{0}」的控制項。"
 
+msgid "Test Audio"
+msgstr ""
+
 msgid "Near"
 msgstr "近"
 
@@ -1980,6 +2005,12 @@ msgid ""
 "An error occurred while trying to remove your account. Please try again "
 "later. Error: "
 msgstr "嘗試刪除帳號時發生錯誤。請稍後再試。錯誤： "
+
+#, csharp-format
+msgid ""
+"Target speed changed. Current speedlimit: {0} {1}. Offsets are carried over "
+"on speedlimit change."
+msgstr ""
 
 msgid "Like ETS2LA?"
 msgstr "喜歡 ETS2LA 嗎？"
@@ -2355,6 +2386,10 @@ msgid ""
 "Adjust how quickly ETS2LA will respond to desired changes in acceleration. "
 "Emergency braking is not affected."
 msgstr "調整 ETS2LA 對目標加速度變化的反應速度。緊急煞車不受此設定影響。"
+
+#, csharp-format
+#~ msgid "Playing sound: {0}"
+#~ msgstr "正在播放音效：{0}"
 
 #, csharp-format
 #~ msgid ""

@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-11-01 17:28:26+0200\n"
+"POT-Creation-Date: 2026-11-01 20:58:14+0200\n"
 "PO-Revision-Date: 2026-10-20 09:37+0000\n"
 "Last-Translator: Pastel <pastel@ets2la.com>\n"
 "Language-Team: Japanese <http://weblate.ets2la.com/projects/ets2la/ets2la/ja/"
@@ -216,6 +216,10 @@ msgstr "デモウィンドウ"
 msgid "Installing..."
 msgstr "インストール中..."
 
+#, csharp-format
+msgid "Legacy audio path detected: {0}"
+msgstr ""
+
 msgid ""
 "Adjust the distance ETS2LA will try to maintain from the vehicle in front of "
 "you when using Adaptive Cruise Control."
@@ -319,6 +323,9 @@ msgstr "{1}のセクター{0}を解析中..."
 
 msgid "Initializing GLFW..."
 msgstr "GLFWの初期化中..."
+
+msgid "Audio Settings"
+msgstr ""
 
 msgid "Anonymous Telemetry"
 msgstr "匿名テレメトリ"
@@ -600,6 +607,9 @@ msgstr ""
 "用するため、システムの動作が不安定になる可能性があります。より低い精度を選択"
 "してください。"
 
+msgid "No audio output device available"
+msgstr ""
+
 msgid "This game was found at"
 msgstr "このゲームが見つかった場所"
 
@@ -629,6 +639,10 @@ msgstr ""
 
 msgid "Failed to initialize SDL3 input backend."
 msgstr "SDL3の入力バックエンドの初期化に失敗しました。"
+
+#, csharp-format
+msgid "Invalid audio job: {0}, does the file exist?"
+msgstr ""
 
 msgid "No release notes available."
 msgstr "リリースノートはありません。"
@@ -1104,6 +1118,9 @@ msgid ""
 msgstr ""
 "解析は続行されますが、このファイルに含まれる情報はETS2LAでは利用できません。"
 
+msgid "All driving assists have been disabled."
+msgstr ""
+
 #, csharp-format
 msgid "Error playing audio file {0}: {1}"
 msgstr "オーディオファイル {0} の再生中にエラーが発生しました: {1}"
@@ -1231,6 +1248,9 @@ msgstr ""
 
 msgid "Normal"
 msgstr "標準"
+
+msgid "Assists Enabled"
+msgstr ""
 
 #, csharp-format
 msgid "Removing manually added installation at '{0}'"
@@ -1405,6 +1425,9 @@ msgstr ""
 
 msgid "Continue"
 msgstr "続ける"
+
+msgid "All driving assists have been enabled."
+msgstr ""
 
 msgid "Window Zoom"
 msgstr "ウィンドウのズーム"
@@ -1592,6 +1615,9 @@ msgstr "ImGui Impl GLFW の初期化に失敗しました"
 #, csharp-format
 msgid "Control with ID '{0}' not found for event subscription."
 msgstr "イベント登録対象のID「{0}」の操作が見つかりません。"
+
+msgid "Assists Disabled"
+msgstr ""
 
 #, csharp-format
 msgid "Plugin '{0}' is missing its DLL at '{1}' and has been removed."
@@ -1835,17 +1861,13 @@ msgstr ""
 msgid "Enable Memory Output for Pedals"
 msgstr ""
 
-msgid "kilometers per hour"
-msgstr "キロメートル毎時"
-
 msgid ""
 "User folder paths are hidden automatically. Review the log for other "
 "personal information before sending."
 msgstr ""
 
-#, csharp-format
-msgid "Playing sound: {0}"
-msgstr "音声を再生: {0}"
+msgid "kilometers per hour"
+msgstr "キロメートル毎時"
 
 #, csharp-format
 msgid "Enabled plugin: [bold]{0}[/]"
@@ -1977,6 +1999,9 @@ msgstr[0] "手動でインストールされたライブラリを {0} 件検出�
 msgid "Control with ID '{0}' not found for updating bindings."
 msgstr "割り当ての更新に必要な、ID「{0}」のコントロールが見つかりません。"
 
+msgid "Test Audio"
+msgstr ""
+
 msgid "Near"
 msgstr "近い"
 
@@ -2068,6 +2093,12 @@ msgstr "常に最前面に表示"
 msgid ""
 "An error occurred while trying to remove your account. Please try again "
 "later. Error: "
+msgstr ""
+
+#, csharp-format
+msgid ""
+"Target speed changed. Current speedlimit: {0} {1}. Offsets are carried over "
+"on speedlimit change."
 msgstr ""
 
 msgid "Like ETS2LA?"
@@ -2462,6 +2493,10 @@ msgid ""
 msgstr ""
 "ETS2LAが加速の目標変更にどれだけ速く反応するかを調整します。緊急ブレーキには"
 "影響しません。"
+
+#, csharp-format
+#~ msgid "Playing sound: {0}"
+#~ msgstr "音声を再生: {0}"
 
 #, csharp-format
 #~ msgid ""

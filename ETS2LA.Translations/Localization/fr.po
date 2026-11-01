@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-11-01 17:28:26+0200\n"
+"POT-Creation-Date: 2026-11-01 20:58:14+0200\n"
 "PO-Revision-Date: 2026-10-15 20:45+0000\n"
 "Last-Translator: Hugo <hugo@ets2la.com>\n"
 "Language-Team: French <http://weblate.ets2la.com/projects/ets2la/ets2la/fr/"
@@ -213,6 +213,10 @@ msgstr "Fenêtre de démonstration"
 msgid "Installing..."
 msgstr "Installation en cours..."
 
+#, csharp-format
+msgid "Legacy audio path detected: {0}"
+msgstr ""
+
 msgid ""
 "Adjust the distance ETS2LA will try to maintain from the vehicle in front of "
 "you when using Adaptive Cruise Control."
@@ -314,6 +318,9 @@ msgstr "Analyse du secteur {0} sur {1}..."
 
 msgid "Initializing GLFW..."
 msgstr "Initialisation de GLFW..."
+
+msgid "Audio Settings"
+msgstr ""
 
 msgid "Anonymous Telemetry"
 msgstr "Télémétrie anonyme"
@@ -600,6 +607,9 @@ msgstr ""
 "extrême consomme une quantité importante de RAM et peut rendre votre système "
 "instable. Veuillez sélectionner un niveau de fidélité inférieur."
 
+msgid "No audio output device available"
+msgstr ""
+
 msgid "This game was found at"
 msgstr "Ce jeu a été trouvé à"
 
@@ -630,6 +640,10 @@ msgstr ""
 
 msgid "Failed to initialize SDL3 input backend."
 msgstr "Échec de l'initialisation du backend d'entrée SDL3."
+
+#, csharp-format
+msgid "Invalid audio job: {0}, does the file exist?"
+msgstr ""
 
 msgid "No release notes available."
 msgstr "Aucune note de version disponible."
@@ -1107,6 +1121,9 @@ msgstr ""
 "L'analyse se poursuivra, mais les informations contenues dans ce fichier ne "
 "seront pas disponibles pour ETS2LA."
 
+msgid "All driving assists have been disabled."
+msgstr ""
+
 #, csharp-format
 msgid "Error playing audio file {0}: {1}"
 msgstr "Erreur lors de la lecture du fichier audio {0} : {1}"
@@ -1237,6 +1254,9 @@ msgstr ""
 
 msgid "Normal"
 msgstr "Normal"
+
+msgid "Assists Enabled"
+msgstr ""
 
 #, csharp-format
 msgid "Removing manually added installation at '{0}'"
@@ -1410,6 +1430,9 @@ msgstr ""
 
 msgid "Continue"
 msgstr "Continuer"
+
+msgid "All driving assists have been enabled."
+msgstr ""
 
 msgid "Window Zoom"
 msgstr "Zoom de la fenêtre"
@@ -1601,6 +1624,9 @@ msgstr "Échec de l'initialisation de ImGui Impl GLFW"
 msgid "Control with ID '{0}' not found for event subscription."
 msgstr ""
 "Commande avec l'ID « {0} » introuvable pour l'abonnement à l'événement."
+
+msgid "Assists Disabled"
+msgstr ""
 
 #, csharp-format
 msgid "Plugin '{0}' is missing its DLL at '{1}' and has been removed."
@@ -1845,17 +1871,13 @@ msgstr ""
 msgid "Enable Memory Output for Pedals"
 msgstr ""
 
-msgid "kilometers per hour"
-msgstr "kilomètres par heure"
-
 msgid ""
 "User folder paths are hidden automatically. Review the log for other "
 "personal information before sending."
 msgstr ""
 
-#, csharp-format
-msgid "Playing sound: {0}"
-msgstr "Lecture du son : {0}"
+msgid "kilometers per hour"
+msgstr "kilomètres par heure"
 
 #, csharp-format
 msgid "Enabled plugin: [bold]{0}[/]"
@@ -1990,6 +2012,9 @@ msgid "Control with ID '{0}' not found for updating bindings."
 msgstr ""
 "Commande avec l'ID « {0} » introuvable pour la mise à jour des associations."
 
+msgid "Test Audio"
+msgstr ""
+
 msgid "Near"
 msgstr "Proche"
 
@@ -2086,6 +2111,12 @@ msgstr "Rester au-dessus"
 msgid ""
 "An error occurred while trying to remove your account. Please try again "
 "later. Error: "
+msgstr ""
+
+#, csharp-format
+msgid ""
+"Target speed changed. Current speedlimit: {0} {1}. Offsets are carried over "
+"on speedlimit change."
 msgstr ""
 
 msgid "Like ETS2LA?"
@@ -2478,6 +2509,10 @@ msgid ""
 msgstr ""
 "Ajuste la vitesse à laquelle ETS2LA répondra aux changements d'accélération "
 "souhaités. Le freinage d'urgence n'est pas affecté."
+
+#, csharp-format
+#~ msgid "Playing sound: {0}"
+#~ msgstr "Lecture du son : {0}"
 
 #~ msgid "Warnings & Overrides"
 #~ msgstr "Avertissements et forçages"
