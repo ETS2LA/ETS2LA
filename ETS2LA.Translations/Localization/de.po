@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-10-27 15:26:18+0200\n"
+"POT-Creation-Date: 2026-11-01 17:28:26+0200\n"
 "PO-Revision-Date: 2026-09-19 12:33+0000\n"
 "Last-Translator: ABOY <aboy@ets2la.com>\n"
 "Language-Team: German <http://weblate.ets2la.com/projects/ets2la/ets2la/de/"
@@ -1687,6 +1687,10 @@ msgstr ""
 #, fuzzy
 msgid "Next"
 msgstr "Nächste"
+
+#, csharp-format
+msgid "No versions available for plugin with ID {0}."
+msgstr ""
 
 msgid "Driving"
 msgstr "Fahren"
