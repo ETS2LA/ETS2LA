@@ -14,6 +14,10 @@
   },
   "scripts": {
     "dev:css": "bun x @tailwindcss/cli -i ./wwwroot/css/input.css -o ./wwwroot/css/app.css --watch",
-    "build:css": "bun x @tailwindcss/cli -i ./wwwroot/css/input.css -o ./wwwroot/css/app.css --minify"
+    "build:css": "bun x @tailwindcss/cli -i ./wwwroot/css/input.css -o ./wwwroot/css/app.css --minify",
+    "build:js": "bun build ./js/paddle.ts --outfile ./wwwroot/js/paddle.js --target browser --minify"
+  },
+  "dependencies": {
+    "@paddle/paddle-js": "^1.6.5"
   }
 }

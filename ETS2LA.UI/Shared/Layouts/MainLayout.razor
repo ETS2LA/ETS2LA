@@ -8,11 +8,7 @@
 
 @code {
   string currentVersion = "v" + System.Reflection.Assembly.GetEntryAssembly()?.GetName().Version?.ToString(3) ?? "unknown";
-  string subtitle = NetworkingSettings.Current.CurrentUser != null 
-                    ? NetworkingSettings.Current.CurrentUser.Role != Networking.Users.UserRole.User 
-                      ? NetworkingSettings.Current.CurrentUser.Role.ToString() 
-                      : "" 
-                    : "";
+  string subtitle => GetSubtitle();
 
   private ElementReference scrollArea;
   private ElementReference bottomButtons;
@@ -21,7 +17,7 @@
   {
     base.OnInitialized();
     WindowState.Current.NeedsFullReload += (sender, e) => {
-        InvokeAsync(StateHasChanged); 
+      InvokeAsync(StateHasChanged); 
     };
   }
 
@@ -31,6 +27,35 @@
     {
       await JS.InvokeVoidAsync("initScrollDivider", scrollArea, bottomButtons);
     }
+  }
+
+  private string GetSubtitle()
+  {
+    if (NetworkingSettings.Current.CurrentUser == null)
+      return "";
+
+    if (NetworkingSettings.Current.CurrentUser.Paddle != null)
+    {
+      Logger.Info($"CurrentUser.Paddle.CustomerId: {NetworkingSettings.Current.CurrentUser.Paddle.CustomerId}");
+      var subscription = NetworkingSettings.Current.CurrentUser.Paddle.Subscriptions.FirstOrDefault(s => s.SubscriptionStatus == Networking.Users.SubscriptionStatus.Trialing 
+                                                                                                                                || s.SubscriptionStatus == Networking.Users.SubscriptionStatus.Active);
+      Logger.Info($"CurrentUser.Paddle.Subscription: {subscription?.SubscriptionId}, Status: {subscription?.SubscriptionStatus.ToString()}");
+      if (subscription != null)
+      {
+        switch (subscription.SubscriptionStatus)
+        {
+          case Networking.Users.SubscriptionStatus.Trialing:
+            return _("Trial");
+          case Networking.Users.SubscriptionStatus.Active:
+            return _("Subscriber");
+        }
+      }
+    }
+
+    if (NetworkingSettings.Current.CurrentUser.Role != Networking.Users.UserRole.User)
+      return NetworkingSettings.Current.CurrentUser.Role.ToString();
+
+    return "";
   }
 }
 

@@ -1,0 +1,230 @@
+@page "/subscription/pricing"
+@layout Shared.Layouts.MainLayout
+@using ETS2LA.UI.Shared.Components
+@using ETS2LA.Logging
+@using ETS2LA.Networking.Settings
+@using ETS2LA.Networking
+@using ETS2LA.Notifications
+@using System.Text.Json
+@inject IJSRuntime JS
+
+@code {
+    bool IS_SUBSCRIBER => NetworkingSettings.Current.CurrentUser?.Paddle?.Subscriptions.Any(s => s.SubscriptionStatus == Networking.Users.SubscriptionStatus.Trialing 
+                                                                                                           || s.SubscriptionStatus == Networking.Users.SubscriptionStatus.Active) ?? false;
+
+    // TODO: test_ token for sandbox, live_ token for prod.
+    const string PADDLE_TOKEN = "test_577cb222d711527ea686ab754a6";
+
+    private const string MONTHLY_PRICE_ID = "pri_01m4x7wjhmgcvn2tag5a2c0htf";
+    private const string YEARLY_PRICE_ID = "pri_01m6evvtnsta1y0tka1s998mr0";
+
+    private static readonly string[] PriceIds = { MONTHLY_PRICE_ID, YEARLY_PRICE_ID };
+
+    private bool _initialized;
+    private bool _loading = true;
+    private string? _error;
+    private List<PaddleLineItem> _items = new();
+
+    private DotNetObjectReference<Pricing>? _selfReference;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (!firstRender)
+            return;
+
+        _selfReference = DotNetObjectReference.Create(this);
+
+        // Paddle.js needs to be told to use the sandbox environment when running
+        // a debug build, otherwise it defaults to production.
+        #if DEBUG
+            string environment = "sandbox";
+        #else
+            string environment = "production";
+        #endif
+
+        try
+        {
+            _initialized = await JS.InvokeAsync<bool>("paddleInit", PADDLE_TOKEN, environment, _selfReference);
+            if (!_initialized)
+            {
+                _error = _("Failed to initialize Paddle.");
+                _loading = false;
+                StateHasChanged();
+                return;
+            }
+
+            await LoadPricePreview();
+        }
+        catch (Exception ex)
+        {
+            Logger.Error($"Failed to initialize Paddle: {ex.Message}");
+            _error = ex.Message;
+            _loading = false;
+            StateHasChanged();
+        }
+    }
+
+    private async Task LoadPricePreview()
+    {
+        _loading = true;
+        StateHasChanged();
+
+        try
+        {
+            var response = await JS.InvokeAsync<PaddlePricePreviewResponse?>("paddlePricePreview", (object)PriceIds);
+            _items = response?.Data?.Details?.LineItems ?? new List<PaddleLineItem>();
+
+            if (_items.Count == 0)
+                _error = _("No prices are currently available.");
+        }
+        catch (Exception ex)
+        {
+            Logger.Error($"Failed to load Paddle price preview: {ex.Message}");
+            _error = ex.Message;
+        }
+        finally
+        {
+            _loading = false;
+            StateHasChanged();
+        }
+    }
+
+    private async Task Subscribe(PaddleLineItem item)
+    {
+        if (item.Price == null)
+            return;
+
+        try
+        {
+            string? customerId = NetworkingSettings.Current.CurrentUser?.Paddle?.CustomerId;
+            string? userId = NetworkingSettings.Current.CurrentUser?.Id.ToString();
+            await JS.InvokeVoidAsync("paddleCheckoutOpen", new[] { item.Price.Id }, userId, customerId);
+        }
+        catch (Exception ex)
+        {
+            Logger.Error($"Failed to open Paddle checkout: {ex.Message}");
+        }
+    }
+
+    [JSInvokable]
+    public void OnPaddleEvent(JsonElement eventData)
+    {
+        if (eventData.TryGetProperty("name", out var nameProperty) && nameProperty.GetString() == "checkout.completed")
+        {
+            Logger.Info("Paddle checkout completed successfully.");
+            NotificationHandler.Current.SendNotification(new Notifications.Notification
+            {
+                Id = Guid.NewGuid().ToString(),
+                Title = _("Subscription Successful"),
+                Content = _("Thank you for subscribing! Your subscription has been activated. Please restart ETS2LA to ensure your subscription is recognized."),
+                Level = NotificationLevel.Success
+            });
+
+            var data = eventData.GetProperty("data");
+
+            var user = NetworkingSettings.Current.CurrentUser;
+            if (user == null) return;
+            user.Paddle = new Networking.Users.PaddleCustomer {
+                CustomerId = eventData.GetProperty("data").GetProperty("customer").GetProperty("id").GetString() ?? string.Empty
+            };
+            NetworkingSettings.Current.Save();
+
+            // Some delay here to let the backend do it's thing.
+            Task.Run(async () =>
+            {
+                await Task.Delay(2000);
+                NetworkingClient.Current.RefreshUserInfo();
+                await Task.Delay(500);
+                await JS.InvokeVoidAsync("location.reload");
+            });
+        }
+    }
+
+    private string BillingCycleText(PaddleLineItem item)
+    {
+        var cycle = item.Price?.BillingCycle;
+        if (cycle == null)
+            return _("One time payment");
+
+        return cycle.Interval switch
+        {
+            "day" => _("Billed daily"),
+            "week" => _("Billed weekly"),
+            "month" => _("Billed monthly"),
+            "year" => _("Billed yearly"),
+            _ => _("Billed every {0} {1}", cycle.Frequency, cycle.Interval)
+        };
+    }
+
+    public void Dispose()
+    {
+        _selfReference?.Dispose();
+    }
+
+    private void OpenPaddleCustomerPortal()
+    {
+        UserInterfaceUtils.OpenUrl("https://my.paddle.com/customer/account/login");
+    }
+}
+
+<div class="flex flex-col w-full p-5 px-8 gap-3">
+
+    @if (IS_SUBSCRIBER)
+    {
+        <p class="description mt-2">@_("You are currently a subscriber. Thank you for your support!")</p>
+        <p class="description text-text-l">@_("If you wish to manage your subscription, please visit the Paddle customer portal.")</p>
+        <button class="button mt-2" @onclick="OpenPaddleCustomerPortal">@(_("Manage Subscription"))</button>
+    }
+    else
+    {
+        @if (_loading)
+        {
+            <p class="description mt-2">@_("Loading prices...")</p>
+        }
+        else if (_error != null)
+        {
+            <p class="description mt-2 text-red-400">@_error</p>
+        }
+        else
+        {
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2">
+                @foreach (var (item, index) in _items.Select((value, i) => (value, i)))
+                {
+                    <Card Title="@item.Price?.Name">
+                        <div class="flex flex-col gap-2">
+                            <div class="flex flex-row gap-2 items-baseline">
+                                <p class="text-2xl font-bold">@item.FormattedTotals?.Total</p>
+                                @if (item.FormattedTotals?.Tax != null && item.FormattedTotals?.Tax != "0.00")
+                                {
+                                    <p class="description">@_("incl. tax: {0}", item.FormattedTotals?.Tax)</p>
+                                }
+                            </div>
+                            <p class="description text-text-l">@BillingCycleText(item)</p>
+                            <button class="button w-full!" @onclick="() => Subscribe(item)">@_("Subscribe")</button>
+                        </div>
+                    </Card>
+                }
+            </div>
+            <p class="description ml-4">@((MarkupString)_("All our subscriptions start off with a 3 day free trial.<br/><span class=\"text-text-l\">Remember to cancel if you so wish!</span>"))</p>
+            <p class="description ml-4">@((MarkupString)_("Think the pricing is too high? We can adjust the pricing for your country.<br/><span class=\"text-text-l\">Contact us to update your pricing!</span>"))</p>
+        }
+
+        <div class="flex gap-8 mt-8">
+            <Card Title=@_("Current features available to subscribers:") Class="h-full">
+                <ul class="list-disc list-inside">
+                    <li class="description">@_("Upload Virtual Dashcam recordings and share links with other users / moderators of multiplayer mods.")</li>
+                    <li class="description">@_("Cloud settings saving and loading.")</li>
+                </ul>
+            </Card>
+            <Card Title=@_("Upcoming features for subscribers:") Class="h-full">
+                <ul class="list-disc list-inside">
+                    <li class="description">@_("Profile customisation visible in multiplayer mods and ETS2LA's map.")</li>
+                    <li class="description">@_("Ability to monitor ETS2LA and drive from anywhere in the world.")</li>
+                    <li class="description">@_("Access to the global ETS2LA web API for 3rd party applications.")</li>
+                    <li class="description">@_("Traffic information on ETS2LA's internal map.")</li>
+                    <li class="description">@_("Custom dashboard visualization for phones/tablets.")</li>
+                </ul>
+            </Card>
+        </div>
+    }
+</div>

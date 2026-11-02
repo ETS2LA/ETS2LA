@@ -148,6 +148,11 @@
             Logger.Error($"Failed to copy JWT token to clipboard: {ex.Message}");
         }
     }
+
+    private void OpenSubscriptionPage()
+    {
+        Navigation.NavigateTo("/subscription/pricing");
+    }
 }
 
 <div class="flex flex-col w-full p-5 px-8 gap-3">
@@ -155,7 +160,9 @@
     {
         <p class="description">@((MarkupString)_("You are currently logged in as <span class=\"text-text-l\">{0}</span>. [{1}]", CurrentUser.Username, CurrentUser.Role.ToString()))</p>
         <p class="description">@((MarkupString)_("Your token will expire on <span class=\"text-text-l\">{0}</span>, you'll be asked to login again then.", CurrentUser.Expiry.ToLocalTime().ToString("f")))</p>
-        <button class="button mt-2" @onclick="() => WantsToRemoveAccount = true">@(_("Remove Account"))</button>
+        
+        <button class="button button-accent mt-2" @onclick="OpenSubscriptionPage">@(_("ETS2LA Subscription"))</button>
+        <button class="button" @onclick="() => WantsToRemoveAccount = true">@(_("Remove Account"))</button>
         <button class="button" @onclick="Logout">@(_("Logout"))</button>
 
         <p class="description mt-4">@((MarkupString)_("Some 3rd party websites might want access to your account.<br/>You can press the button below to display your JWT token."))</p>

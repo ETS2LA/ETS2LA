@@ -38,6 +38,7 @@
   <Target Name="BuildTailwind" BeforeTargets="Build">
     <Exec Command="bun install" />
     <Exec Command="bun run build:css" />
+    <Exec Command="bun run build:js" />
     <Message Text="Tailwind CSS build completed." Importance="high" />
   </Target>
 

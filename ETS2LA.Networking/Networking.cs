@@ -41,6 +41,11 @@ public class NetworkingClient
         News.FetchAvailableNewsAsync();
 
         // Update user info on startup, basically check if the token is up to date.
+        RefreshUserInfo();
+    }
+
+    public void RefreshUserInfo()
+    {
         Task.Run(async () =>
         {
             try
