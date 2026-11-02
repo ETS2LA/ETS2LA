@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
 "POT-Creation-Date: 2026-11-01 23:03:06+0200\n"
-"PO-Revision-Date: 2026-10-27 15:29+0000\n"
-"Last-Translator: BGYdook <bgydook@ets2la.com>\n"
+"PO-Revision-Date: 2026-11-02 20:26+0000\n"
+"Last-Translator: goodnightan <goodnightan@ets2la.com>\n"
 "Language-Team: Chinese (Simplified Han script) <http://weblate.ets2la.com/"
 "projects/ets2la/ets2la/zh_Hans/>\n"
 "Language: zh_Hans\n"
@@ -213,7 +213,7 @@ msgstr "安装中..."
 
 #, csharp-format
 msgid "Legacy audio path detected: {0}"
-msgstr ""
+msgstr "检测到旧版音频路径：{0}"
 
 msgid ""
 "Adjust the distance ETS2LA will try to maintain from the vehicle in front of "
@@ -309,7 +309,7 @@ msgid "Initializing GLFW..."
 msgstr "正在初始化 GLFW..."
 
 msgid "Audio Settings"
-msgstr ""
+msgstr "音频设置"
 
 msgid "Anonymous Telemetry"
 msgstr "匿名遥测"
@@ -576,7 +576,7 @@ msgstr ""
 "定。请选择较低的数据精细度。"
 
 msgid "No audio output device available"
-msgstr ""
+msgstr "没有可用的音频输出设备"
 
 msgid "This game was found at"
 msgstr "此游戏位于"
@@ -609,7 +609,7 @@ msgstr "SDL3 输入后端初始化失败。"
 
 #, csharp-format
 msgid "Invalid audio job: {0}, does the file exist?"
-msgstr ""
+msgstr "无效的音频任务：{0}，文件是否存在？"
 
 msgid "No release notes available."
 msgstr "暂无更新日志。"
@@ -1069,7 +1069,7 @@ msgid ""
 msgstr "解析仍会继续，但此文件中的信息将无法供 ETS2LA 使用。"
 
 msgid "All driving assists have been disabled."
-msgstr ""
+msgstr "所有驾驶辅助功能均已被禁用。"
 
 #, csharp-format
 msgid "Error playing audio file {0}: {1}"
@@ -1196,7 +1196,7 @@ msgid "Normal"
 msgstr "标准"
 
 msgid "Assists Enabled"
-msgstr ""
+msgstr "辅助功能已启用"
 
 #, csharp-format
 msgid "Removing manually added installation at '{0}'"
@@ -1369,7 +1369,7 @@ msgid "Continue"
 msgstr "继续"
 
 msgid "All driving assists have been enabled."
-msgstr ""
+msgstr "所有驾驶辅助功能均已启用。"
 
 msgid "Window Zoom"
 msgstr "窗口缩放"
@@ -1551,7 +1551,7 @@ msgid "Control with ID '{0}' not found for event subscription."
 msgstr "订阅事件时找不到 ID 为“{0}”的控件。"
 
 msgid "Assists Disabled"
-msgstr ""
+msgstr "辅助功能已禁用"
 
 #, csharp-format
 msgid "Plugin '{0}' is missing its DLL at '{1}' and has been removed."
@@ -1660,7 +1660,7 @@ msgstr "下一步"
 
 #, csharp-format
 msgid "No versions available for plugin with ID {0}."
-msgstr ""
+msgstr "ID 为 {0} 的插件没有可用版本。"
 
 msgid "Driving"
 msgstr "驾驶"
@@ -1920,7 +1920,7 @@ msgid "Control with ID '{0}' not found for updating bindings."
 msgstr "找不到可以修改绑定的 {0} 号控件。"
 
 msgid "Test Audio"
-msgstr ""
+msgstr "测试音频"
 
 msgid "Near"
 msgstr "近"
@@ -2015,7 +2015,7 @@ msgstr "删除账户时发生错误。请稍后重试。错误： "
 msgid ""
 "Target speed changed. Current speedlimit: {0} {1}. Offsets are carried over "
 "on speedlimit change."
-msgstr ""
+msgstr "目标速度已更改。当前限速：{0} {1}。在限速更改时，偏移量将被保留。"
 
 msgid "Like ETS2LA?"
 msgstr "喜欢 ETS2LA 吗？"
