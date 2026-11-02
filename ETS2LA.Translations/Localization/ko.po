@@ -3,10 +3,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
 "POT-Creation-Date: 2026-11-01 23:03:06+0200\n"
-"PO-Revision-Date: 2026-11-01 06:12+0000\n"
+"PO-Revision-Date: 2026-11-02 20:26+0000\n"
 "Last-Translator: bot_lapis <botlapis@ets2la.com>\n"
-"Language-Team: Korean <http://weblate.ets2la.com/projects/ets2la/ets2la/ko/"
-">\n"
+"Language-Team: Korean <http://weblate.ets2la.com/projects/ets2la/ets2la/ko/>"
+"\n"
 "Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -217,7 +217,7 @@ msgstr "설치 중..."
 
 #, csharp-format
 msgid "Legacy audio path detected: {0}"
-msgstr ""
+msgstr "레거시 오디오 경로가 감지되었습니다: {0}"
 
 msgid ""
 "Adjust the distance ETS2LA will try to maintain from the vehicle in front of "
@@ -319,7 +319,7 @@ msgid "Initializing GLFW..."
 msgstr "GLFW 초기화 중..."
 
 msgid "Audio Settings"
-msgstr ""
+msgstr "오디오 설정"
 
 msgid "Anonymous Telemetry"
 msgstr "익명 텔레메트리"
@@ -595,7 +595,7 @@ msgstr ""
 "용하며 시스템이 불안정해질 수 있습니다. 더 낮은 충실도를 선택하세요."
 
 msgid "No audio output device available"
-msgstr ""
+msgstr "사용 가능한 오디오 출력 장치가 없습니다"
 
 msgid "This game was found at"
 msgstr "이 게임은 다음 위치에서 발견되었습니다"
@@ -630,7 +630,7 @@ msgstr "SDL3 입력 백엔드 초기화 실패."
 
 #, csharp-format
 msgid "Invalid audio job: {0}, does the file exist?"
-msgstr ""
+msgstr "잘못된 오디오 작업: {0}, 파일이 존재하나요?"
 
 msgid "No release notes available."
 msgstr "사용 가능한 릴리스 노트가 없습니다."
@@ -865,8 +865,7 @@ msgstr ""
 msgid ""
 "Will disable ETS2LA's assists when pressed. If assists are already disabled, "
 "this key will switch between driving modes."
-msgstr ""
-"누르면 ETS2LA의 어시스트가 비활성화됩니다. 어시스트가 이미 비활성화되어 있으"
+msgstr "누르면 ETS2LA'의 어시스트가 비활성화됩니다. 어시스트가 이미 비활성화되어 있으"
 "면 이 키는 주행 모드 간을 전환합니다."
 
 msgid ""
@@ -1115,7 +1114,7 @@ msgstr ""
 "파싱은 계속되지만, 이 파일에 포함된 정보는 ETS2LA에서 사용할 수 없게 됩니다."
 
 msgid "All driving assists have been disabled."
-msgstr ""
+msgstr "모든 주행 어시스트가 비활성화되었습니다."
 
 #, csharp-format
 msgid "Error playing audio file {0}: {1}"
@@ -1246,11 +1245,11 @@ msgid "Normal"
 msgstr "보통"
 
 msgid "Assists Enabled"
-msgstr ""
+msgstr "어시스트 활성화됨"
 
 #, csharp-format
 msgid "Removing manually added installation at '{0}'"
-msgstr "'{0}'에서 수동으로 추가한 설치본을 제거하는 중입니다"
+msgstr "'{0}'에서 수동으로 추가한 설치본을 제거하는 중입니다."
 
 #, csharp-format
 msgid "Control with ID '{0}' not found for unregistration."
@@ -1425,7 +1424,7 @@ msgid "Continue"
 msgstr "계속"
 
 msgid "All driving assists have been enabled."
-msgstr ""
+msgstr "모든 주행 어시스트가 활성화되었습니다."
 
 msgid "Window Zoom"
 msgstr "창 확대/축소"
@@ -1616,7 +1615,7 @@ msgid "Control with ID '{0}' not found for event subscription."
 msgstr "이벤트 구독을 위한 '{0}' ID의 컨트롤을 찾을 수 없습니다."
 
 msgid "Assists Disabled"
-msgstr ""
+msgstr "어시스트 비활성화됨"
 
 #, csharp-format
 msgid "Plugin '{0}' is missing its DLL at '{1}' and has been removed."
@@ -1730,7 +1729,7 @@ msgstr "다음"
 
 #, csharp-format
 msgid "No versions available for plugin with ID {0}."
-msgstr ""
+msgstr "ID가 {0}인 플러그인에 사용 가능한 버전이 없습니다."
 
 msgid "Driving"
 msgstr "주행"
@@ -2003,7 +2002,7 @@ msgid "Control with ID '{0}' not found for updating bindings."
 msgstr "바인딩 업데이트를 위한 '{0}' ID의 컨트롤을 찾을 수 없습니다."
 
 msgid "Test Audio"
-msgstr ""
+msgstr "오디오 테스트"
 
 msgid "Near"
 msgstr "근처"
@@ -2102,7 +2101,8 @@ msgstr ""
 msgid ""
 "Target speed changed. Current speedlimit: {0} {1}. Offsets are carried over "
 "on speedlimit change."
-msgstr ""
+msgstr "목표 속도가 변경되었습니다. 현재 속도 제한: {0} {1}. 속도 제한이 변경되어도 "
+"오프셋은 그대로 유지됩니다."
 
 msgid "Like ETS2LA?"
 msgstr "ETS2LA가 마음에 드시나요?"
