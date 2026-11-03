@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
 "POT-Creation-Date: 2026-11-01 23:03:06+0200\n"
-"PO-Revision-Date: 2026-11-01 18:59+0000\n"
+"PO-Revision-Date: 2026-11-03 17:35+0000\n"
 "Last-Translator: Lun <lun@ets2la.com>\n"
 "Language-Team: Chinese (Traditional Han script) <http://weblate.ets2la.com/"
 "projects/ets2la/ets2la/zh_Hant/>\n"
@@ -209,7 +209,7 @@ msgstr "安裝中..."
 
 #, csharp-format
 msgid "Legacy audio path detected: {0}"
-msgstr ""
+msgstr "偵測到舊版音訊路徑：{0}"
 
 msgid ""
 "Adjust the distance ETS2LA will try to maintain from the vehicle in front of "
@@ -305,7 +305,7 @@ msgid "Initializing GLFW..."
 msgstr "正在初始化 GLFW..."
 
 msgid "Audio Settings"
-msgstr ""
+msgstr "音訊設定"
 
 msgid "Anonymous Telemetry"
 msgstr "匿名遙測"
@@ -572,7 +572,7 @@ msgstr ""
 "統不穩定。請選擇較低的資料精細度。"
 
 msgid "No audio output device available"
-msgstr ""
+msgstr "沒有可用的音訊輸出裝置"
 
 msgid "This game was found at"
 msgstr "此遊戲位於"
@@ -605,7 +605,7 @@ msgstr "SDL3 輸入後端初始化失敗。"
 
 #, csharp-format
 msgid "Invalid audio job: {0}, does the file exist?"
-msgstr ""
+msgstr "無效的音訊任務：{0}，檔案是否存在？"
 
 msgid "No release notes available."
 msgstr "沒有可用的版本說明。"
@@ -1064,7 +1064,7 @@ msgid ""
 msgstr "解析仍會繼續，但此檔案中的資訊將無法供 ETS2LA 使用。"
 
 msgid "All driving assists have been disabled."
-msgstr ""
+msgstr "所有駕駛輔助功能均已停用。"
 
 #, csharp-format
 msgid "Error playing audio file {0}: {1}"
@@ -1191,7 +1191,7 @@ msgid "Normal"
 msgstr "標準"
 
 msgid "Assists Enabled"
-msgstr ""
+msgstr "輔助功能已啟用"
 
 #, csharp-format
 msgid "Removing manually added installation at '{0}'"
@@ -1365,7 +1365,7 @@ msgid "Continue"
 msgstr "繼續"
 
 msgid "All driving assists have been enabled."
-msgstr ""
+msgstr "所有駕駛輔助功能均已啟用。"
 
 msgid "Window Zoom"
 msgstr "視窗縮放"
@@ -1545,7 +1545,7 @@ msgid "Control with ID '{0}' not found for event subscription."
 msgstr "訂閱事件時找不到 ID 為「{0}」的控制項。"
 
 msgid "Assists Disabled"
-msgstr ""
+msgstr "輔助功能已停用"
 
 #, csharp-format
 msgid "Plugin '{0}' is missing its DLL at '{1}' and has been removed."
@@ -1915,7 +1915,7 @@ msgid "Control with ID '{0}' not found for updating bindings."
 msgstr "更新綁定時找不到 ID 為「{0}」的控制項。"
 
 msgid "Test Audio"
-msgstr ""
+msgstr "測試音訊"
 
 msgid "Near"
 msgstr "近"
@@ -2010,7 +2010,7 @@ msgstr "嘗試刪除帳號時發生錯誤。請稍後再試。錯誤： "
 msgid ""
 "Target speed changed. Current speedlimit: {0} {1}. Offsets are carried over "
 "on speedlimit change."
-msgstr ""
+msgstr "目標速度已變更。目前的速度限制：{0} {1}。速度限制變更時，偏移量會繼續沿用。"
 
 msgid "Like ETS2LA?"
 msgstr "喜歡 ETS2LA 嗎？"
