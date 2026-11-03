@@ -3,10 +3,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
 "POT-Creation-Date: 2026-11-01 23:03:06+0200\n"
-"PO-Revision-Date: 2026-10-28 22:46+0000\n"
+"PO-Revision-Date: 2026-11-03 17:35+0000\n"
 "Last-Translator: Ketchup1812 <ketchup1812@ets2la.com>\n"
-"Language-Team: Slovak <http://weblate.ets2la.com/projects/ets2la/ets2la/sk/"
-">\n"
+"Language-Team: Slovak <http://weblate.ets2la.com/projects/ets2la/ets2la/sk/>"
+"\n"
 "Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -226,7 +226,7 @@ msgstr "Inštaluje sa..."
 
 #, csharp-format
 msgid "Legacy audio path detected: {0}"
-msgstr ""
+msgstr "Zistená staršia zvuková cesta: {0}"
 
 msgid ""
 "Adjust the distance ETS2LA will try to maintain from the vehicle in front of "
@@ -333,7 +333,7 @@ msgid "Initializing GLFW..."
 msgstr "Inicializácia GLFW..."
 
 msgid "Audio Settings"
-msgstr ""
+msgstr "Nastavenia zvuku"
 
 msgid "Anonymous Telemetry"
 msgstr "Anonymná telemetria"
@@ -624,7 +624,7 @@ msgstr ""
 "Zvoľte prosím nižšiu úroveň údajov."
 
 msgid "No audio output device available"
-msgstr ""
+msgstr "Nie je k dispozícii žiadne zariadenie na výstup zvuku"
 
 msgid "This game was found at"
 msgstr "Túto hru sme našli v"
@@ -661,7 +661,7 @@ msgstr "Nepodarilo sa inicializovať vstupný backend SDL3."
 
 #, csharp-format
 msgid "Invalid audio job: {0}, does the file exist?"
-msgstr ""
+msgstr "Neplatná zvuková úloha: {0}, existuje tento súbor?"
 
 msgid "No release notes available."
 msgstr "Poznámky k verzii nie sú k dispozícii."
@@ -1157,7 +1157,7 @@ msgstr ""
 "dispozícii pre ETS2LA."
 
 msgid "All driving assists have been disabled."
-msgstr ""
+msgstr "Všetky asistenčné systémy riadenia boli deaktivované."
 
 #, csharp-format
 msgid "Error playing audio file {0}: {1}"
@@ -1297,7 +1297,7 @@ msgid "Normal"
 msgstr "Normálne"
 
 msgid "Assists Enabled"
-msgstr ""
+msgstr "Asistencie zapnuté"
 
 #, csharp-format
 msgid "Removing manually added installation at '{0}'"
@@ -1484,7 +1484,7 @@ msgid "Continue"
 msgstr "Pokračovať"
 
 msgid "All driving assists have been enabled."
-msgstr ""
+msgstr "Všetky asistenčné systémy riadenia boli aktivované."
 
 msgid "Window Zoom"
 msgstr "Zväčšenie okna"
@@ -1680,7 +1680,7 @@ msgid "Control with ID '{0}' not found for event subscription."
 msgstr "Kontrola s ID „{0}“ nebola nájdené pre predplatné."
 
 msgid "Assists Disabled"
-msgstr ""
+msgstr "Asistencie vypnuté"
 
 #, csharp-format
 msgid "Plugin '{0}' is missing its DLL at '{1}' and has been removed."
@@ -1799,7 +1799,7 @@ msgstr "Ďalej"
 
 #, csharp-format
 msgid "No versions available for plugin with ID {0}."
-msgstr ""
+msgstr "Pre plugin s ID {0} nie sú k dispozícii žiadne verzie."
 
 msgid "Driving"
 msgstr "Šoférovanie"
@@ -2080,7 +2080,7 @@ msgid "Control with ID '{0}' not found for updating bindings."
 msgstr "Kontrola s ID „{0}“ nebola nájdené pre aktualizáciu mapovania kláves."
 
 msgid "Test Audio"
-msgstr ""
+msgstr "Test zvuku"
 
 msgid "Near"
 msgstr "Blízko"
@@ -2184,6 +2184,8 @@ msgid ""
 "Target speed changed. Current speedlimit: {0} {1}. Offsets are carried over "
 "on speedlimit change."
 msgstr ""
+"Cieľová rýchlosť sa zmenila. Aktuálny rýchlostný limit: {0} {1}. Pri zmene "
+"rýchlostného limitu sa odchýlky prenášajú."
 
 msgid "Like ETS2LA?"
 msgstr "Páči sa vám ETS2LA?"
