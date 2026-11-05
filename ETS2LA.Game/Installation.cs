@@ -390,6 +390,12 @@ public class Installation
         try
         {
             Directory.CreateDirectory(SDKDestinationPath);
+            foreach (string oldFile in Directory.GetFiles(SDKDestinationPath, "ets2la_1.*"))
+            {
+                File.Delete(oldFile);
+                Logger.Info(_("Deleted old SDK file '{0}'", oldFile));
+            }
+
             foreach (string newPath in Directory.GetFiles(SDKSourcePath, "*.*", SearchOption.AllDirectories))
             {
                 File.Copy(newPath, newPath.Replace(SDKSourcePath, SDKDestinationPath), true);
