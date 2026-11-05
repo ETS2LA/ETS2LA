@@ -1,14 +1,6 @@
-### ETS2LA C# 2026.11.5250
-- `feat` Updated audio files. New sounds originate from OpenPilot, which are used in real life vehicles.
-- `feat` You can now hold the increase/decrease keybinds to continuously change the desired speed.
-- `feat` Added notifications for enabling/disabling assists and for changing the desired speed.
-- `feat` Added sounds for enabling/disabling assists as well as changing the driving mode.
-- `feat` Added telemetry events for installing and uninstalling plugins.
-- `feat` Updated *ETS2LA.Networking* and *ETS2LA.State* to use *v2* plugin definitions.
-- `feat` The *Console* overlay window will be disabled by default in release builds. You can still enable it via the *Overlay Interaction Mode*.
-- `feat` *ETS2LA.Overlay* now includes *Web* font styles, these are the fonts we use in the main UI (*Outfit*).
-
-**DEVELOPERS:** This update changes *PluginInfo*, your existing info will work, but please update your plugins to use the new definitions!
+### ETS2LA C# 2026.11.5258
+- `feat` Support for ETS2 and ATS 1.62. **Ensure you reinstall the SDKs for the new game version in ETS2LA settings.**
+- `translation` Updated translations for some languages.
 
 #### Thank you to today's sponsor... You!
 Development is possible thanks to our [sponsors](https://github.com/sponsors/Tumppi066). Please consider supporting if you like the project and have the means to do so.
@@ -23,10 +15,10 @@ Many thanks to those who've decided to remain anonymous as well! All your suppor
 **ETS2LA is game version specific, make sure you use a supported version!**  
 Older versions are not necessarily kept compatible with server side changes.
 <!-- Please include a link to the latest working version for each game version. -->
-<!-- 1.59, 1.60 and 1.61 share the same map data version -->
+<!-- 1.59 - 1.62 share the same map data version -->
 | Game Version  |  ETS2LA Version  |
 | ------------- | ---------------- |
-| **1.62**      | Not supported yet |
+| **1.62**      | [**≥ 2026.11.5257**](https://github.com/ETS2LA/Euro-Truck-Simulator-2-Lane-Assist/releases/latest) |
 | **1.61**      | [**≥ 2026.9.5026**](https://github.com/ETS2LA/Euro-Truck-Simulator-2-Lane-Assist/releases/latest)  |
 | **1.60**      | [**≥ 3.4.0**](https://github.com/ETS2LA/Euro-Truck-Simulator-2-Lane-Assist/releases/latest) |
 | **1.59**      | [**≥ 3.2.0**](https://github.com/ETS2LA/Euro-Truck-Simulator-2-Lane-Assist/releases/latest) |
