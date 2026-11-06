@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
 "POT-Creation-Date: 2026-11-01 23:03:06+0200\n"
-"PO-Revision-Date: 2026-11-06 01:31+0000\n"
+"PO-Revision-Date: 2026-11-07 04:13+0000\n"
 "Last-Translator: Kubex70 <kubex70@ets2la.com>\n"
 "Language-Team: Polish <http://weblate.ets2la.com/projects/ets2la/ets2la/pl/>"
 "\n"
@@ -978,6 +978,7 @@ msgstr "Rozumiem, teraz mnie wpuść!"
 msgid ""
 "You are currently logged in as <span class=\"text-text-l\">{0}</span>. [{1}]"
 msgstr ""
+"Jesteś obecnie zalogowany jako <span class=\"text-text-l\">{0}</span>. [{1}]"
 
 msgid "Disable Overlay"
 msgstr "Wyłącz nakładkę"
@@ -1016,13 +1017,15 @@ msgid ""
 "Removing your account will delete all your data from our servers. This "
 "action cannot be undone."
 msgstr ""
+"Usunięcie konta spowoduje usunięcie wszystkich Twoich danych z naszych "
+"serwerów. Tej czynności nie można cofnąć."
 
 msgid "Unknown Version"
 msgstr "Nieznana wersja"
 
 #, csharp-format
 msgid "Your username must be at least {0} characters long."
-msgstr ""
+msgstr "Twoja nazwa użytkownika musi mieć co najmniej {0} znaków."
 
 msgid ""
 "Too many requests. You have sent too many requests in a given amount of time."
@@ -1076,7 +1079,7 @@ msgstr ""
 "naraża system na ryzyko. Wybierz Tak, aby kontynuować i zaakceptować ryzyko."
 
 msgid "Traffic Lights"
-msgstr ""
+msgstr "Sygnalizacja świetlna"
 
 msgid "Finished loading plugins"
 msgstr "Zakończono ładowanie pluginów"
@@ -1093,17 +1096,17 @@ msgid "Parsing installation at '{0}' (version: {1})"
 msgstr "Analiza instalacji w '{0}' (wersja: {1})"
 
 msgid "Gates"
-msgstr ""
+msgstr "Bramy"
 
 #, csharp-format
 msgid "Binding {0}"
 msgstr "Przypisywanie {0}"
 
 msgid "You are not logged in. Open this page again to login."
-msgstr ""
+msgstr "Nie jesteś zalogowany. Otwórz tę stronę ponownie, aby się zalogować."
 
 msgid "You may need to restart the game to apply this change."
-msgstr ""
+msgstr "Aby wprowadzić tę zmianę, może być konieczne ponowne uruchomienie gry."
 
 msgid "Look in the top left corner."
 msgstr "Spójrz w lewy górny róg."
@@ -1152,7 +1155,7 @@ msgstr ""
 "dostępne dla ETS2LA."
 
 msgid "All driving assists have been disabled."
-msgstr ""
+msgstr "Wszystkie systemy wspomagania kierowcy zostały wyłączone."
 
 #, csharp-format
 msgid "Error playing audio file {0}: {1}"
@@ -1239,13 +1242,17 @@ msgid "LoaderException: {0}"
 msgstr "LoaderException: {0}"
 
 msgid "Registration Failed"
-msgstr ""
+msgstr "Rejestracja nie powiodła się"
 
 msgid ""
 "We don't sell or transfer your personal data to any third parties, in fact, "
 "we don't even collect it. However, we are still obligated to display and "
 "acquire your consent before proceeding."
 msgstr ""
+"Nie sprzedajemy ani nie przekazujemy Twoich danych osobowych żadnym "
+"podmiotom zewnętrznym – w rzeczywistości nawet ich nie gromadzimy. Mimo to "
+"jesteśmy zobowiązani do wyświetlenia stosownej informacji i uzyskania Twojej "
+"zgody, zanim przejdziemy dalej."
 
 msgid "Disable"
 msgstr "Wyłącz"
@@ -1259,6 +1266,8 @@ msgid ""
 "You have successfully registered as {0}. Please add the OTP code to your "
 "authentication app."
 msgstr ""
+"Pomyślnie zarejestrowano użytkownika {0}. Dodaj kod OTP do swojej aplikacji "
+"uwierzytelniającej."
 
 #, csharp-format
 msgid "Overlay is disabled in settings, skipping window registration for {0}."
@@ -1269,6 +1278,8 @@ msgid ""
 "Only show news articles from official sources, such as the ETS2LA team or "
 "it's developers."
 msgstr ""
+"Wyświetlaj tylko artykuły z wiadomościami pochodzące z oficjalnych źródeł, "
+"takich jak zespół ETS2LA lub jego twórcy."
 
 msgid "Starting download..."
 msgstr "Rozpoczęcie pobierania..."
@@ -1281,13 +1292,13 @@ msgid "Error in plugin {0} Tick: {1}"
 msgstr "Bład pluginu {0} Tick: {1}"
 
 msgid "Chatbot"
-msgstr ""
+msgstr "Czatbot"
 
 msgid "Normal"
 msgstr "Normalny"
 
 msgid "Assists Enabled"
-msgstr ""
+msgstr "Wspomaganie włączone"
 
 #, csharp-format
 msgid "Removing manually added installation at '{0}'"
@@ -1303,6 +1314,8 @@ msgstr "Jeśli nie możesz wejść w interakcję z oknem, naciśnij CTRL+R."
 
 msgid "Only copy this to trusted websites, it can do ANYTHING on your behalf."
 msgstr ""
+"Kopiuj to tylko na zaufane strony internetowe – może ono zrobić w Twoim "
+"imieniu absolutnie wszystko."
 
 msgid "Desired Speed: "
 msgstr "Pożądana prędkość: "
@@ -1314,7 +1327,7 @@ msgid "If you've not yet installed it, you can find it in the catalogue."
 msgstr "Jeśli jeszcze go nie zainstalowałeś, znajdziesz go w katalogu."
 
 msgid "Please enter a username."
-msgstr ""
+msgstr "Proszę podać nazwę użytkownika."
 
 msgid ""
 "If you see a fully black screen, see the FAQ at <span class=\"description "
@@ -1339,6 +1352,8 @@ msgstr "Nieznany typ manifestu: {0}"
 
 msgid "If you're streaming or recording, now's the time to hide this window."
 msgstr ""
+"Jeśli prowadzisz transmisję lub nagrywasz, to odpowiedni moment, by ukryć to "
+"okno."
 
 msgid "The server timed out waiting for the request from the client."
 msgstr "Upłynął limit czasu oczekiwania serwera na żądanie od klienta."
@@ -1356,6 +1371,9 @@ msgid ""
 "Your session has expired or you don't have a connection to our servers. "
 "Please log in again if you wish to use server-side features."
 msgstr ""
+"Twoja sesja wygasła lub nie masz połączenia z naszymi serwerami. Jeśli "
+"chcesz korzystać z funkcji wymagających połączenia z serwerem, zaloguj się "
+"ponownie."
 
 #, csharp-format
 msgid "Failed to enable dependency: {0}"
@@ -1399,7 +1417,7 @@ msgstr ""
 "odmawia jego autoryzacji."
 
 msgid "Back to Login"
-msgstr ""
+msgstr "Powrót do logowania"
 
 msgid "Steering Sensitivity"
 msgstr "Czułość układu kierowniczego"
@@ -1417,6 +1435,9 @@ msgid ""
 "Your username may only contain letters, numbers, underscores, hyphens and "
 "periods, and must start and end with a letter or number."
 msgstr ""
+"Twoja nazwa użytkownika może zawierać wyłącznie litery, cyfry, znaki "
+"podkreślenia, myślniki oraz kropki; musi ona również rozpoczynać się i "
+"kończyć literą lub cyfrą."
 
 #, csharp-format
 msgid "Error in AR rendering: {0}"
@@ -1442,7 +1463,7 @@ msgid "Copied '{0}' to '{1}'"
 msgstr "Skopiowano '{0}' do '{1}'"
 
 msgid "Privacy Policy"
-msgstr ""
+msgstr "Polityka prywatności"
 
 msgid "Controls Backend shutdown complete, all controls saved."
 msgstr ""
@@ -1466,7 +1487,7 @@ msgid "Continue"
 msgstr "Kontynuuj"
 
 msgid "All driving assists have been enabled."
-msgstr ""
+msgstr "Wszystkie systemy wspomagania kierowcy zostały włączone."
 
 msgid "Window Zoom"
 msgstr "Powiększenie okna"
@@ -1508,6 +1529,9 @@ msgid ""
 "Select which traffic rules ETS2LA should obey. More might be added later, "
 "and all plugins won't necessarily support all rules."
 msgstr ""
+"Wybierz, których zasad ruchu drogowego ma przestrzegać ETS2LA. Z czasem mogą "
+"zostać dodane kolejne zasady, przy czym nie wszystkie wtyczki muszą "
+"obsługiwać każdą z nich."
 
 #, csharp-format
 msgid "Error in AR OpenGL pass: {0}"
@@ -1569,11 +1593,12 @@ msgid "Window"
 msgstr "Okno"
 
 msgid "Select the game you wish to start."
-msgstr ""
+msgstr "Wybierz grę, którą chcesz rozpocząć."
 
 msgid ""
 "An error occurred while trying to log out. Please try again later. Error: "
 msgstr ""
+"Podczas próby wylogowania wystąpił błąd. Spróbuj ponownie później. Błąd: "
 
 msgid "Assists"
 msgstr "Asysty"
@@ -1584,7 +1609,7 @@ msgstr ""
 "Prędkość docelowa: <span class=\"text-text-accent font-bold\">{0} {1}</span>"
 
 msgid "Overlay Font Size"
-msgstr ""
+msgstr "Rozmiar czcionki nakładki"
 
 msgid "Failed to add game"
 msgstr "Nie udało się dodać gry"
@@ -1602,7 +1627,7 @@ msgid "Contact Us"
 msgstr "Skontaktuj się z nami"
 
 msgid "Registration Error"
-msgstr ""
+msgstr "Błąd rejestracji"
 
 msgid "Restart"
 msgstr "Uruchom ponownie"
@@ -1661,7 +1686,7 @@ msgid "Control with ID '{0}' not found for event subscription."
 msgstr "Nie znaleziono kontroli z ID „{0}” dla subskrypcji zdarzenia."
 
 msgid "Assists Disabled"
-msgstr ""
+msgstr "Wspomaganie wyłączone"
 
 #, csharp-format
 msgid "Plugin '{0}' is missing its DLL at '{1}' and has been removed."
@@ -1723,7 +1748,7 @@ msgid "Error in parked vehicles update loop."
 msgstr "Błąd w pętli aktualizacji zaparkowanych pojazdów."
 
 msgid "Username Taken"
-msgstr ""
+msgstr "Nazwa użytkownika zajęta"
 
 msgid "This page hasn't been created yet, but it's coming <i>soon</i>."
 msgstr ""
