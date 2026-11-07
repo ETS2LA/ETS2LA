@@ -86,6 +86,8 @@ public class OverlayHandler
     public float OverlayWidth => GLFW.GetVideoMode(GLFW.GetPrimaryMonitor()).Width;
     public float OverlayHeight => GLFW.GetVideoMode(GLFW.GetPrimaryMonitor()).Height;
     public float OverlayMonitorRefreshRate => GLFW.GetVideoMode(GLFW.GetPrimaryMonitor()).RefreshRate;
+    public List<Hexa.NET.GLFW.GLFWmonitorPtr>? Monitors;
+    public List<GLFWvidmodePtr>? MonitorModes;
 
     private string glslVersion = "#version 150";
     private GLFWwindowPtr glfwWindow;
@@ -590,11 +592,11 @@ public class OverlayHandler
             Logger.Info(_("Initializing GLFW Version: {0}", Utils.DecodeStringUTF8(GLFW.GetVersionString())));
         }
 
-        // This code sets the platform to X11 instead of wayland. This only needs to be
-        // done inside vscode for whatever reason. https://github.com/opentk/opentk/issues/1823
-        string? sessionType = Environment.GetEnvironmentVariable("XDG_SESSION_TYPE");
-        string? useWayland = Environment.GetEnvironmentVariable("GLFW_USE_WAYLAND");
-        if (sessionType == "wayland" && useWayland == "0")
+        if (overlaySettings.AllowWayland)
+        {
+            GLFW.InitHint(GLFW.GLFW_PLATFORM, GLFW.GLFW_PLATFORM_WAYLAND);
+        }
+        else 
         {
             GLFW.InitHint(GLFW.GLFW_PLATFORM, GLFW.GLFW_PLATFORM_X11);
         }
@@ -607,6 +609,8 @@ public class OverlayHandler
 
         # if LINUX
             GLFW.WindowHint(GLFW.GLFW_CONTEXT_CREATION_API, GLFW.GLFW_EGL_CONTEXT_API);
+            GLFW.WindowHintString(GLFW.GLFW_X11_INSTANCE_NAME, "ETS2LA Overlay");
+            GLFW.WindowHintString(GLFW.GLFW_WAYLAND_APP_ID, "ETS2LA Overlay");
         # endif
 
         GLFW.WindowHint(GLFW.GLFW_TRANSPARENT_FRAMEBUFFER, 1);  // Transparent
@@ -614,16 +618,28 @@ public class OverlayHandler
         GLFW.WindowHint(GLFW.GLFW_FLOATING, 1);                 // Always on top
         GLFW.WindowHint(GLFW.GLFW_FOCUSED, 0);                  // Start unfocused
         GLFW.WindowHint(GLFW.GLFW_FOCUS_ON_SHOW, 0);            // Start unfocused
-        
-        var mon = GLFW.GetPrimaryMonitor();
-        int width, height;
-        width = GLFW.GetVideoMode(mon).Width;
-        height = GLFW.GetVideoMode(mon).Height;
+
+        unsafe
+        {
+            int maxMonitorCount = 6;
+            var mons = GLFW.GetMonitors(&maxMonitorCount);
+            for (int i = 0; i < maxMonitorCount; i++)
+            {
+                if (mons[i] == null) { break; }
+                Logger.Info(_("Monitor {0}: {1}", i, Utils.DecodeStringUTF8(GLFW.GetMonitorName(mons[i]))));
+                Monitors ??= new List<Hexa.NET.GLFW.GLFWmonitorPtr>();
+                Monitors.Add(mons[i]);
+                MonitorModes ??= new List<GLFWvidmodePtr>();
+                MonitorModes.Add(GLFW.GetVideoMode(mons[i]));
+            }
+        }
+        var mon = Monitors[overlaySettings.MonitorIndex];
+        var mode = MonitorModes[overlaySettings.MonitorIndex];
 
         // NOTE: Width and height set to screen-2
         // If they are set to the screen size, windows does some optimizations that cause the window
         // to go full black when focused. Setting these to -2 seems to prevent that.
-        glfwWindow = GLFW.CreateWindow(width - 2, height - 2, "ETS2LA Overlay", null, null);
+        glfwWindow = GLFW.CreateWindow(mode.Width - 2, mode.Height - 2, "ETS2LA Overlay", null, null);
         if (glfwWindow.IsNull)
         {
             Logger.Error(_("Failed to create GLFW window"));
@@ -631,8 +647,16 @@ public class OverlayHandler
             return false;
         }
 
+        // Set the position to the position of the monitor
+        unsafe
+        {
+            int monX, monY;
+            GLFW.GetMonitorPos(mon, &monX, &monY);
+            GLFW.SetWindowPos(glfwWindow, monX + 1, monY + 1);
+        }
+
         # if WINDOWS
-        GLFW.SetWindowPos(glfwWindow, 1, 1);
+            GLFW.SetWindowPos(glfwWindow, 1, 1);
         # endif
 
         return true;

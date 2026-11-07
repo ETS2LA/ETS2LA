@@ -11,6 +11,8 @@ public class OverlaySettings
     public bool OverlayInteractionIsToggle = true;
     public bool DisableOverlay = false;
     public int BaseFontSize = 18;
+    public bool AllowWayland = false;
+    public int MonitorIndex = 0;
 
     // AR
     public bool RenderAR = true;

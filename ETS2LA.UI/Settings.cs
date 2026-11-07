@@ -12,6 +12,7 @@ public class WindowSettings
 
     public int Zoom = 100;
     public bool StayOnTop = true;
+    public bool AllowWayland = false;
 
     // Onboarding
     public int OnboardingStep = 0;
@@ -49,6 +50,7 @@ public class WindowSettings
                 Height = loadedSettings.Height;
                 Zoom = loadedSettings.Zoom;
                 StayOnTop = loadedSettings.StayOnTop;
+                AllowWayland = loadedSettings.AllowWayland;
                 OnboardingStep = loadedSettings.OnboardingStep;
                 HasCompletedOnboarding = loadedSettings.HasCompletedOnboarding;
                 ShowPluginUpdates = loadedSettings.ShowPluginUpdates;
@@ -74,6 +76,7 @@ public class WindowSettings
         Height = newSettings.Height;
         Zoom = newSettings.Zoom;
         StayOnTop = newSettings.StayOnTop;
+        AllowWayland = newSettings.AllowWayland;
         OnboardingStep = newSettings.OnboardingStep;
         HasCompletedOnboarding = newSettings.HasCompletedOnboarding;
         ShowPluginUpdates = newSettings.ShowPluginUpdates;
