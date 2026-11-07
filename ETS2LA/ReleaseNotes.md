@@ -1,6 +1,8 @@
-### ETS2LA C# 2026.11.5258
-- `feat` Support for ETS2 and ATS 1.62. **Ensure you reinstall the SDKs for the new game version in ETS2LA settings.**
-- `translation` Updated translations for some languages.
+### ETS2LA C# 2026.11.5236
+- `feat` You can now select which monitor to use for the overlay in *Display* settings.
+- `feat` You can now run the overlay and ETS2LA app window on *Wayland* on Linux. Note that this is not officially supported and might cause issues.
+- `fix` Added correct Linux SDKs, previously I accidentally packaged the old version.
+- `translation` Updated translations for Polish.
 
 #### Thank you to today's sponsor... You!
 Development is possible thanks to our [sponsors](https://github.com/sponsors/Tumppi066). Please consider supporting if you like the project and have the means to do so.

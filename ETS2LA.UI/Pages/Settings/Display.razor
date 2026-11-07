@@ -36,14 +36,21 @@
 
     private List<string> GetMonitorNames()
     {
-        List<string> strings = new List<string>();
-        int i = 0;
-        foreach (var mode in OverlayHandler.Current.MonitorModes)
-        {
-            strings.Add($"Monitor {i}: {mode.Width}x{mode.Height} @ {mode.RefreshRate}Hz");
-            i++;
+        try
+        {    
+            List<string> strings = new List<string>();
+            int i = 0;
+            foreach (var mode in OverlayHandler.Current.MonitorModes)
+            {
+                strings.Add($"Monitor {i}: {mode.Width}x{mode.Height} @ {mode.RefreshRate}Hz");
+                i++;
+            }
+            return strings;
         }
-        return strings;
+        catch
+        {
+            return new List<string> { _("Error retrieving monitor names") };
+        }
     }
 
     private int MonitorIndex
@@ -338,7 +345,7 @@
                 ValueChanged="@((bool value) => AllowOverlayWayland = value)" />
     }
     <Dropdown Title=@(_("Monitor"))
-              Description=@(_("The monitor ETS2LA's overlay will be displayed on. If you have multiple monitors, you can select which one to use here."))
+              Description=@(_("The monitor ETS2LA's overlay will be displayed on. If you have multiple monitors, you can select which one to use here. Please select the monitor the game is running on, and ensure the game is in fullscreen."))
               Options="@GetMonitorNames()"
               SelectedIndex="@MonitorIndex"
               SelectedIndexChanged="(int index) => MonitorIndex = index" />

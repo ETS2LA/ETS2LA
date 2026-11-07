@@ -592,14 +592,16 @@ public class OverlayHandler
             Logger.Info(_("Initializing GLFW Version: {0}", Utils.DecodeStringUTF8(GLFW.GetVersionString())));
         }
 
-        if (overlaySettings.AllowWayland)
-        {
-            GLFW.InitHint(GLFW.GLFW_PLATFORM, GLFW.GLFW_PLATFORM_WAYLAND);
-        }
-        else 
-        {
-            GLFW.InitHint(GLFW.GLFW_PLATFORM, GLFW.GLFW_PLATFORM_X11);
-        }
+        #if LINUX
+            if (overlaySettings.AllowWayland)
+            {
+                GLFW.InitHint(GLFW.GLFW_PLATFORM, GLFW.GLFW_PLATFORM_WAYLAND);
+            }
+            else 
+            {
+                GLFW.InitHint(GLFW.GLFW_PLATFORM, GLFW.GLFW_PLATFORM_X11);
+            }
+        #endif
 
         Logger.Info(_("Initializing GLFW..."));
         GLFW.Init();
@@ -621,9 +623,9 @@ public class OverlayHandler
 
         unsafe
         {
-            int maxMonitorCount = 6;
-            var mons = GLFW.GetMonitors(&maxMonitorCount);
-            for (int i = 0; i < maxMonitorCount; i++)
+            int count = 0;
+            var mons = GLFW.GetMonitors(&count);
+            for (int i = 0; i < count; i++)
             {
                 if (mons[i] == null) { break; }
                 Logger.Info(_("Monitor {0}: {1}", i, Utils.DecodeStringUTF8(GLFW.GetMonitorName(mons[i]))));
@@ -631,6 +633,11 @@ public class OverlayHandler
                 Monitors.Add(mons[i]);
                 MonitorModes ??= new List<GLFWvidmodePtr>();
                 MonitorModes.Add(GLFW.GetVideoMode(mons[i]));
+            }
+            if (count == 0)
+            {
+                Logger.Error(_("No monitors detected, overlay cannot be initialized."));
+                return false;
             }
         }
         var mon = Monitors[overlaySettings.MonitorIndex];
@@ -647,17 +654,12 @@ public class OverlayHandler
             return false;
         }
 
-        // Set the position to the position of the monitor
         unsafe
         {
             int monX, monY;
             GLFW.GetMonitorPos(mon, &monX, &monY);
             GLFW.SetWindowPos(glfwWindow, monX + 1, monY + 1);
         }
-
-        # if WINDOWS
-            GLFW.SetWindowPos(glfwWindow, 1, 1);
-        # endif
 
         return true;
     }
