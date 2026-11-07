@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-11-07 14:13:54+0200\n"
+"POT-Creation-Date: 2026-11-07 15:00:04+0200\n"
 "PO-Revision-Date: 2026-11-03 17:35+0000\n"
 "Last-Translator: Ketchup1812 <ketchup1812@ets2la.com>\n"
 "Language-Team: Slovak <http://weblate.ets2la.com/projects/ets2la/ets2la/sk/"
@@ -65,6 +65,9 @@ msgstr "Zistená staršia zvuková cesta: {0}"
 #, csharp-format
 msgid "Control with ID '{0}' not found for updating bindings."
 msgstr "Kontrola s ID „{0}“ nebola nájdené pre aktualizáciu mapovania kláves."
+
+msgid "Monitor"
+msgstr ""
 
 msgid ""
 "Force ETS2LA to load the map on game startup. This can resolve issues where "
@@ -131,26 +134,26 @@ msgid "Maximum Speed"
 msgstr "Maximálna rýchlosť"
 
 msgid ""
-"When the game reports itself being paused, ETS2LA won't render AR elements."
-msgstr "Keď hra zaznamená, že je pozastavená, ETS2LA prestane vykresľovať."
-
-msgid ""
 "Your username may only contain letters, numbers, underscores, hyphens and "
 "periods, and must start and end with a letter or number."
 msgstr ""
 "Vaše používateľské meno môže obsahovať iba písmená, čísla, podčiarknutia, "
 "spojovníky a bodky a musí začínať a končiť písmenom alebo číslom."
 
+msgid ""
+"When the game reports itself being paused, ETS2LA won't render AR elements."
+msgstr "Keď hra zaznamená, že je pozastavená, ETS2LA prestane vykresľovať."
+
 #, csharp-format
 msgid "Connected joystick: [bold]{0}[/] [gray italic]({1})[/]"
 msgstr "Pripojený joystick: [bold]{0}[/] [gray italic]({1})[/]"
 
-msgid "Username"
-msgstr "Používateľské meno"
-
 #, csharp-format
 msgid "Starting binding for control {0} ({1})"
 msgstr "Začínam mapovať klávesi pre ovládací prvok {0} ({1})"
+
+msgid "Username"
+msgstr "Používateľské meno"
 
 #, csharp-format
 msgid "Failed to enable dependency: {0}"
@@ -253,6 +256,11 @@ msgstr "Zadajte prosím používateľské meno."
 #, csharp-format
 msgid "Your username must be at least {0} characters long."
 msgstr "Vaše používateľské meno musí mať aspoň {0} znakov."
+
+msgid ""
+"Allow ETS2LA's overlay to run on Wayland. Wayland might cause compatibility "
+"issues, however you might want to try to enable this option."
+msgstr ""
 
 msgid "Press anywhere outside the dialog to close it."
 msgstr "Kliknutím kamkoľvek mimo dialógového okna ho zatvoríte."
@@ -858,6 +866,10 @@ msgstr ""
 msgid "Collision Avoidance"
 msgstr "Predchádzanie zrážkam"
 
+#, csharp-format
+msgid "Monitor {0}: {1}"
+msgstr ""
+
 msgid ""
 "Disables the overlay entirely. This will fix the black screen issue at the "
 "cost of breaking all features that rely on the overlay, including AR and the "
@@ -892,15 +904,15 @@ msgstr "Kamera {0} ({1}×{2})"
 msgid "Display JWT Token"
 msgstr "Zobraziť JWT token"
 
+msgid "Invalid Input"
+msgstr "Neplatný vstup"
+
 msgid ""
 "This setting only loads roads and intersections visible on the in game map. "
 "It discards all other information."
 msgstr ""
 "Toto nastavenie načíta iba cesty a križovatky, ktoré sú viditeľné na mape v "
 "hre. Všetky ostatné informácie sa ignorujú."
-
-msgid "Invalid Input"
-msgstr "Neplatný vstup"
 
 #, csharp-format
 msgid "Invalid audio job: {0}, does the file exist?"
@@ -1041,13 +1053,13 @@ msgstr "Pascali"
 msgid "Account Removal Error"
 msgstr "Chyba pri odstraňovaní účtu"
 
-msgid "You can enable the plugins we installed in a previous step here."
-msgstr ""
-"Tu môžete aktivovať pluginy, ktoré sme nainštalovali v predchádzajúcom kroku."
-
 #, csharp-format
 msgid "Failed to disable {0}: {1}"
 msgstr "Nepodarilo sa vypnúť {0}: {1}"
+
+msgid "You can enable the plugins we installed in a previous step here."
+msgstr ""
+"Tu môžete aktivovať pluginy, ktoré sme nainštalovali v predchádzajúcom kroku."
 
 msgid "Login"
 msgstr "Prihlásiť sa"
@@ -1055,12 +1067,12 @@ msgstr "Prihlásiť sa"
 msgid "SDK Installed"
 msgstr "SDK je nainštalované"
 
-msgid "Current Speed"
-msgstr "Aktuálna rýchlosť"
-
 #, csharp-format
 msgid "Bound control {0} ({1}) to device {2} and control {3}"
 msgstr "Priradili sme ovládač {0} ({1}) k zariadeniu {2} a ovládanie {3}"
+
+msgid "Current Speed"
+msgstr "Aktuálna rýchlosť"
 
 msgid "miles per hour"
 msgstr "míle za hodinu"
@@ -1251,6 +1263,9 @@ msgid ""
 msgstr ""
 "Pri stlačení klávesovej skratky SET, akú hodnotu by mal ETS2LA nastaviť ako "
 "aktuálnu rýchlosť tempomatu?"
+
+msgid "Allow Wayland"
+msgstr ""
 
 msgid "The selected directory does not exist."
 msgstr "Vybraný adresár neexistuje."
@@ -1569,11 +1584,11 @@ msgstr "Nepodarilo sa pridať hru"
 msgid "Font file not found at {0}"
 msgstr "Súbor s písmom sa nenašiel v {0}"
 
-msgid "No release notes available."
-msgstr "Poznámky k verzii nie sú k dispozícii."
-
 msgid "Changelog"
 msgstr "Zoznam zmien"
+
+msgid "No release notes available."
+msgstr "Poznámky k verzii nie sú k dispozícii."
 
 #, csharp-format
 msgid "Detected a switch to {0}, waiting for its game data to be parsed."
@@ -1741,19 +1756,19 @@ msgid "Found {0} (version: {1}) at '{2}'"
 msgstr "Našlo sa {0} (verzia: {1}) v „{2}“"
 
 msgid ""
-"We can render elements in the game world using the overlay. This will use "
-"additional CPU and GPU resources."
-msgstr ""
-"Pomocou prekrývacieho okna môžeme vykresľovať prvky v hernom svete. To bude "
-"vyžadovať dodatočné zdroje procesora a grafickej karty."
-
-msgid ""
 "Select which traffic rules ETS2LA should obey. More might be added later, "
 "and all plugins won't necessarily support all rules."
 msgstr ""
 "Vyberte, ktoré dopravné pravidlá má ETS2LA dodržiavať. Neskôr môžu byť "
 "pridané ďalšie pravidlá a nie všetky pluginy budú nutne podporovať všetky "
 "pravidlá."
+
+msgid ""
+"We can render elements in the game world using the overlay. This will use "
+"additional CPU and GPU resources."
+msgstr ""
+"Pomocou prekrývacieho okna môžeme vykresľovať prvky v hernom svete. To bude "
+"vyžadovať dodatočné zdroje procesora a grafickej karty."
 
 msgid "kilometers per hour"
 msgstr "kilometre za hodinu"
@@ -2131,11 +2146,11 @@ msgstr "Nepodarilo sa načítať plugin z [gray]{0}[/]: {1}"
 msgid "Assist Mode: <span class=\"text-text-accent font-bold\">{0}</span>"
 msgstr "Režim asistenta: <span class=\"text-text-accent font-bold\">{0}</span>"
 
-msgid "Thinking..."
-msgstr "Premýšľam..."
-
 msgid "View Public Telemetry"
 msgstr "Zobraziť verejnú telemetriu"
+
+msgid "Thinking..."
+msgstr "Premýšľam..."
 
 msgid "Adjust the volume of the audio output."
 msgstr "Upravte hlasitosť zvukového výstupu."
@@ -2212,11 +2227,11 @@ msgstr ""
 msgid "The selected file is not a core.scs file."
 msgstr "Vybraný súbor nie je súbor typu core.scs."
 
-msgid "Translated by:"
-msgstr "Preložil:"
-
 msgid "You have successfully logged out."
 msgstr "Úspešne ste sa odhlásili."
+
+msgid "Translated by:"
+msgstr "Preložil:"
 
 msgid "This game was found at"
 msgstr "Túto hru sme našli v"
@@ -2246,11 +2261,11 @@ msgstr "Vnútorná výnimka: {0}"
 msgid "Plugin with ID {0} not found."
 msgstr "Plugin s ID {0} nebol nájdený."
 
-msgid "Units and Language"
-msgstr "Jednotky a jazyk"
-
 msgid "One Time Password"
 msgstr "Jednorazové heslo"
+
+msgid "Units and Language"
+msgstr "Jednotky a jazyk"
 
 #, csharp-format
 msgid "Loaded plugin: [gray]{0}[/] from [gray]{1}[/]."
@@ -2424,6 +2439,11 @@ msgstr "Hľadám aktualizácie..."
 msgid "No audio output device available"
 msgstr "Nie je k dispozícii žiadne zariadenie na výstup zvuku"
 
+msgid ""
+"The monitor ETS2LA's overlay will be displayed on. If you have multiple "
+"monitors, you can select which one to use here."
+msgstr ""
+
 msgid "Catalogue"
 msgstr "Katalóg"
 
@@ -2464,6 +2484,11 @@ msgstr ""
 
 msgid "Demo Window"
 msgstr "Ukážkové okno"
+
+msgid ""
+"Allow ETS2LA's window to run on Wayland. Wayland might cause compatibility "
+"issues, however you might want to try to enable this option."
+msgstr ""
 
 msgid "Help"
 msgstr "Pomoc"

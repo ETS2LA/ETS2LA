@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-11-07 14:13:54+0200\n"
+"POT-Creation-Date: 2026-11-07 15:00:04+0200\n"
 "PO-Revision-Date: 2026-10-20 09:37+0000\n"
 "Last-Translator: Pastel <pastel@ets2la.com>\n"
 "Language-Team: Japanese <http://weblate.ets2la.com/projects/ets2la/ets2la/ja/"
@@ -63,6 +63,9 @@ msgstr ""
 #, csharp-format
 msgid "Control with ID '{0}' not found for updating bindings."
 msgstr "割り当ての更新に必要な、ID「{0}」のコントロールが見つかりません。"
+
+msgid "Monitor"
+msgstr ""
 
 msgid ""
 "Force ETS2LA to load the map on game startup. This can resolve issues where "
@@ -129,26 +132,26 @@ msgid "Maximum Speed"
 msgstr "最高速度"
 
 msgid ""
+"Your username may only contain letters, numbers, underscores, hyphens and "
+"periods, and must start and end with a letter or number."
+msgstr ""
+
+msgid ""
 "When the game reports itself being paused, ETS2LA won't render AR elements."
 msgstr ""
 "ゲームが一時停止状態であると認識した場合、ETS2LAはAR要素をレンダリングしませ"
 "ん。"
 
-msgid ""
-"Your username may only contain letters, numbers, underscores, hyphens and "
-"periods, and must start and end with a letter or number."
-msgstr ""
-
 #, csharp-format
 msgid "Connected joystick: [bold]{0}[/] [gray italic]({1})[/]"
 msgstr "ジョイスティックに接続しました: [bold]{0}[/] [gray italic]({1})[/]"
 
-msgid "Username"
-msgstr "ユーザー名"
-
 #, csharp-format
 msgid "Starting binding for control {0} ({1})"
 msgstr "操作 {0}（{1}）の割り当てを開始"
+
+msgid "Username"
+msgstr "ユーザー名"
 
 #, csharp-format
 msgid "Failed to enable dependency: {0}"
@@ -248,6 +251,11 @@ msgstr ""
 
 #, csharp-format
 msgid "Your username must be at least {0} characters long."
+msgstr ""
+
+msgid ""
+"Allow ETS2LA's overlay to run on Wayland. Wayland might cause compatibility "
+"issues, however you might want to try to enable this option."
 msgstr ""
 
 msgid "Press anywhere outside the dialog to close it."
@@ -826,6 +834,10 @@ msgstr ""
 msgid "Collision Avoidance"
 msgstr "衝突回避"
 
+#, csharp-format
+msgid "Monitor {0}: {1}"
+msgstr ""
+
 msgid ""
 "Disables the overlay entirely. This will fix the black screen issue at the "
 "cost of breaking all features that rely on the overlay, including AR and the "
@@ -861,15 +873,15 @@ msgstr "カメラ{0} ({1}x{2})"
 msgid "Display JWT Token"
 msgstr ""
 
+msgid "Invalid Input"
+msgstr ""
+
 msgid ""
 "This setting only loads roads and intersections visible on the in game map. "
 "It discards all other information."
 msgstr ""
 "この設定では、ゲーム内のマップ上に表示されている道路と交差点のみを読み込みま"
 "す。それ以外の情報はすべて除外されます。"
-
-msgid "Invalid Input"
-msgstr ""
 
 #, csharp-format
 msgid "Invalid audio job: {0}, does the file exist?"
@@ -998,12 +1010,12 @@ msgstr "パスカル"
 msgid "Account Removal Error"
 msgstr ""
 
-msgid "You can enable the plugins we installed in a previous step here."
-msgstr "ここで、前の手順でインストールしたプラグインを有効にできます。"
-
 #, csharp-format
 msgid "Failed to disable {0}: {1}"
 msgstr "{0} の無効化に失敗しました: {1}"
+
+msgid "You can enable the plugins we installed in a previous step here."
+msgstr "ここで、前の手順でインストールしたプラグインを有効にできます。"
 
 msgid "Login"
 msgstr ""
@@ -1011,13 +1023,13 @@ msgstr ""
 msgid "SDK Installed"
 msgstr "SDKがインストールされました"
 
-msgid "Current Speed"
-msgstr "現在の速度"
-
 #, csharp-format
 msgid "Bound control {0} ({1}) to device {2} and control {3}"
 msgstr ""
 "コントロール {0} ({1}) をデバイス {2} およびコントロール {3} に紐付けました"
+
+msgid "Current Speed"
+msgstr "現在の速度"
 
 msgid "miles per hour"
 msgstr "マイル毎時"
@@ -1205,6 +1217,9 @@ msgid ""
 msgstr ""
 "SETキーを押したとき、ETS2LAは現在のクルーズコントロール速度をどのように設定し"
 "ますか？"
+
+msgid "Allow Wayland"
+msgstr ""
 
 msgid "The selected directory does not exist."
 msgstr "指定されたディレクトリは存在しません。"
@@ -1504,11 +1519,11 @@ msgstr "ゲームの追加に失敗しました"
 msgid "Font file not found at {0}"
 msgstr "フォントファイルが {0} に見つかりません"
 
-msgid "No release notes available."
-msgstr "リリースノートはありません。"
-
 msgid "Changelog"
 msgstr "変更履歴"
+
+msgid "No release notes available."
+msgstr "リリースノートはありません。"
 
 #, csharp-format
 msgid "Detected a switch to {0}, waiting for its game data to be parsed."
@@ -1668,16 +1683,16 @@ msgid "Found {0} (version: {1}) at '{2}'"
 msgstr "'{2}' で {0} (バージョン: {1}) が見つかりました"
 
 msgid ""
+"Select which traffic rules ETS2LA should obey. More might be added later, "
+"and all plugins won't necessarily support all rules."
+msgstr ""
+
+msgid ""
 "We can render elements in the game world using the overlay. This will use "
 "additional CPU and GPU resources."
 msgstr ""
 "オーバーレイを使用して、ゲームワールド内の要素を描画することができます。これ"
 "により、CPUおよびGPUのリソースが追加で消費されます。"
-
-msgid ""
-"Select which traffic rules ETS2LA should obey. More might be added later, "
-"and all plugins won't necessarily support all rules."
-msgstr ""
 
 msgid "kilometers per hour"
 msgstr "キロメートル毎時"
@@ -2052,11 +2067,11 @@ msgstr "プラグインを [gray]{0}[/] から読み込めませんでした: {1
 msgid "Assist Mode: <span class=\"text-text-accent font-bold\">{0}</span>"
 msgstr "アシストモード: <span class=\"text-text-accent font-bold\">{0}</span>"
 
-msgid "Thinking..."
-msgstr ""
-
 msgid "View Public Telemetry"
 msgstr "公開テレメトリを表示"
+
+msgid "Thinking..."
+msgstr ""
 
 msgid "Adjust the volume of the audio output."
 msgstr "音声出力の音量を調整します。"
@@ -2132,11 +2147,11 @@ msgstr ""
 msgid "The selected file is not a core.scs file."
 msgstr "選択されたファイルは core.scs ファイルではありません。"
 
-msgid "Translated by:"
-msgstr "翻訳者:"
-
 msgid "You have successfully logged out."
 msgstr ""
+
+msgid "Translated by:"
+msgstr "翻訳者:"
 
 msgid "This game was found at"
 msgstr "このゲームが見つかった場所"
@@ -2166,11 +2181,11 @@ msgstr "内部例外: {0}"
 msgid "Plugin with ID {0} not found."
 msgstr "ID {0} のプラグインが見つかりません。"
 
-msgid "Units and Language"
-msgstr "単位と言語"
-
 msgid "One Time Password"
 msgstr ""
+
+msgid "Units and Language"
+msgstr "単位と言語"
 
 #, csharp-format
 msgid "Loaded plugin: [gray]{0}[/] from [gray]{1}[/]."
@@ -2335,6 +2350,11 @@ msgstr "アップデートを確認中…"
 msgid "No audio output device available"
 msgstr ""
 
+msgid ""
+"The monitor ETS2LA's overlay will be displayed on. If you have multiple "
+"monitors, you can select which one to use here."
+msgstr ""
+
 msgid "Catalogue"
 msgstr "カタログ"
 
@@ -2373,6 +2393,11 @@ msgstr ""
 
 msgid "Demo Window"
 msgstr "デモウィンドウ"
+
+msgid ""
+"Allow ETS2LA's window to run on Wayland. Wayland might cause compatibility "
+"issues, however you might want to try to enable this option."
+msgstr ""
 
 msgid "Help"
 msgstr "ヘルプ"

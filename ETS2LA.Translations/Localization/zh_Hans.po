@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-11-07 14:13:54+0200\n"
+"POT-Creation-Date: 2026-11-07 15:00:04+0200\n"
 "PO-Revision-Date: 2026-11-02 20:26+0000\n"
 "Last-Translator: goodnightan <goodnightan@ets2la.com>\n"
 "Language-Team: Chinese (Simplified Han script) <http://weblate.ets2la.com/"
@@ -67,6 +67,9 @@ msgstr "检测到旧版音频路径：{0}"
 #, csharp-format
 msgid "Control with ID '{0}' not found for updating bindings."
 msgstr "找不到可以修改绑定的 {0} 号控件。"
+
+msgid "Monitor"
+msgstr ""
 
 msgid ""
 "Force ETS2LA to load the map on game startup. This can resolve issues where "
@@ -132,26 +135,26 @@ msgid "Maximum Speed"
 msgstr "最高速度"
 
 msgid ""
-"When the game reports itself being paused, ETS2LA won't render AR elements."
-msgstr "当游戏处于暂停状态时，ETS2LA 将不会显示 AR 元素。"
-
-msgid ""
 "Your username may only contain letters, numbers, underscores, hyphens and "
 "periods, and must start and end with a letter or number."
 msgstr ""
 "用户名只能包含字母、数字、下划线、连字符和句点，且必须以字母或数字开头和结"
 "尾。"
 
+msgid ""
+"When the game reports itself being paused, ETS2LA won't render AR elements."
+msgstr "当游戏处于暂停状态时，ETS2LA 将不会显示 AR 元素。"
+
 #, csharp-format
 msgid "Connected joystick: [bold]{0}[/] [gray italic]({1})[/]"
 msgstr "已连接摇杆：[bold]{0}[/] [gray italic]({1})[/]"
 
-msgid "Username"
-msgstr "用户名"
-
 #, csharp-format
 msgid "Starting binding for control {0} ({1})"
 msgstr "正在绑定控制 {0} （{1}）"
+
+msgid "Username"
+msgstr "用户名"
 
 #, csharp-format
 msgid "Failed to enable dependency: {0}"
@@ -245,6 +248,11 @@ msgstr "请输入用户名。"
 #, csharp-format
 msgid "Your username must be at least {0} characters long."
 msgstr "您的用户名至少需要包含{0}个字符。"
+
+msgid ""
+"Allow ETS2LA's overlay to run on Wayland. Wayland might cause compatibility "
+"issues, however you might want to try to enable this option."
+msgstr ""
 
 msgid "Press anywhere outside the dialog to close it."
 msgstr "点击对话框外的任意位置即可关闭。"
@@ -816,6 +824,10 @@ msgstr "如果您正在直播或录制视频，应该隐藏此窗口。"
 msgid "Collision Avoidance"
 msgstr "防碰撞"
 
+#, csharp-format
+msgid "Monitor {0}: {1}"
+msgstr ""
+
 msgid ""
 "Disables the overlay entirely. This will fix the black screen issue at the "
 "cost of breaking all features that rely on the overlay, including AR and the "
@@ -848,13 +860,13 @@ msgstr "摄像头 {0}（{1}x{2}）"
 msgid "Display JWT Token"
 msgstr "显示 JWT 令牌"
 
+msgid "Invalid Input"
+msgstr "输入无效"
+
 msgid ""
 "This setting only loads roads and intersections visible on the in game map. "
 "It discards all other information."
 msgstr "此设置只会加载游戏地图上可见的道路与路口，并丢弃其他所有信息。"
-
-msgid "Invalid Input"
-msgstr "输入无效"
 
 #, csharp-format
 msgid "Invalid audio job: {0}, does the file exist?"
@@ -979,12 +991,12 @@ msgstr "帕斯卡（压力单位）"
 msgid "Account Removal Error"
 msgstr "移除账户错误"
 
-msgid "You can enable the plugins we installed in a previous step here."
-msgstr "您可以在此处启用我们在上一步安装的插件。"
-
 #, csharp-format
 msgid "Failed to disable {0}: {1}"
 msgstr "停用 {0} 失败:{1}"
+
+msgid "You can enable the plugins we installed in a previous step here."
+msgstr "您可以在此处启用我们在上一步安装的插件。"
 
 msgid "Login"
 msgstr "登录"
@@ -992,12 +1004,12 @@ msgstr "登录"
 msgid "SDK Installed"
 msgstr "已安装SDK"
 
-msgid "Current Speed"
-msgstr "当前速度"
-
 #, csharp-format
 msgid "Bound control {0} ({1}) to device {2} and control {3}"
 msgstr "已将控件 {0}（{1}）绑定至设备 {2} 的控件 {3}"
+
+msgid "Current Speed"
+msgstr "当前速度"
 
 msgid "miles per hour"
 msgstr "英里每小时"
@@ -1173,6 +1185,9 @@ msgid ""
 "When pressing the SET keybind, what should ETS2LA set as the current cruise "
 "control speed?"
 msgstr "按下“设定”按键时，ETS2LA 应将当前巡航速度设定为什么速度？"
+
+msgid "Allow Wayland"
+msgstr ""
 
 msgid "The selected directory does not exist."
 msgstr "所选目录不存在。"
@@ -1460,11 +1475,11 @@ msgstr "游戏添加失败"
 msgid "Font file not found at {0}"
 msgstr "找不到字体文件：{0}"
 
-msgid "No release notes available."
-msgstr "暂无更新日志。"
-
 msgid "Changelog"
 msgstr "更新日志"
+
+msgid "No release notes available."
+msgstr "暂无更新日志。"
 
 #, csharp-format
 msgid "Detected a switch to {0}, waiting for its game data to be parsed."
@@ -1614,16 +1629,16 @@ msgid "Found {0} (version: {1}) at '{2}'"
 msgstr "在“{2}”找到 {0}（版本：{1}）"
 
 msgid ""
-"We can render elements in the game world using the overlay. This will use "
-"additional CPU and GPU resources."
-msgstr "我们可以通过叠加层在游戏世界中渲染元素。这会额外使用 CPU 和 GPU 资源。"
-
-msgid ""
 "Select which traffic rules ETS2LA should obey. More might be added later, "
 "and all plugins won't necessarily support all rules."
 msgstr ""
 "选择 ETS2LA 应遵守的交通规则。后续可能会添加更多规则，且并非所有插件都支持全"
 "部规则。"
+
+msgid ""
+"We can render elements in the game world using the overlay. This will use "
+"additional CPU and GPU resources."
+msgstr "我们可以通过叠加层在游戏世界中渲染元素。这会额外使用 CPU 和 GPU 资源。"
 
 msgid "kilometers per hour"
 msgstr "公里每小时"
@@ -1969,11 +1984,11 @@ msgstr "从 [gray]{0}[/] 加载插件失败：{1}"
 msgid "Assist Mode: <span class=\"text-text-accent font-bold\">{0}</span>"
 msgstr "辅助模式：<span class=\"text-text-accent font-bold\">{0}</span>"
 
-msgid "Thinking..."
-msgstr "思考中…"
-
 msgid "View Public Telemetry"
 msgstr "查看公开遥测数据"
+
+msgid "Thinking..."
+msgstr "思考中…"
 
 msgid "Adjust the volume of the audio output."
 msgstr "调整音频输出的音量。"
@@ -2043,11 +2058,11 @@ msgstr "解析仍会继续，但此文件中的信息将无法供 ETS2LA 使用�
 msgid "The selected file is not a core.scs file."
 msgstr "所选的文件不是 core.scs 文件。"
 
-msgid "Translated by:"
-msgstr "译者为："
-
 msgid "You have successfully logged out."
 msgstr "您已成功退出登录。"
+
+msgid "Translated by:"
+msgstr "译者为："
 
 msgid "This game was found at"
 msgstr "此游戏位于"
@@ -2077,11 +2092,11 @@ msgstr "内部异常：{0}"
 msgid "Plugin with ID {0} not found."
 msgstr "找不到 ID 为 {0} 的插件。"
 
-msgid "Units and Language"
-msgstr "单位与语言"
-
 msgid "One Time Password"
 msgstr "一次性密码"
+
+msgid "Units and Language"
+msgstr "单位与语言"
 
 #, csharp-format
 msgid "Loaded plugin: [gray]{0}[/] from [gray]{1}[/]."
@@ -2241,6 +2256,11 @@ msgstr "正在检查更新..."
 msgid "No audio output device available"
 msgstr "没有可用的音频输出设备"
 
+msgid ""
+"The monitor ETS2LA's overlay will be displayed on. If you have multiple "
+"monitors, you can select which one to use here."
+msgstr ""
+
 msgid "Catalogue"
 msgstr "插件库"
 
@@ -2280,6 +2300,11 @@ msgstr ""
 
 msgid "Demo Window"
 msgstr "演示窗口"
+
+msgid ""
+"Allow ETS2LA's window to run on Wayland. Wayland might cause compatibility "
+"issues, however you might want to try to enable this option."
+msgstr ""
 
 msgid "Help"
 msgstr "帮助"

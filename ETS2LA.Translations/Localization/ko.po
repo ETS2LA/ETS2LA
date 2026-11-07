@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-11-07 14:13:54+0200\n"
+"POT-Creation-Date: 2026-11-07 15:00:04+0200\n"
 "PO-Revision-Date: 2026-11-02 20:26+0000\n"
 "Last-Translator: bot_lapis <botlapis@ets2la.com>\n"
 "Language-Team: Korean <http://weblate.ets2la.com/projects/ets2la/ets2la/ko/"
@@ -63,6 +63,9 @@ msgstr "레거시 오디오 경로가 감지되었습니다: {0}"
 #, csharp-format
 msgid "Control with ID '{0}' not found for updating bindings."
 msgstr "바인딩 업데이트를 위한 '{0}' ID의 컨트롤을 찾을 수 없습니다."
+
+msgid "Monitor"
+msgstr ""
 
 msgid ""
 "Force ETS2LA to load the map on game startup. This can resolve issues where "
@@ -127,27 +130,27 @@ msgid "Maximum Speed"
 msgstr "최대 속도"
 
 msgid ""
-"When the game reports itself being paused, ETS2LA won't render AR elements."
-msgstr ""
-"게임이 일시정지 상태라고 보고하면, ETS2LA는 AR 요소를 렌더링하지 않습니다."
-
-msgid ""
 "Your username may only contain letters, numbers, underscores, hyphens and "
 "periods, and must start and end with a letter or number."
 msgstr ""
 "사용자 이름에는 문자, 숫자, 밑줄, 하이픈, 마침표만 포함할 수 있으며, 문자나 "
 "숫자로 시작하고 끝나야 합니다."
 
+msgid ""
+"When the game reports itself being paused, ETS2LA won't render AR elements."
+msgstr ""
+"게임이 일시정지 상태라고 보고하면, ETS2LA는 AR 요소를 렌더링하지 않습니다."
+
 #, csharp-format
 msgid "Connected joystick: [bold]{0}[/] [gray italic]({1})[/]"
 msgstr "조이스틱 연결됨: [bold]{0}[/] [gray italic]({1})[/]"
 
-msgid "Username"
-msgstr "사용자 이름"
-
 #, csharp-format
 msgid "Starting binding for control {0} ({1})"
 msgstr "컨트롤 {0} ({1})에 대한 바인딩 시작"
+
+msgid "Username"
+msgstr "사용자 이름"
 
 #, csharp-format
 msgid "Failed to enable dependency: {0}"
@@ -246,6 +249,11 @@ msgstr "사용자 이름을 입력해 주세요."
 #, csharp-format
 msgid "Your username must be at least {0} characters long."
 msgstr "사용자 이름은 최소 {0}자 이상이어야 합니다."
+
+msgid ""
+"Allow ETS2LA's overlay to run on Wayland. Wayland might cause compatibility "
+"issues, however you might want to try to enable this option."
+msgstr ""
 
 msgid "Press anywhere outside the dialog to close it."
 msgstr "대화 상자 바깥 아무 곳이나 눌러 닫으세요."
@@ -833,6 +841,10 @@ msgstr "스트리밍이나 녹화 중이라면, 지금이 이 창을 숨길 때�
 msgid "Collision Avoidance"
 msgstr "충돌 방지"
 
+#, csharp-format
+msgid "Monitor {0}: {1}"
+msgstr ""
+
 msgid ""
 "Disables the overlay entirely. This will fix the black screen issue at the "
 "cost of breaking all features that rely on the overlay, including AR and the "
@@ -865,15 +877,15 @@ msgstr "카메라 {0} ({1}x{2}"
 msgid "Display JWT Token"
 msgstr "JWT 토큰 표시"
 
+msgid "Invalid Input"
+msgstr "잘못된 입력"
+
 msgid ""
 "This setting only loads roads and intersections visible on the in game map. "
 "It discards all other information."
 msgstr ""
 "이 설정은 게임 내 지도에 표시되는 도로와 교차로만 로드합니다. 다른 모든 정보"
 "는 버립니다."
-
-msgid "Invalid Input"
-msgstr "잘못된 입력"
 
 #, csharp-format
 msgid "Invalid audio job: {0}, does the file exist?"
@@ -1006,12 +1018,12 @@ msgstr "파스칼 (Pa)"
 msgid "Account Removal Error"
 msgstr "계정 제거 오류"
 
-msgid "You can enable the plugins we installed in a previous step here."
-msgstr "이전 단계에서 설치한 플러그인을 여기에서 활성화할 수 있습니다."
-
 #, csharp-format
 msgid "Failed to disable {0}: {1}"
 msgstr "{0}을(를) 비활성화하지 못했습니다: {1}"
+
+msgid "You can enable the plugins we installed in a previous step here."
+msgstr "이전 단계에서 설치한 플러그인을 여기에서 활성화할 수 있습니다."
 
 msgid "Login"
 msgstr "로그인"
@@ -1019,12 +1031,12 @@ msgstr "로그인"
 msgid "SDK Installed"
 msgstr "SDK 설치됨"
 
-msgid "Current Speed"
-msgstr "현재 속도"
-
 #, csharp-format
 msgid "Bound control {0} ({1}) to device {2} and control {3}"
 msgstr "컨트롤 {0} ({1})을(를) 장치 {2}, 컨트롤 {3}에 바인딩했습니다"
+
+msgid "Current Speed"
+msgstr "현재 속도"
 
 msgid "miles per hour"
 msgstr "마일/시간"
@@ -1209,6 +1221,9 @@ msgid ""
 msgstr ""
 "SET 키 바인드를 누를 때 ETS2LA가 현재 크루즈 컨트롤 속도로 무엇을 설정해야 합"
 "니까?"
+
+msgid "Allow Wayland"
+msgstr ""
 
 msgid "The selected directory does not exist."
 msgstr "선택한 디렉터리가 존재하지 않습니다."
@@ -1512,11 +1527,11 @@ msgstr "게임을 추가하지 못했습니다"
 msgid "Font file not found at {0}"
 msgstr "{0}에서 글꼴 파일을 찾을 수 없습니다"
 
-msgid "No release notes available."
-msgstr "사용 가능한 릴리스 노트가 없습니다."
-
 msgid "Changelog"
 msgstr "변경 로그"
+
+msgid "No release notes available."
+msgstr "사용 가능한 릴리스 노트가 없습니다."
 
 #, csharp-format
 msgid "Detected a switch to {0}, waiting for its game data to be parsed."
@@ -1672,18 +1687,18 @@ msgid "Found {0} (version: {1}) at '{2}'"
 msgstr "'{2}'에서 {0}(버전: {1})을(를) 찾았습니다"
 
 msgid ""
-"We can render elements in the game world using the overlay. This will use "
-"additional CPU and GPU resources."
-msgstr ""
-"오버레이를 사용하여 게임 세계에 요소를 렌더링할 수 있습니다. 이 경우 추가 "
-"CPU 및 GPU 리소스가 사용됩니다."
-
-msgid ""
 "Select which traffic rules ETS2LA should obey. More might be added later, "
 "and all plugins won't necessarily support all rules."
 msgstr ""
 "ETS2LA가 준수해야 할 교통 규칙을 선택하세요. 나중에 더 추가될 수 있으며, 모"
 "든 플러그인이 모든 규칙을 반드시 지원하는 것은 아닙니다."
+
+msgid ""
+"We can render elements in the game world using the overlay. This will use "
+"additional CPU and GPU resources."
+msgstr ""
+"오버레이를 사용하여 게임 세계에 요소를 렌더링할 수 있습니다. 이 경우 추가 "
+"CPU 및 GPU 리소스가 사용됩니다."
 
 msgid "kilometers per hour"
 msgstr "시속 킬로미터 (km/h)"
@@ -2049,11 +2064,11 @@ msgstr "[gray]{0}[/]에서 플러그인을 로드하지 못했습니다: {1}"
 msgid "Assist Mode: <span class=\"text-text-accent font-bold\">{0}</span>"
 msgstr "어시스트 모드: <span class=\"text-text-accent font-bold\">{0}</span>"
 
-msgid "Thinking..."
-msgstr "처리 중..."
-
 msgid "View Public Telemetry"
 msgstr "공개 텔레메트리 보기"
+
+msgid "Thinking..."
+msgstr "처리 중..."
 
 msgid "Adjust the volume of the audio output."
 msgstr "오디오 출력의 볼륨을 조정합니다."
@@ -2127,11 +2142,11 @@ msgstr ""
 msgid "The selected file is not a core.scs file."
 msgstr "선택한 파일은 core.scs 파일이 아닙니다."
 
-msgid "Translated by:"
-msgstr "번역:"
-
 msgid "You have successfully logged out."
 msgstr "성공적으로 로그아웃되었습니다."
+
+msgid "Translated by:"
+msgstr "번역:"
 
 msgid "This game was found at"
 msgstr "이 게임은 다음 위치에서 발견되었습니다"
@@ -2161,11 +2176,11 @@ msgstr "내부 예외: {0}"
 msgid "Plugin with ID {0} not found."
 msgstr "플러그인 {0}을(를) 찾지 못했습니다."
 
-msgid "Units and Language"
-msgstr "단위 및 언어"
-
 msgid "One Time Password"
 msgstr "일회용 비밀번호"
+
+msgid "Units and Language"
+msgstr "단위 및 언어"
 
 #, csharp-format
 msgid "Loaded plugin: [gray]{0}[/] from [gray]{1}[/]."
@@ -2333,6 +2348,11 @@ msgstr "업데이트 확인 중..."
 msgid "No audio output device available"
 msgstr "사용 가능한 오디오 출력 장치가 없습니다"
 
+msgid ""
+"The monitor ETS2LA's overlay will be displayed on. If you have multiple "
+"monitors, you can select which one to use here."
+msgstr ""
+
 msgid "Catalogue"
 msgstr "카탈로그"
 
@@ -2372,6 +2392,11 @@ msgstr ""
 
 msgid "Demo Window"
 msgstr "데모 창"
+
+msgid ""
+"Allow ETS2LA's window to run on Wayland. Wayland might cause compatibility "
+"issues, however you might want to try to enable this option."
+msgstr ""
 
 msgid "Help"
 msgstr "도움말"

@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-11-07 14:13:54+0200\n"
+"POT-Creation-Date: 2026-11-07 15:00:04+0200\n"
 "PO-Revision-Date: 2026-10-27 15:18+0000\n"
 "Last-Translator: McAs13 <tsumiguel@ets2la.com>\n"
 "Language-Team: Spanish (American) <http://weblate.ets2la.com/projects/ets2la/"
@@ -66,6 +66,9 @@ msgstr ""
 #, csharp-format
 msgid "Control with ID '{0}' not found for updating bindings."
 msgstr "No se encontró el control con ID '{0}' para actualizar los enlaces."
+
+msgid "Monitor"
+msgstr ""
 
 msgid ""
 "Force ETS2LA to load the map on game startup. This can resolve issues where "
@@ -132,28 +135,28 @@ msgid "Maximum Speed"
 msgstr "Velocidad máxima"
 
 msgid ""
-"When the game reports itself being paused, ETS2LA won't render AR elements."
-msgstr ""
-"Cuando el juego indica que está en pausa, ETS2LA no renderizará elementos de "
-"RA."
-
-msgid ""
 "Your username may only contain letters, numbers, underscores, hyphens and "
 "periods, and must start and end with a letter or number."
 msgstr ""
 "Tu nombre de usuario solo puede contener letras, números, guiones bajos, "
 "guiones y puntos, y debe empezar y terminar con una letra o un número."
 
+msgid ""
+"When the game reports itself being paused, ETS2LA won't render AR elements."
+msgstr ""
+"Cuando el juego indica que está en pausa, ETS2LA no renderizará elementos de "
+"RA."
+
 #, csharp-format
 msgid "Connected joystick: [bold]{0}[/] [gray italic]({1})[/]"
 msgstr "Joystick conectado: [bold]{0}[/] [gray italic]({1})[/]"
 
-msgid "Username"
-msgstr "Nombre de usuario"
-
 #, csharp-format
 msgid "Starting binding for control {0} ({1})"
 msgstr "Iniciando enlace para el control {0} ({1})"
+
+msgid "Username"
+msgstr "Nombre de usuario"
 
 #, csharp-format
 msgid "Failed to enable dependency: {0}"
@@ -257,6 +260,11 @@ msgstr "Por favor, introduce un nombre de usuario."
 #, csharp-format
 msgid "Your username must be at least {0} characters long."
 msgstr "Tu nombre de usuario debe tener al menos {0} caracteres."
+
+msgid ""
+"Allow ETS2LA's overlay to run on Wayland. Wayland might cause compatibility "
+"issues, however you might want to try to enable this option."
+msgstr ""
 
 msgid "Press anywhere outside the dialog to close it."
 msgstr "Pulsa en cualquier lugar fuera del diálogo para cerrarlo."
@@ -865,6 +873,10 @@ msgstr ""
 msgid "Collision Avoidance"
 msgstr "Prevención de colisiones"
 
+#, csharp-format
+msgid "Monitor {0}: {1}"
+msgstr ""
+
 msgid ""
 "Disables the overlay entirely. This will fix the black screen issue at the "
 "cost of breaking all features that rely on the overlay, including AR and the "
@@ -900,15 +912,15 @@ msgstr "Cámara {0} ({1}x{2})"
 msgid "Display JWT Token"
 msgstr "Mostrar token JWT"
 
+msgid "Invalid Input"
+msgstr "Entrada no válida"
+
 msgid ""
 "This setting only loads roads and intersections visible on the in game map. "
 "It discards all other information."
 msgstr ""
 "Esta configuración solo carga las carreteras e intersecciones visibles en el "
 "mapa del juego. Descarta toda la demás información."
-
-msgid "Invalid Input"
-msgstr "Entrada no válida"
 
 #, csharp-format
 msgid "Invalid audio job: {0}, does the file exist?"
@@ -1048,12 +1060,12 @@ msgstr "Pascales"
 msgid "Account Removal Error"
 msgstr "Error de eliminación de la cuenta"
 
-msgid "You can enable the plugins we installed in a previous step here."
-msgstr "Aquí puedes habilitar los plugins que instalamos en un paso anterior."
-
 #, csharp-format
 msgid "Failed to disable {0}: {1}"
 msgstr "Error al deshabilitar {0}: {1}"
+
+msgid "You can enable the plugins we installed in a previous step here."
+msgstr "Aquí puedes habilitar los plugins que instalamos en un paso anterior."
 
 msgid "Login"
 msgstr "Iniciar sesión"
@@ -1061,12 +1073,12 @@ msgstr "Iniciar sesión"
 msgid "SDK Installed"
 msgstr "SDK instalado"
 
-msgid "Current Speed"
-msgstr "Velocidad actual"
-
 #, csharp-format
 msgid "Bound control {0} ({1}) to device {2} and control {3}"
 msgstr "Control {0} ({1}) vinculado al dispositivo {2} y control {3}"
+
+msgid "Current Speed"
+msgstr "Velocidad actual"
 
 msgid "miles per hour"
 msgstr "millas por hora"
@@ -1258,6 +1270,9 @@ msgid ""
 msgstr ""
 "Al pulsar la combinación de teclas SET, ¿qué debería establecer ETS2LA como "
 "la velocidad actual del control de crucero?"
+
+msgid "Allow Wayland"
+msgstr ""
 
 msgid "The selected directory does not exist."
 msgstr "El directorio seleccionado no existe."
@@ -1576,11 +1591,11 @@ msgstr "Error al añadir el juego"
 msgid "Font file not found at {0}"
 msgstr "No se encontró el archivo de fuente en {0}"
 
-msgid "No release notes available."
-msgstr "No hay notas de la versión disponibles."
-
 msgid "Changelog"
 msgstr "Registro de cambios"
+
+msgid "No release notes available."
+msgstr "No hay notas de la versión disponibles."
 
 #, csharp-format
 msgid "Detected a switch to {0}, waiting for its game data to be parsed."
@@ -1747,19 +1762,19 @@ msgid "Found {0} (version: {1}) at '{2}'"
 msgstr "Se encontró {0} (versión: {1}) en '{2}'"
 
 msgid ""
-"We can render elements in the game world using the overlay. This will use "
-"additional CPU and GPU resources."
-msgstr ""
-"Podemos renderizar elementos en el mundo del juego usando la superposición. "
-"Esto usará recursos adicionales de CPU y GPU."
-
-msgid ""
 "Select which traffic rules ETS2LA should obey. More might be added later, "
 "and all plugins won't necessarily support all rules."
 msgstr ""
 "Selecciona qué normas de tráfico debe obedecer ETS2LA. Podrían añadirse más "
 "en el futuro, y no todos los plugins admitirán necesariamente todas las "
 "normas."
+
+msgid ""
+"We can render elements in the game world using the overlay. This will use "
+"additional CPU and GPU resources."
+msgstr ""
+"Podemos renderizar elementos en el mundo del juego usando la superposición. "
+"Esto usará recursos adicionales de CPU y GPU."
 
 msgid "kilometers per hour"
 msgstr "kilómetros por hora"
@@ -2139,11 +2154,11 @@ msgid "Assist Mode: <span class=\"text-text-accent font-bold\">{0}</span>"
 msgstr ""
 "Modo de asistencia: <span class=\"text-text-accent font-bold\">{0}</span>"
 
-msgid "Thinking..."
-msgstr "Pensando..."
-
 msgid "View Public Telemetry"
 msgstr "Ver telemetría pública"
+
+msgid "Thinking..."
+msgstr "Pensando..."
 
 msgid "Adjust the volume of the audio output."
 msgstr "Ajusta el volumen de la salida de audio."
@@ -2220,11 +2235,11 @@ msgstr ""
 msgid "The selected file is not a core.scs file."
 msgstr "El archivo seleccionado no es un archivo core.scs."
 
-msgid "Translated by:"
-msgstr "Traducido por:"
-
 msgid "You have successfully logged out."
 msgstr "Has cerrado sesión correctamente."
+
+msgid "Translated by:"
+msgstr "Traducido por:"
 
 msgid "This game was found at"
 msgstr "Este juego se encontró en"
@@ -2254,11 +2269,11 @@ msgstr "Excepción interna: {0}"
 msgid "Plugin with ID {0} not found."
 msgstr "No se encontró el plugin con ID {0}."
 
-msgid "Units and Language"
-msgstr "Unidades e idioma"
-
 msgid "One Time Password"
 msgstr "Contraseña de un solo uso"
+
+msgid "Units and Language"
+msgstr "Unidades e idioma"
 
 #, csharp-format
 msgid "Loaded plugin: [gray]{0}[/] from [gray]{1}[/]."
@@ -2434,6 +2449,11 @@ msgstr "Comprobando actualizaciones..."
 msgid "No audio output device available"
 msgstr ""
 
+msgid ""
+"The monitor ETS2LA's overlay will be displayed on. If you have multiple "
+"monitors, you can select which one to use here."
+msgstr ""
+
 msgid "Catalogue"
 msgstr "Catálogo"
 
@@ -2477,6 +2497,11 @@ msgstr ""
 
 msgid "Demo Window"
 msgstr "Ventana de demostración"
+
+msgid ""
+"Allow ETS2LA's window to run on Wayland. Wayland might cause compatibility "
+"issues, however you might want to try to enable this option."
+msgstr ""
 
 msgid "Help"
 msgstr "Ayuda"
