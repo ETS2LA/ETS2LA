@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-11-07 15:00:04+0200\n"
+"POT-Creation-Date: 2026-11-07 13:10:59+0200\n"
 "PO-Revision-Date: 2026-10-28 00:04+0000\n"
 "Last-Translator: Tema <tema@ets2la.com>\n"
 "Language-Team: Russian <http://weblate.ets2la.com/projects/ets2la/ets2la/ru/"
@@ -135,26 +135,26 @@ msgid "Maximum Speed"
 msgstr "Максимальная скорость"
 
 msgid ""
+"When the game reports itself being paused, ETS2LA won't render AR elements."
+msgstr "Когда игра сообщает о паузе, ETS2LA не отображает AR-элементы."
+
+msgid ""
 "Your username may only contain letters, numbers, underscores, hyphens and "
 "periods, and must start and end with a letter or number."
 msgstr ""
 "Имя пользователя может содержать только буквы, цифры, подчёркивания, дефисы "
 "и точки; оно должно начинаться и заканчиваться буквой или цифрой."
 
-msgid ""
-"When the game reports itself being paused, ETS2LA won't render AR elements."
-msgstr "Когда игра сообщает о паузе, ETS2LA не отображает AR-элементы."
-
 #, csharp-format
 msgid "Connected joystick: [bold]{0}[/] [gray italic]({1})[/]"
 msgstr "Подключён джойстик: [bold]{0}[/] [gray italic]({1})[/]"
 
+msgid "Username"
+msgstr "Имя пользователя"
+
 #, csharp-format
 msgid "Starting binding for control {0} ({1})"
 msgstr "Начало привязки элемента управления {0} ({1})"
-
-msgid "Username"
-msgstr "Имя пользователя"
 
 #, csharp-format
 msgid "Failed to enable dependency: {0}"
@@ -462,18 +462,18 @@ msgstr ""
 "Ассистенты включены: <span class=\"text-text-accent font-bold\">{0}</span>"
 
 msgid ""
-"Only show news articles from official sources, such as the ETS2LA team or "
-"it's developers."
-msgstr ""
-"Показывать только новости из официальных источников, например от команды "
-"ETS2LA или её разработчиков."
-
-msgid ""
 "Memory not available for output, please ensure the game is running and "
 "reinstall the SDK if necessary."
 msgstr ""
 "Не удалось получить доступ к памяти игры для записи. Убедитесь, что игра "
 "запущена, и при необходимости переустановите SDK."
+
+msgid ""
+"Only show news articles from official sources, such as the ETS2LA team or "
+"it's developers."
+msgstr ""
+"Показывать только новости из официальных источников, например от команды "
+"ETS2LA или её разработчиков."
 
 msgid "All driving assists have been disabled."
 msgstr ""
@@ -527,6 +527,9 @@ msgstr "Детализация данных"
 #, csharp-format
 msgid "Failed to uninstall current version of plugin with ID {0}."
 msgstr "Не удалось удалить текущую версию плагина с ID {0}."
+
+msgid "Error retrieving monitor names"
+msgstr ""
 
 msgid "Early"
 msgstr "Рано"
@@ -592,14 +595,6 @@ msgstr "Не удалось инициализировать бэкенд ImGui 
 msgid "Support Multiple Viewports"
 msgstr "Поддержка нескольких областей просмотра"
 
-msgid ""
-"Consider supporting us by becoming a <span class=\"font-bold text-text-"
-"l\">GitHub Sponsor</span> to cover ongoing development and operational costs."
-msgstr ""
-"Поддержите нас, став <span class=\"font-bold text-text-l\">спонсором на "
-"GitHub</span>. Это поможет покрыть текущие расходы на разработку и "
-"обслуживание."
-
 msgid "You took a wrong turn!"
 msgstr "Вы свернули не туда!"
 
@@ -608,6 +603,14 @@ msgid ""
 "Target speed changed. Current speedlimit: {0} {1}. Offsets are carried over "
 "on speedlimit change."
 msgstr ""
+
+msgid ""
+"Consider supporting us by becoming a <span class=\"font-bold text-text-"
+"l\">GitHub Sponsor</span> to cover ongoing development and operational costs."
+msgstr ""
+"Поддержите нас, став <span class=\"font-bold text-text-l\">спонсором на "
+"GitHub</span>. Это поможет покрыть текущие расходы на разработку и "
+"обслуживание."
 
 msgid "Adaptive Cruise Control Only"
 msgstr "Только адаптивный круиз-контроль"
@@ -701,11 +704,11 @@ msgstr "Не удалось удалить SDK версии '{0}' из '{1}': {2
 msgid "Failed to initialize overlay, ImGui initialization failed."
 msgstr "Не удалось инициализировать оверлей: ошибка инициализации ImGui."
 
-msgid "Your account is not allowed to use the chatbot."
-msgstr "Вашему аккаунту запрещено пользоваться чат-ботом."
-
 msgid "Speed Limit Warning"
 msgstr "Предупреждение о превышении скорости"
+
+msgid "Your account is not allowed to use the chatbot."
+msgstr "Вашему аккаунту запрещено пользоваться чат-ботом."
 
 msgid "Speed limit changed"
 msgstr "Ограничение скорости изменено"
@@ -797,6 +800,9 @@ msgstr "метры в секунду"
 
 msgid "Traffic Lights"
 msgstr "Светофоры"
+
+msgid "No monitors detected, overlay cannot be initialized."
+msgstr ""
 
 msgid "Update check skipped, using already cached result."
 msgstr "Проверка обновлений пропущена, используется сохранённый результат."
@@ -1052,13 +1058,13 @@ msgstr "Паскали"
 msgid "Account Removal Error"
 msgstr "Ошибка при удалении аккаунта."
 
-#, csharp-format
-msgid "Failed to disable {0}: {1}"
-msgstr "Не удалось отключить {0}: {1}"
-
 msgid "You can enable the plugins we installed in a previous step here."
 msgstr ""
 "Здесь можно включить плагины, которые мы установили на предыдущем шаге."
+
+#, csharp-format
+msgid "Failed to disable {0}: {1}"
+msgstr "Не удалось отключить {0}: {1}"
 
 msgid "Login"
 msgstr "Войти"
@@ -1066,12 +1072,12 @@ msgstr "Войти"
 msgid "SDK Installed"
 msgstr "SDK установлен"
 
+msgid "Current Speed"
+msgstr "Текущая скорость"
+
 #, csharp-format
 msgid "Bound control {0} ({1}) to device {2} and control {3}"
 msgstr "Элемент управления {0} ({1}) привязан к устройству {2} и элементу {3}"
-
-msgid "Current Speed"
-msgstr "Текущая скорость"
 
 msgid "miles per hour"
 msgstr "мили в час"
@@ -1236,12 +1242,12 @@ msgstr "Не подключено"
 msgid "Plugin with ID [gray]{0}[/] is already loaded, skipping duplicate."
 msgstr "Плагин с ID [gray]{0}[/] уже загружен, пропускаем дубликат."
 
-msgid "You are running the latest version."
-msgstr "У вас установлена последняя версия."
-
 #, csharp-format
 msgid "Failed to download plugin with ID {0} from {1}. Status code: {2}"
 msgstr "Не удалось скачать плагин с ID {0} из {1}. Код состояния: {2}"
+
+msgid "You are running the latest version."
+msgstr "У вас установлена последняя версия."
 
 msgid ""
 "Show news articles about plugin updates, be that official or 3rd party "
@@ -1318,15 +1324,15 @@ msgstr "Открытый исходный код"
 msgid "<span class=\"font-semibold\">{0}</span> until {1}"
 msgstr "<span class=\"font-semibold\">{0}</span> до {1}"
 
+msgid "Did you remember to restart after installing them?"
+msgstr "Не забыли перезапустить ETS2LA после установки?"
+
 msgid ""
 "User folder paths are hidden automatically. Review the log for other "
 "personal information before sending."
 msgstr ""
 "Пути к пользовательским папкам скрываются автоматически. Перед отправкой "
 "проверьте лог на наличие других личных данных."
-
-msgid "Did you remember to restart after installing them?"
-msgstr "Не забыли перезапустить ETS2LA после установки?"
 
 msgid "Volume"
 msgstr "Громкость"
@@ -1470,11 +1476,11 @@ msgstr ""
 "неинтерактивным режимами при нажатии назначенной клавиши. При отключении "
 "оверлей будет интерактивным только во время удержания этой клавиши."
 
-msgid "Latest News"
-msgstr "Последние новости"
-
 msgid "pounds"
 msgstr "фунты"
+
+msgid "Latest News"
+msgstr "Последние новости"
 
 #, csharp-format
 msgid "Failed to initialize SDL3 controls backend: {0}"
@@ -1579,11 +1585,11 @@ msgstr "Не удалось добавить игру"
 msgid "Font file not found at {0}"
 msgstr "Файл шрифта не найден по пути {0}"
 
-msgid "Changelog"
-msgstr "Список изменений"
-
 msgid "No release notes available."
 msgstr "Список изменений недоступен."
+
+msgid "Changelog"
+msgstr "Список изменений"
 
 #, csharp-format
 msgid "Detected a switch to {0}, waiting for its game data to be parsed."
@@ -1750,19 +1756,19 @@ msgid "Found {0} (version: {1}) at '{2}'"
 msgstr "Найдена игра {0} (версия: {1}) по пути '{2}'"
 
 msgid ""
+"We can render elements in the game world using the overlay. This will use "
+"additional CPU and GPU resources."
+msgstr ""
+"С помощью оверлея можно отображать элементы прямо в игровом мире. Это "
+"потребует дополнительных ресурсов процессора и видеокарты."
+
+msgid ""
 "Select which traffic rules ETS2LA should obey. More might be added later, "
 "and all plugins won't necessarily support all rules."
 msgstr ""
 "Выберите правила дорожного движения, которым должна следовать ETS2LA. Позже "
 "могут появиться новые правила, и не все плагины обязательно будут "
 "поддерживать каждое из них."
-
-msgid ""
-"We can render elements in the game world using the overlay. This will use "
-"additional CPU and GPU resources."
-msgstr ""
-"С помощью оверлея можно отображать элементы прямо в игровом мире. Это "
-"потребует дополнительных ресурсов процессора и видеокарты."
 
 msgid "kilometers per hour"
 msgstr "километры в час"
@@ -2052,15 +2058,15 @@ msgstr "Рекомендуемые плагины"
 msgid "Failed to remove account. Please try again."
 msgstr "Не удалось удалить аккаунт. Попробуйте ещё раз."
 
+msgid "Game added"
+msgstr "Игра добавлена"
+
 msgid ""
 "The maximum speed ETS2LA will accelerate to. It might still drift over this "
 "limit due to momentum."
 msgstr ""
 "Максимальная скорость, до которой ETS2LA будет разгоняться. Из-за инерции "
 "скорость всё равно может немного превысить этот предел."
-
-msgid "Game added"
-msgstr "Игра добавлена"
 
 msgid "Privacy Policy"
 msgstr "Политика конфиденциальности"
@@ -2140,11 +2146,11 @@ msgstr ""
 msgid "View Public Telemetry"
 msgstr "Просмотреть общедоступную телеметрию"
 
-msgid "Thinking..."
-msgstr "Думаю…"
-
 msgid "Adjust the volume of the audio output."
 msgstr "Настройте громкость звукового вывода."
+
+msgid "Thinking..."
+msgstr "Думаю…"
 
 #, csharp-format
 msgid ""
@@ -2260,6 +2266,12 @@ msgstr "Единицы измерения и язык"
 #, csharp-format
 msgid "Loaded plugin: [gray]{0}[/] from [gray]{1}[/]."
 msgstr "Загружен плагин: [gray]{0}[/] из [gray]{1}[/]."
+
+msgid ""
+"The monitor ETS2LA's overlay will be displayed on. If you have multiple "
+"monitors, you can select which one to use here. Please select the monitor "
+"the game is running on, and ensure the game is in fullscreen."
+msgstr ""
 
 msgid ""
 "You do not have permission to access this resource. The server understood "
@@ -2427,11 +2439,6 @@ msgstr "Проверка обновлений..."
 msgid "No audio output device available"
 msgstr ""
 
-msgid ""
-"The monitor ETS2LA's overlay will be displayed on. If you have multiple "
-"monitors, you can select which one to use here."
-msgstr ""
-
 msgid "Catalogue"
 msgstr "Каталог"
 
@@ -2588,9 +2595,6 @@ msgstr "Добавление мода: {0}"
 msgid "Like ETS2LA?"
 msgstr "Нравится ETS2LA?"
 
-msgid "Show Plugin Updates"
-msgstr "Показывать обновления плагинов"
-
 msgid ""
 "Allows ETS2LA to control throttle and brake using direct memory editing. "
 "This might not work on some systems, but allows for control even while "
@@ -2601,6 +2605,9 @@ msgstr ""
 "изменения памяти игры. На некоторых системах это может не работать, зато "
 "управление останется доступным даже при переключении на другое окно. Если "
 "эта функция не работает, сообщите о проблеме на нашем сервере Discord."
+
+msgid "Show Plugin Updates"
+msgstr "Показывать обновления плагинов"
 
 #, csharp-format
 msgid "Not all dependencies for plugin {0} are installed."

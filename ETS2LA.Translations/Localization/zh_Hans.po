@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-11-07 15:00:04+0200\n"
+"POT-Creation-Date: 2026-11-07 13:10:59+0200\n"
 "PO-Revision-Date: 2026-11-02 20:26+0000\n"
 "Last-Translator: goodnightan <goodnightan@ets2la.com>\n"
 "Language-Team: Chinese (Simplified Han script) <http://weblate.ets2la.com/"
@@ -135,26 +135,26 @@ msgid "Maximum Speed"
 msgstr "最高速度"
 
 msgid ""
+"When the game reports itself being paused, ETS2LA won't render AR elements."
+msgstr "当游戏处于暂停状态时，ETS2LA 将不会显示 AR 元素。"
+
+msgid ""
 "Your username may only contain letters, numbers, underscores, hyphens and "
 "periods, and must start and end with a letter or number."
 msgstr ""
 "用户名只能包含字母、数字、下划线、连字符和句点，且必须以字母或数字开头和结"
 "尾。"
 
-msgid ""
-"When the game reports itself being paused, ETS2LA won't render AR elements."
-msgstr "当游戏处于暂停状态时，ETS2LA 将不会显示 AR 元素。"
-
 #, csharp-format
 msgid "Connected joystick: [bold]{0}[/] [gray italic]({1})[/]"
 msgstr "已连接摇杆：[bold]{0}[/] [gray italic]({1})[/]"
 
+msgid "Username"
+msgstr "用户名"
+
 #, csharp-format
 msgid "Starting binding for control {0} ({1})"
 msgstr "正在绑定控制 {0} （{1}）"
-
-msgid "Username"
-msgstr "用户名"
 
 #, csharp-format
 msgid "Failed to enable dependency: {0}"
@@ -444,14 +444,14 @@ msgstr ""
 "辅助功能启用状态：<span class=\"text-text-accent font-bold\">{0}</span>"
 
 msgid ""
-"Only show news articles from official sources, such as the ETS2LA team or "
-"it's developers."
-msgstr "仅显示官方来源的新闻文章，例如 ETS2LA 团队或其开发者。"
-
-msgid ""
 "Memory not available for output, please ensure the game is running and "
 "reinstall the SDK if necessary."
 msgstr "输出内存不可用，请确保游戏正在运行，如有必要请重新安装 SDK。"
+
+msgid ""
+"Only show news articles from official sources, such as the ETS2LA team or "
+"it's developers."
+msgstr "仅显示官方来源的新闻文章，例如 ETS2LA 团队或其开发者。"
 
 msgid "All driving assists have been disabled."
 msgstr "所有驾驶辅助功能均已被禁用。"
@@ -502,6 +502,9 @@ msgstr "数据精细度"
 #, csharp-format
 msgid "Failed to uninstall current version of plugin with ID {0}."
 msgstr "无法卸载 ID 为 {0} 插件的当前版本。"
+
+msgid "Error retrieving monitor names"
+msgstr ""
 
 msgid "Early"
 msgstr "早"
@@ -565,13 +568,6 @@ msgstr "ImGui OpenGL3 实现初始化失败"
 msgid "Support Multiple Viewports"
 msgstr "支持多屏幕显示"
 
-msgid ""
-"Consider supporting us by becoming a <span class=\"font-bold text-text-"
-"l\">GitHub Sponsor</span> to cover ongoing development and operational costs."
-msgstr ""
-"考虑成为 <span class=\"font-bold text-text-l\">GitHub 赞助者</span>，帮助我们"
-"承担持续开发和运营所需的费用。"
-
 msgid "You took a wrong turn!"
 msgstr "你走错路了！"
 
@@ -580,6 +576,13 @@ msgid ""
 "Target speed changed. Current speedlimit: {0} {1}. Offsets are carried over "
 "on speedlimit change."
 msgstr "目标速度已更改。当前限速：{0} {1}。在限速更改时，偏移量将被保留。"
+
+msgid ""
+"Consider supporting us by becoming a <span class=\"font-bold text-text-"
+"l\">GitHub Sponsor</span> to cover ongoing development and operational costs."
+msgstr ""
+"考虑成为 <span class=\"font-bold text-text-l\">GitHub 赞助者</span>，帮助我们"
+"承担持续开发和运营所需的费用。"
 
 msgid "Adaptive Cruise Control Only"
 msgstr "仅启用自适应巡航控制"
@@ -668,11 +671,11 @@ msgstr "从'{1}'卸载 SDK 版本'{0}'失败：{2}"
 msgid "Failed to initialize overlay, ImGui initialization failed."
 msgstr "叠加层初始化失败，ImGui 初始化失败。"
 
-msgid "Your account is not allowed to use the chatbot."
-msgstr "您的账户无权使用聊天机器人。"
-
 msgid "Speed Limit Warning"
 msgstr "限速警告"
+
+msgid "Your account is not allowed to use the chatbot."
+msgstr "您的账户无权使用聊天机器人。"
 
 msgid "Speed limit changed"
 msgstr "限速已变更"
@@ -759,6 +762,9 @@ msgstr "米每秒"
 
 msgid "Traffic Lights"
 msgstr "交通信号灯"
+
+msgid "No monitors detected, overlay cannot be initialized."
+msgstr ""
 
 msgid "Update check skipped, using already cached result."
 msgstr "已略过更新检查，使用现有的缓存结果。"
@@ -991,12 +997,12 @@ msgstr "帕斯卡（压力单位）"
 msgid "Account Removal Error"
 msgstr "移除账户错误"
 
+msgid "You can enable the plugins we installed in a previous step here."
+msgstr "您可以在此处启用我们在上一步安装的插件。"
+
 #, csharp-format
 msgid "Failed to disable {0}: {1}"
 msgstr "停用 {0} 失败:{1}"
-
-msgid "You can enable the plugins we installed in a previous step here."
-msgstr "您可以在此处启用我们在上一步安装的插件。"
 
 msgid "Login"
 msgstr "登录"
@@ -1004,12 +1010,12 @@ msgstr "登录"
 msgid "SDK Installed"
 msgstr "已安装SDK"
 
+msgid "Current Speed"
+msgstr "当前速度"
+
 #, csharp-format
 msgid "Bound control {0} ({1}) to device {2} and control {3}"
 msgstr "已将控件 {0}（{1}）绑定至设备 {2} 的控件 {3}"
-
-msgid "Current Speed"
-msgstr "当前速度"
 
 msgid "miles per hour"
 msgstr "英里每小时"
@@ -1166,12 +1172,12 @@ msgstr "未连接"
 msgid "Plugin with ID [gray]{0}[/] is already loaded, skipping duplicate."
 msgstr "ID 为 [gray]{0}[/] 的插件已加载，跳过重复加载。"
 
-msgid "You are running the latest version."
-msgstr "你正在使用最新版本。"
-
 #, csharp-format
 msgid "Failed to download plugin with ID {0} from {1}. Status code: {2}"
 msgstr "从 {1} 下载 ID 为 {0} 的插件失败。状态码：{2}"
+
+msgid "You are running the latest version."
+msgstr "你正在使用最新版本。"
 
 msgid ""
 "Show news articles about plugin updates, be that official or 3rd party "
@@ -1238,13 +1244,13 @@ msgstr "开源代码库"
 msgid "<span class=\"font-semibold\">{0}</span> until {1}"
 msgstr "<span class=\"font-semibold\">{0}</span> 直到 {1}"
 
+msgid "Did you remember to restart after installing them?"
+msgstr "您是否在安装后重启程序？"
+
 msgid ""
 "User folder paths are hidden automatically. Review the log for other "
 "personal information before sending."
 msgstr "用户文件夹路径会自动隐藏。在发送前，请检查日志中是否包含其他个人信息。"
-
-msgid "Did you remember to restart after installing them?"
-msgstr "您是否在安装后重启程序？"
 
 msgid "Volume"
 msgstr "音量"
@@ -1374,11 +1380,11 @@ msgstr ""
 "启用后，按下对应按键时，叠加层将在交互和非交互模式之间切换。禁用后，只有在按"
 "住对应按键时，叠加层才会处于交互状态。"
 
-msgid "Latest News"
-msgstr "最新新闻"
-
 msgid "pounds"
 msgstr "磅"
+
+msgid "Latest News"
+msgstr "最新新闻"
 
 #, csharp-format
 msgid "Failed to initialize SDL3 controls backend: {0}"
@@ -1475,11 +1481,11 @@ msgstr "游戏添加失败"
 msgid "Font file not found at {0}"
 msgstr "找不到字体文件：{0}"
 
-msgid "Changelog"
-msgstr "更新日志"
-
 msgid "No release notes available."
 msgstr "暂无更新日志。"
+
+msgid "Changelog"
+msgstr "更新日志"
 
 #, csharp-format
 msgid "Detected a switch to {0}, waiting for its game data to be parsed."
@@ -1629,16 +1635,16 @@ msgid "Found {0} (version: {1}) at '{2}'"
 msgstr "在“{2}”找到 {0}（版本：{1}）"
 
 msgid ""
+"We can render elements in the game world using the overlay. This will use "
+"additional CPU and GPU resources."
+msgstr "我们可以通过叠加层在游戏世界中渲染元素。这会额外使用 CPU 和 GPU 资源。"
+
+msgid ""
 "Select which traffic rules ETS2LA should obey. More might be added later, "
 "and all plugins won't necessarily support all rules."
 msgstr ""
 "选择 ETS2LA 应遵守的交通规则。后续可能会添加更多规则，且并非所有插件都支持全"
 "部规则。"
-
-msgid ""
-"We can render elements in the game world using the overlay. This will use "
-"additional CPU and GPU resources."
-msgstr "我们可以通过叠加层在游戏世界中渲染元素。这会额外使用 CPU 和 GPU 资源。"
 
 msgid "kilometers per hour"
 msgstr "公里每小时"
@@ -1909,13 +1915,13 @@ msgstr "推荐插件"
 msgid "Failed to remove account. Please try again."
 msgstr "删除账户失败。请重试。"
 
+msgid "Game added"
+msgstr "游戏已添加"
+
 msgid ""
 "The maximum speed ETS2LA will accelerate to. It might still drift over this "
 "limit due to momentum."
 msgstr "ETS2LA 会加速到的最高速度。由于惯性，速度仍可能略微超过此限制。"
-
-msgid "Game added"
-msgstr "游戏已添加"
 
 msgid "Privacy Policy"
 msgstr "隐私政策"
@@ -1987,11 +1993,11 @@ msgstr "辅助模式：<span class=\"text-text-accent font-bold\">{0}</span>"
 msgid "View Public Telemetry"
 msgstr "查看公开遥测数据"
 
-msgid "Thinking..."
-msgstr "思考中…"
-
 msgid "Adjust the volume of the audio output."
 msgstr "调整音频输出的音量。"
+
+msgid "Thinking..."
+msgstr "思考中…"
 
 #, csharp-format
 msgid ""
@@ -2101,6 +2107,12 @@ msgstr "单位与语言"
 #, csharp-format
 msgid "Loaded plugin: [gray]{0}[/] from [gray]{1}[/]."
 msgstr "已加载插件：[gray]{0}[/] 从 [gray]{1}[/]。"
+
+msgid ""
+"The monitor ETS2LA's overlay will be displayed on. If you have multiple "
+"monitors, you can select which one to use here. Please select the monitor "
+"the game is running on, and ensure the game is in fullscreen."
+msgstr ""
 
 msgid ""
 "You do not have permission to access this resource. The server understood "
@@ -2256,11 +2268,6 @@ msgstr "正在检查更新..."
 msgid "No audio output device available"
 msgstr "没有可用的音频输出设备"
 
-msgid ""
-"The monitor ETS2LA's overlay will be displayed on. If you have multiple "
-"monitors, you can select which one to use here."
-msgstr ""
-
 msgid "Catalogue"
 msgstr "插件库"
 
@@ -2406,9 +2413,6 @@ msgstr "正在添加模组：{0}"
 msgid "Like ETS2LA?"
 msgstr "喜欢 ETS2LA 吗？"
 
-msgid "Show Plugin Updates"
-msgstr "显示插件更新"
-
 msgid ""
 "Allows ETS2LA to control throttle and brake using direct memory editing. "
 "This might not work on some systems, but allows for control even while "
@@ -2418,6 +2422,9 @@ msgstr ""
 "允许 ETS2LA 通过直接修改内存来控制油门和刹车。此功能可能无法在某些系统上正常"
 "工作，但即使切换到游戏外，也仍可进行控制。如果启用此功能后无法正常工作，请在"
 "我们的 Discord 服务器上报告问题。"
+
+msgid "Show Plugin Updates"
+msgstr "显示插件更新"
 
 #, csharp-format
 msgid "Not all dependencies for plugin {0} are installed."

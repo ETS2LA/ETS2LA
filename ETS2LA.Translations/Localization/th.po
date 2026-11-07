@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-11-07 15:00:04+0200\n"
+"POT-Creation-Date: 2026-11-07 13:10:59+0200\n"
 "PO-Revision-Date: 2026-10-20 09:37+0000\n"
 "Last-Translator: cooper153826 <cooper153826@ets2la.com>\n"
 "Language-Team: Thai <http://weblate.ets2la.com/projects/ets2la/ets2la/th/>\n"
@@ -129,26 +129,26 @@ msgid "Maximum Speed"
 msgstr "ความเร็วสูงสุด"
 
 msgid ""
+"When the game reports itself being paused, ETS2LA won't render AR elements."
+msgstr "เมื่อเกมรายงานว่าหยุดชั่วคราว ETS2LA จะไม่แสดงองค์ประกอบ AR"
+
+msgid ""
 "Your username may only contain letters, numbers, underscores, hyphens and "
 "periods, and must start and end with a letter or number."
 msgstr ""
 "ชื่อผู้ใช้ใช้ได้เฉพาะตัวอักษรภาษาอังกฤษ ตัวเลข ขีดล่าง (_) ขีดกลาง (-) และจุด (.) เท่านั้น "
 "และต้องขึ้นต้นและลงท้ายด้วยตัวอักษรหรือตัวเลข"
 
-msgid ""
-"When the game reports itself being paused, ETS2LA won't render AR elements."
-msgstr "เมื่อเกมรายงานว่าหยุดชั่วคราว ETS2LA จะไม่แสดงองค์ประกอบ AR"
-
 #, csharp-format
 msgid "Connected joystick: [bold]{0}[/] [gray italic]({1})[/]"
 msgstr "เชื่อมต่อจอยสติ๊กแล้ว: [bold]{0}[/] [gray italic]({1})[/]"
 
+msgid "Username"
+msgstr "Username"
+
 #, csharp-format
 msgid "Starting binding for control {0} ({1})"
 msgstr "เริ่มกำหนดปุ่มสำหรับการควบคุม {0} ({1})"
-
-msgid "Username"
-msgstr "Username"
 
 #, csharp-format
 msgid "Failed to enable dependency: {0}"
@@ -436,15 +436,15 @@ msgstr ""
 "เปิดใช้งานการช่วยเหลือแล้ว: <span class=\"text-text-accent font-bold\">{0}</span>"
 
 msgid ""
-"Only show news articles from official sources, such as the ETS2LA team or "
-"it's developers."
-msgstr "แสดงเฉพาะข่าวจากแหล่งทางการ เช่น ทีม ETS2LA หรือนักพัฒนา"
-
-msgid ""
 "Memory not available for output, please ensure the game is running and "
 "reinstall the SDK if necessary."
 msgstr ""
 "ไม่สามารถใช้ Memory Output ได้ โปรดตรวจสอบว่าเกมกำลังทำงาน และติดตั้ง SDK ใหม่หากจำเป็น"
+
+msgid ""
+"Only show news articles from official sources, such as the ETS2LA team or "
+"it's developers."
+msgstr "แสดงเฉพาะข่าวจากแหล่งทางการ เช่น ทีม ETS2LA หรือนักพัฒนา"
 
 msgid "All driving assists have been disabled."
 msgstr ""
@@ -493,6 +493,9 @@ msgstr "ความเที่ยงตรงของข้อมูล"
 #, csharp-format
 msgid "Failed to uninstall current version of plugin with ID {0}."
 msgstr "ถอนการติดตั้งปลั๊กอินเวอร์ชันปัจจุบัน ID {0} ไม่สำเร็จ"
+
+msgid "Error retrieving monitor names"
+msgstr ""
 
 msgid "Early"
 msgstr "เร็ว"
@@ -558,13 +561,6 @@ msgstr "เริ่มต้น ImGui Impl OpenGL3 ไม่สำเร็จ"
 msgid "Support Multiple Viewports"
 msgstr "รองรับหลาย Viewport"
 
-msgid ""
-"Consider supporting us by becoming a <span class=\"font-bold text-text-"
-"l\">GitHub Sponsor</span> to cover ongoing development and operational costs."
-msgstr ""
-"ร่วมสนับสนุนเราโดยเป็น <span class=\"font-bold text-text-l\">GitHub Sponsor</"
-"span> เพื่อช่วยค่าใช้จ่ายในการพัฒนาและดำเนินงานอย่างต่อเนื่อง"
-
 msgid "You took a wrong turn!"
 msgstr "เลี้ยวผิดทางแล้ว!"
 
@@ -573,6 +569,13 @@ msgid ""
 "Target speed changed. Current speedlimit: {0} {1}. Offsets are carried over "
 "on speedlimit change."
 msgstr ""
+
+msgid ""
+"Consider supporting us by becoming a <span class=\"font-bold text-text-"
+"l\">GitHub Sponsor</span> to cover ongoing development and operational costs."
+msgstr ""
+"ร่วมสนับสนุนเราโดยเป็น <span class=\"font-bold text-text-l\">GitHub Sponsor</"
+"span> เพื่อช่วยค่าใช้จ่ายในการพัฒนาและดำเนินงานอย่างต่อเนื่อง"
 
 msgid "Adaptive Cruise Control Only"
 msgstr "Adaptive Cruise Control เท่านั้น"
@@ -661,11 +664,11 @@ msgstr "ถอนการติดตั้ง SDK เวอร์ชั่น 
 msgid "Failed to initialize overlay, ImGui initialization failed."
 msgstr "เริ่มต้น Overlay ไม่สำเร็จ เนื่องจากเริ่มต้น ImGui ไม่สำเร็จ"
 
-msgid "Your account is not allowed to use the chatbot."
-msgstr "บัญชีของคุณไม่ได้รับอนุญาตให้ใช้งาน Chatbot"
-
 msgid "Speed Limit Warning"
 msgstr "แจ้งเตือนเมื่อขับเกินความเร็วที่กำหนด"
+
+msgid "Your account is not allowed to use the chatbot."
+msgstr "บัญชีของคุณไม่ได้รับอนุญาตให้ใช้งาน Chatbot"
 
 msgid "Speed limit changed"
 msgstr "ความเร็วสูงสุดที่อนุญาตเปลี่ยนแล้ว"
@@ -752,6 +755,9 @@ msgstr "เมตรต่อวินาที"
 
 msgid "Traffic Lights"
 msgstr "ไฟจราจร"
+
+msgid "No monitors detected, overlay cannot be initialized."
+msgstr ""
 
 msgid "Update check skipped, using already cached result."
 msgstr "ข้ามการตรวจสอบอัปเดต โดยใช้ผลที่แคชไว้"
@@ -987,12 +993,12 @@ msgstr "ปาสกาล"
 msgid "Account Removal Error"
 msgstr "เกิดข้อผิดพลาดในการลบบัญชี"
 
+msgid "You can enable the plugins we installed in a previous step here."
+msgstr "คุณสามารถเปิดใช้ปลั๊กอินที่เราติดตั้งไว้ในขั้นตอนก่อนหน้าได้ที่นี่"
+
 #, csharp-format
 msgid "Failed to disable {0}: {1}"
 msgstr "ปิดการใช้งาน {0} ล้มเหลว : {1}"
-
-msgid "You can enable the plugins we installed in a previous step here."
-msgstr "คุณสามารถเปิดใช้ปลั๊กอินที่เราติดตั้งไว้ในขั้นตอนก่อนหน้าได้ที่นี่"
 
 msgid "Login"
 msgstr "เข้าสู่ระบบ"
@@ -1000,12 +1006,12 @@ msgstr "เข้าสู่ระบบ"
 msgid "SDK Installed"
 msgstr "ติดตั้ง SDK แล้ว"
 
+msgid "Current Speed"
+msgstr "ความเร็วตอนนี้"
+
 #, csharp-format
 msgid "Bound control {0} ({1}) to device {2} and control {3}"
 msgstr "กำหนดการควบคุม {0} ({1}) ให้กับอุปกรณ์ {2} และปุ่ม {3}"
-
-msgid "Current Speed"
-msgstr "ความเร็วตอนนี้"
 
 msgid "miles per hour"
 msgstr "ไมล์ต่อชั่วโมง"
@@ -1162,12 +1168,12 @@ msgstr "ไม่ได้เชื่อมต่อ"
 msgid "Plugin with ID [gray]{0}[/] is already loaded, skipping duplicate."
 msgstr "ปลั๊กอิน ID [gray]{0}[/] ถูกโหลดแล้ว ข้ามรายการซ้ำ"
 
-msgid "You are running the latest version."
-msgstr "คุณใช้เวอร์ชันล่าสุดอยู่แล้ว"
-
 #, csharp-format
 msgid "Failed to download plugin with ID {0} from {1}. Status code: {2}"
 msgstr "ดาวน์โหลดปลั๊กอิน ID {0} จาก {1} ไม่สำเร็จ รหัสสถานะ: {2}"
+
+msgid "You are running the latest version."
+msgstr "คุณใช้เวอร์ชันล่าสุดอยู่แล้ว"
 
 msgid ""
 "Show news articles about plugin updates, be that official or 3rd party "
@@ -1234,13 +1240,13 @@ msgstr "โอเพนซอร์ส"
 msgid "<span class=\"font-semibold\">{0}</span> until {1}"
 msgstr "<span class=\"font-semibold\">{0}</span> จนถึง {1}"
 
+msgid "Did you remember to restart after installing them?"
+msgstr "คุณได้รีสตาร์ตหลังติดตั้งแล้วหรือยัง?"
+
 msgid ""
 "User folder paths are hidden automatically. Review the log for other "
 "personal information before sending."
 msgstr ""
-
-msgid "Did you remember to restart after installing them?"
-msgstr "คุณได้รีสตาร์ตหลังติดตั้งแล้วหรือยัง?"
 
 msgid "Volume"
 msgstr "ระดับเสียง"
@@ -1370,11 +1376,11 @@ msgstr ""
 "เมื่อเปิดใช้งาน การกดปุ่มลัดจะสลับ Overlay ระหว่างโหมดโต้ตอบและไม่โต้ตอบ เมื่อปิด "
 "จะโต้ตอบได้เฉพาะตอนกดปุ่มค้างไว้"
 
-msgid "Latest News"
-msgstr "ข่าวล่าสุด"
-
 msgid "pounds"
 msgstr "ปอนด์"
+
+msgid "Latest News"
+msgstr "ข่าวล่าสุด"
 
 #, csharp-format
 msgid "Failed to initialize SDL3 controls backend: {0}"
@@ -1469,11 +1475,11 @@ msgstr "เพิ่มเกมล้มเหลว"
 msgid "Font file not found at {0}"
 msgstr "ไม่พบไฟล์ฟอนต์ที่ {0}"
 
-msgid "Changelog"
-msgstr "บันทึกการเปลี่ยนแปลง"
-
 msgid "No release notes available."
 msgstr "ไม่มีบันทึกประจำเวอร์ชัน"
+
+msgid "Changelog"
+msgstr "บันทึกการเปลี่ยนแปลง"
 
 #, csharp-format
 msgid "Detected a switch to {0}, waiting for its game data to be parsed."
@@ -1623,18 +1629,18 @@ msgid "Found {0} (version: {1}) at '{2}'"
 msgstr "เจอ {0} (เวอร์ชั่น: {1}) ที่ '{2}'"
 
 msgid ""
-"Select which traffic rules ETS2LA should obey. More might be added later, "
-"and all plugins won't necessarily support all rules."
-msgstr ""
-"เลือกกฎจราจรที่ต้องการให้ ETS2LA ปฏิบัติตาม โดยอาจมีการเพิ่มกฎใหม่ในอนาคต และ Plugin "
-"บางตัวอาจไม่รองรับกฎทั้งหมด"
-
-msgid ""
 "We can render elements in the game world using the overlay. This will use "
 "additional CPU and GPU resources."
 msgstr ""
 "เราสามารถใช้ Overlay เรนเดอร์องค์ประกอบในโลกของเกมได้ โดยจะใช้ทรัพยากร CPU และ GPU "
 "เพิ่มเติม"
+
+msgid ""
+"Select which traffic rules ETS2LA should obey. More might be added later, "
+"and all plugins won't necessarily support all rules."
+msgstr ""
+"เลือกกฎจราจรที่ต้องการให้ ETS2LA ปฏิบัติตาม โดยอาจมีการเพิ่มกฎใหม่ในอนาคต และ Plugin "
+"บางตัวอาจไม่รองรับกฎทั้งหมด"
 
 msgid "kilometers per hour"
 msgstr "กิโลเมตรต่อชั่วโมง"
@@ -1907,13 +1913,13 @@ msgstr "ปลั๊กอินที่แนะนำ"
 msgid "Failed to remove account. Please try again."
 msgstr "ลบบัญชีไม่สำเร็จ โปรดลองอีกครั้ง"
 
+msgid "Game added"
+msgstr "เพิ่มเกมแล้ว"
+
 msgid ""
 "The maximum speed ETS2LA will accelerate to. It might still drift over this "
 "limit due to momentum."
 msgstr "ความเร็วสูงสุดที่ ETS2LA จะเร่งไปถึง แต่รถอาจเกินค่านี้เล็กน้อยจากแรงเฉื่อย"
-
-msgid "Game added"
-msgstr "เพิ่มเกมแล้ว"
 
 msgid "Privacy Policy"
 msgstr ""
@@ -1987,11 +1993,11 @@ msgstr "โหมดการช่วยเหลือ: <span class=\"text-tex
 msgid "View Public Telemetry"
 msgstr "ดู Telemetry สาธารณะ"
 
-msgid "Thinking..."
-msgstr "กำลังคิด..."
-
 msgid "Adjust the volume of the audio output."
 msgstr "ปรับระดับเสียงเอาต์พุต"
+
+msgid "Thinking..."
+msgstr "กำลังคิด..."
 
 #, csharp-format
 msgid ""
@@ -2101,6 +2107,12 @@ msgstr "หน่วยและภาษา"
 #, csharp-format
 msgid "Loaded plugin: [gray]{0}[/] from [gray]{1}[/]."
 msgstr "โหลดปลั๊กอิน: [gray]{0}[/] จาก [gray]{1}[/] แล้ว"
+
+msgid ""
+"The monitor ETS2LA's overlay will be displayed on. If you have multiple "
+"monitors, you can select which one to use here. Please select the monitor "
+"the game is running on, and ensure the game is in fullscreen."
+msgstr ""
 
 msgid ""
 "You do not have permission to access this resource. The server understood "
@@ -2258,11 +2270,6 @@ msgstr "กำลังเช็คอัปเดต"
 msgid "No audio output device available"
 msgstr ""
 
-msgid ""
-"The monitor ETS2LA's overlay will be displayed on. If you have multiple "
-"monitors, you can select which one to use here."
-msgstr ""
-
 msgid "Catalogue"
 msgstr "คลังปลั๊กอิน"
 
@@ -2406,9 +2413,6 @@ msgstr "กำลังเพิ่ม Mod: {0}"
 msgid "Like ETS2LA?"
 msgstr "ชอบ ETS2LA ไหม?"
 
-msgid "Show Plugin Updates"
-msgstr "แสดงอัปเดตปลั๊กอิน"
-
 msgid ""
 "Allows ETS2LA to control throttle and brake using direct memory editing. "
 "This might not work on some systems, but allows for control even while "
@@ -2418,6 +2422,9 @@ msgstr ""
 "อนุญาตให้ ETS2LA ควบคุมคันเร่งและเบรกด้วยการแก้ไข Memory โดยตรง อาจใช้ไม่ได้กับบางระบบ "
 "แต่ช่วยให้ควบคุมได้แม้สลับออกจากหน้าต่างเกม หากเปิดแล้วใช้งานไม่ได้ โปรดรายงานปัญหาใน "
 "Discord Server ของเรา"
+
+msgid "Show Plugin Updates"
+msgstr "แสดงอัปเดตปลั๊กอิน"
 
 #, csharp-format
 msgid "Not all dependencies for plugin {0} are installed."

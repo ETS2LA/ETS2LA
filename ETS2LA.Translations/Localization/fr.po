@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-11-07 15:00:04+0200\n"
+"POT-Creation-Date: 2026-11-07 13:10:59+0200\n"
 "PO-Revision-Date: 2026-10-15 20:45+0000\n"
 "Last-Translator: Hugo <hugo@ets2la.com>\n"
 "Language-Team: French <http://weblate.ets2la.com/projects/ets2la/ets2la/fr/"
@@ -137,26 +137,26 @@ msgid "Maximum Speed"
 msgstr "Vitesse maximale"
 
 msgid ""
-"Your username may only contain letters, numbers, underscores, hyphens and "
-"periods, and must start and end with a letter or number."
-msgstr ""
-
-msgid ""
 "When the game reports itself being paused, ETS2LA won't render AR elements."
 msgstr ""
 "Lorsque le jeu se signale comme étant en pause, ETS2LA n'affichera pas les "
 "éléments AR."
 
+msgid ""
+"Your username may only contain letters, numbers, underscores, hyphens and "
+"periods, and must start and end with a letter or number."
+msgstr ""
+
 #, csharp-format
 msgid "Connected joystick: [bold]{0}[/] [gray italic]({1})[/]"
 msgstr "Joystick connecté : [bold]{0}[/] [gray italic]({1})[/]"
 
+msgid "Username"
+msgstr ""
+
 #, csharp-format
 msgid "Starting binding for control {0} ({1})"
 msgstr "Démarrage de l'association pour la commande {0} ({1})"
-
-msgid "Username"
-msgstr ""
 
 #, csharp-format
 msgid "Failed to enable dependency: {0}"
@@ -457,13 +457,13 @@ msgstr ""
 "Assistance Activée : <span class=\"text-text-accent font-bold\">{0}</span>"
 
 msgid ""
-"Only show news articles from official sources, such as the ETS2LA team or "
-"it's developers."
+"Memory not available for output, please ensure the game is running and "
+"reinstall the SDK if necessary."
 msgstr ""
 
 msgid ""
-"Memory not available for output, please ensure the game is running and "
-"reinstall the SDK if necessary."
+"Only show news articles from official sources, such as the ETS2LA team or "
+"it's developers."
 msgstr ""
 
 msgid "All driving assists have been disabled."
@@ -516,6 +516,9 @@ msgstr "Fidélité des données"
 msgid "Failed to uninstall current version of plugin with ID {0}."
 msgstr ""
 "Échec de la désinstallation de la version actuelle du plugin avec l'ID {0}."
+
+msgid "Error retrieving monitor names"
+msgstr ""
 
 msgid "Early"
 msgstr "Tôt"
@@ -579,11 +582,6 @@ msgstr "Échec de l'initialisation de ImGui Impl OpenGL3"
 msgid "Support Multiple Viewports"
 msgstr "Prendre en charge plusieurs zones d'affichage"
 
-msgid ""
-"Consider supporting us by becoming a <span class=\"font-bold text-text-"
-"l\">GitHub Sponsor</span> to cover ongoing development and operational costs."
-msgstr ""
-
 msgid "You took a wrong turn!"
 msgstr "Vous avez pris un mauvais virage !"
 
@@ -591,6 +589,11 @@ msgstr "Vous avez pris un mauvais virage !"
 msgid ""
 "Target speed changed. Current speedlimit: {0} {1}. Offsets are carried over "
 "on speedlimit change."
+msgstr ""
+
+msgid ""
+"Consider supporting us by becoming a <span class=\"font-bold text-text-"
+"l\">GitHub Sponsor</span> to cover ongoing development and operational costs."
 msgstr ""
 
 msgid "Adaptive Cruise Control Only"
@@ -686,11 +689,11 @@ msgid "Failed to initialize overlay, ImGui initialization failed."
 msgstr ""
 "Échec de l'initialisation de l'overlay, l'initialisation d'ImGui a échoué."
 
-msgid "Your account is not allowed to use the chatbot."
-msgstr ""
-
 msgid "Speed Limit Warning"
 msgstr "Alerte de limite de vitesse"
+
+msgid "Your account is not allowed to use the chatbot."
+msgstr ""
 
 msgid "Speed limit changed"
 msgstr "Limite de vitesse modifiée"
@@ -777,6 +780,9 @@ msgid "meters per second"
 msgstr "mètres par seconde"
 
 msgid "Traffic Lights"
+msgstr ""
+
+msgid "No monitors detected, overlay cannot be initialized."
 msgstr ""
 
 msgid "Update check skipped, using already cached result."
@@ -1020,14 +1026,14 @@ msgstr "Pascals"
 msgid "Account Removal Error"
 msgstr ""
 
-#, csharp-format
-msgid "Failed to disable {0}: {1}"
-msgstr "Échec de la désactivation de {0} : {1}"
-
 msgid "You can enable the plugins we installed in a previous step here."
 msgstr ""
 "Vous pouvez activer ici les plugins que nous avons installés lors d'une "
 "étape précédente."
+
+#, csharp-format
+msgid "Failed to disable {0}: {1}"
+msgstr "Échec de la désactivation de {0} : {1}"
 
 msgid "Login"
 msgstr ""
@@ -1035,12 +1041,12 @@ msgstr ""
 msgid "SDK Installed"
 msgstr "SDK installé"
 
+msgid "Current Speed"
+msgstr "Vitesse actuelle"
+
 #, csharp-format
 msgid "Bound control {0} ({1}) to device {2} and control {3}"
 msgstr "Commande {0} ({1}) associée au périphérique {2} et à la commande {3}"
-
-msgid "Current Speed"
-msgstr "Vitesse actuelle"
 
 msgid "miles per hour"
 msgstr "miles par heure"
@@ -1205,13 +1211,13 @@ msgstr "Non connecté"
 msgid "Plugin with ID [gray]{0}[/] is already loaded, skipping duplicate."
 msgstr ""
 
-msgid "You are running the latest version."
-msgstr "Vous utilisez la dernière version."
-
 #, csharp-format
 msgid "Failed to download plugin with ID {0} from {1}. Status code: {2}"
 msgstr ""
 "Échec du téléchargement du plugin avec l'ID {0} depuis {1}. Code d'état : {2}"
+
+msgid "You are running the latest version."
+msgstr "Vous utilisez la dernière version."
 
 msgid ""
 "Show news articles about plugin updates, be that official or 3rd party "
@@ -1286,13 +1292,13 @@ msgstr ""
 msgid "<span class=\"font-semibold\">{0}</span> until {1}"
 msgstr ""
 
+msgid "Did you remember to restart after installing them?"
+msgstr "Avez-vous pensé à redémarrer après les avoir installés ?"
+
 msgid ""
 "User folder paths are hidden automatically. Review the log for other "
 "personal information before sending."
 msgstr ""
-
-msgid "Did you remember to restart after installing them?"
-msgstr "Avez-vous pensé à redémarrer après les avoir installés ?"
 
 msgid "Volume"
 msgstr "Volume"
@@ -1426,11 +1432,11 @@ msgid ""
 "will only be interactive while you hold down the keybind."
 msgstr ""
 
-msgid "Latest News"
-msgstr ""
-
 msgid "pounds"
 msgstr "livres"
+
+msgid "Latest News"
+msgstr ""
 
 #, csharp-format
 msgid "Failed to initialize SDL3 controls backend: {0}"
@@ -1534,11 +1540,11 @@ msgstr "Échec de l'ajout du jeu"
 msgid "Font file not found at {0}"
 msgstr "Fichier de police introuvable à l'emplacement {0}"
 
-msgid "Changelog"
-msgstr "Journal des modifications"
-
 msgid "No release notes available."
 msgstr "Aucune note de version disponible."
+
+msgid "Changelog"
+msgstr "Journal des modifications"
 
 #, csharp-format
 msgid "Detected a switch to {0}, waiting for its game data to be parsed."
@@ -1701,16 +1707,16 @@ msgid "Found {0} (version: {1}) at '{2}'"
 msgstr "{0} trouvé (version : {1}) à l'emplacement « {2} »"
 
 msgid ""
-"Select which traffic rules ETS2LA should obey. More might be added later, "
-"and all plugins won't necessarily support all rules."
-msgstr ""
-
-msgid ""
 "We can render elements in the game world using the overlay. This will use "
 "additional CPU and GPU resources."
 msgstr ""
 "Nous pouvons afficher des éléments dans le monde du jeu à l'aide de "
 "l'overlay. Cela utilisera des ressources CPU et GPU supplémentaires."
+
+msgid ""
+"Select which traffic rules ETS2LA should obey. More might be added later, "
+"and all plugins won't necessarily support all rules."
+msgstr ""
 
 msgid "kilometers per hour"
 msgstr "kilomètres par heure"
@@ -1997,15 +2003,15 @@ msgstr "Plugins recommandés"
 msgid "Failed to remove account. Please try again."
 msgstr ""
 
+msgid "Game added"
+msgstr "Jeu ajouté"
+
 msgid ""
 "The maximum speed ETS2LA will accelerate to. It might still drift over this "
 "limit due to momentum."
 msgstr ""
 "La vitesse maximale à laquelle ETS2LA accélérera. Elle peut toutefois "
 "légèrement dépasser cette limite à cause de l'inertie."
-
-msgid "Game added"
-msgstr "Jeu ajouté"
 
 msgid "Privacy Policy"
 msgstr ""
@@ -2087,11 +2093,11 @@ msgstr ""
 msgid "View Public Telemetry"
 msgstr "Afficher la télémétrie publique"
 
-msgid "Thinking..."
-msgstr ""
-
 msgid "Adjust the volume of the audio output."
 msgstr "Ajuste le volume de la sortie audio."
+
+msgid "Thinking..."
+msgstr ""
 
 #, csharp-format
 msgid ""
@@ -2210,6 +2216,12 @@ msgstr "Unités et langue"
 #, csharp-format
 msgid "Loaded plugin: [gray]{0}[/] from [gray]{1}[/]."
 msgstr "Plugin chargé : [gray]{0}[/] depuis [gray]{1}[/]."
+
+msgid ""
+"The monitor ETS2LA's overlay will be displayed on. If you have multiple "
+"monitors, you can select which one to use here. Please select the monitor "
+"the game is running on, and ensure the game is in fullscreen."
+msgstr ""
 
 msgid ""
 "You do not have permission to access this resource. The server understood "
@@ -2368,11 +2380,6 @@ msgstr "Recherche de mises à jour..."
 msgid "No audio output device available"
 msgstr ""
 
-msgid ""
-"The monitor ETS2LA's overlay will be displayed on. If you have multiple "
-"monitors, you can select which one to use here."
-msgstr ""
-
 msgid "Catalogue"
 msgstr "Catalogue"
 
@@ -2525,14 +2532,14 @@ msgstr "Ajout du mod : {0}"
 msgid "Like ETS2LA?"
 msgstr ""
 
-msgid "Show Plugin Updates"
-msgstr ""
-
 msgid ""
 "Allows ETS2LA to control throttle and brake using direct memory editing. "
 "This might not work on some systems, but allows for control even while "
 "tabbed out of the game. If you enable this and it doesn't work, please "
 "report the issue on our Discord server."
+msgstr ""
+
+msgid "Show Plugin Updates"
 msgstr ""
 
 #, csharp-format

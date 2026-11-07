@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-11-07 15:00:04+0200\n"
+"POT-Creation-Date: 2026-11-07 13:10:59+0200\n"
 "PO-Revision-Date: 2026-10-20 09:37+0000\n"
 "Last-Translator: Pastel <pastel@ets2la.com>\n"
 "Language-Team: Japanese <http://weblate.ets2la.com/projects/ets2la/ets2la/ja/"
@@ -132,26 +132,26 @@ msgid "Maximum Speed"
 msgstr "最高速度"
 
 msgid ""
-"Your username may only contain letters, numbers, underscores, hyphens and "
-"periods, and must start and end with a letter or number."
-msgstr ""
-
-msgid ""
 "When the game reports itself being paused, ETS2LA won't render AR elements."
 msgstr ""
 "ゲームが一時停止状態であると認識した場合、ETS2LAはAR要素をレンダリングしませ"
 "ん。"
 
+msgid ""
+"Your username may only contain letters, numbers, underscores, hyphens and "
+"periods, and must start and end with a letter or number."
+msgstr ""
+
 #, csharp-format
 msgid "Connected joystick: [bold]{0}[/] [gray italic]({1})[/]"
 msgstr "ジョイスティックに接続しました: [bold]{0}[/] [gray italic]({1})[/]"
 
+msgid "Username"
+msgstr "ユーザー名"
+
 #, csharp-format
 msgid "Starting binding for control {0} ({1})"
 msgstr "操作 {0}（{1}）の割り当てを開始"
-
-msgid "Username"
-msgstr "ユーザー名"
 
 #, csharp-format
 msgid "Failed to enable dependency: {0}"
@@ -451,16 +451,16 @@ msgid "Assists Enabled: <span class=\"text-text-accent font-bold\">{0}</span>"
 msgstr "アシスト有効：<span class=\"text-text-accent font-bold\">{0}</span>"
 
 msgid ""
-"Only show news articles from official sources, such as the ETS2LA team or "
-"it's developers."
-msgstr ""
-
-msgid ""
 "Memory not available for output, please ensure the game is running and "
 "reinstall the SDK if necessary."
 msgstr ""
 "出力用のメモリを利用できません。ゲームが起動していることを確認し、必要に応じ"
 "てSDKを再インストールしてください。"
+
+msgid ""
+"Only show news articles from official sources, such as the ETS2LA team or "
+"it's developers."
+msgstr ""
 
 msgid "All driving assists have been disabled."
 msgstr ""
@@ -512,6 +512,9 @@ msgstr "データの正確性"
 msgid "Failed to uninstall current version of plugin with ID {0}."
 msgstr ""
 "ID {0} のプラグインの現在のバージョンをアンインストールできませんでした。"
+
+msgid "Error retrieving monitor names"
+msgstr ""
 
 msgid "Early"
 msgstr "早い"
@@ -575,11 +578,6 @@ msgstr "ImGui Impl OpenGL3 の初期化に失敗しました"
 msgid "Support Multiple Viewports"
 msgstr "複数のビューポートに対応"
 
-msgid ""
-"Consider supporting us by becoming a <span class=\"font-bold text-text-"
-"l\">GitHub Sponsor</span> to cover ongoing development and operational costs."
-msgstr ""
-
 msgid "You took a wrong turn!"
 msgstr "道を間違えました！"
 
@@ -587,6 +585,11 @@ msgstr "道を間違えました！"
 msgid ""
 "Target speed changed. Current speedlimit: {0} {1}. Offsets are carried over "
 "on speedlimit change."
+msgstr ""
+
+msgid ""
+"Consider supporting us by becoming a <span class=\"font-bold text-text-"
+"l\">GitHub Sponsor</span> to cover ongoing development and operational costs."
 msgstr ""
 
 msgid "Adaptive Cruise Control Only"
@@ -678,11 +681,11 @@ msgstr "SDKバージョン「{0}」を「{1}」からアンインストールで
 msgid "Failed to initialize overlay, ImGui initialization failed."
 msgstr "オーバーレイの初期化に失敗しました。ImGuiの初期化に失敗しました。"
 
-msgid "Your account is not allowed to use the chatbot."
-msgstr ""
-
 msgid "Speed Limit Warning"
 msgstr "制限速度警告"
+
+msgid "Your account is not allowed to use the chatbot."
+msgstr ""
 
 msgid "Speed limit changed"
 msgstr "制限速度の変更"
@@ -768,6 +771,9 @@ msgid "meters per second"
 msgstr "メートル毎秒"
 
 msgid "Traffic Lights"
+msgstr ""
+
+msgid "No monitors detected, overlay cannot be initialized."
 msgstr ""
 
 msgid "Update check skipped, using already cached result."
@@ -1010,12 +1016,12 @@ msgstr "パスカル"
 msgid "Account Removal Error"
 msgstr ""
 
+msgid "You can enable the plugins we installed in a previous step here."
+msgstr "ここで、前の手順でインストールしたプラグインを有効にできます。"
+
 #, csharp-format
 msgid "Failed to disable {0}: {1}"
 msgstr "{0} の無効化に失敗しました: {1}"
-
-msgid "You can enable the plugins we installed in a previous step here."
-msgstr "ここで、前の手順でインストールしたプラグインを有効にできます。"
 
 msgid "Login"
 msgstr ""
@@ -1023,13 +1029,13 @@ msgstr ""
 msgid "SDK Installed"
 msgstr "SDKがインストールされました"
 
+msgid "Current Speed"
+msgstr "現在の速度"
+
 #, csharp-format
 msgid "Bound control {0} ({1}) to device {2} and control {3}"
 msgstr ""
 "コントロール {0} ({1}) をデバイス {2} およびコントロール {3} に紐付けました"
-
-msgid "Current Speed"
-msgstr "現在の速度"
 
 msgid "miles per hour"
 msgstr "マイル毎時"
@@ -1194,14 +1200,14 @@ msgstr ""
 "ID [gray]{0}[/] のプラグインはすでに読み込まれているため、重複をスキップしま"
 "す。"
 
-msgid "You are running the latest version."
-msgstr "最新バージョンがインストールされています。"
-
 #, csharp-format
 msgid "Failed to download plugin with ID {0} from {1}. Status code: {2}"
 msgstr ""
 "ID {0} のプラグインを {1} からダウンロードできませんでした。ステータスコー"
 "ド: {2}"
+
+msgid "You are running the latest version."
+msgstr "最新バージョンがインストールされています。"
 
 msgid ""
 "Show news articles about plugin updates, be that official or 3rd party "
@@ -1273,13 +1279,13 @@ msgstr ""
 msgid "<span class=\"font-semibold\">{0}</span> until {1}"
 msgstr ""
 
+msgid "Did you remember to restart after installing them?"
+msgstr "インストール後に再起動しましたか?"
+
 msgid ""
 "User folder paths are hidden automatically. Review the log for other "
 "personal information before sending."
 msgstr ""
-
-msgid "Did you remember to restart after installing them?"
-msgstr "インストール後に再起動しましたか?"
 
 msgid "Volume"
 msgstr "音量"
@@ -1414,11 +1420,11 @@ msgstr ""
 "で切り替わります。無効にすると、キー割り当てを押している間だけオーバーレイを"
 "操作できます。"
 
-msgid "Latest News"
-msgstr ""
-
 msgid "pounds"
 msgstr "ポンド"
+
+msgid "Latest News"
+msgstr ""
 
 #, csharp-format
 msgid "Failed to initialize SDL3 controls backend: {0}"
@@ -1519,11 +1525,11 @@ msgstr "ゲームの追加に失敗しました"
 msgid "Font file not found at {0}"
 msgstr "フォントファイルが {0} に見つかりません"
 
-msgid "Changelog"
-msgstr "変更履歴"
-
 msgid "No release notes available."
 msgstr "リリースノートはありません。"
+
+msgid "Changelog"
+msgstr "変更履歴"
 
 #, csharp-format
 msgid "Detected a switch to {0}, waiting for its game data to be parsed."
@@ -1683,16 +1689,16 @@ msgid "Found {0} (version: {1}) at '{2}'"
 msgstr "'{2}' で {0} (バージョン: {1}) が見つかりました"
 
 msgid ""
-"Select which traffic rules ETS2LA should obey. More might be added later, "
-"and all plugins won't necessarily support all rules."
-msgstr ""
-
-msgid ""
 "We can render elements in the game world using the overlay. This will use "
 "additional CPU and GPU resources."
 msgstr ""
 "オーバーレイを使用して、ゲームワールド内の要素を描画することができます。これ"
 "により、CPUおよびGPUのリソースが追加で消費されます。"
+
+msgid ""
+"Select which traffic rules ETS2LA should obey. More might be added later, "
+"and all plugins won't necessarily support all rules."
+msgstr ""
 
 msgid "kilometers per hour"
 msgstr "キロメートル毎時"
@@ -1984,15 +1990,15 @@ msgstr "おすすめのプラグイン"
 msgid "Failed to remove account. Please try again."
 msgstr ""
 
+msgid "Game added"
+msgstr "ゲームを追加しました"
+
 msgid ""
 "The maximum speed ETS2LA will accelerate to. It might still drift over this "
 "limit due to momentum."
 msgstr ""
 "ETS2LAが加速する最高速度です。慣性により、この制限速度を超える場合がありま"
 "す。"
-
-msgid "Game added"
-msgstr "ゲームを追加しました"
 
 msgid "Privacy Policy"
 msgstr ""
@@ -2070,11 +2076,11 @@ msgstr "アシストモード: <span class=\"text-text-accent font-bold\">{0}</s
 msgid "View Public Telemetry"
 msgstr "公開テレメトリを表示"
 
-msgid "Thinking..."
-msgstr ""
-
 msgid "Adjust the volume of the audio output."
 msgstr "音声出力の音量を調整します。"
+
+msgid "Thinking..."
+msgstr ""
 
 #, csharp-format
 msgid ""
@@ -2190,6 +2196,12 @@ msgstr "単位と言語"
 #, csharp-format
 msgid "Loaded plugin: [gray]{0}[/] from [gray]{1}[/]."
 msgstr "プラグイン: [gray]{0}[/] を [gray]{1}[/] から読み込みました。"
+
+msgid ""
+"The monitor ETS2LA's overlay will be displayed on. If you have multiple "
+"monitors, you can select which one to use here. Please select the monitor "
+"the game is running on, and ensure the game is in fullscreen."
+msgstr ""
 
 msgid ""
 "You do not have permission to access this resource. The server understood "
@@ -2350,11 +2362,6 @@ msgstr "アップデートを確認中…"
 msgid "No audio output device available"
 msgstr ""
 
-msgid ""
-"The monitor ETS2LA's overlay will be displayed on. If you have multiple "
-"monitors, you can select which one to use here."
-msgstr ""
-
 msgid "Catalogue"
 msgstr "カタログ"
 
@@ -2505,9 +2512,6 @@ msgstr "MODを追加: {0}"
 msgid "Like ETS2LA?"
 msgstr ""
 
-msgid "Show Plugin Updates"
-msgstr ""
-
 msgid ""
 "Allows ETS2LA to control throttle and brake using direct memory editing. "
 "This might not work on some systems, but allows for control even while "
@@ -2518,6 +2522,9 @@ msgstr ""
 "します。一部のシステムでは動作しない場合がありますが、ゲームのウィンドウをタ"
 "ブで切り替えた状態でも操作が可能になります。有効にしても動作しない場合は、"
 "Discordサーバーにて問題をご報告ください。"
+
+msgid "Show Plugin Updates"
+msgstr ""
 
 #, csharp-format
 msgid "Not all dependencies for plugin {0} are installed."

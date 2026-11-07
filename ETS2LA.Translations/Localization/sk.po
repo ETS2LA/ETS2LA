@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-11-07 15:00:04+0200\n"
+"POT-Creation-Date: 2026-11-07 13:10:59+0200\n"
 "PO-Revision-Date: 2026-11-03 17:35+0000\n"
 "Last-Translator: Ketchup1812 <ketchup1812@ets2la.com>\n"
 "Language-Team: Slovak <http://weblate.ets2la.com/projects/ets2la/ets2la/sk/"
@@ -134,26 +134,26 @@ msgid "Maximum Speed"
 msgstr "Maximálna rýchlosť"
 
 msgid ""
+"When the game reports itself being paused, ETS2LA won't render AR elements."
+msgstr "Keď hra zaznamená, že je pozastavená, ETS2LA prestane vykresľovať."
+
+msgid ""
 "Your username may only contain letters, numbers, underscores, hyphens and "
 "periods, and must start and end with a letter or number."
 msgstr ""
 "Vaše používateľské meno môže obsahovať iba písmená, čísla, podčiarknutia, "
 "spojovníky a bodky a musí začínať a končiť písmenom alebo číslom."
 
-msgid ""
-"When the game reports itself being paused, ETS2LA won't render AR elements."
-msgstr "Keď hra zaznamená, že je pozastavená, ETS2LA prestane vykresľovať."
-
 #, csharp-format
 msgid "Connected joystick: [bold]{0}[/] [gray italic]({1})[/]"
 msgstr "Pripojený joystick: [bold]{0}[/] [gray italic]({1})[/]"
 
+msgid "Username"
+msgstr "Používateľské meno"
+
 #, csharp-format
 msgid "Starting binding for control {0} ({1})"
 msgstr "Začínam mapovať klávesi pre ovládací prvok {0} ({1})"
-
-msgid "Username"
-msgstr "Používateľské meno"
 
 #, csharp-format
 msgid "Failed to enable dependency: {0}"
@@ -459,18 +459,18 @@ msgstr ""
 "Asisnenti zapnutý: <span class=\"text-text-accent font-bold\">{0}</span>"
 
 msgid ""
-"Only show news articles from official sources, such as the ETS2LA team or "
-"it's developers."
-msgstr ""
-"Zobrazovať iba noviny z oficiálnych zdrojov, ako je tím ETS2LA alebo jeho "
-"vývojári."
-
-msgid ""
 "Memory not available for output, please ensure the game is running and "
 "reinstall the SDK if necessary."
 msgstr ""
 "Na zápis nie je k dispozícii dostatok pamäte. Uistite sa, že hra beží, a v "
 "prípade potreby nainštalujte SDK nanovo."
+
+msgid ""
+"Only show news articles from official sources, such as the ETS2LA team or "
+"it's developers."
+msgstr ""
+"Zobrazovať iba noviny z oficiálnych zdrojov, ako je tím ETS2LA alebo jeho "
+"vývojári."
 
 msgid "All driving assists have been disabled."
 msgstr "Všetky asistenčné systémy riadenia boli deaktivované."
@@ -524,6 +524,9 @@ msgstr "Presnosť údajov"
 #, csharp-format
 msgid "Failed to uninstall current version of plugin with ID {0}."
 msgstr "Nepodarilo sa odinštalovať aktuálnu verziu pluginu s ID {0}."
+
+msgid "Error retrieving monitor names"
+msgstr ""
 
 msgid "Early"
 msgstr "Skoro"
@@ -589,14 +592,6 @@ msgstr "Nepodarilo sa inicializovať ImGui Impl OpenGL3"
 msgid "Support Multiple Viewports"
 msgstr "Podpora viacerých zobrazení"
 
-msgid ""
-"Consider supporting us by becoming a <span class=\"font-bold text-text-"
-"l\">GitHub Sponsor</span> to cover ongoing development and operational costs."
-msgstr ""
-"Zvážte našu podporu tým, že sa stanete <span class=\"font-bold text-text-"
-"l\">GitHub sponzorom</span>, a pomôžete tak pokryť náklady na priebežný "
-"vývoj a prevádzku."
-
 msgid "You took a wrong turn!"
 msgstr "Zabočil si nesprávne!"
 
@@ -607,6 +602,14 @@ msgid ""
 msgstr ""
 "Cieľová rýchlosť sa zmenila. Aktuálny rýchlostný limit: {0} {1}. Pri zmene "
 "rýchlostného limitu sa odchýlky prenášajú."
+
+msgid ""
+"Consider supporting us by becoming a <span class=\"font-bold text-text-"
+"l\">GitHub Sponsor</span> to cover ongoing development and operational costs."
+msgstr ""
+"Zvážte našu podporu tým, že sa stanete <span class=\"font-bold text-text-"
+"l\">GitHub sponzorom</span>, a pomôžete tak pokryť náklady na priebežný "
+"vývoj a prevádzku."
 
 msgid "Adaptive Cruise Control Only"
 msgstr "Iba adaptívny tempomat"
@@ -701,11 +704,11 @@ msgid "Failed to initialize overlay, ImGui initialization failed."
 msgstr ""
 "Nepodarilo sa inicializovať prekrývací prvok, inicializácia ImGui zlyhala."
 
-msgid "Your account is not allowed to use the chatbot."
-msgstr "Váš účet nemá povolenie používať chatbota."
-
 msgid "Speed Limit Warning"
 msgstr "Upozornenie na rýchlostný limit"
+
+msgid "Your account is not allowed to use the chatbot."
+msgstr "Váš účet nemá povolenie používať chatbota."
 
 msgid "Speed limit changed"
 msgstr "Zmena rýchlostného obmedzenia"
@@ -795,6 +798,9 @@ msgstr "metre za sekundu"
 
 msgid "Traffic Lights"
 msgstr "Semafory"
+
+msgid "No monitors detected, overlay cannot be initialized."
+msgstr ""
 
 msgid "Update check skipped, using already cached result."
 msgstr ""
@@ -1053,13 +1059,13 @@ msgstr "Pascali"
 msgid "Account Removal Error"
 msgstr "Chyba pri odstraňovaní účtu"
 
-#, csharp-format
-msgid "Failed to disable {0}: {1}"
-msgstr "Nepodarilo sa vypnúť {0}: {1}"
-
 msgid "You can enable the plugins we installed in a previous step here."
 msgstr ""
 "Tu môžete aktivovať pluginy, ktoré sme nainštalovali v predchádzajúcom kroku."
+
+#, csharp-format
+msgid "Failed to disable {0}: {1}"
+msgstr "Nepodarilo sa vypnúť {0}: {1}"
 
 msgid "Login"
 msgstr "Prihlásiť sa"
@@ -1067,12 +1073,12 @@ msgstr "Prihlásiť sa"
 msgid "SDK Installed"
 msgstr "SDK je nainštalované"
 
+msgid "Current Speed"
+msgstr "Aktuálna rýchlosť"
+
 #, csharp-format
 msgid "Bound control {0} ({1}) to device {2} and control {3}"
 msgstr "Priradili sme ovládač {0} ({1}) k zariadeniu {2} a ovládanie {3}"
-
-msgid "Current Speed"
-msgstr "Aktuálna rýchlosť"
 
 msgid "miles per hour"
 msgstr "míle za hodinu"
@@ -1240,12 +1246,12 @@ msgstr "Nie je pripojený"
 msgid "Plugin with ID [gray]{0}[/] is already loaded, skipping duplicate."
 msgstr "Plugin s ID [gray]{0}[/] je už načítaný, duplicitný sa preskočí."
 
-msgid "You are running the latest version."
-msgstr "Používate najnovšiu verziu."
-
 #, csharp-format
 msgid "Failed to download plugin with ID {0} from {1}. Status code: {2}"
 msgstr "Nepodarilo sa stiahnuť plugin s ID {0} z {1}. Kód stavu: {2}"
+
+msgid "You are running the latest version."
+msgstr "Používate najnovšiu verziu."
 
 msgid ""
 "Show news articles about plugin updates, be that official or 3rd party "
@@ -1323,15 +1329,15 @@ msgstr "Otvorené Zdroje"
 msgid "<span class=\"font-semibold\">{0}</span> until {1}"
 msgstr "<span class=\"font-semibold\">{0}</span> do {1}"
 
+msgid "Did you remember to restart after installing them?"
+msgstr "Nezabudli ste po ich inštalácii reštartovať?"
+
 msgid ""
 "User folder paths are hidden automatically. Review the log for other "
 "personal information before sending."
 msgstr ""
 "Cesty k priečinkom používateľov sa automaticky skryjú. Pred odoslaním si "
 "skontrolujte log, či neobsahuje ďalšie osobné informácie."
-
-msgid "Did you remember to restart after installing them?"
-msgstr "Nezabudli ste po ich inštalácii reštartovať?"
 
 msgid "Volume"
 msgstr "Hlasitosť"
@@ -1476,11 +1482,11 @@ msgstr ""
 "je táto funkcia vypnutá, prekrývací panel bude interaktívny len počas "
 "stlačenia priradenej klávesy."
 
-msgid "Latest News"
-msgstr "Najnovšie noviny"
-
 msgid "pounds"
 msgstr "libry"
+
+msgid "Latest News"
+msgstr "Najnovšie noviny"
 
 #, csharp-format
 msgid "Failed to initialize SDL3 controls backend: {0}"
@@ -1584,11 +1590,11 @@ msgstr "Nepodarilo sa pridať hru"
 msgid "Font file not found at {0}"
 msgstr "Súbor s písmom sa nenašiel v {0}"
 
-msgid "Changelog"
-msgstr "Zoznam zmien"
-
 msgid "No release notes available."
 msgstr "Poznámky k verzii nie sú k dispozícii."
+
+msgid "Changelog"
+msgstr "Zoznam zmien"
 
 #, csharp-format
 msgid "Detected a switch to {0}, waiting for its game data to be parsed."
@@ -1756,19 +1762,19 @@ msgid "Found {0} (version: {1}) at '{2}'"
 msgstr "Našlo sa {0} (verzia: {1}) v „{2}“"
 
 msgid ""
+"We can render elements in the game world using the overlay. This will use "
+"additional CPU and GPU resources."
+msgstr ""
+"Pomocou prekrývacieho okna môžeme vykresľovať prvky v hernom svete. To bude "
+"vyžadovať dodatočné zdroje procesora a grafickej karty."
+
+msgid ""
 "Select which traffic rules ETS2LA should obey. More might be added later, "
 "and all plugins won't necessarily support all rules."
 msgstr ""
 "Vyberte, ktoré dopravné pravidlá má ETS2LA dodržiavať. Neskôr môžu byť "
 "pridané ďalšie pravidlá a nie všetky pluginy budú nutne podporovať všetky "
 "pravidlá."
-
-msgid ""
-"We can render elements in the game world using the overlay. This will use "
-"additional CPU and GPU resources."
-msgstr ""
-"Pomocou prekrývacieho okna môžeme vykresľovať prvky v hernom svete. To bude "
-"vyžadovať dodatočné zdroje procesora a grafickej karty."
 
 msgid "kilometers per hour"
 msgstr "kilometre za hodinu"
@@ -2061,15 +2067,15 @@ msgstr "Odporúčané pluginy"
 msgid "Failed to remove account. Please try again."
 msgstr "Odstránenie účtu sa nepodarilo. Skúste to prosím znova."
 
+msgid "Game added"
+msgstr "Hra bola pridaná"
+
 msgid ""
 "The maximum speed ETS2LA will accelerate to. It might still drift over this "
 "limit due to momentum."
 msgstr ""
 "Maximálna rýchlosť, na ktorú ETS2LA zrýchli. V dôsledku hybnosti sa však "
 "môže stať, že túto hranicu prekročí."
-
-msgid "Game added"
-msgstr "Hra bola pridaná"
 
 msgid "Privacy Policy"
 msgstr "Zásady ochrany osobných údajov"
@@ -2149,11 +2155,11 @@ msgstr "Režim asistenta: <span class=\"text-text-accent font-bold\">{0}</span>"
 msgid "View Public Telemetry"
 msgstr "Zobraziť verejnú telemetriu"
 
-msgid "Thinking..."
-msgstr "Premýšľam..."
-
 msgid "Adjust the volume of the audio output."
 msgstr "Upravte hlasitosť zvukového výstupu."
+
+msgid "Thinking..."
+msgstr "Premýšľam..."
 
 #, csharp-format
 msgid ""
@@ -2270,6 +2276,12 @@ msgstr "Jednotky a jazyk"
 #, csharp-format
 msgid "Loaded plugin: [gray]{0}[/] from [gray]{1}[/]."
 msgstr "Načítaný plugin: [gray]{0}[/] z [gray]{1}[/]."
+
+msgid ""
+"The monitor ETS2LA's overlay will be displayed on. If you have multiple "
+"monitors, you can select which one to use here. Please select the monitor "
+"the game is running on, and ensure the game is in fullscreen."
+msgstr ""
 
 msgid ""
 "You do not have permission to access this resource. The server understood "
@@ -2439,11 +2451,6 @@ msgstr "Hľadám aktualizácie..."
 msgid "No audio output device available"
 msgstr "Nie je k dispozícii žiadne zariadenie na výstup zvuku"
 
-msgid ""
-"The monitor ETS2LA's overlay will be displayed on. If you have multiple "
-"monitors, you can select which one to use here."
-msgstr ""
-
 msgid "Catalogue"
 msgstr "Katalóg"
 
@@ -2599,9 +2606,6 @@ msgstr "Pridávam mód:{0}"
 msgid "Like ETS2LA?"
 msgstr "Páči sa vám ETS2LA?"
 
-msgid "Show Plugin Updates"
-msgstr "Zobraziť aktualizácie Pluginov"
-
 msgid ""
 "Allows ETS2LA to control throttle and brake using direct memory editing. "
 "This might not work on some systems, but allows for control even while "
@@ -2612,6 +2616,9 @@ msgstr ""
 "niektorých systémoch to nemusí fungovať, no umožňuje to ovládanie aj vtedy, "
 "keď je hra minimalizovaná alebo beží na pozadí. Ak túto funkciu zapnete a "
 "nebude fungovať, nahláste problém na našom Discord serveri."
+
+msgid "Show Plugin Updates"
+msgstr "Zobraziť aktualizácie Pluginov"
 
 #, csharp-format
 msgid "Not all dependencies for plugin {0} are installed."

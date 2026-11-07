@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-11-07 15:00:04+0200\n"
+"POT-Creation-Date: 2026-11-07 13:10:59+0200\n"
 "PO-Revision-Date: 2026-08-26 18:07+0000\n"
 "Last-Translator: phucc <phucc@ets2la.com>\n"
 "Language-Team: Vietnamese <http://weblate.ets2la.com/projects/ets2la/ets2la/"
@@ -128,25 +128,25 @@ msgid "Maximum Speed"
 msgstr "Tốc độ tối đa"
 
 msgid ""
-"Your username may only contain letters, numbers, underscores, hyphens and "
-"periods, and must start and end with a letter or number."
-msgstr ""
-
-msgid ""
 "When the game reports itself being paused, ETS2LA won't render AR elements."
 msgstr ""
 "Khi trò chơi ở trạng thái tạm dừng, ETS2LA sẽ không hiện thị các yếu tố AR."
+
+msgid ""
+"Your username may only contain letters, numbers, underscores, hyphens and "
+"periods, and must start and end with a letter or number."
+msgstr ""
 
 #, csharp-format
 msgid "Connected joystick: [bold]{0}[/] [gray italic]({1})[/]"
 msgstr "Đã kết nối với tay cầm/vô lăng: [bold]{0}[/] [gray italic]({1})[/]"
 
+msgid "Username"
+msgstr ""
+
 #, csharp-format
 msgid "Starting binding for control {0} ({1})"
 msgstr "Bắt đầu gán phím cho nút điều khiển: {0} ({1})"
-
-msgid "Username"
-msgstr ""
 
 #, csharp-format
 msgid "Failed to enable dependency: {0}"
@@ -436,13 +436,13 @@ msgid "Assists Enabled: <span class=\"text-text-accent font-bold\">{0}</span>"
 msgstr ""
 
 msgid ""
-"Only show news articles from official sources, such as the ETS2LA team or "
-"it's developers."
+"Memory not available for output, please ensure the game is running and "
+"reinstall the SDK if necessary."
 msgstr ""
 
 msgid ""
-"Memory not available for output, please ensure the game is running and "
-"reinstall the SDK if necessary."
+"Only show news articles from official sources, such as the ETS2LA team or "
+"it's developers."
 msgstr ""
 
 msgid "All driving assists have been disabled."
@@ -492,6 +492,9 @@ msgstr "Độ chính xác dữ liệu"
 #, csharp-format
 msgid "Failed to uninstall current version of plugin with ID {0}."
 msgstr "Không thể gỡ cài đặt phiên bản hiện tại của plugin với ID {0}."
+
+msgid "Error retrieving monitor names"
+msgstr ""
 
 msgid "Early"
 msgstr "Sớm"
@@ -555,11 +558,6 @@ msgstr "Khởi tạo ImGui Impl OpenGL3 thất bại"
 msgid "Support Multiple Viewports"
 msgstr "Hỗ trợ nhiều khung hình (Multiple Viewports)"
 
-msgid ""
-"Consider supporting us by becoming a <span class=\"font-bold text-text-"
-"l\">GitHub Sponsor</span> to cover ongoing development and operational costs."
-msgstr ""
-
 msgid "You took a wrong turn!"
 msgstr "Bạn đã đi sai hướng!"
 
@@ -567,6 +565,11 @@ msgstr "Bạn đã đi sai hướng!"
 msgid ""
 "Target speed changed. Current speedlimit: {0} {1}. Offsets are carried over "
 "on speedlimit change."
+msgstr ""
+
+msgid ""
+"Consider supporting us by becoming a <span class=\"font-bold text-text-"
+"l\">GitHub Sponsor</span> to cover ongoing development and operational costs."
 msgstr ""
 
 msgid "Adaptive Cruise Control Only"
@@ -655,11 +658,11 @@ msgstr ""
 msgid "Failed to initialize overlay, ImGui initialization failed."
 msgstr "Khởi tạo lớp phủ (overlay) thất bại, không thể khởi tạo ImGui."
 
-msgid "Your account is not allowed to use the chatbot."
-msgstr ""
-
 msgid "Speed Limit Warning"
 msgstr "Cảnh báo tốc độ giới hạn"
+
+msgid "Your account is not allowed to use the chatbot."
+msgstr ""
 
 msgid "Speed limit changed"
 msgstr ""
@@ -743,6 +746,9 @@ msgid "meters per second"
 msgstr "mét trên giây"
 
 msgid "Traffic Lights"
+msgstr ""
+
+msgid "No monitors detected, overlay cannot be initialized."
 msgstr ""
 
 msgid "Update check skipped, using already cached result."
@@ -976,11 +982,11 @@ msgstr "Pascals"
 msgid "Account Removal Error"
 msgstr ""
 
-#, csharp-format
-msgid "Failed to disable {0}: {1}"
+msgid "You can enable the plugins we installed in a previous step here."
 msgstr ""
 
-msgid "You can enable the plugins we installed in a previous step here."
+#, csharp-format
+msgid "Failed to disable {0}: {1}"
 msgstr ""
 
 msgid "Login"
@@ -989,12 +995,12 @@ msgstr ""
 msgid "SDK Installed"
 msgstr "Đã cài đặt SDK"
 
+msgid "Current Speed"
+msgstr "Tốc độ hiện tại"
+
 #, csharp-format
 msgid "Bound control {0} ({1}) to device {2} and control {3}"
 msgstr ""
-
-msgid "Current Speed"
-msgstr "Tốc độ hiện tại"
 
 msgid "miles per hour"
 msgstr ""
@@ -1144,11 +1150,11 @@ msgstr "Chưa được kết nối"
 msgid "Plugin with ID [gray]{0}[/] is already loaded, skipping duplicate."
 msgstr ""
 
-msgid "You are running the latest version."
-msgstr ""
-
 #, csharp-format
 msgid "Failed to download plugin with ID {0} from {1}. Status code: {2}"
+msgstr ""
+
+msgid "You are running the latest version."
 msgstr ""
 
 msgid ""
@@ -1220,12 +1226,12 @@ msgstr ""
 msgid "<span class=\"font-semibold\">{0}</span> until {1}"
 msgstr ""
 
+msgid "Did you remember to restart after installing them?"
+msgstr ""
+
 msgid ""
 "User folder paths are hidden automatically. Review the log for other "
 "personal information before sending."
-msgstr ""
-
-msgid "Did you remember to restart after installing them?"
 msgstr ""
 
 msgid "Volume"
@@ -1352,10 +1358,10 @@ msgid ""
 "will only be interactive while you hold down the keybind."
 msgstr ""
 
-msgid "Latest News"
+msgid "pounds"
 msgstr ""
 
-msgid "pounds"
+msgid "Latest News"
 msgstr ""
 
 #, csharp-format
@@ -1452,11 +1458,11 @@ msgstr "Thêm trò chơi không thành công"
 msgid "Font file not found at {0}"
 msgstr ""
 
-msgid "Changelog"
-msgstr ""
-
 msgid "No release notes available."
 msgstr "Hiện không có ghi chú cập nhật nào."
+
+msgid "Changelog"
+msgstr ""
 
 #, csharp-format
 msgid "Detected a switch to {0}, waiting for its game data to be parsed."
@@ -1605,13 +1611,13 @@ msgid "Found {0} (version: {1}) at '{2}'"
 msgstr ""
 
 msgid ""
-"Select which traffic rules ETS2LA should obey. More might be added later, "
-"and all plugins won't necessarily support all rules."
+"We can render elements in the game world using the overlay. This will use "
+"additional CPU and GPU resources."
 msgstr ""
 
 msgid ""
-"We can render elements in the game world using the overlay. This will use "
-"additional CPU and GPU resources."
+"Select which traffic rules ETS2LA should obey. More might be added later, "
+"and all plugins won't necessarily support all rules."
 msgstr ""
 
 msgid "kilometers per hour"
@@ -1881,15 +1887,15 @@ msgstr ""
 msgid "Failed to remove account. Please try again."
 msgstr ""
 
+msgid "Game added"
+msgstr "Đã thêm trò chơi"
+
 msgid ""
 "The maximum speed ETS2LA will accelerate to. It might still drift over this "
 "limit due to momentum."
 msgstr ""
 "Tốc độ tối đa mà ETS2LA sẽ tăng tốc tới. Xe vẫn có thể vượt quá giới hạn do "
 "đà di chuyển."
-
-msgid "Game added"
-msgstr "Đã thêm trò chơi"
 
 msgid "Privacy Policy"
 msgstr ""
@@ -1962,10 +1968,10 @@ msgstr ""
 msgid "View Public Telemetry"
 msgstr "Xem dữ liệu thu thập từ xa công khai"
 
-msgid "Thinking..."
+msgid "Adjust the volume of the audio output."
 msgstr ""
 
-msgid "Adjust the volume of the audio output."
+msgid "Thinking..."
 msgstr ""
 
 #, csharp-format
@@ -2071,6 +2077,12 @@ msgstr "Đơn vị và ngôn ngữ"
 #, csharp-format
 msgid "Loaded plugin: [gray]{0}[/] from [gray]{1}[/]."
 msgstr "Đã nạp plugin: [gray]{0}[/] from [gray]{1}[/]."
+
+msgid ""
+"The monitor ETS2LA's overlay will be displayed on. If you have multiple "
+"monitors, you can select which one to use here. Please select the monitor "
+"the game is running on, and ensure the game is in fullscreen."
+msgstr ""
 
 msgid ""
 "You do not have permission to access this resource. The server understood "
@@ -2228,11 +2240,6 @@ msgstr ""
 msgid "No audio output device available"
 msgstr ""
 
-msgid ""
-"The monitor ETS2LA's overlay will be displayed on. If you have multiple "
-"monitors, you can select which one to use here."
-msgstr ""
-
 msgid "Catalogue"
 msgstr "Danh mục"
 
@@ -2377,14 +2384,14 @@ msgstr "Đang thêm mod: {0}"
 msgid "Like ETS2LA?"
 msgstr ""
 
-msgid "Show Plugin Updates"
-msgstr ""
-
 msgid ""
 "Allows ETS2LA to control throttle and brake using direct memory editing. "
 "This might not work on some systems, but allows for control even while "
 "tabbed out of the game. If you enable this and it doesn't work, please "
 "report the issue on our Discord server."
+msgstr ""
+
+msgid "Show Plugin Updates"
 msgstr ""
 
 #, csharp-format
