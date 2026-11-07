@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
 "POT-Creation-Date: 2026-11-07 13:10:59+0200\n"
-"PO-Revision-Date: 2026-11-07 21:26+0000\n"
+"PO-Revision-Date: 2026-11-07 22:18+0000\n"
 "Last-Translator: Kubex70 <kubex70@ets2la.com>\n"
 "Language-Team: Polish <http://weblate.ets2la.com/projects/ets2la/ets2la/pl/>"
 "\n"
@@ -774,6 +774,9 @@ msgid ""
 "The following information is sent along with each message to help the "
 "chatbot provide better answers. It does not contain any personal information."
 msgstr ""
+"Do każdej wiadomości dołączane są poniższe informacje, które pomagają "
+"czatbotowi udzielać lepszych odpowiedzi. Nie zawierają one żadnych danych "
+"osobowych."
 
 #, csharp-format
 msgid "No update available for plugin with ID {0}."
@@ -813,7 +816,7 @@ msgid "Traffic Lights"
 msgstr "Sygnalizacja świetlna"
 
 msgid "No monitors detected, overlay cannot be initialized."
-msgstr ""
+msgstr "Nie wykryto monitorów; nie można zainicjować nakładki."
 
 msgid "Update check skipped, using already cached result."
 msgstr "Pominięto sprawdzanie aktualizacji, użyto już zbuforowanych wyników."
@@ -822,7 +825,7 @@ msgid "Unable to read the current log."
 msgstr "Nie można odczytać bieżącego dziennika."
 
 msgid "Open Update Page"
-msgstr ""
+msgstr "Otwórz stronę aktualizacji"
 
 #, csharp-format
 msgid "Installed plugin with ID {0} not found."
@@ -874,6 +877,8 @@ msgid ""
 "Some 3rd party websites might want access to your account.<br/>You can press "
 "the button below to display your JWT token."
 msgstr ""
+"Niektóre witryny zewnętrzne mogą wymagać dostępu do Twojego konta.<br/"
+">Możesz nacisnąć poniższy przycisk, aby wyświetlić swój token JWT."
 
 msgid "If you're streaming or recording, now's the time to hide this window."
 msgstr ""
@@ -885,7 +890,7 @@ msgstr "Unikanie kolizji"
 
 #, csharp-format
 msgid "Monitor {0}: {1}"
-msgstr ""
+msgstr "Monitor {0}: {1}"
 
 msgid ""
 "Disables the overlay entirely. This will fix the black screen issue at the "
@@ -918,10 +923,10 @@ msgid "Camera {0} ({1}x{2})"
 msgstr "Kamera {0} ({1}x{2})"
 
 msgid "Display JWT Token"
-msgstr ""
+msgstr "Wyświetl token JWT"
 
 msgid "Invalid Input"
-msgstr ""
+msgstr "Nieprawidłowe dane wejściowe"
 
 msgid ""
 "This setting only loads roads and intersections visible on the in game map. "
@@ -939,7 +944,7 @@ msgid "Failed to load library plugin from [gray]{0}[/]: {1}"
 msgstr "Nie udało się załadować biblioteki pluginu z [gray]{0}[/]: {1}"
 
 msgid "Game"
-msgstr ""
+msgstr "Gra"
 
 #, csharp-format
 msgid "Updated bindings for control: {0} ({1}) to Device: {2}, Control: {3}"
@@ -1030,7 +1035,7 @@ msgid "Plugin with ID {0} not found in available plugins."
 msgstr "Plugin o ID {0} nie został znaleziony wśród dostępnych pluginów."
 
 msgid "Confirm Account Removal"
-msgstr ""
+msgstr "Potwierdź usunięcie konta"
 
 msgid ""
 "Removing your account will delete all your data from our servers. This "
@@ -1102,9 +1107,12 @@ msgid ""
 "You'll be asked to save an OTP authentication code after registration. We do "
 "not store or ask for passwords, as those aren't required for authentication."
 msgstr ""
+"Po rejestracji otrzymasz prośbę o zapisanie kodu uwierzytelniającego OTP. "
+"Nie przechowujemy haseł ani nie prosimy o ich podanie, ponieważ nie są one "
+"wymagane do uwierzytelnienia."
 
 msgid "Test Audio"
-msgstr ""
+msgstr "Test dźwięku"
 
 msgid "Wiki / FAQ"
 msgstr "Wiki / Częste pytania"
@@ -1281,7 +1289,7 @@ msgstr ""
 "naciśnięciu klawisza USTAW?"
 
 msgid "Allow Wayland"
-msgstr ""
+msgstr "Zezwalaj na Wayland"
 
 msgid "The selected directory does not exist."
 msgstr "Wybrany katalog nie istnieje."
@@ -1345,6 +1353,8 @@ msgid ""
 "User folder paths are hidden automatically. Review the log for other "
 "personal information before sending."
 msgstr ""
+"Ścieżki do folderów użytkownika są ukrywane automatycznie. Przed wysłaniem "
+"sprawdź, czy w dzienniku nie znajdują się inne dane osobowe."
 
 msgid "Volume"
 msgstr "Głośność"
@@ -1412,6 +1422,8 @@ msgid ""
 "The font size of the overlay. This can be used to scale the overlay to your "
 "monitor's DPI settings."
 msgstr ""
+"Rozmiar czcionki nakładki. Można go użyć do dostosowania skali nakładki do "
+"ustawień DPI monitora."
 
 msgid "Error in telemetry update loop."
 msgstr "Błąd w pętli aktualizacji telemetrii."
@@ -1566,7 +1578,7 @@ msgid "No updates available."
 msgstr "Brak dostępnych aktualizacji."
 
 msgid "Please log in to use the chatbot."
-msgstr ""
+msgstr "Zaloguj się, aby korzystać z czatbota."
 
 #, csharp-format
 msgid "Error rendering overlay: {0}"
@@ -1583,7 +1595,7 @@ msgstr "L"
 
 msgid ""
 "An error occurred while trying to log in. Please try again later. Error: "
-msgstr ""
+msgstr "Podczas próby logowania wystąpił błąd. Spróbuj ponownie później. Błąd: "
 
 msgid "Installing..."
 msgstr "Instalowanie..."
@@ -1647,7 +1659,7 @@ msgstr ""
 
 #, csharp-format
 msgid "No versions available for plugin with ID {0}."
-msgstr ""
+msgstr "Brak dostępnych wersji dla pluginu o identyfikatorze {0}."
 
 #, csharp-format
 msgid ""
@@ -1705,7 +1717,7 @@ msgid "An error occurred while loading map data: {0}"
 msgstr "Wystąpił błąd podczas ładowania danych mapy: {0}"
 
 msgid "The selected game executable was not found."
-msgstr ""
+msgstr "Nie znaleziono wskazanego pliku wykonywalnego gry."
 
 #, csharp-format
 msgid "Loaded library plugin: [gray]{0}[/] from [gray]{1}[/]."
@@ -1717,12 +1729,14 @@ msgstr "Wprowadź kod OTP wygenerowany przez Twoją aplikację uwierzytelniając
 #, csharp-format
 msgid "The username {0} is reserved. Please choose a different username."
 msgstr ""
+"Nazwa użytkownika {0} jest zarezerwowana. Prosimy o wybranie innej nazwy "
+"użytkownika."
 
 msgid "Select the game you wish to start."
 msgstr "Wybierz grę, którą chcesz rozpocząć."
 
 msgid "Speed Limits"
-msgstr ""
+msgstr "Ograniczenia prędkości"
 
 msgid "Responsiveness"
 msgstr "Reakcja"
@@ -1758,7 +1772,7 @@ msgid "Account"
 msgstr "Konto"
 
 msgid "Translate News Articles"
-msgstr ""
+msgstr "Tłumaczenie artykułów z nowościami"
 
 #, csharp-format
 msgid "Found {0} (version: {1}) at '{2}'"
@@ -1917,11 +1931,11 @@ msgid "Please close the game before continuing with the onboarding process."
 msgstr "Proszę zamknąć grę przed kontynuowaniem procesu wdrażania."
 
 msgid "Registration Successful"
-msgstr ""
+msgstr "Rejestracja zakończona pomyślnie"
 
 #, csharp-format
 msgid "Your username must be at most {0} characters long."
-msgstr ""
+msgstr "Twoja nazwa użytkownika może mieć maksymalnie {0} znaków."
 
 #, csharp-format
 msgid "Successfully installed plugin {0} ({1}, {2})"
@@ -2283,6 +2297,10 @@ msgid ""
 "monitors, you can select which one to use here. Please select the monitor "
 "the game is running on, and ensure the game is in fullscreen."
 msgstr ""
+"Monitor, na którym będzie wyświetlana nakładka ETS2LA. Jeśli korzystasz z "
+"kilku monitorów, możesz tutaj wybrać, którego z nich użyć. Wybierz monitor, "
+"na którym uruchomiona jest gra, i upewnij się, że gra działa w trybie "
+"pełnoekranowym."
 
 msgid ""
 "You do not have permission to access this resource. The server understood "
@@ -2298,7 +2316,7 @@ msgid "Display Language"
 msgstr "Wyświetlany język"
 
 msgid "Speedlimit Offset"
-msgstr ""
+msgstr "Przesunięcie limitu prędkości"
 
 #, csharp-format
 msgid "Changed update source to '{0}'."
@@ -2326,7 +2344,7 @@ msgstr "m/s"
 
 #, csharp-format
 msgid "The username {0} is already taken. Please choose a different username."
-msgstr ""
+msgstr "Nazwa użytkownika {0} jest już zajęta. Wybierz inną nazwę użytkownika."
 
 #, csharp-format
 msgid "Click to {0} this window"
@@ -2358,7 +2376,7 @@ msgid "Final Disclaimer <span class=\"description\">1/2</span>"
 msgstr "Ostateczne ostrzeżenie <span class=\"description\">1/2</span>"
 
 msgid "• ETS2LA Developers, contact@ets2la.com, Poland."
-msgstr ""
+msgstr "• Twórcy ETS2LA, contact@ets2la.com, Polska."
 
 msgid ""
 "Translate news articles to your selected display language. This may take a "
@@ -2390,7 +2408,7 @@ msgid "Unknown Version"
 msgstr "Nieznana wersja"
 
 msgid "ETS2LA will offset the speedlimit by this percentage."
-msgstr ""
+msgstr "ETS2LA skoryguje limit prędkości o ten procent."
 
 msgid ""
 "Your system has less than 20GB of RAM. Extreme data fidelity uses "
@@ -2423,10 +2441,11 @@ msgid ""
 "An error occurred while trying to remove your account. Please try again "
 "later. Error: "
 msgstr ""
+"Podczas próby usunięcia konta wystąpił błąd. Spróbuj ponownie później. Błąd: "
 
 #, csharp-format
 msgid "Deleted old SDK file '{0}'"
-msgstr ""
+msgstr "Usunięto stary plik SDK '{0}'"
 
 msgid "°C"
 msgstr "°C"
@@ -2469,7 +2488,7 @@ msgid "Assist Level: "
 msgstr "Poziom asysty: "
 
 msgid "View Privacy Policy"
-msgstr ""
+msgstr "Zobacz politykę prywatności"
 
 #, csharp-format
 msgid "Cannot enable plugin {0} because dependency {1} was not found."
@@ -2496,6 +2515,8 @@ msgid ""
 "Allow ETS2LA's window to run on Wayland. Wayland might cause compatibility "
 "issues, however you might want to try to enable this option."
 msgstr ""
+"Umożliwia uruchomienie okna ETS2LA w środowisku Wayland. Wayland może "
+"powodować problemy ze zgodnością, niemniej możesz spróbować włączyć tę opcję."
 
 msgid "Help"
 msgstr "Pomoc"
@@ -2513,7 +2534,7 @@ msgstr ""
 
 #, csharp-format
 msgid "You are blocked until {1}.<br/>Reason: {0}"
-msgstr ""
+msgstr "Zostałeś zablokowany do {1}.<br/>Powód: {0}"
 
 msgid "Decrease/SET"
 msgstr "Zmniejsz/USTAW"
@@ -2605,7 +2626,7 @@ msgid "Adding mod: {0}"
 msgstr "Dodawanie moda: {0}"
 
 msgid "Like ETS2LA?"
-msgstr ""
+msgstr "Lubisz ETS2LA?"
 
 msgid ""
 "Allows ETS2LA to control throttle and brake using direct memory editing. "
@@ -2620,7 +2641,7 @@ msgstr ""
 "prosimy o zgłoszenie problemu na naszym serwerze Discord."
 
 msgid "Show Plugin Updates"
-msgstr ""
+msgstr "Pokaż aktualizacje pluginów"
 
 #, csharp-format
 msgid "Not all dependencies for plugin {0} are installed."
