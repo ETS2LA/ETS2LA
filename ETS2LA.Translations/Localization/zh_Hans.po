@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-11-01 23:03:06+0200\n"
+"POT-Creation-Date: 2026-11-07 14:13:54+0200\n"
 "PO-Revision-Date: 2026-11-02 20:26+0000\n"
 "Last-Translator: goodnightan <goodnightan@ets2la.com>\n"
 "Language-Team: Chinese (Simplified Han script) <http://weblate.ets2la.com/"
@@ -18,82 +18,272 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 5.14.3\n"
 
-#, csharp-format
-msgid "Currently running at {0} FPS."
-msgstr "目前以 {0} FPS 运行。"
-
-#, csharp-format
-msgid "Registered control: {0} [gray italic]({1})[/]"
-msgstr "已注册控件：{0} [gray italic]({1})[/]"
-
 msgid ""
-"This allows ETS2LA to render in multiple viewports, meaning you can move "
-"overlay windows to any monitor."
+"This setting drops redundant information while maintaining most detail "
+"objects (such as signs). Includes all hidden and AI only roads."
 msgstr ""
-"这可以让 ETS2LA 在多个视口中进行渲染，让你可以将叠加层窗口移动到任何屏幕上。"
+"这项设置将会移除冗余的信息，保留大部分细节物体（比如路牌）。将会保留隐藏或仅 "
+"AI 可行的道路。"
 
-#, csharp-format
-msgid "Tried to disable {0}, but it was not found among loaded plugins."
-msgstr "尝试停用 {0}，但在已加载的插件中找不到该插件。"
+msgid "Unknown Control ID"
+msgstr "未知控制ID"
 
-msgid "Restarting ETS2LA..."
-msgstr "正在重新启动 ETS2LA..."
+msgid "Sorry"
+msgstr "抱歉"
+
+msgid "Stay on Top"
+msgstr "窗口置顶"
+
+msgid "Display"
+msgstr "显示"
+
+msgid "Go to Account Settings"
+msgstr "前往账户设置"
+
+msgid "Overlay Interaction"
+msgstr "叠加层交互"
 
 msgid "SDK Installation Failed"
 msgstr "SDK 安装失败"
 
 #, csharp-format
+msgid "Failed to open joystick {0}."
+msgstr "摇杆 {0} 打开失败。"
+
+msgid "Anonymous Telemetry"
+msgstr "匿名遥测"
+
 msgid ""
-"Your token will expire on <span class=\"text-text-l\">{0}</span>, you'll be "
-"asked to login again then."
+"Keep the ETS2LA window on top of other windows. If you want to use the "
+"visualization on a single monitor setup, this is recommended."
 msgstr ""
-"您的令牌将于 <span class=\"text-text-l\">{0}</span>过期，届时将需要您重新登"
-"录。"
-
-msgid ""
-"This chatbot is provided for free by <span class=\"text-text-l\">Lun011666</"
-"span>.<br/>For the sake of the community, we ask you not to abuse access."
-msgstr ""
-"此聊天机器人由 <span class=\"text-text-l\">Lun011666</span> 免费提供。<br/>为"
-"了社区的良好环境，请勿滥用此服务。"
-
-msgid ""
-"Memory not available for output, please ensure the game is running and "
-"reinstall the SDK if necessary."
-msgstr "输出内存不可用，请确保游戏正在运行，如有必要请重新安装 SDK。"
-
-msgid "Log sent. Click here to view it."
-msgstr "日志已发送。点击此处查看。"
+"让 ETS2LA 窗口始终显示在其他窗口之上。如果您使用单显示器设置并希望使用可视化"
+"界面，建议启用此选项。"
 
 #, csharp-format
-msgid "Loaded {0} plugin from the Plugins folder."
-msgid_plural "Loaded {0} plugins from the Plugins folder."
-msgstr[0] "已从 Plugins 文件夹加载 {0} 个插件。"
+msgid "Legacy audio path detected: {0}"
+msgstr "检测到旧版音频路径：{0}"
 
 #, csharp-format
-msgid "No update available for plugin with ID {0}."
-msgstr "ID 为 {0} 的插件目前没有可用更新。"
-
-msgid "Please close the game before continuing with the onboarding process."
-msgstr "请先关闭游戏，然后再继续引导流程。"
-
-msgid "Fast"
-msgstr "快"
-
-#, csharp-format
-msgid "Failed to unload plugin load context: {0}"
-msgstr "卸载插件加载上下文失败：{0}"
+msgid "Control with ID '{0}' not found for updating bindings."
+msgstr "找不到可以修改绑定的 {0} 号控件。"
 
 msgid ""
-"When this key is held, the overlay will receive mouse input and allow you to "
-"interact with it. NOTE: Interaction with items below the overlay is not "
-"possible during this time."
+"Force ETS2LA to load the map on game startup. This can resolve issues where "
+"your game.log.txt is not where ETS2LA expects it."
 msgstr ""
-"按住此按键时，叠加层将接收鼠标输入，让你可以与其互动。注意：此时无法与叠加层"
-"下方的项目互动。"
+"强制 ETS2LA 在游戏启动时加载地图。若游戏的 game.log.txt 文件不在 ETS2LA 预期"
+"的位置，此选项可以解决由此导致的一些问题。"
 
-msgid "Responsiveness"
-msgstr "响应性"
+msgid "Gates"
+msgstr "闸门"
+
+msgid "Game SDK"
+msgstr "游戏 SDK"
+
+msgid "Send log"
+msgstr "发送日志"
+
+#, csharp-format
+msgid "Parsing installation at '{0}' (version: {1})"
+msgstr "解析位于 '{0}' 的安装实例（版本 {1}）"
+
+msgid ""
+"When changing the speed, snap to the nearest 10. i.e. 37 -> 39 -> 40 -> 42..."
+msgstr ""
+"当修改速度时，将会尝试对齐到最近的 10 的倍数。比如步长为 2 时，调整顺序为 37 "
+"-> 39 -> 40 -> 42…"
+
+msgid "Register"
+msgstr "注册"
+
+msgid "kg"
+msgstr "kg"
+
+msgid ""
+"Decreases the current target speed by one step. If speed control and lane "
+"assist are off, this key acts like SET. Meaning it will set the current "
+"speed to speedlimit."
+msgstr ""
+"将当前目标速度降低一个档位。如果速度控制和车道辅助均已关闭，此按键的作用类似"
+"于“SET”，即将当前速度设为限速值。"
+
+msgid "Become a GitHub Sponsor"
+msgstr "成为 GitHub 赞助者"
+
+msgid "Game not found"
+msgstr "未找到游戏"
+
+msgid "If you've not yet installed it, you can find it in the catalogue."
+msgstr "如果您还没有安装，可以在插件目录中找到它。"
+
+#, csharp-format
+msgid "Installed {0}"
+msgstr "已安装 {0}"
+
+#, csharp-format
+msgid "Error loading map data from '{0}': {1}"
+msgstr "从 {0} 加载地图数据时出错：{1}"
+
+msgid "Medium"
+msgstr "中等"
+
+msgid "Maximum Speed"
+msgstr "最高速度"
+
+msgid ""
+"When the game reports itself being paused, ETS2LA won't render AR elements."
+msgstr "当游戏处于暂停状态时，ETS2LA 将不会显示 AR 元素。"
+
+msgid ""
+"Your username may only contain letters, numbers, underscores, hyphens and "
+"periods, and must start and end with a letter or number."
+msgstr ""
+"用户名只能包含字母、数字、下划线、连字符和句点，且必须以字母或数字开头和结"
+"尾。"
+
+#, csharp-format
+msgid "Connected joystick: [bold]{0}[/] [gray italic]({1})[/]"
+msgstr "已连接摇杆：[bold]{0}[/] [gray italic]({1})[/]"
+
+msgid "Username"
+msgstr "用户名"
+
+#, csharp-format
+msgid "Starting binding for control {0} ({1})"
+msgstr "正在绑定控制 {0} （{1}）"
+
+#, csharp-format
+msgid "Failed to enable dependency: {0}"
+msgstr "启用依赖项失败：{0}"
+
+msgid "Main"
+msgstr "主菜单"
+
+msgid "Only Show Official News"
+msgstr "仅显示官方新闻"
+
+#, csharp-format
+msgid ""
+"Version {0} of plugin with ID {1} is not compatible with the current "
+"application version or operating system."
+msgstr "插件（ID：{1}）的 {0} 版本和当前的应用版本或操作系统不兼容。"
+
+#, csharp-format
+msgid "found {0} road"
+msgid_plural "found {0} roads"
+msgstr[0] "找到了 {0} 条道路"
+
+#, csharp-format
+msgid "Binding for control {0} ({1}) timed out."
+msgstr "控制 {0}（{1}）的绑定超时了。"
+
+msgid "Remove Account"
+msgstr "删除账户"
+
+#, csharp-format
+msgid ""
+"Library plugin with ID [gray]{0}[/] is already loaded, skipping duplicate."
+msgstr "ID 为 [gray]{0}[/] 的库插件已加载，跳过重复加载。"
+
+msgid "Successfully opened memory for output."
+msgstr "已成功打开共享内存。"
+
+msgid "Dashboard"
+msgstr "仪表盘"
+
+msgid "Update Available"
+msgstr "有可用更新"
+
+msgid "Error in navigation update loop."
+msgstr "导航更新时出现错误。"
+
+msgid ""
+"Warning: Your system has less than 16GB of RAM. You can only select up to "
+"Medium."
+msgstr "警告：你的系统内存少于 16GB。你最多只能选择“中等”。"
+
+msgid "Window Zoom"
+msgstr "窗口缩放"
+
+msgid "Show More Logs"
+msgstr "显示更多日志信息"
+
+msgid ""
+"Cracked games or demos will block our SDK from loading. They do not work, "
+"and we don't intend to fix this."
+msgstr ""
+"破解版游戏或试玩版会阻止我们的 SDK 加载，因此无法正常使用。我们也没有计划对此"
+"进行适配。"
+
+msgid "Contact us on Discord"
+msgstr "通过 Discord 联系我们"
+
+msgid "km/h"
+msgstr "km/h"
+
+msgid "Overlay is disabled in settings, skipping initialization."
+msgstr "已在设置中禁用叠加层，跳过初始化。"
+
+msgid ""
+"ETS2LA will display information on top of the game. You can interact with "
+"these overlay elements using <span class=\"text-text-accent font-"
+"bold\">Overlay Interaction</span>. Try it!"
+msgstr ""
+"ETS2LA 会在游戏画面上方显示信息。您可以使用 <span class=\"text-text-accent "
+"font-bold\">叠加层交互</span> 与这些叠加层元素进行交互。试试看吧！"
+
+msgid "If you can't interact with the Window, press CTRL+R."
+msgstr "如果您无法与该窗口进行交互，请按 CTRL+R。"
+
+msgid "The step size for changing the cruise control speed."
+msgstr "调整巡航速度时的步长。"
+
+msgid "Please enter a username."
+msgstr "请输入用户名。"
+
+#, csharp-format
+msgid "Your username must be at least {0} characters long."
+msgstr "您的用户名至少需要包含{0}个字符。"
+
+msgid "Press anywhere outside the dialog to close it."
+msgstr "点击对话框外的任意位置即可关闭。"
+
+msgid "Welcome to ETS2LA!"
+msgstr "欢迎使用ETS2LA！"
+
+msgid "Account Removal Failed"
+msgstr "移除账户失败"
+
+msgid ""
+"<span class=\"text-text-accent\"))>Success!</span> You can find more plugins "
+"in the catalogue later."
+msgstr ""
+"<span class=\"text-text-accent\"))>成功！</span>稍后您可以在插件目录中找到更"
+"多插件。"
+
+msgid "Initializing..."
+msgstr "正在初始化..."
+
+msgid ""
+"Please ensure <span class=\"text-text-accent font-bold\">ETS2 and ATS are "
+"closed</span>. You can start the game after completing the onboarding "
+"process."
+msgstr ""
+"请确保 <span class=\"text-text-accent font-bold\">ETS2 和 ATS 均已关闭</"
+"span>。完成引导流程后，您即可启动游戏。"
+
+#, csharp-format
+msgid "Error rendering window {0}: {1}"
+msgstr "渲染窗口 {0} 时发生错误：{1}"
+
+#, csharp-format
+msgid "Failed to refresh joysticks: {0}"
+msgstr "刷新摇杆时出错：{0}"
+
+#, csharp-format
+msgid "Error loading '{0}': {1}"
+msgstr "加载“{0}”时出错：{1}"
 
 msgid ""
 "ETS2LA requires you to install our <span class=\"text-text-accent font-"
@@ -104,737 +294,102 @@ msgstr ""
 "span> 才能开始使用。请至少为 <span class=\"text-text-accent font-bold\">一款"
 "游戏</span> 安装 SDK 以继续。"
 
-msgid ""
-"Warning: Your system has less than 16GB of RAM. You can only select up to "
-"Medium."
-msgstr "警告：你的系统内存少于 16GB。你最多只能选择“中等”。"
-
-msgid ""
-"Allows ETS2LA to control throttle and brake using direct memory editing. "
-"This might not work on some systems, but allows for control even while "
-"tabbed out of the game. If you enable this and it doesn't work, please "
-"report the issue on our Discord server."
-msgstr ""
-"允许 ETS2LA 通过直接修改内存来控制油门和刹车。此功能可能无法在某些系统上正常"
-"工作，但即使切换到游戏外，也仍可进行控制。如果启用此功能后无法正常工作，请在"
-"我们的 Discord 服务器上报告问题。"
-
-msgid "Key"
-msgstr "按键"
-
-msgid "Logout"
-msgstr "退出登录"
-
-msgid ""
-"When the game reports itself being paused, ETS2LA won't render AR elements."
-msgstr "当游戏处于暂停状态时，ETS2LA 将不会显示 AR 元素。"
+msgid "Enable Memory Output for Pedals"
+msgstr "启用踏板的内存输出"
 
 #, csharp-format
-msgid "Download progress: {0}%"
-msgstr "下载进度：{0}%"
+msgid "Successfully updated plugin with ID {0}."
+msgstr "成功更新了 ID 为 {0} 的插件。"
 
-msgid "I understand"
-msgstr "我明白"
+msgid "Look in the top left corner."
+msgstr "看看左上角。"
 
-msgid "Login Failed"
-msgstr "登录失败"
+msgid "Failed to log out. Please try again."
+msgstr "退出登录失败。请重试。"
 
-msgid "Keyboard"
-msgstr "键盘"
-
-msgid "The selected directory does not exist."
-msgstr "所选目录不存在。"
-
-msgid "Networking"
-msgstr "网络"
-
-msgid "liters"
-msgstr "升"
-
-#, csharp-format
-msgid "found {0} node"
-msgid_plural "found {0} nodes"
-msgstr[0] "找到 {0} 个节点"
-
-msgid "Update check skipped, using already cached result."
-msgstr "已略过更新检查，使用现有的缓存结果。"
-
-msgid "Press anywhere outside the dialog to close it."
-msgstr "点击对话框外的任意位置即可关闭。"
-
-msgid "hide"
-msgstr "隐藏"
-
-msgid "Username"
-msgstr "用户名"
-
-msgid "Map Data Parsed"
-msgstr "地图数据解析完成"
-
-msgid "Binding Timed Out"
-msgstr "绑定超时"
-
-msgid "Invalid file"
-msgstr "文件无效"
-
-msgid "Enable"
-msgstr "启用"
-
-msgid "Max Overlay Framerate"
-msgstr "叠加层最高帧率"
-
-#, csharp-format
-msgid "Failed to acquire joystick [gray italic]({0})[/]: {1}"
-msgstr "无法获取摇杆 [gray italic]({0})[/]：{1}"
-
-msgid ""
-"An error occurred while trying to register. Please try again later. Error: "
-msgstr "注册时发生错误。请稍后再试。错误： "
-
-#, csharp-format
-msgid "Failed to uninstall SDK from '{0}' to '{1}': {2}"
-msgstr "卸载 SDK（从“{0}”至“{1}”）失败：{2}"
-
-msgid ""
-"This will disconnect ETS2LA from the game and close the window. You can "
-"minimize the window to keep ETS2LA running."
-msgstr ""
-"这会断开 ETS2LA 与游戏的连接并关闭窗口。你可以将窗口最小化，让 ETS2LA 继续运"
-"行。"
-
-msgid "Restart and Continue"
-msgstr "重启并继续"
-
-msgid "Demo Window"
-msgstr "演示窗口"
-
-msgid "Installing..."
-msgstr "安装中..."
-
-#, csharp-format
-msgid "Legacy audio path detected: {0}"
-msgstr "检测到旧版音频路径：{0}"
-
-msgid ""
-"Adjust the distance ETS2LA will try to maintain from the vehicle in front of "
-"you when using Adaptive Cruise Control."
-msgstr "调整使用自适应巡航控制时，ETS2LA 与前车保持的距离。"
-
-msgid "Enter the OTP generated by your authenticator app."
-msgstr "请输入身份验证应用生成的一次性密码（OTP）。"
-
-#, csharp-format
-msgid "No map data found for installation at '{0}'. Is the installation valid?"
-msgstr "游戏安装位置“{0}”中找不到地图数据。此安装位置是否有效？"
-
-msgid "Recommended Plugins"
-msgstr "推荐插件"
-
-msgid "Successfully opened memory for output."
-msgstr "已成功打开共享内存。"
-
-msgid "Logout Error"
-msgstr "退出登录错误"
-
-msgid "Use this button to extend the sidebar."
-msgstr "点击此按钮展开侧边栏。"
-
-#, csharp-format
-msgid "Cannot enable plugin {0} because dependency {1} was not found."
-msgstr "无法启用插件 {0}，因为找不到依赖项 {1}。"
-
-msgid "Clear Console"
-msgstr "清空控制台"
-
-msgid "Account Removed"
-msgstr "账户已删除"
-
-msgid "Thinking..."
-msgstr "思考中…"
-
-#, csharp-format
-msgid "Found {0} (version: {1}) at '{2}'"
-msgstr "在“{2}”找到 {0}（版本：{1}）"
-
-#, csharp-format
-msgid "Failed to shutdown plugin {0}: {1}"
-msgstr "关闭插件 {0} 失败：{1}"
-
-msgid "Display Units"
-msgstr "显示单位"
-
-msgid "psi"
-msgstr "psi"
-
-msgid "SDKs need to be installed."
-msgstr "需要安装 SDK。"
-
-#, csharp-format
-msgid "Detected a switch to {0}, waiting for its game data to be parsed."
-msgstr "检测到已切换至 {0}，正在等待游戏数据解析完成。"
-
-msgid "Unable to read the current log."
-msgstr "无法读取当前日志。"
-
-msgid ""
-"Changing the display language requires a restart of ETS2LA to take effect. "
-"Restart now?"
-msgstr "变更显示语言后，需要重新启动 ETS2LA 才会生效。要现在重新启动吗？"
-
-msgid "Units and Language"
-msgstr "单位与语言"
-
-msgid "Only Show Official News"
-msgstr "仅显示官方新闻"
-
-msgid "Share log"
-msgstr "分享日志"
-
-msgid ""
-"The zoom level of the ETS2LA window. This can be used to scale the window to "
-"your monitor's DPI settings."
-msgstr "ETS2LA 窗口的缩放级别。可用来将窗口调整至与你显示器的 DPI 设置相匹配。"
-
-msgid "Welcome to ETS2LA!"
-msgstr "欢迎使用ETS2LA！"
-
-msgid "Max Render Distance"
-msgstr "最大渲染距离"
-
-#, csharp-format
-msgid "Parsing sector {0} of {1}..."
-msgstr "正在解析区块 {0}/{1}..."
-
-msgid "Initializing GLFW..."
-msgstr "正在初始化 GLFW..."
-
-msgid "Audio Settings"
-msgstr "音频设置"
-
-msgid "Anonymous Telemetry"
-msgstr "匿名遥测"
-
-msgid "Please log in before using the chatbot."
-msgstr "使用聊天机器人前请先登录。"
-
-msgid "Go to Account Settings"
-msgstr "前往账户设置"
-
-msgid "Failed to initialize overlay, ImGui initialization failed."
-msgstr "叠加层初始化失败，ImGui 初始化失败。"
-
-msgid "Performance Overlay"
-msgstr "性能叠加层"
-
-msgid ""
-"Gateway timeout. The server was acting as a gateway or proxy and did not "
-"receive a timely response from the upstream server."
-msgstr ""
-"网关超时。服务器作为网关或代理服务器时，未能在时间内收到上游服务器的响应。"
-
-msgid "Display"
-msgstr "显示"
-
-msgid "Open Externally"
-msgstr "外部打开"
-
-#, csharp-format
-msgid "Cannot enable plugin {0} because dependency {1} failed to enable."
-msgstr "无法启用插件 {0}，因为依赖项 {1} 启用失败。"
-
-#, csharp-format
-msgid "{0} not found in supported languages."
-msgstr "在支持的语言中找不到 {0}。"
-
-msgid "Login Error"
-msgstr "登录错误"
-
-msgid "Check For Updates"
-msgstr "检查更新"
-
-msgid "The game has been added successfully."
-msgstr "游戏已成功添加。"
-
-msgid "Error in semaphore update loop."
-msgstr "交通信号灯更新时发生错误。"
-
-msgid ""
-"This might take a while depending on your internet connection and the source."
-msgstr "视你的网络连接和更新源而定，这可能需要一些时间。"
-
-msgid "ETS2LA will offset the speedlimit by this amount."
-msgstr "ETS2LA将根据这个数值来调整限速。"
-
-msgid ""
-"ETS2LA uses a control setup that should be similar to real life systems. You "
-"can rebind the default controls on the right side."
-msgstr ""
-"ETS2LA 使用的控制方式与现实中的系统类似。您可以在右侧重新绑定默认按键。"
-
-msgid ""
-"Force ETS2LA to load the map on game startup. This can resolve issues where "
-"your game.log.txt is not where ETS2LA expects it."
-msgstr ""
-"强制 ETS2LA 在游戏启动时加载地图。若游戏的 game.log.txt 文件不在 ETS2LA 预期"
-"的位置，此选项可以解决由此导致的一些问题。"
-
-msgid "Speed Limit"
-msgstr "限速"
-
-msgid "Error in telemetry update loop."
-msgstr "遥测更新时发生错误。"
-
-#, csharp-format
-msgid "Updated bindings for control: {0} ({1}) to Device: {2}, Control: {3}"
-msgstr "已将 {0}（{1}）的按键绑定到设备 {2}、 {3}"
-
-msgid "One Time Password"
-msgstr "一次性密码"
-
-msgid "Request cancelled."
-msgstr "请求已取消。"
-
-msgid "Extreme"
-msgstr "极高"
-
-msgid "gal"
-msgstr "gal"
-
-#, csharp-format
-msgid "Error rendering context menu for window {0}: {1}"
-msgstr "渲染窗口 {0} 的上下文菜单时发生错误：{1}"
-
-#, csharp-format
-msgid "Missing dependency: {0}"
-msgstr "缺少依赖项：{0}"
-
-msgid "Game Telemetry"
-msgstr "游戏遥测"
-
-msgid "Early"
-msgstr "早"
-
-#, csharp-format
-msgid ""
-"Installation at '{0}' is not currently running, waiting for load of profile."
-msgstr "位于“{0}”的游戏目前未运行，正在等待玩家资料加载。"
-
-msgid "Error Loading File"
-msgstr "加载文件时发生错误"
-
-msgid "Pause When Unstable"
-msgstr "不稳定时暂停"
-
-#, csharp-format
-msgid "{0}"
-msgstr "{0}"
-
-msgid "Keybind Behaviour"
-msgstr "按键行为"
-
-msgid "Your login token is invalid or expired."
-msgstr "登录令牌无效或已过期。"
-
-msgid "Enable All"
-msgstr "全部启用"
-
-msgid "Curve Quality"
-msgstr "曲线质量"
-
-#, csharp-format
-msgid "You have successfully logged in as {0}."
-msgstr "您已成功以 {0} 身份登录。"
-
-msgid "m"
-msgstr "m"
-
-msgid "Overlay free CPU time percentage"
-msgstr "叠加层 CPU 空闲时间百分比"
-
-msgid "You have successfully logged out."
-msgstr "您已成功退出登录。"
-
-msgid "Display Units: "
-msgstr "显示单位： "
-
-#, csharp-format
-msgid ""
-"How did you get here? What were you even thinking?{0}Do tell us in the {1}"
-"Discord Server{2} or on {3}GitHub{4}."
-msgstr ""
-"你是怎么跑到这里来的？你到底在想什么？{0}请到 {1}Discord 服务器{2} 或 {3}"
-"GitHub{4} 告诉我们。"
-
-#, csharp-format
-msgid "Starting binding for control {0} ({1})"
-msgstr "正在绑定控制 {0} （{1}）"
-
-msgid ""
-"Anonymous telemetry helps us improve ETS2LA by giving us insights into "
-"users' system specs, crashes, and other usage data. Your data cannot be "
-"identified with any personal information."
-msgstr ""
-"匿名遥测会提供用户的系统规格、程序崩溃及其他使用数据，协助我们改进 ETS2LA。收"
-"集到的数据无法与任何个人信息建立关联。"
-
-msgid "Visualization"
-msgstr "可视化"
-
-#, csharp-format
-msgid "Loaded plugin: [gray]{0}[/] from [gray]{1}[/]."
-msgstr "已加载插件：[gray]{0}[/] 从 [gray]{1}[/]。"
-
-msgid "Enabled Traffic Rules"
-msgstr "已启用交通规则"
-
-msgid "Install Plugins"
-msgstr "安装插件"
-
-msgid "Data Parsing"
-msgstr "数据解析"
-
-msgid "No updates available."
-msgstr "没有可用的更新。"
-
-#, csharp-format
-msgid "Found {0} prefab"
-msgid_plural "Found {0} prefabs"
-msgstr[0] "找到 {0} 个预制件"
-
-#, csharp-format
-msgid "You are permanently banned.<br/>Reason: {0}"
-msgstr "您已被永久封禁。<br/>原因：{0}"
-
-msgid "Start Game"
-msgstr "启动游戏"
-
-msgid ""
-"The maximum distance at which 3D elements will be rendered. Lowering this "
-"can be used to improve performance on lower-end hardware."
-msgstr "3D 元素的最大渲染距离。降低此设置可提升较低端硬件的性能。"
-
-msgid "Did you remember to restart after installing them?"
-msgstr "您是否在安装后重启程序？"
-
-msgid ""
-"Changing this option requires a restart of ETS2LA to take effect. Restart "
-"now?"
-msgstr "变更此选项后需要重新启动 ETS2LA 才能生效。要立即重新启动吗？"
-
-msgid "Logout Failed"
-msgstr "退出登录失败"
-
-msgid "kilograms"
-msgstr "千克"
-
-#, csharp-format
-msgid "Error rendering overlay: {0}"
-msgstr "渲染叠加层时发生错误：{0}"
-
-msgid "Warnings"
-msgstr "警告"
-
-msgid "Add Game Manually"
-msgstr "手动添加游戏"
-
-msgid "Imperial"
-msgstr "英制"
-
-msgid "feet"
-msgstr "英尺"
-
-msgid "Collision Avoidance"
-msgstr "防碰撞"
-
-msgid "Force Base Map Name"
-msgstr "强制使用游戏默认地图名称"
-
-msgid ""
-"• If you create an account, we transfer your account information to an "
-"international recipient."
-msgstr "• 如果您创建账户，我们会将您的账户信息传输给国际接收方。"
-
-#, csharp-format
-msgid "Update to {0} from {1}"
-msgstr "从 {1} 更新至 {0}"
-
-#, csharp-format
-msgid "Unregistered control: {0} ({1})"
-msgstr "已取消注册控件：{0}（{1}）"
-
-msgid ""
-"The server could not understand the request due to invalid syntax or "
-"corrupted request data."
-msgstr "服务器无法理解此请求，原因是语法无效或请求数据已损坏。"
-
-msgid ""
-"Your system has less than 20GB of RAM. Extreme data fidelity uses "
-"significant amounts of RAM, and may cause your system to become unstable. "
-"Please select a lower fidelity."
-msgstr ""
-"你的系统内存少于 20GB。数据精细度设为“极高”时会使用大量内存，可能导致系统不稳"
-"定。请选择较低的数据精细度。"
-
-msgid "No audio output device available"
-msgstr "没有可用的音频输出设备"
-
-msgid "This game was found at"
-msgstr "此游戏位于"
-
-msgid "Search for plugins..."
-msgstr "搜索插件…"
-
-msgid "And to those who've decided to remain anonymous!"
-msgstr "以及那些选择保持匿名的朋友们！"
-
-msgid "Failed to initialize overlay, OpenGL initialization failed."
-msgstr "叠加层初始化失败，OpenGL 初始化失败。"
-
-msgid "Next/OK"
-msgstr "下一个/OK - 确定"
-
-msgid ""
-"To get started fast, you can install our <span class=\"text-text-accent font-"
-"bold\">recommended</span> plugins. These contain everything you need to get "
-"driving."
-msgstr ""
-"为了快速开始，您可以安装我们<span class=\"text-text-accent font-bold\">推荐的"
-"</span>插件。这些插件包含开始驾驶所需的一切。"
-
-msgid "Don't have an account?<br/>Register a new one now, no emails required!"
-msgstr "没有账户？<br/>现在就注册一个新账户，无需邮箱！"
-
-msgid "Failed to initialize SDL3 input backend."
-msgstr "SDL3 输入后端初始化失败。"
-
-#, csharp-format
-msgid "Invalid audio job: {0}, does the file exist?"
-msgstr "无效的音频任务：{0}，文件是否存在？"
-
-msgid "No release notes available."
-msgstr "暂无更新日志。"
-
-msgid "Enabled"
-msgstr "启用"
-
-msgid "Audio"
-msgstr "音频"
-
-msgid "General"
-msgstr "通用"
-
-msgid "Unbound"
-msgstr "未绑定"
-
-msgid "Speed Limit Warning"
-msgstr "限速警告"
-
-#, csharp-format
-msgid "Plugin with ID {0} not found."
-msgstr "找不到 ID 为 {0} 的插件。"
-
-msgid "Overlay"
-msgstr "叠加层"
+msgid "Visual"
+msgstr "视觉提示"
 
 msgid "Additional"
 msgstr "其他"
 
-msgid "Dashboard"
-msgstr "仪表盘"
+msgid "Install Plugins"
+msgstr "安装插件"
+
+msgid "Show Fewer Logs"
+msgstr "显示更少日志"
+
+msgid "Your login token is invalid or expired."
+msgstr "登录令牌无效或已过期。"
 
 #, csharp-format
-msgid "Tried to enable {0}, but it was not found among loaded plugins."
-msgstr "尝试启用 {0}，但在已加载的插件中找不到该插件。"
+msgid "Error while downloading update: {0}"
+msgstr "下载更新时发生错误：{0}"
+
+msgid "I won't leave ETS2LA unattended"
+msgstr "我不会在无人看管的情况下运行 ETS2LA"
+
+msgid "Keyboard"
+msgstr "键盘"
+
+#, csharp-format
+msgid "No game executable found in '{0}', not adding it as an installation."
+msgstr "无法在路径“{0}”里找到游戏可执行文件，将不会把它添加为游戏安装位置。"
+
+msgid "Chime"
+msgstr "提示音"
+
+msgid "Failed to create GLFW window"
+msgstr "无法创建 GLFW 窗口"
+
+msgid "Fast"
+msgstr "快"
+
+msgid "Install Update and Restart"
+msgstr "安装更新并重启"
+
+msgid "Curve Quality"
+msgstr "曲线质量"
 
 msgid ""
-"This is a highly experimental program. ETS2LA is not perfect, and you will "
-"find issues with it's driving and safety. <span class=\"text-text-accent "
-"font-bold\">Do not leave ETS2LA unattended, especially in multiplayer.</span>"
+"Adjust how ETS2LA will respond to necessary steering changes. This for "
+"example controls how quickly ETS2LA will lane-change."
 msgstr ""
-"这是一个高度实验性的程序。ETS2LA 并不完美，您可能会遇到驾驶和安全方面的问题。"
-"<span class=\"text-text-accent font-bold\">请勿在无人看管的情况下运行 "
-"ETS2LA，尤其是在多人游戏中。</span>"
+"调整 ETS2LA 应对必要转向调整的方式。例如，这项设置可以控制 ETS2LA 变道的速"
+"度。"
 
-msgid "Error in traffic update loop."
-msgstr "交通更新时发生错误。"
+msgid "Logout Successful"
+msgstr "退出登录成功"
 
+#, csharp-format
+msgid "Successfully uninstalled plugin with ID {0}."
+msgstr "成功卸载 ID 为 {0} 的插件。"
+
+msgid "No Update Available"
+msgstr "没有可用更新"
+
+msgid "Performance Overlay"
+msgstr "性能叠加层"
+
+#, csharp-format
+msgid "Disconnected joystick: [gray italic]({0})[/]"
+msgstr "摇杆断开连接：[gray italic]({0})[/]"
+
+#, csharp-format
+msgid "Update to {0}"
+msgstr "更新到 {0}"
+
+#, csharp-format
 msgid ""
-"Translate news articles to your selected display language. This may take a "
-"while depending on the number of articles and your internet connection."
-msgstr ""
-"将新闻文章翻译为您选择的显示语言。根据文章数量和您的网络连接情况，此过程可能"
-"需要一些时间。"
-
-msgid "Slow"
-msgstr "慢"
-
-msgid ""
-"When enabled, the overlay will toggle between interaction and non-"
-"interaction mode when you press it's keybind. When disabled, the overlay "
-"will only be interactive while you hold down the keybind."
-msgstr ""
-"启用后，按下对应按键时，叠加层将在交互和非交互模式之间切换。禁用后，只有在按"
-"住对应按键时，叠加层才会处于交互状态。"
-
-msgid ""
-"Decreases the current target speed by one step. If speed control and lane "
-"assist are off, this key acts like SET. Meaning it will set the current "
-"speed to speedlimit."
-msgstr ""
-"将当前目标速度降低一个档位。如果速度控制和车道辅助均已关闭，此按键的作用类似"
-"于“SET”，即将当前速度设为限速值。"
-
-msgid "°F"
-msgstr "°F"
-
-msgid "Telemetry"
-msgstr "遥测"
-
-msgid "Speed Control Step Size"
-msgstr "巡航速度调整级距"
-
-msgid ""
-"Adjust the quality of the curves used for path planning and visualization. "
-"By default this matches the game."
-msgstr "调整用于路径规划与可视化的曲线质量。默认会与游戏保持一致。"
-
-msgid ""
-"I'm sorry, but I cannot answer that question. Please ask something else "
-"ETS2LA related."
-msgstr "抱歉，我无法回答这个问题。请提出其他与 ETS2LA 相关的问题。"
-
-msgid "mph"
-msgstr "mph"
-
-msgid "Changelog"
-msgstr "更新日志"
-
-msgid "SDK Installed"
-msgstr "已安装SDK"
-
-msgid "meters"
-msgstr "米"
+"When receiving a speedlimit of {0} {1}, we will set the speed to {2} {3}."
+msgstr "当获取限速为 {0} {1} 时，我们会将速度设置为 {2} {3}。"
 
 #, csharp-format
-msgid "No valid versions found for plugin with ID {0}."
-msgstr "找不到 ID 为 {0} 的有效插件版本。"
+msgid "Control with ID '{0}' not found for updating axis behavior."
+msgstr "未找到 ID 为“{0}”的控制项，无法更新输入轴行为。"
 
-msgid "GitHub Sponsorship"
-msgstr "GitHub 赞助"
-
-#, csharp-format
-msgid "Successfully installed plugin {0} ({1}, {2})"
-msgstr "已成功安装插件 {0}（{1}，{2}）"
-
-msgid "°C"
-msgstr "°C"
-
-msgid "Not Connected"
-msgstr "未连接"
-
-msgid "3D Renderer"
-msgstr "3D 渲染器"
-
-msgid ""
-"This key is used to select in UI menus. It also acts as the approval key for "
-"any notifications."
-msgstr "此按键用于在 UI 菜单中进行选择，同时也可作为各类通知的确认按键。"
-
-msgid "No plugins found."
-msgstr "找不到任何插件。"
-
-#, csharp-format
-msgid "An error occurred while loading map data: {0}"
-msgstr "加载地图数据时发生错误：{0}"
-
-msgid "Error Loading Map Data"
-msgstr "加载地图数据时发生错误"
-
-#, csharp-format
-msgid "Camera {0} ({1}x{2})"
-msgstr "摄像头 {0}（{1}x{2}）"
-
-msgid "Game not found"
-msgstr "未找到游戏"
-
-#, csharp-format
-msgid "New limit {0} {1}"
-msgstr "新限速：{0} {1}"
-
-#, csharp-format
-msgid "Loading map data from '{0}'"
-msgstr "正在从“{0}”加载地图数据"
-
-#, csharp-format
-msgid "Control with ID '{0}' not found for event unsubscription."
-msgstr "取消订阅事件时找不到 ID 为“{0}”的控件。"
-
-msgid "Medium"
-msgstr "中等"
-
-msgid ""
-"ETS2LA will display information on top of the game. You can interact with "
-"these overlay elements using <span class=\"text-text-accent font-"
-"bold\">Overlay Interaction</span>. Try it!"
-msgstr ""
-"ETS2LA 会在游戏画面上方显示信息。您可以使用 <span class=\"text-text-accent "
-"font-bold\">叠加层交互</span> 与这些叠加层元素进行交互。试试看吧！"
-
-#, csharp-format
-msgid "Plugin with ID [gray]{0}[/] is already loaded, skipping duplicate."
-msgstr "ID 为 [gray]{0}[/] 的插件已加载，跳过重复加载。"
-
-#, csharp-format
-msgid "Failed to install SDK from '{0}' to '{1}': {2}"
-msgstr "将 SDK 从“{0}”安装至“{1}”失败：{2}"
-
-#, csharp-format
-msgid "Failed to read bundled update source marker: {0}"
-msgstr "读取内置更新源标记失败：{0}"
-
-msgid "Assists Enabled: "
-msgstr "辅助功能启用状态： "
-
-msgid "Adjust the volume of the audio output."
-msgstr "调整音频输出的音量。"
-
-#, csharp-format
-msgid "Connected joystick: [bold]{0}[/] [gray italic]({1})[/]"
-msgstr "已连接摇杆：[bold]{0}[/] [gray italic]({1})[/]"
-
-msgid "Login Successful"
-msgstr "登录成功"
-
-msgid "Open SDK Settings"
-msgstr "打开 SDK 设置"
-
-msgid "Controls"
-msgstr "控制"
-
-msgid "The selected file does not exist."
-msgstr "选中的文件不存在。"
-
-#, csharp-format
-msgid "Adding mod: {0}"
-msgstr "正在添加模组：{0}"
-
-msgid "Adjustments"
-msgstr "插件设置"
-
-msgid "Failed to remove account. Please try again."
-msgstr "删除账户失败。请重试。"
-
-msgid ""
-"This setting only loads roads and intersections visible on the in game map. "
-"It discards all other information."
-msgstr "此设置只会加载游戏地图上可见的道路与路口，并丢弃其他所有信息。"
-
-msgid ""
-"Will disable ETS2LA's assists when pressed. If assists are already disabled, "
-"this key will switch between driving modes."
-msgstr ""
-"按下此按键将禁用 ETS2LA 的辅助功能。如果辅助功能已被禁用，此按键将用于切换驾"
-"驶模式。"
+msgid "Networking"
+msgstr "网络"
 
 msgid ""
 "By clicking <span class=\"font-bold\">Continue</span>, you agree to the "
@@ -843,33 +398,26 @@ msgstr ""
 "点击<span class=\"font-bold\">继续</span>，即表示您同意将您可能存在的账户信息"
 "传输给国际接收方。"
 
-msgid ""
-"By clicking <span class=\"font-bold\">Continue</span>, you agree to our "
-"Privacy Policy."
-msgstr ""
-"点击<span class=\"font-bold\">继续</span>，即表示您同意我们的隐私政策。"
-
-msgid "Simplified Graphics"
-msgstr "简化图形"
-
-msgid ""
-"Send using <span class=\"text-text-l\">Enter</span>, new line with <span "
-"class=\"text-text-l\">Shift+Enter</span>. Some basic information is sent "
-"along with each message, <span class=\"text-text-l\">click to display</span>."
-msgstr ""
-"使用 <span class=\"text-text-l\">Enter</span>发送，使用<span class=\"text-"
-"text-l\">Shift+Enter</span>换行。每条消息会附带一些基本信息，<span "
-"class=\"text-text-l\">点击查看</span>。"
-
 #, csharp-format
-msgid "No game executable found in '{0}', not adding it as an installation."
-msgstr "无法在路径“{0}”里找到游戏可执行文件，将不会把它添加为游戏安装位置。"
+msgid ""
+"Press a button or move an axis on your input device to bind it to this "
+"control. This will time out in {0} seconds."
+msgstr ""
+"按下设备上的按键或移动输入轴，以将其绑定到此按键设置。请在 {0} 秒内完成操作。"
 
-msgid "kg"
-msgstr "kg"
+msgid "Enable All"
+msgstr "全部启用"
 
-msgid "Parsing Map Data"
-msgstr "地图数据解析中"
+msgid "Data Parsing"
+msgstr "数据解析"
+
+msgid ""
+"Service unavailable. The server is currently unable to handle the request "
+"due to temporary overloading or maintenance."
+msgstr "服务不可用。由于暂时过载或者维护目的，服务器目前无法处理请求。"
+
+msgid "Enabled"
+msgstr "启用"
 
 msgid ""
 "How early ETS2LA will attempt to respond to possible collisions. Turning "
@@ -879,558 +427,197 @@ msgstr ""
 "调整 ETS2LA 对潜在碰撞的反应提前程度。关闭时，无论启用了什么插件，防碰撞功能"
 "都会停用。"
 
-msgid ""
-"Some mods implement additional maps like japan.mbd or russia.mbd. If you "
-"find your mods are not loading properly, try enabling this option. This is "
-"known to be required for RusMap."
+msgid "The selected file does not exist."
+msgstr "选中的文件不存在。"
+
+#, csharp-format
+msgid "Assists Enabled: <span class=\"text-text-accent font-bold\">{0}</span>"
 msgstr ""
-"部分模组会加入额外的地图，例如 japan.mbd 或 russia.mbd。若发现模组无法正常加"
-"载，请尝试启用此选项。已知 RusMap 需要启用此选项才能正常运行。"
-
-#, csharp-format
-msgid "Apparent plugin directory {0} does not exist."
-msgstr "找不到插件目录 {0}。"
-
-msgid "Please see the logs for more information."
-msgstr "请查看日志文件以获取更多信息。"
-
-msgid "An error occurred while checking for updates."
-msgstr "检查更新时发生错误。"
-
-msgid "I understand, now let me in!"
-msgstr "我明白了，现在让我进入！"
-
-#, csharp-format
-msgid ""
-"You are currently logged in as <span class=\"text-text-l\">{0}</span>. [{1}]"
-msgstr "您当前以 <span class=\"text-text-l\">{0}</span>的身份登录。[{1}]"
-
-msgid "Disable Overlay"
-msgstr "禁用叠加层"
-
-msgid "show"
-msgstr "显示"
-
-msgid "Data Quality"
-msgstr "数据质量"
-
-msgid "Unpacking Mods"
-msgstr "解包模组中"
-
-#, csharp-format
-msgid "<span class=\"font-semibold\">{0}</span> at {1}"
-msgstr "<span class=\"font-semibold\">{0}</span> 于 {1}"
-
-msgid "Console"
-msgstr "控制台"
-
-#, csharp-format
-msgid "Disabled plugin: [bold]{0}[/]"
-msgstr "已停用插件：[bold]{0}[/]"
-
-#, csharp-format
-msgid "Installation at '{0}' has already been parsed."
-msgstr "游戏安装位置“{0}”已完成解析。"
-
-msgid "Please enable the Visualization Sockets plugin."
-msgstr "请启用Visualization Sockets插件。"
-
-msgid "Pa"
-msgstr "Pa"
-
-msgid ""
-"Removing your account will delete all your data from our servers. This "
-"action cannot be undone."
-msgstr "移除账户将删除您在我们服务器上的所有数据。此操作无法撤销。"
-
-msgid "Unknown Version"
-msgstr "未知版本"
-
-#, csharp-format
-msgid "Your username must be at least {0} characters long."
-msgstr "您的用户名至少需要包含{0}个字符。"
-
-msgid ""
-"Too many requests. You have sent too many requests in a given amount of time."
-msgstr "请求过多。您在一段时间内发送了太多请求。"
-
-#, csharp-format
-msgid "An error occurred while loading file '{0}': {1}"
-msgstr "加载文件“{0}”时发生错误：{1}"
-
-msgid "Hide Installed"
-msgstr "隐藏已安装"
-
-msgid "Game is still running"
-msgstr "游戏仍在运行"
-
-#, csharp-format
-msgid "Failed to disable {0}: {1}"
-msgstr "停用 {0} 失败:{1}"
-
-msgid ""
-"The language ETS2LA will be displayed at. Translations are provided by the "
-"community, we cannot guarantee their accuracy."
-msgstr "ETS2LA 的显示语言。翻译由社区提供，我们无法保证其准确性。"
-
-#, csharp-format
-msgid ""
-"Cannot uninstall plugin with ID {0} because the following installed plugins "
-"depend on it: {1}"
-msgstr "无法卸载 ID 为 {0} 的插件，因为下列已安装的插件依赖此插件：{1}"
-
-#, csharp-format
-msgid "Error while downloading update: {0}"
-msgstr "下载更新时发生错误：{0}"
-
-msgid "I won't leave ETS2LA unattended"
-msgstr "我不会在无人看管的情况下运行 ETS2LA"
-
-msgid "Unknown Control ID"
-msgstr "未知控制ID"
-
-msgid ""
-"ETS2LA is running as a system administrator. This puts your system at risk "
-"if you use 3rd party plugins. Select Yes to continue anyway and accept the "
-"risk."
-msgstr ""
-"ETS2LA 目前正以系统管理员身份运行。若使用第三方插件，可能会使你的系统面临风"
-"险。若仍要继续并接受此风险，请选择“是”。"
-
-msgid "Traffic Lights"
-msgstr "交通信号灯"
-
-msgid "Finished loading plugins"
-msgstr "插件加载完成"
-
-msgid ""
-"<span class=\"text-text-accent\"))>Success!</span> You can find more plugins "
-"in the catalogue later."
-msgstr ""
-"<span class=\"text-text-accent\"))>成功！</span>稍后您可以在插件目录中找到更"
-"多插件。"
-
-#, csharp-format
-msgid "Parsing installation at '{0}' (version: {1})"
-msgstr "解析位于 '{0}' 的安装实例（版本 {1}）"
-
-msgid "Gates"
-msgstr "闸门"
-
-#, csharp-format
-msgid "Binding {0}"
-msgstr "正在绑定 {0}"
-
-msgid "You are not logged in. Open this page again to login."
-msgstr "您尚未登录。请重新打开此页面进行登录。"
-
-msgid "You may need to restart the game to apply this change."
-msgstr "您可能需要重启游戏才能应用此更改。"
-
-msgid "Look in the top left corner."
-msgstr "看看左上角。"
-
-msgid ""
-"We will pause the game when we detect instability or the steering is "
-"unresponsive / disables itself for other reasons."
-msgstr ""
-"当检测到不稳定状况，或转向功能没有反应 / 因其他原因自行停用时，将暂停游戏。"
-
-#, csharp-format
-msgid "Discovered {0} manually installed plugin."
-msgid_plural "Discovered {0} manually installed plugins."
-msgstr[0] "发现 {0} 个手动安装的插件。"
-
-msgid "Data Fidelity"
-msgstr "数据精细度"
-
-#, csharp-format
-msgid "Failed to discover Dlls: {0}"
-msgstr "DLL 检测失败：{0}"
-
-msgid "Remove Account"
-msgstr "删除账户"
-
-msgid "Binding Successful"
-msgstr "绑定成功"
-
-msgid "Before we begin."
-msgstr "在开始之前。"
-
-msgid "Error Checking for Updates"
-msgstr "检查更新时出错"
-
-msgid "Chime"
-msgstr "提示音"
-
-msgid ""
-"Parsing will continue, however information contained in this file won't be "
-"available to ETS2LA."
-msgstr "解析仍会继续，但此文件中的信息将无法供 ETS2LA 使用。"
-
-msgid "All driving assists have been disabled."
-msgstr "所有驾驶辅助功能均已被禁用。"
-
-#, csharp-format
-msgid "Error playing audio file {0}: {1}"
-msgstr "播放音频文件 {0} 出错：{1}"
-
-msgid "The plugin was enabled successfully."
-msgstr "插件已成功启用。"
-
-#, csharp-format
-msgid ""
-"Failed to clean plugin shadow directory [gray]{0}[/], it will be removed on "
-"the next startup: {1}"
-msgstr "清理插件缓存目录 [gray]{0}[/] 失败，将于下次启动时移除：{1}"
-
-msgid "Settings"
-msgstr "设置"
-
-msgid ""
-"How ETS2LA will warn you about exceeding the speed limit by a major amount."
-msgstr "当你大幅超过限速时，ETS2LA 将如何发出警告。"
-
-#, csharp-format
-msgid "Error loading '{0}': {1}"
-msgstr "加载“{0}”时出错：{1}"
-
-#, csharp-format
-msgid "<span class=\"font-semibold\">{0}</span> until {1}"
-msgstr "<span class=\"font-semibold\">{0}</span> 直到 {1}"
-
-#, csharp-format
-msgid "Discovered {0} plugins in total."
-msgid_plural "Discovered {0} plugins in total."
-msgstr[0] "总共发现 {0} 个插件。"
-
-#, csharp-format
-msgid "Failed to install latest version of plugin with ID {0}."
-msgstr "ID 为 {0} 的插件最新版本安装失败。"
-
-msgid "Initializing..."
-msgstr "正在初始化..."
-
-msgid "Undetermined"
-msgstr "无法判断"
-
-msgid "meters per second"
-msgstr "米每秒"
-
-msgid "Overlay Interaction"
-msgstr "叠加层交互"
-
-#, csharp-format
-msgid "Snap to each 10 {0}"
-msgstr "对齐至 10 {0} 的倍数"
-
-#, csharp-format
-msgid "Failed to uninstall SDK version '{0}' from '{1}': {2}"
-msgstr "从'{1}'卸载 SDK 版本'{0}'失败：{2}"
-
-#, csharp-format
-msgid "No download URL found for plugin with ID {0} in region {1}."
-msgstr "在区域 {1} 中找不到 ID 为 {0} 的插件下载地址。"
-
-msgid "High"
-msgstr "高"
-
-#, csharp-format
-msgid "Installed plugin with ID {0} not found."
-msgstr "找不到 ID 为 {0} 的已安装插件。"
-
-msgid "Failed to log out. Please try again."
-msgstr "退出登录失败。请重试。"
-
-#, csharp-format
-msgid "LoaderException: {0}"
-msgstr "加载器异常：{0}"
-
-msgid "Registration Failed"
-msgstr "注册失败"
-
-msgid ""
-"We don't sell or transfer your personal data to any third parties, in fact, "
-"we don't even collect it. However, we are still obligated to display and "
-"acquire your consent before proceeding."
-msgstr ""
-"我们不会向任何第三方出售或转让您的个人信息；事实上，我们根本不会收集这些数"
-"据。不过，在进行后续操作之前，我们有义务向您展示相关信息并征得您的同意。"
-
-msgid "Disable"
-msgstr "禁用"
-
-#, csharp-format
-msgid "Error while checking for updates: {0}"
-msgstr "检查更新时发生错误：{0}"
-
-#, csharp-format
-msgid ""
-"You have successfully registered as {0}. Please add the OTP code to your "
-"authentication app."
-msgstr "您已成功注册为 {0}。请将一次性密码（OTP）添加到您的身份验证应用中。"
-
-#, csharp-format
-msgid "Overlay is disabled in settings, skipping window registration for {0}."
-msgstr "设置中已禁用叠加层，跳过窗口 {0} 的注册。"
+"辅助功能启用状态：<span class=\"text-text-accent font-bold\">{0}</span>"
 
 msgid ""
 "Only show news articles from official sources, such as the ETS2LA team or "
 "it's developers."
 msgstr "仅显示官方来源的新闻文章，例如 ETS2LA 团队或其开发者。"
 
-msgid "Starting download..."
-msgstr "正在下载..."
+msgid ""
+"Memory not available for output, please ensure the game is running and "
+"reinstall the SDK if necessary."
+msgstr "输出内存不可用，请确保游戏正在运行，如有必要请重新安装 SDK。"
+
+msgid "All driving assists have been disabled."
+msgstr "所有驾驶辅助功能均已被禁用。"
+
+#, csharp-format
+msgid "Latest Version: {0}"
+msgstr "最新版本：{0}"
 
 msgid "Translating release notes..."
 msgstr "正在翻译更新日志…"
 
-#, csharp-format
-msgid "Error in plugin {0} Tick: {1}"
-msgstr "插件 {0} 更新时发生错误：{1}"
-
-msgid "Chatbot"
-msgstr "聊天机器人"
-
-msgid "Normal"
-msgstr "标准"
-
-msgid "Assists Enabled"
-msgstr "辅助功能已启用"
-
-#, csharp-format
-msgid "Removing manually added installation at '{0}'"
-msgstr "正在移除手动添加的游戏安装位置'{0}'"
-
-#, csharp-format
-msgid "Control with ID '{0}' not found for unregistration."
-msgstr "取消注册时找不到 ID 为“{0}”的控件。"
-
-msgid "If you can't interact with the Window, press CTRL+R."
-msgstr "如果您无法与该窗口进行交互，请按 CTRL+R。"
-
-msgid "Only copy this to trusted websites, it can do ANYTHING on your behalf."
-msgstr "请仅将此令牌复制到可信的网站，因为它可以代表您执行任何操作。"
-
-msgid "Desired Speed: "
-msgstr "目标速度： "
-
-msgid "Catalogue"
-msgstr "插件库"
-
-msgid "If you've not yet installed it, you can find it in the catalogue."
-msgstr "如果您还没有安装，可以在插件目录中找到它。"
-
-msgid "Please enter a username."
-msgstr "请输入用户名。"
-
 msgid ""
-"If you see a fully black screen, see the FAQ at <span class=\"description "
-"hover:underline\">ets2la.com</span>."
+"This chatbot is provided for free by <span class=\"text-text-l\">Lun011666</"
+"span>.<br/>For the sake of the community, we ask you not to abuse access."
 msgstr ""
-"如果您看到完全黑屏，请查看 <span class=\"description "
-"hover:underline\">ets2la.com</span> 上的常见问题解答。"
+"此聊天机器人由 <span class=\"text-text-l\">Lun011666</span> 免费提供。<br/>为"
+"了社区的良好环境，请勿滥用此服务。"
 
 #, csharp-format
-msgid "Current Version: {0}"
-msgstr "当前版本：{0}"
+msgid "Failed to read version from '{0}': {1}"
+msgstr "无法从“{0}”读取版本信息：{1}"
 
-msgid "Show Fewer Logs"
-msgstr "显示更少日志"
-
-msgid "Adaptive Cruise Control Only"
-msgstr "仅启用自适应巡航控制"
+msgid "Are you sure?"
+msgstr "你确定吗？"
 
 #, csharp-format
-msgid "Unknown manifest type: {0}"
-msgstr "未知的清单类型：{0}"
+msgid "You have successfully logged in as {0}."
+msgstr "您已成功以 {0} 身份登录。"
 
-msgid "If you're streaming or recording, now's the time to hide this window."
-msgstr "如果您正在直播或录制视频，应该隐藏此窗口。"
+msgid "Render AR Elements"
+msgstr "渲染 AR 元素"
 
-msgid "The server timed out waiting for the request from the client."
-msgstr "服务器在等待客户端发送请求时超时。"
+msgid "Unchanged / Unavailable"
+msgstr "未更改 / 不可用"
 
 msgid ""
-"This setting includes all available data, most of which is redundant. <span "
-"class=\"text-warning\">Warning: Extreme uses significant amounts of RAM, "
-"expect over 10GB of usage.</span>"
-msgstr ""
-"此设置包含所有可用数据，其中大部分是冗余的。<span class=\"text-warning\">警"
-"告：极致模式会占用大量内存，预计内存使用量将超过 10GB。</span>"
-
-msgid ""
-"Your session has expired or you don't have a connection to our servers. "
-"Please log in again if you wish to use server-side features."
-msgstr ""
-"您的会话已过期，或者您无法连接到我们的服务器。如果您希望使用服务端功能，请重"
-"新登录。"
+"This key is used to select in UI menus. It also acts as the approval key for "
+"any notifications."
+msgstr "此按键用于在 UI 菜单中进行选择，同时也可作为各类通知的确认按键。"
 
 #, csharp-format
-msgid "Failed to enable dependency: {0}"
-msgstr "启用依赖项失败：{0}"
+msgid "LoaderException: {0}"
+msgstr "加载器异常：{0}"
 
-msgid "View Public Telemetry"
-msgstr "查看公开遥测数据"
-
-#, csharp-format
-msgid "Version {0} not found for plugin with ID {1}."
-msgstr "找不到 ID 为 {1} 的插件版本 {0}。"
-
-msgid "Force Map Load"
-msgstr "强制加载地图"
-
-msgid "Volume"
-msgstr "音量"
-
-msgid "Manager"
-msgstr "插件管理"
+msgid "Data Fidelity"
+msgstr "数据精细度"
 
 #, csharp-format
-msgid "File not found: {0}"
-msgstr "未找到文件: {0}"
+msgid "Failed to uninstall current version of plugin with ID {0}."
+msgstr "无法卸载 ID 为 {0} 插件的当前版本。"
 
-#, csharp-format
-msgid "A new update is available: {0}"
-msgstr "有新的更新：{0}"
-
-msgid "Account"
-msgstr "账户"
-
-msgid "Disabled"
-msgstr "已停用"
-
-msgid ""
-"You do not have permission to access this resource. The server understood "
-"the request but refuses to authorize it."
-msgstr "你没有访问此资源的权限。服务器已理解此请求，但拒绝授权此次访问。"
-
-msgid "Back to Login"
-msgstr "返回登录页面"
-
-msgid "Steering Sensitivity"
-msgstr "转向灵敏度"
-
-msgid "SDK Uninstallation Failed"
-msgstr "SDK 卸载失败"
-
-msgid "Restart Now"
-msgstr "立即重启"
-
-msgid "Thank you to the following people for their ongoing support:"
-msgstr "感谢以下各位一直以来的支持："
-
-msgid ""
-"Your username may only contain letters, numbers, underscores, hyphens and "
-"periods, and must start and end with a letter or number."
-msgstr ""
-"用户名只能包含字母、数字、下划线、连字符和句点，且必须以字母或数字开头和结"
-"尾。"
-
-#, csharp-format
-msgid "Error in AR rendering: {0}"
-msgstr "AR 渲染时发生错误：{0}"
-
-#, csharp-format
-msgid "Fetched {0} plugin from {1}"
-msgid_plural "Fetched {0} plugins from {1}"
-msgstr[0] "已从 {1} 获取 {0} 个插件"
-
-msgid ""
-"Using simplified graphics can improve performance on lower-end hardware, or "
-"fix situations in which advanced features like shaders are not supported."
-msgstr ""
-"使用简化图形可提升较低端硬件的性能，或解决着色器等高级功能不受支持的情况。"
-
-#, csharp-format
-msgid "Copied '{0}' to '{1}'"
-msgstr "已将“{0}”复制到“{1}”"
-
-msgid "Privacy Policy"
-msgstr "隐私政策"
-
-msgid "Controls Backend shutdown complete, all controls saved."
-msgstr "控制后端已关闭，所有控件已保存。"
-
-msgid "Full Self-Driving"
-msgstr "全自动驾驶"
-
-msgid "SDKs are currently installed."
-msgstr "SDK 目前已安装。"
-
-msgid ""
-"Cracked games or demos will block our SDK from loading. They do not work, "
-"and we don't intend to fix this."
-msgstr ""
-"破解版游戏或试玩版会阻止我们的 SDK 加载，因此无法正常使用。我们也没有计划对此"
-"进行适配。"
-
-msgid "Continue"
-msgstr "继续"
-
-msgid "All driving assists have been enabled."
-msgstr "所有驾驶辅助功能均已启用。"
-
-msgid "Window Zoom"
-msgstr "窗口缩放"
+msgid "Early"
+msgstr "早"
 
 msgid ""
 "Bad gateway. The server, while acting as a gateway or proxy, received an "
 "invalid response from an inbound server."
 msgstr "网关出错。服务器作为网关或代理时，从上游服务器收到了无效响应。"
 
-#, csharp-format
-msgid "Successfully uninstalled SDK version '{0}' from '{1}'"
-msgstr "已从“{1}”成功卸载 SDK 版本“{0}”"
+msgid "Already have an account? Log in here."
+msgstr "已有账户？点击此处登录。"
+
+msgid "The server timed out waiting for the request from the client."
+msgstr "服务器在等待客户端发送请求时超时。"
+
+msgid "Assists Enabled"
+msgstr "辅助功能已启用"
+
+msgid "Backend shutdown complete."
+msgstr "后端已关闭。"
 
 #, csharp-format
-msgid "Error while applying update: {0}"
-msgstr "应用更新时发生错误：{0}"
-
-msgid "Main"
-msgstr "主菜单"
-
-#, csharp-format
-msgid "Deleted '{0}'"
-msgstr "已删除“{0}”"
-
-msgid "You are running the latest version."
-msgstr "你正在使用最新版本。"
-
-#, csharp-format
-msgid "Failed to load plugin from [gray]{0}[/]: {1}"
-msgstr "从 [gray]{0}[/] 加载插件失败：{1}"
-
-#, csharp-format
-msgid "Finished parsing installation at '{0}'"
-msgstr "已完成解析位于“{0}”的游戏安装数据"
+msgid "Control with ID '{0}' not found for event subscription."
+msgstr "订阅事件时找不到 ID 为“{0}”的控件。"
 
 msgid ""
-"Select which traffic rules ETS2LA should obey. More might be added later, "
-"and all plugins won't necessarily support all rules."
+"Please add the OTP code to your authentication app.<br/><span class=\"text-"
+"text-accent\">Do not close the page before you have added the code. We "
+"cannot recover accounts once they are created!</span>"
 msgstr ""
-"选择 ETS2LA 应遵守的交通规则。后续可能会添加更多规则，且并非所有插件都支持全"
-"部规则。"
+"请将一次性密码（OTP）添加到你的身份验证应用中。<br/><span class=\"text-text-"
+"accent\">在添加完成之前，请勿关闭此页面。账户一旦创建，我们就无法再恢复它了！"
+"</span>"
 
 #, csharp-format
-msgid "Error in AR OpenGL pass: {0}"
-msgstr "AR OpenGL 渲染阶段发生错误：{0}"
+msgid "Unregistered control: {0} ({1})"
+msgstr "已取消注册控件：{0}（{1}）"
+
+msgid "Contact Us"
+msgstr "联系我们"
+
+msgid "An error occurred while checking for updates."
+msgstr "检查更新时发生错误。"
+
+#, csharp-format
+msgid "Copied '{0}' to '{1}'"
+msgstr "已将“{0}”复制到“{1}”"
+
+msgid "Clear Console"
+msgstr "清空控制台"
+
+msgid "show"
+msgstr "显示"
+
+msgid "Select core.scs"
+msgstr "选择 core.scs"
+
+msgid "Failed to init ImGui Impl OpenGL3"
+msgstr "ImGui OpenGL3 实现初始化失败"
+
+msgid "Support Multiple Viewports"
+msgstr "支持多屏幕显示"
+
+msgid ""
+"Consider supporting us by becoming a <span class=\"font-bold text-text-"
+"l\">GitHub Sponsor</span> to cover ongoing development and operational costs."
+msgstr ""
+"考虑成为 <span class=\"font-bold text-text-l\">GitHub 赞助者</span>，帮助我们"
+"承担持续开发和运营所需的费用。"
+
+msgid "You took a wrong turn!"
+msgstr "你走错路了！"
 
 #, csharp-format
 msgid ""
-"Library plugin with ID [gray]{0}[/] is already loaded, skipping duplicate."
-msgstr "ID 为 [gray]{0}[/] 的库插件已加载，跳过重复加载。"
+"Target speed changed. Current speedlimit: {0} {1}. Offsets are carried over "
+"on speedlimit change."
+msgstr "目标速度已更改。当前限速：{0} {1}。在限速更改时，偏移量将被保留。"
 
-msgid "Changes will take effect after restarting the application."
-msgstr "修改将会在应用重启后生效。"
+msgid "Adaptive Cruise Control Only"
+msgstr "仅启用自适应巡航控制"
 
-msgid "Help"
-msgstr "帮助"
+msgid "Initializing GLFW..."
+msgstr "正在初始化 GLFW..."
+
+msgid "3D Renderer"
+msgstr "3D 渲染器"
+
+msgid "SDK Uninstallation Failed"
+msgstr "SDK 卸载失败"
+
+msgid "Max Overlay Framerate"
+msgstr "叠加层最高帧率"
+
+#, csharp-format
+msgid ""
+"How did you get here? What were you even thinking?{0}Do tell us in the {1}"
+"Discord Server{2} or on {3}GitHub{4}."
+msgstr ""
+"你是怎么跑到这里来的？你到底在想什么？{0}请到 {1}Discord 服务器{2} 或 {3}"
+"GitHub{4} 告诉我们。"
+
+msgid "You must restart ETS2LA for the font size change to take effect."
+msgstr "您必须重启 ETS2LA，字体大小更改才会生效。"
+
+msgid "Uninstall"
+msgstr "卸载"
+
+msgid "Enabled Traffic Rules"
+msgstr "已启用交通规则"
 
 msgid ""
-"The server cannot find the requested resource. The URL may be misspelled, or "
-"the resource has been removed."
-msgstr "服务器找不到请求的资源。网址可能有误，或该资源已被移除。"
+"Anonymous telemetry helps us improve ETS2LA by giving us insights into "
+"users' system specs, crashes, and other usage data. Your data cannot be "
+"identified with any personal information."
+msgstr ""
+"匿名遥测会提供用户的系统规格、程序崩溃及其他使用数据，协助我们改进 ETS2LA。收"
+"集到的数据无法与任何个人信息建立关联。"
+
+msgid "SDK Uninstalled"
+msgstr "已卸载 SDK"
+
+msgid "Low"
+msgstr "低"
 
 msgid ""
 "Additionally, some communities like VTCs, Job Trackers and Leaderboards will "
@@ -1442,287 +629,86 @@ msgstr ""
 "甚至完全禁止使用 ETS2LA。<span class=\"text-text-accent font-bold\">请务必在"
 "使用 ETS2LA <i>之前</i>先向您所在的社区确认。</span>"
 
-msgid ""
-"In most situations, over half of ETS2LA's CPU use is consumed by the "
-"overlay. Limiting the framerate will reduce CPU usage."
-msgstr ""
-"在大多数情况下，ETS2LA 超过一半的 CPU 使用量都来自叠加层。限制帧率可以降低"
-"CPU 使用量。"
+#, csharp-format
+msgid "Apparent plugin directory {0} does not exist."
+msgstr "找不到插件目录 {0}。"
 
-msgid "Cancel/MODE"
-msgstr "取消/MODE - 模式"
+msgid "Visualization"
+msgstr "可视化"
+
+#, csharp-format
+msgid "Loaded {0} plugin from the Plugins folder."
+msgid_plural "Loaded {0} plugins from the Plugins folder."
+msgstr[0] "已从 Plugins 文件夹加载 {0} 个插件。"
+
+msgid "Late"
+msgstr "较晚"
+
+msgid "Please enable the Visualization Sockets plugin."
+msgstr "请启用Visualization Sockets插件。"
+
+msgid "Your account has been successfully removed."
+msgstr "您的账户已成功删除。"
+
+msgid "Force Map Load"
+msgstr "强制加载地图"
+
+#, csharp-format
+msgid "Failed to uninstall SDK version '{0}' from '{1}': {2}"
+msgstr "从'{1}'卸载 SDK 版本'{0}'失败：{2}"
+
+msgid "Failed to initialize overlay, ImGui initialization failed."
+msgstr "叠加层初始化失败，ImGui 初始化失败。"
+
+msgid "Your account is not allowed to use the chatbot."
+msgstr "您的账户无权使用聊天机器人。"
+
+msgid "Speed Limit Warning"
+msgstr "限速警告"
 
 msgid "Speed limit changed"
 msgstr "限速已变更"
 
-#, csharp-format
-msgid "Successfully updated plugin with ID {0}."
-msgstr "成功更新了 ID 为 {0} 的插件。"
-
-msgid "Install"
-msgstr "安装"
-
-msgid "Window"
-msgstr "窗口"
-
-msgid "Select the game you wish to start."
-msgstr "请选择您要启动的游戏。"
-
-msgid ""
-"An error occurred while trying to log out. Please try again later. Error: "
-msgstr "退出登录时发生错误。请稍后重试。错误： "
-
-msgid "Assists"
-msgstr "辅助"
+msgid "Your username may not contain repeated separators."
+msgstr "用户名中不能包含连续的分隔符。"
 
 #, csharp-format
-msgid "Target Speed: <span class=\"text-text-accent font-bold\">{0} {1}</span>"
-msgstr "目标速度：<span class=\"text-text-accent font-bold\">{0} {1}</span>"
-
-msgid "Overlay Font Size"
-msgstr "叠加层字体大小"
-
-msgid "Failed to add game"
-msgstr "游戏添加失败"
-
-msgid "Vision Cameras"
-msgstr "视觉摄像头"
-
-msgid ""
-"When changing the speed, snap to the nearest 10. i.e. 37 -> 39 -> 40 -> 42..."
-msgstr ""
-"当修改速度时，将会尝试对齐到最近的 10 的倍数。比如步长为 2 时，调整顺序为 37 "
-"-> 39 -> 40 -> 42…"
-
-msgid "Contact Us"
-msgstr "联系我们"
-
-msgid "Registration Error"
-msgstr "注册错误"
-
-msgid "Restart"
-msgstr "重新启动"
-
-msgid ""
-"Internal server error. The server encountered an unexpected condition that "
-"prevented it from fulfilling the request."
-msgstr "内部服务器错误。服务器发生未预期的状况，导致无法完成请求。"
-
-msgid "miles per hour"
-msgstr "英里每小时"
-
-msgid ""
-"Service unavailable. The server is currently unable to handle the request "
-"due to temporary overloading or maintenance."
-msgstr "服务不可用。由于暂时过载或者维护目的，服务器目前无法处理请求。"
-
-#, csharp-format
-msgid "Discovered {0} library in total"
-msgid_plural "Discovered {0} libraries in total."
-msgstr[0] "总共发现 {0} 个库。"
-
-msgid "Account Removal Error"
-msgstr "移除账户错误"
-
-#, csharp-format
-msgid "Error rendering window {0}: {1}"
-msgstr "渲染窗口 {0} 时发生错误：{1}"
-
-#, csharp-format
-msgid "Click to {0} this window"
-msgstr "点击即可{0}此窗口"
-
-msgid "Sorry"
-msgstr "抱歉"
-
-#, csharp-format
-msgid "Assists Enabled: <span class=\"text-text-accent font-bold\">{0}</span>"
-msgstr ""
-"辅助功能启用状态：<span class=\"text-text-accent font-bold\">{0}</span>"
-
-msgid "Translated by:"
-msgstr "译者为："
+msgid "Discovered {0} plugins in total."
+msgid_plural "Discovered {0} plugins in total."
+msgstr[0] "总共发现 {0} 个插件。"
 
 msgid "Failed to init ImGui Impl GLFW"
 msgstr "ImGui GLFW 实现初始化失败"
 
 #, csharp-format
-msgid "Control with ID '{0}' not found for event subscription."
-msgstr "订阅事件时找不到 ID 为“{0}”的控件。"
+msgid "Failed to discover Dlls: {0}"
+msgstr "DLL 检测失败：{0}"
 
-msgid "Assists Disabled"
-msgstr "辅助功能已禁用"
+msgid "Not Installed"
+msgstr "未安装"
 
-#, csharp-format
-msgid "Plugin '{0}' is missing its DLL at '{1}' and has been removed."
-msgstr "插件“{0}”在“{1}”找不到 DLL，已将该插件移除。"
+msgid "gal"
+msgstr "gal"
 
-#, csharp-format
-msgid ""
-"Manually added game at '{0}' no longer contains a game executable, skipping."
-msgstr "手动添加的游戏路径“{0}”中找不到游戏可执行文件，将略过。"
+msgid "Error in camera update loop."
+msgstr "相机更新时发生错误。"
 
-#, csharp-format
-msgid "Connected joystick: [bold]{0}[/] [gray italic]({1}, {2})[/]"
-msgstr "已连接摇杆：[bold]{0}[/] [gray italic]({1}, {2})[/]"
-
-msgid ""
-"We can render elements in the game world using the overlay. This will use "
-"additional CPU and GPU resources."
-msgstr "我们可以通过叠加层在游戏世界中渲染元素。这会额外使用 CPU 和 GPU 资源。"
+msgid "Enable"
+msgstr "启用"
 
 #, csharp-format
-msgid "Road template for {0} not found in SII file."
-msgstr "在 SII 文件中找不到 {0} 的道路模板。"
-
-msgid "The selected file is not a core.scs file."
-msgstr "所选的文件不是 core.scs 文件。"
-
-msgid "Disable All"
-msgstr "全部禁用"
-
-msgid "ft"
-msgstr "ft"
-
-msgid "Invalid directory"
-msgstr "目录无效"
-
-#, csharp-format
-msgid "This might take a while... ({0}/{1})"
-msgstr "这可能需要一点时间...（{0}/{1}）"
-
-msgid "Plugins"
-msgstr "插件"
-
-msgid ""
-"Ensure you don't have any mods installed in the root directory. Those have "
-"to be installed in Documents/Euro Truck Simulator 2/mod."
-msgstr ""
-"请确认根目录中没有安装任何模组。模组必须安装至 文档/Euro Truck Simulator 2/"
-"mod。"
-
-#, csharp-format
-msgid "Failed to read version from '{0}': {1}"
-msgstr "无法从“{0}”读取版本信息：{1}"
-
-msgid "Error in parked vehicles update loop."
-msgstr "停放车辆更新时发生错误。"
-
-msgid "Username Taken"
-msgstr "用户名已存在"
-
-msgid "This page hasn't been created yet, but it's coming <i>soon</i>."
-msgstr "此页面尚未创建，不过<i>很快</i>就会推出。"
-
-msgid "Backend shutdown complete."
-msgstr "后端已关闭。"
-
-#, csharp-format
-msgid "Error rendering interaction mode window controls: {0}"
-msgstr "渲染互动模式窗口控件时发生错误：{0}"
-
-#, csharp-format
-msgid "Failed to initialize SDL3 controls backend: {0}"
-msgstr "SDL3 控制后端初始化失败：{0}"
-
-msgid ""
-"Show news articles about plugin updates, be that official or 3rd party "
-"plugins."
-msgstr "显示有关插件更新的新闻文章，包括官方插件和第三方插件。"
-
-#, csharp-format
-msgid "Failed to install dependency {0} for plugin {1}."
-msgstr "插件 {1} 的依赖项 {0} 安装失败。"
-
-msgid ""
-"Couldn't connect to the game. Please open ETS2 or ATS and enable the SDK."
-msgstr "无法连接到游戏。请打开 ETS2 或 ATS，并启用 SDK。"
-
-msgid "Scientific"
-msgstr "科学单位制"
-
-#, csharp-format
-msgid "Changed update source to '{0}'."
-msgstr "已将更新源为“{0}”。"
-
-msgid "K"
-msgstr "K"
-
-msgid ""
-"You'll be asked to save an OTP authentication code after registration. We do "
-"not store or ask for passwords, as those aren't required for authentication."
-msgstr ""
-"注册完成后，系统会要求您保存一次性密码（OTP）验证码。我们不存储也不要求密码，"
-"因为身份验证不需要密码。"
-
-msgid "Next"
-msgstr "下一步"
-
-#, csharp-format
-msgid "No versions available for plugin with ID {0}."
-msgstr "ID 为 {0} 的插件没有可用版本。"
-
-msgid "Driving"
-msgstr "驾驶"
-
-msgid "Acceleration Response"
-msgstr "加速度响应"
-
-#, csharp-format
-msgid "Failed enable {0}: {1}"
-msgstr "启用 {0} 失败：{1}"
-
-msgid "Overlay is disabled in settings, skipping initialization."
-msgstr "已在设置中禁用叠加层，跳过初始化。"
-
-msgid "Plugin Installer"
-msgstr "插件安装器"
-
-msgid "Show More Logs"
-msgstr "显示更多日志信息"
-
-msgid "The selected game executable was not found."
-msgstr "未找到所选游戏的可执行文件。"
-
-#, csharp-format
-msgid ""
-"Version {0} of plugin with ID {1} is not compatible with the current "
-"application version or operating system."
-msgstr "插件（ID：{1}）的 {0} 版本和当前的应用版本或操作系统不兼容。"
-
-msgid "Support Multiple Viewports"
-msgstr "支持多屏幕显示"
-
-msgid "bar"
-msgstr "bar"
-
-msgid "View Privacy Policy"
-msgstr "查看隐私政策"
-
-msgid "Unknown Control"
-msgstr "未知控件"
+msgid "Loading map data from '{0}'"
+msgstr "正在从“{0}”加载地图数据"
 
 msgid "Warning: Insufficient RAM"
 msgstr "警告：内存不足"
 
-msgid "Translate News Articles"
-msgstr "翻译新闻文章"
+msgid "Error Loading Map Data"
+msgstr "加载地图数据时发生错误"
 
-msgid ""
-"Authentication is required. The client must authenticate itself to get the "
-"requested response."
-msgstr "需要身份验证。客户端必须完成验证，才能获取要求的响应。"
-
-msgid "Install Update and Restart"
-msgstr "安装更新并重启"
-
-msgid ""
-"The maximum speed ETS2LA will accelerate to. It might still drift over this "
-"limit due to momentum."
-msgstr "ETS2LA 会加速到的最高速度。由于惯性，速度仍可能略微超过此限制。"
-
-msgid "Final Disclaimer <span class=\"description\">1/2</span>"
-msgstr "最终免责声明 <span class=\"description\">1/2</span>"
+#, csharp-format
+msgid "Current Version: {0}"
+msgstr "当前版本：{0}"
 
 msgid ""
 "The following information is sent along with each message to help the "
@@ -1731,109 +717,91 @@ msgstr ""
 "每条消息都会附带以下信息，以帮助聊天机器人提供更准确的回答。这些信息不包含任"
 "何个人信息。"
 
+#, csharp-format
+msgid "No update available for plugin with ID {0}."
+msgstr "ID 为 {0} 的插件目前没有可用更新。"
+
+msgid "Speed Control Step Size"
+msgstr "巡航速度调整级距"
+
+msgid "Slow"
+msgstr "慢"
+
+msgid "Login Failed"
+msgstr "登录失败"
+
 msgid ""
-"This setting drops redundant information while maintaining most detail "
-"objects (such as signs). Doesn't include any roads / intersections not shown "
-"in the in game map."
-msgstr ""
-"此设置会丢弃冗余信息，同时保留大部分细节对象（例如标志），但不包含游戏地图上"
-"未显示的道路或路口。"
+"Authentication is required. The client must authenticate itself to get the "
+"requested response."
+msgstr "需要身份验证。客户端必须完成验证，才能获取要求的响应。"
 
 #, csharp-format
-msgid "Inner Exception: {0}"
-msgstr "内部异常：{0}"
+msgid "Connected joystick: [bold]{0}[/] [gray italic]({1}, {2})[/]"
+msgstr "已连接摇杆：[bold]{0}[/] [gray italic]({1}, {2})[/]"
 
 #, csharp-format
-msgid "Plugin with ID {0} not found in available plugins."
-msgstr "在可用插件中找不到 ID 为 {0} 的插件。"
+msgid "Error while checking for updates: {0}"
+msgstr "检查更新时发生错误：{0}"
 
-msgid "Restart Required"
-msgstr "需要重新启动"
+msgid "Undetermined"
+msgstr "无法判断"
 
-msgid "Logout Successful"
-msgstr "退出登录成功"
+msgid "meters per second"
+msgstr "米每秒"
 
-msgid "Render AR Elements"
-msgstr "渲染 AR 元素"
+msgid "Traffic Lights"
+msgstr "交通信号灯"
 
-msgid "Not Installed"
-msgstr "未安装"
+msgid "Update check skipped, using already cached result."
+msgstr "已略过更新检查，使用现有的缓存结果。"
 
-#, csharp-format
-msgid ""
-"Press a button or move an axis on your input device to bind it to this "
-"control. This will time out in {0} seconds."
-msgstr ""
-"按下设备上的按键或移动输入轴，以将其绑定到此按键设置。请在 {0} 秒内完成操作。"
+msgid "Unable to read the current log."
+msgstr "无法读取当前日志。"
 
-msgid "Registration Successful"
-msgstr "注册成功"
-
-msgid ""
-"Warning: Your system has less than 20GB of RAM. You can only select up to "
-"High."
-msgstr "警告：你的系统内存少于 20GB。你最多只能选择“高”。"
+msgid "Open Update Page"
+msgstr "打开更新页面"
 
 #, csharp-format
-msgid "Your username must be at most {0} characters long."
-msgstr "用户名长度最多为 {0} 个字符。"
+msgid "Installed plugin with ID {0} not found."
+msgstr "找不到 ID 为 {0} 的已安装插件。"
 
-msgid "Enable Memory Output for Pedals"
-msgstr "启用踏板的内存输出"
+msgid "Audio"
+msgstr "音频"
 
-msgid "kilometers per hour"
-msgstr "公里每小时"
-
-msgid ""
-"User folder paths are hidden automatically. Review the log for other "
-"personal information before sending."
-msgstr "用户文件夹路径会自动隐藏。在发送前，请检查日志中是否包含其他个人信息。"
+msgid "Login Error"
+msgstr "登录错误"
 
 #, csharp-format
-msgid "Enabled plugin: [bold]{0}[/]"
-msgstr "已启用插件：[bold]{0}[/]"
+msgid "{0} m/s ({1} in {2})"
+msgstr "{0} 米/秒（{1}，{2}）"
+
+#, csharp-format
+msgid "Received input from unknown joystick with instance ID {0}."
+msgstr "已收到来自未知操纵杆的输入，其实例 ID 为 {0}。"
 
 msgid ""
-"Render the vision cameras in the game world. This is useful for debugging, "
-"but can cause performance issues."
-msgstr "在游戏世界中渲染视野摄像头。此功能有助于调试，但可能会造成性能问题。"
+"Adjust how quickly ETS2LA will respond to desired changes in acceleration. "
+"Emergency braking is not affected."
+msgstr "调整 ETS2LA 对目标加速度变化的反应速度。紧急制动不受此设置影响。"
 
-msgid "Failed to create GLFW window"
-msgstr "无法创建 GLFW 窗口"
+msgid "Display Units"
+msgstr "显示单位"
 
-msgid "Contact us on Discord"
-msgstr "通过 Discord 联系我们"
+msgid "Adjustments"
+msgstr "插件设置"
 
-msgid "Already have an account? Log in here."
-msgstr "已有账户？点击此处登录。"
+msgid "State Info"
+msgstr "状态信息"
 
-msgid "Binding thread started with no control to bind."
-msgstr "绑定线程已启动，但没有指定要绑定的控件。"
+msgid "Back to Login"
+msgstr "返回登录页面"
 
-msgid ""
-"Failed to fetch available plugins. Please check your internet connection."
-msgstr "可用插件获取失败。请检查网络连接。"
+msgid "Contact us on GitHub"
+msgstr "通过 GitHub 联系我们"
 
-msgid "Game"
-msgstr "游戏"
-
-msgid "Error in navigation update loop."
-msgstr "导航更新时出现错误。"
-
-msgid "Checking for updates..."
-msgstr "正在检查更新..."
-
-msgid "Interaction Mode"
-msgstr "互动模式"
-
-msgid "Speedlimit Offset"
-msgstr "速度限制偏移量"
-
-msgid "Final Disclaimer <span class=\"description\">2/2</span>"
-msgstr "最终免责声明 <span class=\"description\">2/2</span>"
-
-msgid "L"
-msgstr "L"
+#, csharp-format
+msgid "Error in AR rendering: {0}"
+msgstr "AR 渲染时发生错误：{0}"
 
 msgid ""
 "Some 3rd party websites might want access to your account.<br/>You can press "
@@ -1842,267 +810,11 @@ msgstr ""
 "某些第三方网站可能需要访问您的账户。<br/>您可以点击下方按钮以显示您的 JWT 令"
 "牌。"
 
-#, csharp-format
-msgid "Failed to load library plugin from [gray]{0}[/]: {1}"
-msgstr "从 [gray]{0}[/] 加载库插件失败：{1}"
-
-#, csharp-format
-msgid "Binding for control {0} ({1}) timed out."
-msgstr "控制 {0}（{1}）的绑定超时了。"
-
-#, csharp-format
-msgid "Initializing GLFW Version: {0}"
-msgstr "正在初始化 GLFW，版本：{0}"
-
-#, csharp-format
-msgid ""
-"If you think this is a bug, please report it in the {0}Discord Server{1} or "
-"on {2}GitHub{3}."
-msgstr ""
-"如果你认为这是一个错误，请在 {0}Discord 服务器{1} 或 {2}GitHub{3} 报告。"
-
-msgid "Latest News"
-msgstr "最新新闻"
-
-#, csharp-format
-msgid "The username {0} is already taken. Please choose a different username."
-msgstr "用户名 {0} 已被占用。请使用其他用户名。"
-
-#, csharp-format
-msgid "Successfully installed SDK version '{0}' to '{1}'"
-msgstr "已成功将 SDK 版本“{0}”安装至“{1}”"
-
-msgid "Invalid Input"
-msgstr "输入无效"
-
-msgid ""
-"Adjust the level of detail of the game data we use. Higher values use more "
-"RAM, but include more information. All levels drive the same."
-msgstr ""
-"调整我们所使用游戏数据的详细程度。数值越高，占用的内存越多，但包含的信息也越"
-"丰富。所有级别的驾驶效果相同。"
-
-msgid "Account Removal Failed"
-msgstr "移除账户失败"
-
-msgid "Are you sure?"
-msgstr "你确定吗？"
-
-#, csharp-format
-msgid "Update available: {0}"
-msgstr "有可用的更新：{0}"
-
-msgid ""
-"Please add the OTP code to your authentication app.<br/><span class=\"text-"
-"text-accent\">Do not close the page before you have added the code. We "
-"cannot recover accounts once they are created!</span>"
-msgstr ""
-"请将一次性密码（OTP）添加到你的身份验证应用中。<br/><span class=\"text-text-"
-"accent\">在添加完成之前，请勿关闭此页面。账户一旦创建，我们就无法再恢复它了！"
-"</span>"
-
-msgid "Game added"
-msgstr "游戏已添加"
-
-msgid "Confirm Account Removal"
-msgstr "确认移除账户"
-
-msgid "Starting ETS2LA..."
-msgstr "正在启动 ETS2LA..."
-
-#, csharp-format
-msgid "Discovered {0} manually installed library"
-msgid_plural "Discovered {0} manually installed libraries."
-msgstr[0] "发现 {0} 个手动安装的库。"
-
-#, csharp-format
-msgid "Control with ID '{0}' not found for updating bindings."
-msgstr "找不到可以修改绑定的 {0} 号控件。"
-
-msgid "Test Audio"
-msgstr "测试音频"
-
-msgid "Near"
-msgstr "近"
-
-msgid ""
-"Increases the current target speed by one step. If assists are disabled, "
-"this key acts like RES. Meaning it will resume the last set target speed. If "
-"a last target speed was not set, this key acts like SET."
-msgstr ""
-"将当前目标速度提高一个档位。如果辅助功能已禁用，此按键的作用类似于 RES，即恢"
-"复上一次设置的目标速度。如果此前未设置目标速度，则此按键的作用类似于 SET。"
-
-msgid "SET Behaviour"
-msgstr "“设定”按键行为"
-
-msgid "Close"
-msgstr "关闭"
-
-#, csharp-format
-msgid "Assist Mode: <span class=\"text-text-accent font-bold\">{0}</span>"
-msgstr "辅助模式：<span class=\"text-text-accent font-bold\">{0}</span>"
-
-#, csharp-format
-msgid ""
-"When receiving a speedlimit of {0} {1}, we will set the speed to {2} {3}."
-msgstr "当获取限速为 {0} {1} 时，我们会将速度设置为 {2} {3}。"
-
-#, csharp-format
-msgid "Error initializing memory mapped file: {0}"
-msgstr "初始化内存映射文件时发生错误：{0}"
-
-msgid "State Info"
-msgstr "状态信息"
-
-msgid "Metric"
-msgstr "公制"
-
-msgid "Render Vision Cameras"
-msgstr "渲染视野摄像头"
-
-msgid ""
-"Your system has less than 16GB of RAM. High data fidelity uses significant "
-"amounts of RAM, and may cause your system to become unstable. Please select "
-"a lower fidelity."
-msgstr ""
-"你的系统内存少于 16GB。数据精细度设为“高”时会使用大量内存，可能导致系统不稳"
-"定。请选择较低的数据精细度。"
-
-msgid "Send log"
-msgstr "发送日志"
-
-msgid "Show Plugin Updates"
-msgstr "显示插件更新"
-
-#, csharp-format
-msgid "Control with ID '{0}' not found for updating axis behavior."
-msgstr "未找到 ID 为“{0}”的控制项，无法更新输入轴行为。"
-
-msgid ""
-"Please complete this <span class=\"text-text-accent font-bold\">short</span> "
-"onboarding process to get started."
-msgstr ""
-"请完成这个 <span class=\"text-text-accent font-bold\">简短</span> 的引导流程"
-"以开始使用。"
-
-msgid ""
-"When pressing the SET keybind, what should ETS2LA set as the current cruise "
-"control speed?"
-msgstr "按下“设定”按键时，ETS2LA 应将当前巡航速度设定为什么速度？"
-
-msgid ""
-"An error occurred while trying to log in. Please try again later. Error: "
-msgstr "登录时发生错误。请稍后重试。错误： "
-
-#, csharp-format
-msgid "Failed to load map for installation at '{0}'"
-msgstr "加载游戏安装位置“{0}”的地图失败"
-
-#, csharp-format
-msgid "Received input from unknown joystick with instance ID {0}."
-msgstr "已收到来自未知操纵杆的输入，其实例 ID 为 {0}。"
-
-msgid "Stay on Top"
-msgstr "窗口置顶"
-
-msgid ""
-"An error occurred while trying to remove your account. Please try again "
-"later. Error: "
-msgstr "删除账户时发生错误。请稍后重试。错误： "
-
-#, csharp-format
-msgid ""
-"Target speed changed. Current speedlimit: {0} {1}. Offsets are carried over "
-"on speedlimit change."
-msgstr "目标速度已更改。当前限速：{0} {1}。在限速更改时，偏移量将被保留。"
-
-msgid "Like ETS2LA?"
-msgstr "喜欢 ETS2LA 吗？"
-
-#, csharp-format
-msgid "Disconnected joystick: [gray italic]({0})[/]"
-msgstr "摇杆断开连接：[gray italic]({0})[/]"
-
-#, csharp-format
-msgid "Failed to open joystick {0}."
-msgstr "摇杆 {0} 打开失败。"
-
-msgid "Select core.scs"
-msgstr "选择 core.scs"
-
-msgid "Speed Limits"
-msgstr "限速值"
-
-msgid "Register"
-msgstr "注册"
-
-#, csharp-format
-msgid "Error loading map data from '{0}': {1}"
-msgstr "从 {0} 加载地图数据时出错：{1}"
-
-msgid "Failed to init ImGui Impl OpenGL3"
-msgstr "ImGui OpenGL3 实现初始化失败"
-
-msgid "The step size for changing the cruise control speed."
-msgstr "调整巡航速度时的步长。"
-
-msgid "Assist Level: "
-msgstr "辅助级别： "
-
-msgid "ETS2LA will offset the speedlimit by this percentage."
-msgstr "ETS2LA 将根据这个百分比来调整限速。"
-
-msgid "m/s"
-msgstr "m/s"
-
-#, csharp-format
-msgid "Updated axis behavior for control: {0} ({1}) to {2}"
-msgstr "已将控件 {0}（{1}）的轴向行为更新为 {2}"
-
-msgid "Open Source"
-msgstr "开源代码库"
-
-msgid "Uninstall"
-msgstr "卸载"
-
-msgid "Off"
-msgstr "关闭"
-
-#, csharp-format
-msgid "Created plugin directory: [gray]{0}[/]"
-msgstr "已创建插件目录：[gray]{0}[/]"
-
-msgid "Late"
-msgstr "较晚"
-
-msgid "pounds"
-msgstr "磅"
-
-msgid "Contact us on GitHub"
-msgstr "通过 GitHub 联系我们"
-
-msgid "Lane Assist Only"
-msgstr "仅车道辅助"
-
-msgid "Game SDK"
-msgstr "游戏 SDK"
-
-#, csharp-format
-msgid "The username {0} is reserved. Please choose a different username."
-msgstr "用户名 {0} 为已存在。请使用其他用户名。"
-
-msgid "Decrease/SET"
-msgstr "减少/SET"
-
-msgid "km/h"
-msgstr "km/h"
-
-msgid "You must restart ETS2LA for the font size change to take effect."
-msgstr "您必须重启 ETS2LA，字体大小更改才会生效。"
-
-msgid "Visual"
-msgstr "视觉提示"
+msgid "If you're streaming or recording, now's the time to hide this window."
+msgstr "如果您正在直播或录制视频，应该隐藏此窗口。"
+
+msgid "Collision Avoidance"
+msgstr "防碰撞"
 
 msgid ""
 "Disables the overlay entirely. This will fix the black screen issue at the "
@@ -2112,82 +824,464 @@ msgstr ""
 "完全禁用叠加层。这样可以解决黑屏问题，但会导致所有依赖叠加层的功能失效，包括 "
 "AR 和 HUD。"
 
-msgid "Update Available"
-msgstr "有可用更新"
+msgid "Overrides"
+msgstr "覆盖设置"
 
-msgid "Current Speed"
-msgstr "当前速度"
+msgid "Assists Disabled"
+msgstr "辅助功能已禁用"
 
-msgid "Downloading Update"
-msgstr "正在下载更新"
+msgid ""
+"Too many requests. You have sent too many requests in a given amount of time."
+msgstr "请求过多。您在一段时间内发送了太多请求。"
 
-#, csharp-format
-msgid "Update to {0}"
-msgstr "更新到 {0}"
-
-#, csharp-format
-msgid "Bound control {0} ({1}) to device {2} and control {3}"
-msgstr "已将控件 {0}（{1}）绑定至设备 {2} 的控件 {3}"
-
-msgid "Display Language"
-msgstr "显示语言"
+msgid ""
+"This will disconnect ETS2LA from the game and close the window. You can "
+"minimize the window to keep ETS2LA running."
+msgstr ""
+"这会断开 ETS2LA 与游戏的连接并关闭窗口。你可以将窗口最小化，让 ETS2LA 继续运"
+"行。"
 
 #, csharp-format
-msgid "Successfully uninstalled plugin with ID {0}."
-msgstr "成功卸载 ID 为 {0} 的插件。"
+msgid "Camera {0} ({1}x{2})"
+msgstr "摄像头 {0}（{1}x{2}）"
 
-msgid "SDK Installation"
-msgstr "安装SDK"
+msgid "Display JWT Token"
+msgstr "显示 JWT 令牌"
 
-msgid "Far"
-msgstr "远"
+msgid ""
+"This setting only loads roads and intersections visible on the in game map. "
+"It discards all other information."
+msgstr "此设置只会加载游戏地图上可见的道路与路口，并丢弃其他所有信息。"
+
+msgid "Invalid Input"
+msgstr "输入无效"
+
+#, csharp-format
+msgid "Invalid audio job: {0}, does the file exist?"
+msgstr "无效的音频任务：{0}，文件是否存在？"
+
+#, csharp-format
+msgid "Failed to load library plugin from [gray]{0}[/]: {1}"
+msgstr "从 [gray]{0}[/] 加载库插件失败：{1}"
+
+msgid "Game"
+msgstr "游戏"
+
+#, csharp-format
+msgid "Updated bindings for control: {0} ({1}) to Device: {2}, Control: {3}"
+msgstr "已将 {0}（{1}）的按键绑定到设备 {2}、 {3}"
 
 msgid ""
 "Driving mode changed, press Cancel/MODE again to cycle through the modes."
 msgstr "驾驶模式已更改，再次按下取消 / MODE 可循环切换驾驶模式。"
 
-#, csharp-format
-msgid "Unloading parsed map data for installation at '{0}'"
-msgstr "正在卸载游戏安装位置“{0}”已解析的地图数据"
-
-msgid "You took a wrong turn!"
-msgstr "你走错路了！"
-
-msgid "Unchanged / Unavailable"
-msgstr "未更改 / 不可用"
-
-#, csharp-format
-msgid "Failed to uninstall current version of plugin with ID {0}."
-msgstr "无法卸载 ID 为 {0} 插件的当前版本。"
-
-#, csharp-format
-msgid "{0} m/s ({1} in {2})"
-msgstr "{0} 米/秒（{1}，{2}）"
+msgid "Pause When Unstable"
+msgstr "不稳定时暂停"
 
 msgid "Stop Rendering When Game is Paused"
 msgstr "游戏暂停时停止渲染"
 
 #, csharp-format
-msgid "Failed to refresh joysticks: {0}"
-msgstr "刷新摇杆时出错：{0}"
+msgid "File not found: {0}"
+msgstr "未找到文件: {0}"
 
-msgid "Failed to log in. Please check your credentials and try again."
-msgstr "登录失败。请检查您的登录凭据后重试。"
+msgid "Restart Now"
+msgstr "立即重启"
 
-msgid "Low"
-msgstr "低"
+#, csharp-format
+msgid "New limit {0} {1}"
+msgstr "新限速：{0} {1}"
 
-msgid "ETS2LA is running."
-msgstr "ETS2LA 已启动。"
+msgid "Log sent. Click here to view it."
+msgstr "日志已发送。点击此处查看。"
 
-msgid "gallons"
-msgstr "加仑"
+#, csharp-format
+msgid "Error playing audio file {0}: {1}"
+msgstr "播放音频文件 {0} 出错：{1}"
+
+msgid "Controls Backend shutdown complete, all controls saved."
+msgstr "控制后端已关闭，所有控件已保存。"
+
+msgid ""
+"The units ETS2LA will use when displaying information to a user. Scientific "
+"has only slight differences to metric."
+msgstr "ETS2LA 向用户显示信息时所使用的单位。科学单位制与公制仅有微小差异。"
+
+msgid ""
+"Send using <span class=\"text-text-l\">Enter</span>, new line with <span "
+"class=\"text-text-l\">Shift+Enter</span>. Some basic information is sent "
+"along with each message, <span class=\"text-text-l\">click to display</span>."
+msgstr ""
+"使用 <span class=\"text-text-l\">Enter</span>发送，使用<span class=\"text-"
+"text-l\">Shift+Enter</span>换行。每条消息会附带一些基本信息，<span "
+"class=\"text-text-l\">点击查看</span>。"
+
+#, csharp-format
+msgid "Control with ID '{0}' not found for unregistration."
+msgstr "取消注册时找不到 ID 为“{0}”的控件。"
+
+msgid ""
+"I'm sorry, but I cannot answer that question. Please ask something else "
+"ETS2LA related."
+msgstr "抱歉，我无法回答这个问题。请提出其他与 ETS2LA 相关的问题。"
+
+msgid ""
+"Your system has less than 16GB of RAM. High data fidelity uses significant "
+"amounts of RAM, and may cause your system to become unstable. Please select "
+"a lower fidelity."
+msgstr ""
+"你的系统内存少于 16GB。数据精细度设为“高”时会使用大量内存，可能导致系统不稳"
+"定。请选择较低的数据精细度。"
+
+#, csharp-format
+msgid "Failed to shutdown plugin {0}: {1}"
+msgstr "关闭插件 {0} 失败：{1}"
+
+#, csharp-format
+msgid "Plugin with ID {0} not found in available plugins."
+msgstr "在可用插件中找不到 ID 为 {0} 的插件。"
+
+msgid "Confirm Account Removal"
+msgstr "确认移除账户"
+
+msgid ""
+"Removing your account will delete all your data from our servers. This "
+"action cannot be undone."
+msgstr "移除账户将删除您在我们服务器上的所有数据。此操作无法撤销。"
+
+msgid "Manager"
+msgstr "插件管理"
+
+msgid "Near"
+msgstr "近"
+
+msgid "Driving"
+msgstr "驾驶"
+
+msgid "Failed to initialize SDL3 input backend."
+msgstr "SDL3 输入后端初始化失败。"
+
+#, csharp-format
+msgid "{0} not found in supported languages."
+msgstr "在支持的语言中找不到 {0}。"
+
+msgid "Assists Enabled: "
+msgstr "辅助功能启用状态： "
+
+#, csharp-format
+msgid "Found {0} prefab"
+msgid_plural "Found {0} prefabs"
+msgstr[0] "找到 {0} 个预制件"
+
+msgid "Pascals"
+msgstr "帕斯卡（压力单位）"
+
+msgid "Account Removal Error"
+msgstr "移除账户错误"
+
+msgid "You can enable the plugins we installed in a previous step here."
+msgstr "您可以在此处启用我们在上一步安装的插件。"
+
+#, csharp-format
+msgid "Failed to disable {0}: {1}"
+msgstr "停用 {0} 失败:{1}"
+
+msgid "Login"
+msgstr "登录"
+
+msgid "SDK Installed"
+msgstr "已安装SDK"
+
+msgid "Current Speed"
+msgstr "当前速度"
+
+#, csharp-format
+msgid "Bound control {0} ({1}) to device {2} and control {3}"
+msgstr "已将控件 {0}（{1}）绑定至设备 {2} 的控件 {3}"
+
+msgid "miles per hour"
+msgstr "英里每小时"
+
+msgid "Limit Overlay Framerate"
+msgstr "限制叠加层帧率"
+
+msgid ""
+"You'll be asked to save an OTP authentication code after registration. We do "
+"not store or ask for passwords, as those aren't required for authentication."
+msgstr ""
+"注册完成后，系统会要求您保存一次性密码（OTP）验证码。我们不存储也不要求密码，"
+"因为身份验证不需要密码。"
+
+msgid "Test Audio"
+msgstr "测试音频"
+
+msgid "Wiki / FAQ"
+msgstr "维基 / 常见问题"
+
+msgid ""
+"By clicking <span class=\"font-bold\">Continue</span>, you agree to our "
+"Privacy Policy."
+msgstr ""
+"点击<span class=\"font-bold\">继续</span>，即表示您同意我们的隐私政策。"
+
+#, csharp-format
+msgid "Failed to install SDK from '{0}' to '{1}': {2}"
+msgstr "将 SDK 从“{0}”安装至“{1}”失败：{2}"
+
+msgid ""
+"When this key is held, the overlay will receive mouse input and allow you to "
+"interact with it. NOTE: Interaction with items below the overlay is not "
+"possible during this time."
+msgstr ""
+"按住此按键时，叠加层将接收鼠标输入，让你可以与其互动。注意：此时无法与叠加层"
+"下方的项目互动。"
+
+msgid ""
+"The request method is recognized by the server but is not supported by the "
+"target resource."
+msgstr "服务器能识别此请求方法，但目标资源不支持该方法。"
+
+msgid "Binding Successful"
+msgstr "绑定成功"
+
+msgid "Disable"
+msgstr "禁用"
+
+msgid "Controls"
+msgstr "控制"
+
+#, csharp-format
+msgid "Unknown manifest type: {0}"
+msgstr "未知的清单类型：{0}"
+
+msgid "Overlay Font Size"
+msgstr "叠加层字体大小"
+
+msgid ""
+"Ensure you don't have any mods installed in the root directory. Those have "
+"to be installed in Documents/Euro Truck Simulator 2/mod."
+msgstr ""
+"请确认根目录中没有安装任何模组。模组必须安装至 文档/Euro Truck Simulator 2/"
+"mod。"
+
+#, csharp-format
+msgid "Download progress: {0}%"
+msgstr "下载进度：{0}%"
+
+msgid "Search for plugins..."
+msgstr "搜索插件…"
+
+msgid "Assists"
+msgstr "辅助"
+
+msgid "SDK Installation"
+msgstr "安装SDK"
+
+msgid "mph"
+msgstr "mph"
+
+msgid "°F"
+msgstr "°F"
+
+msgid "Pa"
+msgstr "Pa"
+
+msgid "Game Telemetry"
+msgstr "游戏遥测"
+
+msgid "Key"
+msgstr "按键"
+
+msgid ""
+"This setting drops redundant information while maintaining most detail "
+"objects (such as signs). Doesn't include any roads / intersections not shown "
+"in the in game map."
+msgstr ""
+"此设置会丢弃冗余信息，同时保留大部分细节对象（例如标志），但不包含游戏地图上"
+"未显示的道路或路口。"
+
+msgid "bar"
+msgstr "bar"
+
+msgid "Account Removed"
+msgstr "账户已删除"
+
+msgid ""
+"Couldn't connect to the game. Please open ETS2 or ATS and enable the SDK."
+msgstr "无法连接到游戏。请打开 ETS2 或 ATS，并启用 SDK。"
+
+msgid "Button"
+msgstr "按钮"
+
+msgid "Add Game Manually"
+msgstr "手动添加游戏"
+
+msgid ""
+"In most situations, over half of ETS2LA's CPU use is consumed by the "
+"overlay. Limiting the framerate will reduce CPU usage."
+msgstr ""
+"在大多数情况下，ETS2LA 超过一半的 CPU 使用量都来自叠加层。限制帧率可以降低"
+"CPU 使用量。"
+
+msgid ""
+"This setting includes all available data, most of which is redundant. <span "
+"class=\"text-warning\">Warning: Extreme uses significant amounts of RAM, "
+"expect over 10GB of usage.</span>"
+msgstr ""
+"此设置包含所有可用数据，其中大部分是冗余的。<span class=\"text-warning\">警"
+"告：极致模式会占用大量内存，预计内存使用量将超过 10GB。</span>"
+
+msgid "GitHub Sponsorship"
+msgstr "GitHub 赞助"
+
+msgid "Restart and Continue"
+msgstr "重启并继续"
+
+msgid ""
+"Using simplified graphics can improve performance on lower-end hardware, or "
+"fix situations in which advanced features like shaders are not supported."
+msgstr ""
+"使用简化图形可提升较低端硬件的性能，或解决着色器等高级功能不受支持的情况。"
+
+#, csharp-format
+msgid "Failed to load map for installation at '{0}'"
+msgstr "加载游戏安装位置“{0}”的地图失败"
+
+msgid "Not Connected"
+msgstr "未连接"
+
+#, csharp-format
+msgid "Plugin with ID [gray]{0}[/] is already loaded, skipping duplicate."
+msgstr "ID 为 [gray]{0}[/] 的插件已加载，跳过重复加载。"
+
+msgid "You are running the latest version."
+msgstr "你正在使用最新版本。"
+
+#, csharp-format
+msgid "Failed to download plugin with ID {0} from {1}. Status code: {2}"
+msgstr "从 {1} 下载 ID 为 {0} 的插件失败。状态码：{2}"
+
+msgid ""
+"Show news articles about plugin updates, be that official or 3rd party "
+"plugins."
+msgstr "显示有关插件更新的新闻文章，包括官方插件和第三方插件。"
+
+msgid "No plugins found."
+msgstr "找不到任何插件。"
+
+msgid ""
+"When pressing the SET keybind, what should ETS2LA set as the current cruise "
+"control speed?"
+msgstr "按下“设定”按键时，ETS2LA 应将当前巡航速度设定为什么速度？"
+
+msgid "The selected directory does not exist."
+msgstr "所选目录不存在。"
+
+msgid ""
+"Adjust the quality of the curves used for path planning and visualization. "
+"By default this matches the game."
+msgstr "调整用于路径规划与可视化的曲线质量。默认会与游戏保持一致。"
+
+msgid "Before we begin."
+msgstr "在开始之前。"
+
+#, csharp-format
+msgid "Error while applying update: {0}"
+msgstr "应用更新时发生错误：{0}"
+
+msgid "Following Distance"
+msgstr "跟车距离"
+
+msgid "Check For Updates"
+msgstr "检查更新"
+
+msgid "Telemetry"
+msgstr "遥测"
+
+msgid ""
+"This allows ETS2LA to render in multiple viewports, meaning you can move "
+"overlay windows to any monitor."
+msgstr ""
+"这可以让 ETS2LA 在多个视口中进行渲染，让你可以将叠加层窗口移动到任何屏幕上。"
+
+msgid ""
+"Adjust the level of detail of the game data we use. Higher values use more "
+"RAM, but include more information. All levels drive the same."
+msgstr ""
+"调整我们所使用游戏数据的详细程度。数值越高，占用的内存越多，但包含的信息也越"
+"丰富。所有级别的驾驶效果相同。"
+
+#, csharp-format
+msgid "found {0} node"
+msgid_plural "found {0} nodes"
+msgstr[0] "找到 {0} 个节点"
+
+msgid "Open Source"
+msgstr "开源代码库"
+
+#, csharp-format
+msgid "<span class=\"font-semibold\">{0}</span> until {1}"
+msgstr "<span class=\"font-semibold\">{0}</span> 直到 {1}"
+
+msgid ""
+"User folder paths are hidden automatically. Review the log for other "
+"personal information before sending."
+msgstr "用户文件夹路径会自动隐藏。在发送前，请检查日志中是否包含其他个人信息。"
+
+msgid "Did you remember to restart after installing them?"
+msgstr "您是否在安装后重启程序？"
+
+msgid "Volume"
+msgstr "音量"
+
+#, csharp-format
+msgid "Parsing sector {0} of {1}..."
+msgstr "正在解析区块 {0}/{1}..."
+
+msgid "Unbound"
+msgstr "未绑定"
+
+msgid ""
+"ETS2LA uses a control setup that should be similar to real life systems. You "
+"can rebind the default controls on the right side."
+msgstr ""
+"ETS2LA 使用的控制方式与现实中的系统类似。您可以在右侧重新绑定默认按键。"
+
+#, csharp-format
+msgid "Failed to install latest version of plugin with ID {0}."
+msgstr "ID 为 {0} 的插件最新版本安装失败。"
 
 #, csharp-format
 msgid ""
-"Tried to change update source to '{0}', but it was not found among available "
-"sources."
-msgstr "尝试将更新源更改为“{0}”，但在可用源中找不到该源。"
+"If you think this is a bug, please report it in the {0}Discord Server{1} or "
+"on {2}GitHub{3}."
+msgstr ""
+"如果你认为这是一个错误，请在 {0}Discord 服务器{1} 或 {2}GitHub{3} 报告。"
+
+msgid "I understand, now let me in!"
+msgstr "我明白了，现在让我进入！"
+
+#, csharp-format
+msgid ""
+"You have successfully registered as {0}. Please add the OTP code to your "
+"authentication app."
+msgstr "您已成功注册为 {0}。请将一次性密码（OTP）添加到您的身份验证应用中。"
+
+msgid "Disable Overlay"
+msgstr "禁用叠加层"
+
+msgid ""
+"The maximum distance at which 3D elements will be rendered. Lowering this "
+"can be used to improve performance on lower-end hardware."
+msgstr "3D 元素的最大渲染距离。降低此设置可提升较低端硬件的性能。"
+
+#, csharp-format
+msgid "Fetched {0} plugin from {1}"
+msgid_plural "Fetched {0} plugins from {1}"
+msgstr[0] "已从 {1} 获取 {0} 个插件"
+
+msgid "Metric"
+msgstr "公制"
 
 msgid ""
 "The font size of the overlay. This can be used to scale the overlay to your "
@@ -2196,96 +1290,708 @@ msgstr ""
 "您可以通过此设置修改叠加层的字体大小，根据显示器的 DPI 设置调整叠加层的缩放比"
 "例。"
 
-msgid ""
-"The units ETS2LA will use when displaying information to a user. Scientific "
-"has only slight differences to metric."
-msgstr "ETS2LA 向用户显示信息时所使用的单位。科学单位制与公制仅有微小差异。"
-
-msgid "For now, please contact us on GitHub or Discord."
-msgstr "目前，请通过 GitHub 或 Discord 联系我们。"
-
-msgid "Your account has been successfully removed."
-msgstr "您的账户已成功删除。"
+msgid "Error in telemetry update loop."
+msgstr "遥测更新时发生错误。"
 
 msgid ""
-"The request method is recognized by the server but is not supported by the "
-"target resource."
-msgstr "服务器能识别此请求方法，但目标资源不支持该方法。"
-
-msgid "Wiki / FAQ"
-msgstr "维基 / 常见问题"
-
-msgid "Limit Overlay Framerate"
-msgstr "限制叠加层帧率"
+"Internal server error. The server encountered an unexpected condition that "
+"prevented it from fulfilling the request."
+msgstr "内部服务器错误。服务器发生未预期的状况，导致无法完成请求。"
 
 #, csharp-format
-msgid "Not all dependencies for plugin {0} are installed."
-msgstr "插件 {0} 的依赖项尚未全部安装。"
+msgid "Road template for {0} not found in SII file."
+msgstr "在 SII 文件中找不到 {0} 的道路模板。"
+
+#, csharp-format
+msgid "Failed to read log file at '{0}': {1}"
+msgstr "读取位于“{0}”的日志文件失败：{1}"
+
+#, csharp-format
+msgid "Updated axis behavior for control: {0} ({1}) to {2}"
+msgstr "已将控件 {0}（{1}）的轴向行为更新为 {2}"
+
+#, csharp-format
+msgid "Disabled plugin: [bold]{0}[/]"
+msgstr "已停用插件：[bold]{0}[/]"
+
+msgid "Continue"
+msgstr "继续"
+
+msgid "Cancel/MODE"
+msgstr "取消/MODE - 模式"
+
+#, csharp-format
+msgid "Failed enable {0}: {1}"
+msgstr "启用 {0} 失败：{1}"
+
+msgid "Acceleration Response"
+msgstr "加速度响应"
+
+msgid "Error in parked vehicles update loop."
+msgstr "停放车辆更新时发生错误。"
+
+msgid "The plugin was enabled successfully."
+msgstr "插件已成功启用。"
 
 msgid ""
-"This setting drops redundant information while maintaining most detail "
-"objects (such as signs). Includes all hidden and AI only roads."
+"• If you create an account, we transfer your account information to an "
+"international recipient."
+msgstr "• 如果您创建账户，我们会将您的账户信息传输给国际接收方。"
+
+#, csharp-format
+msgid "<span class=\"font-semibold\">{0}</span> at {1}"
+msgstr "<span class=\"font-semibold\">{0}</span> 于 {1}"
+
+msgid "Normal"
+msgstr "标准"
+
+msgid "ETS2LA will offset the speedlimit by this amount."
+msgstr "ETS2LA将根据这个数值来调整限速。"
+
+msgid "Unknown Control"
+msgstr "未知控件"
+
+msgid ""
+"When enabled, the overlay will toggle between interaction and non-"
+"interaction mode when you press it's keybind. When disabled, the overlay "
+"will only be interactive while you hold down the keybind."
 msgstr ""
-"这项设置将会移除冗余的信息，保留大部分细节物体（比如路牌）。将会保留隐藏或仅 "
-"AI 可行的道路。"
+"启用后，按下对应按键时，叠加层将在交互和非交互模式之间切换。禁用后，只有在按"
+"住对应按键时，叠加层才会处于交互状态。"
+
+msgid "Latest News"
+msgstr "最新新闻"
+
+msgid "pounds"
+msgstr "磅"
+
+#, csharp-format
+msgid "Failed to initialize SDL3 controls backend: {0}"
+msgstr "SDL3 控制后端初始化失败：{0}"
+
+msgid ""
+"The server cannot find the requested resource. The URL may be misspelled, or "
+"the resource has been removed."
+msgstr "服务器找不到请求的资源。网址可能有误，或该资源已被移除。"
 
 #, csharp-format
 msgid "Failed to install SDK version '{0}' to '{1}': {2}"
 msgstr "将 SDK 版本“{0}”安装至“{1}”失败：{2}"
 
-msgid "• ETS2LA Developers, contact@ets2la.com, Poland."
-msgstr "• ETS2LA 开发者，contact@ets2la.com，波兰。"
+#, csharp-format
+msgid "Failed to read bundled update source marker: {0}"
+msgstr "读取内置更新源标记失败：{0}"
 
-msgid "Login"
-msgstr "登录"
+msgid "liters"
+msgstr "升"
 
 #, csharp-format
-msgid "Latest Version: {0}"
-msgstr "最新版本：{0}"
+msgid "No valid versions found for plugin with ID {0}."
+msgstr "找不到 ID 为 {0} 的有效插件版本。"
 
-msgid "Audio playback canceled"
-msgstr "音频播放已取消"
+msgid ""
+"Will disable ETS2LA's assists when pressed. If assists are already disabled, "
+"this key will switch between driving modes."
+msgstr ""
+"按下此按键将禁用 ETS2LA 的辅助功能。如果辅助功能已被禁用，此按键将用于切换驾"
+"驶模式。"
 
-msgid "Pascals"
-msgstr "帕斯卡（压力单位）"
+msgid "Binding thread started with no control to bind."
+msgstr "绑定线程已启动，但没有指定要绑定的控件。"
 
-msgid "Button"
-msgstr "按钮"
+#, csharp-format
+msgid ""
+"Installation at '{0}' is not currently running, waiting for load of profile."
+msgstr "位于“{0}”的游戏目前未运行，正在等待玩家资料加载。"
 
-msgid "Overrides"
-msgstr "覆盖设置"
+msgid "Downloading Update"
+msgstr "正在下载更新"
 
-msgid "Remember!"
-msgstr "请记住！"
+msgid "Simplified Graphics"
+msgstr "简化图形"
 
-msgid "You can enable the plugins we installed in a previous step here."
-msgstr "您可以在此处启用我们在上一步安装的插件。"
+msgid "Failed to log in. Please check your credentials and try again."
+msgstr "登录失败。请检查您的登录凭据后重试。"
+
+msgid "Steering Sensitivity"
+msgstr "转向灵敏度"
+
+msgid "Disabled"
+msgstr "已停用"
+
+#, csharp-format
+msgid "{0}"
+msgstr "{0}"
+
+msgid ""
+"This might take a while depending on your internet connection and the source."
+msgstr "视你的网络连接和更新源而定，这可能需要一些时间。"
+
+msgid "No updates available."
+msgstr "没有可用的更新。"
+
+msgid "Please log in to use the chatbot."
+msgstr "请登录以使用聊天机器人。"
+
+#, csharp-format
+msgid "Error rendering overlay: {0}"
+msgstr "渲染叠加层时发生错误：{0}"
+
+msgid "You may need to restart the game to apply this change."
+msgstr "您可能需要重启游戏才能应用此更改。"
+
+msgid "Off"
+msgstr "关闭"
+
+msgid "L"
+msgstr "L"
+
+msgid ""
+"An error occurred while trying to log in. Please try again later. Error: "
+msgstr "登录时发生错误。请稍后重试。错误： "
+
+msgid "Installing..."
+msgstr "安装中..."
+
+msgid "Failed to add game"
+msgstr "游戏添加失败"
+
+#, csharp-format
+msgid "Font file not found at {0}"
+msgstr "找不到字体文件：{0}"
+
+msgid "No release notes available."
+msgstr "暂无更新日志。"
+
+msgid "Changelog"
+msgstr "更新日志"
+
+#, csharp-format
+msgid "Detected a switch to {0}, waiting for its game data to be parsed."
+msgstr "检测到已切换至 {0}，正在等待游戏数据解析完成。"
+
+#, csharp-format
+msgid "Currently running at {0} FPS."
+msgstr "目前以 {0} FPS 运行。"
+
+#, csharp-format
+msgid "Version {0} not found for plugin with ID {1}."
+msgstr "找不到 ID 为 {1} 的插件版本 {0}。"
+
+msgid ""
+"An error occurred while trying to log out. Please try again later. Error: "
+msgstr "退出登录时发生错误。请稍后重试。错误： "
+
+msgid "Invalid file"
+msgstr "文件无效"
+
+msgid "Login Successful"
+msgstr "登录成功"
+
+#, csharp-format
+msgid "Discovered {0} library in total"
+msgid_plural "Discovered {0} libraries in total."
+msgstr[0] "总共发现 {0} 个库。"
+
+msgid "Console"
+msgstr "控制台"
+
+msgid "The game has been added successfully."
+msgstr "游戏已成功添加。"
+
+msgid ""
+"The server could not understand the request due to invalid syntax or "
+"corrupted request data."
+msgstr "服务器无法理解此请求，原因是语法无效或请求数据已损坏。"
+
+#, csharp-format
+msgid "No versions available for plugin with ID {0}."
+msgstr "ID 为 {0} 的插件没有可用版本。"
+
+#, csharp-format
+msgid ""
+"Manually added game at '{0}' no longer contains a game executable, skipping."
+msgstr "手动添加的游戏路径“{0}”中找不到游戏可执行文件，将略过。"
+
+msgid "Logout Error"
+msgstr "退出登录错误"
+
+msgid "Don't have an account?<br/>Register a new one now, no emails required!"
+msgstr "没有账户？<br/>现在就注册一个新账户，无需邮箱！"
+
+#, csharp-format
+msgid "Found {0} game installation."
+msgid_plural "Found {0} game installations."
+msgstr[0] "找到 {0} 个游戏安装位置。"
+
+msgid "Scientific"
+msgstr "科学单位制"
+
+msgid "Waiting..."
+msgstr "等待中..."
+
+msgid "hide"
+msgstr "隐藏"
+
+#, csharp-format
+msgid "Update available: {0}"
+msgstr "有可用的更新：{0}"
+
+msgid "Error in traffic update loop."
+msgstr "交通更新时发生错误。"
+
+#, csharp-format
+msgid "Error in plugin {0} Tick: {1}"
+msgstr "插件 {0} 更新时发生错误：{1}"
+
+msgid ""
+"To get started fast, you can install our <span class=\"text-text-accent font-"
+"bold\">recommended</span> plugins. These contain everything you need to get "
+"driving."
+msgstr ""
+"为了快速开始，您可以安装我们<span class=\"text-text-accent font-bold\">推荐的"
+"</span>插件。这些插件包含开始驾驶所需的一切。"
+
+#, csharp-format
+msgid "An error occurred while loading map data: {0}"
+msgstr "加载地图数据时发生错误：{0}"
+
+msgid "The selected game executable was not found."
+msgstr "未找到所选游戏的可执行文件。"
 
 #, csharp-format
 msgid "Loaded library plugin: [gray]{0}[/] from [gray]{1}[/]."
 msgstr "已加载库插件：[gray]{0}[/] 从 [gray]{1}[/]。"
 
-msgid "Error in camera update loop."
-msgstr "相机更新时发生错误。"
-
-msgid "Become a GitHub Sponsor"
-msgstr "成为 GitHub 赞助者"
-
-msgid "Please log in to use the chatbot."
-msgstr "请登录以使用聊天机器人。"
-
-msgid "No Update Available"
-msgstr "没有可用更新"
-
-msgid "Your username may not contain repeated separators."
-msgstr "用户名中不能包含连续的分隔符。"
+msgid "Enter the OTP generated by your authenticator app."
+msgstr "请输入身份验证应用生成的一次性密码（OTP）。"
 
 #, csharp-format
-msgid "Skipped stale plugin shadow directory [gray]{0}[/]: {1}"
-msgstr "已略过残留的插件缓存目录 [gray]{0}[/]：{1}"
+msgid "The username {0} is reserved. Please choose a different username."
+msgstr "用户名 {0} 为已存在。请使用其他用户名。"
 
-msgid "Your account is not allowed to use the chatbot."
-msgstr "您的账户无权使用聊天机器人。"
+msgid "Select the game you wish to start."
+msgstr "请选择您要启动的游戏。"
+
+msgid "Speed Limits"
+msgstr "限速值"
+
+msgid "Responsiveness"
+msgstr "响应性"
+
+msgid "Parsing Map Data"
+msgstr "地图数据解析中"
+
+msgid "SDKs need to be installed."
+msgstr "需要安装 SDK。"
+
+msgid "Hide Installed"
+msgstr "隐藏已安装"
+
+msgid "Failed to initialize overlay, OpenGL initialization failed."
+msgstr "叠加层初始化失败，OpenGL 初始化失败。"
+
+#, csharp-format
+msgid "Plugin '{0}' is missing its DLL at '{1}' and has been removed."
+msgstr "插件“{0}”在“{1}”找不到 DLL，已将该插件移除。"
+
+msgid ""
+"Increases the current target speed by one step. If assists are disabled, "
+"this key acts like RES. Meaning it will resume the last set target speed. If "
+"a last target speed was not set, this key acts like SET."
+msgstr ""
+"将当前目标速度提高一个档位。如果辅助功能已禁用，此按键的作用类似于 RES，即恢"
+"复上一次设置的目标速度。如果此前未设置目标速度，则此按键的作用类似于 SET。"
+
+msgid "Account"
+msgstr "账户"
+
+msgid "Translate News Articles"
+msgstr "翻译新闻文章"
+
+#, csharp-format
+msgid "Found {0} (version: {1}) at '{2}'"
+msgstr "在“{2}”找到 {0}（版本：{1}）"
+
+msgid ""
+"We can render elements in the game world using the overlay. This will use "
+"additional CPU and GPU resources."
+msgstr "我们可以通过叠加层在游戏世界中渲染元素。这会额外使用 CPU 和 GPU 资源。"
+
+msgid ""
+"Select which traffic rules ETS2LA should obey. More might be added later, "
+"and all plugins won't necessarily support all rules."
+msgstr ""
+"选择 ETS2LA 应遵守的交通规则。后续可能会添加更多规则，且并非所有插件都支持全"
+"部规则。"
+
+msgid "kilometers per hour"
+msgstr "公里每小时"
+
+#, csharp-format
+msgid "Control with ID '{0}' not found for event unsubscription."
+msgstr "取消订阅事件时找不到 ID 为“{0}”的控件。"
+
+msgid "Share log"
+msgstr "分享日志"
+
+msgid "Chatbot"
+msgstr "聊天机器人"
+
+#, csharp-format
+msgid "Binding {0}"
+msgstr "正在绑定 {0}"
+
+#, csharp-format
+msgid "Failed to unload plugin load context: {0}"
+msgstr "卸载插件加载上下文失败：{0}"
+
+#, csharp-format
+msgid "No download URL found for plugin with ID {0} in region {1}."
+msgstr "在区域 {1} 中找不到 ID 为 {0} 的插件下载地址。"
+
+msgid ""
+"Changing the display language requires a restart of ETS2LA to take effect. "
+"Restart now?"
+msgstr "变更显示语言后，需要重新启动 ETS2LA 才会生效。要现在重新启动吗？"
+
+#, csharp-format
+msgid "Update to {0} from {1}"
+msgstr "从 {1} 更新至 {0}"
+
+msgid "Open Externally"
+msgstr "外部打开"
+
+msgid "Restarting ETS2LA..."
+msgstr "正在重新启动 ETS2LA..."
+
+msgid "ETS2LA is running."
+msgstr "ETS2LA 已启动。"
+
+msgid "Warnings"
+msgstr "警告"
+
+msgid "Restart"
+msgstr "重新启动"
+
+msgid "Plugins"
+msgstr "插件"
+
+msgid "Close"
+msgstr "关闭"
+
+msgid "lbs"
+msgstr "lbs"
+
+#, csharp-format
+msgid "Tried to disable {0}, but it was not found among loaded plugins."
+msgstr "尝试停用 {0}，但在已加载的插件中找不到该插件。"
+
+msgid "Full Self-Driving"
+msgstr "全自动驾驶"
+
+msgid "Install"
+msgstr "安装"
+
+#, csharp-format
+msgid ""
+"Tried to change update source to '{0}', but it was not found among available "
+"sources."
+msgstr "尝试将更新源更改为“{0}”，但在可用源中找不到该源。"
+
+msgid "Error Checking for Updates"
+msgstr "检查更新时出错"
+
+msgid "Speed Limit"
+msgstr "限速"
+
+msgid "Vision Cameras"
+msgstr "视觉摄像头"
+
+msgid "This page hasn't been created yet, but it's coming <i>soon</i>."
+msgstr "此页面尚未创建，不过<i>很快</i>就会推出。"
+
+#, csharp-format
+msgid "This might take a while... ({0}/{1})"
+msgstr "这可能需要一点时间...（{0}/{1}）"
+
+msgid ""
+"Please complete this <span class=\"text-text-accent font-bold\">short</span> "
+"onboarding process to get started."
+msgstr ""
+"请完成这个 <span class=\"text-text-accent font-bold\">简短</span> 的引导流程"
+"以开始使用。"
+
+msgid "Remember!"
+msgstr "请记住！"
+
+msgid "Disable All"
+msgstr "全部禁用"
+
+msgid ""
+"Failed to fetch available plugins. Please check your internet connection."
+msgstr "可用插件获取失败。请检查网络连接。"
+
+msgid "feet"
+msgstr "英尺"
+
+#, csharp-format
+msgid "Overlay is disabled in settings, skipping window registration for {0}."
+msgstr "设置中已禁用叠加层，跳过窗口 {0} 的注册。"
+
+msgid "Audio Settings"
+msgstr "音频设置"
+
+msgid "Request cancelled."
+msgstr "请求已取消。"
+
+msgid "Registration Failed"
+msgstr "注册失败"
+
+msgid "Please close the game before continuing with the onboarding process."
+msgstr "请先关闭游戏，然后再继续引导流程。"
+
+msgid "Registration Successful"
+msgstr "注册成功"
+
+#, csharp-format
+msgid "Your username must be at most {0} characters long."
+msgstr "用户名长度最多为 {0} 个字符。"
+
+#, csharp-format
+msgid "Successfully installed plugin {0} ({1}, {2})"
+msgstr "已成功安装插件 {0}（{1}，{2}）"
+
+#, csharp-format
+msgid "Installation at '{0}' has already been parsed."
+msgstr "游戏安装位置“{0}”已完成解析。"
+
+msgid "Increase/RES"
+msgstr "增加/RES - 重置"
+
+#, csharp-format
+msgid "Failed to acquire joystick [gray italic]({0})[/]: {1}"
+msgstr "无法获取摇杆 [gray italic]({0})[/]：{1}"
+
+msgid "Far"
+msgstr "远"
+
+msgid "For now, please contact us on GitHub or Discord."
+msgstr "目前，请通过 GitHub 或 Discord 联系我们。"
+
+msgid "K"
+msgstr "K"
+
+msgid "Window"
+msgstr "窗口"
+
+msgid ""
+"If you see a fully black screen, see the FAQ at <span class=\"description "
+"hover:underline\">ets2la.com</span>."
+msgstr ""
+"如果您看到完全黑屏，请查看 <span class=\"description "
+"hover:underline\">ets2la.com</span> 上的常见问题解答。"
+
+msgid "Settings"
+msgstr "设置"
+
+msgid "Error Loading File"
+msgstr "加载文件时发生错误"
+
+#, csharp-format
+msgid "A new update is available: {0}"
+msgstr "有新的更新：{0}"
+
+msgid "Force Base Map Name"
+msgstr "强制使用游戏默认地图名称"
+
+msgid "Experiments"
+msgstr "实验性功能"
+
+msgid "gallons"
+msgstr "加仑"
+
+msgid "m"
+msgstr "m"
+
+msgid "SDKs are currently installed."
+msgstr "SDK 目前已安装。"
+
+msgid "Restart Required"
+msgstr "需要重新启动"
+
+msgid "I understand"
+msgstr "我明白"
+
+#, csharp-format
+msgid "No map data found for installation at '{0}'. Is the installation valid?"
+msgstr "游戏安装位置“{0}”中找不到地图数据。此安装位置是否有效？"
+
+msgid "Please log in before using the chatbot."
+msgstr "使用聊天机器人前请先登录。"
+
+#, csharp-format
+msgid "Error rendering context menu for window {0}: {1}"
+msgstr "渲染窗口 {0} 的上下文菜单时发生错误：{1}"
+
+msgid "Audio playback canceled"
+msgstr "音频播放已取消"
+
+msgid "kilograms"
+msgstr "千克"
+
+msgid "Username Taken"
+msgstr "用户名已存在"
+
+msgid "ft"
+msgstr "ft"
+
+#, csharp-format
+msgid ""
+"Failed to clean plugin shadow directory [gray]{0}[/], it will be removed on "
+"the next startup: {1}"
+msgstr "清理插件缓存目录 [gray]{0}[/] 失败，将于下次启动时移除：{1}"
+
+#, csharp-format
+msgid "Cannot enable plugin {0} because dependency {1} failed to enable."
+msgstr "无法启用插件 {0}，因为依赖项 {1} 启用失败。"
+
+#, csharp-format
+msgid "Discovered {0} manually installed library"
+msgid_plural "Discovered {0} manually installed libraries."
+msgstr[0] "发现 {0} 个手动安装的库。"
+
+msgid "Max Render Distance"
+msgstr "最大渲染距离"
+
+msgid ""
+"Gateway timeout. The server was acting as a gateway or proxy and did not "
+"receive a timely response from the upstream server."
+msgstr ""
+"网关超时。服务器作为网关或代理服务器时，未能在时间内收到上游服务器的响应。"
+
+msgid "psi"
+msgstr "psi"
+
+#, csharp-format
+msgid "An error occurred while loading file '{0}': {1}"
+msgstr "加载文件“{0}”时发生错误：{1}"
+
+msgid "Next/OK"
+msgstr "下一个/OK - 确定"
+
+msgid ""
+"ETS2LA is running as a system administrator. This puts your system at risk "
+"if you use 3rd party plugins. Select Yes to continue anyway and accept the "
+"risk."
+msgstr ""
+"ETS2LA 目前正以系统管理员身份运行。若使用第三方插件，可能会使你的系统面临风"
+"险。若仍要继续并接受此风险，请选择“是”。"
+
+msgid "Recommended Plugins"
+msgstr "推荐插件"
+
+msgid "Failed to remove account. Please try again."
+msgstr "删除账户失败。请重试。"
+
+msgid ""
+"The maximum speed ETS2LA will accelerate to. It might still drift over this "
+"limit due to momentum."
+msgstr "ETS2LA 会加速到的最高速度。由于惯性，速度仍可能略微超过此限制。"
+
+msgid "Game added"
+msgstr "游戏已添加"
+
+msgid "Privacy Policy"
+msgstr "隐私政策"
+
+#, csharp-format
+msgid "You are permanently banned.<br/>Reason: {0}"
+msgstr "您已被永久封禁。<br/>原因：{0}"
+
+#, csharp-format
+msgid "Unloading parsed map data for installation at '{0}'"
+msgstr "正在卸载游戏安装位置“{0}”已解析的地图数据"
+
+msgid ""
+"Some mods implement additional maps like japan.mbd or russia.mbd. If you "
+"find your mods are not loading properly, try enabling this option. This is "
+"known to be required for RusMap."
+msgstr ""
+"部分模组会加入额外的地图，例如 japan.mbd 或 russia.mbd。若发现模组无法正常加"
+"载，请尝试启用此选项。已知 RusMap 需要启用此选项才能正常运行。"
+
+msgid "Extreme"
+msgstr "极高"
+
+#, csharp-format
+msgid ""
+"Cannot uninstall plugin with ID {0} because the following installed plugins "
+"depend on it: {1}"
+msgstr "无法卸载 ID 为 {0} 的插件，因为下列已安装的插件依赖此插件：{1}"
+
+#, csharp-format
+msgid ""
+"You are currently logged in as <span class=\"text-text-l\">{0}</span>. [{1}]"
+msgstr "您当前以 <span class=\"text-text-l\">{0}</span>的身份登录。[{1}]"
+
+msgid ""
+"We will pause the game when we detect instability or the steering is "
+"unresponsive / disables itself for other reasons."
+msgstr ""
+"当检测到不稳定状况，或转向功能没有反应 / 因其他原因自行停用时，将暂停游戏。"
+
+msgid ""
+"Render the vision cameras in the game world. This is useful for debugging, "
+"but can cause performance issues."
+msgstr "在游戏世界中渲染视野摄像头。此功能有助于调试，但可能会造成性能问题。"
+
+#, csharp-format
+msgid "Deleted '{0}'"
+msgstr "已删除“{0}”"
+
+msgid "Open SDK Settings"
+msgstr "打开 SDK 设置"
+
+#, csharp-format
+msgid "Target Speed: <span class=\"text-text-accent font-bold\">{0} {1}</span>"
+msgstr "目标速度：<span class=\"text-text-accent font-bold\">{0} {1}</span>"
+
+#, csharp-format
+msgid "Error initializing memory mapped file: {0}"
+msgstr "初始化内存映射文件时发生错误：{0}"
+
+#, csharp-format
+msgid "Failed to load plugin from [gray]{0}[/]: {1}"
+msgstr "从 [gray]{0}[/] 加载插件失败：{1}"
+
+#, csharp-format
+msgid "Assist Mode: <span class=\"text-text-accent font-bold\">{0}</span>"
+msgstr "辅助模式：<span class=\"text-text-accent font-bold\">{0}</span>"
+
+msgid "Thinking..."
+msgstr "思考中…"
+
+msgid "View Public Telemetry"
+msgstr "查看公开遥测数据"
+
+msgid "Adjust the volume of the audio output."
+msgstr "调整音频输出的音量。"
+
+#, csharp-format
+msgid ""
+"Selected update source '{0}' not found, defaulting to first available source."
+msgstr "找不到所选的更新源“{0}”，将改用第一个可用的源。"
+
+msgid "SET Behaviour"
+msgstr "“设定”按键行为"
+
+#, csharp-format
+msgid "Registered control: {0} [gray italic]({1})[/]"
+msgstr "已注册控件：{0} [gray italic]({1})[/]"
+
+msgid "Keybind is Toggle"
+msgstr "按键绑定为切换模式"
 
 msgid ""
 "You'll have to reinstall the SDK for <span class=\"text-text-accent font-"
@@ -2295,104 +2001,402 @@ msgstr ""
 "每次 <span class=\"text-text-accent font-bold\">游戏更新</span> 后，您都需要"
 "重新安装 SDK。您可以在设置中找到安装页面。"
 
-msgid "Keybind is Toggle"
-msgstr "按键绑定为切换模式"
+msgid "Please see the logs for more information."
+msgstr "请查看日志文件以获取更多信息。"
 
-msgid "Waiting..."
-msgstr "等待中..."
+msgid "Start Game"
+msgstr "启动游戏"
+
+msgid "Binding Timed Out"
+msgstr "绑定超时"
+
+msgid "Thank you to the following people for their ongoing support:"
+msgstr "感谢以下各位一直以来的支持："
+
+msgid "Changes will take effect after restarting the application."
+msgstr "修改将会在应用重启后生效。"
+
+msgid "Use this button to extend the sidebar."
+msgstr "点击此按钮展开侧边栏。"
+
+msgid "Lane Assist Only"
+msgstr "仅车道辅助"
 
 msgid ""
-"Adjust how ETS2LA will respond to necessary steering changes. This for "
-"example controls how quickly ETS2LA will lane-change."
+"This is a highly experimental program. ETS2LA is not perfect, and you will "
+"find issues with it's driving and safety. <span class=\"text-text-accent "
+"font-bold\">Do not leave ETS2LA unattended, especially in multiplayer.</span>"
 msgstr ""
-"调整 ETS2LA 应对必要转向调整的方式。例如，这项设置可以控制 ETS2LA 变道的速"
-"度。"
-
-msgid "Increase/RES"
-msgstr "增加/RES - 重置"
+"这是一个高度实验性的程序。ETS2LA 并不完美，您可能会遇到驾驶和安全方面的问题。"
+"<span class=\"text-text-accent font-bold\">请勿在无人看管的情况下运行 "
+"ETS2LA，尤其是在多人游戏中。</span>"
 
 #, csharp-format
-msgid "Found {0} game installation."
-msgid_plural "Found {0} game installations."
-msgstr[0] "找到 {0} 个游戏安装位置。"
+msgid "Tried to enable {0}, but it was not found among loaded plugins."
+msgstr "尝试启用 {0}，但在已加载的插件中找不到该插件。"
+
+msgid ""
+"Parsing will continue, however information contained in this file won't be "
+"available to ETS2LA."
+msgstr "解析仍会继续，但此文件中的信息将无法供 ETS2LA 使用。"
+
+msgid "The selected file is not a core.scs file."
+msgstr "所选的文件不是 core.scs 文件。"
+
+msgid "Translated by:"
+msgstr "译者为："
+
+msgid "You have successfully logged out."
+msgstr "您已成功退出登录。"
+
+msgid "This game was found at"
+msgstr "此游戏位于"
+
+msgid "Data Quality"
+msgstr "数据质量"
+
+msgid "Overlay"
+msgstr "叠加层"
+
+#, csharp-format
+msgid "Error in AR OpenGL pass: {0}"
+msgstr "AR OpenGL 渲染阶段发生错误：{0}"
+
+msgid "General"
+msgstr "通用"
+
+#, csharp-format
+msgid "Failed to uninstall SDK from '{0}' to '{1}': {2}"
+msgstr "卸载 SDK（从“{0}”至“{1}”）失败：{2}"
+
+#, csharp-format
+msgid "Inner Exception: {0}"
+msgstr "内部异常：{0}"
+
+#, csharp-format
+msgid "Plugin with ID {0} not found."
+msgstr "找不到 ID 为 {0} 的插件。"
+
+msgid "Units and Language"
+msgstr "单位与语言"
+
+msgid "One Time Password"
+msgstr "一次性密码"
+
+#, csharp-format
+msgid "Loaded plugin: [gray]{0}[/] from [gray]{1}[/]."
+msgstr "已加载插件：[gray]{0}[/] 从 [gray]{1}[/]。"
+
+msgid ""
+"You do not have permission to access this resource. The server understood "
+"the request but refuses to authorize it."
+msgstr "你没有访问此资源的权限。服务器已理解此请求，但拒绝授权此次访问。"
+
+msgid "Registration Error"
+msgstr "注册错误"
+
+msgid "Display Language"
+msgstr "显示语言"
+
+msgid "Speedlimit Offset"
+msgstr "速度限制偏移量"
+
+#, csharp-format
+msgid "Changed update source to '{0}'."
+msgstr "已将更新源为“{0}”。"
+
+#, csharp-format
+msgid "Removing manually added installation at '{0}'"
+msgstr "正在移除手动添加的游戏安装位置'{0}'"
+
+#, csharp-format
+msgid "Initializing GLFW Version: {0}"
+msgstr "正在初始化 GLFW，版本：{0}"
+
+msgid "Render Vision Cameras"
+msgstr "渲染视野摄像头"
+
+msgid "Imperial"
+msgstr "英制"
+
+msgid "Unpacking Mods"
+msgstr "解包模组中"
+
+msgid "m/s"
+msgstr "m/s"
+
+#, csharp-format
+msgid "The username {0} is already taken. Please choose a different username."
+msgstr "用户名 {0} 已被占用。请使用其他用户名。"
+
+#, csharp-format
+msgid "Click to {0} this window"
+msgstr "点击即可{0}此窗口"
+
+#, csharp-format
+msgid "Error rendering interaction mode window controls: {0}"
+msgstr "渲染互动模式窗口控件时发生错误：{0}"
+
+msgid "Overlay free CPU time percentage"
+msgstr "叠加层 CPU 空闲时间百分比"
+
+msgid "Invalid directory"
+msgstr "目录无效"
+
+msgid "Logout"
+msgstr "退出登录"
+
+msgid "Starting download..."
+msgstr "正在下载..."
+
+msgid "High"
+msgstr "高"
+
+msgid "Game is still running"
+msgstr "游戏仍在运行"
+
+msgid "Final Disclaimer <span class=\"description\">1/2</span>"
+msgstr "最终免责声明 <span class=\"description\">1/2</span>"
+
+msgid "• ETS2LA Developers, contact@ets2la.com, Poland."
+msgstr "• ETS2LA 开发者，contact@ets2la.com，波兰。"
+
+msgid ""
+"Translate news articles to your selected display language. This may take a "
+"while depending on the number of articles and your internet connection."
+msgstr ""
+"将新闻文章翻译为您选择的显示语言。根据文章数量和您的网络连接情况，此过程可能"
+"需要一些时间。"
+
+msgid "You are not logged in. Open this page again to login."
+msgstr "您尚未登录。请重新打开此页面进行登录。"
+
+msgid "Only copy this to trusted websites, it can do ANYTHING on your behalf."
+msgstr "请仅将此令牌复制到可信的网站，因为它可以代表您执行任何操作。"
+
+msgid "Map Data Parsed"
+msgstr "地图数据解析完成"
+
+msgid ""
+"Adjust the distance ETS2LA will try to maintain from the vehicle in front of "
+"you when using Adaptive Cruise Control."
+msgstr "调整使用自适应巡航控制时，ETS2LA 与前车保持的距离。"
+
+msgid "Unknown Version"
+msgstr "未知版本"
+
+msgid "ETS2LA will offset the speedlimit by this percentage."
+msgstr "ETS2LA 将根据这个百分比来调整限速。"
+
+msgid ""
+"Your system has less than 20GB of RAM. Extreme data fidelity uses "
+"significant amounts of RAM, and may cause your system to become unstable. "
+"Please select a lower fidelity."
+msgstr ""
+"你的系统内存少于 20GB。数据精细度设为“极高”时会使用大量内存，可能导致系统不稳"
+"定。请选择较低的数据精细度。"
+
+#, csharp-format
+msgid "Successfully uninstalled SDK version '{0}' from '{1}'"
+msgstr "已从“{1}”成功卸载 SDK 版本“{0}”"
+
+msgid "Desired Speed: "
+msgstr "目标速度： "
+
+#, csharp-format
+msgid ""
+"Your token will expire on <span class=\"text-text-l\">{0}</span>, you'll be "
+"asked to login again then."
+msgstr ""
+"您的令牌将于 <span class=\"text-text-l\">{0}</span>过期，届时将需要您重新登"
+"录。"
+
+msgid "meters"
+msgstr "米"
+
+msgid ""
+"An error occurred while trying to remove your account. Please try again "
+"later. Error: "
+msgstr "删除账户时发生错误。请稍后重试。错误： "
+
+#, csharp-format
+msgid "Deleted old SDK file '{0}'"
+msgstr ""
+
+msgid "°C"
+msgstr "°C"
+
+#, csharp-format
+msgid "Discovered {0} manually installed plugin."
+msgid_plural "Discovered {0} manually installed plugins."
+msgstr[0] "发现 {0} 个手动安装的插件。"
+
+msgid ""
+"An error occurred while trying to register. Please try again later. Error: "
+msgstr "注册时发生错误。请稍后再试。错误： "
+
+msgid "Checking for updates..."
+msgstr "正在检查更新..."
+
+msgid "No audio output device available"
+msgstr "没有可用的音频输出设备"
+
+msgid "Catalogue"
+msgstr "插件库"
+
+msgid "Starting ETS2LA..."
+msgstr "正在启动 ETS2LA..."
+
+msgid ""
+"How ETS2LA will warn you about exceeding the speed limit by a major amount."
+msgstr "当你大幅超过限速时，ETS2LA 将如何发出警告。"
+
+#, csharp-format
+msgid "Finished parsing installation at '{0}'"
+msgstr "已完成解析位于“{0}”的游戏安装数据"
+
+msgid "Assist Level: "
+msgstr "辅助级别： "
+
+msgid "View Privacy Policy"
+msgstr "查看隐私政策"
+
+#, csharp-format
+msgid "Cannot enable plugin {0} because dependency {1} was not found."
+msgstr "无法启用插件 {0}，因为找不到依赖项 {1}。"
+
+msgid "Keybind Behaviour"
+msgstr "按键行为"
+
+msgid "Next"
+msgstr "下一步"
+
+msgid ""
+"Your session has expired or you don't have a connection to our servers. "
+"Please log in again if you wish to use server-side features."
+msgstr ""
+"您的会话已过期，或者您无法连接到我们的服务器。如果您希望使用服务端功能，请重"
+"新登录。"
+
+msgid "Demo Window"
+msgstr "演示窗口"
+
+msgid "Help"
+msgstr "帮助"
+
+#, csharp-format
+msgid "Skipped stale plugin shadow directory [gray]{0}[/]: {1}"
+msgstr "已略过残留的插件缓存目录 [gray]{0}[/]：{1}"
+
+msgid ""
+"The zoom level of the ETS2LA window. This can be used to scale the window to "
+"your monitor's DPI settings."
+msgstr "ETS2LA 窗口的缩放级别。可用来将窗口调整至与你显示器的 DPI 设置相匹配。"
 
 #, csharp-format
 msgid "You are blocked until {1}.<br/>Reason: {0}"
 msgstr "您已被封禁至 {1}。<br/>原因：{0}"
 
+msgid "Decrease/SET"
+msgstr "减少/SET"
+
+msgid "Finished loading plugins"
+msgstr "插件加载完成"
+
 #, csharp-format
-msgid "found {0} road"
-msgid_plural "found {0} roads"
-msgstr[0] "找到了 {0} 条道路"
+msgid "Failed to install dependency {0} for plugin {1}."
+msgstr "插件 {1} 的依赖项 {0} 安装失败。"
+
+msgid "Error in semaphore update loop."
+msgstr "交通信号灯更新时发生错误。"
+
+#, csharp-format
+msgid "Missing dependency: {0}"
+msgstr "缺少依赖项：{0}"
+
+msgid "Final Disclaimer <span class=\"description\">2/2</span>"
+msgstr "最终免责声明 <span class=\"description\">2/2</span>"
+
+msgid "Logout Failed"
+msgstr "退出登录失败"
+
+#, csharp-format
+msgid "Snap to each 10 {0}"
+msgstr "对齐至 10 {0} 的倍数"
+
+#, csharp-format
+msgid "Created plugin directory: [gray]{0}[/]"
+msgstr "已创建插件目录：[gray]{0}[/]"
+
+#, csharp-format
+msgid "Enabled plugin: [bold]{0}[/]"
+msgstr "已启用插件：[bold]{0}[/]"
 
 msgid ""
-"Please ensure <span class=\"text-text-accent font-bold\">ETS2 and ATS are "
-"closed</span>. You can start the game after completing the onboarding "
-"process."
+"Changing this option requires a restart of ETS2LA to take effect. Restart "
+"now?"
+msgstr "变更此选项后需要重新启动 ETS2LA 才能生效。要立即重新启动吗？"
+
+msgid "And to those who've decided to remain anonymous!"
+msgstr "以及那些选择保持匿名的朋友们！"
+
+msgid ""
+"We don't sell or transfer your personal data to any third parties, in fact, "
+"we don't even collect it. However, we are still obligated to display and "
+"acquire your consent before proceeding."
 msgstr ""
-"请确保 <span class=\"text-text-accent font-bold\">ETS2 和 ATS 均已关闭</"
-"span>。完成引导流程后，您即可启动游戏。"
+"我们不会向任何第三方出售或转让您的个人信息；事实上，我们根本不会收集这些数"
+"据。不过，在进行后续操作之前，我们有义务向您展示相关信息并征得您的同意。"
+
+msgid "Plugin Installer"
+msgstr "插件安装器"
 
 #, csharp-format
-msgid "Failed to download plugin with ID {0} from {1}. Status code: {2}"
-msgstr "从 {1} 下载 ID 为 {0} 的插件失败。状态码：{2}"
+msgid "Successfully installed SDK version '{0}' to '{1}'"
+msgstr "已成功将 SDK 版本“{0}”安装至“{1}”"
 
-msgid "Open Update Page"
-msgstr "打开更新页面"
+msgid "All driving assists have been enabled."
+msgstr "所有驾驶辅助功能均已启用。"
 
-msgid "Maximum Speed"
-msgstr "最高速度"
-
-msgid "Experiments"
-msgstr "实验性功能"
-
-#, csharp-format
-msgid "Failed to read log file at '{0}': {1}"
-msgstr "读取位于“{0}”的日志文件失败：{1}"
-
-msgid "Display JWT Token"
-msgstr "显示 JWT 令牌"
-
-msgid "Following Distance"
-msgstr "跟车距离"
-
-#, csharp-format
-msgid ""
-"Selected update source '{0}' not found, defaulting to first available source."
-msgstr "找不到所选的更新源“{0}”，将改用第一个可用的源。"
-
-#, csharp-format
-msgid "Installed {0}"
-msgstr "已安装 {0}"
+msgid "Display Units: "
+msgstr "显示单位： "
 
 msgid ""
-"Keep the ETS2LA window on top of other windows. If you want to use the "
-"visualization on a single monitor setup, this is recommended."
+"The language ETS2LA will be displayed at. Translations are provided by the "
+"community, we cannot guarantee their accuracy."
+msgstr "ETS2LA 的显示语言。翻译由社区提供，我们无法保证其准确性。"
+
+msgid ""
+"Warning: Your system has less than 20GB of RAM. You can only select up to "
+"High."
+msgstr "警告：你的系统内存少于 20GB。你最多只能选择“高”。"
+
+msgid "Interaction Mode"
+msgstr "互动模式"
+
+#, csharp-format
+msgid "Adding mod: {0}"
+msgstr "正在添加模组：{0}"
+
+msgid "Like ETS2LA?"
+msgstr "喜欢 ETS2LA 吗？"
+
+msgid "Show Plugin Updates"
+msgstr "显示插件更新"
+
+msgid ""
+"Allows ETS2LA to control throttle and brake using direct memory editing. "
+"This might not work on some systems, but allows for control even while "
+"tabbed out of the game. If you enable this and it doesn't work, please "
+"report the issue on our Discord server."
 msgstr ""
-"让 ETS2LA 窗口始终显示在其他窗口之上。如果您使用单显示器设置并希望使用可视化"
-"界面，建议启用此选项。"
-
-msgid "SDK Uninstalled"
-msgstr "已卸载 SDK"
-
-msgid ""
-"Consider supporting us by becoming a <span class=\"font-bold text-text-"
-"l\">GitHub Sponsor</span> to cover ongoing development and operational costs."
-msgstr ""
-"考虑成为 <span class=\"font-bold text-text-l\">GitHub 赞助者</span>，帮助我们"
-"承担持续开发和运营所需的费用。"
+"允许 ETS2LA 通过直接修改内存来控制油门和刹车。此功能可能无法在某些系统上正常"
+"工作，但即使切换到游戏外，也仍可进行控制。如果启用此功能后无法正常工作，请在"
+"我们的 Discord 服务器上报告问题。"
 
 #, csharp-format
-msgid "Font file not found at {0}"
-msgstr "找不到字体文件：{0}"
-
-msgid "lbs"
-msgstr "lbs"
-
-msgid ""
-"Adjust how quickly ETS2LA will respond to desired changes in acceleration. "
-"Emergency braking is not affected."
-msgstr "调整 ETS2LA 对目标加速度变化的反应速度。紧急制动不受此设置影响。"
+msgid "Not all dependencies for plugin {0} are installed."
+msgstr "插件 {0} 的依赖项尚未全部安装。"
 
 #, csharp-format
 #~ msgid "Playing sound: {0}"

@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-11-01 23:03:06+0200\n"
+"POT-Creation-Date: 2026-11-07 14:13:54+0200\n"
 "PO-Revision-Date: 2026-10-27 15:18+0000\n"
 "Last-Translator: Tumppi066 <contact@ets2la.com>\n"
 "Language-Team: Finnish <http://weblate.ets2la.com/projects/ets2la/ets2la/fi/"
@@ -14,88 +14,282 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 5.14.3\n"
 
-#, csharp-format
-msgid "Currently running at {0} FPS."
-msgstr "Tämänhetkinen virkistystaajuus {0} FPS."
-
-#, csharp-format
-msgid "Registered control: {0} [gray italic]({1})[/]"
-msgstr "Rekisteröitiin ohjainmääritys {0} [gray italic]({1})[/]"
-
 msgid ""
-"This allows ETS2LA to render in multiple viewports, meaning you can move "
-"overlay windows to any monitor."
+"This setting drops redundant information while maintaining most detail "
+"objects (such as signs). Includes all hidden and AI only roads."
 msgstr ""
-"Tämä antaa peitekuvan renderöidä monessa eri ikkunassa. Voit siis siirtää "
-"peitekuvan ikkunoita vapaasti mihin vain."
+"Tämä asetus hylkää turhat tiedot, mutta kuitenkin pitää lähes kaikki "
+"yksityiskohdat (kuten kyltit). Sisältää piilotetut ja vain tekoälylle "
+"tarkoitetut tiet."
 
-#, csharp-format
-msgid "Tried to disable {0}, but it was not found among loaded plugins."
-msgstr ""
-"Lisäosa {0} yritettiin sammuttaa, mutta sitä ei löytynyt ladatuista "
-"lisäosista."
+msgid "Unknown Control ID"
+msgstr "Tuntematon ohjainmäärityksen ID"
 
-msgid "Restarting ETS2LA..."
-msgstr "Käynnistetään uudelleen..."
+msgid "Sorry"
+msgstr "Anteeksi"
+
+msgid "Stay on Top"
+msgstr "Pidä ikkuna päällä"
+
+msgid "Display"
+msgstr "Grafiikat"
+
+msgid "Go to Account Settings"
+msgstr "Tilin asetuksiin"
+
+msgid "Overlay Interaction"
+msgstr "Peitekuvan kanssa interaktio"
 
 msgid "SDK Installation Failed"
 msgstr "SDK:n asennus epäonnistui"
 
 #, csharp-format
-msgid ""
-"Your token will expire on <span class=\"text-text-l\">{0}</span>, you'll be "
-"asked to login again then."
-msgstr ""
-"Kirjautumisavaimesi vanhenee <span class=\"text-text-l\">{0}</span>. "
-"Pyydämme sinua kirjautumaan sisään uudelleen tuolloin."
+msgid "Failed to open joystick {0}."
+msgstr "Laitteen {0} avaus epäonnistui."
+
+msgid "Anonymous Telemetry"
+msgstr "Anonyymi Tietojenkeräys"
 
 msgid ""
-"This chatbot is provided for free by <span class=\"text-text-l\">Lun011666</"
-"span>.<br/>For the sake of the community, we ask you not to abuse access."
+"Keep the ETS2LA window on top of other windows. If you want to use the "
+"visualization on a single monitor setup, this is recommended."
 msgstr ""
-"Tämän chatbotin toimittaa maksutta <span class=\"text-text-l\">Lun011666</"
-"span>.<br/>Yhteisön puolesta, ethän väärinkäytä bottia."
-
-msgid ""
-"Memory not available for output, please ensure the game is running and "
-"reinstall the SDK if necessary."
-msgstr ""
-"Komentojen lähetyksen muistia ei saatu avattua, varmista että peli on "
-"käynnissä ja asenna SDK uudelleen jos tarpeellista."
-
-msgid "Log sent. Click here to view it."
-msgstr "Lokitiedosto lähetetty. Voit painaa tästä katsoaksesi sen sisällön."
+"Pitää sovelluksen ikkunan päälimmäisenä, jos käytössäsi on vain yksi näyttö "
+"tämä voi olla hyödyllinen."
 
 #, csharp-format
-msgid "Loaded {0} plugin from the Plugins folder."
-msgid_plural "Loaded {0} plugins from the Plugins folder."
-msgstr[0] "Ladattiin {0} lisäosa \"Plugins\" kansiosta."
-msgstr[1] "Ladattiin {0} lisäosaa \"Plugins\" kansiosta."
+msgid "Legacy audio path detected: {0}"
+msgstr ""
 
 #, csharp-format
-msgid "No update available for plugin with ID {0}."
-msgstr "Lisäosalle {0} ei ole saatavilla päivityksiä."
-
-msgid "Please close the game before continuing with the onboarding process."
-msgstr "Suljethan pelin ennen perehdytyksen jatkamista."
-
-msgid "Fast"
-msgstr "Nopea"
-
-#, csharp-format
-msgid "Failed to unload plugin load context: {0}"
-msgstr "Lisäosan latauskontekstin poisto epäonnistui: {0}"
+msgid "Control with ID '{0}' not found for updating bindings."
+msgstr ""
+"Ohjainmääritystä jonka ID {0}, ei löytynyt määrityksen muuttamista varten."
 
 msgid ""
-"When this key is held, the overlay will receive mouse input and allow you to "
-"interact with it. NOTE: Interaction with items below the overlay is not "
-"possible during this time."
+"Force ETS2LA to load the map on game startup. This can resolve issues where "
+"your game.log.txt is not where ETS2LA expects it."
 msgstr ""
-"Kun tämä ohjausmääritys on painettu, peitekuva ottaa huomioon hiiren ja "
-"antaa sinun muokata ikkunoiden kokoa ja sisältöä."
+"Pakota ETS2LA lataaman pelin karttadata heti kun se käynnistyy. Voi korjata "
+"ongelmia joissa pelilokisi (game.log.txt) ei ole oletetussa paikassa."
 
-msgid "Responsiveness"
-msgstr "Herkkyys"
+msgid "Gates"
+msgstr "Portit"
+
+msgid "Game SDK"
+msgstr "Pelin SDK"
+
+msgid "Send log"
+msgstr "Lähetä lokitiedosto"
+
+#, csharp-format
+msgid "Parsing installation at '{0}' (version: {1})"
+msgstr "Ladataan peliä {0} (versio {1})"
+
+msgid ""
+"When changing the speed, snap to the nearest 10. i.e. 37 -> 39 -> 40 -> 42..."
+msgstr ""
+"Kun vaihdat nopeutta, valitsemme lähimmän 10. Esim. 37 -> 39 -> 40 -> 42..."
+
+msgid "Register"
+msgstr "Rekisteröidy"
+
+msgid "kg"
+msgstr "kg"
+
+msgid ""
+"Decreases the current target speed by one step. If speed control and lane "
+"assist are off, this key acts like SET. Meaning it will set the current "
+"speed to speedlimit."
+msgstr ""
+"Pienentää tavoitenopeutta yhdellä askeleella. Jos ajotuet ovat pois päältä. "
+"Tämä ohjainmääritys käyttäytyy SET (Aseta) painikkeen tavoin. Eli se asettaa "
+"tavoitenopeuden nopeusrajoitukseen."
+
+msgid "Become a GitHub Sponsor"
+msgstr ""
+"Suomalaiset eivät voi tukea tätä kautta rahankeräys säätelyiden vuoksi!"
+
+msgid "Game not found"
+msgstr "Peliä ei löydetty"
+
+msgid "If you've not yet installed it, you can find it in the catalogue."
+msgstr "Jos et ole vielä asentanut sitä, löydät sen lisäosien luettelosta."
+
+#, csharp-format
+msgid "Installed {0}"
+msgstr "Asennettiin {0}"
+
+#, csharp-format
+msgid "Error loading map data from '{0}': {1}"
+msgstr "Virhe karttadatan latauksessa '{0}':sta: {1}"
+
+msgid "Medium"
+msgstr "Keskitaso"
+
+msgid "Maximum Speed"
+msgstr "Maksimi nopeus"
+
+msgid ""
+"When the game reports itself being paused, ETS2LA won't render AR elements."
+msgstr ""
+"Kun peli raportoi olevansa pysäytetty, ETS2LA ei renderöi AR'n elementtejä."
+
+msgid ""
+"Your username may only contain letters, numbers, underscores, hyphens and "
+"periods, and must start and end with a letter or number."
+msgstr ""
+"Käyttäjätunnuksesi voi sisältää vain kirjaimia, numeroita, viivoja ja "
+"pisteitä. Sen pitää alkaa ja loppua numeroon. (äöå ei tuettu)"
+
+#, csharp-format
+msgid "Connected joystick: [bold]{0}[/] [gray italic]({1})[/]"
+msgstr "Yhdistettiin laite: [bold]{0}[/] [gray italic]({1})[/]"
+
+msgid "Username"
+msgstr "Käyttäjätunnus"
+
+#, csharp-format
+msgid "Starting binding for control {0} ({1})"
+msgstr "Aloitetaan ohjausmäärityksen {0} ({1}) uudelleenmääritys"
+
+#, csharp-format
+msgid "Failed to enable dependency: {0}"
+msgstr "Virhe vaatimuksen käynnistyksen yhteydessä: {0}"
+
+msgid "Main"
+msgstr "Pääasialliset"
+
+msgid "Only Show Official News"
+msgstr "Näytä vain viralliset uutiset"
+
+#, csharp-format
+msgid ""
+"Version {0} of plugin with ID {1} is not compatible with the current "
+"application version or operating system."
+msgstr ""
+"Lisäosan {1} versio {0} ei ole yhteensopiva nykyisen sovellusversion tai "
+"käyttöjärjestelmän kanssa."
+
+#, csharp-format
+msgid "found {0} road"
+msgid_plural "found {0} roads"
+msgstr[0] "{0} tie"
+msgstr[1] "{0} tietä"
+
+#, csharp-format
+msgid "Binding for control {0} ({1}) timed out."
+msgstr "Ohjainmäärityksen {0} ({1}) määritys aikakatkaistiin."
+
+msgid "Remove Account"
+msgstr "Poista Tili"
+
+#, csharp-format
+msgid ""
+"Library plugin with ID [gray]{0}[/] is already loaded, skipping duplicate."
+msgstr "Kirjasto ID:llä [gray]{0}[/] on jo ladattu, ohitetaan duplikaatti."
+
+msgid "Successfully opened memory for output."
+msgstr "Avattiin komentojen lähetyksen muisti onnistuneesti."
+
+msgid "Dashboard"
+msgstr "Etusivu"
+
+msgid "Update Available"
+msgstr "Päivitys saatavilla"
+
+msgid "Error in navigation update loop."
+msgstr "Virhe navigoinnin päivityksessä."
+
+msgid ""
+"Warning: Your system has less than 16GB of RAM. You can only select up to "
+"Medium."
+msgstr ""
+"Varoitus: Laitteessasi on vähemmän kuin 16GB muistia. Voit valita "
+"korkeintaan keskitason."
+
+msgid "Window Zoom"
+msgstr "Ikkunan suurennus"
+
+msgid "Show More Logs"
+msgstr "Näytä lisää lokeja"
+
+msgid ""
+"Cracked games or demos will block our SDK from loading. They do not work, "
+"and we don't intend to fix this."
+msgstr ""
+"Murretut pelit ja demot estävät SDK:n latauksen. Ne siis eivät usein toimi, "
+"ja emme aio korjata tätä."
+
+msgid "Contact us on Discord"
+msgstr "Ote yhteyttä Discordissa"
+
+msgid "km/h"
+msgstr "km/h"
+
+msgid "Overlay is disabled in settings, skipping initialization."
+msgstr "Peitekuva on poistettu käytöstä, ohitetaan käynnistys."
+
+msgid ""
+"ETS2LA will display information on top of the game. You can interact with "
+"these overlay elements using <span class=\"text-text-accent font-"
+"bold\">Overlay Interaction</span>. Try it!"
+msgstr ""
+"Näytämme tietoja pelin päällä. Voit vuorovaikuttaa näiden elementtien (esim. "
+"ikkunoiden) kanssa käyttäen <span class=\"text-text-accent font-"
+"bold\">Peitekuvan Interaktio</span> painiketta. Kokeileppa!"
+
+msgid "If you can't interact with the Window, press CTRL+R."
+msgstr "Jos et voi painaa mitään, käytä CTRL+R ladataksesi sivun uudelleen."
+
+msgid "The step size for changing the cruise control speed."
+msgstr "Vakionopeudensäätimen nopeuden säädön askelkoko."
+
+msgid "Please enter a username."
+msgstr "Anna käyttäjätunnus."
+
+#, csharp-format
+msgid "Your username must be at least {0} characters long."
+msgstr "Käyttäjätunnuksesi on oltava ainakin {0} kirjainta pitkä."
+
+msgid "Press anywhere outside the dialog to close it."
+msgstr "Paina dialogin ulkopuolelle sulkeaksesi sen."
+
+msgid "Welcome to ETS2LA!"
+msgstr "Tervetuloa ETS2LA:han!"
+
+msgid "Account Removal Failed"
+msgstr "Tilin poisto epäonnistui"
+
+msgid ""
+"<span class=\"text-text-accent\"))>Success!</span> You can find more plugins "
+"in the catalogue later."
+msgstr ""
+"<span class=\"text-text-accent\"))>Onnistui!</span> Löydät enemmän lisäosia "
+"luettelosta myöhemmin."
+
+msgid "Initializing..."
+msgstr "Alustetaan..."
+
+msgid ""
+"Please ensure <span class=\"text-text-accent font-bold\">ETS2 and ATS are "
+"closed</span>. You can start the game after completing the onboarding "
+"process."
+msgstr ""
+"Varmistathan että <span class=\"text-text-accent font-bold\">ETS2 ja ATS "
+"ovat suljettu</span>. Voit käynnistää pelin uudelleen perehdytyksen jälkeen."
+
+#, csharp-format
+msgid "Error rendering window {0}: {1}"
+msgstr "Virhe ikkunan {0} renderöinnissä: {1}"
+
+#, csharp-format
+msgid "Failed to refresh joysticks: {0}"
+msgstr "Laitteiden päivitys epäonnistui: {0}"
+
+#, csharp-format
+msgid "Error loading '{0}': {1}"
+msgstr "Virhe ladattaessa tiedostoa {0}: {1}"
 
 msgid ""
 "ETS2LA requires you to install our <span class=\"text-text-accent font-"
@@ -106,377 +300,316 @@ msgstr ""
 "font-bold\">SDK:n</span>. Asenna se <span class=\"text-text-accent font-"
 "bold\">ainakin yhteen peliin</span> jatkaaksesi."
 
-msgid ""
-"Warning: Your system has less than 16GB of RAM. You can only select up to "
-"Medium."
-msgstr ""
-"Varoitus: Laitteessasi on vähemmän kuin 16GB muistia. Voit valita "
-"korkeintaan keskitason."
-
-msgid ""
-"Allows ETS2LA to control throttle and brake using direct memory editing. "
-"This might not work on some systems, but allows for control even while "
-"tabbed out of the game. If you enable this and it doesn't work, please "
-"report the issue on our Discord server."
-msgstr ""
-"Antaa sovelluksen ohjata polkimien paikkaa suoralla muistimuokkauksella. Ei "
-"välttämättä toimi kaikilla laitteilla, mutta toimii myös kun et ole pelin "
-"ikkunassa. Voit siis avata mm. nettiselaimen kun ETS2LA ajaa."
-
-msgid "Key"
-msgstr "Näppäin"
-
-msgid "Logout"
-msgstr "Kirjaudu ulos"
-
-msgid ""
-"When the game reports itself being paused, ETS2LA won't render AR elements."
-msgstr ""
-"Kun peli raportoi olevansa pysäytetty, ETS2LA ei renderöi AR'n elementtejä."
+msgid "Enable Memory Output for Pedals"
+msgstr "Käytä muistinmuokkausta polkimien ohjaukseen"
 
 #, csharp-format
-msgid "Download progress: {0}%"
-msgstr "Latauksen eteneminen: {0}%"
+msgid "Successfully updated plugin with ID {0}."
+msgstr "Lisäosa {0} päivitettiin onnistuneesti."
 
-msgid "I understand"
-msgstr "Ymmärrän"
+msgid "Look in the top left corner."
+msgstr "Katso vasempaan yläkulmaan."
 
-msgid "Login Failed"
-msgstr "Kirjautuminen epäonnistui"
+msgid "Failed to log out. Please try again."
+msgstr "Uloskirjautuminen epäonnistui. Yritä uudelleen."
 
-msgid "Keyboard"
-msgstr "Näppäimistö"
+msgid "Visual"
+msgstr "Visuaalinen"
 
-msgid "The selected directory does not exist."
-msgstr "Valittu kansio ei ole olemassa."
+msgid "Additional"
+msgstr "Lisäasetukset"
 
-msgid "Networking"
-msgstr "Verkko"
+msgid "Install Plugins"
+msgstr "Asenna Lisäosat"
 
-msgid "liters"
-msgstr "litraa"
-
-#, csharp-format
-msgid "found {0} node"
-msgid_plural "found {0} nodes"
-msgstr[0] "{0} piste"
-msgstr[1] "{0} pistettä"
-
-msgid "Update check skipped, using already cached result."
-msgstr "Päivityksen tarkastus ohitettiin, käytetään tallennettua vastausta."
-
-msgid "Press anywhere outside the dialog to close it."
-msgstr "Paina dialogin ulkopuolelle sulkeaksesi sen."
-
-msgid "hide"
-msgstr "piilottaaksesi"
-
-msgid "Username"
-msgstr "Käyttäjätunnus"
-
-msgid "Map Data Parsed"
-msgstr "Karttadata ladattu"
-
-msgid "Binding Timed Out"
-msgstr "Määrittäminen aikakatkaistiin"
-
-msgid "Invalid file"
-msgstr "Virheellinen tiedosto"
-
-msgid "Enable"
-msgstr "Käynnistä"
-
-msgid "Max Overlay Framerate"
-msgstr "Peitekuvan kuvataajuus"
-
-#, csharp-format
-msgid "Failed to acquire joystick [gray italic]({0})[/]: {1}"
-msgstr "Virhe laitteen [gray italic]({0})[/] tietojen keräämisessä: {1}"
-
-msgid ""
-"An error occurred while trying to register. Please try again later. Error: "
-msgstr ""
-"Rekisteröinnin yhteydessä tapahtui virhe. Kokeile myöhemmin uudelleen. "
-"Virhe: "
-
-#, csharp-format
-msgid "Failed to uninstall SDK from '{0}' to '{1}': {2}"
-msgstr "SDK:n poisto paikasta {0} paikkaan {1} epäonnistui: {2}"
-
-msgid ""
-"This will disconnect ETS2LA from the game and close the window. You can "
-"minimize the window to keep ETS2LA running."
-msgstr ""
-"Tämä katkaisee ETS2LA:n pelistä ja sulkee tämän ikkunan. Voit pienentää "
-"ETS2LA:n ikkunan jotta se pysyy päällä, mutta pois tieltä."
-
-msgid "Restart and Continue"
-msgstr "Käynnistä uudelleen ja jatka"
-
-msgid "Demo Window"
-msgstr "Demoikkuna"
-
-msgid "Installing..."
-msgstr "Asennetaan..."
-
-#, csharp-format
-msgid "Legacy audio path detected: {0}"
-msgstr ""
-
-msgid ""
-"Adjust the distance ETS2LA will try to maintain from the vehicle in front of "
-"you when using Adaptive Cruise Control."
-msgstr "Säädä etäisyyttä, jonka ETS2LA pitää edellä ajavasta ajoneuvosta."
-
-msgid "Enter the OTP generated by your authenticator app."
-msgstr "Kirjoita autentikaatiosovelluksen OTP koodi tähän."
-
-#, csharp-format
-msgid "No map data found for installation at '{0}'. Is the installation valid?"
-msgstr "Karttadataa ei voitu ladata pelille {0}, onko se oikein ladattu?"
-
-msgid "Recommended Plugins"
-msgstr "Suositellut lisäosat"
-
-msgid "Successfully opened memory for output."
-msgstr "Avattiin komentojen lähetyksen muisti onnistuneesti."
-
-msgid "Logout Error"
-msgstr "Uloskirjautumisen yhteydessä tapahtui virhe"
-
-msgid "Use this button to extend the sidebar."
-msgstr "Käytä tätä painiketta avaaksesi sivupalkin."
-
-#, csharp-format
-msgid "Cannot enable plugin {0} because dependency {1} was not found."
-msgstr ""
-"Lisäosan {0} käynnistys estetty, sillä sen edellytystä {1} ei löydetty."
-
-msgid "Clear Console"
-msgstr "Tyhjennä"
-
-msgid "Account Removed"
-msgstr "Tili poistettu"
-
-msgid "Thinking..."
-msgstr "Ajattelee..."
-
-#, csharp-format
-msgid "Found {0} (version: {1}) at '{2}'"
-msgstr "Löydettiin {0} (versio {1}) paikassa {2}"
-
-#, csharp-format
-msgid "Failed to shutdown plugin {0}: {1}"
-msgstr "Lisäosan {0} sulkeminen epäonnistui: {1}"
-
-msgid "Display Units"
-msgstr "Yksiköt"
-
-msgid "psi"
-msgstr "psi"
-
-msgid "SDKs need to be installed."
-msgstr "SDK:t täytyy vielä asentaa ennen käyttöä."
-
-#, csharp-format
-msgid "Detected a switch to {0}, waiting for its game data to be parsed."
-msgstr ""
-"Huomattiin muutos peliin {0}, odotetaan sen karttadatan latauksen "
-"valmistumista."
-
-msgid "Unable to read the current log."
-msgstr "Virhe luettaessa nykyistä lokitiedostoa."
-
-msgid ""
-"Changing the display language requires a restart of ETS2LA to take effect. "
-"Restart now?"
-msgstr ""
-"Kielen vaihtaminen vaatii sovelluksen uudelleenkäynnistystä. Käynnistetäänkö "
-"uudelleen nyt?"
-
-msgid "Units and Language"
-msgstr "Yksiköt ja kieli"
-
-msgid "Only Show Official News"
-msgstr "Näytä vain viralliset uutiset"
-
-msgid "Share log"
-msgstr "Jaa lokitiedosto"
-
-msgid ""
-"The zoom level of the ETS2LA window. This can be used to scale the window to "
-"your monitor's DPI settings."
-msgstr ""
-"ETS2LA:n ikkunan suurennusaste. Jos teksti ja muut grafiikat ovat mielestäsi "
-"liian pieniä, voit nostaa tätä arvoa."
-
-msgid "Welcome to ETS2LA!"
-msgstr "Tervetuloa ETS2LA:han!"
-
-msgid "Max Render Distance"
-msgstr "Maksimi renderöinti etäisyys"
-
-#, csharp-format
-msgid "Parsing sector {0} of {1}..."
-msgstr "Ladataan sektoria {0}/{1}..."
-
-msgid "Initializing GLFW..."
-msgstr "Käynnistetään GLFW ikkunaa..."
-
-msgid "Audio Settings"
-msgstr ""
-
-msgid "Anonymous Telemetry"
-msgstr "Anonyymi Tietojenkeräys"
-
-msgid "Please log in before using the chatbot."
-msgstr "Kirjaudu sisään ennen keskustelubotin käyttöä."
-
-msgid "Go to Account Settings"
-msgstr "Tilin asetuksiin"
-
-msgid "Failed to initialize overlay, ImGui initialization failed."
-msgstr "Peitekuvan käynnistys epäonnistui, ImGui ei käynnistynyt."
-
-msgid "Performance Overlay"
-msgstr "Suorituskyvyn Peitekuva"
-
-msgid ""
-"Gateway timeout. The server was acting as a gateway or proxy and did not "
-"receive a timely response from the upstream server."
-msgstr ""
-"Reitityksen aikakatkaisu. Palvelin joka toimii reitittimenä ei saanut "
-"seuraavalta palvelimelta vastausta aikakatkaisun puitteissa."
-
-msgid "Display"
-msgstr "Grafiikat"
-
-msgid "Open Externally"
-msgstr "Avaa ulkoisesti"
-
-#, csharp-format
-msgid "Cannot enable plugin {0} because dependency {1} failed to enable."
-msgstr ""
-"Lisäosan {0} käynnistys estetty, sillä se edellyttää {1}, jonka käynnistys "
-"epäonnistui."
-
-#, csharp-format
-msgid "{0} not found in supported languages."
-msgstr "Kieltä {0} ei tueta."
-
-msgid "Login Error"
-msgstr "Kirjautumisen yhteydessä tapahtui virhe"
-
-msgid "Check For Updates"
-msgstr "Tarkista Päivitykset"
-
-msgid "The game has been added successfully."
-msgstr "Peli lisättiin onnistuneesti."
-
-msgid "Error in semaphore update loop."
-msgstr "Virhe tiesignaalien päivityksessä."
-
-msgid ""
-"This might take a while depending on your internet connection and the source."
-msgstr ""
-"Tässä voi kestää hetki riippue verkkosi- ja päivityspalvelimen nopeudesta."
-
-msgid "ETS2LA will offset the speedlimit by this amount."
-msgstr "ETS2LA siirtää nopeusrajoitusta tämän verran."
-
-msgid ""
-"ETS2LA uses a control setup that should be similar to real life systems. You "
-"can rebind the default controls on the right side."
-msgstr ""
-"Sovellus käyttää ohjausmäärittelyitä, jotka muistuttavat oikeita ajoneuvoja. "
-"Voit vaihtaa näiden määritykset ikkunan oikealla puolella."
-
-msgid ""
-"Force ETS2LA to load the map on game startup. This can resolve issues where "
-"your game.log.txt is not where ETS2LA expects it."
-msgstr ""
-"Pakota ETS2LA lataaman pelin karttadata heti kun se käynnistyy. Voi korjata "
-"ongelmia joissa pelilokisi (game.log.txt) ei ole oletetussa paikassa."
-
-msgid "Speed Limit"
-msgstr "Nopeusrajoitus"
-
-msgid "Error in telemetry update loop."
-msgstr "Virhe pelin telemetrian päivityksessä."
-
-#, csharp-format
-msgid "Updated bindings for control: {0} ({1}) to Device: {2}, Control: {3}"
-msgstr ""
-"Päivitettiin ohjainmääritys {0} ({1}), nyt laitteessa {2} ja painikkeessa {3}"
-
-msgid "One Time Password"
-msgstr "Kertakäyttökoodi"
-
-msgid "Request cancelled."
-msgstr "Pyyntö peruutettu."
-
-msgid "Extreme"
-msgstr "Järjetön"
-
-msgid "gal"
-msgstr "gal"
-
-#, csharp-format
-msgid "Error rendering context menu for window {0}: {1}"
-msgstr "Virhe ikkunan {0} valikon renderöinnissä: {1}"
-
-#, csharp-format
-msgid "Missing dependency: {0}"
-msgstr "Vaatimusta {0} ei löydy"
-
-msgid "Game Telemetry"
-msgstr "Pelin Telemetria"
-
-msgid "Early"
-msgstr "Aikaisin"
-
-#, csharp-format
-msgid ""
-"Installation at '{0}' is not currently running, waiting for load of profile."
-msgstr "Peli {0} ei ole käynnissä, odotetaan käyttäjäprofiilin latausta."
-
-msgid "Error Loading File"
-msgstr "Virhe ladattaessa tiedostoa"
-
-msgid "Pause When Unstable"
-msgstr "Pysäytä peli jos vaarallinen"
-
-#, csharp-format
-msgid "{0}"
-msgstr "{0}"
-
-msgid "Keybind Behaviour"
-msgstr "Ohjainmäärityksien Toiminta"
+msgid "Show Fewer Logs"
+msgstr "Näytä vähemmän lokeja"
 
 msgid "Your login token is invalid or expired."
 msgstr "Kirjautumisavaimesi on vanhentunut."
 
-msgid "Enable All"
-msgstr "Käynnistä kaikki"
+#, csharp-format
+msgid "Error while downloading update: {0}"
+msgstr "Virhe päivityksen latauksessa: {0}"
+
+msgid "I won't leave ETS2LA unattended"
+msgstr "En jätä sovellusta vahtimatta"
+
+msgid "Keyboard"
+msgstr "Näppäimistö"
+
+#, csharp-format
+msgid "No game executable found in '{0}', not adding it as an installation."
+msgstr "Käynnistystiedostoa ei löytynyt paikasta {0}, peliä ei lisätä."
+
+msgid "Chime"
+msgstr "Äänimerkki"
+
+msgid "Failed to create GLFW window"
+msgstr "Virhe GLFW ikkunan avaamisessa"
+
+msgid "Fast"
+msgstr "Nopea"
+
+msgid "Install Update and Restart"
+msgstr "Asenna päivitys ja käynnistä uudelleen"
 
 msgid "Curve Quality"
 msgstr "Mutkien laatu"
+
+msgid ""
+"Adjust how ETS2LA will respond to necessary steering changes. This for "
+"example controls how quickly ETS2LA will lane-change."
+msgstr ""
+"Säädä miten ETS2LA reagoi tarpeellisiin ohjausliikkeisiin. Tämä esimerkiksi "
+"säätää miten nopeasti vaihdamme kaistaa."
+
+msgid "Logout Successful"
+msgstr "Uloskirjautuminen onnistui"
+
+#, csharp-format
+msgid "Successfully uninstalled plugin with ID {0}."
+msgstr "Lisäosa {0} poistettiin onnistuneesti."
+
+msgid "No Update Available"
+msgstr "Päivitystä ei ole saatavilla"
+
+msgid "Performance Overlay"
+msgstr "Suorituskyvyn Peitekuva"
+
+#, csharp-format
+msgid "Disconnected joystick: [gray italic]({0})[/]"
+msgstr "Laite [gray italic]({0})[/] poistettiin"
+
+#, csharp-format
+msgid "Update to {0}"
+msgstr "Päivitä versioon {0}"
+
+#, csharp-format
+msgid ""
+"When receiving a speedlimit of {0} {1}, we will set the speed to {2} {3}."
+msgstr "Kun nopeusrajoitus vaihtuu {0} {1}, nopeus asetetaan {2} {3}."
+
+#, csharp-format
+msgid "Control with ID '{0}' not found for updating axis behavior."
+msgstr ""
+"Ohjainmääritystä jonka ID {0}, ei löytynyt akselin toiminnan muuttamista "
+"varten."
+
+msgid "Networking"
+msgstr "Verkko"
+
+msgid ""
+"By clicking <span class=\"font-bold\">Continue</span>, you agree to the "
+"transfer of your possible account information to an international recipient."
+msgstr ""
+"Painamalla <span class=\"font-bold\">jatka</span> hyväksyt mahdollisten "
+"tilitietojesi siirron ulkomaiselle vastaanottajalle."
+
+#, csharp-format
+msgid ""
+"Press a button or move an axis on your input device to bind it to this "
+"control. This will time out in {0} seconds."
+msgstr ""
+"Paina nappia tai liikuta akselia laitteessasi. Aikakatkaisu määritykselle on "
+"{0} sekunttia."
+
+msgid "Enable All"
+msgstr "Käynnistä kaikki"
+
+msgid "Data Parsing"
+msgstr "Karttadatan Lataaminen"
+
+msgid ""
+"Service unavailable. The server is currently unable to handle the request "
+"due to temporary overloading or maintenance."
+msgstr ""
+"Palvelu ei ole saatavilla. Palvelin ei pysty käsittelemään pyyntöä niiden "
+"määrän, tai esimerkiksi huollon takia."
+
+msgid "Enabled"
+msgstr "Käynnissä"
+
+msgid ""
+"How early ETS2LA will attempt to respond to possible collisions. Turning "
+"this to off will disable collision avoidance regardless of your enabled "
+"plugins."
+msgstr ""
+"Miten aikaisin ETS2LA pyrkii välttämään mahdolliset törmäykset. Kytkemällä "
+"tämän pois katkaisee törmäyksen eston riippumatta käynnissä olevista "
+"lisäosista."
+
+msgid "The selected file does not exist."
+msgstr "Valittu tiedosto ei ole olemassa."
+
+#, csharp-format
+msgid "Assists Enabled: <span class=\"text-text-accent font-bold\">{0}</span>"
+msgstr ""
+"Ajotuet päällä: <span class=\"text-text-accent font-bold\">{0}</span> "
+"(\"True\" päällä, \"False\" pois)"
+
+msgid ""
+"Only show news articles from official sources, such as the ETS2LA team or "
+"it's developers."
+msgstr ""
+"Näytä uutiset vain virallisista lähteistä, kuten ETS2LAn tiimiltä ja sen "
+"kehittäjiltä."
+
+msgid ""
+"Memory not available for output, please ensure the game is running and "
+"reinstall the SDK if necessary."
+msgstr ""
+"Komentojen lähetyksen muistia ei saatu avattua, varmista että peli on "
+"käynnissä ja asenna SDK uudelleen jos tarpeellista."
+
+msgid "All driving assists have been disabled."
+msgstr ""
+
+#, csharp-format
+msgid "Latest Version: {0}"
+msgstr "Viimeisin versio: {0}"
+
+msgid "Translating release notes..."
+msgstr "Käännetään muutoslokia..."
+
+msgid ""
+"This chatbot is provided for free by <span class=\"text-text-l\">Lun011666</"
+"span>.<br/>For the sake of the community, we ask you not to abuse access."
+msgstr ""
+"Tämän chatbotin toimittaa maksutta <span class=\"text-text-l\">Lun011666</"
+"span>.<br/>Yhteisön puolesta, ethän väärinkäytä bottia."
+
+#, csharp-format
+msgid "Failed to read version from '{0}': {1}"
+msgstr "Version määritys paikasta {0} epäonnistui: {1}"
+
+msgid "Are you sure?"
+msgstr "Oletko varma?"
 
 #, csharp-format
 msgid "You have successfully logged in as {0}."
 msgstr "Olet kirjautunut sisään käyttäjänä {0}."
 
-msgid "m"
-msgstr "m"
+msgid "Render AR Elements"
+msgstr "Renderöi AR (3D) elementit"
 
-msgid "Overlay free CPU time percentage"
-msgstr "Peitekuvan vapaan prosessoriajan määrä"
+msgid "Unchanged / Unavailable"
+msgstr "Muuttumaton"
 
-msgid "You have successfully logged out."
-msgstr "Sinut on kirjattu ulos."
+msgid ""
+"This key is used to select in UI menus. It also acts as the approval key for "
+"any notifications."
+msgstr ""
+"Tätä näppäintä käytetään käyttöliittymässä valitsemiseen. Se myös toimii "
+"hyväksymispainikkeena ilmoituksissa."
 
-msgid "Display Units: "
-msgstr "Yksiköt: "
+#, csharp-format
+msgid "LoaderException: {0}"
+msgstr "LoaderException: {0}"
+
+msgid "Data Fidelity"
+msgstr "Karttadatan Tarkkuus"
+
+#, csharp-format
+msgid "Failed to uninstall current version of plugin with ID {0}."
+msgstr "Lisäosan {0} nykyisen version poisto epäonnistui."
+
+msgid "Early"
+msgstr "Aikaisin"
+
+msgid ""
+"Bad gateway. The server, while acting as a gateway or proxy, received an "
+"invalid response from an inbound server."
+msgstr ""
+"Reittiä ei löytynyt. Palvelin, joka toimii reitittimenä sai virheellisen "
+"(tai puuttuvan) vastauksen seuraavalta palvelimenlta."
+
+msgid "Already have an account? Log in here."
+msgstr "On jo tili? Kirjaudu täältä."
+
+msgid "The server timed out waiting for the request from the client."
+msgstr ""
+"Palvelin katkaisi yhteyden, sillä käyttäjä ei vastannut kyselyyn ajoissa."
+
+msgid "Assists Enabled"
+msgstr ""
+
+msgid "Backend shutdown complete."
+msgstr "Taustapalvelu on suljettu."
+
+#, csharp-format
+msgid "Control with ID '{0}' not found for event subscription."
+msgstr ""
+"Ohjainmääritystä jonka ID {0}, ei löytynyt tapahtuman kuuntelemista varten."
+
+msgid ""
+"Please add the OTP code to your authentication app.<br/><span class=\"text-"
+"text-accent\">Do not close the page before you have added the code. We "
+"cannot recover accounts once they are created!</span>"
+msgstr ""
+"Lisää OTP -koodi vahvistuskoodi sovellukseesi.<br/><span class=\"text-text-"
+"accent\">Älä sulje sivua ennen kuin olet lisännyt koodin. Me emme voi "
+"palauttaa tiliä rekisteröinnin jälkeen!</span>"
+
+#, csharp-format
+msgid "Unregistered control: {0} ({1})"
+msgstr "Ohjainmäärityksen {0} ({1}) rekisteröinti poistettiin"
+
+msgid "Contact Us"
+msgstr "Yhteydenotto"
+
+msgid "An error occurred while checking for updates."
+msgstr "Päivitysten tarkistuksen yhteydessä tapahtui virhe."
+
+#, csharp-format
+msgid "Copied '{0}' to '{1}'"
+msgstr "Kopioitiin tiedosto {0} paikkaan {1}"
+
+msgid "Clear Console"
+msgstr "Tyhjennä"
+
+msgid "show"
+msgstr "näytääksesi"
+
+msgid "Select core.scs"
+msgstr "Valitse core.scs -tiedosto"
+
+msgid "Failed to init ImGui Impl OpenGL3"
+msgstr "Virhe \"ImGui Impl OpenGL3\" käynnistyksessä"
+
+msgid "Support Multiple Viewports"
+msgstr "Tue montaa ikkunaa"
+
+msgid ""
+"Consider supporting us by becoming a <span class=\"font-bold text-text-"
+"l\">GitHub Sponsor</span> to cover ongoing development and operational costs."
+msgstr ""
+"Voit tukea meitä <span class=\"font-bold text-text-l\">GitHub Sponsor</span> "
+"sivuston kautta. Huomaa, että suomalaisille tämä ei ole mahdollista."
+
+msgid "You took a wrong turn!"
+msgstr "Käännyit väärään suuntaan!"
+
+#, csharp-format
+msgid ""
+"Target speed changed. Current speedlimit: {0} {1}. Offsets are carried over "
+"on speedlimit change."
+msgstr ""
+
+msgid "Adaptive Cruise Control Only"
+msgstr "Vain vakionopeudensäädin"
+
+msgid "Initializing GLFW..."
+msgstr "Käynnistetään GLFW ikkunaa..."
+
+msgid "3D Renderer"
+msgstr "3D Renderöinti"
+
+msgid "SDK Uninstallation Failed"
+msgstr "SDK:n poistaminen epäonnistui"
+
+msgid "Max Overlay Framerate"
+msgstr "Peitekuvan kuvataajuus"
 
 #, csharp-format
 msgid ""
@@ -487,9 +620,14 @@ msgstr ""
 "kerroppas nyt meille {1}Discordissa{2} tai {3}GitHubissa{4}. Ehkä me voidaan "
 "auttaa."
 
-#, csharp-format
-msgid "Starting binding for control {0} ({1})"
-msgstr "Aloitetaan ohjausmäärityksen {0} ({1}) uudelleenmääritys"
+msgid "You must restart ETS2LA for the font size change to take effect."
+msgstr "Sovellus on käynnistettävä uudelleen asetuksen käyttöönottoa varten."
+
+msgid "Uninstall"
+msgstr "Poista"
+
+msgid "Enabled Traffic Rules"
+msgstr "Seurattavat liikennesäännöt"
 
 msgid ""
 "Anonymous telemetry helps us improve ETS2LA by giving us insights into "
@@ -501,377 +639,249 @@ msgstr ""
 "käyttödatasta. Kerättyjä tietoja ei voida linkittää yksityiseen henkilöön, "
 "tai muuhun informaatioon."
 
+msgid "SDK Uninstalled"
+msgstr "SDK Poistettu"
+
+msgid "Low"
+msgstr "Alhainen"
+
+msgid ""
+"Additionally, some communities like VTCs, Job Trackers and Leaderboards will "
+"ban either specific features, or the entirety of ETS2LA. <span class=\"text-"
+"text-accent font-bold\">Please check with your community <i>before</i> using "
+"ETS2LA.</span>"
+msgstr ""
+"Jotkin yhteistöt kuten VTC:t, job trackerit ja leaderboardit kieltävät osan, "
+"tai kaikki ETS2LA:n toiminnoista. <span class=\"text-text-accent font-"
+"bold\">Tarkasta yhteisösi säännöt <i>ennen</i> sovelluksen käyttöä.</span>"
+
+#, csharp-format
+msgid "Apparent plugin directory {0} does not exist."
+msgstr "Lisäosan ilmeistä kansiota {0} ei löydetty."
+
 msgid "Visualization"
 msgstr "Visualisaatio"
 
 #, csharp-format
-msgid "Loaded plugin: [gray]{0}[/] from [gray]{1}[/]."
-msgstr "Ladattiin lisäosa [gray]{0}[/] paikasta [gray]{1}[/]."
+msgid "Loaded {0} plugin from the Plugins folder."
+msgid_plural "Loaded {0} plugins from the Plugins folder."
+msgstr[0] "Ladattiin {0} lisäosa \"Plugins\" kansiosta."
+msgstr[1] "Ladattiin {0} lisäosaa \"Plugins\" kansiosta."
 
-msgid "Enabled Traffic Rules"
-msgstr "Seurattavat liikennesäännöt"
+msgid "Late"
+msgstr "Myöhään"
 
-msgid "Install Plugins"
-msgstr "Asenna Lisäosat"
+msgid "Please enable the Visualization Sockets plugin."
+msgstr "Käynnistä \"Visualization Sockets\" lisäosa ensin."
 
-msgid "Data Parsing"
-msgstr "Karttadatan Lataaminen"
+msgid "Your account has been successfully removed."
+msgstr "Tilisi on poistettu onnistuneesti."
 
-msgid "No updates available."
-msgstr "Päivityksiä ei ole saatavilla."
-
-#, csharp-format
-msgid "Found {0} prefab"
-msgid_plural "Found {0} prefabs"
-msgstr[0] "Löydettiin {0} risteys"
-msgstr[1] "Löydettiin {0} risteystä"
+msgid "Force Map Load"
+msgstr "Pakota kartan lataus"
 
 #, csharp-format
-msgid "You are permanently banned.<br/>Reason: {0}"
-msgstr "Botin käyttö on sinulta kielletty.<br/>Syy: {0}"
+msgid "Failed to uninstall SDK version '{0}' from '{1}': {2}"
+msgstr "SDK:n version {0} poistaminen paikasta {1} epäonnistui: {2}"
 
-msgid "Start Game"
-msgstr "Käynnistä peli"
+msgid "Failed to initialize overlay, ImGui initialization failed."
+msgstr "Peitekuvan käynnistys epäonnistui, ImGui ei käynnistynyt."
 
-msgid ""
-"The maximum distance at which 3D elements will be rendered. Lowering this "
-"can be used to improve performance on lower-end hardware."
-msgstr ""
-"Suurin etäisyys jolla 3D elementit renderöidään. Tämän vähentäminen voi "
-"parantaa suorituskykyä vanhoissa tietokoneissa."
-
-msgid "Did you remember to restart after installing them?"
-msgstr "Muistitko käynnistää sovelluksen uudelleen asennuksen jälkeen?"
-
-msgid ""
-"Changing this option requires a restart of ETS2LA to take effect. Restart "
-"now?"
-msgstr ""
-"Tämän asetuksen muuttaminen vaatii sovelluksen uudelleenkäynnistystä. "
-"Tehdäänkö tämä nyt?"
-
-msgid "Logout Failed"
-msgstr "Uloskirjautuminen epäonnistui"
-
-msgid "kilograms"
-msgstr "kilogrammaa"
-
-#, csharp-format
-msgid "Error rendering overlay: {0}"
-msgstr "Virhe peitekuvan renderöinnissä: {0}"
-
-msgid "Warnings"
-msgstr "Varoitukset"
-
-msgid "Add Game Manually"
-msgstr "Lisää muu peli"
-
-msgid "Imperial"
-msgstr "Brittiläinen"
-
-msgid "feet"
-msgstr "jalkaa"
-
-msgid "Collision Avoidance"
-msgstr "Törmäyksen Esto"
-
-msgid "Force Base Map Name"
-msgstr "Pakota pelin oma kartan nimi"
-
-msgid ""
-"• If you create an account, we transfer your account information to an "
-"international recipient."
-msgstr ""
-"• Jos luot tilin, me siirrämme tilitietosi ulkomaalla sijaitsevalle "
-"vastaanottajalle."
-
-#, csharp-format
-msgid "Update to {0} from {1}"
-msgstr "Päivitä versioon {0} versiosta {1}"
-
-#, csharp-format
-msgid "Unregistered control: {0} ({1})"
-msgstr "Ohjainmäärityksen {0} ({1}) rekisteröinti poistettiin"
-
-msgid ""
-"The server could not understand the request due to invalid syntax or "
-"corrupted request data."
-msgstr ""
-"Palvelin ei ymmärtänyt pyyntöä korruptoidun datan, tai väärän syntaksin "
-"takia."
-
-msgid ""
-"Your system has less than 20GB of RAM. Extreme data fidelity uses "
-"significant amounts of RAM, and may cause your system to become unstable. "
-"Please select a lower fidelity."
-msgstr ""
-"Laitteessasi on vähemmän kuin 20GB muistia. Korkea karttadatan tarkkuus "
-"vaatii suuria määriä muistia, ja voi aiheuttaa järjestelmän kaatumisen."
-
-msgid "No audio output device available"
-msgstr ""
-
-msgid "This game was found at"
-msgstr "Tämä peli löytyi"
-
-msgid "Search for plugins..."
-msgstr "Hae lisäosia..."
-
-msgid "And to those who've decided to remain anonymous!"
-msgstr "Kiitämme myös heitä, jotka ovat tukeneet meitä anonyymisti!"
-
-msgid "Failed to initialize overlay, OpenGL initialization failed."
-msgstr "Peitekuvan käynnistys epäonnistui, OpenGL ei käynnistynyt."
-
-msgid "Next/OK"
-msgstr "Jatka/OK"
-
-msgid ""
-"To get started fast, you can install our <span class=\"text-text-accent font-"
-"bold\">recommended</span> plugins. These contain everything you need to get "
-"driving."
-msgstr ""
-"Nopeaa aloitusta varten, voit asentaa meidän <span class=\"text-text-accent "
-"font-bold\">suositellut</span> lisäosat. Näihin sisältyy kaikki jota "
-"tarvitsen ajamisen aloittamiseen."
-
-msgid "Don't have an account?<br/>Register a new one now, no emails required!"
-msgstr "Ei vielä tiliä?<br/>Rekisteröidyppä! Me ei vaadita sähköposteja!"
-
-msgid "Failed to initialize SDL3 input backend."
-msgstr "SDL3 ohjainmääritysten taustapalvelun käynnistys epäonnistui."
-
-#, csharp-format
-msgid "Invalid audio job: {0}, does the file exist?"
-msgstr ""
-
-msgid "No release notes available."
-msgstr "Muutoslokia ei saatavilla."
-
-msgid "Enabled"
-msgstr "Käynnissä"
-
-msgid "Audio"
-msgstr "Ääni"
-
-msgid "General"
-msgstr "Yleiset"
-
-msgid "Unbound"
-msgstr "Määrittelemätön"
+msgid "Your account is not allowed to use the chatbot."
+msgstr "Tilisi ei saa käyttää keskustelubottia."
 
 msgid "Speed Limit Warning"
 msgstr "Nopeusrajoituksen varoitus"
 
-#, csharp-format
-msgid "Plugin with ID {0} not found."
-msgstr "Lisäosaa jonka ID {0} ei löydetty."
+msgid "Speed limit changed"
+msgstr "Nopeusrajoitus muuttui"
 
-msgid "Overlay"
-msgstr "Peitekuva"
-
-msgid "Additional"
-msgstr "Lisäasetukset"
-
-msgid "Dashboard"
-msgstr "Etusivu"
+msgid "Your username may not contain repeated separators."
+msgstr "Käyttäjätunnuksessasi ei saa olla peräkkäisiä erottimia."
 
 #, csharp-format
-msgid "Tried to enable {0}, but it was not found among loaded plugins."
-msgstr ""
-"Lisäosa {0} yritettiin käynnistää, mutta sitä ei löytynyt ladatuista "
-"lisäosista."
+msgid "Discovered {0} plugins in total."
+msgid_plural "Discovered {0} plugins in total."
+msgstr[0] "Löydettiin kokonaisuudessaan {0} lisäosa."
+msgstr[1] "Löydettiin kokonaisuudessaan {0} lisäosaa."
 
-msgid ""
-"This is a highly experimental program. ETS2LA is not perfect, and you will "
-"find issues with it's driving and safety. <span class=\"text-text-accent "
-"font-bold\">Do not leave ETS2LA unattended, especially in multiplayer.</span>"
-msgstr ""
-"Tämä on kehitteillä oleva sovellus. ETS2LA ei ole täydellinen, tulet "
-"kohtaamaan ongelmia ajamisessa ja turvallisuudessa. <span class=\"text-text-"
-"accent font-bold\">Älä jätä ETS2LA:ta ajamaan ilman valvontaa, varsinkaan "
-"moninpelissä.</span>"
-
-msgid "Error in traffic update loop."
-msgstr "Virhe liikenteen päivityksessä."
-
-msgid ""
-"Translate news articles to your selected display language. This may take a "
-"while depending on the number of articles and your internet connection."
-msgstr ""
-"Käännä uutisartikkelit näyttökielen mukaan. Tässä voi mennä hetki riippuen "
-"artikkeleiden määrästä ja verkon nopeudesta."
-
-msgid "Slow"
-msgstr "Hidas"
-
-msgid ""
-"When enabled, the overlay will toggle between interaction and non-"
-"interaction mode when you press it's keybind. When disabled, the overlay "
-"will only be interactive while you hold down the keybind."
-msgstr ""
-"Kun käytössä, peitekuva siirtyy interaktio ja normaalimuotojen välillä "
-"\"toggle\" tyylisesti. Kun poistettu käytöstä, sinun täytyy painaa nappia "
-"pohjaan."
-
-msgid ""
-"Decreases the current target speed by one step. If speed control and lane "
-"assist are off, this key acts like SET. Meaning it will set the current "
-"speed to speedlimit."
-msgstr ""
-"Pienentää tavoitenopeutta yhdellä askeleella. Jos ajotuet ovat pois päältä. "
-"Tämä ohjainmääritys käyttäytyy SET (Aseta) painikkeen tavoin. Eli se asettaa "
-"tavoitenopeuden nopeusrajoitukseen."
-
-msgid "°F"
-msgstr "°F"
-
-msgid "Telemetry"
-msgstr "Telemetria"
-
-msgid "Speed Control Step Size"
-msgstr "Nopeuden valinnan askelkoko"
-
-msgid ""
-"Adjust the quality of the curves used for path planning and visualization. "
-"By default this matches the game."
-msgstr ""
-"Säädä mutkien tarkkuutta. Tämä siis säätä kuinka monta kolmiota niiden "
-"näyttämiseen käytetään."
-
-msgid ""
-"I'm sorry, but I cannot answer that question. Please ask something else "
-"ETS2LA related."
-msgstr ""
-"Anteeksi, mutta en voi vastata tuohon viestiin. Kysy jotain muuta ETS2LA:han "
-"liittyvää."
-
-msgid "mph"
-msgstr "mph"
-
-msgid "Changelog"
-msgstr "Muutosloki"
-
-msgid "SDK Installed"
-msgstr "SDK asennettu"
-
-msgid "meters"
-msgstr "metriä"
+msgid "Failed to init ImGui Impl GLFW"
+msgstr "Virhe \"ImGui Impl GLFW\" käynnistyksessä"
 
 #, csharp-format
-msgid "No valid versions found for plugin with ID {0}."
-msgstr "Lisäosalle {0} ei löydy toimivia versioita."
+msgid "Failed to discover Dlls: {0}"
+msgstr "DLL keräys epäonnistui: {0}"
 
-msgid "GitHub Sponsorship"
-msgstr "GitHub Sponsorointi"
+msgid "Not Installed"
+msgstr "Ei asennettu"
 
-#, csharp-format
-msgid "Successfully installed plugin {0} ({1}, {2})"
-msgstr "Lisäosa {0} ({1}, {2}) asennettiin onnistuneesti"
+msgid "gal"
+msgstr "gal"
 
-msgid "°C"
-msgstr "°C"
+msgid "Error in camera update loop."
+msgstr "Virhe kameran päivityksessä."
 
-msgid "Not Connected"
-msgstr "Laite irrotettu"
-
-msgid "3D Renderer"
-msgstr "3D Renderöinti"
-
-msgid ""
-"This key is used to select in UI menus. It also acts as the approval key for "
-"any notifications."
-msgstr ""
-"Tätä näppäintä käytetään käyttöliittymässä valitsemiseen. Se myös toimii "
-"hyväksymispainikkeena ilmoituksissa."
-
-msgid "No plugins found."
-msgstr "Lisäosia ei löytynyt."
-
-#, csharp-format
-msgid "An error occurred while loading map data: {0}"
-msgstr "Karttadatan latauksen yhteydessä ilmeentyi virhe: {0}"
-
-msgid "Error Loading Map Data"
-msgstr "Virhe ladattaessa karttadataa"
-
-#, csharp-format
-msgid "Camera {0} ({1}x{2})"
-msgstr "Kamera {0} ({1}x{2})"
-
-msgid "Game not found"
-msgstr "Peliä ei löydetty"
-
-#, csharp-format
-msgid "New limit {0} {1}"
-msgstr "Uusi rajoitus {0} {1}"
+msgid "Enable"
+msgstr "Käynnistä"
 
 #, csharp-format
 msgid "Loading map data from '{0}'"
 msgstr "Ladataan karttadataa paikasta {0}"
 
-#, csharp-format
-msgid "Control with ID '{0}' not found for event unsubscription."
-msgstr ""
-"Ohjainmääritystä jonka ID {0}, ei löytynyt tapahtuman kuuntelemisen "
-"lopettamista varten."
+msgid "Warning: Insufficient RAM"
+msgstr "Varoitus: Muistu (RAM) ei ole riittävä"
 
-msgid "Medium"
-msgstr "Keskitaso"
+msgid "Error Loading Map Data"
+msgstr "Virhe ladattaessa karttadataa"
+
+#, csharp-format
+msgid "Current Version: {0}"
+msgstr "Nykyinen versio: {0}"
 
 msgid ""
-"ETS2LA will display information on top of the game. You can interact with "
-"these overlay elements using <span class=\"text-text-accent font-"
-"bold\">Overlay Interaction</span>. Try it!"
+"The following information is sent along with each message to help the "
+"chatbot provide better answers. It does not contain any personal information."
 msgstr ""
-"Näytämme tietoja pelin päällä. Voit vuorovaikuttaa näiden elementtien (esim. "
-"ikkunoiden) kanssa käyttäen <span class=\"text-text-accent font-"
-"bold\">Peitekuvan Interaktio</span> painiketta. Kokeileppa!"
+"Seuraava informaatio sisältyy jokaiseen botille lähetettyyn viestiin. "
+"Informaatiossa ei ole yksityistä tietoa."
 
 #, csharp-format
-msgid "Plugin with ID [gray]{0}[/] is already loaded, skipping duplicate."
-msgstr "Lisäosa ID:llä [gray]{0}[/] on jo ladattu, ohitetaan duplikaatti."
+msgid "No update available for plugin with ID {0}."
+msgstr "Lisäosalle {0} ei ole saatavilla päivityksiä."
 
-#, csharp-format
-msgid "Failed to install SDK from '{0}' to '{1}': {2}"
-msgstr "Lisäosan asennus paikasta {0} paikkaan {1} epäonnistui: {2}"
+msgid "Speed Control Step Size"
+msgstr "Nopeuden valinnan askelkoko"
 
-#, csharp-format
-msgid "Failed to read bundled update source marker: {0}"
+msgid "Slow"
+msgstr "Hidas"
+
+msgid "Login Failed"
+msgstr "Kirjautuminen epäonnistui"
+
+msgid ""
+"Authentication is required. The client must authenticate itself to get the "
+"requested response."
 msgstr ""
-"Päivityspalvelimen määritys rakennetun tiedoston kautta epäonnistui: {0}"
-
-msgid "Assists Enabled: "
-msgstr "Ajotuet: "
-
-msgid "Adjust the volume of the audio output."
-msgstr "Säädä äänenvoimakkuutta."
+"Tunnistautuminen vaaditaan. Käyttäjän (selaimen) täytyy tunnistaa itsensä "
+"saadakseen vastauksen."
 
 #, csharp-format
-msgid "Connected joystick: [bold]{0}[/] [gray italic]({1})[/]"
-msgstr "Yhdistettiin laite: [bold]{0}[/] [gray italic]({1})[/]"
-
-msgid "Login Successful"
-msgstr "Kirjautuminen onnistui"
-
-msgid "Open SDK Settings"
-msgstr "Avaa SDK -asetukset"
-
-msgid "Controls"
-msgstr "Ohjainmääritykset"
-
-msgid "The selected file does not exist."
-msgstr "Valittu tiedosto ei ole olemassa."
+msgid "Connected joystick: [bold]{0}[/] [gray italic]({1}, {2})[/]"
+msgstr "Yhdistettiin laite: [bold]{0}[/] [gray italic]({1}, {2})[/]"
 
 #, csharp-format
-msgid "Adding mod: {0}"
-msgstr "Lisätään modia: {0}"
+msgid "Error while checking for updates: {0}"
+msgstr "Virhe päivityksen tarkastuksen yhteydessä: {0}"
+
+msgid "Undetermined"
+msgstr "Määrittelemätön"
+
+msgid "meters per second"
+msgstr "metriä sekunnissa"
+
+msgid "Traffic Lights"
+msgstr "Liikennevalot"
+
+msgid "Update check skipped, using already cached result."
+msgstr "Päivityksen tarkastus ohitettiin, käytetään tallennettua vastausta."
+
+msgid "Unable to read the current log."
+msgstr "Virhe luettaessa nykyistä lokitiedostoa."
+
+msgid "Open Update Page"
+msgstr "Avaa päivitys sivu"
+
+#, csharp-format
+msgid "Installed plugin with ID {0} not found."
+msgstr "Asennettua lisäosaa ID:llä {0} ei löydy."
+
+msgid "Audio"
+msgstr "Ääni"
+
+msgid "Login Error"
+msgstr "Kirjautumisen yhteydessä tapahtui virhe"
+
+#, csharp-format
+msgid "{0} m/s ({1} in {2})"
+msgstr "{0} m/s ({1} kun {2})"
+
+#, csharp-format
+msgid "Received input from unknown joystick with instance ID {0}."
+msgstr "Laitteelta {0} saatiin vastaus."
+
+msgid ""
+"Adjust how quickly ETS2LA will respond to desired changes in acceleration. "
+"Emergency braking is not affected."
+msgstr ""
+"Säädä miten nopeasti ETS2LA reagoi tarpeellisiin nopeuden muutoksiin. Tämä "
+"ei vaikuta hätäjarrutukseen."
+
+msgid "Display Units"
+msgstr "Yksiköt"
 
 msgid "Adjustments"
 msgstr "Säädöt"
 
-msgid "Failed to remove account. Please try again."
-msgstr "Tilin poisto epäonnistui. Kokeile uudelleen."
+msgid "State Info"
+msgstr "Sovelluksen Tila"
+
+msgid "Back to Login"
+msgstr "Takaisin kirjautumiseen"
+
+msgid "Contact us on GitHub"
+msgstr "Ota yhteyttä GitHubissa"
+
+#, csharp-format
+msgid "Error in AR rendering: {0}"
+msgstr "Virhe AR:n renderöinnissä: {0}"
+
+msgid ""
+"Some 3rd party websites might want access to your account.<br/>You can press "
+"the button below to display your JWT token."
+msgstr ""
+"Jotkut kolmannen osapuolen sivut voivat tarvita tilisi hallinnan.<br/>Voit "
+"painaa alla olevaa nappia JWT avaimen näyttämiseen."
+
+msgid "If you're streaming or recording, now's the time to hide this window."
+msgstr "Nyt on hyvä aika piilottaa tämä ikkuna streameistä tai tallennuksista."
+
+msgid "Collision Avoidance"
+msgstr "Törmäyksen Esto"
+
+msgid ""
+"Disables the overlay entirely. This will fix the black screen issue at the "
+"cost of breaking all features that rely on the overlay, including AR and the "
+"HUD."
+msgstr ""
+"Poistaa peitekuvan käytöstä. Tämä korjaa \"mustan ruudun\" ongelman, mutta "
+"et voi käyttää mitään peitekuvaa vaativia ominaisuuksia kuten AR tai HUD "
+"renderöintiä."
+
+msgid "Overrides"
+msgstr "Pakotukset"
+
+msgid "Assists Disabled"
+msgstr ""
+
+msgid ""
+"Too many requests. You have sent too many requests in a given amount of time."
+msgstr ""
+"Liikaa kyselyitä. Olet lähettänyt liian monta kyselyä lyhyessä ajassa, "
+"palvelin katkaisi yhteyden."
+
+msgid ""
+"This will disconnect ETS2LA from the game and close the window. You can "
+"minimize the window to keep ETS2LA running."
+msgstr ""
+"Tämä katkaisee ETS2LA:n pelistä ja sulkee tämän ikkunan. Voit pienentää "
+"ETS2LA:n ikkunan jotta se pysyy päällä, mutta pois tieltä."
+
+#, csharp-format
+msgid "Camera {0} ({1}x{2})"
+msgstr "Kamera {0} ({1}x{2})"
+
+msgid "Display JWT Token"
+msgstr "Näytä JWT avain"
 
 msgid ""
 "This setting only loads roads and intersections visible on the in game map. "
@@ -880,29 +890,64 @@ msgstr ""
 "Tämä asetus lataa vain tiet ja risteyksen, jotka ovat ajettavissa. Asetus "
 "hylkää kaiken muun tiedon."
 
-msgid ""
-"Will disable ETS2LA's assists when pressed. If assists are already disabled, "
-"this key will switch between driving modes."
+msgid "Invalid Input"
+msgstr "Virheellinen syöte"
+
+#, csharp-format
+msgid "Invalid audio job: {0}, does the file exist?"
 msgstr ""
-"Poistaa ajotuet käytöstä. Jos ajotuet ovat jo pois käytöstä, vaihtaa "
-"ajomuotojen välillä."
+
+#, csharp-format
+msgid "Failed to load library plugin from [gray]{0}[/]: {1}"
+msgstr "Kirjaston lataus paikasta [gray]{0}[/] epäonnistui: {1}"
+
+msgid "Game"
+msgstr "Peli"
+
+#, csharp-format
+msgid "Updated bindings for control: {0} ({1}) to Device: {2}, Control: {3}"
+msgstr ""
+"Päivitettiin ohjainmääritys {0} ({1}), nyt laitteessa {2} ja painikkeessa {3}"
 
 msgid ""
-"By clicking <span class=\"font-bold\">Continue</span>, you agree to the "
-"transfer of your possible account information to an international recipient."
+"Driving mode changed, press Cancel/MODE again to cycle through the modes."
+msgstr "Ajomoodi vaihdettu. Paina Keskeytä/MODE nappia vaihtaaksesi moodia."
+
+msgid "Pause When Unstable"
+msgstr "Pysäytä peli jos vaarallinen"
+
+msgid "Stop Rendering When Game is Paused"
+msgstr "Pysäytä renderöinti pelin kanssa"
+
+#, csharp-format
+msgid "File not found: {0}"
+msgstr "Tiedostoa {0} ei löydetty"
+
+msgid "Restart Now"
+msgstr "Käynnistä uudelleen"
+
+#, csharp-format
+msgid "New limit {0} {1}"
+msgstr "Uusi rajoitus {0} {1}"
+
+msgid "Log sent. Click here to view it."
+msgstr "Lokitiedosto lähetetty. Voit painaa tästä katsoaksesi sen sisällön."
+
+#, csharp-format
+msgid "Error playing audio file {0}: {1}"
+msgstr "Virhe äänitiedoston {0} soittamisessa: {1}"
+
+msgid "Controls Backend shutdown complete, all controls saved."
 msgstr ""
-"Painamalla <span class=\"font-bold\">jatka</span> hyväksyt mahdollisten "
-"tilitietojesi siirron ulkomaiselle vastaanottajalle."
+"Ohjainmäärityksen taustapalvelun asetukset tallennettu ja suljettu "
+"onnistuneesti."
 
 msgid ""
-"By clicking <span class=\"font-bold\">Continue</span>, you agree to our "
-"Privacy Policy."
+"The units ETS2LA will use when displaying information to a user. Scientific "
+"has only slight differences to metric."
 msgstr ""
-"Painamalla <span class=\"font-bold\">jatka</span> hyväksyt "
-"tietoturvakäytäntömme."
-
-msgid "Simplified Graphics"
-msgstr "Yksinkertaistetut grafiikat"
+"Yksiköt joita käytetään lähes kaikessa näytetyssä informaatiossa. "
+"Tieteellisten ero metrisiin on hyvin pieni."
 
 msgid ""
 "Send using <span class=\"text-text-l\">Enter</span>, new line with <span "
@@ -915,789 +960,151 @@ msgstr ""
 "nämä tiedot."
 
 #, csharp-format
-msgid "No game executable found in '{0}', not adding it as an installation."
-msgstr "Käynnistystiedostoa ei löytynyt paikasta {0}, peliä ei lisätä."
-
-msgid "kg"
-msgstr "kg"
-
-msgid "Parsing Map Data"
-msgstr "Ladataan pelidataa"
-
-msgid ""
-"How early ETS2LA will attempt to respond to possible collisions. Turning "
-"this to off will disable collision avoidance regardless of your enabled "
-"plugins."
+msgid "Control with ID '{0}' not found for unregistration."
 msgstr ""
-"Miten aikaisin ETS2LA pyrkii välttämään mahdolliset törmäykset. Kytkemällä "
-"tämän pois katkaisee törmäyksen eston riippumatta käynnissä olevista "
-"lisäosista."
+"Ohjainmääritystä jonka ID {0}, ei löytynyt rekisteröinnin poistamista varten."
 
 msgid ""
-"Some mods implement additional maps like japan.mbd or russia.mbd. If you "
-"find your mods are not loading properly, try enabling this option. This is "
-"known to be required for RusMap."
+"I'm sorry, but I cannot answer that question. Please ask something else "
+"ETS2LA related."
 msgstr ""
-"Jotkut modit lisäävät omia karttoja kuten japan.mbd. Jos huomaat, että "
-"modisi eivät lataudu oikein, kokeile laittaa tämä asetus päälle. Tämän "
-"tiedetään olevan tarpeellinen RusMap:lle."
+"Anteeksi, mutta en voi vastata tuohon viestiin. Kysy jotain muuta ETS2LA:han "
+"liittyvää."
 
-#, csharp-format
-msgid "Apparent plugin directory {0} does not exist."
-msgstr "Lisäosan ilmeistä kansiota {0} ei löydetty."
-
-msgid "Please see the logs for more information."
-msgstr "Katso lokitiedosto."
-
-msgid "An error occurred while checking for updates."
-msgstr "Päivitysten tarkistuksen yhteydessä tapahtui virhe."
-
-msgid "I understand, now let me in!"
-msgstr "Ymmärrän, päästä jo sisään!"
-
-#, csharp-format
 msgid ""
-"You are currently logged in as <span class=\"text-text-l\">{0}</span>. [{1}]"
-msgstr "Hei <span class=\"text-text-l\">{0}</span>, tilisi status on [{1}]."
-
-msgid "Disable Overlay"
-msgstr "Poista peitekuva käytöstä"
-
-msgid "show"
-msgstr "näytääksesi"
-
-msgid "Data Quality"
-msgstr "Karttadatan Laatu"
-
-msgid "Unpacking Mods"
-msgstr "Puretaan modeja"
+"Your system has less than 16GB of RAM. High data fidelity uses significant "
+"amounts of RAM, and may cause your system to become unstable. Please select "
+"a lower fidelity."
+msgstr ""
+"Laitteessasi on vähemmän kuin 16GB muistia. Korkea karttadatan tarkkuus "
+"vaatii suuria määriä muistia, ja voi aiheuttaa järjestelmän kaatumisen."
 
 #, csharp-format
-msgid "<span class=\"font-semibold\">{0}</span> at {1}"
-msgstr "<span class=\"font-semibold\">{0}</span>, lähetetty {1}"
-
-msgid "Console"
-msgstr "Konsoli"
+msgid "Failed to shutdown plugin {0}: {1}"
+msgstr "Lisäosan {0} sulkeminen epäonnistui: {1}"
 
 #, csharp-format
-msgid "Disabled plugin: [bold]{0}[/]"
-msgstr "Lisäosa [bold]{0}[/] suljettu"
+msgid "Plugin with ID {0} not found in available plugins."
+msgstr "Lisäosaa {0} ei löydetty."
 
-#, csharp-format
-msgid "Installation at '{0}' has already been parsed."
-msgstr "Peli {0} on jo ladattu."
-
-msgid "Please enable the Visualization Sockets plugin."
-msgstr "Käynnistä \"Visualization Sockets\" lisäosa ensin."
-
-msgid "Pa"
-msgstr "Pa"
+msgid "Confirm Account Removal"
+msgstr "Vahvista tilin poisto"
 
 msgid ""
 "Removing your account will delete all your data from our servers. This "
 "action cannot be undone."
 msgstr "Tämä poistaa kaiken datasi palvelimiltamme. Poistoa ei voi kumota."
 
-msgid "Unknown Version"
-msgstr "Tuntematon versio"
+msgid "Manager"
+msgstr "Hallinta"
+
+msgid "Near"
+msgstr "Lähellä"
+
+msgid "Driving"
+msgstr "Ajaminen"
+
+msgid "Failed to initialize SDL3 input backend."
+msgstr "SDL3 ohjainmääritysten taustapalvelun käynnistys epäonnistui."
 
 #, csharp-format
-msgid "Your username must be at least {0} characters long."
-msgstr "Käyttäjätunnuksesi on oltava ainakin {0} kirjainta pitkä."
+msgid "{0} not found in supported languages."
+msgstr "Kieltä {0} ei tueta."
 
-msgid ""
-"Too many requests. You have sent too many requests in a given amount of time."
-msgstr ""
-"Liikaa kyselyitä. Olet lähettänyt liian monta kyselyä lyhyessä ajassa, "
-"palvelin katkaisi yhteyden."
+msgid "Assists Enabled: "
+msgstr "Ajotuet: "
 
 #, csharp-format
-msgid "An error occurred while loading file '{0}': {1}"
-msgstr "Tiedoston '{0}' latauksen yhteydessä ilmeentyi virhe {1}"
+msgid "Found {0} prefab"
+msgid_plural "Found {0} prefabs"
+msgstr[0] "Löydettiin {0} risteys"
+msgstr[1] "Löydettiin {0} risteystä"
 
-msgid "Hide Installed"
-msgstr "Piilota asennetut"
+msgid "Pascals"
+msgstr "Paskalia"
 
-msgid "Game is still running"
-msgstr "Peli on yhä käynnissä"
+msgid "Account Removal Error"
+msgstr "Tilin poiston yhteydessä tapahtui virhe"
+
+msgid "You can enable the plugins we installed in a previous step here."
+msgstr "Voit käynnistää aikaisemmin asentamamme lisäosat täältä."
 
 #, csharp-format
 msgid "Failed to disable {0}: {1}"
 msgstr "Virhe lisäosan {0} sulkemisessa: {1}"
 
-msgid ""
-"The language ETS2LA will be displayed at. Translations are provided by the "
-"community, we cannot guarantee their accuracy."
-msgstr ""
-"Kieli jolla ETS2LA näytetään. Käännökset ovat yhteysön tekemiä, joten emme "
-"takaa niiden laatua. Paitsi suomeksi tietenkin, kirjoitettu by yours truly."
+msgid "Login"
+msgstr "Kirjaudu"
+
+msgid "SDK Installed"
+msgstr "SDK asennettu"
+
+msgid "Current Speed"
+msgstr "Nykyinen Nopeus"
 
 #, csharp-format
-msgid ""
-"Cannot uninstall plugin with ID {0} because the following installed plugins "
-"depend on it: {1}"
-msgstr ""
-"Lisäosan {0} poisto estettiin, sillä seuraavat lisäosat vaativat sen "
-"toimiakseen: {1}"
+msgid "Bound control {0} ({1}) to device {2} and control {3}"
+msgstr "Ohjäinmääritys {0} ({1}) määritelty laitteen {2} painikkeeseen {3}"
 
-#, csharp-format
-msgid "Error while downloading update: {0}"
-msgstr "Virhe päivityksen latauksessa: {0}"
+msgid "miles per hour"
+msgstr "mailia tunnissa"
 
-msgid "I won't leave ETS2LA unattended"
-msgstr "En jätä sovellusta vahtimatta"
-
-msgid "Unknown Control ID"
-msgstr "Tuntematon ohjainmäärityksen ID"
+msgid "Limit Overlay Framerate"
+msgstr "Rajoita peitekuvan kuvataajuutta"
 
 msgid ""
-"ETS2LA is running as a system administrator. This puts your system at risk "
-"if you use 3rd party plugins. Select Yes to continue anyway and accept the "
-"risk."
+"You'll be asked to save an OTP authentication code after registration. We do "
+"not store or ask for passwords, as those aren't required for authentication."
 msgstr ""
-"ETS2LA on avattu järjestelmänvalvojana. Tämä asettaa laitteesi vaaraan jos "
-"käytät 3. osapuolen lisäosia. Valitse Kyllä jatkaaksesi ja hyväksyäksesi "
-"riskin."
+"Sinulta vaaditaan OTP -koodin tallennusta rekisteröinnin jälkeen. Emme pyydä "
+"tai tallenna salasanoja, sillä ne eivät ole tarpeellisia kirjautumiseen."
 
-msgid "Traffic Lights"
-msgstr "Liikennevalot"
+msgid "Test Audio"
+msgstr ""
 
-msgid "Finished loading plugins"
-msgstr "Lisäosien lataus on valmis"
+msgid "Wiki / FAQ"
+msgstr "Wiki / UKK"
 
 msgid ""
-"<span class=\"text-text-accent\"))>Success!</span> You can find more plugins "
-"in the catalogue later."
+"By clicking <span class=\"font-bold\">Continue</span>, you agree to our "
+"Privacy Policy."
 msgstr ""
-"<span class=\"text-text-accent\"))>Onnistui!</span> Löydät enemmän lisäosia "
-"luettelosta myöhemmin."
+"Painamalla <span class=\"font-bold\">jatka</span> hyväksyt "
+"tietoturvakäytäntömme."
 
 #, csharp-format
-msgid "Parsing installation at '{0}' (version: {1})"
-msgstr "Ladataan peliä {0} (versio {1})"
-
-msgid "Gates"
-msgstr "Portit"
-
-#, csharp-format
-msgid "Binding {0}"
-msgstr "Määritetään {0}"
-
-msgid "You are not logged in. Open this page again to login."
-msgstr "Et ole kirjautunut sisään. Avaa tämä sivu uudelleen."
-
-msgid "You may need to restart the game to apply this change."
-msgstr ""
-"Sinun täytyy ehkä käynnistää peli uudelleen tämän asetuksen muuton jälkeen."
-
-msgid "Look in the top left corner."
-msgstr "Katso vasempaan yläkulmaan."
+msgid "Failed to install SDK from '{0}' to '{1}': {2}"
+msgstr "Lisäosan asennus paikasta {0} paikkaan {1} epäonnistui: {2}"
 
 msgid ""
-"We will pause the game when we detect instability or the steering is "
-"unresponsive / disables itself for other reasons."
+"When this key is held, the overlay will receive mouse input and allow you to "
+"interact with it. NOTE: Interaction with items below the overlay is not "
+"possible during this time."
 msgstr ""
-"Pysäytämme pelin kun huomaamme ohjauksen olevan vaarallista / epäluotettavaa."
+"Kun tämä ohjausmääritys on painettu, peitekuva ottaa huomioon hiiren ja "
+"antaa sinun muokata ikkunoiden kokoa ja sisältöä."
 
-#, csharp-format
-msgid "Discovered {0} manually installed plugin."
-msgid_plural "Discovered {0} manually installed plugins."
-msgstr[0] "Löydettiin {0} manuaalisesti asennettu lisäosa."
-msgstr[1] "Löydettiin {0} manuaalisesti asennettua lisäosaa."
-
-msgid "Data Fidelity"
-msgstr "Karttadatan Tarkkuus"
-
-#, csharp-format
-msgid "Failed to discover Dlls: {0}"
-msgstr "DLL keräys epäonnistui: {0}"
-
-msgid "Remove Account"
-msgstr "Poista Tili"
+msgid ""
+"The request method is recognized by the server but is not supported by the "
+"target resource."
+msgstr ""
+"Palvelin tunnistaa pyynnön tyypin, mutta tavoiteresurssi ei hyväksy sitä."
 
 msgid "Binding Successful"
 msgstr "Määrittäminen onnistui"
 
-msgid "Before we begin."
-msgstr "Ennen kuin aloitamme."
-
-msgid "Error Checking for Updates"
-msgstr "Virhe päivitysten tarkistuksen yhteydessä"
-
-msgid "Chime"
-msgstr "Äänimerkki"
-
-msgid ""
-"Parsing will continue, however information contained in this file won't be "
-"available to ETS2LA."
-msgstr ""
-"Lataus jatkuu, mutta tässä tiedostossa oleva informaatio ei ole saatavilla "
-"ETS2LA:lle."
-
-msgid "All driving assists have been disabled."
-msgstr ""
-
-#, csharp-format
-msgid "Error playing audio file {0}: {1}"
-msgstr "Virhe äänitiedoston {0} soittamisessa: {1}"
-
-msgid "The plugin was enabled successfully."
-msgstr "Lisäosa käynnistetiin onnistuneesti."
-
-#, csharp-format
-msgid ""
-"Failed to clean plugin shadow directory [gray]{0}[/], it will be removed on "
-"the next startup: {1}"
-msgstr ""
-"Lisäosan varjokansion [gray]{0}[/] poisto epäonistui. Se poistetaan "
-"seuraavan käynnistyksen yhteydessä. {1}"
-
-msgid "Settings"
-msgstr "Asetukset"
-
-msgid ""
-"How ETS2LA will warn you about exceeding the speed limit by a major amount."
-msgstr ""
-"Miten ETS2LA varoittaa sinua nopeusrajoituksen merkittävästä ohituksesta."
-
-#, csharp-format
-msgid "Error loading '{0}': {1}"
-msgstr "Virhe ladattaessa tiedostoa {0}: {1}"
-
-#, csharp-format
-msgid "<span class=\"font-semibold\">{0}</span> until {1}"
-msgstr "<span class=\"font-semibold\">{0}</span>, {1} asti"
-
-#, csharp-format
-msgid "Discovered {0} plugins in total."
-msgid_plural "Discovered {0} plugins in total."
-msgstr[0] "Löydettiin kokonaisuudessaan {0} lisäosa."
-msgstr[1] "Löydettiin kokonaisuudessaan {0} lisäosaa."
-
-#, csharp-format
-msgid "Failed to install latest version of plugin with ID {0}."
-msgstr "Virhe lisäosan {0} uusimman version latauksessa."
-
-msgid "Initializing..."
-msgstr "Alustetaan..."
-
-msgid "Undetermined"
-msgstr "Määrittelemätön"
-
-msgid "meters per second"
-msgstr "metriä sekunnissa"
-
-msgid "Overlay Interaction"
-msgstr "Peitekuvan kanssa interaktio"
-
-#, csharp-format
-msgid "Snap to each 10 {0}"
-msgstr "Lovita jokaiseen 10 {0}"
-
-#, csharp-format
-msgid "Failed to uninstall SDK version '{0}' from '{1}': {2}"
-msgstr "SDK:n version {0} poistaminen paikasta {1} epäonnistui: {2}"
-
-#, csharp-format
-msgid "No download URL found for plugin with ID {0} in region {1}."
-msgstr "Lisäosalle {0} ei löytynyt latausosoitetta alueelta {1}."
-
-msgid "High"
-msgstr "Korkea"
-
-#, csharp-format
-msgid "Installed plugin with ID {0} not found."
-msgstr "Asennettua lisäosaa ID:llä {0} ei löydy."
-
-msgid "Failed to log out. Please try again."
-msgstr "Uloskirjautuminen epäonnistui. Yritä uudelleen."
-
-#, csharp-format
-msgid "LoaderException: {0}"
-msgstr "LoaderException: {0}"
-
-msgid "Registration Failed"
-msgstr "Rekisteröinti epäonnistui"
-
-msgid ""
-"We don't sell or transfer your personal data to any third parties, in fact, "
-"we don't even collect it. However, we are still obligated to display and "
-"acquire your consent before proceeding."
-msgstr ""
-"Emme myy tai siirrä yksityisiä tietojasi ulkopuolisille. Emme itseasiassa "
-"edes kerää sitä. Meidän täytyy silti näyttää tämä, ja pyytää sinulta "
-"hyväksyntä ennen jatkamista."
-
 msgid "Disable"
 msgstr "Sammuta"
 
-#, csharp-format
-msgid "Error while checking for updates: {0}"
-msgstr "Virhe päivityksen tarkastuksen yhteydessä: {0}"
-
-#, csharp-format
-msgid ""
-"You have successfully registered as {0}. Please add the OTP code to your "
-"authentication app."
-msgstr ""
-"Olet rekisteröinyt käyttäjän {0}. Tallenna alla oleva OTP -koodi jollain "
-"sovelluksella (esim Google Authenticator)."
-
-#, csharp-format
-msgid "Overlay is disabled in settings, skipping window registration for {0}."
-msgstr "Peitekuva poistettu käytöstä, ohitetaan ikkunan {0} rekisteröinti."
-
-msgid ""
-"Only show news articles from official sources, such as the ETS2LA team or "
-"it's developers."
-msgstr ""
-"Näytä uutiset vain virallisista lähteistä, kuten ETS2LAn tiimiltä ja sen "
-"kehittäjiltä."
-
-msgid "Starting download..."
-msgstr "Aloitetaan lataus..."
-
-msgid "Translating release notes..."
-msgstr "Käännetään muutoslokia..."
-
-#, csharp-format
-msgid "Error in plugin {0} Tick: {1}"
-msgstr "Virhe lisäosassa {0}, tikki {1}"
-
-msgid "Chatbot"
-msgstr "Keskustelubotti"
-
-msgid "Normal"
-msgstr "Normaali"
-
-msgid "Assists Enabled"
-msgstr ""
-
-#, csharp-format
-msgid "Removing manually added installation at '{0}'"
-msgstr "Poistetaan manuaalisesti lisätty peli {0}"
-
-#, csharp-format
-msgid "Control with ID '{0}' not found for unregistration."
-msgstr ""
-"Ohjainmääritystä jonka ID {0}, ei löytynyt rekisteröinnin poistamista varten."
-
-msgid "If you can't interact with the Window, press CTRL+R."
-msgstr "Jos et voi painaa mitään, käytä CTRL+R ladataksesi sivun uudelleen."
-
-msgid "Only copy this to trusted websites, it can do ANYTHING on your behalf."
-msgstr ""
-"Kopioi tämä vain luotetuihin nettisivuihin, ne voivat tehdä MITÄ VAIN "
-"puolestasi."
-
-msgid "Desired Speed: "
-msgstr "Tavoitenopeus: "
-
-msgid "Catalogue"
-msgstr "Luettelo"
-
-msgid "If you've not yet installed it, you can find it in the catalogue."
-msgstr "Jos et ole vielä asentanut sitä, löydät sen lisäosien luettelosta."
-
-msgid "Please enter a username."
-msgstr "Anna käyttäjätunnus."
-
-msgid ""
-"If you see a fully black screen, see the FAQ at <span class=\"description "
-"hover:underline\">ets2la.com</span>."
-msgstr ""
-"Jos näet täysin mustan ruudun, katso FAQ <span class=\"description "
-"hover:underline\">ets2la.com:ssa</span>."
-
-#, csharp-format
-msgid "Current Version: {0}"
-msgstr "Nykyinen versio: {0}"
-
-msgid "Show Fewer Logs"
-msgstr "Näytä vähemmän lokeja"
-
-msgid "Adaptive Cruise Control Only"
-msgstr "Vain vakionopeudensäädin"
+msgid "Controls"
+msgstr "Ohjainmääritykset"
 
 #, csharp-format
 msgid "Unknown manifest type: {0}"
 msgstr "Tuntematon tietotyyppi: {0}"
 
-msgid "If you're streaming or recording, now's the time to hide this window."
-msgstr "Nyt on hyvä aika piilottaa tämä ikkuna streameistä tai tallennuksista."
-
-msgid "The server timed out waiting for the request from the client."
-msgstr ""
-"Palvelin katkaisi yhteyden, sillä käyttäjä ei vastannut kyselyyn ajoissa."
-
-msgid ""
-"This setting includes all available data, most of which is redundant. <span "
-"class=\"text-warning\">Warning: Extreme uses significant amounts of RAM, "
-"expect over 10GB of usage.</span>"
-msgstr ""
-"Tämä asetus sisältää kaiken saatavilla olevan karttadatan. Suurin osa näistä "
-"tiedoista on turhia. <span class=\"text-warning\">Varoitus: Tämä asetus "
-"käyttää järjettömän määrän muistia, odota reilusti yli 10GB käyttöä.</span>"
-
-msgid ""
-"Your session has expired or you don't have a connection to our servers. "
-"Please log in again if you wish to use server-side features."
-msgstr ""
-"Kirjautumisavaimesi vanheni, tai sinulla ei ole palveliimme yhteyttä. "
-"Kirjaudu uudelleen sisään jos haluat käyttää palvelimen vaativia toimintoja."
-
-#, csharp-format
-msgid "Failed to enable dependency: {0}"
-msgstr "Virhe vaatimuksen käynnistyksen yhteydessä: {0}"
-
-msgid "View Public Telemetry"
-msgstr "Katso julkinen telemetria"
-
-#, csharp-format
-msgid "Version {0} not found for plugin with ID {1}."
-msgstr "Lisäosalle {1} ei löytynyt versiota {0}."
-
-msgid "Force Map Load"
-msgstr "Pakota kartan lataus"
-
-msgid "Volume"
-msgstr "Äänenvoimakkuus"
-
-msgid "Manager"
-msgstr "Hallinta"
-
-#, csharp-format
-msgid "File not found: {0}"
-msgstr "Tiedostoa {0} ei löydetty"
-
-#, csharp-format
-msgid "A new update is available: {0}"
-msgstr "Uusi päivitys on saatavilla: {0}"
-
-msgid "Account"
-msgstr "Käyttäjätili"
-
-msgid "Disabled"
-msgstr "Pois"
-
-msgid ""
-"You do not have permission to access this resource. The server understood "
-"the request but refuses to authorize it."
-msgstr ""
-"Sinulla ei ole lupaa käyttää tätä resurssia. Palvelin ymmärsi pyynnön mutta "
-"ei vastaa siihen."
-
-msgid "Back to Login"
-msgstr "Takaisin kirjautumiseen"
-
-msgid "Steering Sensitivity"
-msgstr "Ohjauksen herkkyys"
-
-msgid "SDK Uninstallation Failed"
-msgstr "SDK:n poistaminen epäonnistui"
-
-msgid "Restart Now"
-msgstr "Käynnistä uudelleen"
-
-msgid "Thank you to the following people for their ongoing support:"
-msgstr "Kiitämme allaolevia heidän jatkuneesta tuesta:"
-
-msgid ""
-"Your username may only contain letters, numbers, underscores, hyphens and "
-"periods, and must start and end with a letter or number."
-msgstr ""
-"Käyttäjätunnuksesi voi sisältää vain kirjaimia, numeroita, viivoja ja "
-"pisteitä. Sen pitää alkaa ja loppua numeroon. (äöå ei tuettu)"
-
-#, csharp-format
-msgid "Error in AR rendering: {0}"
-msgstr "Virhe AR:n renderöinnissä: {0}"
-
-#, csharp-format
-msgid "Fetched {0} plugin from {1}"
-msgid_plural "Fetched {0} plugins from {1}"
-msgstr[0] "Löydettiin {0} lisäosa osoitteesta {1}"
-msgstr[1] "Löydettiin {0} lisäosaa osoitteesta {1}"
-
-msgid ""
-"Using simplified graphics can improve performance on lower-end hardware, or "
-"fix situations in which advanced features like shaders are not supported."
-msgstr ""
-"Käyttämällä tätä asetusta voi vähentää 3D grafiikkojen "
-"suorituskykyvaatimuksia. Tämä voi myös korjata tilanteita joissa esimerkiksi "
-"OpenGL \"shaderit\" eivät ole saatavilla."
-
-#, csharp-format
-msgid "Copied '{0}' to '{1}'"
-msgstr "Kopioitiin tiedosto {0} paikkaan {1}"
-
-msgid "Privacy Policy"
-msgstr "Tietoturvakäytäntö"
-
-msgid "Controls Backend shutdown complete, all controls saved."
-msgstr ""
-"Ohjainmäärityksen taustapalvelun asetukset tallennettu ja suljettu "
-"onnistuneesti."
-
-msgid "Full Self-Driving"
-msgstr "Täysin automaattinen ajo"
-
-msgid "SDKs are currently installed."
-msgstr "SDK:t ovat asennettu."
-
-msgid ""
-"Cracked games or demos will block our SDK from loading. They do not work, "
-"and we don't intend to fix this."
-msgstr ""
-"Murretut pelit ja demot estävät SDK:n latauksen. Ne siis eivät usein toimi, "
-"ja emme aio korjata tätä."
-
-msgid "Continue"
-msgstr "Jatka"
-
-msgid "All driving assists have been enabled."
-msgstr ""
-
-msgid "Window Zoom"
-msgstr "Ikkunan suurennus"
-
-msgid ""
-"Bad gateway. The server, while acting as a gateway or proxy, received an "
-"invalid response from an inbound server."
-msgstr ""
-"Reittiä ei löytynyt. Palvelin, joka toimii reitittimenä sai virheellisen "
-"(tai puuttuvan) vastauksen seuraavalta palvelimenlta."
-
-#, csharp-format
-msgid "Successfully uninstalled SDK version '{0}' from '{1}'"
-msgstr "Poistettiin SDK versio {0} onnistuneesti paikasta {1}"
-
-#, csharp-format
-msgid "Error while applying update: {0}"
-msgstr "Virhe päivittäessä: {0}"
-
-msgid "Main"
-msgstr "Pääasialliset"
-
-#, csharp-format
-msgid "Deleted '{0}'"
-msgstr "Poistettiin {0}"
-
-msgid "You are running the latest version."
-msgstr "Sinulla on uusin versio."
-
-#, csharp-format
-msgid "Failed to load plugin from [gray]{0}[/]: {1}"
-msgstr "Lisäosan lataus paikasta [gray]{0}[/] epäonnistui: {1}"
-
-#, csharp-format
-msgid "Finished parsing installation at '{0}'"
-msgstr "Pelin [gray]{0}[/] karttadatan lataus valmistui"
-
-msgid ""
-"Select which traffic rules ETS2LA should obey. More might be added later, "
-"and all plugins won't necessarily support all rules."
-msgstr ""
-"Valitse mitä liikennesääntöjä ETS2LA seuraa. Sääntöjä voidaan lisätä "
-"myöhemmin, ja kaikki lisäosat eivät välttämättä tue kaikkia sääntöjä."
-
-#, csharp-format
-msgid "Error in AR OpenGL pass: {0}"
-msgstr "Virhe AR:n OpenGL renderöinnissä: {0}"
-
-#, csharp-format
-msgid ""
-"Library plugin with ID [gray]{0}[/] is already loaded, skipping duplicate."
-msgstr "Kirjasto ID:llä [gray]{0}[/] on jo ladattu, ohitetaan duplikaatti."
-
-msgid "Changes will take effect after restarting the application."
-msgstr ""
-"Muutokset otetaan käyttöön kunhan käynnistät sovelluksen ensin uudelleen."
-
-msgid "Help"
-msgstr "Apua"
-
-msgid ""
-"The server cannot find the requested resource. The URL may be misspelled, or "
-"the resource has been removed."
-msgstr ""
-"Palvelin ei löydä pyydettyä resurssia. Osoite voi olla kirjoitettu väärin, "
-"tai resurssi voi olla poistettu."
-
-msgid ""
-"Additionally, some communities like VTCs, Job Trackers and Leaderboards will "
-"ban either specific features, or the entirety of ETS2LA. <span class=\"text-"
-"text-accent font-bold\">Please check with your community <i>before</i> using "
-"ETS2LA.</span>"
-msgstr ""
-"Jotkin yhteistöt kuten VTC:t, job trackerit ja leaderboardit kieltävät osan, "
-"tai kaikki ETS2LA:n toiminnoista. <span class=\"text-text-accent font-"
-"bold\">Tarkasta yhteisösi säännöt <i>ennen</i> sovelluksen käyttöä.</span>"
-
-msgid ""
-"In most situations, over half of ETS2LA's CPU use is consumed by the "
-"overlay. Limiting the framerate will reduce CPU usage."
-msgstr ""
-"Melkein kaikissa tilanteissa, suurin osa ETS2LA'n prosessorin käytöstä "
-"johtuu peitekuvasta. Asettamalla oman kuvataajuuden, voit vähentää "
-"sovelluksen prosessorin käyttöä."
-
-msgid "Cancel/MODE"
-msgstr "Keskeytä/MODE"
-
-msgid "Speed limit changed"
-msgstr "Nopeusrajoitus muuttui"
-
-#, csharp-format
-msgid "Successfully updated plugin with ID {0}."
-msgstr "Lisäosa {0} päivitettiin onnistuneesti."
-
-msgid "Install"
-msgstr "Asenna"
-
-msgid "Window"
-msgstr "Ikkuna"
-
-msgid "Select the game you wish to start."
-msgstr "Valitse peli jonka haluat käynnistää."
-
-msgid ""
-"An error occurred while trying to log out. Please try again later. Error: "
-msgstr ""
-"Uloskirjautumisen yhteydessä tapahtui virhe. Kokeile uudelleen. Virhe: "
-
-msgid "Assists"
-msgstr "Ajotuet"
-
-#, csharp-format
-msgid "Target Speed: <span class=\"text-text-accent font-bold\">{0} {1}</span>"
-msgstr ""
-"Tavoitenopeus: <span class=\"text-text-accent font-bold\">{0} {1}</span>"
-
 msgid "Overlay Font Size"
 msgstr "Peitekuvan fonttikoko"
-
-msgid "Failed to add game"
-msgstr "Virhe pelin lisäämisessä"
-
-msgid "Vision Cameras"
-msgstr "Näkömallien kamerat"
-
-msgid ""
-"When changing the speed, snap to the nearest 10. i.e. 37 -> 39 -> 40 -> 42..."
-msgstr ""
-"Kun vaihdat nopeutta, valitsemme lähimmän 10. Esim. 37 -> 39 -> 40 -> 42..."
-
-msgid "Contact Us"
-msgstr "Yhteydenotto"
-
-msgid "Registration Error"
-msgstr "Rekisteröinnin virhe"
-
-msgid "Restart"
-msgstr "Käynnistä uudelleen"
-
-msgid ""
-"Internal server error. The server encountered an unexpected condition that "
-"prevented it from fulfilling the request."
-msgstr ""
-"Sisäinen palvelimen virhe. Palvelin syystä tai toisesta joutuu katkaisemaan "
-"yhteyden virheen vuoksi."
-
-msgid "miles per hour"
-msgstr "mailia tunnissa"
-
-msgid ""
-"Service unavailable. The server is currently unable to handle the request "
-"due to temporary overloading or maintenance."
-msgstr ""
-"Palvelu ei ole saatavilla. Palvelin ei pysty käsittelemään pyyntöä niiden "
-"määrän, tai esimerkiksi huollon takia."
-
-#, csharp-format
-msgid "Discovered {0} library in total"
-msgid_plural "Discovered {0} libraries in total."
-msgstr[0] "Löydettiin kokonaisuudessaan {0} kirjasto."
-msgstr[1] "Löydettiin kokonaisuudessaan {0} kirjastoa."
-
-msgid "Account Removal Error"
-msgstr "Tilin poiston yhteydessä tapahtui virhe"
-
-#, csharp-format
-msgid "Error rendering window {0}: {1}"
-msgstr "Virhe ikkunan {0} renderöinnissä: {1}"
-
-#, csharp-format
-msgid "Click to {0} this window"
-msgstr "Paina {0} tämän ikkunan"
-
-msgid "Sorry"
-msgstr "Anteeksi"
-
-#, csharp-format
-msgid "Assists Enabled: <span class=\"text-text-accent font-bold\">{0}</span>"
-msgstr ""
-"Ajotuet päällä: <span class=\"text-text-accent font-bold\">{0}</span> "
-"(\"True\" päällä, \"False\" pois)"
-
-msgid "Translated by:"
-msgstr "Kääntäjänä toimi:"
-
-msgid "Failed to init ImGui Impl GLFW"
-msgstr "Virhe \"ImGui Impl GLFW\" käynnistyksessä"
-
-#, csharp-format
-msgid "Control with ID '{0}' not found for event subscription."
-msgstr ""
-"Ohjainmääritystä jonka ID {0}, ei löytynyt tapahtuman kuuntelemista varten."
-
-msgid "Assists Disabled"
-msgstr ""
-
-#, csharp-format
-msgid "Plugin '{0}' is missing its DLL at '{1}' and has been removed."
-msgstr "Lisäosan {0} DLL tiedosto puuttuu ({1}) joten se on poistettu."
-
-#, csharp-format
-msgid ""
-"Manually added game at '{0}' no longer contains a game executable, skipping."
-msgstr ""
-"Manuaalisesti lisätyllä pelillä paikassa {0} ei enää ole "
-"käynnistystiedostoa, ohitetaan."
-
-#, csharp-format
-msgid "Connected joystick: [bold]{0}[/] [gray italic]({1}, {2})[/]"
-msgstr "Yhdistettiin laite: [bold]{0}[/] [gray italic]({1}, {2})[/]"
-
-msgid ""
-"We can render elements in the game world using the overlay. This will use "
-"additional CPU and GPU resources."
-msgstr ""
-"Voimme renderöitä mm. tekstiä pelimaailmassa peitekuvaa käyttäen. Tämä "
-"vaatii lisää suorituskykyä prosessorilta ja näytönohjaimelta."
-
-#, csharp-format
-msgid "Road template for {0} not found in SII file."
-msgstr "Tielle {0} ei löytynyt tietoja SII tiedostoista."
-
-msgid "The selected file is not a core.scs file."
-msgstr "Valittu tiedosto ei ole core.scs."
-
-msgid "Disable All"
-msgstr "Sulje kaikki"
-
-msgid "ft"
-msgstr "ft"
-
-msgid "Invalid directory"
-msgstr "Virheellinen kansio"
-
-#, csharp-format
-msgid "This might take a while... ({0}/{1})"
-msgstr "Tässä voi kestää hetki... ({0}/{1})"
-
-msgid "Plugins"
-msgstr "Lisäosat"
 
 msgid ""
 "Ensure you don't have any mods installed in the root directory. Those have "
@@ -1707,143 +1114,32 @@ msgstr ""
 "löytyneet modit oikeaan kansioon Documents/Euro Truck Simulator 2/mod."
 
 #, csharp-format
-msgid "Failed to read version from '{0}': {1}"
-msgstr "Version määritys paikasta {0} epäonnistui: {1}"
+msgid "Download progress: {0}%"
+msgstr "Latauksen eteneminen: {0}%"
 
-msgid "Error in parked vehicles update loop."
-msgstr "Virhe pysäköityjen ajoneuvojen päivityksessä."
+msgid "Search for plugins..."
+msgstr "Hae lisäosia..."
 
-msgid "Username Taken"
-msgstr "Käyttäjätunnus on jo olemassa"
+msgid "Assists"
+msgstr "Ajotuet"
 
-msgid "This page hasn't been created yet, but it's coming <i>soon</i>."
-msgstr "Tätä sivua ei ole vielä tehty, mutta se on tulossa <i>kohta</i>."
+msgid "SDK Installation"
+msgstr "SDK:n asennus"
 
-msgid "Backend shutdown complete."
-msgstr "Taustapalvelu on suljettu."
+msgid "mph"
+msgstr "mph"
 
-#, csharp-format
-msgid "Error rendering interaction mode window controls: {0}"
-msgstr "Virhe muokkaustilan ikkunanohjainten renderöinnissä: {0}"
+msgid "°F"
+msgstr "°F"
 
-#, csharp-format
-msgid "Failed to initialize SDL3 controls backend: {0}"
-msgstr "Virhe SDL3 ohjainmääritysten taustapalvelun käynnistyksessä: {0}"
+msgid "Pa"
+msgstr "Pa"
 
-msgid ""
-"Show news articles about plugin updates, be that official or 3rd party "
-"plugins."
-msgstr ""
-"Näytä uutisia lisäosien päivityksista, virallisista sekä kolmannen osapuolen."
+msgid "Game Telemetry"
+msgstr "Pelin Telemetria"
 
-#, csharp-format
-msgid "Failed to install dependency {0} for plugin {1}."
-msgstr "Lisäosan {1} vaatimuksen {0} lataus epäonnistui."
-
-msgid ""
-"Couldn't connect to the game. Please open ETS2 or ATS and enable the SDK."
-msgstr ""
-"Peliin ei saatu yhteyttä. Avaa ETS2 tai ATS ja muista asentaa SDK "
-"asetuksista."
-
-msgid "Scientific"
-msgstr "Tieteellinen"
-
-#, csharp-format
-msgid "Changed update source to '{0}'."
-msgstr "Vaihdettiin päivityspalvelin osoitteeseen '{0}'."
-
-msgid "K"
-msgstr "K"
-
-msgid ""
-"You'll be asked to save an OTP authentication code after registration. We do "
-"not store or ask for passwords, as those aren't required for authentication."
-msgstr ""
-"Sinulta vaaditaan OTP -koodin tallennusta rekisteröinnin jälkeen. Emme pyydä "
-"tai tallenna salasanoja, sillä ne eivät ole tarpeellisia kirjautumiseen."
-
-msgid "Next"
-msgstr "Seuraava"
-
-#, csharp-format
-msgid "No versions available for plugin with ID {0}."
-msgstr ""
-
-msgid "Driving"
-msgstr "Ajaminen"
-
-msgid "Acceleration Response"
-msgstr "Kiihdytyksiin Reagointi"
-
-#, csharp-format
-msgid "Failed enable {0}: {1}"
-msgstr "Virhe käynnistäessä lisäosaa {0}: {1}"
-
-msgid "Overlay is disabled in settings, skipping initialization."
-msgstr "Peitekuva on poistettu käytöstä, ohitetaan käynnistys."
-
-msgid "Plugin Installer"
-msgstr "Lisäosien asentaja"
-
-msgid "Show More Logs"
-msgstr "Näytä lisää lokeja"
-
-msgid "The selected game executable was not found."
-msgstr "Valitun pelin käynnistys tiedostoa ei löydetty."
-
-#, csharp-format
-msgid ""
-"Version {0} of plugin with ID {1} is not compatible with the current "
-"application version or operating system."
-msgstr ""
-"Lisäosan {1} versio {0} ei ole yhteensopiva nykyisen sovellusversion tai "
-"käyttöjärjestelmän kanssa."
-
-msgid "Support Multiple Viewports"
-msgstr "Tue montaa ikkunaa"
-
-msgid "bar"
-msgstr "bar"
-
-msgid "View Privacy Policy"
-msgstr "Näytä tietoturvakäytäntö"
-
-msgid "Unknown Control"
-msgstr "Tuntematon määritys"
-
-msgid "Warning: Insufficient RAM"
-msgstr "Varoitus: Muistu (RAM) ei ole riittävä"
-
-msgid "Translate News Articles"
-msgstr "Käännä uutisartikkelit"
-
-msgid ""
-"Authentication is required. The client must authenticate itself to get the "
-"requested response."
-msgstr ""
-"Tunnistautuminen vaaditaan. Käyttäjän (selaimen) täytyy tunnistaa itsensä "
-"saadakseen vastauksen."
-
-msgid "Install Update and Restart"
-msgstr "Asenna päivitys ja käynnistä uudelleen"
-
-msgid ""
-"The maximum speed ETS2LA will accelerate to. It might still drift over this "
-"limit due to momentum."
-msgstr ""
-"Maksiminopeus johon ETS2LA kiihdyttää. Alamäessä nopeus voi nousta tätä "
-"korkeammaksi."
-
-msgid "Final Disclaimer <span class=\"description\">1/2</span>"
-msgstr "Viimeiset huomiot <span class=\"description\">1/2</span>"
-
-msgid ""
-"The following information is sent along with each message to help the "
-"chatbot provide better answers. It does not contain any personal information."
-msgstr ""
-"Seuraava informaatio sisältyy jokaiseen botille lähetettyyn viestiin. "
-"Informaatiossa ei ole yksityistä tietoa."
+msgid "Key"
+msgstr "Näppäin"
 
 msgid ""
 "This setting drops redundant information while maintaining most detail "
@@ -1854,53 +1150,141 @@ msgstr ""
 "yksityiskohdat (kuten kyltit). Ei sisällä piilotettuja ja vain tekoälylle "
 "tarkoitettuja teitä."
 
-#, csharp-format
-msgid "Inner Exception: {0}"
-msgstr "Sisäinen virhe: {0}"
+msgid "bar"
+msgstr "bar"
 
-#, csharp-format
-msgid "Plugin with ID {0} not found in available plugins."
-msgstr "Lisäosaa {0} ei löydetty."
-
-msgid "Restart Required"
-msgstr "Käynnistys vaaditaan"
-
-msgid "Logout Successful"
-msgstr "Uloskirjautuminen onnistui"
-
-msgid "Render AR Elements"
-msgstr "Renderöi AR (3D) elementit"
-
-msgid "Not Installed"
-msgstr "Ei asennettu"
-
-#, csharp-format
-msgid ""
-"Press a button or move an axis on your input device to bind it to this "
-"control. This will time out in {0} seconds."
-msgstr ""
-"Paina nappia tai liikuta akselia laitteessasi. Aikakatkaisu määritykselle on "
-"{0} sekunttia."
-
-msgid "Registration Successful"
-msgstr "Rekisteröinti onnistui"
+msgid "Account Removed"
+msgstr "Tili poistettu"
 
 msgid ""
-"Warning: Your system has less than 20GB of RAM. You can only select up to "
-"High."
+"Couldn't connect to the game. Please open ETS2 or ATS and enable the SDK."
 msgstr ""
-"Varoitus: Laitteessasi on vähemmän kuin 20GB muistia. Voit valita "
-"korkeintaan \"Korkea\" asetuksen."
+"Peliin ei saatu yhteyttä. Avaa ETS2 tai ATS ja muista asentaa SDK "
+"asetuksista."
+
+msgid "Button"
+msgstr "Nappi"
+
+msgid "Add Game Manually"
+msgstr "Lisää muu peli"
+
+msgid ""
+"In most situations, over half of ETS2LA's CPU use is consumed by the "
+"overlay. Limiting the framerate will reduce CPU usage."
+msgstr ""
+"Melkein kaikissa tilanteissa, suurin osa ETS2LA'n prosessorin käytöstä "
+"johtuu peitekuvasta. Asettamalla oman kuvataajuuden, voit vähentää "
+"sovelluksen prosessorin käyttöä."
+
+msgid ""
+"This setting includes all available data, most of which is redundant. <span "
+"class=\"text-warning\">Warning: Extreme uses significant amounts of RAM, "
+"expect over 10GB of usage.</span>"
+msgstr ""
+"Tämä asetus sisältää kaiken saatavilla olevan karttadatan. Suurin osa näistä "
+"tiedoista on turhia. <span class=\"text-warning\">Varoitus: Tämä asetus "
+"käyttää järjettömän määrän muistia, odota reilusti yli 10GB käyttöä.</span>"
+
+msgid "GitHub Sponsorship"
+msgstr "GitHub Sponsorointi"
+
+msgid "Restart and Continue"
+msgstr "Käynnistä uudelleen ja jatka"
+
+msgid ""
+"Using simplified graphics can improve performance on lower-end hardware, or "
+"fix situations in which advanced features like shaders are not supported."
+msgstr ""
+"Käyttämällä tätä asetusta voi vähentää 3D grafiikkojen "
+"suorituskykyvaatimuksia. Tämä voi myös korjata tilanteita joissa esimerkiksi "
+"OpenGL \"shaderit\" eivät ole saatavilla."
 
 #, csharp-format
-msgid "Your username must be at most {0} characters long."
-msgstr "Käyttäjätunnuksesi voi olla enintään {0} kirjainta pitkä."
+msgid "Failed to load map for installation at '{0}'"
+msgstr "Karttadatan lataus epäonnistui pelille paikassa {0}"
 
-msgid "Enable Memory Output for Pedals"
-msgstr "Käytä muistinmuokkausta polkimien ohjaukseen"
+msgid "Not Connected"
+msgstr "Laite irrotettu"
 
-msgid "kilometers per hour"
-msgstr "kilometriä tunnissa"
+#, csharp-format
+msgid "Plugin with ID [gray]{0}[/] is already loaded, skipping duplicate."
+msgstr "Lisäosa ID:llä [gray]{0}[/] on jo ladattu, ohitetaan duplikaatti."
+
+msgid "You are running the latest version."
+msgstr "Sinulla on uusin versio."
+
+#, csharp-format
+msgid "Failed to download plugin with ID {0} from {1}. Status code: {2}"
+msgstr "Lisäosan {0} lataus epäonnistui osoitteesta {1} koodilla {2}"
+
+msgid ""
+"Show news articles about plugin updates, be that official or 3rd party "
+"plugins."
+msgstr ""
+"Näytä uutisia lisäosien päivityksista, virallisista sekä kolmannen osapuolen."
+
+msgid "No plugins found."
+msgstr "Lisäosia ei löytynyt."
+
+msgid ""
+"When pressing the SET keybind, what should ETS2LA set as the current cruise "
+"control speed?"
+msgstr ""
+"Kun painat Aseta ohjainmääritystä, minkä ETS2LA asettaa "
+"vakionopeudensäätimen nopeudeksi?"
+
+msgid "The selected directory does not exist."
+msgstr "Valittu kansio ei ole olemassa."
+
+msgid ""
+"Adjust the quality of the curves used for path planning and visualization. "
+"By default this matches the game."
+msgstr ""
+"Säädä mutkien tarkkuutta. Tämä siis säätä kuinka monta kolmiota niiden "
+"näyttämiseen käytetään."
+
+msgid "Before we begin."
+msgstr "Ennen kuin aloitamme."
+
+#, csharp-format
+msgid "Error while applying update: {0}"
+msgstr "Virhe päivittäessä: {0}"
+
+msgid "Following Distance"
+msgstr "Seuraamisetäisyys"
+
+msgid "Check For Updates"
+msgstr "Tarkista Päivitykset"
+
+msgid "Telemetry"
+msgstr "Telemetria"
+
+msgid ""
+"This allows ETS2LA to render in multiple viewports, meaning you can move "
+"overlay windows to any monitor."
+msgstr ""
+"Tämä antaa peitekuvan renderöidä monessa eri ikkunassa. Voit siis siirtää "
+"peitekuvan ikkunoita vapaasti mihin vain."
+
+msgid ""
+"Adjust the level of detail of the game data we use. Higher values use more "
+"RAM, but include more information. All levels drive the same."
+msgstr ""
+"Säädä käyttämämme karttadatan tarkkuutta. Korkeat arvot käyttävät enemmän "
+"muistia (RAM). Kaikki tasot ajavat lähes samoin."
+
+#, csharp-format
+msgid "found {0} node"
+msgid_plural "found {0} nodes"
+msgstr[0] "{0} piste"
+msgstr[1] "{0} pistettä"
+
+msgid "Open Source"
+msgstr "Avoin lähdekoodi"
+
+#, csharp-format
+msgid "<span class=\"font-semibold\">{0}</span> until {1}"
+msgstr "<span class=\"font-semibold\">{0}</span>, {1} asti"
 
 msgid ""
 "User folder paths are hidden automatically. Review the log for other "
@@ -1909,74 +1293,29 @@ msgstr ""
 "Käyttäjätunnuksesi on piilotettu kaikista poluista. Voit tarkastaa lokit "
 "muiden yksityisten tietojen varalta."
 
+msgid "Did you remember to restart after installing them?"
+msgstr "Muistitko käynnistää sovelluksen uudelleen asennuksen jälkeen?"
+
+msgid "Volume"
+msgstr "Äänenvoimakkuus"
+
 #, csharp-format
-msgid "Enabled plugin: [bold]{0}[/]"
-msgstr "Käynnistettiin lisäosa: [bold]{0}[/]"
+msgid "Parsing sector {0} of {1}..."
+msgstr "Ladataan sektoria {0}/{1}..."
+
+msgid "Unbound"
+msgstr "Määrittelemätön"
 
 msgid ""
-"Render the vision cameras in the game world. This is useful for debugging, "
-"but can cause performance issues."
+"ETS2LA uses a control setup that should be similar to real life systems. You "
+"can rebind the default controls on the right side."
 msgstr ""
-"Renderöi näkömallejen kamerat pelimaailmassa. Tämä on hyödyllinen "
-"debuggaamisen yhteydessä, mutta voi vaikuttaa suorituskykyyn."
-
-msgid "Failed to create GLFW window"
-msgstr "Virhe GLFW ikkunan avaamisessa"
-
-msgid "Contact us on Discord"
-msgstr "Ote yhteyttä Discordissa"
-
-msgid "Already have an account? Log in here."
-msgstr "On jo tili? Kirjaudu täältä."
-
-msgid "Binding thread started with no control to bind."
-msgstr "Kuuntelusäe käynnistettiin ilman ohjainmääritystä."
-
-msgid ""
-"Failed to fetch available plugins. Please check your internet connection."
-msgstr ""
-"Virhe saatavilla olevien lisäosien keräyksessä. Varmista että verkkosi "
-"toimii oikein."
-
-msgid "Game"
-msgstr "Peli"
-
-msgid "Error in navigation update loop."
-msgstr "Virhe navigoinnin päivityksessä."
-
-msgid "Checking for updates..."
-msgstr "Tarkastetaan päivityksiä..."
-
-msgid "Interaction Mode"
-msgstr "Muokkaustila"
-
-msgid "Speedlimit Offset"
-msgstr "Nopeusrajoituksen siirto"
-
-msgid "Final Disclaimer <span class=\"description\">2/2</span>"
-msgstr "Viimeiset huomiot <span class=\"description\">2/2</span>"
-
-msgid "L"
-msgstr "L"
-
-msgid ""
-"Some 3rd party websites might want access to your account.<br/>You can press "
-"the button below to display your JWT token."
-msgstr ""
-"Jotkut kolmannen osapuolen sivut voivat tarvita tilisi hallinnan.<br/>Voit "
-"painaa alla olevaa nappia JWT avaimen näyttämiseen."
+"Sovellus käyttää ohjausmäärittelyitä, jotka muistuttavat oikeita ajoneuvoja. "
+"Voit vaihtaa näiden määritykset ikkunan oikealla puolella."
 
 #, csharp-format
-msgid "Failed to load library plugin from [gray]{0}[/]: {1}"
-msgstr "Kirjaston lataus paikasta [gray]{0}[/] epäonnistui: {1}"
-
-#, csharp-format
-msgid "Binding for control {0} ({1}) timed out."
-msgstr "Ohjainmäärityksen {0} ({1}) määritys aikakatkaistiin."
-
-#, csharp-format
-msgid "Initializing GLFW Version: {0}"
-msgstr "Käynnistetään GLFW versiota: {0}"
+msgid "Failed to install latest version of plugin with ID {0}."
+msgstr "Virhe lisäosan {0} uusimman version latauksessa."
 
 #, csharp-format
 msgid ""
@@ -1986,71 +1325,369 @@ msgstr ""
 "Jos uskot tämän olevan pikku bugi, kerro meille {0}Discordissa{1} tai {2}"
 "GitHubissa{3}, jotta kärpäslätkä ohjataan oikeaan paikkaan."
 
+msgid "I understand, now let me in!"
+msgstr "Ymmärrän, päästä jo sisään!"
+
+#, csharp-format
+msgid ""
+"You have successfully registered as {0}. Please add the OTP code to your "
+"authentication app."
+msgstr ""
+"Olet rekisteröinyt käyttäjän {0}. Tallenna alla oleva OTP -koodi jollain "
+"sovelluksella (esim Google Authenticator)."
+
+msgid "Disable Overlay"
+msgstr "Poista peitekuva käytöstä"
+
+msgid ""
+"The maximum distance at which 3D elements will be rendered. Lowering this "
+"can be used to improve performance on lower-end hardware."
+msgstr ""
+"Suurin etäisyys jolla 3D elementit renderöidään. Tämän vähentäminen voi "
+"parantaa suorituskykyä vanhoissa tietokoneissa."
+
+#, csharp-format
+msgid "Fetched {0} plugin from {1}"
+msgid_plural "Fetched {0} plugins from {1}"
+msgstr[0] "Löydettiin {0} lisäosa osoitteesta {1}"
+msgstr[1] "Löydettiin {0} lisäosaa osoitteesta {1}"
+
+msgid "Metric"
+msgstr "Metrinen"
+
+msgid ""
+"The font size of the overlay. This can be used to scale the overlay to your "
+"monitor's DPI settings."
+msgstr ""
+"Voit skaalata fonttia suuremmaksi tai pienemmäksi esimerkiksi näyttösi koon "
+"mukaan."
+
+msgid "Error in telemetry update loop."
+msgstr "Virhe pelin telemetrian päivityksessä."
+
+msgid ""
+"Internal server error. The server encountered an unexpected condition that "
+"prevented it from fulfilling the request."
+msgstr ""
+"Sisäinen palvelimen virhe. Palvelin syystä tai toisesta joutuu katkaisemaan "
+"yhteyden virheen vuoksi."
+
+#, csharp-format
+msgid "Road template for {0} not found in SII file."
+msgstr "Tielle {0} ei löytynyt tietoja SII tiedostoista."
+
+#, csharp-format
+msgid "Failed to read log file at '{0}': {1}"
+msgstr "Lokitiedoston luku paikasta {0} epäonnistui: {1}"
+
+#, csharp-format
+msgid "Updated axis behavior for control: {0} ({1}) to {2}"
+msgstr "Muutettiin akselin toimintaa ohjainmääritykselle {0} ({1} -> {2})"
+
+#, csharp-format
+msgid "Disabled plugin: [bold]{0}[/]"
+msgstr "Lisäosa [bold]{0}[/] suljettu"
+
+msgid "Continue"
+msgstr "Jatka"
+
+msgid "Cancel/MODE"
+msgstr "Keskeytä/MODE"
+
+#, csharp-format
+msgid "Failed enable {0}: {1}"
+msgstr "Virhe käynnistäessä lisäosaa {0}: {1}"
+
+msgid "Acceleration Response"
+msgstr "Kiihdytyksiin Reagointi"
+
+msgid "Error in parked vehicles update loop."
+msgstr "Virhe pysäköityjen ajoneuvojen päivityksessä."
+
+msgid "The plugin was enabled successfully."
+msgstr "Lisäosa käynnistetiin onnistuneesti."
+
+msgid ""
+"• If you create an account, we transfer your account information to an "
+"international recipient."
+msgstr ""
+"• Jos luot tilin, me siirrämme tilitietosi ulkomaalla sijaitsevalle "
+"vastaanottajalle."
+
+#, csharp-format
+msgid "<span class=\"font-semibold\">{0}</span> at {1}"
+msgstr "<span class=\"font-semibold\">{0}</span>, lähetetty {1}"
+
+msgid "Normal"
+msgstr "Normaali"
+
+msgid "ETS2LA will offset the speedlimit by this amount."
+msgstr "ETS2LA siirtää nopeusrajoitusta tämän verran."
+
+msgid "Unknown Control"
+msgstr "Tuntematon määritys"
+
+msgid ""
+"When enabled, the overlay will toggle between interaction and non-"
+"interaction mode when you press it's keybind. When disabled, the overlay "
+"will only be interactive while you hold down the keybind."
+msgstr ""
+"Kun käytössä, peitekuva siirtyy interaktio ja normaalimuotojen välillä "
+"\"toggle\" tyylisesti. Kun poistettu käytöstä, sinun täytyy painaa nappia "
+"pohjaan."
+
 msgid "Latest News"
 msgstr "Viimeisimmät uutiset"
 
-#, csharp-format
-msgid "The username {0} is already taken. Please choose a different username."
-msgstr "Käyttäjätunnus {0} on jo otettu. Valitsethan toisen käyttäjätunnuksen."
+msgid "pounds"
+msgstr "paunaa"
 
 #, csharp-format
-msgid "Successfully installed SDK version '{0}' to '{1}'"
-msgstr "Asennettiin SDK versio {0} onnistuneesti paikkaan {1}"
-
-msgid "Invalid Input"
-msgstr "Virheellinen syöte"
+msgid "Failed to initialize SDL3 controls backend: {0}"
+msgstr "Virhe SDL3 ohjainmääritysten taustapalvelun käynnistyksessä: {0}"
 
 msgid ""
-"Adjust the level of detail of the game data we use. Higher values use more "
-"RAM, but include more information. All levels drive the same."
+"The server cannot find the requested resource. The URL may be misspelled, or "
+"the resource has been removed."
 msgstr ""
-"Säädä käyttämämme karttadatan tarkkuutta. Korkeat arvot käyttävät enemmän "
-"muistia (RAM). Kaikki tasot ajavat lähes samoin."
+"Palvelin ei löydä pyydettyä resurssia. Osoite voi olla kirjoitettu väärin, "
+"tai resurssi voi olla poistettu."
 
-msgid "Account Removal Failed"
-msgstr "Tilin poisto epäonnistui"
+#, csharp-format
+msgid "Failed to install SDK version '{0}' to '{1}': {2}"
+msgstr "SDK:n version {0} asentaminen paikkaan {1} epäonnistui: {2}"
 
-msgid "Are you sure?"
-msgstr "Oletko varma?"
+#, csharp-format
+msgid "Failed to read bundled update source marker: {0}"
+msgstr ""
+"Päivityspalvelimen määritys rakennetun tiedoston kautta epäonnistui: {0}"
+
+msgid "liters"
+msgstr "litraa"
+
+#, csharp-format
+msgid "No valid versions found for plugin with ID {0}."
+msgstr "Lisäosalle {0} ei löydy toimivia versioita."
+
+msgid ""
+"Will disable ETS2LA's assists when pressed. If assists are already disabled, "
+"this key will switch between driving modes."
+msgstr ""
+"Poistaa ajotuet käytöstä. Jos ajotuet ovat jo pois käytöstä, vaihtaa "
+"ajomuotojen välillä."
+
+msgid "Binding thread started with no control to bind."
+msgstr "Kuuntelusäe käynnistettiin ilman ohjainmääritystä."
+
+#, csharp-format
+msgid ""
+"Installation at '{0}' is not currently running, waiting for load of profile."
+msgstr "Peli {0} ei ole käynnissä, odotetaan käyttäjäprofiilin latausta."
+
+msgid "Downloading Update"
+msgstr "Ladataan päivitystä"
+
+msgid "Simplified Graphics"
+msgstr "Yksinkertaistetut grafiikat"
+
+msgid "Failed to log in. Please check your credentials and try again."
+msgstr ""
+"Kirjautuminen epäonnistui. Tarkista käyttäjätunnus ja koodi ja yritä "
+"uudelleen."
+
+msgid "Steering Sensitivity"
+msgstr "Ohjauksen herkkyys"
+
+msgid "Disabled"
+msgstr "Pois"
+
+#, csharp-format
+msgid "{0}"
+msgstr "{0}"
+
+msgid ""
+"This might take a while depending on your internet connection and the source."
+msgstr ""
+"Tässä voi kestää hetki riippue verkkosi- ja päivityspalvelimen nopeudesta."
+
+msgid "No updates available."
+msgstr "Päivityksiä ei ole saatavilla."
+
+msgid "Please log in to use the chatbot."
+msgstr "Kirjaudu sisään käyttääksesi keskustelubottia."
+
+#, csharp-format
+msgid "Error rendering overlay: {0}"
+msgstr "Virhe peitekuvan renderöinnissä: {0}"
+
+msgid "You may need to restart the game to apply this change."
+msgstr ""
+"Sinun täytyy ehkä käynnistää peli uudelleen tämän asetuksen muuton jälkeen."
+
+msgid "Off"
+msgstr "Pois"
+
+msgid "L"
+msgstr "L"
+
+msgid ""
+"An error occurred while trying to log in. Please try again later. Error: "
+msgstr "Kirjautumisen yhteydessä tapahtui virhe. Kokeile uudelleen. Virhe: "
+
+msgid "Installing..."
+msgstr "Asennetaan..."
+
+msgid "Failed to add game"
+msgstr "Virhe pelin lisäämisessä"
+
+#, csharp-format
+msgid "Font file not found at {0}"
+msgstr "Fonttia {0} ei löytynyt"
+
+msgid "No release notes available."
+msgstr "Muutoslokia ei saatavilla."
+
+msgid "Changelog"
+msgstr "Muutosloki"
+
+#, csharp-format
+msgid "Detected a switch to {0}, waiting for its game data to be parsed."
+msgstr ""
+"Huomattiin muutos peliin {0}, odotetaan sen karttadatan latauksen "
+"valmistumista."
+
+#, csharp-format
+msgid "Currently running at {0} FPS."
+msgstr "Tämänhetkinen virkistystaajuus {0} FPS."
+
+#, csharp-format
+msgid "Version {0} not found for plugin with ID {1}."
+msgstr "Lisäosalle {1} ei löytynyt versiota {0}."
+
+msgid ""
+"An error occurred while trying to log out. Please try again later. Error: "
+msgstr ""
+"Uloskirjautumisen yhteydessä tapahtui virhe. Kokeile uudelleen. Virhe: "
+
+msgid "Invalid file"
+msgstr "Virheellinen tiedosto"
+
+msgid "Login Successful"
+msgstr "Kirjautuminen onnistui"
+
+#, csharp-format
+msgid "Discovered {0} library in total"
+msgid_plural "Discovered {0} libraries in total."
+msgstr[0] "Löydettiin kokonaisuudessaan {0} kirjasto."
+msgstr[1] "Löydettiin kokonaisuudessaan {0} kirjastoa."
+
+msgid "Console"
+msgstr "Konsoli"
+
+msgid "The game has been added successfully."
+msgstr "Peli lisättiin onnistuneesti."
+
+msgid ""
+"The server could not understand the request due to invalid syntax or "
+"corrupted request data."
+msgstr ""
+"Palvelin ei ymmärtänyt pyyntöä korruptoidun datan, tai väärän syntaksin "
+"takia."
+
+#, csharp-format
+msgid "No versions available for plugin with ID {0}."
+msgstr ""
+
+#, csharp-format
+msgid ""
+"Manually added game at '{0}' no longer contains a game executable, skipping."
+msgstr ""
+"Manuaalisesti lisätyllä pelillä paikassa {0} ei enää ole "
+"käynnistystiedostoa, ohitetaan."
+
+msgid "Logout Error"
+msgstr "Uloskirjautumisen yhteydessä tapahtui virhe"
+
+msgid "Don't have an account?<br/>Register a new one now, no emails required!"
+msgstr "Ei vielä tiliä?<br/>Rekisteröidyppä! Me ei vaadita sähköposteja!"
+
+#, csharp-format
+msgid "Found {0} game installation."
+msgid_plural "Found {0} game installations."
+msgstr[0] "Löydettiin {0} peli."
+msgstr[1] "Löydettiin {0} peliä."
+
+msgid "Scientific"
+msgstr "Tieteellinen"
+
+msgid "Waiting..."
+msgstr "Odotetaan..."
+
+msgid "hide"
+msgstr "piilottaaksesi"
 
 #, csharp-format
 msgid "Update available: {0}"
 msgstr "Päivitys saatavilla: {0}"
 
+msgid "Error in traffic update loop."
+msgstr "Virhe liikenteen päivityksessä."
+
+#, csharp-format
+msgid "Error in plugin {0} Tick: {1}"
+msgstr "Virhe lisäosassa {0}, tikki {1}"
+
 msgid ""
-"Please add the OTP code to your authentication app.<br/><span class=\"text-"
-"text-accent\">Do not close the page before you have added the code. We "
-"cannot recover accounts once they are created!</span>"
+"To get started fast, you can install our <span class=\"text-text-accent font-"
+"bold\">recommended</span> plugins. These contain everything you need to get "
+"driving."
 msgstr ""
-"Lisää OTP -koodi vahvistuskoodi sovellukseesi.<br/><span class=\"text-text-"
-"accent\">Älä sulje sivua ennen kuin olet lisännyt koodin. Me emme voi "
-"palauttaa tiliä rekisteröinnin jälkeen!</span>"
-
-msgid "Game added"
-msgstr "Peli lisätty"
-
-msgid "Confirm Account Removal"
-msgstr "Vahvista tilin poisto"
-
-msgid "Starting ETS2LA..."
-msgstr "Käynnistetään..."
+"Nopeaa aloitusta varten, voit asentaa meidän <span class=\"text-text-accent "
+"font-bold\">suositellut</span> lisäosat. Näihin sisältyy kaikki jota "
+"tarvitsen ajamisen aloittamiseen."
 
 #, csharp-format
-msgid "Discovered {0} manually installed library"
-msgid_plural "Discovered {0} manually installed libraries."
-msgstr[0] "Löydettiin {0} manuaalisesti asennettu kirjasto"
-msgstr[1] "Löydettiin {0} manuaalisesti asennettua kirjastoa"
+msgid "An error occurred while loading map data: {0}"
+msgstr "Karttadatan latauksen yhteydessä ilmeentyi virhe: {0}"
+
+msgid "The selected game executable was not found."
+msgstr "Valitun pelin käynnistys tiedostoa ei löydetty."
 
 #, csharp-format
-msgid "Control with ID '{0}' not found for updating bindings."
-msgstr ""
-"Ohjainmääritystä jonka ID {0}, ei löytynyt määrityksen muuttamista varten."
+msgid "Loaded library plugin: [gray]{0}[/] from [gray]{1}[/]."
+msgstr "Ladatiin kirjasto [gray]{0}[/] paikasta [gray]{1}[/]."
 
-msgid "Test Audio"
-msgstr ""
+msgid "Enter the OTP generated by your authenticator app."
+msgstr "Kirjoita autentikaatiosovelluksen OTP koodi tähän."
 
-msgid "Near"
-msgstr "Lähellä"
+#, csharp-format
+msgid "The username {0} is reserved. Please choose a different username."
+msgstr "Käyttäjätunnus {0} on varattu. Valitsethan jonkin muun."
+
+msgid "Select the game you wish to start."
+msgstr "Valitse peli jonka haluat käynnistää."
+
+msgid "Speed Limits"
+msgstr "Nopeusrajoitukset"
+
+msgid "Responsiveness"
+msgstr "Herkkyys"
+
+msgid "Parsing Map Data"
+msgstr "Ladataan pelidataa"
+
+msgid "SDKs need to be installed."
+msgstr "SDK:t täytyy vielä asentaa ennen käyttöä."
+
+msgid "Hide Installed"
+msgstr "Piilota asennetut"
+
+msgid "Failed to initialize overlay, OpenGL initialization failed."
+msgstr "Peitekuvan käynnistys epäonnistui, OpenGL ei käynnistynyt."
+
+#, csharp-format
+msgid "Plugin '{0}' is missing its DLL at '{1}' and has been removed."
+msgstr "Lisäosan {0} DLL tiedosto puuttuu ({1}) joten se on poistettu."
 
 msgid ""
 "Increases the current target speed by one step. If assists are disabled, "
@@ -2061,263 +1698,103 @@ msgstr ""
 "Tämä ohjainmääritys käyttäytyy RES (Jatka) painikkeen tavoin. Eli se jatkaa "
 "aikaisemmin määriteltyä nopeutta."
 
-msgid "SET Behaviour"
-msgstr "Aseta -käytös"
+msgid "Account"
+msgstr "Käyttäjätili"
 
-msgid "Close"
-msgstr "Sulje"
-
-#, csharp-format
-msgid "Assist Mode: <span class=\"text-text-accent font-bold\">{0}</span>"
-msgstr "Ajomuoto: <span class=\"text-text-accent font-bold\">{0}</span>"
+msgid "Translate News Articles"
+msgstr "Käännä uutisartikkelit"
 
 #, csharp-format
-msgid ""
-"When receiving a speedlimit of {0} {1}, we will set the speed to {2} {3}."
-msgstr "Kun nopeusrajoitus vaihtuu {0} {1}, nopeus asetetaan {2} {3}."
-
-#, csharp-format
-msgid "Error initializing memory mapped file: {0}"
-msgstr "Virhe muistitiedoston avaamisessa: {0}"
-
-msgid "State Info"
-msgstr "Sovelluksen Tila"
-
-msgid "Metric"
-msgstr "Metrinen"
-
-msgid "Render Vision Cameras"
-msgstr "Renderöi näkömallien kamerat"
+msgid "Found {0} (version: {1}) at '{2}'"
+msgstr "Löydettiin {0} (versio {1}) paikassa {2}"
 
 msgid ""
-"Your system has less than 16GB of RAM. High data fidelity uses significant "
-"amounts of RAM, and may cause your system to become unstable. Please select "
-"a lower fidelity."
+"We can render elements in the game world using the overlay. This will use "
+"additional CPU and GPU resources."
 msgstr ""
-"Laitteessasi on vähemmän kuin 16GB muistia. Korkea karttadatan tarkkuus "
-"vaatii suuria määriä muistia, ja voi aiheuttaa järjestelmän kaatumisen."
-
-msgid "Send log"
-msgstr "Lähetä lokitiedosto"
-
-msgid "Show Plugin Updates"
-msgstr "Näytä lisäosien päivitykset"
-
-#, csharp-format
-msgid "Control with ID '{0}' not found for updating axis behavior."
-msgstr ""
-"Ohjainmääritystä jonka ID {0}, ei löytynyt akselin toiminnan muuttamista "
-"varten."
+"Voimme renderöitä mm. tekstiä pelimaailmassa peitekuvaa käyttäen. Tämä "
+"vaatii lisää suorituskykyä prosessorilta ja näytönohjaimelta."
 
 msgid ""
-"Please complete this <span class=\"text-text-accent font-bold\">short</span> "
-"onboarding process to get started."
+"Select which traffic rules ETS2LA should obey. More might be added later, "
+"and all plugins won't necessarily support all rules."
 msgstr ""
-"Käy tämä <span class=\"text-text-accent font-bold\">lyhyt</span> perehdytys "
-"läpi. Tässä ei kauaa kestä!"
+"Valitse mitä liikennesääntöjä ETS2LA seuraa. Sääntöjä voidaan lisätä "
+"myöhemmin, ja kaikki lisäosat eivät välttämättä tue kaikkia sääntöjä."
+
+msgid "kilometers per hour"
+msgstr "kilometriä tunnissa"
+
+#, csharp-format
+msgid "Control with ID '{0}' not found for event unsubscription."
+msgstr ""
+"Ohjainmääritystä jonka ID {0}, ei löytynyt tapahtuman kuuntelemisen "
+"lopettamista varten."
+
+msgid "Share log"
+msgstr "Jaa lokitiedosto"
+
+msgid "Chatbot"
+msgstr "Keskustelubotti"
+
+#, csharp-format
+msgid "Binding {0}"
+msgstr "Määritetään {0}"
+
+#, csharp-format
+msgid "Failed to unload plugin load context: {0}"
+msgstr "Lisäosan latauskontekstin poisto epäonnistui: {0}"
+
+#, csharp-format
+msgid "No download URL found for plugin with ID {0} in region {1}."
+msgstr "Lisäosalle {0} ei löytynyt latausosoitetta alueelta {1}."
 
 msgid ""
-"When pressing the SET keybind, what should ETS2LA set as the current cruise "
-"control speed?"
+"Changing the display language requires a restart of ETS2LA to take effect. "
+"Restart now?"
 msgstr ""
-"Kun painat Aseta ohjainmääritystä, minkä ETS2LA asettaa "
-"vakionopeudensäätimen nopeudeksi?"
-
-msgid ""
-"An error occurred while trying to log in. Please try again later. Error: "
-msgstr "Kirjautumisen yhteydessä tapahtui virhe. Kokeile uudelleen. Virhe: "
+"Kielen vaihtaminen vaatii sovelluksen uudelleenkäynnistystä. Käynnistetäänkö "
+"uudelleen nyt?"
 
 #, csharp-format
-msgid "Failed to load map for installation at '{0}'"
-msgstr "Karttadatan lataus epäonnistui pelille paikassa {0}"
+msgid "Update to {0} from {1}"
+msgstr "Päivitä versioon {0} versiosta {1}"
 
-#, csharp-format
-msgid "Received input from unknown joystick with instance ID {0}."
-msgstr "Laitteelta {0} saatiin vastaus."
+msgid "Open Externally"
+msgstr "Avaa ulkoisesti"
 
-msgid "Stay on Top"
-msgstr "Pidä ikkuna päällä"
-
-msgid ""
-"An error occurred while trying to remove your account. Please try again "
-"later. Error: "
-msgstr ""
-"Tilin poiston yhteydessä tapahtui virhe. Kokeile myöhemmin uudelleen. Virhe: "
-
-#, csharp-format
-msgid ""
-"Target speed changed. Current speedlimit: {0} {1}. Offsets are carried over "
-"on speedlimit change."
-msgstr ""
-
-msgid "Like ETS2LA?"
-msgstr "Pidätkö ETS2LA:sta?"
-
-#, csharp-format
-msgid "Disconnected joystick: [gray italic]({0})[/]"
-msgstr "Laite [gray italic]({0})[/] poistettiin"
-
-#, csharp-format
-msgid "Failed to open joystick {0}."
-msgstr "Laitteen {0} avaus epäonnistui."
-
-msgid "Select core.scs"
-msgstr "Valitse core.scs -tiedosto"
-
-msgid "Speed Limits"
-msgstr "Nopeusrajoitukset"
-
-msgid "Register"
-msgstr "Rekisteröidy"
-
-#, csharp-format
-msgid "Error loading map data from '{0}': {1}"
-msgstr "Virhe karttadatan latauksessa '{0}':sta: {1}"
-
-msgid "Failed to init ImGui Impl OpenGL3"
-msgstr "Virhe \"ImGui Impl OpenGL3\" käynnistyksessä"
-
-msgid "The step size for changing the cruise control speed."
-msgstr "Vakionopeudensäätimen nopeuden säädön askelkoko."
-
-msgid "Assist Level: "
-msgstr "Ajomuoto: "
-
-msgid "ETS2LA will offset the speedlimit by this percentage."
-msgstr "ETS2LA siirtää nopeusrajoitusta tällä prosentilla."
-
-msgid "m/s"
-msgstr "m/s"
-
-#, csharp-format
-msgid "Updated axis behavior for control: {0} ({1}) to {2}"
-msgstr "Muutettiin akselin toimintaa ohjainmääritykselle {0} ({1} -> {2})"
-
-msgid "Open Source"
-msgstr "Avoin lähdekoodi"
-
-msgid "Uninstall"
-msgstr "Poista"
-
-msgid "Off"
-msgstr "Pois"
-
-#, csharp-format
-msgid "Created plugin directory: [gray]{0}[/]"
-msgstr "Luotiin lisäosan kansio: [gray]{0}[/]"
-
-msgid "Late"
-msgstr "Myöhään"
-
-msgid "pounds"
-msgstr "paunaa"
-
-msgid "Contact us on GitHub"
-msgstr "Ota yhteyttä GitHubissa"
-
-msgid "Lane Assist Only"
-msgstr "Vain kaistavahti"
-
-msgid "Game SDK"
-msgstr "Pelin SDK"
-
-#, csharp-format
-msgid "The username {0} is reserved. Please choose a different username."
-msgstr "Käyttäjätunnus {0} on varattu. Valitsethan jonkin muun."
-
-msgid "Decrease/SET"
-msgstr "Vähennä/SET"
-
-msgid "km/h"
-msgstr "km/h"
-
-msgid "You must restart ETS2LA for the font size change to take effect."
-msgstr "Sovellus on käynnistettävä uudelleen asetuksen käyttöönottoa varten."
-
-msgid "Visual"
-msgstr "Visuaalinen"
-
-msgid ""
-"Disables the overlay entirely. This will fix the black screen issue at the "
-"cost of breaking all features that rely on the overlay, including AR and the "
-"HUD."
-msgstr ""
-"Poistaa peitekuvan käytöstä. Tämä korjaa \"mustan ruudun\" ongelman, mutta "
-"et voi käyttää mitään peitekuvaa vaativia ominaisuuksia kuten AR tai HUD "
-"renderöintiä."
-
-msgid "Update Available"
-msgstr "Päivitys saatavilla"
-
-msgid "Current Speed"
-msgstr "Nykyinen Nopeus"
-
-msgid "Downloading Update"
-msgstr "Ladataan päivitystä"
-
-#, csharp-format
-msgid "Update to {0}"
-msgstr "Päivitä versioon {0}"
-
-#, csharp-format
-msgid "Bound control {0} ({1}) to device {2} and control {3}"
-msgstr "Ohjäinmääritys {0} ({1}) määritelty laitteen {2} painikkeeseen {3}"
-
-msgid "Display Language"
-msgstr "Kieli"
-
-#, csharp-format
-msgid "Successfully uninstalled plugin with ID {0}."
-msgstr "Lisäosa {0} poistettiin onnistuneesti."
-
-msgid "SDK Installation"
-msgstr "SDK:n asennus"
-
-msgid "Far"
-msgstr "Kaukana"
-
-msgid ""
-"Driving mode changed, press Cancel/MODE again to cycle through the modes."
-msgstr "Ajomoodi vaihdettu. Paina Keskeytä/MODE nappia vaihtaaksesi moodia."
-
-#, csharp-format
-msgid "Unloading parsed map data for installation at '{0}'"
-msgstr "Tyhjennetään karttatietoja pelille {0}"
-
-msgid "You took a wrong turn!"
-msgstr "Käännyit väärään suuntaan!"
-
-msgid "Unchanged / Unavailable"
-msgstr "Muuttumaton"
-
-#, csharp-format
-msgid "Failed to uninstall current version of plugin with ID {0}."
-msgstr "Lisäosan {0} nykyisen version poisto epäonnistui."
-
-#, csharp-format
-msgid "{0} m/s ({1} in {2})"
-msgstr "{0} m/s ({1} kun {2})"
-
-msgid "Stop Rendering When Game is Paused"
-msgstr "Pysäytä renderöinti pelin kanssa"
-
-#, csharp-format
-msgid "Failed to refresh joysticks: {0}"
-msgstr "Laitteiden päivitys epäonnistui: {0}"
-
-msgid "Failed to log in. Please check your credentials and try again."
-msgstr ""
-"Kirjautuminen epäonnistui. Tarkista käyttäjätunnus ja koodi ja yritä "
-"uudelleen."
-
-msgid "Low"
-msgstr "Alhainen"
+msgid "Restarting ETS2LA..."
+msgstr "Käynnistetään uudelleen..."
 
 msgid "ETS2LA is running."
 msgstr "ETS2LA on käynnistetty."
 
-msgid "gallons"
-msgstr "gallonaa"
+msgid "Warnings"
+msgstr "Varoitukset"
+
+msgid "Restart"
+msgstr "Käynnistä uudelleen"
+
+msgid "Plugins"
+msgstr "Lisäosat"
+
+msgid "Close"
+msgstr "Sulje"
+
+msgid "lbs"
+msgstr "lbs"
+
+#, csharp-format
+msgid "Tried to disable {0}, but it was not found among loaded plugins."
+msgstr ""
+"Lisäosa {0} yritettiin sammuttaa, mutta sitä ei löytynyt ladatuista "
+"lisäosista."
+
+msgid "Full Self-Driving"
+msgstr "Täysin automaattinen ajo"
+
+msgid "Install"
+msgstr "Asenna"
 
 #, csharp-format
 msgid ""
@@ -2327,111 +1804,316 @@ msgstr ""
 "Yritettiin vaihtaa päivityspalvelin osoitteeseen {0}, mutta se ei ole "
 "saatavissa olevissa palvelimissa."
 
-msgid ""
-"The font size of the overlay. This can be used to scale the overlay to your "
-"monitor's DPI settings."
-msgstr ""
-"Voit skaalata fonttia suuremmaksi tai pienemmäksi esimerkiksi näyttösi koon "
-"mukaan."
+msgid "Error Checking for Updates"
+msgstr "Virhe päivitysten tarkistuksen yhteydessä"
 
-msgid ""
-"The units ETS2LA will use when displaying information to a user. Scientific "
-"has only slight differences to metric."
-msgstr ""
-"Yksiköt joita käytetään lähes kaikessa näytetyssä informaatiossa. "
-"Tieteellisten ero metrisiin on hyvin pieni."
+msgid "Speed Limit"
+msgstr "Nopeusrajoitus"
 
-msgid "For now, please contact us on GitHub or Discord."
-msgstr "Toistaiseksi, ota meihin yhteyttä alla olevien linkkien kautta."
+msgid "Vision Cameras"
+msgstr "Näkömallien kamerat"
 
-msgid "Your account has been successfully removed."
-msgstr "Tilisi on poistettu onnistuneesti."
-
-msgid ""
-"The request method is recognized by the server but is not supported by the "
-"target resource."
-msgstr ""
-"Palvelin tunnistaa pyynnön tyypin, mutta tavoiteresurssi ei hyväksy sitä."
-
-msgid "Wiki / FAQ"
-msgstr "Wiki / UKK"
-
-msgid "Limit Overlay Framerate"
-msgstr "Rajoita peitekuvan kuvataajuutta"
+msgid "This page hasn't been created yet, but it's coming <i>soon</i>."
+msgstr "Tätä sivua ei ole vielä tehty, mutta se on tulossa <i>kohta</i>."
 
 #, csharp-format
-msgid "Not all dependencies for plugin {0} are installed."
-msgstr "Lisäosan {0} kaikkia vaatimuksia ei ole ladattu."
+msgid "This might take a while... ({0}/{1})"
+msgstr "Tässä voi kestää hetki... ({0}/{1})"
 
 msgid ""
-"This setting drops redundant information while maintaining most detail "
-"objects (such as signs). Includes all hidden and AI only roads."
+"Please complete this <span class=\"text-text-accent font-bold\">short</span> "
+"onboarding process to get started."
 msgstr ""
-"Tämä asetus hylkää turhat tiedot, mutta kuitenkin pitää lähes kaikki "
-"yksityiskohdat (kuten kyltit). Sisältää piilotetut ja vain tekoälylle "
-"tarkoitetut tiet."
-
-#, csharp-format
-msgid "Failed to install SDK version '{0}' to '{1}': {2}"
-msgstr "SDK:n version {0} asentaminen paikkaan {1} epäonnistui: {2}"
-
-msgid "• ETS2LA Developers, contact@ets2la.com, Poland."
-msgstr ""
-"• ETS2LA Kehittäjät, contact@ets2la.com, Puola. HUOM SUOMALAISILLE: jos näet "
-"tämän viestin, olet ladannut KIINAAN tarkoitetun version. Poista tämä, ja "
-"lataa uusin versio osoitteesta ets2la.com."
-
-msgid "Login"
-msgstr "Kirjaudu"
-
-#, csharp-format
-msgid "Latest Version: {0}"
-msgstr "Viimeisin versio: {0}"
-
-msgid "Audio playback canceled"
-msgstr "Äänentoisto katkaistiin"
-
-msgid "Pascals"
-msgstr "Paskalia"
-
-msgid "Button"
-msgstr "Nappi"
-
-msgid "Overrides"
-msgstr "Pakotukset"
+"Käy tämä <span class=\"text-text-accent font-bold\">lyhyt</span> perehdytys "
+"läpi. Tässä ei kauaa kestä!"
 
 msgid "Remember!"
 msgstr "Muistathan!"
 
-msgid "You can enable the plugins we installed in a previous step here."
-msgstr "Voit käynnistää aikaisemmin asentamamme lisäosat täältä."
+msgid "Disable All"
+msgstr "Sulje kaikki"
 
-#, csharp-format
-msgid "Loaded library plugin: [gray]{0}[/] from [gray]{1}[/]."
-msgstr "Ladatiin kirjasto [gray]{0}[/] paikasta [gray]{1}[/]."
-
-msgid "Error in camera update loop."
-msgstr "Virhe kameran päivityksessä."
-
-msgid "Become a GitHub Sponsor"
+msgid ""
+"Failed to fetch available plugins. Please check your internet connection."
 msgstr ""
-"Suomalaiset eivät voi tukea tätä kautta rahankeräys säätelyiden vuoksi!"
+"Virhe saatavilla olevien lisäosien keräyksessä. Varmista että verkkosi "
+"toimii oikein."
 
-msgid "Please log in to use the chatbot."
-msgstr "Kirjaudu sisään käyttääksesi keskustelubottia."
-
-msgid "No Update Available"
-msgstr "Päivitystä ei ole saatavilla"
-
-msgid "Your username may not contain repeated separators."
-msgstr "Käyttäjätunnuksessasi ei saa olla peräkkäisiä erottimia."
+msgid "feet"
+msgstr "jalkaa"
 
 #, csharp-format
-msgid "Skipped stale plugin shadow directory [gray]{0}[/]: {1}"
-msgstr "Ohitetiin vanha lisäosan varjokansio [gray]{0}[/]: {1}"
+msgid "Overlay is disabled in settings, skipping window registration for {0}."
+msgstr "Peitekuva poistettu käytöstä, ohitetaan ikkunan {0} rekisteröinti."
 
-msgid "Your account is not allowed to use the chatbot."
-msgstr "Tilisi ei saa käyttää keskustelubottia."
+msgid "Audio Settings"
+msgstr ""
+
+msgid "Request cancelled."
+msgstr "Pyyntö peruutettu."
+
+msgid "Registration Failed"
+msgstr "Rekisteröinti epäonnistui"
+
+msgid "Please close the game before continuing with the onboarding process."
+msgstr "Suljethan pelin ennen perehdytyksen jatkamista."
+
+msgid "Registration Successful"
+msgstr "Rekisteröinti onnistui"
+
+#, csharp-format
+msgid "Your username must be at most {0} characters long."
+msgstr "Käyttäjätunnuksesi voi olla enintään {0} kirjainta pitkä."
+
+#, csharp-format
+msgid "Successfully installed plugin {0} ({1}, {2})"
+msgstr "Lisäosa {0} ({1}, {2}) asennettiin onnistuneesti"
+
+#, csharp-format
+msgid "Installation at '{0}' has already been parsed."
+msgstr "Peli {0} on jo ladattu."
+
+msgid "Increase/RES"
+msgstr "Kasvata/RES"
+
+#, csharp-format
+msgid "Failed to acquire joystick [gray italic]({0})[/]: {1}"
+msgstr "Virhe laitteen [gray italic]({0})[/] tietojen keräämisessä: {1}"
+
+msgid "Far"
+msgstr "Kaukana"
+
+msgid "For now, please contact us on GitHub or Discord."
+msgstr "Toistaiseksi, ota meihin yhteyttä alla olevien linkkien kautta."
+
+msgid "K"
+msgstr "K"
+
+msgid "Window"
+msgstr "Ikkuna"
+
+msgid ""
+"If you see a fully black screen, see the FAQ at <span class=\"description "
+"hover:underline\">ets2la.com</span>."
+msgstr ""
+"Jos näet täysin mustan ruudun, katso FAQ <span class=\"description "
+"hover:underline\">ets2la.com:ssa</span>."
+
+msgid "Settings"
+msgstr "Asetukset"
+
+msgid "Error Loading File"
+msgstr "Virhe ladattaessa tiedostoa"
+
+#, csharp-format
+msgid "A new update is available: {0}"
+msgstr "Uusi päivitys on saatavilla: {0}"
+
+msgid "Force Base Map Name"
+msgstr "Pakota pelin oma kartan nimi"
+
+msgid "Experiments"
+msgstr "Kokeilut"
+
+msgid "gallons"
+msgstr "gallonaa"
+
+msgid "m"
+msgstr "m"
+
+msgid "SDKs are currently installed."
+msgstr "SDK:t ovat asennettu."
+
+msgid "Restart Required"
+msgstr "Käynnistys vaaditaan"
+
+msgid "I understand"
+msgstr "Ymmärrän"
+
+#, csharp-format
+msgid "No map data found for installation at '{0}'. Is the installation valid?"
+msgstr "Karttadataa ei voitu ladata pelille {0}, onko se oikein ladattu?"
+
+msgid "Please log in before using the chatbot."
+msgstr "Kirjaudu sisään ennen keskustelubotin käyttöä."
+
+#, csharp-format
+msgid "Error rendering context menu for window {0}: {1}"
+msgstr "Virhe ikkunan {0} valikon renderöinnissä: {1}"
+
+msgid "Audio playback canceled"
+msgstr "Äänentoisto katkaistiin"
+
+msgid "kilograms"
+msgstr "kilogrammaa"
+
+msgid "Username Taken"
+msgstr "Käyttäjätunnus on jo olemassa"
+
+msgid "ft"
+msgstr "ft"
+
+#, csharp-format
+msgid ""
+"Failed to clean plugin shadow directory [gray]{0}[/], it will be removed on "
+"the next startup: {1}"
+msgstr ""
+"Lisäosan varjokansion [gray]{0}[/] poisto epäonistui. Se poistetaan "
+"seuraavan käynnistyksen yhteydessä. {1}"
+
+#, csharp-format
+msgid "Cannot enable plugin {0} because dependency {1} failed to enable."
+msgstr ""
+"Lisäosan {0} käynnistys estetty, sillä se edellyttää {1}, jonka käynnistys "
+"epäonnistui."
+
+#, csharp-format
+msgid "Discovered {0} manually installed library"
+msgid_plural "Discovered {0} manually installed libraries."
+msgstr[0] "Löydettiin {0} manuaalisesti asennettu kirjasto"
+msgstr[1] "Löydettiin {0} manuaalisesti asennettua kirjastoa"
+
+msgid "Max Render Distance"
+msgstr "Maksimi renderöinti etäisyys"
+
+msgid ""
+"Gateway timeout. The server was acting as a gateway or proxy and did not "
+"receive a timely response from the upstream server."
+msgstr ""
+"Reitityksen aikakatkaisu. Palvelin joka toimii reitittimenä ei saanut "
+"seuraavalta palvelimelta vastausta aikakatkaisun puitteissa."
+
+msgid "psi"
+msgstr "psi"
+
+#, csharp-format
+msgid "An error occurred while loading file '{0}': {1}"
+msgstr "Tiedoston '{0}' latauksen yhteydessä ilmeentyi virhe {1}"
+
+msgid "Next/OK"
+msgstr "Jatka/OK"
+
+msgid ""
+"ETS2LA is running as a system administrator. This puts your system at risk "
+"if you use 3rd party plugins. Select Yes to continue anyway and accept the "
+"risk."
+msgstr ""
+"ETS2LA on avattu järjestelmänvalvojana. Tämä asettaa laitteesi vaaraan jos "
+"käytät 3. osapuolen lisäosia. Valitse Kyllä jatkaaksesi ja hyväksyäksesi "
+"riskin."
+
+msgid "Recommended Plugins"
+msgstr "Suositellut lisäosat"
+
+msgid "Failed to remove account. Please try again."
+msgstr "Tilin poisto epäonnistui. Kokeile uudelleen."
+
+msgid ""
+"The maximum speed ETS2LA will accelerate to. It might still drift over this "
+"limit due to momentum."
+msgstr ""
+"Maksiminopeus johon ETS2LA kiihdyttää. Alamäessä nopeus voi nousta tätä "
+"korkeammaksi."
+
+msgid "Game added"
+msgstr "Peli lisätty"
+
+msgid "Privacy Policy"
+msgstr "Tietoturvakäytäntö"
+
+#, csharp-format
+msgid "You are permanently banned.<br/>Reason: {0}"
+msgstr "Botin käyttö on sinulta kielletty.<br/>Syy: {0}"
+
+#, csharp-format
+msgid "Unloading parsed map data for installation at '{0}'"
+msgstr "Tyhjennetään karttatietoja pelille {0}"
+
+msgid ""
+"Some mods implement additional maps like japan.mbd or russia.mbd. If you "
+"find your mods are not loading properly, try enabling this option. This is "
+"known to be required for RusMap."
+msgstr ""
+"Jotkut modit lisäävät omia karttoja kuten japan.mbd. Jos huomaat, että "
+"modisi eivät lataudu oikein, kokeile laittaa tämä asetus päälle. Tämän "
+"tiedetään olevan tarpeellinen RusMap:lle."
+
+msgid "Extreme"
+msgstr "Järjetön"
+
+#, csharp-format
+msgid ""
+"Cannot uninstall plugin with ID {0} because the following installed plugins "
+"depend on it: {1}"
+msgstr ""
+"Lisäosan {0} poisto estettiin, sillä seuraavat lisäosat vaativat sen "
+"toimiakseen: {1}"
+
+#, csharp-format
+msgid ""
+"You are currently logged in as <span class=\"text-text-l\">{0}</span>. [{1}]"
+msgstr "Hei <span class=\"text-text-l\">{0}</span>, tilisi status on [{1}]."
+
+msgid ""
+"We will pause the game when we detect instability or the steering is "
+"unresponsive / disables itself for other reasons."
+msgstr ""
+"Pysäytämme pelin kun huomaamme ohjauksen olevan vaarallista / epäluotettavaa."
+
+msgid ""
+"Render the vision cameras in the game world. This is useful for debugging, "
+"but can cause performance issues."
+msgstr ""
+"Renderöi näkömallejen kamerat pelimaailmassa. Tämä on hyödyllinen "
+"debuggaamisen yhteydessä, mutta voi vaikuttaa suorituskykyyn."
+
+#, csharp-format
+msgid "Deleted '{0}'"
+msgstr "Poistettiin {0}"
+
+msgid "Open SDK Settings"
+msgstr "Avaa SDK -asetukset"
+
+#, csharp-format
+msgid "Target Speed: <span class=\"text-text-accent font-bold\">{0} {1}</span>"
+msgstr ""
+"Tavoitenopeus: <span class=\"text-text-accent font-bold\">{0} {1}</span>"
+
+#, csharp-format
+msgid "Error initializing memory mapped file: {0}"
+msgstr "Virhe muistitiedoston avaamisessa: {0}"
+
+#, csharp-format
+msgid "Failed to load plugin from [gray]{0}[/]: {1}"
+msgstr "Lisäosan lataus paikasta [gray]{0}[/] epäonnistui: {1}"
+
+#, csharp-format
+msgid "Assist Mode: <span class=\"text-text-accent font-bold\">{0}</span>"
+msgstr "Ajomuoto: <span class=\"text-text-accent font-bold\">{0}</span>"
+
+msgid "Thinking..."
+msgstr "Ajattelee..."
+
+msgid "View Public Telemetry"
+msgstr "Katso julkinen telemetria"
+
+msgid "Adjust the volume of the audio output."
+msgstr "Säädä äänenvoimakkuutta."
+
+#, csharp-format
+msgid ""
+"Selected update source '{0}' not found, defaulting to first available source."
+msgstr "Valittua päivityspalvelinta {0} ei löydy, palataan oletuspalvelimeen."
+
+msgid "SET Behaviour"
+msgstr "Aseta -käytös"
+
+#, csharp-format
+msgid "Registered control: {0} [gray italic]({1})[/]"
+msgstr "Rekisteröitiin ohjainmääritys {0} [gray italic]({1})[/]"
+
+msgid "Keybind is Toggle"
+msgstr "Painike on \"Toggle\""
 
 msgid ""
 "You'll have to reinstall the SDK for <span class=\"text-text-accent font-"
@@ -2441,108 +2123,430 @@ msgstr ""
 "Sinun täytyy asentaa uudet SDK:t jokaisen <span class=\"text-text-accent "
 "font-bold\">pelipäivityksen</span> jälkeen. Löydät asennussivun asetuksista."
 
-msgid "Keybind is Toggle"
-msgstr "Painike on \"Toggle\""
+msgid "Please see the logs for more information."
+msgstr "Katso lokitiedosto."
 
-msgid "Waiting..."
-msgstr "Odotetaan..."
+msgid "Start Game"
+msgstr "Käynnistä peli"
+
+msgid "Binding Timed Out"
+msgstr "Määrittäminen aikakatkaistiin"
+
+msgid "Thank you to the following people for their ongoing support:"
+msgstr "Kiitämme allaolevia heidän jatkuneesta tuesta:"
+
+msgid "Changes will take effect after restarting the application."
+msgstr ""
+"Muutokset otetaan käyttöön kunhan käynnistät sovelluksen ensin uudelleen."
+
+msgid "Use this button to extend the sidebar."
+msgstr "Käytä tätä painiketta avaaksesi sivupalkin."
+
+msgid "Lane Assist Only"
+msgstr "Vain kaistavahti"
 
 msgid ""
-"Adjust how ETS2LA will respond to necessary steering changes. This for "
-"example controls how quickly ETS2LA will lane-change."
+"This is a highly experimental program. ETS2LA is not perfect, and you will "
+"find issues with it's driving and safety. <span class=\"text-text-accent "
+"font-bold\">Do not leave ETS2LA unattended, especially in multiplayer.</span>"
 msgstr ""
-"Säädä miten ETS2LA reagoi tarpeellisiin ohjausliikkeisiin. Tämä esimerkiksi "
-"säätää miten nopeasti vaihdamme kaistaa."
-
-msgid "Increase/RES"
-msgstr "Kasvata/RES"
+"Tämä on kehitteillä oleva sovellus. ETS2LA ei ole täydellinen, tulet "
+"kohtaamaan ongelmia ajamisessa ja turvallisuudessa. <span class=\"text-text-"
+"accent font-bold\">Älä jätä ETS2LA:ta ajamaan ilman valvontaa, varsinkaan "
+"moninpelissä.</span>"
 
 #, csharp-format
-msgid "Found {0} game installation."
-msgid_plural "Found {0} game installations."
-msgstr[0] "Löydettiin {0} peli."
-msgstr[1] "Löydettiin {0} peliä."
+msgid "Tried to enable {0}, but it was not found among loaded plugins."
+msgstr ""
+"Lisäosa {0} yritettiin käynnistää, mutta sitä ei löytynyt ladatuista "
+"lisäosista."
+
+msgid ""
+"Parsing will continue, however information contained in this file won't be "
+"available to ETS2LA."
+msgstr ""
+"Lataus jatkuu, mutta tässä tiedostossa oleva informaatio ei ole saatavilla "
+"ETS2LA:lle."
+
+msgid "The selected file is not a core.scs file."
+msgstr "Valittu tiedosto ei ole core.scs."
+
+msgid "Translated by:"
+msgstr "Kääntäjänä toimi:"
+
+msgid "You have successfully logged out."
+msgstr "Sinut on kirjattu ulos."
+
+msgid "This game was found at"
+msgstr "Tämä peli löytyi"
+
+msgid "Data Quality"
+msgstr "Karttadatan Laatu"
+
+msgid "Overlay"
+msgstr "Peitekuva"
+
+#, csharp-format
+msgid "Error in AR OpenGL pass: {0}"
+msgstr "Virhe AR:n OpenGL renderöinnissä: {0}"
+
+msgid "General"
+msgstr "Yleiset"
+
+#, csharp-format
+msgid "Failed to uninstall SDK from '{0}' to '{1}': {2}"
+msgstr "SDK:n poisto paikasta {0} paikkaan {1} epäonnistui: {2}"
+
+#, csharp-format
+msgid "Inner Exception: {0}"
+msgstr "Sisäinen virhe: {0}"
+
+#, csharp-format
+msgid "Plugin with ID {0} not found."
+msgstr "Lisäosaa jonka ID {0} ei löydetty."
+
+msgid "Units and Language"
+msgstr "Yksiköt ja kieli"
+
+msgid "One Time Password"
+msgstr "Kertakäyttökoodi"
+
+#, csharp-format
+msgid "Loaded plugin: [gray]{0}[/] from [gray]{1}[/]."
+msgstr "Ladattiin lisäosa [gray]{0}[/] paikasta [gray]{1}[/]."
+
+msgid ""
+"You do not have permission to access this resource. The server understood "
+"the request but refuses to authorize it."
+msgstr ""
+"Sinulla ei ole lupaa käyttää tätä resurssia. Palvelin ymmärsi pyynnön mutta "
+"ei vastaa siihen."
+
+msgid "Registration Error"
+msgstr "Rekisteröinnin virhe"
+
+msgid "Display Language"
+msgstr "Kieli"
+
+msgid "Speedlimit Offset"
+msgstr "Nopeusrajoituksen siirto"
+
+#, csharp-format
+msgid "Changed update source to '{0}'."
+msgstr "Vaihdettiin päivityspalvelin osoitteeseen '{0}'."
+
+#, csharp-format
+msgid "Removing manually added installation at '{0}'"
+msgstr "Poistetaan manuaalisesti lisätty peli {0}"
+
+#, csharp-format
+msgid "Initializing GLFW Version: {0}"
+msgstr "Käynnistetään GLFW versiota: {0}"
+
+msgid "Render Vision Cameras"
+msgstr "Renderöi näkömallien kamerat"
+
+msgid "Imperial"
+msgstr "Brittiläinen"
+
+msgid "Unpacking Mods"
+msgstr "Puretaan modeja"
+
+msgid "m/s"
+msgstr "m/s"
+
+#, csharp-format
+msgid "The username {0} is already taken. Please choose a different username."
+msgstr "Käyttäjätunnus {0} on jo otettu. Valitsethan toisen käyttäjätunnuksen."
+
+#, csharp-format
+msgid "Click to {0} this window"
+msgstr "Paina {0} tämän ikkunan"
+
+#, csharp-format
+msgid "Error rendering interaction mode window controls: {0}"
+msgstr "Virhe muokkaustilan ikkunanohjainten renderöinnissä: {0}"
+
+msgid "Overlay free CPU time percentage"
+msgstr "Peitekuvan vapaan prosessoriajan määrä"
+
+msgid "Invalid directory"
+msgstr "Virheellinen kansio"
+
+msgid "Logout"
+msgstr "Kirjaudu ulos"
+
+msgid "Starting download..."
+msgstr "Aloitetaan lataus..."
+
+msgid "High"
+msgstr "Korkea"
+
+msgid "Game is still running"
+msgstr "Peli on yhä käynnissä"
+
+msgid "Final Disclaimer <span class=\"description\">1/2</span>"
+msgstr "Viimeiset huomiot <span class=\"description\">1/2</span>"
+
+msgid "• ETS2LA Developers, contact@ets2la.com, Poland."
+msgstr ""
+"• ETS2LA Kehittäjät, contact@ets2la.com, Puola. HUOM SUOMALAISILLE: jos näet "
+"tämän viestin, olet ladannut KIINAAN tarkoitetun version. Poista tämä, ja "
+"lataa uusin versio osoitteesta ets2la.com."
+
+msgid ""
+"Translate news articles to your selected display language. This may take a "
+"while depending on the number of articles and your internet connection."
+msgstr ""
+"Käännä uutisartikkelit näyttökielen mukaan. Tässä voi mennä hetki riippuen "
+"artikkeleiden määrästä ja verkon nopeudesta."
+
+msgid "You are not logged in. Open this page again to login."
+msgstr "Et ole kirjautunut sisään. Avaa tämä sivu uudelleen."
+
+msgid "Only copy this to trusted websites, it can do ANYTHING on your behalf."
+msgstr ""
+"Kopioi tämä vain luotetuihin nettisivuihin, ne voivat tehdä MITÄ VAIN "
+"puolestasi."
+
+msgid "Map Data Parsed"
+msgstr "Karttadata ladattu"
+
+msgid ""
+"Adjust the distance ETS2LA will try to maintain from the vehicle in front of "
+"you when using Adaptive Cruise Control."
+msgstr "Säädä etäisyyttä, jonka ETS2LA pitää edellä ajavasta ajoneuvosta."
+
+msgid "Unknown Version"
+msgstr "Tuntematon versio"
+
+msgid "ETS2LA will offset the speedlimit by this percentage."
+msgstr "ETS2LA siirtää nopeusrajoitusta tällä prosentilla."
+
+msgid ""
+"Your system has less than 20GB of RAM. Extreme data fidelity uses "
+"significant amounts of RAM, and may cause your system to become unstable. "
+"Please select a lower fidelity."
+msgstr ""
+"Laitteessasi on vähemmän kuin 20GB muistia. Korkea karttadatan tarkkuus "
+"vaatii suuria määriä muistia, ja voi aiheuttaa järjestelmän kaatumisen."
+
+#, csharp-format
+msgid "Successfully uninstalled SDK version '{0}' from '{1}'"
+msgstr "Poistettiin SDK versio {0} onnistuneesti paikasta {1}"
+
+msgid "Desired Speed: "
+msgstr "Tavoitenopeus: "
+
+#, csharp-format
+msgid ""
+"Your token will expire on <span class=\"text-text-l\">{0}</span>, you'll be "
+"asked to login again then."
+msgstr ""
+"Kirjautumisavaimesi vanhenee <span class=\"text-text-l\">{0}</span>. "
+"Pyydämme sinua kirjautumaan sisään uudelleen tuolloin."
+
+msgid "meters"
+msgstr "metriä"
+
+msgid ""
+"An error occurred while trying to remove your account. Please try again "
+"later. Error: "
+msgstr ""
+"Tilin poiston yhteydessä tapahtui virhe. Kokeile myöhemmin uudelleen. Virhe: "
+
+#, csharp-format
+msgid "Deleted old SDK file '{0}'"
+msgstr ""
+
+msgid "°C"
+msgstr "°C"
+
+#, csharp-format
+msgid "Discovered {0} manually installed plugin."
+msgid_plural "Discovered {0} manually installed plugins."
+msgstr[0] "Löydettiin {0} manuaalisesti asennettu lisäosa."
+msgstr[1] "Löydettiin {0} manuaalisesti asennettua lisäosaa."
+
+msgid ""
+"An error occurred while trying to register. Please try again later. Error: "
+msgstr ""
+"Rekisteröinnin yhteydessä tapahtui virhe. Kokeile myöhemmin uudelleen. "
+"Virhe: "
+
+msgid "Checking for updates..."
+msgstr "Tarkastetaan päivityksiä..."
+
+msgid "No audio output device available"
+msgstr ""
+
+msgid "Catalogue"
+msgstr "Luettelo"
+
+msgid "Starting ETS2LA..."
+msgstr "Käynnistetään..."
+
+msgid ""
+"How ETS2LA will warn you about exceeding the speed limit by a major amount."
+msgstr ""
+"Miten ETS2LA varoittaa sinua nopeusrajoituksen merkittävästä ohituksesta."
+
+#, csharp-format
+msgid "Finished parsing installation at '{0}'"
+msgstr "Pelin [gray]{0}[/] karttadatan lataus valmistui"
+
+msgid "Assist Level: "
+msgstr "Ajomuoto: "
+
+msgid "View Privacy Policy"
+msgstr "Näytä tietoturvakäytäntö"
+
+#, csharp-format
+msgid "Cannot enable plugin {0} because dependency {1} was not found."
+msgstr ""
+"Lisäosan {0} käynnistys estetty, sillä sen edellytystä {1} ei löydetty."
+
+msgid "Keybind Behaviour"
+msgstr "Ohjainmäärityksien Toiminta"
+
+msgid "Next"
+msgstr "Seuraava"
+
+msgid ""
+"Your session has expired or you don't have a connection to our servers. "
+"Please log in again if you wish to use server-side features."
+msgstr ""
+"Kirjautumisavaimesi vanheni, tai sinulla ei ole palveliimme yhteyttä. "
+"Kirjaudu uudelleen sisään jos haluat käyttää palvelimen vaativia toimintoja."
+
+msgid "Demo Window"
+msgstr "Demoikkuna"
+
+msgid "Help"
+msgstr "Apua"
+
+#, csharp-format
+msgid "Skipped stale plugin shadow directory [gray]{0}[/]: {1}"
+msgstr "Ohitetiin vanha lisäosan varjokansio [gray]{0}[/]: {1}"
+
+msgid ""
+"The zoom level of the ETS2LA window. This can be used to scale the window to "
+"your monitor's DPI settings."
+msgstr ""
+"ETS2LA:n ikkunan suurennusaste. Jos teksti ja muut grafiikat ovat mielestäsi "
+"liian pieniä, voit nostaa tätä arvoa."
 
 #, csharp-format
 msgid "You are blocked until {1}.<br/>Reason: {0}"
 msgstr "Botin käyttö on sinulta kielletty {1} saakka.<br/>Syy: {0}"
 
+msgid "Decrease/SET"
+msgstr "Vähennä/SET"
+
+msgid "Finished loading plugins"
+msgstr "Lisäosien lataus on valmis"
+
 #, csharp-format
-msgid "found {0} road"
-msgid_plural "found {0} roads"
-msgstr[0] "{0} tie"
-msgstr[1] "{0} tietä"
+msgid "Failed to install dependency {0} for plugin {1}."
+msgstr "Lisäosan {1} vaatimuksen {0} lataus epäonnistui."
+
+msgid "Error in semaphore update loop."
+msgstr "Virhe tiesignaalien päivityksessä."
+
+#, csharp-format
+msgid "Missing dependency: {0}"
+msgstr "Vaatimusta {0} ei löydy"
+
+msgid "Final Disclaimer <span class=\"description\">2/2</span>"
+msgstr "Viimeiset huomiot <span class=\"description\">2/2</span>"
+
+msgid "Logout Failed"
+msgstr "Uloskirjautuminen epäonnistui"
+
+#, csharp-format
+msgid "Snap to each 10 {0}"
+msgstr "Lovita jokaiseen 10 {0}"
+
+#, csharp-format
+msgid "Created plugin directory: [gray]{0}[/]"
+msgstr "Luotiin lisäosan kansio: [gray]{0}[/]"
+
+#, csharp-format
+msgid "Enabled plugin: [bold]{0}[/]"
+msgstr "Käynnistettiin lisäosa: [bold]{0}[/]"
 
 msgid ""
-"Please ensure <span class=\"text-text-accent font-bold\">ETS2 and ATS are "
-"closed</span>. You can start the game after completing the onboarding "
-"process."
+"Changing this option requires a restart of ETS2LA to take effect. Restart "
+"now?"
 msgstr ""
-"Varmistathan että <span class=\"text-text-accent font-bold\">ETS2 ja ATS "
-"ovat suljettu</span>. Voit käynnistää pelin uudelleen perehdytyksen jälkeen."
+"Tämän asetuksen muuttaminen vaatii sovelluksen uudelleenkäynnistystä. "
+"Tehdäänkö tämä nyt?"
 
-#, csharp-format
-msgid "Failed to download plugin with ID {0} from {1}. Status code: {2}"
-msgstr "Lisäosan {0} lataus epäonnistui osoitteesta {1} koodilla {2}"
-
-msgid "Open Update Page"
-msgstr "Avaa päivitys sivu"
-
-msgid "Maximum Speed"
-msgstr "Maksimi nopeus"
-
-msgid "Experiments"
-msgstr "Kokeilut"
-
-#, csharp-format
-msgid "Failed to read log file at '{0}': {1}"
-msgstr "Lokitiedoston luku paikasta {0} epäonnistui: {1}"
-
-msgid "Display JWT Token"
-msgstr "Näytä JWT avain"
-
-msgid "Following Distance"
-msgstr "Seuraamisetäisyys"
-
-#, csharp-format
-msgid ""
-"Selected update source '{0}' not found, defaulting to first available source."
-msgstr "Valittua päivityspalvelinta {0} ei löydy, palataan oletuspalvelimeen."
-
-#, csharp-format
-msgid "Installed {0}"
-msgstr "Asennettiin {0}"
+msgid "And to those who've decided to remain anonymous!"
+msgstr "Kiitämme myös heitä, jotka ovat tukeneet meitä anonyymisti!"
 
 msgid ""
-"Keep the ETS2LA window on top of other windows. If you want to use the "
-"visualization on a single monitor setup, this is recommended."
+"We don't sell or transfer your personal data to any third parties, in fact, "
+"we don't even collect it. However, we are still obligated to display and "
+"acquire your consent before proceeding."
 msgstr ""
-"Pitää sovelluksen ikkunan päälimmäisenä, jos käytössäsi on vain yksi näyttö "
-"tämä voi olla hyödyllinen."
+"Emme myy tai siirrä yksityisiä tietojasi ulkopuolisille. Emme itseasiassa "
+"edes kerää sitä. Meidän täytyy silti näyttää tämä, ja pyytää sinulta "
+"hyväksyntä ennen jatkamista."
 
-msgid "SDK Uninstalled"
-msgstr "SDK Poistettu"
-
-msgid ""
-"Consider supporting us by becoming a <span class=\"font-bold text-text-"
-"l\">GitHub Sponsor</span> to cover ongoing development and operational costs."
-msgstr ""
-"Voit tukea meitä <span class=\"font-bold text-text-l\">GitHub Sponsor</span> "
-"sivuston kautta. Huomaa, että suomalaisille tämä ei ole mahdollista."
+msgid "Plugin Installer"
+msgstr "Lisäosien asentaja"
 
 #, csharp-format
-msgid "Font file not found at {0}"
-msgstr "Fonttia {0} ei löytynyt"
+msgid "Successfully installed SDK version '{0}' to '{1}'"
+msgstr "Asennettiin SDK versio {0} onnistuneesti paikkaan {1}"
 
-msgid "lbs"
-msgstr "lbs"
+msgid "All driving assists have been enabled."
+msgstr ""
+
+msgid "Display Units: "
+msgstr "Yksiköt: "
 
 msgid ""
-"Adjust how quickly ETS2LA will respond to desired changes in acceleration. "
-"Emergency braking is not affected."
+"The language ETS2LA will be displayed at. Translations are provided by the "
+"community, we cannot guarantee their accuracy."
 msgstr ""
-"Säädä miten nopeasti ETS2LA reagoi tarpeellisiin nopeuden muutoksiin. Tämä "
-"ei vaikuta hätäjarrutukseen."
+"Kieli jolla ETS2LA näytetään. Käännökset ovat yhteysön tekemiä, joten emme "
+"takaa niiden laatua. Paitsi suomeksi tietenkin, kirjoitettu by yours truly."
+
+msgid ""
+"Warning: Your system has less than 20GB of RAM. You can only select up to "
+"High."
+msgstr ""
+"Varoitus: Laitteessasi on vähemmän kuin 20GB muistia. Voit valita "
+"korkeintaan \"Korkea\" asetuksen."
+
+msgid "Interaction Mode"
+msgstr "Muokkaustila"
+
+#, csharp-format
+msgid "Adding mod: {0}"
+msgstr "Lisätään modia: {0}"
+
+msgid "Like ETS2LA?"
+msgstr "Pidätkö ETS2LA:sta?"
+
+msgid "Show Plugin Updates"
+msgstr "Näytä lisäosien päivitykset"
+
+msgid ""
+"Allows ETS2LA to control throttle and brake using direct memory editing. "
+"This might not work on some systems, but allows for control even while "
+"tabbed out of the game. If you enable this and it doesn't work, please "
+"report the issue on our Discord server."
+msgstr ""
+"Antaa sovelluksen ohjata polkimien paikkaa suoralla muistimuokkauksella. Ei "
+"välttämättä toimi kaikilla laitteilla, mutta toimii myös kun et ole pelin "
+"ikkunassa. Voit siis avata mm. nettiselaimen kun ETS2LA ajaa."
+
+#, csharp-format
+msgid "Not all dependencies for plugin {0} are installed."
+msgstr "Lisäosan {0} kaikkia vaatimuksia ei ole ladattu."
 
 #, csharp-format
 #~ msgid "Playing sound: {0}"

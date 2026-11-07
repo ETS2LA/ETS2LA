@@ -2,11 +2,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-11-01 23:03:06+0200\n"
+"POT-Creation-Date: 2026-11-07 14:13:54+0200\n"
 "PO-Revision-Date: 2026-11-03 17:35+0000\n"
 "Last-Translator: Ketchup1812 <ketchup1812@ets2la.com>\n"
-"Language-Team: Slovak <http://weblate.ets2la.com/projects/ets2la/ets2la/sk/>"
-"\n"
+"Language-Team: Slovak <http://weblate.ets2la.com/projects/ets2la/ets2la/sk/"
+">\n"
 "Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -14,393 +14,57 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "X-Generator: Weblate 5.14.3\n"
 
-#, csharp-format
-msgid "Currently running at {0} FPS."
-msgstr "V súčasnosti beží rýchlosťou {0} FPS."
-
-#, csharp-format
-msgid "Registered control: {0} [gray italic]({1})[/]"
-msgstr "Registrovaná kontrola: {0} [gray italic]({1})[/]"
-
 msgid ""
-"This allows ETS2LA to render in multiple viewports, meaning you can move "
-"overlay windows to any monitor."
+"This setting drops redundant information while maintaining most detail "
+"objects (such as signs). Includes all hidden and AI only roads."
 msgstr ""
-"Vďaka tomu môže ETS2LA vykresľovať obraz vo viacerých zobrazeniach, čo "
-"znamená, že okná s prekrývajúcimi sa vrstvami môžete presúvať na ľubovoľný "
-"monitor."
+"Toto nastavenie odstraňuje nadbytočné informácie, pričom zachováva väčšinu "
+"detailných objektov (napríklad dopravné značky). Zahŕňa všetky skryté cesty "
+"a cesty určené iba pre umelú inteligenciu."
 
-#, csharp-format
-msgid "Tried to disable {0}, but it was not found among loaded plugins."
-msgstr "Snažil som sa vypnúť {0}, ale medzi načítanými pluginami sa nenašiel."
+msgid "Unknown Control ID"
+msgstr "Neznáme kontrolné ID"
 
-msgid "Restarting ETS2LA..."
-msgstr "Reštartujem ETS2LA..."
+msgid "Sorry"
+msgstr "Prepáčte"
+
+msgid "Stay on Top"
+msgstr "Nechať na vrchu"
+
+msgid "Display"
+msgstr "Zobrazovanie"
+
+msgid "Go to Account Settings"
+msgstr "Prejsť do nastavení účtu"
+
+msgid "Overlay Interaction"
+msgstr "Interakcia s prekrývacím prvkom"
 
 msgid "SDK Installation Failed"
 msgstr "Inštalácia SDK sa nepodarila"
 
 #, csharp-format
-msgid ""
-"Your token will expire on <span class=\"text-text-l\">{0}</span>, you'll be "
-"asked to login again then."
-msgstr ""
-"Platnosť vášho tokenu vyprší dňa <span class=\"text-text-l\">{0}</span>, "
-"vtedy budete vyzvaní, aby ste sa znovu prihlásili."
+msgid "Failed to open joystick {0}."
+msgstr "Nepodarilo sa otvoriť joystick {0}."
+
+msgid "Anonymous Telemetry"
+msgstr "Anonymná telemetria"
 
 msgid ""
-"This chatbot is provided for free by <span class=\"text-text-l\">Lun011666</"
-"span>.<br/>For the sake of the community, we ask you not to abuse access."
+"Keep the ETS2LA window on top of other windows. If you want to use the "
+"visualization on a single monitor setup, this is recommended."
 msgstr ""
-"Tento chatbot je poskytovaný bezplatne používateľom <span class=\"text-text-"
-"l\">Lun011666</span>.<br/>V záujme komunity vás žiadame, aby ste "
-"nezneužívali prístup."
-
-msgid ""
-"Memory not available for output, please ensure the game is running and "
-"reinstall the SDK if necessary."
-msgstr ""
-"Na zápis nie je k dispozícii dostatok pamäte. Uistite sa, že hra beží, a v "
-"prípade potreby nainštalujte SDK nanovo."
-
-msgid "Log sent. Click here to view it."
-msgstr "Log odoslaný. Kliknite sem pre jeho zobrazenie."
-
-#, csharp-format
-msgid "Loaded {0} plugin from the Plugins folder."
-msgid_plural "Loaded {0} plugins from the Plugins folder."
-msgstr[0] "Načítal sa {0} plugin zo zložky Plugins."
-msgstr[1] "Načítali sa {0} pluginy zo zložky Plugins."
-msgstr[2] "Načítalo sa {0} pluginov zo zložky Plugins."
-
-#, csharp-format
-msgid "No update available for plugin with ID {0}."
-msgstr "Pre plugin s ID {0} nie je k dispozícii žiadna aktualizácia."
-
-msgid "Please close the game before continuing with the onboarding process."
-msgstr "Pred pokračovaním v procese prípravy prosím hru zatvorte."
-
-msgid "Fast"
-msgstr "Rýchlo"
-
-#, csharp-format
-msgid "Failed to unload plugin load context: {0}"
-msgstr "Nepodarilo sa vyprázdniť kontext načítania pluginu: {0}"
-
-msgid ""
-"When this key is held, the overlay will receive mouse input and allow you to "
-"interact with it. NOTE: Interaction with items below the overlay is not "
-"possible during this time."
-msgstr ""
-"Keď je táto klávesa stlačená, prekrývací panel prijíma vstup z myši a "
-"umožňuje vám s ním interagovať. POZNÁMKA: Počas tejto doby nie je možná "
-"interakcia s prvkami nachádzajúcimi sa pod prekrývacím panelom."
-
-msgid "Responsiveness"
-msgstr "Reakčná schopnosť"
-
-msgid ""
-"ETS2LA requires you to install our <span class=\"text-text-accent font-"
-"bold\">SDK</span> to get started. Please install the SDK for <span "
-"class=\"text-text-accent font-bold\">at least one game</span> to continue."
-msgstr ""
-"Aby ste mohli začať používať ETS2LA, je potrebné nainštalovať naše <span "
-"class=\"text-text-accent font-bold\">SDK</span>. Ak chcete pokračovať, "
-"nainštalujte si prosím SDK pre <span class=\"text-text-accent font-"
-"bold\">aspoň jednu hru</span>."
-
-msgid ""
-"Warning: Your system has less than 16GB of RAM. You can only select up to "
-"Medium."
-msgstr ""
-"Upozornenie: Váš systém má menej ako 16 GB pamäte RAM. Môžete zvoliť iba "
-"nastavenie „Stredné“."
-
-msgid ""
-"Allows ETS2LA to control throttle and brake using direct memory editing. "
-"This might not work on some systems, but allows for control even while "
-"tabbed out of the game. If you enable this and it doesn't work, please "
-"report the issue on our Discord server."
-msgstr ""
-"Umožňuje ETS2LA ovládať plyn a brzdu pomocou priamej úpravy pamäte. Na "
-"niektorých systémoch to nemusí fungovať, no umožňuje to ovládanie aj vtedy, "
-"keď je hra minimalizovaná alebo beží na pozadí. Ak túto funkciu zapnete a "
-"nebude fungovať, nahláste problém na našom Discord serveri."
-
-msgid "Key"
-msgstr "Kľúč"
-
-msgid "Logout"
-msgstr "Odhlásiť sa"
-
-msgid ""
-"When the game reports itself being paused, ETS2LA won't render AR elements."
-msgstr "Keď hra zaznamená, že je pozastavená, ETS2LA prestane vykresľovať."
-
-#, csharp-format
-msgid "Download progress: {0}%"
-msgstr "Prebieha sťahovanie: {0}%"
-
-msgid "I understand"
-msgstr "Rozumiem"
-
-msgid "Login Failed"
-msgstr "Prihlásenie sa nepodarilo"
-
-msgid "Keyboard"
-msgstr "Klávesnica"
-
-msgid "The selected directory does not exist."
-msgstr "Vybraný adresár neexistuje."
-
-msgid "Networking"
-msgstr "Sieťovanie"
-
-msgid "liters"
-msgstr "litre"
-
-#, csharp-format
-msgid "found {0} node"
-msgid_plural "found {0} nodes"
-msgstr[0] "Bol nájdený {0} uzol"
-msgstr[1] "Boli nájdené {0} uzly"
-msgstr[2] "Bolo nájdených {0} uzlov"
-
-msgid "Update check skipped, using already cached result."
-msgstr ""
-"Kontrola aktualizácií bola preskočená, používa sa výsledok už uložený v "
-"cache."
-
-msgid "Press anywhere outside the dialog to close it."
-msgstr "Kliknutím kamkoľvek mimo dialógového okna ho zatvoríte."
-
-msgid "hide"
-msgstr "skryť"
-
-msgid "Username"
-msgstr "Používateľské meno"
-
-msgid "Map Data Parsed"
-msgstr "Údaje z mapy boli spracované"
-
-msgid "Binding Timed Out"
-msgstr "Časový limit pre mapovanie kláves vypršal"
-
-msgid "Invalid file"
-msgstr "Neplatný súbor"
-
-msgid "Enable"
-msgstr "Zapnúť"
-
-msgid "Max Overlay Framerate"
-msgstr "Maximálna snímková frekvencia pre prekrývanie"
-
-#, csharp-format
-msgid "Failed to acquire joystick [gray italic]({0})[/]: {1}"
-msgstr "Nepodarilo sa získať joystick [gray italic]({0})[/]: {1}"
-
-msgid ""
-"An error occurred while trying to register. Please try again later. Error: "
-msgstr ""
-"Pri pokuse o registráciu došlo k chybe. Skúste to prosím neskôr. Chyba: "
-
-#, csharp-format
-msgid "Failed to uninstall SDK from '{0}' to '{1}': {2}"
-msgstr "Nepodarilo sa odinštalovať SDK z „{0}“ do „{1}“: {2}"
-
-msgid ""
-"This will disconnect ETS2LA from the game and close the window. You can "
-"minimize the window to keep ETS2LA running."
-msgstr ""
-"Týmto sa ETS2LA odpojí od hry a okno sa zatvorí. Okno môžete minimalizovať, "
-"aby ETS2LA naďalej bežalo."
-
-msgid "Restart and Continue"
-msgstr "Reštartovať a pokračovať"
-
-msgid "Demo Window"
-msgstr "Ukážkové okno"
-
-msgid "Installing..."
-msgstr "Inštaluje sa..."
+"Nastavte okno ETS2LA tak, aby bolo vždy na vrchu ostatných okien. Ak chcete "
+"vizualizáciu používať v konfigurácii s jedným monitorom, odporúča sa toto "
+"nastavenie."
 
 #, csharp-format
 msgid "Legacy audio path detected: {0}"
 msgstr "Zistená staršia zvuková cesta: {0}"
 
-msgid ""
-"Adjust the distance ETS2LA will try to maintain from the vehicle in front of "
-"you when using Adaptive Cruise Control."
-msgstr ""
-"Nastavte vzdialenosť, ktorú sa ETS2LA bude snažiť dodržiavať od vozidla pred "
-"vami pri používaní adaptívneho tempomatu."
-
-msgid "Enter the OTP generated by your authenticator app."
-msgstr ""
-"Zadajte jednorazový kód (OTP), ktorý vygenerovala vaša autentifikačná "
-"aplikácia."
-
 #, csharp-format
-msgid "No map data found for installation at '{0}'. Is the installation valid?"
-msgstr ""
-"Nenašli sa žiadne mapové údaje pre inštaláciu v umiestnení „{0}“. Je táto "
-"inštalácia platná?"
-
-msgid "Recommended Plugins"
-msgstr "Odporúčané pluginy"
-
-msgid "Successfully opened memory for output."
-msgstr "Pamäť pre zápis bola úspešne otvorená."
-
-msgid "Logout Error"
-msgstr "Chyba pri odhlásení"
-
-msgid "Use this button to extend the sidebar."
-msgstr "Týmto tlačidlom rozbalíte bočný panel."
-
-#, csharp-format
-msgid "Cannot enable plugin {0} because dependency {1} was not found."
-msgstr ""
-"Plugin {0} sa nedá aktivovať, pretože sa nepodarilo nájsť jeho závislosť {1}."
-
-msgid "Clear Console"
-msgstr "Prečistiť konzolu"
-
-msgid "Account Removed"
-msgstr "Účet bol odstránený"
-
-msgid "Thinking..."
-msgstr "Premýšľam..."
-
-#, csharp-format
-msgid "Found {0} (version: {1}) at '{2}'"
-msgstr "Našlo sa {0} (verzia: {1}) v „{2}“"
-
-#, csharp-format
-msgid "Failed to shutdown plugin {0}: {1}"
-msgstr "Nepodarilo sa vypnúť plugin {0}: {1}"
-
-msgid "Display Units"
-msgstr "Jednotka"
-
-msgid "psi"
-msgstr "psi"
-
-msgid "SDKs need to be installed."
-msgstr "Je potrebné nainštalovať SDK."
-
-#, csharp-format
-msgid "Detected a switch to {0}, waiting for its game data to be parsed."
-msgstr "Zaznamenal som prechod na {0}, čakám na analýzu jeho herných údajov."
-
-msgid "Unable to read the current log."
-msgstr "Nepodarilo sa prečítať aktuálny log."
-
-msgid ""
-"Changing the display language requires a restart of ETS2LA to take effect. "
-"Restart now?"
-msgstr ""
-"Aby sa zmena jazyka zobrazenia uplatnila, je potrebné reštartovať ETS2LA. "
-"Chcete reštartovať teraz?"
-
-msgid "Units and Language"
-msgstr "Jednotky a jazyk"
-
-msgid "Only Show Official News"
-msgstr "Zobraziť iba oficiálne noviny"
-
-msgid "Share log"
-msgstr "Zdieľať log"
-
-msgid ""
-"The zoom level of the ETS2LA window. This can be used to scale the window to "
-"your monitor's DPI settings."
-msgstr ""
-"Úroveň priblíženia okna ETS2LA. Túto funkciu môžete použiť na prispôsobenie "
-"veľkosti okna nastaveniam DPI vášho monitora."
-
-msgid "Welcome to ETS2LA!"
-msgstr "Vitajte v ETS2LA!"
-
-msgid "Max Render Distance"
-msgstr "Maximálna vzdialenosť vykresľovania"
-
-#, csharp-format
-msgid "Parsing sector {0} of {1}..."
-msgstr "Analyzovanie sektora {0} z {1}..."
-
-msgid "Initializing GLFW..."
-msgstr "Inicializácia GLFW..."
-
-msgid "Audio Settings"
-msgstr "Nastavenia zvuku"
-
-msgid "Anonymous Telemetry"
-msgstr "Anonymná telemetria"
-
-msgid "Please log in before using the chatbot."
-msgstr "Pred použitím chatbota sa prosím prihláste."
-
-msgid "Go to Account Settings"
-msgstr "Prejsť do nastavení účtu"
-
-msgid "Failed to initialize overlay, ImGui initialization failed."
-msgstr ""
-"Nepodarilo sa inicializovať prekrývací prvok, inicializácia ImGui zlyhala."
-
-msgid "Performance Overlay"
-msgstr "Prekrývací panel výkonu"
-
-msgid ""
-"Gateway timeout. The server was acting as a gateway or proxy and did not "
-"receive a timely response from the upstream server."
-msgstr ""
-"Časový limit brány. Server fungoval ako brána alebo proxy a nedostal včasnú "
-"odpoveď od nadradeného servera."
-
-msgid "Display"
-msgstr "Zobrazovanie"
-
-msgid "Open Externally"
-msgstr "Otvoriť externe"
-
-#, csharp-format
-msgid "Cannot enable plugin {0} because dependency {1} failed to enable."
-msgstr ""
-"Plugin {0} sa nedá aktivovať, pretože sa nepodarilo aktivovať jeho závislosť "
-"{1}."
-
-#, csharp-format
-msgid "{0} not found in supported languages."
-msgstr "{0} nebola nájdená v podporovaných jazykoch."
-
-msgid "Login Error"
-msgstr "Chyba pri prihlásení"
-
-msgid "Check For Updates"
-msgstr "Aktualizície"
-
-msgid "The game has been added successfully."
-msgstr "Hra bola úspešne pridaná."
-
-msgid "Error in semaphore update loop."
-msgstr "Chyba v cykle aktualizácie semaforu."
-
-msgid ""
-"This might take a while depending on your internet connection and the source."
-msgstr ""
-"V závislosti od vášho internetového pripojenia a zdroja to môže chvíľu trvať."
-
-msgid "ETS2LA will offset the speedlimit by this amount."
-msgstr "ETS2LA upraví rýchlostný limit o túto hodnotu."
-
-msgid ""
-"ETS2LA uses a control setup that should be similar to real life systems. You "
-"can rebind the default controls on the right side."
-msgstr ""
-"ETS2LA používa nastavenie ovládania, ktoré by malo byť podobné systémom v "
-"reálnom živote. Predvolené ovládacie prvky si môžete prenastaviť na pravej "
-"strane."
+msgid "Control with ID '{0}' not found for updating bindings."
+msgstr "Kontrola s ID „{0}“ nebola nájdené pre aktualizáciu mapovania kláves."
 
 msgid ""
 "Force ETS2LA to load the map on game startup. This can resolve issues where "
@@ -410,327 +74,28 @@ msgstr ""
 "možné vyriešiť problémy, keď sa súbor game.log.txt nenachádza tam, kde ho "
 "ETS2LA očakáva."
 
-msgid "Speed Limit"
-msgstr "Rýchlostný limit"
+msgid "Gates"
+msgstr "Brány"
 
-msgid "Error in telemetry update loop."
-msgstr "Chyba v cykle aktualizácie telemetrických údajov."
+msgid "Game SDK"
+msgstr "Herné SDK"
 
-#, csharp-format
-msgid "Updated bindings for control: {0} ({1}) to Device: {2}, Control: {3}"
-msgstr ""
-"Aktualizované priradenia pre ovládanie: {0} ({1}) k zariadeniu: {2}, "
-"ovládanie: {3}"
-
-msgid "One Time Password"
-msgstr "Jednorazové heslo"
-
-msgid "Request cancelled."
-msgstr "Žiadosť bola zrušená."
-
-msgid "Extreme"
-msgstr "Extrémna"
-
-msgid "gal"
-msgstr "gal"
+msgid "Send log"
+msgstr "Odoslať log"
 
 #, csharp-format
-msgid "Error rendering context menu for window {0}: {1}"
-msgstr "Chyba pri zobrazení kontextového menu pre okno {0}: {1}"
-
-#, csharp-format
-msgid "Missing dependency: {0}"
-msgstr "Chýbajúca závislosť: {0}"
-
-msgid "Game Telemetry"
-msgstr "Herná telemetria"
-
-msgid "Early"
-msgstr "Skoro"
-
-#, csharp-format
-msgid ""
-"Installation at '{0}' is not currently running, waiting for load of profile."
-msgstr ""
-"Inštalácia v „{0}“ momentálne neprebieha, čaká sa na načítanie profilu."
-
-msgid "Error Loading File"
-msgstr "Chyba pri načítaní súboru"
-
-msgid "Pause When Unstable"
-msgstr "Pozastaviť v prípade nestability"
-
-#, csharp-format
-msgid "{0}"
-msgstr "{0}"
-
-msgid "Keybind Behaviour"
-msgstr "Správanie klávesových skratiek"
-
-msgid "Your login token is invalid or expired."
-msgstr "Váš prihlasovací token je neplatný alebo jeho platnosť vypršala."
-
-msgid "Enable All"
-msgstr "Zapnúť všetky"
-
-msgid "Curve Quality"
-msgstr "Kvalita krivky"
-
-#, csharp-format
-msgid "You have successfully logged in as {0}."
-msgstr "Úspešne ste sa prihlásili ako {0}."
-
-msgid "m"
-msgstr "m"
-
-msgid "Overlay free CPU time percentage"
-msgstr "Percentuálny podiel voľného času procesora bez prekrývania"
-
-msgid "You have successfully logged out."
-msgstr "Úspešne ste sa odhlásili."
-
-msgid "Display Units: "
-msgstr "Jednotka: "
-
-#, csharp-format
-msgid ""
-"How did you get here? What were you even thinking?{0}Do tell us in the {1}"
-"Discord Server{2} or on {3}GitHub{4}."
-msgstr ""
-"Ako si sa sem dostal? Čo si si vlastne myslel?{0}Povedz nám to na {1}Discord "
-"serveri{2} alebo na {3}GitHube{4}."
-
-#, csharp-format
-msgid "Starting binding for control {0} ({1})"
-msgstr "Začínam mapovať klávesi pre ovládací prvok {0} ({1})"
+msgid "Parsing installation at '{0}' (version: {1})"
+msgstr "Analýza inštalácie v „{0}“ (verzia: {1})"
 
 msgid ""
-"Anonymous telemetry helps us improve ETS2LA by giving us insights into "
-"users' system specs, crashes, and other usage data. Your data cannot be "
-"identified with any personal information."
-msgstr ""
-"Anonymná telemetria nám pomáha vylepšovať ETS2LA tým, že nám poskytuje "
-"informácie o systémových špecifikáciách používateľov, zlyhaniach a ďalších "
-"údajoch o používaní. Vaše údaje nie je možné priradiť k žiadnym osobným "
-"údajom."
+"When changing the speed, snap to the nearest 10. i.e. 37 -> 39 -> 40 -> 42..."
+msgstr "Pri zmene rýchlosti nastavte najbližšiu 10, 37 -> 39 -> 40 -> 42..."
 
-msgid "Visualization"
-msgstr "Vizualizácia"
+msgid "Register"
+msgstr "Registrácia"
 
-#, csharp-format
-msgid "Loaded plugin: [gray]{0}[/] from [gray]{1}[/]."
-msgstr "Načítaný plugin: [gray]{0}[/] z [gray]{1}[/]."
-
-msgid "Enabled Traffic Rules"
-msgstr "Aktivované dopravné predpisy"
-
-msgid "Install Plugins"
-msgstr "Nainštalujte pluginy"
-
-msgid "Data Parsing"
-msgstr "Dáta Mapy"
-
-msgid "No updates available."
-msgstr "Nie sú k dispozícii žiadne aktualizácie."
-
-#, csharp-format
-msgid "Found {0} prefab"
-msgid_plural "Found {0} prefabs"
-msgstr[0] "Bol nájdený {0} prefab"
-msgstr[1] "Boli nájdené {0} prefaby"
-msgstr[2] "Bolo nájdených {0} prefabov"
-
-#, csharp-format
-msgid "You are permanently banned.<br/>Reason: {0}"
-msgstr "Bol si natrvalo zablokovaný.<br/>Dôvod: {0}"
-
-msgid "Start Game"
-msgstr "Spustiť hru"
-
-msgid ""
-"The maximum distance at which 3D elements will be rendered. Lowering this "
-"can be used to improve performance on lower-end hardware."
-msgstr ""
-"Maximálna vzdialenosť, do ktorej sa budú vykresľovať 3D prvky. Znížením "
-"tejto hodnoty je možné zlepšiť výkon na slabšom hardvéri."
-
-msgid "Did you remember to restart after installing them?"
-msgstr "Nezabudli ste po ich inštalácii reštartovať?"
-
-msgid ""
-"Changing this option requires a restart of ETS2LA to take effect. Restart "
-"now?"
-msgstr ""
-"Aby sa táto zmena uplatnila, je potrebné reštartovať ETS2LA. Chcete "
-"reštartovať teraz?"
-
-msgid "Logout Failed"
-msgstr "Odhlásenie sa nepodarilo"
-
-msgid "kilograms"
-msgstr "kilogramy"
-
-#, csharp-format
-msgid "Error rendering overlay: {0}"
-msgstr "Chyba pri vykresľovaní prekrývacieho prvku: {0}"
-
-msgid "Warnings"
-msgstr "Varovania"
-
-msgid "Add Game Manually"
-msgstr "Pridať hru manuálne"
-
-msgid "Imperial"
-msgstr "Imperiálna"
-
-msgid "feet"
-msgstr "stopa"
-
-msgid "Collision Avoidance"
-msgstr "Predchádzanie zrážkam"
-
-msgid "Force Base Map Name"
-msgstr "Vynútiť názov mapy"
-
-msgid ""
-"• If you create an account, we transfer your account information to an "
-"international recipient."
-msgstr ""
-"• Ak si vytvoríte účet, prenesieme informácie o vašom účte medzinárodnému "
-"príjemcovi."
-
-#, csharp-format
-msgid "Update to {0} from {1}"
-msgstr "Aktualizuj do {0} z {1}"
-
-#, csharp-format
-msgid "Unregistered control: {0} ({1})"
-msgstr "Neregistrovaná kontrola: {0} ({1})"
-
-msgid ""
-"The server could not understand the request due to invalid syntax or "
-"corrupted request data."
-msgstr ""
-"Server nedokázal spracovať požiadavku kvôli neplatnej syntaxe alebo "
-"poškodeným údajom v požiadavke."
-
-msgid ""
-"Your system has less than 20GB of RAM. Extreme data fidelity uses "
-"significant amounts of RAM, and may cause your system to become unstable. "
-"Please select a lower fidelity."
-msgstr ""
-"Váš systém má menej ako 20 GB pamäte RAM. Funkcia Extrémna úroveň údajov "
-"spotrebúva značné množstvo pamäte RAM a môže spôsobiť nestabilitu systému. "
-"Zvoľte prosím nižšiu úroveň údajov."
-
-msgid "No audio output device available"
-msgstr "Nie je k dispozícii žiadne zariadenie na výstup zvuku"
-
-msgid "This game was found at"
-msgstr "Túto hru sme našli v"
-
-msgid "Search for plugins..."
-msgstr "Vyhľadávanie pluginov..."
-
-msgid "And to those who've decided to remain anonymous!"
-msgstr "A tým, ktorí sa rozhodli zostať v anonymite!"
-
-msgid "Failed to initialize overlay, OpenGL initialization failed."
-msgstr ""
-"Nepodarilo sa inicializovať prekrývaciu vrstvu, inicializácia OpenGL zlyhala."
-
-msgid "Next/OK"
-msgstr "Ďalej/OK"
-
-msgid ""
-"To get started fast, you can install our <span class=\"text-text-accent font-"
-"bold\">recommended</span> plugins. These contain everything you need to get "
-"driving."
-msgstr ""
-"Ak chcete rýchlo začať, môžete si nainštalovať naše <span class=\"text-text-"
-"accent font-bold\">odporúčané</span> pluginy. Obsahujú všetko, čo "
-"potrebujete na to, aby ste mohli začať."
-
-msgid "Don't have an account?<br/>Register a new one now, no emails required!"
-msgstr ""
-"Nemáte účet?<br/>Zaregistrujte si nový hneď teraz, e-mailová adresa nie je "
-"potrebná!"
-
-msgid "Failed to initialize SDL3 input backend."
-msgstr "Nepodarilo sa inicializovať vstupný backend SDL3."
-
-#, csharp-format
-msgid "Invalid audio job: {0}, does the file exist?"
-msgstr "Neplatná zvuková úloha: {0}, existuje tento súbor?"
-
-msgid "No release notes available."
-msgstr "Poznámky k verzii nie sú k dispozícii."
-
-msgid "Enabled"
-msgstr "Zapnuté"
-
-msgid "Audio"
-msgstr "Zvuk"
-
-msgid "General"
-msgstr "Všeobecné informácie"
-
-msgid "Unbound"
-msgstr "Nepriradené"
-
-msgid "Speed Limit Warning"
-msgstr "Upozornenie na rýchlostný limit"
-
-#, csharp-format
-msgid "Plugin with ID {0} not found."
-msgstr "Plugin s ID {0} nebol nájdený."
-
-msgid "Overlay"
-msgstr "Prekrytie"
-
-msgid "Additional"
-msgstr "Dodatočné"
-
-msgid "Dashboard"
-msgstr "Ovládací panel"
-
-#, csharp-format
-msgid "Tried to enable {0}, but it was not found among loaded plugins."
-msgstr ""
-"Snažil som sa aktivovať {0}, ale medzi načítanými pluginami sa nenašiel."
-
-msgid ""
-"This is a highly experimental program. ETS2LA is not perfect, and you will "
-"find issues with it's driving and safety. <span class=\"text-text-accent "
-"font-bold\">Do not leave ETS2LA unattended, especially in multiplayer.</span>"
-msgstr ""
-"Ide o vysoko experimentálny program. ETS2LA nie je dokonalý a narazíte v ňom "
-"na problémy s riadením a bezpečnosťou. <span class=\"text-text-accent font-"
-"bold\">Nenechávajte ETS2LA bežať bez dozoru, najmä v režime pre viacerých "
-"hráčov.</span>"
-
-msgid "Error in traffic update loop."
-msgstr "Chyba v cykle aktualizácie dopravných informácií."
-
-msgid ""
-"Translate news articles to your selected display language. This may take a "
-"while depending on the number of articles and your internet connection."
-msgstr ""
-"Preložte novinové články do zvoleného jazyka zobrazenia. Môže to chvíľu "
-"trvať v závislosti od počtu článkov a vášho internetového pripojenia."
-
-msgid "Slow"
-msgstr "Pomaly"
-
-msgid ""
-"When enabled, the overlay will toggle between interaction and non-"
-"interaction mode when you press it's keybind. When disabled, the overlay "
-"will only be interactive while you hold down the keybind."
-msgstr ""
-"Ak je táto funkcia zapnutá, prekrývací panel sa bude prepínať medzi "
-"interaktívnym a neinteraktívnym režimom po stlačení priradenej klávesy. Ak "
-"je táto funkcia vypnutá, prekrývací panel bude interaktívny len počas "
-"stlačenia priradenej klávesy."
+msgid "kg"
+msgstr "kg"
 
 msgid ""
 "Decreases the current target speed by one step. If speed control and lane "
@@ -742,99 +107,129 @@ msgstr ""
 "ako SET. To znamená, že nastaví aktuálnu rýchlosť na hodnotu rýchlostného "
 "obmedzenia."
 
-msgid "°F"
-msgstr "°F"
-
-msgid "Telemetry"
-msgstr "Telemetria"
-
-msgid "Speed Control Step Size"
-msgstr "Veľkosť kroku regulácie rýchlosti"
-
-msgid ""
-"Adjust the quality of the curves used for path planning and visualization. "
-"By default this matches the game."
-msgstr ""
-"Nastavte kvalitu kriviek používaných pri plánovaní trasy a vizualizácii. V "
-"predvolenom nastavení sa táto hodnota zhoduje s nastavením v hre."
-
-msgid ""
-"I'm sorry, but I cannot answer that question. Please ask something else "
-"ETS2LA related."
-msgstr ""
-"Je mi ľúto, ale na túto otázku nemôžem odpovedať. Prosím, opýtajte sa na "
-"niečo iné súvisiace s ETS2LA."
-
-msgid "mph"
-msgstr "mph"
-
-msgid "Changelog"
-msgstr "Zoznam zmien"
-
-msgid "SDK Installed"
-msgstr "SDK je nainštalované"
-
-msgid "meters"
-msgstr "metre"
-
-#, csharp-format
-msgid "No valid versions found for plugin with ID {0}."
-msgstr "Nenašli sa žiadne platné verzie pre plugin s ID {0}."
-
-msgid "GitHub Sponsorship"
-msgstr "Sponzorstvo na GitHube"
-
-#, csharp-format
-msgid "Successfully installed plugin {0} ({1}, {2})"
-msgstr "Plugin {0} bol úspešne nainštalovaný ({1}, {2})"
-
-msgid "°C"
-msgstr "°C"
-
-msgid "Not Connected"
-msgstr "Nie je pripojený"
-
-msgid "3D Renderer"
-msgstr "3D renderovanie"
-
-msgid ""
-"This key is used to select in UI menus. It also acts as the approval key for "
-"any notifications."
-msgstr ""
-"Táto klávesa slúži na výber v ponukách používateľského rozhrania. Slúži tiež "
-"ako klávesa na potvrdenie akýchkoľvek oznámení."
-
-msgid "No plugins found."
-msgstr "Nenašli sa žiadne pluginy."
-
-#, csharp-format
-msgid "An error occurred while loading map data: {0}"
-msgstr "Pri načítavaní údajov o mape došlo k chybe: {0}"
-
-msgid "Error Loading Map Data"
-msgstr "Chyba pri načítaní údajov mapy"
-
-#, csharp-format
-msgid "Camera {0} ({1}x{2})"
-msgstr "Kamera {0} ({1}×{2})"
+msgid "Become a GitHub Sponsor"
+msgstr "Staňte sa sponzorom GitHubu"
 
 msgid "Game not found"
 msgstr "Hra sa nenašla"
 
-#, csharp-format
-msgid "New limit {0} {1}"
-msgstr "Nový limit {0} {1}"
+msgid "If you've not yet installed it, you can find it in the catalogue."
+msgstr "Ak ste si ho ešte nenainštalovali, nájdete ho v katalógu."
 
 #, csharp-format
-msgid "Loading map data from '{0}'"
-msgstr "Načítavanie údajov mapy z „{0}“"
+msgid "Installed {0}"
+msgstr "Nainštalované {0}"
 
 #, csharp-format
-msgid "Control with ID '{0}' not found for event unsubscription."
-msgstr "Kontrola s ID „{0}“ nebola nájdené pre zrušenie predplatného."
+msgid "Error loading map data from '{0}': {1}"
+msgstr "Chyba pri načítaní údajov mapy z „{0}“: {1}"
 
 msgid "Medium"
 msgstr "Stredná"
+
+msgid "Maximum Speed"
+msgstr "Maximálna rýchlosť"
+
+msgid ""
+"When the game reports itself being paused, ETS2LA won't render AR elements."
+msgstr "Keď hra zaznamená, že je pozastavená, ETS2LA prestane vykresľovať."
+
+msgid ""
+"Your username may only contain letters, numbers, underscores, hyphens and "
+"periods, and must start and end with a letter or number."
+msgstr ""
+"Vaše používateľské meno môže obsahovať iba písmená, čísla, podčiarknutia, "
+"spojovníky a bodky a musí začínať a končiť písmenom alebo číslom."
+
+#, csharp-format
+msgid "Connected joystick: [bold]{0}[/] [gray italic]({1})[/]"
+msgstr "Pripojený joystick: [bold]{0}[/] [gray italic]({1})[/]"
+
+msgid "Username"
+msgstr "Používateľské meno"
+
+#, csharp-format
+msgid "Starting binding for control {0} ({1})"
+msgstr "Začínam mapovať klávesi pre ovládací prvok {0} ({1})"
+
+#, csharp-format
+msgid "Failed to enable dependency: {0}"
+msgstr "Nepodarilo sa aktivovať závislosť: {0}"
+
+msgid "Main"
+msgstr "Hlavné"
+
+msgid "Only Show Official News"
+msgstr "Zobraziť iba oficiálne noviny"
+
+#, csharp-format
+msgid ""
+"Version {0} of plugin with ID {1} is not compatible with the current "
+"application version or operating system."
+msgstr ""
+"Verzia {0} pluginu s ID {1} nie je kompatibilná s aktuálnou verziou "
+"aplikácie ani s operačným systémom."
+
+#, csharp-format
+msgid "found {0} road"
+msgid_plural "found {0} roads"
+msgstr[0] "Bola nájdená {0} cesta"
+msgstr[1] "Boli nájdené {0} cesty"
+msgstr[2] "Bolo nájdených {0} ciest"
+
+#, csharp-format
+msgid "Binding for control {0} ({1}) timed out."
+msgstr "Vypršal časový limit pre mapovanie ovládacieho prvku {0} ({1})."
+
+msgid "Remove Account"
+msgstr "Odstrániť účet"
+
+#, csharp-format
+msgid ""
+"Library plugin with ID [gray]{0}[/] is already loaded, skipping duplicate."
+msgstr ""
+"Knižničný plugin s ID [gray]{0}[/] je už načítaný, duplicitný sa preskočí."
+
+msgid "Successfully opened memory for output."
+msgstr "Pamäť pre zápis bola úspešne otvorená."
+
+msgid "Dashboard"
+msgstr "Ovládací panel"
+
+msgid "Update Available"
+msgstr "K dispozícii je aktualizácia"
+
+msgid "Error in navigation update loop."
+msgstr "Chyba v cykle aktualizácie navigácie."
+
+msgid ""
+"Warning: Your system has less than 16GB of RAM. You can only select up to "
+"Medium."
+msgstr ""
+"Upozornenie: Váš systém má menej ako 16 GB pamäte RAM. Môžete zvoliť iba "
+"nastavenie „Stredné“."
+
+msgid "Window Zoom"
+msgstr "Zväčšenie okna"
+
+msgid "Show More Logs"
+msgstr "Zobraziť viac logov"
+
+msgid ""
+"Cracked games or demos will block our SDK from loading. They do not work, "
+"and we don't intend to fix this."
+msgstr ""
+"Pirátené hry alebo demo verzie zabránia načítaniu nášho SDK. Nefungujú a "
+"nemáme v úmysle tento problém riešiť."
+
+msgid "Contact us on Discord"
+msgstr "Kontaktujte nás na Discorde"
+
+msgid "km/h"
+msgstr "km/h"
+
+msgid "Overlay is disabled in settings, skipping initialization."
+msgstr "V nastaveniach je funkcia Overlay vypnutá, inicializácia sa preskočí."
 
 msgid ""
 "ETS2LA will display information on top of the game. You can interact with "
@@ -846,63 +241,166 @@ msgstr ""
 "class=\"text-text-accent font-bold\">Interakcia s prekrývajúcim oknom</"
 "span>. Vyskúšajte to!"
 
-#, csharp-format
-msgid "Plugin with ID [gray]{0}[/] is already loaded, skipping duplicate."
-msgstr "Plugin s ID [gray]{0}[/] je už načítaný, duplicitný sa preskočí."
+msgid "If you can't interact with the Window, press CTRL+R."
+msgstr "Ak nemôžete interagovať s oknom, stlačte klávesovú skratku CTRL+R."
+
+msgid "The step size for changing the cruise control speed."
+msgstr "Veľkosť kroku pri zmene rýchlosti tempomatu."
+
+msgid "Please enter a username."
+msgstr "Zadajte prosím používateľské meno."
 
 #, csharp-format
-msgid "Failed to install SDK from '{0}' to '{1}': {2}"
-msgstr "Nepodarila sa Inštalácia SDK z „{0}“ do „{1}“: {2}"
+msgid "Your username must be at least {0} characters long."
+msgstr "Vaše používateľské meno musí mať aspoň {0} znakov."
 
-#, csharp-format
-msgid "Failed to read bundled update source marker: {0}"
-msgstr "Nepodarilo sa načítať označenie zdroja aktualizácie v balíku: {0}"
+msgid "Press anywhere outside the dialog to close it."
+msgstr "Kliknutím kamkoľvek mimo dialógového okna ho zatvoríte."
 
-msgid "Assists Enabled: "
-msgstr "Zapnutý asistenti: "
+msgid "Welcome to ETS2LA!"
+msgstr "Vitajte v ETS2LA!"
 
-msgid "Adjust the volume of the audio output."
-msgstr "Upravte hlasitosť zvukového výstupu."
-
-#, csharp-format
-msgid "Connected joystick: [bold]{0}[/] [gray italic]({1})[/]"
-msgstr "Pripojený joystick: [bold]{0}[/] [gray italic]({1})[/]"
-
-msgid "Login Successful"
-msgstr "Prihlásenie bolo úspešné"
-
-msgid "Open SDK Settings"
-msgstr "Otvoriť nastavenia SDK"
-
-msgid "Controls"
-msgstr "Ovládacie prvky"
-
-msgid "The selected file does not exist."
-msgstr "Vybraný súbor neexistuje."
-
-#, csharp-format
-msgid "Adding mod: {0}"
-msgstr "Pridávam mód:{0}"
-
-msgid "Adjustments"
-msgstr "Úpravy"
-
-msgid "Failed to remove account. Please try again."
-msgstr "Odstránenie účtu sa nepodarilo. Skúste to prosím znova."
+msgid "Account Removal Failed"
+msgstr "Nepodarilo sa odstrániť účet"
 
 msgid ""
-"This setting only loads roads and intersections visible on the in game map. "
-"It discards all other information."
+"<span class=\"text-text-accent\"))>Success!</span> You can find more plugins "
+"in the catalogue later."
 msgstr ""
-"Toto nastavenie načíta iba cesty a križovatky, ktoré sú viditeľné na mape v "
-"hre. Všetky ostatné informácie sa ignorujú."
+"<span class=\"text-text-accent\"))>Success!</span> Ďalšie pluginy nájdete "
+"neskôr v katalógu."
+
+msgid "Initializing..."
+msgstr "Inicializujem..."
 
 msgid ""
-"Will disable ETS2LA's assists when pressed. If assists are already disabled, "
-"this key will switch between driving modes."
+"Please ensure <span class=\"text-text-accent font-bold\">ETS2 and ATS are "
+"closed</span>. You can start the game after completing the onboarding "
+"process."
 msgstr ""
-"Po stlačení tejto klávesy sa vypnú asistenti ETS2LA. Ak sú asistenti už "
-"vypnutý, táto klávesa bude prepínať medzi režimami jazdy."
+"Uistite sa, prosím, že <span class=\"text-text-accent font-bold\">ETS2 a ATS "
+"sú zatvorené</span>. Hru môžete spustiť po dokončení procesu prípravy."
+
+#, csharp-format
+msgid "Error rendering window {0}: {1}"
+msgstr "Chyba pri zobrazení okna {0}: {1}"
+
+#, csharp-format
+msgid "Failed to refresh joysticks: {0}"
+msgstr "Nepodarilo sa obnoviť joysticky: {0}"
+
+#, csharp-format
+msgid "Error loading '{0}': {1}"
+msgstr "Chyba pri načítaní „{0}“: {1}"
+
+msgid ""
+"ETS2LA requires you to install our <span class=\"text-text-accent font-"
+"bold\">SDK</span> to get started. Please install the SDK for <span "
+"class=\"text-text-accent font-bold\">at least one game</span> to continue."
+msgstr ""
+"Aby ste mohli začať používať ETS2LA, je potrebné nainštalovať naše <span "
+"class=\"text-text-accent font-bold\">SDK</span>. Ak chcete pokračovať, "
+"nainštalujte si prosím SDK pre <span class=\"text-text-accent font-"
+"bold\">aspoň jednu hru</span>."
+
+msgid "Enable Memory Output for Pedals"
+msgstr "Povoliť výstup pamäte pre pedále"
+
+#, csharp-format
+msgid "Successfully updated plugin with ID {0}."
+msgstr "Plugin s ID {0} bol úspešne aktualizovaný."
+
+msgid "Look in the top left corner."
+msgstr "Pozrite sa do ľavého horného rohu."
+
+msgid "Failed to log out. Please try again."
+msgstr "Odhlásenie sa nepodarilo. Skúste to prosím znova."
+
+msgid "Visual"
+msgstr "Vizuálne"
+
+msgid "Additional"
+msgstr "Dodatočné"
+
+msgid "Install Plugins"
+msgstr "Nainštalujte pluginy"
+
+msgid "Show Fewer Logs"
+msgstr "Zobraziť menej logov"
+
+msgid "Your login token is invalid or expired."
+msgstr "Váš prihlasovací token je neplatný alebo jeho platnosť vypršala."
+
+#, csharp-format
+msgid "Error while downloading update: {0}"
+msgstr "Chyba pri sťahovaní aktualizácie: {0}"
+
+msgid "I won't leave ETS2LA unattended"
+msgstr "Nenechám ETS2LA bez dozoru"
+
+msgid "Keyboard"
+msgstr "Klávesnica"
+
+#, csharp-format
+msgid "No game executable found in '{0}', not adding it as an installation."
+msgstr ""
+"V priečinku „{0}“ nebol nájdený spustiteľný súbor hry, preto sa nepridáva do "
+"inštalácie."
+
+msgid "Chime"
+msgstr "Zvukové"
+
+msgid "Failed to create GLFW window"
+msgstr "Nepodarilo sa vytvoriť okno GLFW"
+
+msgid "Fast"
+msgstr "Rýchlo"
+
+msgid "Install Update and Restart"
+msgstr "Nainštalujte aktualizáciu a reštartujte"
+
+msgid "Curve Quality"
+msgstr "Kvalita krivky"
+
+msgid ""
+"Adjust how ETS2LA will respond to necessary steering changes. This for "
+"example controls how quickly ETS2LA will lane-change."
+msgstr ""
+"Nastavte, ako bude ETS2LA reagovať na potrebné dotočenie volantom. Týmto "
+"nastavením sa napríklad určuje, ako rýchlo bude ETS2LA meniť jazdný pruh."
+
+msgid "Logout Successful"
+msgstr "Odhlásenie bolo úspešné"
+
+#, csharp-format
+msgid "Successfully uninstalled plugin with ID {0}."
+msgstr "Plugin s ID {0} bol úspešne odinštalovaný."
+
+msgid "No Update Available"
+msgstr "Nie je k dispozícii žiadna aktualizácia"
+
+msgid "Performance Overlay"
+msgstr "Prekrývací panel výkonu"
+
+#, csharp-format
+msgid "Disconnected joystick: [gray italic]({0})[/]"
+msgstr "Odpojený joystick: [gray italic]({0})[/]"
+
+#, csharp-format
+msgid "Update to {0}"
+msgstr "Aktualizuj do {0}"
+
+#, csharp-format
+msgid ""
+"When receiving a speedlimit of {0} {1}, we will set the speed to {2} {3}."
+msgstr "Ak dostaneme rýchlostný limit {0} {1}, nastavíme rýchlosť na {2} {3}."
+
+#, csharp-format
+msgid "Control with ID '{0}' not found for updating axis behavior."
+msgstr "Kontrola s ID „{0}“ nebola nájdené pre aktualizáciu správania osí."
+
+msgid "Networking"
+msgstr "Sieťovanie"
 
 msgid ""
 "By clicking <span class=\"font-bold\">Continue</span>, you agree to the "
@@ -911,37 +409,29 @@ msgstr ""
 "Kliknutím na <span class=\"font-bold\">Pokračovať</span>, súhlasíte s "
 "prenosom informácií o vašom prípadnom účte medzinárodnému príjemcovi."
 
-msgid ""
-"By clicking <span class=\"font-bold\">Continue</span>, you agree to our "
-"Privacy Policy."
-msgstr ""
-"Kliknutím na <span class=\"font-bold\">Pokračovať</span> súhlasíte s našimi "
-"Zásadami ochrany osobných údajov."
-
-msgid "Simplified Graphics"
-msgstr "Zjednodušená grafika"
-
-msgid ""
-"Send using <span class=\"text-text-l\">Enter</span>, new line with <span "
-"class=\"text-text-l\">Shift+Enter</span>. Some basic information is sent "
-"along with each message, <span class=\"text-text-l\">click to display</span>."
-msgstr ""
-"Odoslať pomocou <span class=\"text-text-l\">Enter</span>, nový riadok "
-"pomocou <span class=\"text-text-l\">Shift+Enter</span>. Spolu s každou "
-"správou sa odosielajú niektoré základné informácie, <span class=\"text-text-"
-"l\">kliknutím ich zobrazíte</span>."
-
 #, csharp-format
-msgid "No game executable found in '{0}', not adding it as an installation."
+msgid ""
+"Press a button or move an axis on your input device to bind it to this "
+"control. This will time out in {0} seconds."
 msgstr ""
-"V priečinku „{0}“ nebol nájdený spustiteľný súbor hry, preto sa nepridáva do "
-"inštalácie."
+"Stlačte tlačidlo alebo posuňte os na vašom vstupnom zariadení, aby ste ho "
+"priradili k tomuto ovládacímu prvku. Časový limit vyprší za {0} sekúnd."
 
-msgid "kg"
-msgstr "kg"
+msgid "Enable All"
+msgstr "Zapnúť všetky"
 
-msgid "Parsing Map Data"
-msgstr "Analýza mapových údajov"
+msgid "Data Parsing"
+msgstr "Dáta Mapy"
+
+msgid ""
+"Service unavailable. The server is currently unable to handle the request "
+"due to temporary overloading or maintenance."
+msgstr ""
+"Služba nie je k dispozícii. Server momentálne nemôže spracovať žiadosť z "
+"dôvodu dočasného preťaženia alebo údržby."
+
+msgid "Enabled"
+msgstr "Zapnuté"
 
 msgid ""
 "How early ETS2LA will attempt to respond to possible collisions. Turning "
@@ -952,326 +442,13 @@ msgstr ""
 "deaktivujete systém zabraňujúci kolíziám bez ohľadu na to, ktoré pluginy "
 "máte zapnuté."
 
-msgid ""
-"Some mods implement additional maps like japan.mbd or russia.mbd. If you "
-"find your mods are not loading properly, try enabling this option. This is "
-"known to be required for RusMap."
+msgid "The selected file does not exist."
+msgstr "Vybraný súbor neexistuje."
+
+#, csharp-format
+msgid "Assists Enabled: <span class=\"text-text-accent font-bold\">{0}</span>"
 msgstr ""
-"Niektoré mody obsahujú dodatočné mapy, ako napríklad japan.mbd alebo "
-"russia.mbd. Ak zistíte, že sa vaše mody nenačítavajú správne, skúste túto "
-"možnosť zapnúť. Je známe, že táto možnosť je nevyhnutná pre RusMap."
-
-#, csharp-format
-msgid "Apparent plugin directory {0} does not exist."
-msgstr "Zdá sa, že adresár s pluginami {0} neexistuje."
-
-msgid "Please see the logs for more information."
-msgstr "Ďalšie informácie nájdete v logoch."
-
-msgid "An error occurred while checking for updates."
-msgstr "Pri kontrole aktualizácií došlo k chybe."
-
-msgid "I understand, now let me in!"
-msgstr "Rozumiem, tak ma teraz pusťte dnu!"
-
-#, csharp-format
-msgid ""
-"You are currently logged in as <span class=\"text-text-l\">{0}</span>. [{1}]"
-msgstr ""
-"V súčasnosti ste prihlásení ako <span class=\"text-text-l\">{0}</span>. [{1}]"
-
-msgid "Disable Overlay"
-msgstr "Vypnúť prekrývanie"
-
-msgid "show"
-msgstr "zobraziť"
-
-msgid "Data Quality"
-msgstr "Kvalita údajov"
-
-msgid "Unpacking Mods"
-msgstr "Rozbaľovanie modov"
-
-#, csharp-format
-msgid "<span class=\"font-semibold\">{0}</span> at {1}"
-msgstr "<span class=\"font-semibold\">{0}</span> na {1}"
-
-msgid "Console"
-msgstr "Konzola"
-
-#, csharp-format
-msgid "Disabled plugin: [bold]{0}[/]"
-msgstr "Vypnutý plugin: [bold]{0}[/]"
-
-#, csharp-format
-msgid "Installation at '{0}' has already been parsed."
-msgstr "Inštalácia v „{0}“ už bola spracovaná."
-
-msgid "Please enable the Visualization Sockets plugin."
-msgstr "Prosím, aktivujte plugin Visualization Sockets."
-
-msgid "Pa"
-msgstr "Pa"
-
-msgid ""
-"Removing your account will delete all your data from our servers. This "
-"action cannot be undone."
-msgstr ""
-"Odstránením vášho účtu sa z našich serverov vymažú všetky vaše údaje. Túto "
-"akciu nie je možné vrátiť späť."
-
-msgid "Unknown Version"
-msgstr "Neznáma verzia"
-
-#, csharp-format
-msgid "Your username must be at least {0} characters long."
-msgstr "Vaše používateľské meno musí mať aspoň {0} znakov."
-
-msgid ""
-"Too many requests. You have sent too many requests in a given amount of time."
-msgstr ""
-"Príliš veľa požiadaviek. Za daný čas ste odoslali príliš veľa požiadaviek."
-
-#, csharp-format
-msgid "An error occurred while loading file '{0}': {1}"
-msgstr "Došlo k chybe pri načítaní súboru „{0}“: {1}"
-
-msgid "Hide Installed"
-msgstr "Skryť nainštalované"
-
-msgid "Game is still running"
-msgstr "Hra stále beží"
-
-#, csharp-format
-msgid "Failed to disable {0}: {1}"
-msgstr "Nepodarilo sa vypnúť {0}: {1}"
-
-msgid ""
-"The language ETS2LA will be displayed at. Translations are provided by the "
-"community, we cannot guarantee their accuracy."
-msgstr ""
-"Jazyk, v ktorom sa bude zobrazovať ETS2LA. Preklady poskytuje komunita, "
-"nemôžeme zaručiť ich správnosť :)"
-
-#, csharp-format
-msgid ""
-"Cannot uninstall plugin with ID {0} because the following installed plugins "
-"depend on it: {1}"
-msgstr ""
-"Plugin s ID {0} nie je možné odinštalovať, pretože na ňom závisia "
-"nasledujúce nainštalované pluginy: {1}"
-
-#, csharp-format
-msgid "Error while downloading update: {0}"
-msgstr "Chyba pri sťahovaní aktualizácie: {0}"
-
-msgid "I won't leave ETS2LA unattended"
-msgstr "Nenechám ETS2LA bez dozoru"
-
-msgid "Unknown Control ID"
-msgstr "Neznáme kontrolné ID"
-
-msgid ""
-"ETS2LA is running as a system administrator. This puts your system at risk "
-"if you use 3rd party plugins. Select Yes to continue anyway and accept the "
-"risk."
-msgstr ""
-"ETS2LA beží s oprávneniami systémového správcu. Ak používate pluginy od "
-"tretích strán, vystavujete tým svoj systém riziku. Ak chcete aj tak "
-"pokračovať a prijať toto riziko, vyberte možnosť Áno."
-
-msgid "Traffic Lights"
-msgstr "Semafory"
-
-msgid "Finished loading plugins"
-msgstr "Načítanie pluginov bolo dokončené"
-
-msgid ""
-"<span class=\"text-text-accent\"))>Success!</span> You can find more plugins "
-"in the catalogue later."
-msgstr ""
-"<span class=\"text-text-accent\"))>Success!</span> Ďalšie pluginy nájdete "
-"neskôr v katalógu."
-
-#, csharp-format
-msgid "Parsing installation at '{0}' (version: {1})"
-msgstr "Analýza inštalácie v „{0}“ (verzia: {1})"
-
-msgid "Gates"
-msgstr "Brány"
-
-#, csharp-format
-msgid "Binding {0}"
-msgstr "Mapujem {0}"
-
-msgid "You are not logged in. Open this page again to login."
-msgstr "Nie ste prihlásení. Otvorte túto stránku znovu, aby ste sa prihlásili."
-
-msgid "You may need to restart the game to apply this change."
-msgstr "Na uplatnenie tejto zmeny možno bude potrebné reštartovať hru."
-
-msgid "Look in the top left corner."
-msgstr "Pozrite sa do ľavého horného rohu."
-
-msgid ""
-"We will pause the game when we detect instability or the steering is "
-"unresponsive / disables itself for other reasons."
-msgstr ""
-"Hru pozastavíme, keď zistíme nestabilitu alebo ak zatáčanie nereaguje / z "
-"iných dôvodov prestane fungovať."
-
-#, csharp-format
-msgid "Discovered {0} manually installed plugin."
-msgid_plural "Discovered {0} manually installed plugins."
-msgstr[0] "Našiel sa {0} ručne nainštalovaný plugin."
-msgstr[1] "Našli sa {0} ručne nainštalované pluginy."
-msgstr[2] "Našlo sa {0} ručne nainštalovaných pluginov."
-
-msgid "Data Fidelity"
-msgstr "Presnosť údajov"
-
-#, csharp-format
-msgid "Failed to discover Dlls: {0}"
-msgstr "Nepodarilo sa nájsť súbory DLL: {0}"
-
-msgid "Remove Account"
-msgstr "Odstrániť účet"
-
-msgid "Binding Successful"
-msgstr "Mapovanie kláves bol úspešný"
-
-msgid "Before we begin."
-msgstr "Predtým ako začneme."
-
-msgid "Error Checking for Updates"
-msgstr "Kontrola chýb pri aktualizácii"
-
-msgid "Chime"
-msgstr "Zvukové"
-
-msgid ""
-"Parsing will continue, however information contained in this file won't be "
-"available to ETS2LA."
-msgstr ""
-"Analýza bude pokračovať, avšak informácie obsiahnuté v tomto súbore nebudú k "
-"dispozícii pre ETS2LA."
-
-msgid "All driving assists have been disabled."
-msgstr "Všetky asistenčné systémy riadenia boli deaktivované."
-
-#, csharp-format
-msgid "Error playing audio file {0}: {1}"
-msgstr "Chyba pri prehrávaní zvukového súboru {0}: {1}"
-
-msgid "The plugin was enabled successfully."
-msgstr "Plugin bol úspešne aktivovaný."
-
-#, csharp-format
-msgid ""
-"Failed to clean plugin shadow directory [gray]{0}[/], it will be removed on "
-"the next startup: {1}"
-msgstr ""
-"Nepodarilo sa vyčistiť tieňový adresár pluginu [gray]{0}[/], bude odstránený "
-"pri nasledujúcom spustení: {1}"
-
-msgid "Settings"
-msgstr "Nastavenia"
-
-msgid ""
-"How ETS2LA will warn you about exceeding the speed limit by a major amount."
-msgstr "Ako vás ETS2LA upozorní na výrazné prekročenie rýchlostného limitu."
-
-#, csharp-format
-msgid "Error loading '{0}': {1}"
-msgstr "Chyba pri načítaní „{0}“: {1}"
-
-#, csharp-format
-msgid "<span class=\"font-semibold\">{0}</span> until {1}"
-msgstr "<span class=\"font-semibold\">{0}</span> do {1}"
-
-#, csharp-format
-msgid "Discovered {0} plugins in total."
-msgid_plural "Discovered {0} plugins in total."
-msgstr[0] "Celkovo sa našiel {0} plugin."
-msgstr[1] "Celkovo sa našli {0} pluginy."
-msgstr[2] "Celkovo sa našlo {0} pluginov."
-
-#, csharp-format
-msgid "Failed to install latest version of plugin with ID {0}."
-msgstr "Nepodarilo sa nainštalovať najnovšiu verziu pluginu s ID {0}."
-
-msgid "Initializing..."
-msgstr "Inicializujem..."
-
-msgid "Undetermined"
-msgstr "Neurčené"
-
-msgid "meters per second"
-msgstr "metre za sekundu"
-
-msgid "Overlay Interaction"
-msgstr "Interakcia s prekrývacím prvkom"
-
-#, csharp-format
-msgid "Snap to each 10 {0}"
-msgstr "Zarovnať po každých 10 {0}"
-
-#, csharp-format
-msgid "Failed to uninstall SDK version '{0}' from '{1}': {2}"
-msgstr "Nepodarilo sa odinštalovať verziu SDK „{0}“ z „{1}“: {2}"
-
-#, csharp-format
-msgid "No download URL found for plugin with ID {0} in region {1}."
-msgstr ""
-"V regióne {1} nebola nájdená žiadna adresa URL na stiahnutie pluginu s ID "
-"{0}."
-
-msgid "High"
-msgstr "Vysoká"
-
-#, csharp-format
-msgid "Installed plugin with ID {0} not found."
-msgstr "Nenašiel sa nainštalovaný plugin s ID {0}."
-
-msgid "Failed to log out. Please try again."
-msgstr "Odhlásenie sa nepodarilo. Skúste to prosím znova."
-
-#, csharp-format
-msgid "LoaderException: {0}"
-msgstr "Výnimka načítača: {0}"
-
-msgid "Registration Failed"
-msgstr "Registrácia sa nepodarila"
-
-msgid ""
-"We don't sell or transfer your personal data to any third parties, in fact, "
-"we don't even collect it. However, we are still obligated to display and "
-"acquire your consent before proceeding."
-msgstr ""
-"Vaše osobné údaje nepredávame ani neposkytujeme žiadnym tretím stranám, v "
-"skutočnosti ich ani nezhromažďujeme. Napriek tomu sme povinní získať váš "
-"súhlas a oboznámiť vás s ním predtým, než budeme pokračovať."
-
-msgid "Disable"
-msgstr "Vypnúť"
-
-#, csharp-format
-msgid "Error while checking for updates: {0}"
-msgstr "Chyba pri kontrole aktualizácií: {0}"
-
-#, csharp-format
-msgid ""
-"You have successfully registered as {0}. Please add the OTP code to your "
-"authentication app."
-msgstr ""
-"Úspešne ste sa zaregistrovali ako {0}. Zadajte prosím kód OTP do vašej "
-"autentifikačnej aplikácie."
-
-#, csharp-format
-msgid "Overlay is disabled in settings, skipping window registration for {0}."
-msgstr ""
-"V nastaveniach je funkcia prekrývania vypnutá, registrácia okna pre {0} sa "
-"preskočí."
+"Asisnenti zapnutý: <span class=\"text-text-accent font-bold\">{0}</span>"
 
 msgid ""
 "Only show news articles from official sources, such as the ETS2LA team or "
@@ -1280,214 +457,68 @@ msgstr ""
 "Zobrazovať iba noviny z oficiálnych zdrojov, ako je tím ETS2LA alebo jeho "
 "vývojári."
 
-msgid "Starting download..."
-msgstr "Začína sa sťahovanie..."
+msgid ""
+"Memory not available for output, please ensure the game is running and "
+"reinstall the SDK if necessary."
+msgstr ""
+"Na zápis nie je k dispozícii dostatok pamäte. Uistite sa, že hra beží, a v "
+"prípade potreby nainštalujte SDK nanovo."
+
+msgid "All driving assists have been disabled."
+msgstr "Všetky asistenčné systémy riadenia boli deaktivované."
+
+#, csharp-format
+msgid "Latest Version: {0}"
+msgstr "Najnovšia verzia: {0}"
 
 msgid "Translating release notes..."
 msgstr "Prekladám poznámky k verzii..."
 
-#, csharp-format
-msgid "Error in plugin {0} Tick: {1}"
-msgstr "Chyba v plugine {0} Zaškrtnutie: {1}"
-
-msgid "Chatbot"
-msgstr "Chatbot"
-
-msgid "Normal"
-msgstr "Normálne"
-
-msgid "Assists Enabled"
-msgstr "Asistencie zapnuté"
-
-#, csharp-format
-msgid "Removing manually added installation at '{0}'"
-msgstr "Odstránenie ručne pridaného inštalačného súboru v umiestnení „{0}“"
-
-#, csharp-format
-msgid "Control with ID '{0}' not found for unregistration."
-msgstr "Kontrola s ID „{0}“ nebola nájdené pre zrušenie registrácie."
-
-msgid "If you can't interact with the Window, press CTRL+R."
-msgstr "Ak nemôžete interagovať s oknom, stlačte klávesovú skratku CTRL+R."
-
-msgid "Only copy this to trusted websites, it can do ANYTHING on your behalf."
+msgid ""
+"This chatbot is provided for free by <span class=\"text-text-l\">Lun011666</"
+"span>.<br/>For the sake of the community, we ask you not to abuse access."
 msgstr ""
-"Toto skopírujte len na dôveryhodné webové stránky, pretože to môže vo vašom "
-"mene urobiť čokoľvek."
+"Tento chatbot je poskytovaný bezplatne používateľom <span class=\"text-text-"
+"l\">Lun011666</span>.<br/>V záujme komunity vás žiadame, aby ste "
+"nezneužívali prístup."
 
-msgid "Desired Speed: "
-msgstr "Požadovaná rýchlosť: "
+#, csharp-format
+msgid "Failed to read version from '{0}': {1}"
+msgstr "Nepodarilo sa načítať verziu z „{0}“: {1}"
 
-msgid "Catalogue"
-msgstr "Katalóg"
+msgid "Are you sure?"
+msgstr "Ste si istí?"
 
-msgid "If you've not yet installed it, you can find it in the catalogue."
-msgstr "Ak ste si ho ešte nenainštalovali, nájdete ho v katalógu."
+#, csharp-format
+msgid "You have successfully logged in as {0}."
+msgstr "Úspešne ste sa prihlásili ako {0}."
 
-msgid "Please enter a username."
-msgstr "Zadajte prosím používateľské meno."
+msgid "Render AR Elements"
+msgstr "Vykresliť prvky AR"
+
+msgid "Unchanged / Unavailable"
+msgstr "Nezmenené / Nedostupné"
 
 msgid ""
-"If you see a fully black screen, see the FAQ at <span class=\"description "
-"hover:underline\">ets2la.com</span>."
+"This key is used to select in UI menus. It also acts as the approval key for "
+"any notifications."
 msgstr ""
-"Ak sa vám zobrazuje úplne čierna obrazovka, pozrite si FAQ na stránke <span "
-"class=\"description hover:underline\">ets2la.com</span>."
+"Táto klávesa slúži na výber v ponukách používateľského rozhrania. Slúži tiež "
+"ako klávesa na potvrdenie akýchkoľvek oznámení."
 
 #, csharp-format
-msgid "Current Version: {0}"
-msgstr "Aktuálna verzia: {0}"
+msgid "LoaderException: {0}"
+msgstr "Výnimka načítača: {0}"
 
-msgid "Show Fewer Logs"
-msgstr "Zobraziť menej logov"
-
-msgid "Adaptive Cruise Control Only"
-msgstr "Iba adaptívny tempomat"
+msgid "Data Fidelity"
+msgstr "Presnosť údajov"
 
 #, csharp-format
-msgid "Unknown manifest type: {0}"
-msgstr "Neznámy typ manifestu: {0}"
+msgid "Failed to uninstall current version of plugin with ID {0}."
+msgstr "Nepodarilo sa odinštalovať aktuálnu verziu pluginu s ID {0}."
 
-msgid "If you're streaming or recording, now's the time to hide this window."
-msgstr ""
-"Ak práve streamujete alebo nahrávate, teraz je ten správny čas skryť toto "
-"okno."
-
-msgid "The server timed out waiting for the request from the client."
-msgstr "Serveru vypršal časový limit pri čakaní na požiadavku od klienta."
-
-msgid ""
-"This setting includes all available data, most of which is redundant. <span "
-"class=\"text-warning\">Warning: Extreme uses significant amounts of RAM, "
-"expect over 10GB of usage.</span>"
-msgstr ""
-"Toto nastavenie zahŕňa všetky dostupné údaje, z ktorých je väčšina "
-"nadbytočná. <span class=\"text-warning\">Upozornenie: Režim „Extrém“ "
-"spotrebúva značné množstvo pamäte RAM, počítajte s využitím viac ako 10 GB.</"
-"span>"
-
-msgid ""
-"Your session has expired or you don't have a connection to our servers. "
-"Please log in again if you wish to use server-side features."
-msgstr ""
-"Vaša relácia vypršala alebo nemáte pripojenie k našim serverom. Ak chcete "
-"využívať funkcie na strane servera, prihláste sa prosím znovu."
-
-#, csharp-format
-msgid "Failed to enable dependency: {0}"
-msgstr "Nepodarilo sa aktivovať závislosť: {0}"
-
-msgid "View Public Telemetry"
-msgstr "Zobraziť verejnú telemetriu"
-
-#, csharp-format
-msgid "Version {0} not found for plugin with ID {1}."
-msgstr "Verzia {0} nebola nájdená pre plugin s ID {1}."
-
-msgid "Force Map Load"
-msgstr "Vynútiť načítanie mapy"
-
-msgid "Volume"
-msgstr "Hlasitosť"
-
-msgid "Manager"
-msgstr "Manažér"
-
-#, csharp-format
-msgid "File not found: {0}"
-msgstr "Súbor nebol nájdený: {0}"
-
-#, csharp-format
-msgid "A new update is available: {0}"
-msgstr "Je k dispozícii nová aktualizácia: {0}"
-
-msgid "Account"
-msgstr "Účet"
-
-msgid "Disabled"
-msgstr "Vypnuté"
-
-msgid ""
-"You do not have permission to access this resource. The server understood "
-"the request but refuses to authorize it."
-msgstr ""
-"Nemáte oprávnenie na prístup k tomuto zdroju. Server požiadavku pochopil, "
-"ale odmietol ju autorizovať."
-
-msgid "Back to Login"
-msgstr "Späť na prihlásenie"
-
-msgid "Steering Sensitivity"
-msgstr "Citlivosť zatáčania"
-
-msgid "SDK Uninstallation Failed"
-msgstr "Odinštalovanie SDK sa nepodarilo"
-
-msgid "Restart Now"
-msgstr "Reštartovať teraz"
-
-msgid "Thank you to the following people for their ongoing support:"
-msgstr "Ďakujeme nasledujúcim osobám za ich nepretržitú podporu:"
-
-msgid ""
-"Your username may only contain letters, numbers, underscores, hyphens and "
-"periods, and must start and end with a letter or number."
-msgstr ""
-"Vaše používateľské meno môže obsahovať iba písmená, čísla, podčiarknutia, "
-"spojovníky a bodky a musí začínať a končiť písmenom alebo číslom."
-
-#, csharp-format
-msgid "Error in AR rendering: {0}"
-msgstr "Chyba pri vykresľovaní AR: {0}"
-
-#, csharp-format
-msgid "Fetched {0} plugin from {1}"
-msgid_plural "Fetched {0} plugins from {1}"
-msgstr[0] "Načítal som {0} plugin z {1}"
-msgstr[1] "Načítal som {0} pluginy z {1}"
-msgstr[2] "Načítal som {0} pluginov z {1}"
-
-msgid ""
-"Using simplified graphics can improve performance on lower-end hardware, or "
-"fix situations in which advanced features like shaders are not supported."
-msgstr ""
-"Použitie zjednodušenej grafiky môže zvýšiť výkon na slabšom hardvéri alebo "
-"vyriešiť situácie, v ktorých nie sú podporované pokročilé funkcie, ako "
-"napríklad shadery."
-
-#, csharp-format
-msgid "Copied '{0}' to '{1}'"
-msgstr "Skopírovalo sa „{0}“ do „{1}“"
-
-msgid "Privacy Policy"
-msgstr "Zásady ochrany osobných údajov"
-
-msgid "Controls Backend shutdown complete, all controls saved."
-msgstr ""
-"Vypnutie backendu mapovania kláves bolo úspešné, všetky mapovania klávesov "
-"boli uložené."
-
-msgid "Full Self-Driving"
-msgstr "Plne autonómne riadenie"
-
-msgid "SDKs are currently installed."
-msgstr "SDK sú v súčasnosti nainštalované."
-
-msgid ""
-"Cracked games or demos will block our SDK from loading. They do not work, "
-"and we don't intend to fix this."
-msgstr ""
-"Pirátené hry alebo demo verzie zabránia načítaniu nášho SDK. Nefungujú a "
-"nemáme v úmysle tento problém riešiť."
-
-msgid "Continue"
-msgstr "Pokračovať"
-
-msgid "All driving assists have been enabled."
-msgstr "Všetky asistenčné systémy riadenia boli aktivované."
-
-msgid "Window Zoom"
-msgstr "Zväčšenie okna"
+msgid "Early"
+msgstr "Skoro"
 
 msgid ""
 "Bad gateway. The server, while acting as a gateway or proxy, received an "
@@ -1496,62 +527,126 @@ msgstr ""
 "Chyba brány. Server, ktorý fungoval ako brána alebo proxy, prijal neplatnú "
 "odpoveď od prichádzajúceho servera."
 
-#, csharp-format
-msgid "Successfully uninstalled SDK version '{0}' from '{1}'"
-msgstr "Verzia SDK „{0}“ bola úspešne odinštalovaná z „{1}“"
+msgid "Already have an account? Log in here."
+msgstr "Máte už účet? Prihláste sa tu."
+
+msgid "The server timed out waiting for the request from the client."
+msgstr "Serveru vypršal časový limit pri čakaní na požiadavku od klienta."
+
+msgid "Assists Enabled"
+msgstr "Asistencie zapnuté"
+
+msgid "Backend shutdown complete."
+msgstr "Vypnutie backendu bolo úspešne dokončené."
 
 #, csharp-format
-msgid "Error while applying update: {0}"
-msgstr "Chyba pri inštalácii aktualizácie: {0}"
-
-msgid "Main"
-msgstr "Hlavné"
-
-#, csharp-format
-msgid "Deleted '{0}'"
-msgstr "Odstránené „{0}“"
-
-msgid "You are running the latest version."
-msgstr "Používate najnovšiu verziu."
-
-#, csharp-format
-msgid "Failed to load plugin from [gray]{0}[/]: {1}"
-msgstr "Nepodarilo sa načítať plugin z [gray]{0}[/]: {1}"
-
-#, csharp-format
-msgid "Finished parsing installation at '{0}'"
-msgstr "Dokončilo sa analýzovanie inštalácie v „{0}“"
+msgid "Control with ID '{0}' not found for event subscription."
+msgstr "Kontrola s ID „{0}“ nebola nájdené pre predplatné."
 
 msgid ""
-"Select which traffic rules ETS2LA should obey. More might be added later, "
-"and all plugins won't necessarily support all rules."
+"Please add the OTP code to your authentication app.<br/><span class=\"text-"
+"text-accent\">Do not close the page before you have added the code. We "
+"cannot recover accounts once they are created!</span>"
 msgstr ""
-"Vyberte, ktoré dopravné pravidlá má ETS2LA dodržiavať. Neskôr môžu byť "
-"pridané ďalšie pravidlá a nie všetky pluginy budú nutne podporovať všetky "
-"pravidlá."
+"Prosím, zadajte kód OTP do svojej autentifikačnej aplikácie.<br/><span "
+"class=\"text-text-accent\">Nezatvárajte túto stránku, kým kód nezadáte. Po "
+"vytvorení účtu už nie je možné ho obnoviť!</span>"
 
 #, csharp-format
-msgid "Error in AR OpenGL pass: {0}"
-msgstr "Chyba v kroku AR OpenGL: {0}"
+msgid "Unregistered control: {0} ({1})"
+msgstr "Neregistrovaná kontrola: {0} ({1})"
+
+msgid "Contact Us"
+msgstr "Kontaktujte nás"
+
+msgid "An error occurred while checking for updates."
+msgstr "Pri kontrole aktualizácií došlo k chybe."
+
+#, csharp-format
+msgid "Copied '{0}' to '{1}'"
+msgstr "Skopírovalo sa „{0}“ do „{1}“"
+
+msgid "Clear Console"
+msgstr "Prečistiť konzolu"
+
+msgid "show"
+msgstr "zobraziť"
+
+msgid "Select core.scs"
+msgstr "Vyberte súbor core.scs"
+
+msgid "Failed to init ImGui Impl OpenGL3"
+msgstr "Nepodarilo sa inicializovať ImGui Impl OpenGL3"
+
+msgid "Support Multiple Viewports"
+msgstr "Podpora viacerých zobrazení"
+
+msgid ""
+"Consider supporting us by becoming a <span class=\"font-bold text-text-"
+"l\">GitHub Sponsor</span> to cover ongoing development and operational costs."
+msgstr ""
+"Zvážte našu podporu tým, že sa stanete <span class=\"font-bold text-text-"
+"l\">GitHub sponzorom</span>, a pomôžete tak pokryť náklady na priebežný "
+"vývoj a prevádzku."
+
+msgid "You took a wrong turn!"
+msgstr "Zabočil si nesprávne!"
 
 #, csharp-format
 msgid ""
-"Library plugin with ID [gray]{0}[/] is already loaded, skipping duplicate."
+"Target speed changed. Current speedlimit: {0} {1}. Offsets are carried over "
+"on speedlimit change."
 msgstr ""
-"Knižničný plugin s ID [gray]{0}[/] je už načítaný, duplicitný sa preskočí."
+"Cieľová rýchlosť sa zmenila. Aktuálny rýchlostný limit: {0} {1}. Pri zmene "
+"rýchlostného limitu sa odchýlky prenášajú."
 
-msgid "Changes will take effect after restarting the application."
-msgstr "Zmeny sa uplatnia po reštartovaní aplikácie."
+msgid "Adaptive Cruise Control Only"
+msgstr "Iba adaptívny tempomat"
 
-msgid "Help"
-msgstr "Pomoc"
+msgid "Initializing GLFW..."
+msgstr "Inicializácia GLFW..."
+
+msgid "3D Renderer"
+msgstr "3D renderovanie"
+
+msgid "SDK Uninstallation Failed"
+msgstr "Odinštalovanie SDK sa nepodarilo"
+
+msgid "Max Overlay Framerate"
+msgstr "Maximálna snímková frekvencia pre prekrývanie"
+
+#, csharp-format
+msgid ""
+"How did you get here? What were you even thinking?{0}Do tell us in the {1}"
+"Discord Server{2} or on {3}GitHub{4}."
+msgstr ""
+"Ako si sa sem dostal? Čo si si vlastne myslel?{0}Povedz nám to na {1}Discord "
+"serveri{2} alebo na {3}GitHube{4}."
+
+msgid "You must restart ETS2LA for the font size change to take effect."
+msgstr "Aby sa zmena veľkosti písma uplatnila, musíte reštartovať ETS2LA."
+
+msgid "Uninstall"
+msgstr "Odinštalovať"
+
+msgid "Enabled Traffic Rules"
+msgstr "Aktivované dopravné predpisy"
 
 msgid ""
-"The server cannot find the requested resource. The URL may be misspelled, or "
-"the resource has been removed."
+"Anonymous telemetry helps us improve ETS2LA by giving us insights into "
+"users' system specs, crashes, and other usage data. Your data cannot be "
+"identified with any personal information."
 msgstr ""
-"Server nedokáže nájsť požadovaný zdroj. Adresa URL môže byť nesprávne "
-"napísaná alebo bol zdroj odstránený."
+"Anonymná telemetria nám pomáha vylepšovať ETS2LA tým, že nám poskytuje "
+"informácie o systémových špecifikáciách používateľov, zlyhaniach a ďalších "
+"údajoch o používaní. Vaše údaje nie je možné priradiť k žiadnym osobným "
+"údajom."
+
+msgid "SDK Uninstalled"
+msgstr "SDK je odinštalované"
+
+msgid "Low"
+msgstr "Nízka"
 
 msgid ""
 "Additionally, some communities like VTCs, Job Trackers and Leaderboards will "
@@ -1564,168 +659,469 @@ msgstr ""
 "celku. <span class=\"text-text-accent font-bold\">Prosím skontrolujte svoj "
 "VTC <i>pred</i> používaním ETS2LA.</span>"
 
-msgid ""
-"In most situations, over half of ETS2LA's CPU use is consumed by the "
-"overlay. Limiting the framerate will reduce CPU usage."
-msgstr ""
-"Vo väčšine prípadov viac ako polovicu vyťaženia procesora v hre ETS2LA "
-"spotrebúva overlay. Obmedzením počtu snímok za sekundu sa zníži vyťaženie "
-"procesora."
+#, csharp-format
+msgid "Apparent plugin directory {0} does not exist."
+msgstr "Zdá sa, že adresár s pluginami {0} neexistuje."
 
-msgid "Cancel/MODE"
-msgstr "Zrušiť/MODE"
+msgid "Visualization"
+msgstr "Vizualizácia"
+
+#, csharp-format
+msgid "Loaded {0} plugin from the Plugins folder."
+msgid_plural "Loaded {0} plugins from the Plugins folder."
+msgstr[0] "Načítal sa {0} plugin zo zložky Plugins."
+msgstr[1] "Načítali sa {0} pluginy zo zložky Plugins."
+msgstr[2] "Načítalo sa {0} pluginov zo zložky Plugins."
+
+msgid "Late"
+msgstr "Neskoro"
+
+msgid "Please enable the Visualization Sockets plugin."
+msgstr "Prosím, aktivujte plugin Visualization Sockets."
+
+msgid "Your account has been successfully removed."
+msgstr "Váš účet bol úspešne odstránený."
+
+msgid "Force Map Load"
+msgstr "Vynútiť načítanie mapy"
+
+#, csharp-format
+msgid "Failed to uninstall SDK version '{0}' from '{1}': {2}"
+msgstr "Nepodarilo sa odinštalovať verziu SDK „{0}“ z „{1}“: {2}"
+
+msgid "Failed to initialize overlay, ImGui initialization failed."
+msgstr ""
+"Nepodarilo sa inicializovať prekrývací prvok, inicializácia ImGui zlyhala."
+
+msgid "Your account is not allowed to use the chatbot."
+msgstr "Váš účet nemá povolenie používať chatbota."
+
+msgid "Speed Limit Warning"
+msgstr "Upozornenie na rýchlostný limit"
 
 msgid "Speed limit changed"
 msgstr "Zmena rýchlostného obmedzenia"
 
-#, csharp-format
-msgid "Successfully updated plugin with ID {0}."
-msgstr "Plugin s ID {0} bol úspešne aktualizovaný."
-
-msgid "Install"
-msgstr "Inštalovať"
-
-msgid "Window"
-msgstr "Okno"
-
-msgid "Select the game you wish to start."
-msgstr "Vyberte hru, ktorú chcete spustiť."
-
-msgid ""
-"An error occurred while trying to log out. Please try again later. Error: "
-msgstr ""
-"Pri pokuse o odhlásenie došlo k chybe. Skúste to prosím neskôr. Chyba: "
-
-msgid "Assists"
-msgstr "Asistenti"
+msgid "Your username may not contain repeated separators."
+msgstr "Vaše používateľské meno nesmie obsahovať opakujúce sa oddeľovače."
 
 #, csharp-format
-msgid "Target Speed: <span class=\"text-text-accent font-bold\">{0} {1}</span>"
-msgstr ""
-"Cieľová rýchlosť: <span class=\"text-text-accent font-bold\">{0} {1}</span>"
-
-msgid "Overlay Font Size"
-msgstr "Veľkosť písma prekrývacieho okna"
-
-msgid "Failed to add game"
-msgstr "Nepodarilo sa pridať hru"
-
-msgid "Vision Cameras"
-msgstr "Kamery na sledovanie"
-
-msgid ""
-"When changing the speed, snap to the nearest 10. i.e. 37 -> 39 -> 40 -> 42..."
-msgstr "Pri zmene rýchlosti nastavte najbližšiu 10, 37 -> 39 -> 40 -> 42..."
-
-msgid "Contact Us"
-msgstr "Kontaktujte nás"
-
-msgid "Registration Error"
-msgstr "Chyba pri registrácii"
-
-msgid "Restart"
-msgstr "Reštartovať"
-
-msgid ""
-"Internal server error. The server encountered an unexpected condition that "
-"prevented it from fulfilling the request."
-msgstr ""
-"Vnútorná chyba servera. Na serveri došlo k neočakávanej situácii, ktorá mu "
-"zabránila spracovať požiadavku."
-
-msgid "miles per hour"
-msgstr "míle za hodinu"
-
-msgid ""
-"Service unavailable. The server is currently unable to handle the request "
-"due to temporary overloading or maintenance."
-msgstr ""
-"Služba nie je k dispozícii. Server momentálne nemôže spracovať žiadosť z "
-"dôvodu dočasného preťaženia alebo údržby."
-
-#, csharp-format
-msgid "Discovered {0} library in total"
-msgid_plural "Discovered {0} libraries in total."
-msgstr[0] "Celkovo bola nájdená {0} knižnica."
-msgstr[1] "Celkovo boli nájdené {0} knižnice."
-msgstr[2] "Celkovo bolo nájdených {0} knižníc."
-
-msgid "Account Removal Error"
-msgstr "Chyba pri odstraňovaní účtu"
-
-#, csharp-format
-msgid "Error rendering window {0}: {1}"
-msgstr "Chyba pri zobrazení okna {0}: {1}"
-
-#, csharp-format
-msgid "Click to {0} this window"
-msgstr "Kliknite na {0}, aby ste zatvorili toto okno"
-
-msgid "Sorry"
-msgstr "Prepáčte"
-
-#, csharp-format
-msgid "Assists Enabled: <span class=\"text-text-accent font-bold\">{0}</span>"
-msgstr ""
-"Asisnenti zapnutý: <span class=\"text-text-accent font-bold\">{0}</span>"
-
-msgid "Translated by:"
-msgstr "Preložil:"
+msgid "Discovered {0} plugins in total."
+msgid_plural "Discovered {0} plugins in total."
+msgstr[0] "Celkovo sa našiel {0} plugin."
+msgstr[1] "Celkovo sa našli {0} pluginy."
+msgstr[2] "Celkovo sa našlo {0} pluginov."
 
 msgid "Failed to init ImGui Impl GLFW"
 msgstr "Nepodarilo sa inicializovať ImGui Impl GLFW"
 
 #, csharp-format
-msgid "Control with ID '{0}' not found for event subscription."
-msgstr "Kontrola s ID „{0}“ nebola nájdené pre predplatné."
+msgid "Failed to discover Dlls: {0}"
+msgstr "Nepodarilo sa nájsť súbory DLL: {0}"
 
-msgid "Assists Disabled"
-msgstr "Asistencie vypnuté"
+msgid "Not Installed"
+msgstr "Nie je nainštalovaný"
+
+msgid "gal"
+msgstr "gal"
+
+msgid "Error in camera update loop."
+msgstr "Chyba v cykle aktualizácie kamery."
+
+msgid "Enable"
+msgstr "Zapnúť"
 
 #, csharp-format
-msgid "Plugin '{0}' is missing its DLL at '{1}' and has been removed."
-msgstr "Plugin „{0}“ chýba súbor DLL v umiestnení „{1}“ a bol odstránený."
+msgid "Loading map data from '{0}'"
+msgstr "Načítavanie údajov mapy z „{0}“"
+
+msgid "Warning: Insufficient RAM"
+msgstr "Upozornenie: Nedostatočná pamäť RAM"
+
+msgid "Error Loading Map Data"
+msgstr "Chyba pri načítaní údajov mapy"
 
 #, csharp-format
+msgid "Current Version: {0}"
+msgstr "Aktuálna verzia: {0}"
+
 msgid ""
-"Manually added game at '{0}' no longer contains a game executable, skipping."
+"The following information is sent along with each message to help the "
+"chatbot provide better answers. It does not contain any personal information."
 msgstr ""
-"Hra pridaná ručne v priečinku „{0}“ už neobsahuje spustiteľný súbor hry, "
-"preto sa preskočí."
+"Spolu s každou správou sa odosielajú nasledujúce informácie, ktoré pomáhajú "
+"chatbotu poskytovať lepšie odpovede. Neobsahujú žiadne osobné údaje."
+
+#, csharp-format
+msgid "No update available for plugin with ID {0}."
+msgstr "Pre plugin s ID {0} nie je k dispozícii žiadna aktualizácia."
+
+msgid "Speed Control Step Size"
+msgstr "Veľkosť kroku regulácie rýchlosti"
+
+msgid "Slow"
+msgstr "Pomaly"
+
+msgid "Login Failed"
+msgstr "Prihlásenie sa nepodarilo"
+
+msgid ""
+"Authentication is required. The client must authenticate itself to get the "
+"requested response."
+msgstr ""
+"Je potrebné overenie. Klient sa musí overiť, aby získal požadovanú odpoveď."
 
 #, csharp-format
 msgid "Connected joystick: [bold]{0}[/] [gray italic]({1}, {2})[/]"
 msgstr "Pripojený joystick: [bold]{0}[/] [gray italic]({1}, {2})[/]"
 
-msgid ""
-"We can render elements in the game world using the overlay. This will use "
-"additional CPU and GPU resources."
+#, csharp-format
+msgid "Error while checking for updates: {0}"
+msgstr "Chyba pri kontrole aktualizácií: {0}"
+
+msgid "Undetermined"
+msgstr "Neurčené"
+
+msgid "meters per second"
+msgstr "metre za sekundu"
+
+msgid "Traffic Lights"
+msgstr "Semafory"
+
+msgid "Update check skipped, using already cached result."
 msgstr ""
-"Pomocou prekrývacieho okna môžeme vykresľovať prvky v hernom svete. To bude "
-"vyžadovať dodatočné zdroje procesora a grafickej karty."
+"Kontrola aktualizácií bola preskočená, používa sa výsledok už uložený v "
+"cache."
+
+msgid "Unable to read the current log."
+msgstr "Nepodarilo sa prečítať aktuálny log."
+
+msgid "Open Update Page"
+msgstr "Otvoriť stránku aktualizácií"
 
 #, csharp-format
-msgid "Road template for {0} not found in SII file."
-msgstr "V súbore SII nebola nájdená šablóna cesty pre {0}."
+msgid "Installed plugin with ID {0} not found."
+msgstr "Nenašiel sa nainštalovaný plugin s ID {0}."
 
-msgid "The selected file is not a core.scs file."
-msgstr "Vybraný súbor nie je súbor typu core.scs."
+msgid "Audio"
+msgstr "Zvuk"
 
-msgid "Disable All"
-msgstr "Vypnúť všetky"
-
-msgid "ft"
-msgstr "ft"
-
-msgid "Invalid directory"
-msgstr "Neplatný adresár"
+msgid "Login Error"
+msgstr "Chyba pri prihlásení"
 
 #, csharp-format
-msgid "This might take a while... ({0}/{1})"
-msgstr "To môže chvíľu trvať... ({0}/{1})"
+msgid "{0} m/s ({1} in {2})"
+msgstr "{0} m/s ({1} in {2})"
 
-msgid "Plugins"
-msgstr "Pluginy"
+#, csharp-format
+msgid "Received input from unknown joystick with instance ID {0}."
+msgstr "Bol prijatý vstup z neznámeho joysticku s ID inštancie {0}."
+
+msgid ""
+"Adjust how quickly ETS2LA will respond to desired changes in acceleration. "
+"Emergency braking is not affected."
+msgstr ""
+"Nastavte, ako rýchlo bude ETS2LA reagovať na požadované zmeny zrýchlenia. "
+"Núdzové brzdenie tým nie je ovplyvnené."
+
+msgid "Display Units"
+msgstr "Jednotka"
+
+msgid "Adjustments"
+msgstr "Úpravy"
+
+msgid "State Info"
+msgstr "Informácie o stave"
+
+msgid "Back to Login"
+msgstr "Späť na prihlásenie"
+
+msgid "Contact us on GitHub"
+msgstr "Kontaktujte nás na GitHube"
+
+#, csharp-format
+msgid "Error in AR rendering: {0}"
+msgstr "Chyba pri vykresľovaní AR: {0}"
+
+msgid ""
+"Some 3rd party websites might want access to your account.<br/>You can press "
+"the button below to display your JWT token."
+msgstr ""
+"Niektoré webové stránky tretích strán môžu požadovať prístup k vášmu účtu."
+"<br/>Kliknutím na tlačidlo nižšie si môžete zobraziť svoj JWT token."
+
+msgid "If you're streaming or recording, now's the time to hide this window."
+msgstr ""
+"Ak práve streamujete alebo nahrávate, teraz je ten správny čas skryť toto "
+"okno."
+
+msgid "Collision Avoidance"
+msgstr "Predchádzanie zrážkam"
+
+msgid ""
+"Disables the overlay entirely. This will fix the black screen issue at the "
+"cost of breaking all features that rely on the overlay, including AR and the "
+"HUD."
+msgstr ""
+"Úplne deaktivuje prekrývací panel. Tým sa vyrieši problém s čiernou "
+"obrazovkou, avšak na úkor nefunkčnosti všetkých funkcií, ktoré sú na "
+"prekrývajúcom paneli závislé, vrátane AR a HUD."
+
+msgid "Overrides"
+msgstr "Prepísania"
+
+msgid "Assists Disabled"
+msgstr "Asistencie vypnuté"
+
+msgid ""
+"Too many requests. You have sent too many requests in a given amount of time."
+msgstr ""
+"Príliš veľa požiadaviek. Za daný čas ste odoslali príliš veľa požiadaviek."
+
+msgid ""
+"This will disconnect ETS2LA from the game and close the window. You can "
+"minimize the window to keep ETS2LA running."
+msgstr ""
+"Týmto sa ETS2LA odpojí od hry a okno sa zatvorí. Okno môžete minimalizovať, "
+"aby ETS2LA naďalej bežalo."
+
+#, csharp-format
+msgid "Camera {0} ({1}x{2})"
+msgstr "Kamera {0} ({1}×{2})"
+
+msgid "Display JWT Token"
+msgstr "Zobraziť JWT token"
+
+msgid ""
+"This setting only loads roads and intersections visible on the in game map. "
+"It discards all other information."
+msgstr ""
+"Toto nastavenie načíta iba cesty a križovatky, ktoré sú viditeľné na mape v "
+"hre. Všetky ostatné informácie sa ignorujú."
+
+msgid "Invalid Input"
+msgstr "Neplatný vstup"
+
+#, csharp-format
+msgid "Invalid audio job: {0}, does the file exist?"
+msgstr "Neplatná zvuková úloha: {0}, existuje tento súbor?"
+
+#, csharp-format
+msgid "Failed to load library plugin from [gray]{0}[/]: {1}"
+msgstr "Nepodarilo sa načítať plugin knižnice z [gray]{0}[/]: {1}"
+
+msgid "Game"
+msgstr "Hra"
+
+#, csharp-format
+msgid "Updated bindings for control: {0} ({1}) to Device: {2}, Control: {3}"
+msgstr ""
+"Aktualizované priradenia pre ovládanie: {0} ({1}) k zariadeniu: {2}, "
+"ovládanie: {3}"
+
+msgid ""
+"Driving mode changed, press Cancel/MODE again to cycle through the modes."
+msgstr ""
+"Režim jazdy sa zmenil, opätovným stlačením tlačidla Cancel/MODE môžete "
+"prechádzať medzi jednotlivými režimami."
+
+msgid "Pause When Unstable"
+msgstr "Pozastaviť v prípade nestability"
+
+msgid "Stop Rendering When Game is Paused"
+msgstr "Zastaviť vykresľovanie, keď je hra pozastavená"
+
+#, csharp-format
+msgid "File not found: {0}"
+msgstr "Súbor nebol nájdený: {0}"
+
+msgid "Restart Now"
+msgstr "Reštartovať teraz"
+
+#, csharp-format
+msgid "New limit {0} {1}"
+msgstr "Nový limit {0} {1}"
+
+msgid "Log sent. Click here to view it."
+msgstr "Log odoslaný. Kliknite sem pre jeho zobrazenie."
+
+#, csharp-format
+msgid "Error playing audio file {0}: {1}"
+msgstr "Chyba pri prehrávaní zvukového súboru {0}: {1}"
+
+msgid "Controls Backend shutdown complete, all controls saved."
+msgstr ""
+"Vypnutie backendu mapovania kláves bolo úspešné, všetky mapovania klávesov "
+"boli uložené."
+
+msgid ""
+"The units ETS2LA will use when displaying information to a user. Scientific "
+"has only slight differences to metric."
+msgstr ""
+"Jednotky, ktoré ETS2LA používa pri zobrazovaní informácií používateľovi. "
+"Vedecký systém sa od metrického líši len minimálne."
+
+msgid ""
+"Send using <span class=\"text-text-l\">Enter</span>, new line with <span "
+"class=\"text-text-l\">Shift+Enter</span>. Some basic information is sent "
+"along with each message, <span class=\"text-text-l\">click to display</span>."
+msgstr ""
+"Odoslať pomocou <span class=\"text-text-l\">Enter</span>, nový riadok "
+"pomocou <span class=\"text-text-l\">Shift+Enter</span>. Spolu s každou "
+"správou sa odosielajú niektoré základné informácie, <span class=\"text-text-"
+"l\">kliknutím ich zobrazíte</span>."
+
+#, csharp-format
+msgid "Control with ID '{0}' not found for unregistration."
+msgstr "Kontrola s ID „{0}“ nebola nájdené pre zrušenie registrácie."
+
+msgid ""
+"I'm sorry, but I cannot answer that question. Please ask something else "
+"ETS2LA related."
+msgstr ""
+"Je mi ľúto, ale na túto otázku nemôžem odpovedať. Prosím, opýtajte sa na "
+"niečo iné súvisiace s ETS2LA."
+
+msgid ""
+"Your system has less than 16GB of RAM. High data fidelity uses significant "
+"amounts of RAM, and may cause your system to become unstable. Please select "
+"a lower fidelity."
+msgstr ""
+"Váš systém má menej ako 16 GB pamäte RAM. Vysoká úroveň údajov spotrebúva "
+"značné množstvo pamäte RAM a môže spôsobiť nestabilitu systému. Zvoľte "
+"prosím nižšiu úroveň údajov."
+
+#, csharp-format
+msgid "Failed to shutdown plugin {0}: {1}"
+msgstr "Nepodarilo sa vypnúť plugin {0}: {1}"
+
+#, csharp-format
+msgid "Plugin with ID {0} not found in available plugins."
+msgstr "Plugin s ID {0} nebol nájdený medzi dostupnými pluginmi."
+
+msgid "Confirm Account Removal"
+msgstr "Potvrdiť odstránenie účtu"
+
+msgid ""
+"Removing your account will delete all your data from our servers. This "
+"action cannot be undone."
+msgstr ""
+"Odstránením vášho účtu sa z našich serverov vymažú všetky vaše údaje. Túto "
+"akciu nie je možné vrátiť späť."
+
+msgid "Manager"
+msgstr "Manažér"
+
+msgid "Near"
+msgstr "Blízko"
+
+msgid "Driving"
+msgstr "Šoférovanie"
+
+msgid "Failed to initialize SDL3 input backend."
+msgstr "Nepodarilo sa inicializovať vstupný backend SDL3."
+
+#, csharp-format
+msgid "{0} not found in supported languages."
+msgstr "{0} nebola nájdená v podporovaných jazykoch."
+
+msgid "Assists Enabled: "
+msgstr "Zapnutý asistenti: "
+
+#, csharp-format
+msgid "Found {0} prefab"
+msgid_plural "Found {0} prefabs"
+msgstr[0] "Bol nájdený {0} prefab"
+msgstr[1] "Boli nájdené {0} prefaby"
+msgstr[2] "Bolo nájdených {0} prefabov"
+
+msgid "Pascals"
+msgstr "Pascali"
+
+msgid "Account Removal Error"
+msgstr "Chyba pri odstraňovaní účtu"
+
+msgid "You can enable the plugins we installed in a previous step here."
+msgstr ""
+"Tu môžete aktivovať pluginy, ktoré sme nainštalovali v predchádzajúcom kroku."
+
+#, csharp-format
+msgid "Failed to disable {0}: {1}"
+msgstr "Nepodarilo sa vypnúť {0}: {1}"
+
+msgid "Login"
+msgstr "Prihlásiť sa"
+
+msgid "SDK Installed"
+msgstr "SDK je nainštalované"
+
+msgid "Current Speed"
+msgstr "Aktuálna rýchlosť"
+
+#, csharp-format
+msgid "Bound control {0} ({1}) to device {2} and control {3}"
+msgstr "Priradili sme ovládač {0} ({1}) k zariadeniu {2} a ovládanie {3}"
+
+msgid "miles per hour"
+msgstr "míle za hodinu"
+
+msgid "Limit Overlay Framerate"
+msgstr "Obmedziť snímkovú frekvenciu prekrývania"
+
+msgid ""
+"You'll be asked to save an OTP authentication code after registration. We do "
+"not store or ask for passwords, as those aren't required for authentication."
+msgstr ""
+"Po registrácii budete vyzvaní na uloženie overovacieho kódu OTP. Heslá "
+"neukladáme ani nevyžadujeme, keďže na overenie nie sú potrebné."
+
+msgid "Test Audio"
+msgstr "Test zvuku"
+
+msgid "Wiki / FAQ"
+msgstr "Wiki / FAQ"
+
+msgid ""
+"By clicking <span class=\"font-bold\">Continue</span>, you agree to our "
+"Privacy Policy."
+msgstr ""
+"Kliknutím na <span class=\"font-bold\">Pokračovať</span> súhlasíte s našimi "
+"Zásadami ochrany osobných údajov."
+
+#, csharp-format
+msgid "Failed to install SDK from '{0}' to '{1}': {2}"
+msgstr "Nepodarila sa Inštalácia SDK z „{0}“ do „{1}“: {2}"
+
+msgid ""
+"When this key is held, the overlay will receive mouse input and allow you to "
+"interact with it. NOTE: Interaction with items below the overlay is not "
+"possible during this time."
+msgstr ""
+"Keď je táto klávesa stlačená, prekrývací panel prijíma vstup z myši a "
+"umožňuje vám s ním interagovať. POZNÁMKA: Počas tejto doby nie je možná "
+"interakcia s prvkami nachádzajúcimi sa pod prekrývacím panelom."
+
+msgid ""
+"The request method is recognized by the server but is not supported by the "
+"target resource."
+msgstr ""
+"Metóda požiadavky je serverom rozpoznaná, cieľový zdroj ju však nepodporuje."
+
+msgid "Binding Successful"
+msgstr "Mapovanie kláves bol úspešný"
+
+msgid "Disable"
+msgstr "Vypnúť"
+
+msgid "Controls"
+msgstr "Ovládacie prvky"
+
+#, csharp-format
+msgid "Unknown manifest type: {0}"
+msgstr "Neznámy typ manifestu: {0}"
+
+msgid "Overlay Font Size"
+msgstr "Veľkosť písma prekrývacieho okna"
 
 msgid ""
 "Ensure you don't have any mods installed in the root directory. Those have "
@@ -1735,145 +1131,32 @@ msgstr ""
 "potrebné nainštalovať do adresára Documents/Euro Truck Simulator 2/mod."
 
 #, csharp-format
-msgid "Failed to read version from '{0}': {1}"
-msgstr "Nepodarilo sa načítať verziu z „{0}“: {1}"
+msgid "Download progress: {0}%"
+msgstr "Prebieha sťahovanie: {0}%"
 
-msgid "Error in parked vehicles update loop."
-msgstr "Chyba v cykle aktualizácie zaparkovaných vozidiel."
+msgid "Search for plugins..."
+msgstr "Vyhľadávanie pluginov..."
 
-msgid "Username Taken"
-msgstr "Užívateľské meno je už obsadené"
+msgid "Assists"
+msgstr "Asistenti"
 
-msgid "This page hasn't been created yet, but it's coming <i>soon</i>."
-msgstr ""
-"Táto stránka ešte nebola vytvorená, ale čoskoro bude k dispozícii "
-"<i>čoskoro</i>."
+msgid "SDK Installation"
+msgstr "Inštalácia SDK"
 
-msgid "Backend shutdown complete."
-msgstr "Vypnutie backendu bolo úspešne dokončené."
+msgid "mph"
+msgstr "mph"
 
-#, csharp-format
-msgid "Error rendering interaction mode window controls: {0}"
-msgstr "Chyba pri vykresľovaní ovládacích prvkov okna režimu interakcie: {0}"
+msgid "°F"
+msgstr "°F"
 
-#, csharp-format
-msgid "Failed to initialize SDL3 controls backend: {0}"
-msgstr "Nepodarilo sa inicializovať backend ovládacích prvkov SDL3: {0}"
+msgid "Pa"
+msgstr "Pa"
 
-msgid ""
-"Show news articles about plugin updates, be that official or 3rd party "
-"plugins."
-msgstr ""
-"Zobraziť noviny o aktualizáciách pluginov, či už ide o oficiálne pluginy "
-"alebo pluginy tretích strán."
+msgid "Game Telemetry"
+msgstr "Herná telemetria"
 
-#, csharp-format
-msgid "Failed to install dependency {0} for plugin {1}."
-msgstr "Inštalácia závislosti {0} pre plugin {1} sa nepodarila."
-
-msgid ""
-"Couldn't connect to the game. Please open ETS2 or ATS and enable the SDK."
-msgstr ""
-"Nepodarilo sa pripojiť k hre. Otvorte prosím hru ETS2 alebo ATS a aktivujte "
-"SDK."
-
-msgid "Scientific"
-msgstr "Vedecká"
-
-#, csharp-format
-msgid "Changed update source to '{0}'."
-msgstr "Zdroj aktualizácií bol zmenený na „{0}“."
-
-msgid "K"
-msgstr "K"
-
-msgid ""
-"You'll be asked to save an OTP authentication code after registration. We do "
-"not store or ask for passwords, as those aren't required for authentication."
-msgstr ""
-"Po registrácii budete vyzvaní na uloženie overovacieho kódu OTP. Heslá "
-"neukladáme ani nevyžadujeme, keďže na overenie nie sú potrebné."
-
-msgid "Next"
-msgstr "Ďalej"
-
-#, csharp-format
-msgid "No versions available for plugin with ID {0}."
-msgstr "Pre plugin s ID {0} nie sú k dispozícii žiadne verzie."
-
-msgid "Driving"
-msgstr "Šoférovanie"
-
-msgid "Acceleration Response"
-msgstr "Odozva akcelerácie"
-
-#, csharp-format
-msgid "Failed enable {0}: {1}"
-msgstr "Aktivácia sa nepodarila {0}: {1}"
-
-msgid "Overlay is disabled in settings, skipping initialization."
-msgstr "V nastaveniach je funkcia Overlay vypnutá, inicializácia sa preskočí."
-
-msgid "Plugin Installer"
-msgstr "Plugin inštalátor"
-
-msgid "Show More Logs"
-msgstr "Zobraziť viac logov"
-
-msgid "The selected game executable was not found."
-msgstr "Vybraný spustiteľný súbor hry nebol nájdený."
-
-#, csharp-format
-msgid ""
-"Version {0} of plugin with ID {1} is not compatible with the current "
-"application version or operating system."
-msgstr ""
-"Verzia {0} pluginu s ID {1} nie je kompatibilná s aktuálnou verziou "
-"aplikácie ani s operačným systémom."
-
-msgid "Support Multiple Viewports"
-msgstr "Podpora viacerých zobrazení"
-
-msgid "bar"
-msgstr "bar"
-
-msgid "View Privacy Policy"
-msgstr "Zobraziť zásady ochrany osobných údajov"
-
-msgid "Unknown Control"
-msgstr "Neznámy ovládací prvok"
-
-msgid "Warning: Insufficient RAM"
-msgstr "Upozornenie: Nedostatočná pamäť RAM"
-
-msgid "Translate News Articles"
-msgstr "Prekladať novinové články"
-
-msgid ""
-"Authentication is required. The client must authenticate itself to get the "
-"requested response."
-msgstr ""
-"Je potrebné overenie. Klient sa musí overiť, aby získal požadovanú odpoveď."
-
-msgid "Install Update and Restart"
-msgstr "Nainštalujte aktualizáciu a reštartujte"
-
-msgid ""
-"The maximum speed ETS2LA will accelerate to. It might still drift over this "
-"limit due to momentum."
-msgstr ""
-"Maximálna rýchlosť, na ktorú ETS2LA zrýchli. V dôsledku hybnosti sa však "
-"môže stať, že túto hranicu prekročí."
-
-msgid "Final Disclaimer <span class=\"description\">1/2</span>"
-msgstr "Záverečné varovanie <span class=\"description\">1/2</span>"
-
-msgid ""
-"The following information is sent along with each message to help the "
-"chatbot provide better answers. It does not contain any personal information."
-msgstr ""
-"Spolu s každou správou sa odosielajú nasledujúce informácie, ktoré pomáhajú "
-"chatbotu poskytovať lepšie odpovede. Neobsahujú žiadne osobné údaje."
+msgid "Key"
+msgstr "Kľúč"
 
 msgid ""
 "This setting drops redundant information while maintaining most detail "
@@ -1884,153 +1167,124 @@ msgstr ""
 "detailných objektov (napríklad dopravné značky). Nezahŕňa žiadne cesty ani "
 "križovatky, ktoré nie sú zobrazené na mape v hre."
 
-#, csharp-format
-msgid "Inner Exception: {0}"
-msgstr "Vnútorná výnimka: {0}"
+msgid "bar"
+msgstr "bar"
 
-#, csharp-format
-msgid "Plugin with ID {0} not found in available plugins."
-msgstr "Plugin s ID {0} nebol nájdený medzi dostupnými pluginmi."
-
-msgid "Restart Required"
-msgstr "Je potrebné reštartovať"
-
-msgid "Logout Successful"
-msgstr "Odhlásenie bolo úspešné"
-
-msgid "Render AR Elements"
-msgstr "Vykresliť prvky AR"
-
-msgid "Not Installed"
-msgstr "Nie je nainštalovaný"
-
-#, csharp-format
-msgid ""
-"Press a button or move an axis on your input device to bind it to this "
-"control. This will time out in {0} seconds."
-msgstr ""
-"Stlačte tlačidlo alebo posuňte os na vašom vstupnom zariadení, aby ste ho "
-"priradili k tomuto ovládacímu prvku. Časový limit vyprší za {0} sekúnd."
-
-msgid "Registration Successful"
-msgstr "Registrácia prebehla úspešne"
+msgid "Account Removed"
+msgstr "Účet bol odstránený"
 
 msgid ""
-"Warning: Your system has less than 20GB of RAM. You can only select up to "
-"High."
+"Couldn't connect to the game. Please open ETS2 or ATS and enable the SDK."
 msgstr ""
-"Upozornenie: Váš systém má menej ako 20 GB pamäte RAM. Môžete zvoliť "
-"maximálne úroveň „Vysoký“."
+"Nepodarilo sa pripojiť k hre. Otvorte prosím hru ETS2 alebo ATS a aktivujte "
+"SDK."
 
-#, csharp-format
-msgid "Your username must be at most {0} characters long."
-msgstr "Vaše používateľské meno smie mať najviac {0} znakov."
+msgid "Button"
+msgstr "Tlačidlo"
 
-msgid "Enable Memory Output for Pedals"
-msgstr "Povoliť výstup pamäte pre pedále"
-
-msgid "kilometers per hour"
-msgstr "kilometre za hodinu"
+msgid "Add Game Manually"
+msgstr "Pridať hru manuálne"
 
 msgid ""
-"User folder paths are hidden automatically. Review the log for other "
-"personal information before sending."
+"In most situations, over half of ETS2LA's CPU use is consumed by the "
+"overlay. Limiting the framerate will reduce CPU usage."
 msgstr ""
-"Cesty k priečinkom používateľov sa automaticky skryjú. Pred odoslaním si "
-"skontrolujte log, či neobsahuje ďalšie osobné informácie."
-
-#, csharp-format
-msgid "Enabled plugin: [bold]{0}[/]"
-msgstr "Aktivovaný plugin: [bold]{0}[/]"
+"Vo väčšine prípadov viac ako polovicu vyťaženia procesora v hre ETS2LA "
+"spotrebúva overlay. Obmedzením počtu snímok za sekundu sa zníži vyťaženie "
+"procesora."
 
 msgid ""
-"Render the vision cameras in the game world. This is useful for debugging, "
-"but can cause performance issues."
+"This setting includes all available data, most of which is redundant. <span "
+"class=\"text-warning\">Warning: Extreme uses significant amounts of RAM, "
+"expect over 10GB of usage.</span>"
 msgstr ""
-"Zobrazte kamery pre vizualizáciu v hernom svete. Je to užitočné pri "
-"odstraňovaní chýb, môže to však spôsobiť problémy s výkonom."
+"Toto nastavenie zahŕňa všetky dostupné údaje, z ktorých je väčšina "
+"nadbytočná. <span class=\"text-warning\">Upozornenie: Režim „Extrém“ "
+"spotrebúva značné množstvo pamäte RAM, počítajte s využitím viac ako 10 GB.</"
+"span>"
 
-msgid "Failed to create GLFW window"
-msgstr "Nepodarilo sa vytvoriť okno GLFW"
+msgid "GitHub Sponsorship"
+msgstr "Sponzorstvo na GitHube"
 
-msgid "Contact us on Discord"
-msgstr "Kontaktujte nás na Discorde"
-
-msgid "Already have an account? Log in here."
-msgstr "Máte už účet? Prihláste sa tu."
-
-msgid "Binding thread started with no control to bind."
-msgstr "Mapovanie bolo spustené bez ovládacieho prvku na namapovanie."
+msgid "Restart and Continue"
+msgstr "Reštartovať a pokračovať"
 
 msgid ""
-"Failed to fetch available plugins. Please check your internet connection."
+"Using simplified graphics can improve performance on lower-end hardware, or "
+"fix situations in which advanced features like shaders are not supported."
 msgstr ""
-"Nepodarilo sa načítať dostupné pluginy. Skontrolujte, prosím, pripojenie k "
-"internetu."
+"Použitie zjednodušenej grafiky môže zvýšiť výkon na slabšom hardvéri alebo "
+"vyriešiť situácie, v ktorých nie sú podporované pokročilé funkcie, ako "
+"napríklad shadery."
 
-msgid "Game"
-msgstr "Hra"
+#, csharp-format
+msgid "Failed to load map for installation at '{0}'"
+msgstr "Nepodarilo sa načítať mapu pre inštaláciu v umiestnení „{0}“"
 
-msgid "Error in navigation update loop."
-msgstr "Chyba v cykle aktualizácie navigácie."
+msgid "Not Connected"
+msgstr "Nie je pripojený"
 
-msgid "Checking for updates..."
-msgstr "Hľadám aktualizácie..."
+#, csharp-format
+msgid "Plugin with ID [gray]{0}[/] is already loaded, skipping duplicate."
+msgstr "Plugin s ID [gray]{0}[/] je už načítaný, duplicitný sa preskočí."
 
-msgid "Interaction Mode"
-msgstr "Režim interakcie"
+msgid "You are running the latest version."
+msgstr "Používate najnovšiu verziu."
 
-msgid "Speedlimit Offset"
-msgstr "Upravenie rýchlosti"
-
-msgid "Final Disclaimer <span class=\"description\">2/2</span>"
-msgstr "Záverečné upozornenie <span class=\"description\">2/2</span>"
-
-msgid "L"
-msgstr "L"
+#, csharp-format
+msgid "Failed to download plugin with ID {0} from {1}. Status code: {2}"
+msgstr "Nepodarilo sa stiahnuť plugin s ID {0} z {1}. Kód stavu: {2}"
 
 msgid ""
-"Some 3rd party websites might want access to your account.<br/>You can press "
-"the button below to display your JWT token."
+"Show news articles about plugin updates, be that official or 3rd party "
+"plugins."
 msgstr ""
-"Niektoré webové stránky tretích strán môžu požadovať prístup k vášmu účtu."
-"<br/>Kliknutím na tlačidlo nižšie si môžete zobraziť svoj JWT token."
+"Zobraziť noviny o aktualizáciách pluginov, či už ide o oficiálne pluginy "
+"alebo pluginy tretích strán."
 
-#, csharp-format
-msgid "Failed to load library plugin from [gray]{0}[/]: {1}"
-msgstr "Nepodarilo sa načítať plugin knižnice z [gray]{0}[/]: {1}"
+msgid "No plugins found."
+msgstr "Nenašli sa žiadne pluginy."
 
-#, csharp-format
-msgid "Binding for control {0} ({1}) timed out."
-msgstr "Vypršal časový limit pre mapovanie ovládacieho prvku {0} ({1})."
-
-#, csharp-format
-msgid "Initializing GLFW Version: {0}"
-msgstr "Inicializácia verzie GLFW: {0}"
-
-#, csharp-format
 msgid ""
-"If you think this is a bug, please report it in the {0}Discord Server{1} or "
-"on {2}GitHub{3}."
+"When pressing the SET keybind, what should ETS2LA set as the current cruise "
+"control speed?"
 msgstr ""
-"Ak si myslíte, že ide o chybu, nahláste ju prosím na {0}Discord serveri{1} "
-"alebo na {2}GitHube{3}."
+"Pri stlačení klávesovej skratky SET, akú hodnotu by mal ETS2LA nastaviť ako "
+"aktuálnu rýchlosť tempomatu?"
 
-msgid "Latest News"
-msgstr "Najnovšie noviny"
+msgid "The selected directory does not exist."
+msgstr "Vybraný adresár neexistuje."
+
+msgid ""
+"Adjust the quality of the curves used for path planning and visualization. "
+"By default this matches the game."
+msgstr ""
+"Nastavte kvalitu kriviek používaných pri plánovaní trasy a vizualizácii. V "
+"predvolenom nastavení sa táto hodnota zhoduje s nastavením v hre."
+
+msgid "Before we begin."
+msgstr "Predtým ako začneme."
 
 #, csharp-format
-msgid "The username {0} is already taken. Please choose a different username."
+msgid "Error while applying update: {0}"
+msgstr "Chyba pri inštalácii aktualizácie: {0}"
+
+msgid "Following Distance"
+msgstr "Dodržiavanie odstupu"
+
+msgid "Check For Updates"
+msgstr "Aktualizície"
+
+msgid "Telemetry"
+msgstr "Telemetria"
+
+msgid ""
+"This allows ETS2LA to render in multiple viewports, meaning you can move "
+"overlay windows to any monitor."
 msgstr ""
-"Používateľské meno {0} je už obsadené. Vyberte si prosím iné používateľské "
-"meno."
-
-#, csharp-format
-msgid "Successfully installed SDK version '{0}' to '{1}'"
-msgstr "Verzia SDK „{0}“ bola úspešne nainštalovaná do „{1}“"
-
-msgid "Invalid Input"
-msgstr "Neplatný vstup"
+"Vďaka tomu môže ETS2LA vykresľovať obraz vo viacerých zobrazeniach, čo "
+"znamená, že okná s prekrývajúcimi sa vrstvami môžete presúvať na ľubovoľný "
+"monitor."
 
 msgid ""
 "Adjust the level of detail of the game data we use. Higher values use more "
@@ -2040,50 +1294,431 @@ msgstr ""
 "spotrebúvajú viac RAM, ale obsahujú viac informácií. Všetky úrovne sa riadia "
 "rovnako."
 
-msgid "Account Removal Failed"
-msgstr "Nepodarilo sa odstrániť účet"
+#, csharp-format
+msgid "found {0} node"
+msgid_plural "found {0} nodes"
+msgstr[0] "Bol nájdený {0} uzol"
+msgstr[1] "Boli nájdené {0} uzly"
+msgstr[2] "Bolo nájdených {0} uzlov"
 
-msgid "Are you sure?"
-msgstr "Ste si istí?"
+msgid "Open Source"
+msgstr "Otvorené Zdroje"
+
+#, csharp-format
+msgid "<span class=\"font-semibold\">{0}</span> until {1}"
+msgstr "<span class=\"font-semibold\">{0}</span> do {1}"
+
+msgid ""
+"User folder paths are hidden automatically. Review the log for other "
+"personal information before sending."
+msgstr ""
+"Cesty k priečinkom používateľov sa automaticky skryjú. Pred odoslaním si "
+"skontrolujte log, či neobsahuje ďalšie osobné informácie."
+
+msgid "Did you remember to restart after installing them?"
+msgstr "Nezabudli ste po ich inštalácii reštartovať?"
+
+msgid "Volume"
+msgstr "Hlasitosť"
+
+#, csharp-format
+msgid "Parsing sector {0} of {1}..."
+msgstr "Analyzovanie sektora {0} z {1}..."
+
+msgid "Unbound"
+msgstr "Nepriradené"
+
+msgid ""
+"ETS2LA uses a control setup that should be similar to real life systems. You "
+"can rebind the default controls on the right side."
+msgstr ""
+"ETS2LA používa nastavenie ovládania, ktoré by malo byť podobné systémom v "
+"reálnom živote. Predvolené ovládacie prvky si môžete prenastaviť na pravej "
+"strane."
+
+#, csharp-format
+msgid "Failed to install latest version of plugin with ID {0}."
+msgstr "Nepodarilo sa nainštalovať najnovšiu verziu pluginu s ID {0}."
+
+#, csharp-format
+msgid ""
+"If you think this is a bug, please report it in the {0}Discord Server{1} or "
+"on {2}GitHub{3}."
+msgstr ""
+"Ak si myslíte, že ide o chybu, nahláste ju prosím na {0}Discord serveri{1} "
+"alebo na {2}GitHube{3}."
+
+msgid "I understand, now let me in!"
+msgstr "Rozumiem, tak ma teraz pusťte dnu!"
+
+#, csharp-format
+msgid ""
+"You have successfully registered as {0}. Please add the OTP code to your "
+"authentication app."
+msgstr ""
+"Úspešne ste sa zaregistrovali ako {0}. Zadajte prosím kód OTP do vašej "
+"autentifikačnej aplikácie."
+
+msgid "Disable Overlay"
+msgstr "Vypnúť prekrývanie"
+
+msgid ""
+"The maximum distance at which 3D elements will be rendered. Lowering this "
+"can be used to improve performance on lower-end hardware."
+msgstr ""
+"Maximálna vzdialenosť, do ktorej sa budú vykresľovať 3D prvky. Znížením "
+"tejto hodnoty je možné zlepšiť výkon na slabšom hardvéri."
+
+#, csharp-format
+msgid "Fetched {0} plugin from {1}"
+msgid_plural "Fetched {0} plugins from {1}"
+msgstr[0] "Načítal som {0} plugin z {1}"
+msgstr[1] "Načítal som {0} pluginy z {1}"
+msgstr[2] "Načítal som {0} pluginov z {1}"
+
+msgid "Metric"
+msgstr "Metrická"
+
+msgid ""
+"The font size of the overlay. This can be used to scale the overlay to your "
+"monitor's DPI settings."
+msgstr ""
+"Veľkosť písma prekrývacieho okna. Túto funkciu môžete použiť na "
+"prispôsobenie veľkosti prekrývacieho okna nastaveniam DPI vášho monitora."
+
+msgid "Error in telemetry update loop."
+msgstr "Chyba v cykle aktualizácie telemetrických údajov."
+
+msgid ""
+"Internal server error. The server encountered an unexpected condition that "
+"prevented it from fulfilling the request."
+msgstr ""
+"Vnútorná chyba servera. Na serveri došlo k neočakávanej situácii, ktorá mu "
+"zabránila spracovať požiadavku."
+
+#, csharp-format
+msgid "Road template for {0} not found in SII file."
+msgstr "V súbore SII nebola nájdená šablóna cesty pre {0}."
+
+#, csharp-format
+msgid "Failed to read log file at '{0}': {1}"
+msgstr "Nepodarilo sa načítať súbor log v umiestnení „{0}“: {1}"
+
+#, csharp-format
+msgid "Updated axis behavior for control: {0} ({1}) to {2}"
+msgstr "Aktualizované správanie osí pre ovládací prvok: {0} ({1}) do {2}"
+
+#, csharp-format
+msgid "Disabled plugin: [bold]{0}[/]"
+msgstr "Vypnutý plugin: [bold]{0}[/]"
+
+msgid "Continue"
+msgstr "Pokračovať"
+
+msgid "Cancel/MODE"
+msgstr "Zrušiť/MODE"
+
+#, csharp-format
+msgid "Failed enable {0}: {1}"
+msgstr "Aktivácia sa nepodarila {0}: {1}"
+
+msgid "Acceleration Response"
+msgstr "Odozva akcelerácie"
+
+msgid "Error in parked vehicles update loop."
+msgstr "Chyba v cykle aktualizácie zaparkovaných vozidiel."
+
+msgid "The plugin was enabled successfully."
+msgstr "Plugin bol úspešne aktivovaný."
+
+msgid ""
+"• If you create an account, we transfer your account information to an "
+"international recipient."
+msgstr ""
+"• Ak si vytvoríte účet, prenesieme informácie o vašom účte medzinárodnému "
+"príjemcovi."
+
+#, csharp-format
+msgid "<span class=\"font-semibold\">{0}</span> at {1}"
+msgstr "<span class=\"font-semibold\">{0}</span> na {1}"
+
+msgid "Normal"
+msgstr "Normálne"
+
+msgid "ETS2LA will offset the speedlimit by this amount."
+msgstr "ETS2LA upraví rýchlostný limit o túto hodnotu."
+
+msgid "Unknown Control"
+msgstr "Neznámy ovládací prvok"
+
+msgid ""
+"When enabled, the overlay will toggle between interaction and non-"
+"interaction mode when you press it's keybind. When disabled, the overlay "
+"will only be interactive while you hold down the keybind."
+msgstr ""
+"Ak je táto funkcia zapnutá, prekrývací panel sa bude prepínať medzi "
+"interaktívnym a neinteraktívnym režimom po stlačení priradenej klávesy. Ak "
+"je táto funkcia vypnutá, prekrývací panel bude interaktívny len počas "
+"stlačenia priradenej klávesy."
+
+msgid "Latest News"
+msgstr "Najnovšie noviny"
+
+msgid "pounds"
+msgstr "libry"
+
+#, csharp-format
+msgid "Failed to initialize SDL3 controls backend: {0}"
+msgstr "Nepodarilo sa inicializovať backend ovládacích prvkov SDL3: {0}"
+
+msgid ""
+"The server cannot find the requested resource. The URL may be misspelled, or "
+"the resource has been removed."
+msgstr ""
+"Server nedokáže nájsť požadovaný zdroj. Adresa URL môže byť nesprávne "
+"napísaná alebo bol zdroj odstránený."
+
+#, csharp-format
+msgid "Failed to install SDK version '{0}' to '{1}': {2}"
+msgstr "Inštalácia verzie SDK „{0}“ do „{1}“ sa nepodarila: {2}"
+
+#, csharp-format
+msgid "Failed to read bundled update source marker: {0}"
+msgstr "Nepodarilo sa načítať označenie zdroja aktualizácie v balíku: {0}"
+
+msgid "liters"
+msgstr "litre"
+
+#, csharp-format
+msgid "No valid versions found for plugin with ID {0}."
+msgstr "Nenašli sa žiadne platné verzie pre plugin s ID {0}."
+
+msgid ""
+"Will disable ETS2LA's assists when pressed. If assists are already disabled, "
+"this key will switch between driving modes."
+msgstr ""
+"Po stlačení tejto klávesy sa vypnú asistenti ETS2LA. Ak sú asistenti už "
+"vypnutý, táto klávesa bude prepínať medzi režimami jazdy."
+
+msgid "Binding thread started with no control to bind."
+msgstr "Mapovanie bolo spustené bez ovládacieho prvku na namapovanie."
+
+#, csharp-format
+msgid ""
+"Installation at '{0}' is not currently running, waiting for load of profile."
+msgstr ""
+"Inštalácia v „{0}“ momentálne neprebieha, čaká sa na načítanie profilu."
+
+msgid "Downloading Update"
+msgstr "Sťahovanie aktualizácie"
+
+msgid "Simplified Graphics"
+msgstr "Zjednodušená grafika"
+
+msgid "Failed to log in. Please check your credentials and try again."
+msgstr ""
+"Prihlásenie sa nepodarilo. Skontrolujte svoje prihlasovacie údaje a skúste "
+"to znova."
+
+msgid "Steering Sensitivity"
+msgstr "Citlivosť zatáčania"
+
+msgid "Disabled"
+msgstr "Vypnuté"
+
+#, csharp-format
+msgid "{0}"
+msgstr "{0}"
+
+msgid ""
+"This might take a while depending on your internet connection and the source."
+msgstr ""
+"V závislosti od vášho internetového pripojenia a zdroja to môže chvíľu trvať."
+
+msgid "No updates available."
+msgstr "Nie sú k dispozícii žiadne aktualizácie."
+
+msgid "Please log in to use the chatbot."
+msgstr "Ak chcete používať chatbota, prihláste sa, prosím."
+
+#, csharp-format
+msgid "Error rendering overlay: {0}"
+msgstr "Chyba pri vykresľovaní prekrývacieho prvku: {0}"
+
+msgid "You may need to restart the game to apply this change."
+msgstr "Na uplatnenie tejto zmeny možno bude potrebné reštartovať hru."
+
+msgid "Off"
+msgstr "Vypnúť"
+
+msgid "L"
+msgstr "L"
+
+msgid ""
+"An error occurred while trying to log in. Please try again later. Error: "
+msgstr ""
+"Pri pokuse o prihlásenie došlo k chybe. Skúste to prosím neskôr. Chyba: "
+
+msgid "Installing..."
+msgstr "Inštaluje sa..."
+
+msgid "Failed to add game"
+msgstr "Nepodarilo sa pridať hru"
+
+#, csharp-format
+msgid "Font file not found at {0}"
+msgstr "Súbor s písmom sa nenašiel v {0}"
+
+msgid "No release notes available."
+msgstr "Poznámky k verzii nie sú k dispozícii."
+
+msgid "Changelog"
+msgstr "Zoznam zmien"
+
+#, csharp-format
+msgid "Detected a switch to {0}, waiting for its game data to be parsed."
+msgstr "Zaznamenal som prechod na {0}, čakám na analýzu jeho herných údajov."
+
+#, csharp-format
+msgid "Currently running at {0} FPS."
+msgstr "V súčasnosti beží rýchlosťou {0} FPS."
+
+#, csharp-format
+msgid "Version {0} not found for plugin with ID {1}."
+msgstr "Verzia {0} nebola nájdená pre plugin s ID {1}."
+
+msgid ""
+"An error occurred while trying to log out. Please try again later. Error: "
+msgstr ""
+"Pri pokuse o odhlásenie došlo k chybe. Skúste to prosím neskôr. Chyba: "
+
+msgid "Invalid file"
+msgstr "Neplatný súbor"
+
+msgid "Login Successful"
+msgstr "Prihlásenie bolo úspešné"
+
+#, csharp-format
+msgid "Discovered {0} library in total"
+msgid_plural "Discovered {0} libraries in total."
+msgstr[0] "Celkovo bola nájdená {0} knižnica."
+msgstr[1] "Celkovo boli nájdené {0} knižnice."
+msgstr[2] "Celkovo bolo nájdených {0} knižníc."
+
+msgid "Console"
+msgstr "Konzola"
+
+msgid "The game has been added successfully."
+msgstr "Hra bola úspešne pridaná."
+
+msgid ""
+"The server could not understand the request due to invalid syntax or "
+"corrupted request data."
+msgstr ""
+"Server nedokázal spracovať požiadavku kvôli neplatnej syntaxe alebo "
+"poškodeným údajom v požiadavke."
+
+#, csharp-format
+msgid "No versions available for plugin with ID {0}."
+msgstr "Pre plugin s ID {0} nie sú k dispozícii žiadne verzie."
+
+#, csharp-format
+msgid ""
+"Manually added game at '{0}' no longer contains a game executable, skipping."
+msgstr ""
+"Hra pridaná ručne v priečinku „{0}“ už neobsahuje spustiteľný súbor hry, "
+"preto sa preskočí."
+
+msgid "Logout Error"
+msgstr "Chyba pri odhlásení"
+
+msgid "Don't have an account?<br/>Register a new one now, no emails required!"
+msgstr ""
+"Nemáte účet?<br/>Zaregistrujte si nový hneď teraz, e-mailová adresa nie je "
+"potrebná!"
+
+#, csharp-format
+msgid "Found {0} game installation."
+msgid_plural "Found {0} game installations."
+msgstr[0] "Našla sa {0} inštalácia hry."
+msgstr[1] "Našli sa {0} inštalácie hry."
+msgstr[2] "Našlo sa {0} inštalácií hry."
+
+msgid "Scientific"
+msgstr "Vedecká"
+
+msgid "Waiting..."
+msgstr "Čakám..."
+
+msgid "hide"
+msgstr "skryť"
 
 #, csharp-format
 msgid "Update available: {0}"
 msgstr "K dispozícii je aktualizácia: {0}"
 
+msgid "Error in traffic update loop."
+msgstr "Chyba v cykle aktualizácie dopravných informácií."
+
+#, csharp-format
+msgid "Error in plugin {0} Tick: {1}"
+msgstr "Chyba v plugine {0} Zaškrtnutie: {1}"
+
 msgid ""
-"Please add the OTP code to your authentication app.<br/><span class=\"text-"
-"text-accent\">Do not close the page before you have added the code. We "
-"cannot recover accounts once they are created!</span>"
+"To get started fast, you can install our <span class=\"text-text-accent font-"
+"bold\">recommended</span> plugins. These contain everything you need to get "
+"driving."
 msgstr ""
-"Prosím, zadajte kód OTP do svojej autentifikačnej aplikácie.<br/><span "
-"class=\"text-text-accent\">Nezatvárajte túto stránku, kým kód nezadáte. Po "
-"vytvorení účtu už nie je možné ho obnoviť!</span>"
-
-msgid "Game added"
-msgstr "Hra bola pridaná"
-
-msgid "Confirm Account Removal"
-msgstr "Potvrdiť odstránenie účtu"
-
-msgid "Starting ETS2LA..."
-msgstr "Spúšťam ETS2LA..."
+"Ak chcete rýchlo začať, môžete si nainštalovať naše <span class=\"text-text-"
+"accent font-bold\">odporúčané</span> pluginy. Obsahujú všetko, čo "
+"potrebujete na to, aby ste mohli začať."
 
 #, csharp-format
-msgid "Discovered {0} manually installed library"
-msgid_plural "Discovered {0} manually installed libraries."
-msgstr[0] "Zistená {0} ručne nainštalovaná knižnica."
-msgstr[1] "Zistené {0} ručne nainštalované knižnice."
-msgstr[2] "Zistených {0} ručne nainštalovaných knižníc."
+msgid "An error occurred while loading map data: {0}"
+msgstr "Pri načítavaní údajov o mape došlo k chybe: {0}"
+
+msgid "The selected game executable was not found."
+msgstr "Vybraný spustiteľný súbor hry nebol nájdený."
 
 #, csharp-format
-msgid "Control with ID '{0}' not found for updating bindings."
-msgstr "Kontrola s ID „{0}“ nebola nájdené pre aktualizáciu mapovania kláves."
+msgid "Loaded library plugin: [gray]{0}[/] from [gray]{1}[/]."
+msgstr "Načítaný plugin knižnice: [gray]{0}[/] z [gray]{1}[/]."
 
-msgid "Test Audio"
-msgstr "Test zvuku"
+msgid "Enter the OTP generated by your authenticator app."
+msgstr ""
+"Zadajte jednorazový kód (OTP), ktorý vygenerovala vaša autentifikačná "
+"aplikácia."
 
-msgid "Near"
-msgstr "Blízko"
+#, csharp-format
+msgid "The username {0} is reserved. Please choose a different username."
+msgstr ""
+"Používateľské meno {0} je obsadené. Zvoľte si prosím iné používateľské meno."
+
+msgid "Select the game you wish to start."
+msgstr "Vyberte hru, ktorú chcete spustiť."
+
+msgid "Speed Limits"
+msgstr "Rýchlostné limity"
+
+msgid "Responsiveness"
+msgstr "Reakčná schopnosť"
+
+msgid "Parsing Map Data"
+msgstr "Analýza mapových údajov"
+
+msgid "SDKs need to be installed."
+msgstr "Je potrebné nainštalovať SDK."
+
+msgid "Hide Installed"
+msgstr "Skryť nainštalované"
+
+msgid "Failed to initialize overlay, OpenGL initialization failed."
+msgstr ""
+"Nepodarilo sa inicializovať prekrývaciu vrstvu, inicializácia OpenGL zlyhala."
+
+#, csharp-format
+msgid "Plugin '{0}' is missing its DLL at '{1}' and has been removed."
+msgstr "Plugin „{0}“ chýba súbor DLL v umiestnení „{1}“ a bol odstránený."
 
 msgid ""
 "Increases the current target speed by one step. If assists are disabled, "
@@ -2095,269 +1730,102 @@ msgstr ""
 "nastavenú cieľovú rýchlosť. Ak nebola nastavená žiadna posledná cieľová "
 "rýchlosť, táto klávesa funguje ako SET."
 
-msgid "SET Behaviour"
-msgstr "Správanie SET"
+msgid "Account"
+msgstr "Účet"
 
-msgid "Close"
-msgstr "Zatvoriť"
-
-#, csharp-format
-msgid "Assist Mode: <span class=\"text-text-accent font-bold\">{0}</span>"
-msgstr "Režim asistenta: <span class=\"text-text-accent font-bold\">{0}</span>"
+msgid "Translate News Articles"
+msgstr "Prekladať novinové články"
 
 #, csharp-format
-msgid ""
-"When receiving a speedlimit of {0} {1}, we will set the speed to {2} {3}."
-msgstr "Ak dostaneme rýchlostný limit {0} {1}, nastavíme rýchlosť na {2} {3}."
-
-#, csharp-format
-msgid "Error initializing memory mapped file: {0}"
-msgstr "Chyba pri inicializácii súboru mapovaného v pamäti: {0}"
-
-msgid "State Info"
-msgstr "Informácie o stave"
-
-msgid "Metric"
-msgstr "Metrická"
-
-msgid "Render Vision Cameras"
-msgstr "Kamery Render Vision"
+msgid "Found {0} (version: {1}) at '{2}'"
+msgstr "Našlo sa {0} (verzia: {1}) v „{2}“"
 
 msgid ""
-"Your system has less than 16GB of RAM. High data fidelity uses significant "
-"amounts of RAM, and may cause your system to become unstable. Please select "
-"a lower fidelity."
+"We can render elements in the game world using the overlay. This will use "
+"additional CPU and GPU resources."
 msgstr ""
-"Váš systém má menej ako 16 GB pamäte RAM. Vysoká úroveň údajov spotrebúva "
-"značné množstvo pamäte RAM a môže spôsobiť nestabilitu systému. Zvoľte "
-"prosím nižšiu úroveň údajov."
-
-msgid "Send log"
-msgstr "Odoslať log"
-
-msgid "Show Plugin Updates"
-msgstr "Zobraziť aktualizácie Pluginov"
-
-#, csharp-format
-msgid "Control with ID '{0}' not found for updating axis behavior."
-msgstr "Kontrola s ID „{0}“ nebola nájdené pre aktualizáciu správania osí."
+"Pomocou prekrývacieho okna môžeme vykresľovať prvky v hernom svete. To bude "
+"vyžadovať dodatočné zdroje procesora a grafickej karty."
 
 msgid ""
-"Please complete this <span class=\"text-text-accent font-bold\">short</span> "
-"onboarding process to get started."
+"Select which traffic rules ETS2LA should obey. More might be added later, "
+"and all plugins won't necessarily support all rules."
 msgstr ""
-"Prosím, absolvujte tento <span class=\"text-text-accent font-bold\">krátky</"
-"span> proces zapracovania, aby ste mohli začať."
+"Vyberte, ktoré dopravné pravidlá má ETS2LA dodržiavať. Neskôr môžu byť "
+"pridané ďalšie pravidlá a nie všetky pluginy budú nutne podporovať všetky "
+"pravidlá."
+
+msgid "kilometers per hour"
+msgstr "kilometre za hodinu"
+
+#, csharp-format
+msgid "Control with ID '{0}' not found for event unsubscription."
+msgstr "Kontrola s ID „{0}“ nebola nájdené pre zrušenie predplatného."
+
+msgid "Share log"
+msgstr "Zdieľať log"
+
+msgid "Chatbot"
+msgstr "Chatbot"
+
+#, csharp-format
+msgid "Binding {0}"
+msgstr "Mapujem {0}"
+
+#, csharp-format
+msgid "Failed to unload plugin load context: {0}"
+msgstr "Nepodarilo sa vyprázdniť kontext načítania pluginu: {0}"
+
+#, csharp-format
+msgid "No download URL found for plugin with ID {0} in region {1}."
+msgstr ""
+"V regióne {1} nebola nájdená žiadna adresa URL na stiahnutie pluginu s ID "
+"{0}."
 
 msgid ""
-"When pressing the SET keybind, what should ETS2LA set as the current cruise "
-"control speed?"
+"Changing the display language requires a restart of ETS2LA to take effect. "
+"Restart now?"
 msgstr ""
-"Pri stlačení klávesovej skratky SET, akú hodnotu by mal ETS2LA nastaviť ako "
-"aktuálnu rýchlosť tempomatu?"
-
-msgid ""
-"An error occurred while trying to log in. Please try again later. Error: "
-msgstr ""
-"Pri pokuse o prihlásenie došlo k chybe. Skúste to prosím neskôr. Chyba: "
+"Aby sa zmena jazyka zobrazenia uplatnila, je potrebné reštartovať ETS2LA. "
+"Chcete reštartovať teraz?"
 
 #, csharp-format
-msgid "Failed to load map for installation at '{0}'"
-msgstr "Nepodarilo sa načítať mapu pre inštaláciu v umiestnení „{0}“"
+msgid "Update to {0} from {1}"
+msgstr "Aktualizuj do {0} z {1}"
 
-#, csharp-format
-msgid "Received input from unknown joystick with instance ID {0}."
-msgstr "Bol prijatý vstup z neznámeho joysticku s ID inštancie {0}."
+msgid "Open Externally"
+msgstr "Otvoriť externe"
 
-msgid "Stay on Top"
-msgstr "Nechať na vrchu"
-
-msgid ""
-"An error occurred while trying to remove your account. Please try again "
-"later. Error: "
-msgstr ""
-"Pri pokuse o odstránenie vášho účtu došlo k chybe. Skúste to prosím neskôr. "
-"Chyba: "
-
-#, csharp-format
-msgid ""
-"Target speed changed. Current speedlimit: {0} {1}. Offsets are carried over "
-"on speedlimit change."
-msgstr ""
-"Cieľová rýchlosť sa zmenila. Aktuálny rýchlostný limit: {0} {1}. Pri zmene "
-"rýchlostného limitu sa odchýlky prenášajú."
-
-msgid "Like ETS2LA?"
-msgstr "Páči sa vám ETS2LA?"
-
-#, csharp-format
-msgid "Disconnected joystick: [gray italic]({0})[/]"
-msgstr "Odpojený joystick: [gray italic]({0})[/]"
-
-#, csharp-format
-msgid "Failed to open joystick {0}."
-msgstr "Nepodarilo sa otvoriť joystick {0}."
-
-msgid "Select core.scs"
-msgstr "Vyberte súbor core.scs"
-
-msgid "Speed Limits"
-msgstr "Rýchlostné limity"
-
-msgid "Register"
-msgstr "Registrácia"
-
-#, csharp-format
-msgid "Error loading map data from '{0}': {1}"
-msgstr "Chyba pri načítaní údajov mapy z „{0}“: {1}"
-
-msgid "Failed to init ImGui Impl OpenGL3"
-msgstr "Nepodarilo sa inicializovať ImGui Impl OpenGL3"
-
-msgid "The step size for changing the cruise control speed."
-msgstr "Veľkosť kroku pri zmene rýchlosti tempomatu."
-
-msgid "Assist Level: "
-msgstr "Úroveň asistencie: "
-
-msgid "ETS2LA will offset the speedlimit by this percentage."
-msgstr "ETS2LA upraví rýchlostný limit o toto percento."
-
-msgid "m/s"
-msgstr "m/s"
-
-#, csharp-format
-msgid "Updated axis behavior for control: {0} ({1}) to {2}"
-msgstr "Aktualizované správanie osí pre ovládací prvok: {0} ({1}) do {2}"
-
-msgid "Open Source"
-msgstr "Otvorené Zdroje"
-
-msgid "Uninstall"
-msgstr "Odinštalovať"
-
-msgid "Off"
-msgstr "Vypnúť"
-
-#, csharp-format
-msgid "Created plugin directory: [gray]{0}[/]"
-msgstr "Vytvoril sa adresár pluginov: [gray]{0}[/]"
-
-msgid "Late"
-msgstr "Neskoro"
-
-msgid "pounds"
-msgstr "libry"
-
-msgid "Contact us on GitHub"
-msgstr "Kontaktujte nás na GitHube"
-
-msgid "Lane Assist Only"
-msgstr "Iba asistent jazdy v pruhu"
-
-msgid "Game SDK"
-msgstr "Herné SDK"
-
-#, csharp-format
-msgid "The username {0} is reserved. Please choose a different username."
-msgstr ""
-"Používateľské meno {0} je obsadené. Zvoľte si prosím iné používateľské meno."
-
-msgid "Decrease/SET"
-msgstr "Znížiť/SET"
-
-msgid "km/h"
-msgstr "km/h"
-
-msgid "You must restart ETS2LA for the font size change to take effect."
-msgstr "Aby sa zmena veľkosti písma uplatnila, musíte reštartovať ETS2LA."
-
-msgid "Visual"
-msgstr "Vizuálne"
-
-msgid ""
-"Disables the overlay entirely. This will fix the black screen issue at the "
-"cost of breaking all features that rely on the overlay, including AR and the "
-"HUD."
-msgstr ""
-"Úplne deaktivuje prekrývací panel. Tým sa vyrieši problém s čiernou "
-"obrazovkou, avšak na úkor nefunkčnosti všetkých funkcií, ktoré sú na "
-"prekrývajúcom paneli závislé, vrátane AR a HUD."
-
-msgid "Update Available"
-msgstr "K dispozícii je aktualizácia"
-
-msgid "Current Speed"
-msgstr "Aktuálna rýchlosť"
-
-msgid "Downloading Update"
-msgstr "Sťahovanie aktualizácie"
-
-#, csharp-format
-msgid "Update to {0}"
-msgstr "Aktualizuj do {0}"
-
-#, csharp-format
-msgid "Bound control {0} ({1}) to device {2} and control {3}"
-msgstr "Priradili sme ovládač {0} ({1}) k zariadeniu {2} a ovládanie {3}"
-
-msgid "Display Language"
-msgstr "Jazyk zobrazenia"
-
-#, csharp-format
-msgid "Successfully uninstalled plugin with ID {0}."
-msgstr "Plugin s ID {0} bol úspešne odinštalovaný."
-
-msgid "SDK Installation"
-msgstr "Inštalácia SDK"
-
-msgid "Far"
-msgstr "Ďaleko"
-
-msgid ""
-"Driving mode changed, press Cancel/MODE again to cycle through the modes."
-msgstr ""
-"Režim jazdy sa zmenil, opätovným stlačením tlačidla Cancel/MODE môžete "
-"prechádzať medzi jednotlivými režimami."
-
-#, csharp-format
-msgid "Unloading parsed map data for installation at '{0}'"
-msgstr "Ukladanie analyzovaných údajov mapy na inštaláciu do adresára „{0}“"
-
-msgid "You took a wrong turn!"
-msgstr "Zabočil si nesprávne!"
-
-msgid "Unchanged / Unavailable"
-msgstr "Nezmenené / Nedostupné"
-
-#, csharp-format
-msgid "Failed to uninstall current version of plugin with ID {0}."
-msgstr "Nepodarilo sa odinštalovať aktuálnu verziu pluginu s ID {0}."
-
-#, csharp-format
-msgid "{0} m/s ({1} in {2})"
-msgstr "{0} m/s ({1} in {2})"
-
-msgid "Stop Rendering When Game is Paused"
-msgstr "Zastaviť vykresľovanie, keď je hra pozastavená"
-
-#, csharp-format
-msgid "Failed to refresh joysticks: {0}"
-msgstr "Nepodarilo sa obnoviť joysticky: {0}"
-
-msgid "Failed to log in. Please check your credentials and try again."
-msgstr ""
-"Prihlásenie sa nepodarilo. Skontrolujte svoje prihlasovacie údaje a skúste "
-"to znova."
-
-msgid "Low"
-msgstr "Nízka"
+msgid "Restarting ETS2LA..."
+msgstr "Reštartujem ETS2LA..."
 
 msgid "ETS2LA is running."
 msgstr "ETS2LA je spustené."
 
-msgid "gallons"
-msgstr "galóny"
+msgid "Warnings"
+msgstr "Varovania"
+
+msgid "Restart"
+msgstr "Reštartovať"
+
+msgid "Plugins"
+msgstr "Pluginy"
+
+msgid "Close"
+msgstr "Zatvoriť"
+
+msgid "lbs"
+msgstr "lbs"
+
+#, csharp-format
+msgid "Tried to disable {0}, but it was not found among loaded plugins."
+msgstr "Snažil som sa vypnúť {0}, ale medzi načítanými pluginami sa nenašiel."
+
+msgid "Full Self-Driving"
+msgstr "Plne autonómne riadenie"
+
+msgid "Install"
+msgstr "Inštalovať"
 
 #, csharp-format
 msgid ""
@@ -2367,108 +1835,327 @@ msgstr ""
 "Snažil som sa zmeniť zdroj aktualizácií na „{0}“, ale medzi dostupnými "
 "zdrojmi sa tento zdroj nenašiel."
 
-msgid ""
-"The font size of the overlay. This can be used to scale the overlay to your "
-"monitor's DPI settings."
+msgid "Error Checking for Updates"
+msgstr "Kontrola chýb pri aktualizácii"
+
+msgid "Speed Limit"
+msgstr "Rýchlostný limit"
+
+msgid "Vision Cameras"
+msgstr "Kamery na sledovanie"
+
+msgid "This page hasn't been created yet, but it's coming <i>soon</i>."
 msgstr ""
-"Veľkosť písma prekrývacieho okna. Túto funkciu môžete použiť na "
-"prispôsobenie veľkosti prekrývacieho okna nastaveniam DPI vášho monitora."
-
-msgid ""
-"The units ETS2LA will use when displaying information to a user. Scientific "
-"has only slight differences to metric."
-msgstr ""
-"Jednotky, ktoré ETS2LA používa pri zobrazovaní informácií používateľovi. "
-"Vedecký systém sa od metrického líši len minimálne."
-
-msgid "For now, please contact us on GitHub or Discord."
-msgstr "Zatiaľ nás prosím kontaktujte na GitHub alebo Discord."
-
-msgid "Your account has been successfully removed."
-msgstr "Váš účet bol úspešne odstránený."
-
-msgid ""
-"The request method is recognized by the server but is not supported by the "
-"target resource."
-msgstr ""
-"Metóda požiadavky je serverom rozpoznaná, cieľový zdroj ju však nepodporuje."
-
-msgid "Wiki / FAQ"
-msgstr "Wiki / FAQ"
-
-msgid "Limit Overlay Framerate"
-msgstr "Obmedziť snímkovú frekvenciu prekrývania"
+"Táto stránka ešte nebola vytvorená, ale čoskoro bude k dispozícii "
+"<i>čoskoro</i>."
 
 #, csharp-format
-msgid "Not all dependencies for plugin {0} are installed."
-msgstr "Nie sú nainštalované všetky závislosti pre plugin {0}."
+msgid "This might take a while... ({0}/{1})"
+msgstr "To môže chvíľu trvať... ({0}/{1})"
 
 msgid ""
-"This setting drops redundant information while maintaining most detail "
-"objects (such as signs). Includes all hidden and AI only roads."
+"Please complete this <span class=\"text-text-accent font-bold\">short</span> "
+"onboarding process to get started."
 msgstr ""
-"Toto nastavenie odstraňuje nadbytočné informácie, pričom zachováva väčšinu "
-"detailných objektov (napríklad dopravné značky). Zahŕňa všetky skryté cesty "
-"a cesty určené iba pre umelú inteligenciu."
-
-#, csharp-format
-msgid "Failed to install SDK version '{0}' to '{1}': {2}"
-msgstr "Inštalácia verzie SDK „{0}“ do „{1}“ sa nepodarila: {2}"
-
-msgid "• ETS2LA Developers, contact@ets2la.com, Poland."
-msgstr "• Vývojári ETS2LA, contact@ets2la.com, Poľsko."
-
-msgid "Login"
-msgstr "Prihlásiť sa"
-
-#, csharp-format
-msgid "Latest Version: {0}"
-msgstr "Najnovšia verzia: {0}"
-
-msgid "Audio playback canceled"
-msgstr "Prehrávanie zvuku bolo zrušené"
-
-msgid "Pascals"
-msgstr "Pascali"
-
-msgid "Button"
-msgstr "Tlačidlo"
-
-msgid "Overrides"
-msgstr "Prepísania"
+"Prosím, absolvujte tento <span class=\"text-text-accent font-bold\">krátky</"
+"span> proces zapracovania, aby ste mohli začať."
 
 msgid "Remember!"
 msgstr "Nezabudnite!"
 
-msgid "You can enable the plugins we installed in a previous step here."
+msgid "Disable All"
+msgstr "Vypnúť všetky"
+
+msgid ""
+"Failed to fetch available plugins. Please check your internet connection."
 msgstr ""
-"Tu môžete aktivovať pluginy, ktoré sme nainštalovali v predchádzajúcom kroku."
+"Nepodarilo sa načítať dostupné pluginy. Skontrolujte, prosím, pripojenie k "
+"internetu."
+
+msgid "feet"
+msgstr "stopa"
 
 #, csharp-format
-msgid "Loaded library plugin: [gray]{0}[/] from [gray]{1}[/]."
-msgstr "Načítaný plugin knižnice: [gray]{0}[/] z [gray]{1}[/]."
+msgid "Overlay is disabled in settings, skipping window registration for {0}."
+msgstr ""
+"V nastaveniach je funkcia prekrývania vypnutá, registrácia okna pre {0} sa "
+"preskočí."
 
-msgid "Error in camera update loop."
-msgstr "Chyba v cykle aktualizácie kamery."
+msgid "Audio Settings"
+msgstr "Nastavenia zvuku"
 
-msgid "Become a GitHub Sponsor"
-msgstr "Staňte sa sponzorom GitHubu"
+msgid "Request cancelled."
+msgstr "Žiadosť bola zrušená."
 
-msgid "Please log in to use the chatbot."
-msgstr "Ak chcete používať chatbota, prihláste sa, prosím."
+msgid "Registration Failed"
+msgstr "Registrácia sa nepodarila"
 
-msgid "No Update Available"
-msgstr "Nie je k dispozícii žiadna aktualizácia"
+msgid "Please close the game before continuing with the onboarding process."
+msgstr "Pred pokračovaním v procese prípravy prosím hru zatvorte."
 
-msgid "Your username may not contain repeated separators."
-msgstr "Vaše používateľské meno nesmie obsahovať opakujúce sa oddeľovače."
+msgid "Registration Successful"
+msgstr "Registrácia prebehla úspešne"
 
 #, csharp-format
-msgid "Skipped stale plugin shadow directory [gray]{0}[/]: {1}"
-msgstr "Preskočil sa zastaraný tieňový adresár pluginu [gray]{0}[/]: {1}"
+msgid "Your username must be at most {0} characters long."
+msgstr "Vaše používateľské meno smie mať najviac {0} znakov."
 
-msgid "Your account is not allowed to use the chatbot."
-msgstr "Váš účet nemá povolenie používať chatbota."
+#, csharp-format
+msgid "Successfully installed plugin {0} ({1}, {2})"
+msgstr "Plugin {0} bol úspešne nainštalovaný ({1}, {2})"
+
+#, csharp-format
+msgid "Installation at '{0}' has already been parsed."
+msgstr "Inštalácia v „{0}“ už bola spracovaná."
+
+msgid "Increase/RES"
+msgstr "Zvýšiť/RES"
+
+#, csharp-format
+msgid "Failed to acquire joystick [gray italic]({0})[/]: {1}"
+msgstr "Nepodarilo sa získať joystick [gray italic]({0})[/]: {1}"
+
+msgid "Far"
+msgstr "Ďaleko"
+
+msgid "For now, please contact us on GitHub or Discord."
+msgstr "Zatiaľ nás prosím kontaktujte na GitHub alebo Discord."
+
+msgid "K"
+msgstr "K"
+
+msgid "Window"
+msgstr "Okno"
+
+msgid ""
+"If you see a fully black screen, see the FAQ at <span class=\"description "
+"hover:underline\">ets2la.com</span>."
+msgstr ""
+"Ak sa vám zobrazuje úplne čierna obrazovka, pozrite si FAQ na stránke <span "
+"class=\"description hover:underline\">ets2la.com</span>."
+
+msgid "Settings"
+msgstr "Nastavenia"
+
+msgid "Error Loading File"
+msgstr "Chyba pri načítaní súboru"
+
+#, csharp-format
+msgid "A new update is available: {0}"
+msgstr "Je k dispozícii nová aktualizácia: {0}"
+
+msgid "Force Base Map Name"
+msgstr "Vynútiť názov mapy"
+
+msgid "Experiments"
+msgstr "Experimenty"
+
+msgid "gallons"
+msgstr "galóny"
+
+msgid "m"
+msgstr "m"
+
+msgid "SDKs are currently installed."
+msgstr "SDK sú v súčasnosti nainštalované."
+
+msgid "Restart Required"
+msgstr "Je potrebné reštartovať"
+
+msgid "I understand"
+msgstr "Rozumiem"
+
+#, csharp-format
+msgid "No map data found for installation at '{0}'. Is the installation valid?"
+msgstr ""
+"Nenašli sa žiadne mapové údaje pre inštaláciu v umiestnení „{0}“. Je táto "
+"inštalácia platná?"
+
+msgid "Please log in before using the chatbot."
+msgstr "Pred použitím chatbota sa prosím prihláste."
+
+#, csharp-format
+msgid "Error rendering context menu for window {0}: {1}"
+msgstr "Chyba pri zobrazení kontextového menu pre okno {0}: {1}"
+
+msgid "Audio playback canceled"
+msgstr "Prehrávanie zvuku bolo zrušené"
+
+msgid "kilograms"
+msgstr "kilogramy"
+
+msgid "Username Taken"
+msgstr "Užívateľské meno je už obsadené"
+
+msgid "ft"
+msgstr "ft"
+
+#, csharp-format
+msgid ""
+"Failed to clean plugin shadow directory [gray]{0}[/], it will be removed on "
+"the next startup: {1}"
+msgstr ""
+"Nepodarilo sa vyčistiť tieňový adresár pluginu [gray]{0}[/], bude odstránený "
+"pri nasledujúcom spustení: {1}"
+
+#, csharp-format
+msgid "Cannot enable plugin {0} because dependency {1} failed to enable."
+msgstr ""
+"Plugin {0} sa nedá aktivovať, pretože sa nepodarilo aktivovať jeho závislosť "
+"{1}."
+
+#, csharp-format
+msgid "Discovered {0} manually installed library"
+msgid_plural "Discovered {0} manually installed libraries."
+msgstr[0] "Zistená {0} ručne nainštalovaná knižnica."
+msgstr[1] "Zistené {0} ručne nainštalované knižnice."
+msgstr[2] "Zistených {0} ručne nainštalovaných knižníc."
+
+msgid "Max Render Distance"
+msgstr "Maximálna vzdialenosť vykresľovania"
+
+msgid ""
+"Gateway timeout. The server was acting as a gateway or proxy and did not "
+"receive a timely response from the upstream server."
+msgstr ""
+"Časový limit brány. Server fungoval ako brána alebo proxy a nedostal včasnú "
+"odpoveď od nadradeného servera."
+
+msgid "psi"
+msgstr "psi"
+
+#, csharp-format
+msgid "An error occurred while loading file '{0}': {1}"
+msgstr "Došlo k chybe pri načítaní súboru „{0}“: {1}"
+
+msgid "Next/OK"
+msgstr "Ďalej/OK"
+
+msgid ""
+"ETS2LA is running as a system administrator. This puts your system at risk "
+"if you use 3rd party plugins. Select Yes to continue anyway and accept the "
+"risk."
+msgstr ""
+"ETS2LA beží s oprávneniami systémového správcu. Ak používate pluginy od "
+"tretích strán, vystavujete tým svoj systém riziku. Ak chcete aj tak "
+"pokračovať a prijať toto riziko, vyberte možnosť Áno."
+
+msgid "Recommended Plugins"
+msgstr "Odporúčané pluginy"
+
+msgid "Failed to remove account. Please try again."
+msgstr "Odstránenie účtu sa nepodarilo. Skúste to prosím znova."
+
+msgid ""
+"The maximum speed ETS2LA will accelerate to. It might still drift over this "
+"limit due to momentum."
+msgstr ""
+"Maximálna rýchlosť, na ktorú ETS2LA zrýchli. V dôsledku hybnosti sa však "
+"môže stať, že túto hranicu prekročí."
+
+msgid "Game added"
+msgstr "Hra bola pridaná"
+
+msgid "Privacy Policy"
+msgstr "Zásady ochrany osobných údajov"
+
+#, csharp-format
+msgid "You are permanently banned.<br/>Reason: {0}"
+msgstr "Bol si natrvalo zablokovaný.<br/>Dôvod: {0}"
+
+#, csharp-format
+msgid "Unloading parsed map data for installation at '{0}'"
+msgstr "Ukladanie analyzovaných údajov mapy na inštaláciu do adresára „{0}“"
+
+msgid ""
+"Some mods implement additional maps like japan.mbd or russia.mbd. If you "
+"find your mods are not loading properly, try enabling this option. This is "
+"known to be required for RusMap."
+msgstr ""
+"Niektoré mody obsahujú dodatočné mapy, ako napríklad japan.mbd alebo "
+"russia.mbd. Ak zistíte, že sa vaše mody nenačítavajú správne, skúste túto "
+"možnosť zapnúť. Je známe, že táto možnosť je nevyhnutná pre RusMap."
+
+msgid "Extreme"
+msgstr "Extrémna"
+
+#, csharp-format
+msgid ""
+"Cannot uninstall plugin with ID {0} because the following installed plugins "
+"depend on it: {1}"
+msgstr ""
+"Plugin s ID {0} nie je možné odinštalovať, pretože na ňom závisia "
+"nasledujúce nainštalované pluginy: {1}"
+
+#, csharp-format
+msgid ""
+"You are currently logged in as <span class=\"text-text-l\">{0}</span>. [{1}]"
+msgstr ""
+"V súčasnosti ste prihlásení ako <span class=\"text-text-l\">{0}</span>. [{1}]"
+
+msgid ""
+"We will pause the game when we detect instability or the steering is "
+"unresponsive / disables itself for other reasons."
+msgstr ""
+"Hru pozastavíme, keď zistíme nestabilitu alebo ak zatáčanie nereaguje / z "
+"iných dôvodov prestane fungovať."
+
+msgid ""
+"Render the vision cameras in the game world. This is useful for debugging, "
+"but can cause performance issues."
+msgstr ""
+"Zobrazte kamery pre vizualizáciu v hernom svete. Je to užitočné pri "
+"odstraňovaní chýb, môže to však spôsobiť problémy s výkonom."
+
+#, csharp-format
+msgid "Deleted '{0}'"
+msgstr "Odstránené „{0}“"
+
+msgid "Open SDK Settings"
+msgstr "Otvoriť nastavenia SDK"
+
+#, csharp-format
+msgid "Target Speed: <span class=\"text-text-accent font-bold\">{0} {1}</span>"
+msgstr ""
+"Cieľová rýchlosť: <span class=\"text-text-accent font-bold\">{0} {1}</span>"
+
+#, csharp-format
+msgid "Error initializing memory mapped file: {0}"
+msgstr "Chyba pri inicializácii súboru mapovaného v pamäti: {0}"
+
+#, csharp-format
+msgid "Failed to load plugin from [gray]{0}[/]: {1}"
+msgstr "Nepodarilo sa načítať plugin z [gray]{0}[/]: {1}"
+
+#, csharp-format
+msgid "Assist Mode: <span class=\"text-text-accent font-bold\">{0}</span>"
+msgstr "Režim asistenta: <span class=\"text-text-accent font-bold\">{0}</span>"
+
+msgid "Thinking..."
+msgstr "Premýšľam..."
+
+msgid "View Public Telemetry"
+msgstr "Zobraziť verejnú telemetriu"
+
+msgid "Adjust the volume of the audio output."
+msgstr "Upravte hlasitosť zvukového výstupu."
+
+#, csharp-format
+msgid ""
+"Selected update source '{0}' not found, defaulting to first available source."
+msgstr ""
+"Vybraný zdroj aktualizácií „{0}“ nebol nájdený, použije sa prvý dostupný "
+"zdroj."
+
+msgid "SET Behaviour"
+msgstr "Správanie SET"
+
+#, csharp-format
+msgid "Registered control: {0} [gray italic]({1})[/]"
+msgstr "Registrovaná kontrola: {0} [gray italic]({1})[/]"
+
+msgid "Keybind is Toggle"
+msgstr "Klávesová skratka je „Toggle“"
 
 msgid ""
 "You'll have to reinstall the SDK for <span class=\"text-text-accent font-"
@@ -2479,114 +2166,431 @@ msgstr ""
 "bold\">každej aktualizácii hry</span>. Stránku s inštaláciou nájdeš v "
 "nastaveniach."
 
-msgid "Keybind is Toggle"
-msgstr "Klávesová skratka je „Toggle“"
+msgid "Please see the logs for more information."
+msgstr "Ďalšie informácie nájdete v logoch."
 
-msgid "Waiting..."
-msgstr "Čakám..."
+msgid "Start Game"
+msgstr "Spustiť hru"
+
+msgid "Binding Timed Out"
+msgstr "Časový limit pre mapovanie kláves vypršal"
+
+msgid "Thank you to the following people for their ongoing support:"
+msgstr "Ďakujeme nasledujúcim osobám za ich nepretržitú podporu:"
+
+msgid "Changes will take effect after restarting the application."
+msgstr "Zmeny sa uplatnia po reštartovaní aplikácie."
+
+msgid "Use this button to extend the sidebar."
+msgstr "Týmto tlačidlom rozbalíte bočný panel."
+
+msgid "Lane Assist Only"
+msgstr "Iba asistent jazdy v pruhu"
 
 msgid ""
-"Adjust how ETS2LA will respond to necessary steering changes. This for "
-"example controls how quickly ETS2LA will lane-change."
+"This is a highly experimental program. ETS2LA is not perfect, and you will "
+"find issues with it's driving and safety. <span class=\"text-text-accent "
+"font-bold\">Do not leave ETS2LA unattended, especially in multiplayer.</span>"
 msgstr ""
-"Nastavte, ako bude ETS2LA reagovať na potrebné dotočenie volantom. Týmto "
-"nastavením sa napríklad určuje, ako rýchlo bude ETS2LA meniť jazdný pruh."
-
-msgid "Increase/RES"
-msgstr "Zvýšiť/RES"
+"Ide o vysoko experimentálny program. ETS2LA nie je dokonalý a narazíte v ňom "
+"na problémy s riadením a bezpečnosťou. <span class=\"text-text-accent font-"
+"bold\">Nenechávajte ETS2LA bežať bez dozoru, najmä v režime pre viacerých "
+"hráčov.</span>"
 
 #, csharp-format
-msgid "Found {0} game installation."
-msgid_plural "Found {0} game installations."
-msgstr[0] "Našla sa {0} inštalácia hry."
-msgstr[1] "Našli sa {0} inštalácie hry."
-msgstr[2] "Našlo sa {0} inštalácií hry."
+msgid "Tried to enable {0}, but it was not found among loaded plugins."
+msgstr ""
+"Snažil som sa aktivovať {0}, ale medzi načítanými pluginami sa nenašiel."
+
+msgid ""
+"Parsing will continue, however information contained in this file won't be "
+"available to ETS2LA."
+msgstr ""
+"Analýza bude pokračovať, avšak informácie obsiahnuté v tomto súbore nebudú k "
+"dispozícii pre ETS2LA."
+
+msgid "The selected file is not a core.scs file."
+msgstr "Vybraný súbor nie je súbor typu core.scs."
+
+msgid "Translated by:"
+msgstr "Preložil:"
+
+msgid "You have successfully logged out."
+msgstr "Úspešne ste sa odhlásili."
+
+msgid "This game was found at"
+msgstr "Túto hru sme našli v"
+
+msgid "Data Quality"
+msgstr "Kvalita údajov"
+
+msgid "Overlay"
+msgstr "Prekrytie"
+
+#, csharp-format
+msgid "Error in AR OpenGL pass: {0}"
+msgstr "Chyba v kroku AR OpenGL: {0}"
+
+msgid "General"
+msgstr "Všeobecné informácie"
+
+#, csharp-format
+msgid "Failed to uninstall SDK from '{0}' to '{1}': {2}"
+msgstr "Nepodarilo sa odinštalovať SDK z „{0}“ do „{1}“: {2}"
+
+#, csharp-format
+msgid "Inner Exception: {0}"
+msgstr "Vnútorná výnimka: {0}"
+
+#, csharp-format
+msgid "Plugin with ID {0} not found."
+msgstr "Plugin s ID {0} nebol nájdený."
+
+msgid "Units and Language"
+msgstr "Jednotky a jazyk"
+
+msgid "One Time Password"
+msgstr "Jednorazové heslo"
+
+#, csharp-format
+msgid "Loaded plugin: [gray]{0}[/] from [gray]{1}[/]."
+msgstr "Načítaný plugin: [gray]{0}[/] z [gray]{1}[/]."
+
+msgid ""
+"You do not have permission to access this resource. The server understood "
+"the request but refuses to authorize it."
+msgstr ""
+"Nemáte oprávnenie na prístup k tomuto zdroju. Server požiadavku pochopil, "
+"ale odmietol ju autorizovať."
+
+msgid "Registration Error"
+msgstr "Chyba pri registrácii"
+
+msgid "Display Language"
+msgstr "Jazyk zobrazenia"
+
+msgid "Speedlimit Offset"
+msgstr "Upravenie rýchlosti"
+
+#, csharp-format
+msgid "Changed update source to '{0}'."
+msgstr "Zdroj aktualizácií bol zmenený na „{0}“."
+
+#, csharp-format
+msgid "Removing manually added installation at '{0}'"
+msgstr "Odstránenie ručne pridaného inštalačného súboru v umiestnení „{0}“"
+
+#, csharp-format
+msgid "Initializing GLFW Version: {0}"
+msgstr "Inicializácia verzie GLFW: {0}"
+
+msgid "Render Vision Cameras"
+msgstr "Kamery Render Vision"
+
+msgid "Imperial"
+msgstr "Imperiálna"
+
+msgid "Unpacking Mods"
+msgstr "Rozbaľovanie modov"
+
+msgid "m/s"
+msgstr "m/s"
+
+#, csharp-format
+msgid "The username {0} is already taken. Please choose a different username."
+msgstr ""
+"Používateľské meno {0} je už obsadené. Vyberte si prosím iné používateľské "
+"meno."
+
+#, csharp-format
+msgid "Click to {0} this window"
+msgstr "Kliknite na {0}, aby ste zatvorili toto okno"
+
+#, csharp-format
+msgid "Error rendering interaction mode window controls: {0}"
+msgstr "Chyba pri vykresľovaní ovládacích prvkov okna režimu interakcie: {0}"
+
+msgid "Overlay free CPU time percentage"
+msgstr "Percentuálny podiel voľného času procesora bez prekrývania"
+
+msgid "Invalid directory"
+msgstr "Neplatný adresár"
+
+msgid "Logout"
+msgstr "Odhlásiť sa"
+
+msgid "Starting download..."
+msgstr "Začína sa sťahovanie..."
+
+msgid "High"
+msgstr "Vysoká"
+
+msgid "Game is still running"
+msgstr "Hra stále beží"
+
+msgid "Final Disclaimer <span class=\"description\">1/2</span>"
+msgstr "Záverečné varovanie <span class=\"description\">1/2</span>"
+
+msgid "• ETS2LA Developers, contact@ets2la.com, Poland."
+msgstr "• Vývojári ETS2LA, contact@ets2la.com, Poľsko."
+
+msgid ""
+"Translate news articles to your selected display language. This may take a "
+"while depending on the number of articles and your internet connection."
+msgstr ""
+"Preložte novinové články do zvoleného jazyka zobrazenia. Môže to chvíľu "
+"trvať v závislosti od počtu článkov a vášho internetového pripojenia."
+
+msgid "You are not logged in. Open this page again to login."
+msgstr "Nie ste prihlásení. Otvorte túto stránku znovu, aby ste sa prihlásili."
+
+msgid "Only copy this to trusted websites, it can do ANYTHING on your behalf."
+msgstr ""
+"Toto skopírujte len na dôveryhodné webové stránky, pretože to môže vo vašom "
+"mene urobiť čokoľvek."
+
+msgid "Map Data Parsed"
+msgstr "Údaje z mapy boli spracované"
+
+msgid ""
+"Adjust the distance ETS2LA will try to maintain from the vehicle in front of "
+"you when using Adaptive Cruise Control."
+msgstr ""
+"Nastavte vzdialenosť, ktorú sa ETS2LA bude snažiť dodržiavať od vozidla pred "
+"vami pri používaní adaptívneho tempomatu."
+
+msgid "Unknown Version"
+msgstr "Neznáma verzia"
+
+msgid "ETS2LA will offset the speedlimit by this percentage."
+msgstr "ETS2LA upraví rýchlostný limit o toto percento."
+
+msgid ""
+"Your system has less than 20GB of RAM. Extreme data fidelity uses "
+"significant amounts of RAM, and may cause your system to become unstable. "
+"Please select a lower fidelity."
+msgstr ""
+"Váš systém má menej ako 20 GB pamäte RAM. Funkcia Extrémna úroveň údajov "
+"spotrebúva značné množstvo pamäte RAM a môže spôsobiť nestabilitu systému. "
+"Zvoľte prosím nižšiu úroveň údajov."
+
+#, csharp-format
+msgid "Successfully uninstalled SDK version '{0}' from '{1}'"
+msgstr "Verzia SDK „{0}“ bola úspešne odinštalovaná z „{1}“"
+
+msgid "Desired Speed: "
+msgstr "Požadovaná rýchlosť: "
+
+#, csharp-format
+msgid ""
+"Your token will expire on <span class=\"text-text-l\">{0}</span>, you'll be "
+"asked to login again then."
+msgstr ""
+"Platnosť vášho tokenu vyprší dňa <span class=\"text-text-l\">{0}</span>, "
+"vtedy budete vyzvaní, aby ste sa znovu prihlásili."
+
+msgid "meters"
+msgstr "metre"
+
+msgid ""
+"An error occurred while trying to remove your account. Please try again "
+"later. Error: "
+msgstr ""
+"Pri pokuse o odstránenie vášho účtu došlo k chybe. Skúste to prosím neskôr. "
+"Chyba: "
+
+#, csharp-format
+msgid "Deleted old SDK file '{0}'"
+msgstr ""
+
+msgid "°C"
+msgstr "°C"
+
+#, csharp-format
+msgid "Discovered {0} manually installed plugin."
+msgid_plural "Discovered {0} manually installed plugins."
+msgstr[0] "Našiel sa {0} ručne nainštalovaný plugin."
+msgstr[1] "Našli sa {0} ručne nainštalované pluginy."
+msgstr[2] "Našlo sa {0} ručne nainštalovaných pluginov."
+
+msgid ""
+"An error occurred while trying to register. Please try again later. Error: "
+msgstr ""
+"Pri pokuse o registráciu došlo k chybe. Skúste to prosím neskôr. Chyba: "
+
+msgid "Checking for updates..."
+msgstr "Hľadám aktualizácie..."
+
+msgid "No audio output device available"
+msgstr "Nie je k dispozícii žiadne zariadenie na výstup zvuku"
+
+msgid "Catalogue"
+msgstr "Katalóg"
+
+msgid "Starting ETS2LA..."
+msgstr "Spúšťam ETS2LA..."
+
+msgid ""
+"How ETS2LA will warn you about exceeding the speed limit by a major amount."
+msgstr "Ako vás ETS2LA upozorní na výrazné prekročenie rýchlostného limitu."
+
+#, csharp-format
+msgid "Finished parsing installation at '{0}'"
+msgstr "Dokončilo sa analýzovanie inštalácie v „{0}“"
+
+msgid "Assist Level: "
+msgstr "Úroveň asistencie: "
+
+msgid "View Privacy Policy"
+msgstr "Zobraziť zásady ochrany osobných údajov"
+
+#, csharp-format
+msgid "Cannot enable plugin {0} because dependency {1} was not found."
+msgstr ""
+"Plugin {0} sa nedá aktivovať, pretože sa nepodarilo nájsť jeho závislosť {1}."
+
+msgid "Keybind Behaviour"
+msgstr "Správanie klávesových skratiek"
+
+msgid "Next"
+msgstr "Ďalej"
+
+msgid ""
+"Your session has expired or you don't have a connection to our servers. "
+"Please log in again if you wish to use server-side features."
+msgstr ""
+"Vaša relácia vypršala alebo nemáte pripojenie k našim serverom. Ak chcete "
+"využívať funkcie na strane servera, prihláste sa prosím znovu."
+
+msgid "Demo Window"
+msgstr "Ukážkové okno"
+
+msgid "Help"
+msgstr "Pomoc"
+
+#, csharp-format
+msgid "Skipped stale plugin shadow directory [gray]{0}[/]: {1}"
+msgstr "Preskočil sa zastaraný tieňový adresár pluginu [gray]{0}[/]: {1}"
+
+msgid ""
+"The zoom level of the ETS2LA window. This can be used to scale the window to "
+"your monitor's DPI settings."
+msgstr ""
+"Úroveň priblíženia okna ETS2LA. Túto funkciu môžete použiť na prispôsobenie "
+"veľkosti okna nastaveniam DPI vášho monitora."
 
 #, csharp-format
 msgid "You are blocked until {1}.<br/>Reason: {0}"
 msgstr "Máte zablokovaný prístup do {1}.<br/>Dôvod: {0}"
 
+msgid "Decrease/SET"
+msgstr "Znížiť/SET"
+
+msgid "Finished loading plugins"
+msgstr "Načítanie pluginov bolo dokončené"
+
 #, csharp-format
-msgid "found {0} road"
-msgid_plural "found {0} roads"
-msgstr[0] "Bola nájdená {0} cesta"
-msgstr[1] "Boli nájdené {0} cesty"
-msgstr[2] "Bolo nájdených {0} ciest"
+msgid "Failed to install dependency {0} for plugin {1}."
+msgstr "Inštalácia závislosti {0} pre plugin {1} sa nepodarila."
+
+msgid "Error in semaphore update loop."
+msgstr "Chyba v cykle aktualizácie semaforu."
+
+#, csharp-format
+msgid "Missing dependency: {0}"
+msgstr "Chýbajúca závislosť: {0}"
+
+msgid "Final Disclaimer <span class=\"description\">2/2</span>"
+msgstr "Záverečné upozornenie <span class=\"description\">2/2</span>"
+
+msgid "Logout Failed"
+msgstr "Odhlásenie sa nepodarilo"
+
+#, csharp-format
+msgid "Snap to each 10 {0}"
+msgstr "Zarovnať po každých 10 {0}"
+
+#, csharp-format
+msgid "Created plugin directory: [gray]{0}[/]"
+msgstr "Vytvoril sa adresár pluginov: [gray]{0}[/]"
+
+#, csharp-format
+msgid "Enabled plugin: [bold]{0}[/]"
+msgstr "Aktivovaný plugin: [bold]{0}[/]"
 
 msgid ""
-"Please ensure <span class=\"text-text-accent font-bold\">ETS2 and ATS are "
-"closed</span>. You can start the game after completing the onboarding "
-"process."
+"Changing this option requires a restart of ETS2LA to take effect. Restart "
+"now?"
 msgstr ""
-"Uistite sa, prosím, že <span class=\"text-text-accent font-bold\">ETS2 a ATS "
-"sú zatvorené</span>. Hru môžete spustiť po dokončení procesu prípravy."
+"Aby sa táto zmena uplatnila, je potrebné reštartovať ETS2LA. Chcete "
+"reštartovať teraz?"
 
-#, csharp-format
-msgid "Failed to download plugin with ID {0} from {1}. Status code: {2}"
-msgstr "Nepodarilo sa stiahnuť plugin s ID {0} z {1}. Kód stavu: {2}"
-
-msgid "Open Update Page"
-msgstr "Otvoriť stránku aktualizácií"
-
-msgid "Maximum Speed"
-msgstr "Maximálna rýchlosť"
-
-msgid "Experiments"
-msgstr "Experimenty"
-
-#, csharp-format
-msgid "Failed to read log file at '{0}': {1}"
-msgstr "Nepodarilo sa načítať súbor log v umiestnení „{0}“: {1}"
-
-msgid "Display JWT Token"
-msgstr "Zobraziť JWT token"
-
-msgid "Following Distance"
-msgstr "Dodržiavanie odstupu"
-
-#, csharp-format
-msgid ""
-"Selected update source '{0}' not found, defaulting to first available source."
-msgstr ""
-"Vybraný zdroj aktualizácií „{0}“ nebol nájdený, použije sa prvý dostupný "
-"zdroj."
-
-#, csharp-format
-msgid "Installed {0}"
-msgstr "Nainštalované {0}"
+msgid "And to those who've decided to remain anonymous!"
+msgstr "A tým, ktorí sa rozhodli zostať v anonymite!"
 
 msgid ""
-"Keep the ETS2LA window on top of other windows. If you want to use the "
-"visualization on a single monitor setup, this is recommended."
+"We don't sell or transfer your personal data to any third parties, in fact, "
+"we don't even collect it. However, we are still obligated to display and "
+"acquire your consent before proceeding."
 msgstr ""
-"Nastavte okno ETS2LA tak, aby bolo vždy na vrchu ostatných okien. Ak chcete "
-"vizualizáciu používať v konfigurácii s jedným monitorom, odporúča sa toto "
-"nastavenie."
+"Vaše osobné údaje nepredávame ani neposkytujeme žiadnym tretím stranám, v "
+"skutočnosti ich ani nezhromažďujeme. Napriek tomu sme povinní získať váš "
+"súhlas a oboznámiť vás s ním predtým, než budeme pokračovať."
 
-msgid "SDK Uninstalled"
-msgstr "SDK je odinštalované"
-
-msgid ""
-"Consider supporting us by becoming a <span class=\"font-bold text-text-"
-"l\">GitHub Sponsor</span> to cover ongoing development and operational costs."
-msgstr ""
-"Zvážte našu podporu tým, že sa stanete <span class=\"font-bold text-text-"
-"l\">GitHub sponzorom</span>, a pomôžete tak pokryť náklady na priebežný "
-"vývoj a prevádzku."
+msgid "Plugin Installer"
+msgstr "Plugin inštalátor"
 
 #, csharp-format
-msgid "Font file not found at {0}"
-msgstr "Súbor s písmom sa nenašiel v {0}"
+msgid "Successfully installed SDK version '{0}' to '{1}'"
+msgstr "Verzia SDK „{0}“ bola úspešne nainštalovaná do „{1}“"
 
-msgid "lbs"
-msgstr "lbs"
+msgid "All driving assists have been enabled."
+msgstr "Všetky asistenčné systémy riadenia boli aktivované."
+
+msgid "Display Units: "
+msgstr "Jednotka: "
 
 msgid ""
-"Adjust how quickly ETS2LA will respond to desired changes in acceleration. "
-"Emergency braking is not affected."
+"The language ETS2LA will be displayed at. Translations are provided by the "
+"community, we cannot guarantee their accuracy."
 msgstr ""
-"Nastavte, ako rýchlo bude ETS2LA reagovať na požadované zmeny zrýchlenia. "
-"Núdzové brzdenie tým nie je ovplyvnené."
+"Jazyk, v ktorom sa bude zobrazovať ETS2LA. Preklady poskytuje komunita, "
+"nemôžeme zaručiť ich správnosť :)"
+
+msgid ""
+"Warning: Your system has less than 20GB of RAM. You can only select up to "
+"High."
+msgstr ""
+"Upozornenie: Váš systém má menej ako 20 GB pamäte RAM. Môžete zvoliť "
+"maximálne úroveň „Vysoký“."
+
+msgid "Interaction Mode"
+msgstr "Režim interakcie"
+
+#, csharp-format
+msgid "Adding mod: {0}"
+msgstr "Pridávam mód:{0}"
+
+msgid "Like ETS2LA?"
+msgstr "Páči sa vám ETS2LA?"
+
+msgid "Show Plugin Updates"
+msgstr "Zobraziť aktualizácie Pluginov"
+
+msgid ""
+"Allows ETS2LA to control throttle and brake using direct memory editing. "
+"This might not work on some systems, but allows for control even while "
+"tabbed out of the game. If you enable this and it doesn't work, please "
+"report the issue on our Discord server."
+msgstr ""
+"Umožňuje ETS2LA ovládať plyn a brzdu pomocou priamej úpravy pamäte. Na "
+"niektorých systémoch to nemusí fungovať, no umožňuje to ovládanie aj vtedy, "
+"keď je hra minimalizovaná alebo beží na pozadí. Ak túto funkciu zapnete a "
+"nebude fungovať, nahláste problém na našom Discord serveri."
+
+#, csharp-format
+msgid "Not all dependencies for plugin {0} are installed."
+msgstr "Nie sú nainštalované všetky závislosti pre plugin {0}."
 
 #, csharp-format
 #~ msgid "Playing sound: {0}"
