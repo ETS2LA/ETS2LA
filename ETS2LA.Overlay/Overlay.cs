@@ -83,11 +83,23 @@ public class OverlayHandler
     public float AverageFrameTime => frameTimes.Count > 0 ? frameTimes.Average() : 0f;
     public float AverageRemainingTime => remainingMs.Count > 0 ? (float)remainingMs.Average() : 0f;
 
-    public float OverlayWidth => GLFW.GetVideoMode(GLFW.GetPrimaryMonitor()).Width;
-    public float OverlayHeight => GLFW.GetVideoMode(GLFW.GetPrimaryMonitor()).Height;
-    public float OverlayMonitorRefreshRate => GLFW.GetVideoMode(GLFW.GetPrimaryMonitor()).RefreshRate;
     public List<Hexa.NET.GLFW.GLFWmonitorPtr>? Monitors;
     public List<GLFWvidmodePtr>? MonitorModes;
+
+    private int SelectedMonitorIndex =>
+        (Monitors != null && Monitors.Count > 0 && overlaySettings.MonitorIndex >= 0 && overlaySettings.MonitorIndex < Monitors.Count)
+            ? overlaySettings.MonitorIndex
+            : 0;
+
+    public float OverlayWidth => (MonitorModes != null && SelectedMonitorIndex < MonitorModes.Count)
+        ? MonitorModes[SelectedMonitorIndex].Width
+        : GLFW.GetVideoMode(GLFW.GetPrimaryMonitor()).Width;
+    public float OverlayHeight => (MonitorModes != null && SelectedMonitorIndex < MonitorModes.Count)
+        ? MonitorModes[SelectedMonitorIndex].Height
+        : GLFW.GetVideoMode(GLFW.GetPrimaryMonitor()).Height;
+    public float OverlayMonitorRefreshRate => (MonitorModes != null && SelectedMonitorIndex < MonitorModes.Count)
+        ? MonitorModes[SelectedMonitorIndex].RefreshRate
+        : GLFW.GetVideoMode(GLFW.GetPrimaryMonitor()).RefreshRate;
 
     private string glslVersion = "#version 150";
     private GLFWwindowPtr glfwWindow;
@@ -489,7 +501,9 @@ public class OverlayHandler
         style.Colors[(int)ImGuiCol.TitleBgActive] = new Vector4(0.1f, 0.1f, 0.1f, 1f);
 
         // And then we scale by the monitor DPI
-        var mon = GLFW.GetPrimaryMonitor();
+        var mon = (Monitors != null && SelectedMonitorIndex < Monitors.Count)
+            ? Monitors[SelectedMonitorIndex]
+            : GLFW.GetPrimaryMonitor();
         float mainScale = ImGuiImplGLFW.GetContentScaleForMonitor(Unsafe.BitCast<Hexa.NET.GLFW.GLFWmonitorPtr, Hexa.NET.ImGui.Backends.GLFW.GLFWmonitorPtr>(mon));
 
         style.ScaleAllSizes(mainScale);
@@ -640,8 +654,9 @@ public class OverlayHandler
                 return false;
             }
         }
-        var mon = Monitors[overlaySettings.MonitorIndex];
-        var mode = MonitorModes[overlaySettings.MonitorIndex];
+        int monitorIndex = SelectedMonitorIndex;
+        var mon = Monitors![monitorIndex];
+        var mode = MonitorModes![monitorIndex];
 
         // NOTE: Width and height set to screen-2
         // If they are set to the screen size, windows does some optimizations that cause the window
