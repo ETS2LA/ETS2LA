@@ -339,12 +339,17 @@ public class ApplicationState
         if(b == true)
         {
             increaseHeldToken = new CancellationTokenSource();
-            Task.Run(() => KeybindHeldLoop(increaseHeldToken.Token, 1.0f));
+            try { Task.Run(() => KeybindHeldLoop(increaseHeldToken.Token, 1.0f)); } 
+            catch { }
         }
         else
         {
-            increaseHeldToken.Cancel();
-            increaseHeldToken.Dispose();
+            try
+            {
+                increaseHeldToken.Cancel();
+                increaseHeldToken.Dispose();
+            } 
+            catch { }
         }
 
         // RES
@@ -381,12 +386,17 @@ public class ApplicationState
         if(b == true)
         {
             decreaseHeldToken = new CancellationTokenSource();
-            Task.Run(() => KeybindHeldLoop(decreaseHeldToken.Token, -1.0f));
+            try { Task.Run(() => KeybindHeldLoop(decreaseHeldToken.Token, -1.0f)); } 
+            catch { }
         }
         else
         {
-            decreaseHeldToken.Cancel();
-            decreaseHeldToken.Dispose();
+            try
+            {    
+                decreaseHeldToken.Cancel();
+                decreaseHeldToken.Dispose();
+            } 
+            catch { }
         }
 
         // SET

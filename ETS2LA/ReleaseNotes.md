@@ -1,8 +1,7 @@
 ### ETS2LA C# 2026.11.5236
-- `feat` You can now select which monitor to use for the overlay in *Display* settings.
-- `feat` You can now run the overlay and ETS2LA app window on *Wayland* on Linux. Note that this is not officially supported and might cause issues.
-- `fix` Added correct Linux SDKs, previously I accidentally packaged the old version.
-- `translation` Updated translations for Polish.
+- `feat` **Mefamex** - Variables in `ETS2LA.Overlay` now follow the selected monitor index.
+- `fix` Fixed crash caused by an already removed Cancellation Token in `ETS2LA.State`. This occasionally caused a crash when holding the increase/decrease keybinds for a long time.
+- `fix` **Mefamex** - Overlay scaling is now based on selected monitor instead of primary monitor.
 
 #### Thank you to today's sponsor... You!
 Development is possible thanks to our [sponsors](https://github.com/sponsors/Tumppi066). Please consider supporting if you like the project and have the means to do so.
