@@ -1,7 +1,8 @@
 ### ETS2LA C# 2026.11.5236
+- `feat` *Update* page got a design update. You will now see the download size of the update.
 - `feat` **Mefamex** - Variables in `ETS2LA.Overlay` now follow the selected monitor index.
-- `fix` Fixed crash caused by an already removed Cancellation Token in `ETS2LA.State`. This occasionally caused a crash when holding the increase/decrease keybinds for a long time.
 - `fix` **Mefamex** - Overlay scaling is now based on selected monitor instead of primary monitor.
+- `fix` Fixed crash caused by an already removed Cancellation Token in `ETS2LA.State`. This occasionally caused a crash when holding the increase/decrease keybinds for a long time.
 
 #### Thank you to today's sponsor... You!
 Development is possible thanks to our [sponsors](https://github.com/sponsors/Tumppi066). Please consider supporting if you like the project and have the means to do so.

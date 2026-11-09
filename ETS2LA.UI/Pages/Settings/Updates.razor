@@ -37,17 +37,17 @@
 
     protected override async Task OnInitializedAsync()
     {
-        #if !DEBUG
+//        #if !DEBUG
             Task.Run(() => CheckForUpdates());
-        #else
-            // You can test rendering your release notes here:
-            string releaseNotes = 
-"""
-
-""";
-
-            RenderedContent = new MarkupString(Markdown.ToHtml(releaseNotes, Pipeline));
-        #endif
+//        #else
+//            // You can test rendering your release notes here:
+//            string releaseNotes = 
+//"""
+//
+//""";
+//
+//            RenderedContent = new MarkupString(Markdown.ToHtml(releaseNotes, Pipeline));
+//        #endif
     }
 
 
@@ -127,11 +127,13 @@
 
     private void DownloadCallback(int progress)
     {
+        var totalSize = latestUpdateInfo?.TargetFullRelease?.Size ?? 0;
+        var downloadedSize = (long)(totalSize * (progress / 100.0));
         NotificationHandler.Current.SendNotification(new ETS2LA.Notifications.Notification
         {
             Id = "ETS2LA.UI.Settings.Updates.DownloadingUpdate",
             Title = _("Downloading Update"),
-            Content = _("Download progress: {0}%", progress),
+            Content = _("Download progress: {0}% ({1} / {2})", progress, FormatBytes(downloadedSize), FormatBytes(totalSize)),
             Progress = progress,
             CloseAfter = 0
         });
@@ -158,37 +160,51 @@
             });
         }
     }
+
+    public string FormatBytes(long bytes)
+    {
+        if (bytes < 1024) return $"{bytes} B";
+        if (bytes < 1024 * 1024) return $"{(bytes / 1024.0):F2} KB";
+        if (bytes < 1024 * 1024 * 1024) return $"{(bytes / (1024.0 * 1024.0)):F2} MB";
+        return $"{(bytes / (1024.0 * 1024.0 * 1024.0)):F2} GB";
+    }
 }
 
 <div class="flex flex-col max-w-full m-5 ml-8 mr-8 gap-4">
+    <SectionTitle Title="@_("Update Settings")" />
     <Dropdown Title="Update Channel"
               Description="Select the update channel you want to listen to. Nightly contains experimental features and will crash more often."
               Options=@availableChannels
               SelectedIndex=@Array.IndexOf(availableChannels, selectedChannel)
               SelectedIndexChanged="@(index => selectedChannel = availableChannels[index])" />
 
-    <div class="flex flex-col gap-2">
-        <div class="text-description">
-            @_("Current Version: {0}", updateManager.CurrentVersion?.ToString() ?? _("Unknown Version"))
-        </div>
-        <div class="text-description">
-            @_("Latest Version: {0}", latestUpdateInfo?.TargetFullRelease?.Version.ToString() ?? _("Unchanged / Unavailable"))
-        </div>
-    </div>
 
+    <SectionTitle Title="@_("Update Information")" />
     @if (latestUpdateInfo != null)
     {
+        <div class="flex flex-col gap-2">
+            <p>v@(latestUpdateInfo?.TargetFullRelease?.Version.ToString() ?? _("Unchanged / Unavailable"))</p>
+            <p class="description">@(latestUpdateInfo?.TargetFullRelease.FileName ?? _("Unknown File")) - @(FormatBytes(latestUpdateInfo?.TargetFullRelease.Size ?? 0))</p>
+        </div>
+
         <button class="button button-accent" @onclick="OnInstallAndRestartClick" disabled="@((latestUpdateInfo == null))">
             @(_("Install Update and Restart"))
         </button>
-    }
 
-    <div class="flex flex-col gap-1">
-        @if (RenderedContent != null)
-        {
-            <div class="[&_img]:max-w-[410px] [&_ul]:list-disc [&_ul]:pl-5 [&_ol]:list-decimal [&_ol]:pl-5 [&_p]:mb-2 [&_h1]:mb-3 [&_h2]:mb-3 [&_h3]:mb-3 [&_h4]:mb-1 [&_h4]:mt-4 [&_li]:mb-1 [&_strong]:text-text-accent [&_code]:text-description [&_code]:bg-control-bg [&_code]:rounded-sm [&_code]:px-1  whitespace-normal">
-                @RenderedContent
-            </div>
-        }
-    </div>
+        <SectionTitle Title="@_("Changelog")" />
+        <div class="flex flex-col gap-1">
+            @if (RenderedContent != null)
+            {
+                <div class="[&_img]:max-w-[410px] [&_ul]:list-disc [&_ul]:pl-5 [&_ol]:list-decimal [&_ol]:pl-5 [&_p]:mb-2 [&_h1]:mb-3 [&_h2]:mb-3 [&_h3]:mb-3 [&_h4]:mb-1 [&_h4]:mt-4 [&_li]:mb-1 [&_strong]:text-text-accent [&_code]:text-description [&_code]:bg-control-bg [&_code]:rounded-sm [&_code]:px-1  whitespace-normal">
+                    @RenderedContent
+                </div>
+            }
+        </div>
+    }
+    else
+    {
+        <div class="flex flex-col gap-2">
+            <p>@_("No update available.")</p>
+        </div>
+    }
 </div>
