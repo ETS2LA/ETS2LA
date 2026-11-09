@@ -3,10 +3,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
 "POT-Creation-Date: 2026-11-09 15:41:00+0200\n"
-"PO-Revision-Date: 2026-11-03 17:35+0000\n"
+"PO-Revision-Date: 2026-11-09 19:43+0000\n"
 "Last-Translator: Ketchup1812 <ketchup1812@ets2la.com>\n"
-"Language-Team: Slovak <http://weblate.ets2la.com/projects/ets2la/ets2la/sk/"
-">\n"
+"Language-Team: Slovak <http://weblate.ets2la.com/projects/ets2la/ets2la/sk/>"
+"\n"
 "Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -67,7 +67,7 @@ msgid "Control with ID '{0}' not found for updating bindings."
 msgstr "Kontrola s ID „{0}“ nebola nájdené pre aktualizáciu mapovania kláves."
 
 msgid "Monitor"
-msgstr ""
+msgstr "Monitor"
 
 msgid ""
 "Force ETS2LA to load the map on game startup. This can resolve issues where "
@@ -257,6 +257,9 @@ msgid ""
 "Allow ETS2LA's overlay to run on Wayland. Wayland might cause compatibility "
 "issues, however you might want to try to enable this option."
 msgstr ""
+"Umožnite spustenie prekryvnej vrstvy ETS2LA v prostredí Wayland. Wayland "
+"môže spôsobovať problémy s kompatibilitou, no napriek tomu môžete skúsiť "
+"túto možnosť povoliť."
 
 #, csharp-format
 msgid "Your username must be at least {0} characters long."
@@ -325,7 +328,7 @@ msgid "Failed to log out. Please try again."
 msgstr "Odhlásenie sa nepodarilo. Skúste to prosím znova."
 
 msgid "Update Information"
-msgstr ""
+msgstr "Informácie o aktualizácii"
 
 msgid "Visual"
 msgstr "Vizuálne"
@@ -391,7 +394,7 @@ msgid "No Update Available"
 msgstr "Nie je k dispozícii žiadna aktualizácia"
 
 msgid "Exclude Mod"
-msgstr ""
+msgstr "Vylúčiť mod"
 
 msgid "Performance Overlay"
 msgstr "Prekrývací panel výkonu"
@@ -501,7 +504,7 @@ msgstr "Ste si istí?"
 
 #, csharp-format
 msgid "Mod '{0}' has been excluded from future parsing."
-msgstr ""
+msgstr "Mod „{0}“ bol vylúčený z budúceho parsovania."
 
 #, csharp-format
 msgid "You have successfully logged in as {0}."
@@ -532,7 +535,7 @@ msgid "Failed to uninstall current version of plugin with ID {0}."
 msgstr "Nepodarilo sa odinštalovať aktuálnu verziu pluginu s ID {0}."
 
 msgid "Error retrieving monitor names"
-msgstr ""
+msgstr "Chyba pri získavaní názvov monitorov"
 
 msgid "Early"
 msgstr "Skoro"
@@ -793,7 +796,7 @@ msgid "Error while checking for updates: {0}"
 msgstr "Chyba pri kontrole aktualizácií: {0}"
 
 msgid "Error Unpacking Mod"
-msgstr ""
+msgstr "Chyba pri rozbaľovaní modu"
 
 msgid "Undetermined"
 msgstr "Neurčené"
@@ -806,6 +809,7 @@ msgstr "Semafory"
 
 msgid "No monitors detected, overlay cannot be initialized."
 msgstr ""
+"Neboli zistené žiadne monitory, prekryvnú vrstvu nie je možné inicializovať."
 
 msgid "Update check skipped, using already cached result."
 msgstr ""
@@ -879,7 +883,7 @@ msgstr "Predchádzanie zrážkam"
 
 #, csharp-format
 msgid "Monitor {0}: {1}"
-msgstr ""
+msgstr "Monitor {0}: {1}"
 
 msgid ""
 "Disables the overlay entirely. This will fix the black screen issue at the "
@@ -1033,10 +1037,10 @@ msgstr ""
 "akciu nie je možné vrátiť späť."
 
 msgid "Unknown File"
-msgstr ""
+msgstr "Neznámy súbor"
 
 msgid "Excluded Mods"
-msgstr ""
+msgstr "Vylúčené mody"
 
 msgid "Manager"
 msgstr "Manažér"
@@ -1278,7 +1282,7 @@ msgstr ""
 "aktuálnu rýchlosť tempomatu?"
 
 msgid "Allow Wayland"
-msgstr ""
+msgstr "Povoliť Wayland"
 
 msgid "The selected directory does not exist."
 msgstr "Vybraný adresár neexistuje."
@@ -1318,6 +1322,8 @@ msgid ""
 "Select mods that you want to exclude from the data. This can be useful if "
 "you have a mod that is causing issues with the data."
 msgstr ""
+"Vyberte mody, ktoré chcete z údajov vylúčiť. Môže to byť užitočné v prípade "
+"že máte mod ktorý spôsobuje problémy s údajmi."
 
 msgid ""
 "Adjust the level of detail of the game data we use. Higher values use more "
@@ -1472,7 +1478,7 @@ msgstr ""
 "príjemcovi."
 
 msgid "Update Settings"
-msgstr ""
+msgstr "Aktualizačné nastavenia"
 
 #, csharp-format
 msgid "<span class=\"font-semibold\">{0}</span> at {1}"
@@ -1620,7 +1626,7 @@ msgid "Currently running at {0} FPS."
 msgstr "V súčasnosti beží rýchlosťou {0} FPS."
 
 msgid "Mod Excluded"
-msgstr ""
+msgstr "Mod vylúčený"
 
 #, csharp-format
 msgid "Version {0} not found for plugin with ID {1}."
@@ -1720,7 +1726,7 @@ msgid "The selected game executable was not found."
 msgstr "Vybraný spustiteľný súbor hry nebol nájdený."
 
 msgid "No update available."
-msgstr ""
+msgstr "Žiadna aktualizácia nie je k dispozícii."
 
 #, csharp-format
 msgid "Loaded library plugin: [gray]{0}[/] from [gray]{1}[/]."
@@ -1812,6 +1818,8 @@ msgid ""
 "An error occurred while unpacking mod '{0}'. Parsing will continue, however "
 "information contained in this mod won't be available to ETS2LA."
 msgstr ""
+"Pri rozbaľovaní modu „{0}“ došlo k chybe. Analýza bude pokračovať, avšak "
+"informácie obsiahnuté v tomto mode nebudú pre ETS2LA dostupné."
 
 msgid "Chatbot"
 msgstr "Chatbot"
@@ -2258,7 +2266,7 @@ msgstr ""
 "dispozícii pre ETS2LA."
 
 msgid "No options selected"
-msgstr ""
+msgstr "Žiadne možnosti nie sú vybrané"
 
 msgid "The selected file is not a core.scs file."
 msgstr "Vybraný súbor nie je súbor typu core.scs."
@@ -2312,6 +2320,9 @@ msgid ""
 "monitors, you can select which one to use here. Please select the monitor "
 "the game is running on, and ensure the game is in fullscreen."
 msgstr ""
+"Monitor, na ktorom sa bude zobrazovať prekryvná vrstva ETS2LA. Ak máte viac "
+"monitorov, môžete tu vybrať ten, ktorý chcete použiť. Zvoľte monitor, na "
+"ktorom beží hra, a uistite sa, že je hra spustená v režime celej obrazovky."
 
 msgid ""
 "You do not have permission to access this resource. The server understood "
@@ -2346,7 +2357,7 @@ msgstr "Kamery Render Vision"
 
 #, csharp-format
 msgid "Failed to unpack mod '{0}'"
-msgstr ""
+msgstr "Nepodarilo sa rozbaliť mod „{0}“"
 
 msgid "Imperial"
 msgstr "Imperiálna"
@@ -2462,7 +2473,7 @@ msgstr ""
 
 #, csharp-format
 msgid "Deleted old SDK file '{0}'"
-msgstr ""
+msgstr "Odstránený starý súbor SDK „{0}“"
 
 msgid "°C"
 msgstr "°C"
@@ -2512,7 +2523,7 @@ msgstr ""
 
 #, csharp-format
 msgid "Download progress: {0}% ({1} / {2})"
-msgstr ""
+msgstr "Priebeh sťahovania: {0}% ({1} / {2})"
 
 msgid "Keybind Behaviour"
 msgstr "Správanie klávesových skratiek"
@@ -2534,6 +2545,9 @@ msgid ""
 "Allow ETS2LA's window to run on Wayland. Wayland might cause compatibility "
 "issues, however you might want to try to enable this option."
 msgstr ""
+"Umožnite oknu ETS2LA fungovať v prostredí Wayland. Wayland môže spôsobovať "
+"problémy s kompatibilitou, no napriek tomu môžete skúsiť túto možnosť "
+"povoliť."
 
 msgid "Help"
 msgstr "Pomoc"
