@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-11-07 13:10:59+0200\n"
+"POT-Creation-Date: 2026-11-09 14:35:17+0200\n"
 "PO-Revision-Date: 2026-09-19 12:33+0000\n"
 "Last-Translator: ABOY <aboy@ets2la.com>\n"
 "Language-Team: German <http://weblate.ets2la.com/projects/ets2la/ets2la/de/"
@@ -132,15 +132,15 @@ msgid "Maximum Speed"
 msgstr "Maximale Geschwindigkeit"
 
 msgid ""
+"Your username may only contain letters, numbers, underscores, hyphens and "
+"periods, and must start and end with a letter or number."
+msgstr ""
+
+msgid ""
 "When the game reports itself being paused, ETS2LA won't render AR elements."
 msgstr ""
 "Wenn das Spiel meldet, dass es angehalten wurde, wird ETS2LA keine AR-"
 "Elemente rendern."
-
-msgid ""
-"Your username may only contain letters, numbers, underscores, hyphens and "
-"periods, and must start and end with a letter or number."
-msgstr ""
 
 #, csharp-format
 msgid "Connected joystick: [bold]{0}[/] [gray italic]({1})[/]"
@@ -444,13 +444,13 @@ msgid "Assists Enabled: <span class=\"text-text-accent font-bold\">{0}</span>"
 msgstr ""
 
 msgid ""
-"Memory not available for output, please ensure the game is running and "
-"reinstall the SDK if necessary."
+"Only show news articles from official sources, such as the ETS2LA team or "
+"it's developers."
 msgstr ""
 
 msgid ""
-"Only show news articles from official sources, such as the ETS2LA team or "
-"it's developers."
+"Memory not available for output, please ensure the game is running and "
+"reinstall the SDK if necessary."
 msgstr ""
 
 msgid "All driving assists have been disabled."
@@ -566,6 +566,11 @@ msgstr "Fehler beim Initialisieren von ImGui Impl OpenGL3"
 msgid "Support Multiple Viewports"
 msgstr "Mehrere Ansichten unterstützen"
 
+msgid ""
+"Consider supporting us by becoming a <span class=\"font-bold text-text-"
+"l\">GitHub Sponsor</span> to cover ongoing development and operational costs."
+msgstr ""
+
 msgid "You took a wrong turn!"
 msgstr "Du hast die falsche Abbiegung genommen!"
 
@@ -573,11 +578,6 @@ msgstr "Du hast die falsche Abbiegung genommen!"
 msgid ""
 "Target speed changed. Current speedlimit: {0} {1}. Offsets are carried over "
 "on speedlimit change."
-msgstr ""
-
-msgid ""
-"Consider supporting us by becoming a <span class=\"font-bold text-text-"
-"l\">GitHub Sponsor</span> to cover ongoing development and operational costs."
 msgstr ""
 
 msgid "Adaptive Cruise Control Only"
@@ -1005,12 +1005,12 @@ msgstr "Pascal"
 msgid "Account Removal Error"
 msgstr ""
 
-msgid "You can enable the plugins we installed in a previous step here."
-msgstr "Hier kannst du die Plugins von vorher aktivieren."
-
 #, csharp-format
 msgid "Failed to disable {0}: {1}"
 msgstr "Fehlgeschlagenes Deaktivieren von {0}: {1}"
+
+msgid "You can enable the plugins we installed in a previous step here."
+msgstr "Hier kannst du die Plugins von vorher aktivieren."
 
 msgid "Login"
 msgstr ""
@@ -1018,12 +1018,12 @@ msgstr ""
 msgid "SDK Installed"
 msgstr "SDK installiert"
 
-msgid "Current Speed"
-msgstr "Aktuelle Geschwindigkeit"
-
 #, csharp-format
 msgid "Bound control {0} ({1}) to device {2} and control {3}"
 msgstr "Steuerung {0} ({1}) wurde an Gerät {2} und Steuerung {3} gebunden"
+
+msgid "Current Speed"
+msgstr "Aktuelle Geschwindigkeit"
 
 msgid "miles per hour"
 msgstr "Meilen pro Stunde"
@@ -1191,14 +1191,14 @@ msgstr "Nicht verbunden"
 msgid "Plugin with ID [gray]{0}[/] is already loaded, skipping duplicate."
 msgstr ""
 
+msgid "You are running the latest version."
+msgstr "Du hast bereits die aktuellste Version."
+
 #, csharp-format
 msgid "Failed to download plugin with ID {0} from {1}. Status code: {2}"
 msgstr ""
 "Fehlgeschlagenes Herunterladen des Plugins mit der ID {0} von {1}. "
 "Statuscode: {2}"
-
-msgid "You are running the latest version."
-msgstr "Du hast bereits die aktuellste Version."
 
 msgid ""
 "Show news articles about plugin updates, be that official or 3rd party "
@@ -1272,13 +1272,13 @@ msgstr ""
 msgid "<span class=\"font-semibold\">{0}</span> until {1}"
 msgstr ""
 
-msgid "Did you remember to restart after installing them?"
-msgstr "Hast du dran gedacht nach dem Installieren neu zu starten?"
-
 msgid ""
 "User folder paths are hidden automatically. Review the log for other "
 "personal information before sending."
 msgstr ""
+
+msgid "Did you remember to restart after installing them?"
+msgstr "Hast du dran gedacht nach dem Installieren neu zu starten?"
 
 msgid "Volume"
 msgstr "Lautstärke"
@@ -1412,11 +1412,11 @@ msgid ""
 "will only be interactive while you hold down the keybind."
 msgstr ""
 
-msgid "pounds"
-msgstr "Pfund"
-
 msgid "Latest News"
 msgstr ""
+
+msgid "pounds"
+msgstr "Pfund"
 
 #, csharp-format
 msgid "Failed to initialize SDL3 controls backend: {0}"
@@ -2061,11 +2061,11 @@ msgstr ""
 msgid "View Public Telemetry"
 msgstr "Öffentliche Telemetrie anzeigen"
 
-msgid "Adjust the volume of the audio output."
-msgstr "Passen Sie das Audioausgabeverhältnis an."
-
 msgid "Thinking..."
 msgstr ""
+
+msgid "Adjust the volume of the audio output."
+msgstr "Passen Sie das Audioausgabeverhältnis an."
 
 #, csharp-format
 msgid ""

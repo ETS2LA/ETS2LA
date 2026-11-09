@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-11-07 13:10:59+0200\n"
+"POT-Creation-Date: 2026-11-09 14:35:17+0200\n"
 "PO-Revision-Date: 2026-08-26 18:07+0000\n"
 "Last-Translator: phucc <phucc@ets2la.com>\n"
 "Language-Team: Vietnamese <http://weblate.ets2la.com/projects/ets2la/ets2la/"
@@ -128,14 +128,14 @@ msgid "Maximum Speed"
 msgstr "Tốc độ tối đa"
 
 msgid ""
-"When the game reports itself being paused, ETS2LA won't render AR elements."
-msgstr ""
-"Khi trò chơi ở trạng thái tạm dừng, ETS2LA sẽ không hiện thị các yếu tố AR."
-
-msgid ""
 "Your username may only contain letters, numbers, underscores, hyphens and "
 "periods, and must start and end with a letter or number."
 msgstr ""
+
+msgid ""
+"When the game reports itself being paused, ETS2LA won't render AR elements."
+msgstr ""
+"Khi trò chơi ở trạng thái tạm dừng, ETS2LA sẽ không hiện thị các yếu tố AR."
 
 #, csharp-format
 msgid "Connected joystick: [bold]{0}[/] [gray italic]({1})[/]"
@@ -436,13 +436,13 @@ msgid "Assists Enabled: <span class=\"text-text-accent font-bold\">{0}</span>"
 msgstr ""
 
 msgid ""
-"Memory not available for output, please ensure the game is running and "
-"reinstall the SDK if necessary."
+"Only show news articles from official sources, such as the ETS2LA team or "
+"it's developers."
 msgstr ""
 
 msgid ""
-"Only show news articles from official sources, such as the ETS2LA team or "
-"it's developers."
+"Memory not available for output, please ensure the game is running and "
+"reinstall the SDK if necessary."
 msgstr ""
 
 msgid "All driving assists have been disabled."
@@ -558,6 +558,11 @@ msgstr "Khởi tạo ImGui Impl OpenGL3 thất bại"
 msgid "Support Multiple Viewports"
 msgstr "Hỗ trợ nhiều khung hình (Multiple Viewports)"
 
+msgid ""
+"Consider supporting us by becoming a <span class=\"font-bold text-text-"
+"l\">GitHub Sponsor</span> to cover ongoing development and operational costs."
+msgstr ""
+
 msgid "You took a wrong turn!"
 msgstr "Bạn đã đi sai hướng!"
 
@@ -565,11 +570,6 @@ msgstr "Bạn đã đi sai hướng!"
 msgid ""
 "Target speed changed. Current speedlimit: {0} {1}. Offsets are carried over "
 "on speedlimit change."
-msgstr ""
-
-msgid ""
-"Consider supporting us by becoming a <span class=\"font-bold text-text-"
-"l\">GitHub Sponsor</span> to cover ongoing development and operational costs."
 msgstr ""
 
 msgid "Adaptive Cruise Control Only"
@@ -982,11 +982,11 @@ msgstr "Pascals"
 msgid "Account Removal Error"
 msgstr ""
 
-msgid "You can enable the plugins we installed in a previous step here."
-msgstr ""
-
 #, csharp-format
 msgid "Failed to disable {0}: {1}"
+msgstr ""
+
+msgid "You can enable the plugins we installed in a previous step here."
 msgstr ""
 
 msgid "Login"
@@ -995,12 +995,12 @@ msgstr ""
 msgid "SDK Installed"
 msgstr "Đã cài đặt SDK"
 
-msgid "Current Speed"
-msgstr "Tốc độ hiện tại"
-
 #, csharp-format
 msgid "Bound control {0} ({1}) to device {2} and control {3}"
 msgstr ""
+
+msgid "Current Speed"
+msgstr "Tốc độ hiện tại"
 
 msgid "miles per hour"
 msgstr ""
@@ -1150,11 +1150,11 @@ msgstr "Chưa được kết nối"
 msgid "Plugin with ID [gray]{0}[/] is already loaded, skipping duplicate."
 msgstr ""
 
-#, csharp-format
-msgid "Failed to download plugin with ID {0} from {1}. Status code: {2}"
+msgid "You are running the latest version."
 msgstr ""
 
-msgid "You are running the latest version."
+#, csharp-format
+msgid "Failed to download plugin with ID {0} from {1}. Status code: {2}"
 msgstr ""
 
 msgid ""
@@ -1226,12 +1226,12 @@ msgstr ""
 msgid "<span class=\"font-semibold\">{0}</span> until {1}"
 msgstr ""
 
-msgid "Did you remember to restart after installing them?"
-msgstr ""
-
 msgid ""
 "User folder paths are hidden automatically. Review the log for other "
 "personal information before sending."
+msgstr ""
+
+msgid "Did you remember to restart after installing them?"
 msgstr ""
 
 msgid "Volume"
@@ -1358,10 +1358,10 @@ msgid ""
 "will only be interactive while you hold down the keybind."
 msgstr ""
 
-msgid "pounds"
+msgid "Latest News"
 msgstr ""
 
-msgid "Latest News"
+msgid "pounds"
 msgstr ""
 
 #, csharp-format
@@ -1968,10 +1968,10 @@ msgstr ""
 msgid "View Public Telemetry"
 msgstr "Xem dữ liệu thu thập từ xa công khai"
 
-msgid "Adjust the volume of the audio output."
+msgid "Thinking..."
 msgstr ""
 
-msgid "Thinking..."
+msgid "Adjust the volume of the audio output."
 msgstr ""
 
 #, csharp-format

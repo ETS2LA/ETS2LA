@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-11-07 13:10:59+0200\n"
+"POT-Creation-Date: 2026-11-09 14:35:17+0200\n"
 "PO-Revision-Date: 2026-09-21 15:01+0000\n"
 "Last-Translator: delilevente <delilevente@ets2la.com>\n"
 "Language-Team: Hungarian <http://weblate.ets2la.com/projects/ets2la/ets2la/"
@@ -122,12 +122,12 @@ msgid "Maximum Speed"
 msgstr "Maximum Sebbeség"
 
 msgid ""
-"When the game reports itself being paused, ETS2LA won't render AR elements."
+"Your username may only contain letters, numbers, underscores, hyphens and "
+"periods, and must start and end with a letter or number."
 msgstr ""
 
 msgid ""
-"Your username may only contain letters, numbers, underscores, hyphens and "
-"periods, and must start and end with a letter or number."
+"When the game reports itself being paused, ETS2LA won't render AR elements."
 msgstr ""
 
 #, csharp-format
@@ -413,13 +413,13 @@ msgid "Assists Enabled: <span class=\"text-text-accent font-bold\">{0}</span>"
 msgstr ""
 
 msgid ""
-"Memory not available for output, please ensure the game is running and "
-"reinstall the SDK if necessary."
+"Only show news articles from official sources, such as the ETS2LA team or "
+"it's developers."
 msgstr ""
 
 msgid ""
-"Only show news articles from official sources, such as the ETS2LA team or "
-"it's developers."
+"Memory not available for output, please ensure the game is running and "
+"reinstall the SDK if necessary."
 msgstr ""
 
 msgid "All driving assists have been disabled."
@@ -532,6 +532,11 @@ msgstr ""
 msgid "Support Multiple Viewports"
 msgstr ""
 
+msgid ""
+"Consider supporting us by becoming a <span class=\"font-bold text-text-"
+"l\">GitHub Sponsor</span> to cover ongoing development and operational costs."
+msgstr ""
+
 msgid "You took a wrong turn!"
 msgstr ""
 
@@ -539,11 +544,6 @@ msgstr ""
 msgid ""
 "Target speed changed. Current speedlimit: {0} {1}. Offsets are carried over "
 "on speedlimit change."
-msgstr ""
-
-msgid ""
-"Consider supporting us by becoming a <span class=\"font-bold text-text-"
-"l\">GitHub Sponsor</span> to cover ongoing development and operational costs."
 msgstr ""
 
 msgid "Adaptive Cruise Control Only"
@@ -944,11 +944,11 @@ msgstr ""
 msgid "Account Removal Error"
 msgstr ""
 
-msgid "You can enable the plugins we installed in a previous step here."
-msgstr ""
-
 #, csharp-format
 msgid "Failed to disable {0}: {1}"
+msgstr ""
+
+msgid "You can enable the plugins we installed in a previous step here."
 msgstr ""
 
 msgid "Login"
@@ -957,12 +957,12 @@ msgstr ""
 msgid "SDK Installed"
 msgstr "SDK telepítve"
 
-msgid "Current Speed"
-msgstr "Jelenlegi sebesség"
-
 #, csharp-format
 msgid "Bound control {0} ({1}) to device {2} and control {3}"
 msgstr ""
+
+msgid "Current Speed"
+msgstr "Jelenlegi sebesség"
 
 msgid "miles per hour"
 msgstr "mérföld per óra"
@@ -1105,12 +1105,12 @@ msgstr "Nincs csatlakoztatva"
 msgid "Plugin with ID [gray]{0}[/] is already loaded, skipping duplicate."
 msgstr ""
 
+msgid "You are running the latest version."
+msgstr "A legfrissebb verziót futtatod."
+
 #, csharp-format
 msgid "Failed to download plugin with ID {0} from {1}. Status code: {2}"
 msgstr ""
-
-msgid "You are running the latest version."
-msgstr "A legfrissebb verziót futtatod."
 
 msgid ""
 "Show news articles about plugin updates, be that official or 3rd party "
@@ -1175,12 +1175,12 @@ msgstr ""
 msgid "<span class=\"font-semibold\">{0}</span> until {1}"
 msgstr ""
 
-msgid "Did you remember to restart after installing them?"
-msgstr ""
-
 msgid ""
 "User folder paths are hidden automatically. Review the log for other "
 "personal information before sending."
+msgstr ""
+
+msgid "Did you remember to restart after installing them?"
 msgstr ""
 
 msgid "Volume"
@@ -1306,10 +1306,10 @@ msgid ""
 "will only be interactive while you hold down the keybind."
 msgstr ""
 
-msgid "pounds"
+msgid "Latest News"
 msgstr ""
 
-msgid "Latest News"
+msgid "pounds"
 msgstr ""
 
 #, csharp-format
@@ -1906,10 +1906,10 @@ msgstr ""
 msgid "View Public Telemetry"
 msgstr ""
 
-msgid "Adjust the volume of the audio output."
+msgid "Thinking..."
 msgstr ""
 
-msgid "Thinking..."
+msgid "Adjust the volume of the audio output."
 msgstr ""
 
 #, csharp-format

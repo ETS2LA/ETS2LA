@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-11-07 13:10:59+0200\n"
+"POT-Creation-Date: 2026-11-09 14:35:17+0200\n"
 "PO-Revision-Date: 2026-10-28 00:04+0000\n"
 "Last-Translator: Tema <tema@ets2la.com>\n"
 "Language-Team: Russian <http://weblate.ets2la.com/projects/ets2la/ets2la/ru/"
@@ -135,15 +135,15 @@ msgid "Maximum Speed"
 msgstr "Максимальная скорость"
 
 msgid ""
-"When the game reports itself being paused, ETS2LA won't render AR elements."
-msgstr "Когда игра сообщает о паузе, ETS2LA не отображает AR-элементы."
-
-msgid ""
 "Your username may only contain letters, numbers, underscores, hyphens and "
 "periods, and must start and end with a letter or number."
 msgstr ""
 "Имя пользователя может содержать только буквы, цифры, подчёркивания, дефисы "
 "и точки; оно должно начинаться и заканчиваться буквой или цифрой."
+
+msgid ""
+"When the game reports itself being paused, ETS2LA won't render AR elements."
+msgstr "Когда игра сообщает о паузе, ETS2LA не отображает AR-элементы."
 
 #, csharp-format
 msgid "Connected joystick: [bold]{0}[/] [gray italic]({1})[/]"
@@ -462,18 +462,18 @@ msgstr ""
 "Ассистенты включены: <span class=\"text-text-accent font-bold\">{0}</span>"
 
 msgid ""
-"Memory not available for output, please ensure the game is running and "
-"reinstall the SDK if necessary."
-msgstr ""
-"Не удалось получить доступ к памяти игры для записи. Убедитесь, что игра "
-"запущена, и при необходимости переустановите SDK."
-
-msgid ""
 "Only show news articles from official sources, such as the ETS2LA team or "
 "it's developers."
 msgstr ""
 "Показывать только новости из официальных источников, например от команды "
 "ETS2LA или её разработчиков."
+
+msgid ""
+"Memory not available for output, please ensure the game is running and "
+"reinstall the SDK if necessary."
+msgstr ""
+"Не удалось получить доступ к памяти игры для записи. Убедитесь, что игра "
+"запущена, и при необходимости переустановите SDK."
 
 msgid "All driving assists have been disabled."
 msgstr ""
@@ -595,6 +595,14 @@ msgstr "Не удалось инициализировать бэкенд ImGui 
 msgid "Support Multiple Viewports"
 msgstr "Поддержка нескольких областей просмотра"
 
+msgid ""
+"Consider supporting us by becoming a <span class=\"font-bold text-text-"
+"l\">GitHub Sponsor</span> to cover ongoing development and operational costs."
+msgstr ""
+"Поддержите нас, став <span class=\"font-bold text-text-l\">спонсором на "
+"GitHub</span>. Это поможет покрыть текущие расходы на разработку и "
+"обслуживание."
+
 msgid "You took a wrong turn!"
 msgstr "Вы свернули не туда!"
 
@@ -603,14 +611,6 @@ msgid ""
 "Target speed changed. Current speedlimit: {0} {1}. Offsets are carried over "
 "on speedlimit change."
 msgstr ""
-
-msgid ""
-"Consider supporting us by becoming a <span class=\"font-bold text-text-"
-"l\">GitHub Sponsor</span> to cover ongoing development and operational costs."
-msgstr ""
-"Поддержите нас, став <span class=\"font-bold text-text-l\">спонсором на "
-"GitHub</span>. Это поможет покрыть текущие расходы на разработку и "
-"обслуживание."
 
 msgid "Adaptive Cruise Control Only"
 msgstr "Только адаптивный круиз-контроль"
@@ -1058,13 +1058,13 @@ msgstr "Паскали"
 msgid "Account Removal Error"
 msgstr "Ошибка при удалении аккаунта."
 
-msgid "You can enable the plugins we installed in a previous step here."
-msgstr ""
-"Здесь можно включить плагины, которые мы установили на предыдущем шаге."
-
 #, csharp-format
 msgid "Failed to disable {0}: {1}"
 msgstr "Не удалось отключить {0}: {1}"
+
+msgid "You can enable the plugins we installed in a previous step here."
+msgstr ""
+"Здесь можно включить плагины, которые мы установили на предыдущем шаге."
 
 msgid "Login"
 msgstr "Войти"
@@ -1072,12 +1072,12 @@ msgstr "Войти"
 msgid "SDK Installed"
 msgstr "SDK установлен"
 
-msgid "Current Speed"
-msgstr "Текущая скорость"
-
 #, csharp-format
 msgid "Bound control {0} ({1}) to device {2} and control {3}"
 msgstr "Элемент управления {0} ({1}) привязан к устройству {2} и элементу {3}"
+
+msgid "Current Speed"
+msgstr "Текущая скорость"
 
 msgid "miles per hour"
 msgstr "мили в час"
@@ -1242,12 +1242,12 @@ msgstr "Не подключено"
 msgid "Plugin with ID [gray]{0}[/] is already loaded, skipping duplicate."
 msgstr "Плагин с ID [gray]{0}[/] уже загружен, пропускаем дубликат."
 
+msgid "You are running the latest version."
+msgstr "У вас установлена последняя версия."
+
 #, csharp-format
 msgid "Failed to download plugin with ID {0} from {1}. Status code: {2}"
 msgstr "Не удалось скачать плагин с ID {0} из {1}. Код состояния: {2}"
-
-msgid "You are running the latest version."
-msgstr "У вас установлена последняя версия."
 
 msgid ""
 "Show news articles about plugin updates, be that official or 3rd party "
@@ -1324,15 +1324,15 @@ msgstr "Открытый исходный код"
 msgid "<span class=\"font-semibold\">{0}</span> until {1}"
 msgstr "<span class=\"font-semibold\">{0}</span> до {1}"
 
-msgid "Did you remember to restart after installing them?"
-msgstr "Не забыли перезапустить ETS2LA после установки?"
-
 msgid ""
 "User folder paths are hidden automatically. Review the log for other "
 "personal information before sending."
 msgstr ""
 "Пути к пользовательским папкам скрываются автоматически. Перед отправкой "
 "проверьте лог на наличие других личных данных."
+
+msgid "Did you remember to restart after installing them?"
+msgstr "Не забыли перезапустить ETS2LA после установки?"
 
 msgid "Volume"
 msgstr "Громкость"
@@ -1476,11 +1476,11 @@ msgstr ""
 "неинтерактивным режимами при нажатии назначенной клавиши. При отключении "
 "оверлей будет интерактивным только во время удержания этой клавиши."
 
-msgid "pounds"
-msgstr "фунты"
-
 msgid "Latest News"
 msgstr "Последние новости"
+
+msgid "pounds"
+msgstr "фунты"
 
 #, csharp-format
 msgid "Failed to initialize SDL3 controls backend: {0}"
@@ -2146,11 +2146,11 @@ msgstr ""
 msgid "View Public Telemetry"
 msgstr "Просмотреть общедоступную телеметрию"
 
-msgid "Adjust the volume of the audio output."
-msgstr "Настройте громкость звукового вывода."
-
 msgid "Thinking..."
 msgstr "Думаю…"
+
+msgid "Adjust the volume of the audio output."
+msgstr "Настройте громкость звукового вывода."
 
 #, csharp-format
 msgid ""

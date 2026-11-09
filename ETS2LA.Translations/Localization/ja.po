@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-11-07 13:10:59+0200\n"
+"POT-Creation-Date: 2026-11-09 14:35:17+0200\n"
 "PO-Revision-Date: 2026-10-20 09:37+0000\n"
 "Last-Translator: Pastel <pastel@ets2la.com>\n"
 "Language-Team: Japanese <http://weblate.ets2la.com/projects/ets2la/ets2la/ja/"
@@ -132,15 +132,15 @@ msgid "Maximum Speed"
 msgstr "最高速度"
 
 msgid ""
+"Your username may only contain letters, numbers, underscores, hyphens and "
+"periods, and must start and end with a letter or number."
+msgstr ""
+
+msgid ""
 "When the game reports itself being paused, ETS2LA won't render AR elements."
 msgstr ""
 "ゲームが一時停止状態であると認識した場合、ETS2LAはAR要素をレンダリングしませ"
 "ん。"
-
-msgid ""
-"Your username may only contain letters, numbers, underscores, hyphens and "
-"periods, and must start and end with a letter or number."
-msgstr ""
 
 #, csharp-format
 msgid "Connected joystick: [bold]{0}[/] [gray italic]({1})[/]"
@@ -451,16 +451,16 @@ msgid "Assists Enabled: <span class=\"text-text-accent font-bold\">{0}</span>"
 msgstr "アシスト有効：<span class=\"text-text-accent font-bold\">{0}</span>"
 
 msgid ""
+"Only show news articles from official sources, such as the ETS2LA team or "
+"it's developers."
+msgstr ""
+
+msgid ""
 "Memory not available for output, please ensure the game is running and "
 "reinstall the SDK if necessary."
 msgstr ""
 "出力用のメモリを利用できません。ゲームが起動していることを確認し、必要に応じ"
 "てSDKを再インストールしてください。"
-
-msgid ""
-"Only show news articles from official sources, such as the ETS2LA team or "
-"it's developers."
-msgstr ""
 
 msgid "All driving assists have been disabled."
 msgstr ""
@@ -578,6 +578,11 @@ msgstr "ImGui Impl OpenGL3 の初期化に失敗しました"
 msgid "Support Multiple Viewports"
 msgstr "複数のビューポートに対応"
 
+msgid ""
+"Consider supporting us by becoming a <span class=\"font-bold text-text-"
+"l\">GitHub Sponsor</span> to cover ongoing development and operational costs."
+msgstr ""
+
 msgid "You took a wrong turn!"
 msgstr "道を間違えました！"
 
@@ -585,11 +590,6 @@ msgstr "道を間違えました！"
 msgid ""
 "Target speed changed. Current speedlimit: {0} {1}. Offsets are carried over "
 "on speedlimit change."
-msgstr ""
-
-msgid ""
-"Consider supporting us by becoming a <span class=\"font-bold text-text-"
-"l\">GitHub Sponsor</span> to cover ongoing development and operational costs."
 msgstr ""
 
 msgid "Adaptive Cruise Control Only"
@@ -1016,12 +1016,12 @@ msgstr "パスカル"
 msgid "Account Removal Error"
 msgstr ""
 
-msgid "You can enable the plugins we installed in a previous step here."
-msgstr "ここで、前の手順でインストールしたプラグインを有効にできます。"
-
 #, csharp-format
 msgid "Failed to disable {0}: {1}"
 msgstr "{0} の無効化に失敗しました: {1}"
+
+msgid "You can enable the plugins we installed in a previous step here."
+msgstr "ここで、前の手順でインストールしたプラグインを有効にできます。"
 
 msgid "Login"
 msgstr ""
@@ -1029,13 +1029,13 @@ msgstr ""
 msgid "SDK Installed"
 msgstr "SDKがインストールされました"
 
-msgid "Current Speed"
-msgstr "現在の速度"
-
 #, csharp-format
 msgid "Bound control {0} ({1}) to device {2} and control {3}"
 msgstr ""
 "コントロール {0} ({1}) をデバイス {2} およびコントロール {3} に紐付けました"
+
+msgid "Current Speed"
+msgstr "現在の速度"
 
 msgid "miles per hour"
 msgstr "マイル毎時"
@@ -1200,14 +1200,14 @@ msgstr ""
 "ID [gray]{0}[/] のプラグインはすでに読み込まれているため、重複をスキップしま"
 "す。"
 
+msgid "You are running the latest version."
+msgstr "最新バージョンがインストールされています。"
+
 #, csharp-format
 msgid "Failed to download plugin with ID {0} from {1}. Status code: {2}"
 msgstr ""
 "ID {0} のプラグインを {1} からダウンロードできませんでした。ステータスコー"
 "ド: {2}"
-
-msgid "You are running the latest version."
-msgstr "最新バージョンがインストールされています。"
 
 msgid ""
 "Show news articles about plugin updates, be that official or 3rd party "
@@ -1279,13 +1279,13 @@ msgstr ""
 msgid "<span class=\"font-semibold\">{0}</span> until {1}"
 msgstr ""
 
-msgid "Did you remember to restart after installing them?"
-msgstr "インストール後に再起動しましたか?"
-
 msgid ""
 "User folder paths are hidden automatically. Review the log for other "
 "personal information before sending."
 msgstr ""
+
+msgid "Did you remember to restart after installing them?"
+msgstr "インストール後に再起動しましたか?"
 
 msgid "Volume"
 msgstr "音量"
@@ -1420,11 +1420,11 @@ msgstr ""
 "で切り替わります。無効にすると、キー割り当てを押している間だけオーバーレイを"
 "操作できます。"
 
-msgid "pounds"
-msgstr "ポンド"
-
 msgid "Latest News"
 msgstr ""
+
+msgid "pounds"
+msgstr "ポンド"
 
 #, csharp-format
 msgid "Failed to initialize SDL3 controls backend: {0}"
@@ -2076,11 +2076,11 @@ msgstr "アシストモード: <span class=\"text-text-accent font-bold\">{0}</s
 msgid "View Public Telemetry"
 msgstr "公開テレメトリを表示"
 
-msgid "Adjust the volume of the audio output."
-msgstr "音声出力の音量を調整します。"
-
 msgid "Thinking..."
 msgstr ""
+
+msgid "Adjust the volume of the audio output."
+msgstr "音声出力の音量を調整します。"
 
 #, csharp-format
 msgid ""

@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-11-07 13:10:59+0200\n"
+"POT-Creation-Date: 2026-11-09 14:35:17+0200\n"
 "PO-Revision-Date: 2026-11-02 20:26+0000\n"
 "Last-Translator: goodnightan <goodnightan@ets2la.com>\n"
 "Language-Team: Chinese (Simplified Han script) <http://weblate.ets2la.com/"
@@ -135,15 +135,15 @@ msgid "Maximum Speed"
 msgstr "最高速度"
 
 msgid ""
-"When the game reports itself being paused, ETS2LA won't render AR elements."
-msgstr "当游戏处于暂停状态时，ETS2LA 将不会显示 AR 元素。"
-
-msgid ""
 "Your username may only contain letters, numbers, underscores, hyphens and "
 "periods, and must start and end with a letter or number."
 msgstr ""
 "用户名只能包含字母、数字、下划线、连字符和句点，且必须以字母或数字开头和结"
 "尾。"
+
+msgid ""
+"When the game reports itself being paused, ETS2LA won't render AR elements."
+msgstr "当游戏处于暂停状态时，ETS2LA 将不会显示 AR 元素。"
 
 #, csharp-format
 msgid "Connected joystick: [bold]{0}[/] [gray italic]({1})[/]"
@@ -444,14 +444,14 @@ msgstr ""
 "辅助功能启用状态：<span class=\"text-text-accent font-bold\">{0}</span>"
 
 msgid ""
-"Memory not available for output, please ensure the game is running and "
-"reinstall the SDK if necessary."
-msgstr "输出内存不可用，请确保游戏正在运行，如有必要请重新安装 SDK。"
-
-msgid ""
 "Only show news articles from official sources, such as the ETS2LA team or "
 "it's developers."
 msgstr "仅显示官方来源的新闻文章，例如 ETS2LA 团队或其开发者。"
+
+msgid ""
+"Memory not available for output, please ensure the game is running and "
+"reinstall the SDK if necessary."
+msgstr "输出内存不可用，请确保游戏正在运行，如有必要请重新安装 SDK。"
 
 msgid "All driving assists have been disabled."
 msgstr "所有驾驶辅助功能均已被禁用。"
@@ -568,6 +568,13 @@ msgstr "ImGui OpenGL3 实现初始化失败"
 msgid "Support Multiple Viewports"
 msgstr "支持多屏幕显示"
 
+msgid ""
+"Consider supporting us by becoming a <span class=\"font-bold text-text-"
+"l\">GitHub Sponsor</span> to cover ongoing development and operational costs."
+msgstr ""
+"考虑成为 <span class=\"font-bold text-text-l\">GitHub 赞助者</span>，帮助我们"
+"承担持续开发和运营所需的费用。"
+
 msgid "You took a wrong turn!"
 msgstr "你走错路了！"
 
@@ -576,13 +583,6 @@ msgid ""
 "Target speed changed. Current speedlimit: {0} {1}. Offsets are carried over "
 "on speedlimit change."
 msgstr "目标速度已更改。当前限速：{0} {1}。在限速更改时，偏移量将被保留。"
-
-msgid ""
-"Consider supporting us by becoming a <span class=\"font-bold text-text-"
-"l\">GitHub Sponsor</span> to cover ongoing development and operational costs."
-msgstr ""
-"考虑成为 <span class=\"font-bold text-text-l\">GitHub 赞助者</span>，帮助我们"
-"承担持续开发和运营所需的费用。"
 
 msgid "Adaptive Cruise Control Only"
 msgstr "仅启用自适应巡航控制"
@@ -997,12 +997,12 @@ msgstr "帕斯卡（压力单位）"
 msgid "Account Removal Error"
 msgstr "移除账户错误"
 
-msgid "You can enable the plugins we installed in a previous step here."
-msgstr "您可以在此处启用我们在上一步安装的插件。"
-
 #, csharp-format
 msgid "Failed to disable {0}: {1}"
 msgstr "停用 {0} 失败:{1}"
+
+msgid "You can enable the plugins we installed in a previous step here."
+msgstr "您可以在此处启用我们在上一步安装的插件。"
 
 msgid "Login"
 msgstr "登录"
@@ -1010,12 +1010,12 @@ msgstr "登录"
 msgid "SDK Installed"
 msgstr "已安装SDK"
 
-msgid "Current Speed"
-msgstr "当前速度"
-
 #, csharp-format
 msgid "Bound control {0} ({1}) to device {2} and control {3}"
 msgstr "已将控件 {0}（{1}）绑定至设备 {2} 的控件 {3}"
+
+msgid "Current Speed"
+msgstr "当前速度"
 
 msgid "miles per hour"
 msgstr "英里每小时"
@@ -1172,12 +1172,12 @@ msgstr "未连接"
 msgid "Plugin with ID [gray]{0}[/] is already loaded, skipping duplicate."
 msgstr "ID 为 [gray]{0}[/] 的插件已加载，跳过重复加载。"
 
+msgid "You are running the latest version."
+msgstr "你正在使用最新版本。"
+
 #, csharp-format
 msgid "Failed to download plugin with ID {0} from {1}. Status code: {2}"
 msgstr "从 {1} 下载 ID 为 {0} 的插件失败。状态码：{2}"
-
-msgid "You are running the latest version."
-msgstr "你正在使用最新版本。"
 
 msgid ""
 "Show news articles about plugin updates, be that official or 3rd party "
@@ -1244,13 +1244,13 @@ msgstr "开源代码库"
 msgid "<span class=\"font-semibold\">{0}</span> until {1}"
 msgstr "<span class=\"font-semibold\">{0}</span> 直到 {1}"
 
-msgid "Did you remember to restart after installing them?"
-msgstr "您是否在安装后重启程序？"
-
 msgid ""
 "User folder paths are hidden automatically. Review the log for other "
 "personal information before sending."
 msgstr "用户文件夹路径会自动隐藏。在发送前，请检查日志中是否包含其他个人信息。"
+
+msgid "Did you remember to restart after installing them?"
+msgstr "您是否在安装后重启程序？"
 
 msgid "Volume"
 msgstr "音量"
@@ -1380,11 +1380,11 @@ msgstr ""
 "启用后，按下对应按键时，叠加层将在交互和非交互模式之间切换。禁用后，只有在按"
 "住对应按键时，叠加层才会处于交互状态。"
 
-msgid "pounds"
-msgstr "磅"
-
 msgid "Latest News"
 msgstr "最新新闻"
+
+msgid "pounds"
+msgstr "磅"
 
 #, csharp-format
 msgid "Failed to initialize SDL3 controls backend: {0}"
@@ -1993,11 +1993,11 @@ msgstr "辅助模式：<span class=\"text-text-accent font-bold\">{0}</span>"
 msgid "View Public Telemetry"
 msgstr "查看公开遥测数据"
 
-msgid "Adjust the volume of the audio output."
-msgstr "调整音频输出的音量。"
-
 msgid "Thinking..."
 msgstr "思考中…"
+
+msgid "Adjust the volume of the audio output."
+msgstr "调整音频输出的音量。"
 
 #, csharp-format
 msgid ""
