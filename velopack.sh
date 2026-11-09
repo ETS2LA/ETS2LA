@@ -1,1 +1,1 @@
-dotnet tool exec --yes vpk pack --channel "linux-release" --packId ETS2LA --packVersion 4.0.0 --packDir ./publish --mainExe ETS2LA -i ./Assets/Installer/favicon.ico --packTitle "ETS2LA" --releaseNotes ./ETS2LA/ReleaseNotes.md
+dotnet tool exec --yes vpk pack --channel "linux-release" --packId ETS2LA --packVersion 2029.1.0 --packDir ./publish --mainExe ETS2LA -i ./Assets/Installer/favicon.ico --packTitle "ETS2LA" --releaseNotes ./ETS2LA/ReleaseNotes.md

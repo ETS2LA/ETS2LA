@@ -196,7 +196,22 @@ public class Installation
         foreach (string modFile in modFiles)
         {
             Logger.Info(_("Adding mod: {0}", modFile));
-            tasks.Add(Task.Run(() => DataUtils.UnpackMod(modFile, hashFsReaders)));
+            tasks.Add(Task.Run(() => { 
+                bool success = DataUtils.UnpackMod(modFile, hashFsReaders);
+                if (!success)
+                {
+                    Logger.Warn(_("Failed to unpack mod '{0}'", modFile));
+                    NotificationHandler.Current.SendNotification(new Notification
+                    {
+                        Id = $"ETS2LA.Game.Error.{Guid.NewGuid()}",
+                        Title = _("Error Unpacking Mod"),
+                        Content = _("An error occurred while unpacking mod '{0}'. Parsing will continue, however information contained in this mod won't be available to ETS2LA.", modFile),
+                        IsProgressIndeterminate = false,
+                        Level = NotificationLevel.Danger,
+                        CloseAfter = 10
+                    });
+                }
+            }));
         }
 
         while (!Task.WhenAll(tasks).IsCompleted)

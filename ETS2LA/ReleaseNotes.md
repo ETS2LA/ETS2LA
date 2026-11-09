@@ -3,6 +3,7 @@
 - `feat` **Mefamex** - Variables in `ETS2LA.Overlay` now follow the selected monitor index.
 - `fix` **Mefamex** - Overlay scaling is now based on selected monitor instead of primary monitor.
 - `fix` Fixed crash caused by an already removed Cancellation Token in `ETS2LA.State`. This occasionally caused a crash when holding the increase/decrease keybinds for a long time.
+- `fix` ETS2LA will no longer crash when trying to load an incorrectly formatted mod.
 
 #### Thank you to today's sponsor... You!
 Development is possible thanks to our [sponsors](https://github.com/sponsors/Tumppi066). Please consider supporting if you like the project and have the means to do so.

@@ -265,7 +265,7 @@ public static class DataUtils
     /// <param name="modPath">Path to the mod file.</param>
     /// <param name="additionalReaders">List to add the file system readers to.</param>
     /// <returns></returns>
-    public static bool? UnpackMod(string modPath, List<IFileSystem> additionalReaders)
+    public static bool UnpackMod(string modPath, List<IFileSystem> additionalReaders)
     {
         try {
             var fs = ZipReader.Open(modPath) as IFileSystem;
@@ -276,12 +276,19 @@ public static class DataUtils
             return true;
         }
         catch (InvalidDataException){
-            var fs = HashFsReader.Open(modPath) as IFileSystem;
-            if (fs == null)
+            try
+            {
+                var fs = HashFsReader.Open(modPath) as IFileSystem;
+                if (fs == null)
+                    return false;
+                
+                additionalReaders.Add(fs);
+                return true;
+            } 
+            catch
+            {
                 return false;
-            
-            additionalReaders.Add(fs);
-            return true;
+            }
         }
     }
 
