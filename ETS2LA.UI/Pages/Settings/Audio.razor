@@ -35,7 +35,7 @@
             Max="100"
             Value="@Volume"
             ValueChanged="@((float value) => Volume = value)" />
-    <SectionTitle Title=@(_("Test Audio")) />
+    <SectionTitle Title=@(_("Test Audio")) Class="mt-8" />
     <div class="grid grid-cols-4 gap-3">
         @foreach (var audio in Enum.GetValues<DefaultAudio>())
         {

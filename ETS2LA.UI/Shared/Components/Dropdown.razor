@@ -69,9 +69,33 @@
     {
         if (Multiple)
         {
-            return string.Join(", ", SelectedIndices
-                .Where(index => index >= 0 && index < Options.Count)
-                .Select(index => Options[index]));
+            string text = "";
+            int count = 0;
+            foreach (var index in SelectedIndices)
+            {
+                if (count >= 3)
+                {
+                    text += "...";
+                    break;
+                }
+                if (index >= 0 && index < Options.Count)
+                {
+                    text += Options[index] + ", ";
+                    count++;
+                }
+            }
+
+            if (text.EndsWith(", "))
+            {
+                text = text.Substring(0, text.Length - 2);
+            }
+
+            if (string.IsNullOrEmpty(text))
+            {
+                text = _("No options selected");
+            }
+
+            return text;
         }
 
         if (Options.Count > 0 && SelectedIndex >= 0 && SelectedIndex < Options.Count)

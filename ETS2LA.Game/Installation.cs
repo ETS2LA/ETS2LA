@@ -168,7 +168,7 @@ public class Installation
             return false;
         }
 
-        List<string> modFiles = DataUtils.FindModsFromLogs(logs);
+        List<string> modFiles = DataUtils.FindModsFromLogs(logs).Where(mod => !GameSettings.Current.IgnoredMods.Contains(mod)).ToList();
         List<string> scsFiles = new List<string>();
         GetBaseContent(scsFiles);
 
@@ -208,7 +208,28 @@ public class Installation
                         Content = _("An error occurred while unpacking mod '{0}'. Parsing will continue, however information contained in this mod won't be available to ETS2LA.", modFile),
                         IsProgressIndeterminate = false,
                         Level = NotificationLevel.Danger,
-                        CloseAfter = 10
+                        CloseAfter = 10,
+                        Actions = new List<NotificationAction>
+                        {
+                            new NotificationAction
+                            {
+                                Label = _("Exclude Mod"),
+                                Action = () =>
+                                {
+                                    GameSettings.Current.IgnoredMods.Add(modFile);
+                                    GameSettings.Current.Save();
+                                    NotificationHandler.Current.SendNotification(new Notification
+                                    {
+                                        Id = $"ETS2LA.Game.ExcludeMod.{Guid.NewGuid()}",
+                                        Title = _("Mod Excluded"),
+                                        Content = _("Mod '{0}' has been excluded from future parsing.", modFile),
+                                        IsProgressIndeterminate = false,
+                                        Level = NotificationLevel.Success,
+                                        CloseAfter = 5
+                                    });
+                                }
+                            }
+                        }
                     });
                 }
             }));

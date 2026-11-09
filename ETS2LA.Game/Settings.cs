@@ -7,6 +7,7 @@ public class GameSettings
 {
     public List<string> ManualGamePaths { get; set; } = new();
     public bool EnableModernOutputForPedals { get; set; } = false;
+    public List<string> IgnoredMods { get; set; } = new();
 
     [NonSerialized]
     private static readonly Lazy<GameSettings> _instance = new(() => new GameSettings(loadSettings: true));
@@ -25,6 +26,7 @@ public class GameSettings
             {
                 ManualGamePaths = loadedSettings.ManualGamePaths;
                 EnableModernOutputForPedals = loadedSettings.EnableModernOutputForPedals;
+                IgnoredMods = loadedSettings.IgnoredMods;
             }
         }
     }

@@ -316,6 +316,26 @@ public static class DataUtils
     }
 
     /// <summary>
+    ///  Returns a list of paths to all mods currently loaded in this installation based on the /mod folder.
+    /// </summary>
+    /// <param name="modFolderPath">Path to the /mod folder.</param>
+    /// <returns>List of paths to all loaded mods.</returns>
+    public static List<string> FindModsFromModFolder(string modFolderPath)
+    {
+        List<string> foundMods = new List<string>();
+        if (!Directory.Exists(modFolderPath))
+            return foundMods;
+
+        var modFiles = Directory.GetFiles(modFolderPath, "*.scs", SearchOption.TopDirectoryOnly);
+        foreach (var modFile in modFiles)
+        {
+            if (!foundMods.Contains(modFile))
+                foundMods.Add(modFile);
+        }
+        return foundMods;
+    }
+
+    /// <summary>
     ///  Returns true if based on the logs this installation is currently running.
     /// </summary>
     /// <param name="logs">List of all log messages.</param>

@@ -171,7 +171,7 @@
 }
 
 <div class="flex flex-col max-w-full m-5 ml-8 mr-8 gap-4">
-    <SectionTitle Title="@_("Update Settings")" />
+    <SectionTitle Title=@_("Update Settings") />
     <Dropdown Title="Update Channel"
               Description="Select the update channel you want to listen to. Nightly contains experimental features and will crash more often."
               Options=@availableChannels
@@ -179,7 +179,7 @@
               SelectedIndexChanged="@(index => selectedChannel = availableChannels[index])" />
 
 
-    <SectionTitle Title="@_("Update Information")" />
+    <SectionTitle Title=@_("Update Information") Class="mt-8" />
     @if (latestUpdateInfo != null)
     {
         <div class="flex flex-col gap-2">
@@ -191,7 +191,7 @@
             @(_("Install Update and Restart"))
         </button>
 
-        <SectionTitle Title="@_("Changelog")" />
+        <SectionTitle Title=@_("Changelog") Class="mt-8" />
         <div class="flex flex-col gap-1">
             @if (RenderedContent != null)
             {
