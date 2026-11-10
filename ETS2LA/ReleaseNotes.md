@@ -1,11 +1,7 @@
-### ETS2LA C# 2026.11.5278
-- `feat` You can now exclude mods from the *Data Parsing* settings page.
-- `feat` When a mod fails to load, ETS2LA will no longer crash and instead show a warning notification. You can use a button in this notification to exclude the mod from being loaded in the future.
-- `feat` *Update* page got a design update. You will now see the download size of the update.
-- `feat` **Mefamex** - Variables in *ETS2LA.Overlay* now follow the selected monitor index.
-- `fix` **Mefamex** - Overlay scaling is now based on selected monitor instead of primary monitor.
-- `fix` Fixed crash caused by an already removed Cancellation Token in *ETS2LA.State*. This occasionally caused a crash when holding the increase/decrease keybinds for a long time.
-- `fix` *Dropdown* with *Multiple = true* will now truncate excessive selected items.
+### ETS2LA C# 2026.11.5287
+- `feat` Added support for Backups. This is an upcoming subscription feature. People who've previous supported us (have the `Supporter` role) will have access to this feature already.
+- `fix` *Lun011666* - Added region blocking to the chatbot to comply with 
+- `translations` Updated translations for Hungarian, Slovak and Chinese (Traditional).
 
 #### Thank you to today's sponsor... You!
 Development is possible thanks to our [sponsors](https://github.com/sponsors/Tumppi066). Please consider supporting if you like the project and have the means to do so.
