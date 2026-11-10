@@ -12,6 +12,7 @@ using ETS2LA.Settings.Global;
 using ETS2LA.Telemetry;
 using ETS2LA.Networking;
 using ETS2LA.UI;
+using ETS2LA.Settings;
 using static ETS2LA.Translations.T;
 
 using OpenTelemetry;
@@ -51,6 +52,7 @@ internal static class Program
                              ?? System.Reflection.Assembly.GetEntryAssembly()?.GetName().Version?.ToString(3) 
                              ?? "unknown"; 
 
+        new SettingsHandler().ApplyCloudUpdate();
         Utils.InitializeTranslations();
 
         // This is for unobserved exceptions, i.e. plugins and other Task.Run() calls etc..
@@ -136,6 +138,7 @@ internal static class Program
         OverlayHandler.Current.Shutdown();
         GameTelemetry.Current.Shutdown();
         ApplicationState.Current.Shutdown();
+        NetworkingClient.Current.Shutdown();
         // TutorialHandler.Current.Shutdown();
 
         LogFileWriter.Current.Save();

@@ -1,0 +1,40 @@
+@using ETS2LA.Networking
+@using ETS2LA.Networking.Users
+@using ETS2LA.Networking.Settings
+
+@code {
+	[Parameter]
+	public bool? Subscribed { get; set; }
+
+    [Parameter]
+    public string Class { get; set; } = "flex flex-col w-full gap-3";
+
+	[Parameter]
+	public RenderFragment? ChildContent { get; set; }
+
+	private bool HasAccess
+	{
+		get
+		{
+			User? currentUser = NetworkingSettings.Current.CurrentUser;
+			return currentUser != null && !string.IsNullOrEmpty(currentUser.JwtToken) && (
+				currentUser.Role != UserRole.User || currentUser.HasActiveSubscription()
+			);
+		}
+	}
+
+	private bool IsSubscribed => Subscribed ?? HasAccess;
+}
+
+@if (!IsSubscribed)
+{
+    <div class="flex flex-col gap-2 p-3 bg-bg-dark rounded-md border border-border mb-8">
+        <p class="text-sm text-text-light">
+            @(_("You do not have access to these features. Please log in with an account that has an active subscription. You can manage your subscription through the account settings page."))
+        </p>
+    </div>
+}
+
+<div class="@(IsSubscribed ? @Class : @Class + " opacity-40 pointer-events-none")">
+    @ChildContent
+</div>

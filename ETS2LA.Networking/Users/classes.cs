@@ -26,6 +26,14 @@ public class User
     public UserRole Role { get; set; } = UserRole.User;
     public Region Region { get; set; } = Region.Global;
     public PaddleCustomer? Paddle { get; set; } = null;
+
+    public bool HasActiveSubscription()
+    {
+        if (Paddle == null || Paddle.Subscriptions == null)
+            return false;
+
+        return Paddle.Subscriptions.Any(sub => sub.SubscriptionStatus == SubscriptionStatus.Active);
+    }
 }
 
 // These classes are for paddle based subscriptions. If you're reading this before

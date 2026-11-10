@@ -348,12 +348,14 @@
               Description=@(_("The monitor ETS2LA's overlay will be displayed on. If you have multiple monitors, you can select which one to use here. Please select the monitor the game is running on, and ensure the game is in fullscreen."))
               Options="@GetMonitorNames()"
               SelectedIndex="@MonitorIndex"
+              Class="@(!DisableOverlay ? "" : "opacity-30 pointer-events-none")"
               SelectedIndexChanged="(int index) => MonitorIndex = index" />
     <Slider Title=@(_("Overlay Font Size"))
             Suffix="px"
             Description=@(_("The font size of the overlay. This can be used to scale the overlay to your monitor's DPI settings."))
             Min="10"
             Max="30"
+            Class="@(!DisableOverlay ? "" : "opacity-30 pointer-events-none")"
             Value="@OverlaySettingsHandler.Current.GetSettings().BaseFontSize"
             ValueChanged="@((float value) => HandleFontSizeChanged(value))" />
     @if (FontSizeHasChanged)

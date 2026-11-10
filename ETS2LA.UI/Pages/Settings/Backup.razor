@@ -1,0 +1,50 @@
+@page "/settings/backup"
+@layout Shared.Layouts.SettingsLayout
+@using ETS2LA.UI.Shared.Components
+@using ETS2LA.Networking
+@using ETS2LA.Networking.Settings
+
+@code {
+    bool IsBackupEnabled
+    {
+        get => NetworkingSettings.Current.AutomaticallySaveSettingsToCloud;
+        set
+        {
+            NetworkingSettings.Current.AutomaticallySaveSettingsToCloud = value;
+            NetworkingSettings.Current.Save();
+        }
+    }
+
+    void BackupSettings()
+    {
+        NetworkingClient.Current.CloudSettingsClient.SaveSettingsToCloud();
+    }
+
+    void RestoreSettings()
+    {
+        NetworkingClient.Current.CloudSettingsClient.LoadSettingsFromCloud();
+        UserInterfaceUtils.AskForRestart(
+            _("Restart Required"),
+            _("Restoring settings from the cloud requires a restart of ETS2LA to take effect. Restart now?")
+        );
+    }
+}
+
+<div class="flex flex-col w-full p-5 px-8 gap-3">
+    <SubscriptionGate>
+        <SectionTitle Title=@(_("Backup Settings")) />
+        <Switch Title=@(_("Backup on Exit"))
+                Description=@(_("When enabled, your settings will be automatically saved to the cloud when you exit ETS2LA."))
+                Value=@IsBackupEnabled
+                ValueChanged=@(value => IsBackupEnabled = value) />
+        <SectionTitle Title=@(_("Manual Backup and Restore")) Class="mt-8" />
+        <div class="flex flex-row gap-3">
+            <button class="button w-60!" @onclick="RestoreSettings">
+                @_("Restore from Cloud")
+            </button>
+            <button class="button w-60!" @onclick="BackupSettings">
+                @_("Backup Now")
+            </button>
+        </div>
+    </SubscriptionGate>
+</div>

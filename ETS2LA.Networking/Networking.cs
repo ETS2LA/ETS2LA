@@ -1,4 +1,5 @@
-﻿using ETS2LA.Networking.Settings;
+﻿using ETS2LA.Networking.CloudSettings;
+using ETS2LA.Networking.Settings;
 using ETS2LA.Networking.Plugins;
 using ETS2LA.Networking.Updates;
 using ETS2LA.Networking.News;
@@ -20,6 +21,7 @@ public class NetworkingClient
     public PluginApiClient Plugins { get; } = new();
     public NewsApiClient News { get; } = new();
     public UserApiClient UserClient { get; } = new();
+    public CloudSettingsClient CloudSettingsClient { get; } = new();
 
     public bool TokenExpired = false;
 
@@ -79,5 +81,13 @@ public class NetworkingClient
                 TokenExpired = true;
             }
         });
+    }
+
+    public void Shutdown()
+    {
+        if (NetworkingSettings.Current.AutomaticallySaveSettingsToCloud)
+        {
+            CloudSettingsClient.SaveSettingsToCloud(waitForCompletion: true);
+        }
     }
 }

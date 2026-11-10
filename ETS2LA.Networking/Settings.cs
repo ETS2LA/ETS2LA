@@ -14,6 +14,7 @@ public class NetworkingSettings
     
     public User CurrentUser { get; set; } = new User();
     public ApiServer? CurrentApiServer { get; set; } = null;
+    public bool AutomaticallySaveSettingsToCloud { get; set; } = false;
 
     /// ---
     [NonSerialized]
@@ -29,6 +30,7 @@ public class NetworkingSettings
             {
                 CurrentUser = loadedSettings.CurrentUser ?? new User();
                 CurrentApiServer = loadedSettings.CurrentApiServer;
+                AutomaticallySaveSettingsToCloud = loadedSettings.AutomaticallySaveSettingsToCloud;
             }
 
             if (CurrentUser.Id == Guid.Empty)
@@ -52,5 +54,6 @@ public class NetworkingSettings
     {
         CurrentUser = newSettings.CurrentUser;
         CurrentApiServer = newSettings.CurrentApiServer;
+        AutomaticallySaveSettingsToCloud = newSettings.AutomaticallySaveSettingsToCloud;
     }
 }
