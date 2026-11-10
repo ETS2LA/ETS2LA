@@ -1,6 +1,8 @@
 @page "/settings/data"
 @layout Shared.Layouts.SettingsLayout
 @using ETS2LA.Game.Data;
+@using ETS2LA.Game;
+@using ETS2LA.Game.Utils;
 @using ETS2LA.UI.Shared.Components;
 @using System.Runtime.InteropServices;
 
@@ -36,7 +38,7 @@
     }
 
     private bool ForceMapLoad {
-        
+
         get => DataSettings.Current.ForceMapLoad;
         set {
             var settings = DataSettings.Current;
@@ -51,6 +53,31 @@
 
     private bool ShowRamWarningExtreme {
         get => GC.GetGCMemoryInfo().TotalAvailableMemoryBytes / (1024f * 1024f * 1024f) < 19;
+    }
+
+    private List<string> ExcludedMods {
+        get => GameSettings.Current.IgnoredMods;
+        set {
+            GameSettings.Current.IgnoredMods = value;
+            GameSettings.Current.Save();
+        }
+    }
+
+    private List<string> AvailableMods
+    {
+        get
+        {
+            var mods = new List<string>();
+            foreach (var install in GameHandler.Current.Installations)
+            {
+                var installMods = DataUtils.FindModsFromModFolder(install.DocumentsPath + "/mod");
+                var logMods = DataUtils.FindModsFromLogs(install.GetLogFileContents());
+                mods.AddRange(installMods);
+                mods.AddRange(logMods);
+            }
+            mods = mods.Distinct().ToList();
+            return mods;
+        }
     }
 }
 
@@ -131,4 +158,15 @@
                 settings.CurveQuality = (CurveQuality)index;
                 DataSettings.Current.Save();
              })" />
+
+    <SectionTitle Class="mt-8" Title=@(_("Excluded Mods")) />
+    <Dropdown Title=@(_("Excluded Mods"))
+              Description=@(_("Select mods that you want to exclude from the data. This can be useful if you have a mod that is causing issues with the data."))
+              Options="@AvailableMods.Select(mod => mod.Split('/').Last()).ToList()"
+              Multiple=true
+              SelectedIndices="@ExcludedMods.Select(mod => AvailableMods.IndexOf(mod)).Where(index => index >= 0).ToList()"
+              SelectedIndicesChanged="@(indices => {
+                ExcludedMods = indices.Select(index => AvailableMods[index]).ToList();
+              })" />
+
 </div>

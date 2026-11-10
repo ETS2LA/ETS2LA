@@ -3,10 +3,11 @@
 
 @inject IJSRuntime JS
 
-@using ETS2LA.UI.Shared.Components
-@using ETS2LA.State;
-@using ETS2LA.Overlay;
+@using System.Runtime.InteropServices
 @using ETS2LA.Logging;
+@using ETS2LA.Overlay;
+@using ETS2LA.State;
+@using ETS2LA.UI.Shared.Components
 @using static ETS2LA.Translations.Languages;
 
 @code {
@@ -17,6 +18,8 @@
         { Units.Scientific, _("Scientific") },
     };
     List<String> displayLanguageOptions = SupportedLanguages.Select(l => l.NativeName + $" - {l.EnglishName}").ToList();
+
+    private bool IsLinux => RuntimeInformation.IsOSPlatform(OSPlatform.Linux);
 
     protected override void OnInitialized()
     {
@@ -29,6 +32,41 @@
                 await InvokeAsync(StateHasChanged);
             }
         }, TaskCreationOptions.LongRunning);
+    }
+
+    private List<string> GetMonitorNames()
+    {
+        try
+        {    
+            List<string> strings = new List<string>();
+            int i = 0;
+            foreach (var mode in OverlayHandler.Current.MonitorModes)
+            {
+                strings.Add($"Monitor {i}: {mode.Width}x{mode.Height} @ {mode.RefreshRate}Hz");
+                i++;
+            }
+            return strings;
+        }
+        catch
+        {
+            return new List<string> { _("Error retrieving monitor names") };
+        }
+    }
+
+    private int MonitorIndex
+    {
+        get => OverlaySettingsHandler.Current.GetSettings().MonitorIndex;
+        set
+        {
+            var settings = OverlaySettingsHandler.Current.GetSettings();
+            settings.MonitorIndex = value;
+            OverlaySettingsHandler.Current.Save();
+
+            UserInterfaceUtils.AskForRestart(
+                "Restart Required",
+                "Changing this option requires a restart of ETS2LA to take effect. Restart now?"
+            );
+        }
     }
 
     private int CurrentARFramerate
@@ -44,6 +82,23 @@
     private int CurrentLanguage
     {
         get => SupportedLanguages.FindIndex(l => l.Code == StateSettingsHandler.Current.GetSettings().DisplayLanguage?.Code);
+    }
+
+    private bool AllowUIWayland
+    {
+        get => WindowSettings.Current.AllowWayland;
+        set
+        {
+            if (value != AllowUIWayland)
+            {
+                WindowSettings.Current.AllowWayland = value;
+                WindowSettings.Current.Save();
+                UserInterfaceUtils.AskForRestart(
+                    _("Restart Required"),
+                    _("Changing this option requires a restart of ETS2LA to take effect. Restart now?")
+                );
+            }
+        }
     }
 
     private bool DisableOverlay
@@ -79,6 +134,22 @@
         {
             var settings = OverlaySettingsHandler.Current.GetSettings();
             settings.SupportMultipleViewports = value;
+            OverlaySettingsHandler.Current.Save();
+
+            UserInterfaceUtils.AskForRestart(
+                "Restart Required",
+                "Changing this option requires a restart of ETS2LA to take effect. Restart now?"
+            );
+        }
+    }
+
+    private bool AllowOverlayWayland
+    {
+        get => OverlaySettingsHandler.Current.GetSettings().AllowWayland;
+        set 
+        {
+            var settings = OverlaySettingsHandler.Current.GetSettings();
+            settings.AllowWayland = value;
             OverlaySettingsHandler.Current.Save();
 
             UserInterfaceUtils.AskForRestart(
@@ -252,12 +323,32 @@
             Description=@(_("Keep the ETS2LA window on top of other windows. If you want to use the visualization on a single monitor setup, this is recommended."))
             Value="@StayOnTop"
             ValueChanged="@((bool value) => StayOnTop = value)" />
+    @if (IsLinux)
+    {
+        <Switch Title=@(_("Allow Wayland"))
+                Description=@(_("Allow ETS2LA's window to run on Wayland. Wayland might cause compatibility issues, however you might want to try to enable this option."))
+                Value="@AllowUIWayland"
+                ValueChanged="@((bool value) => AllowUIWayland = value)" />
+    }
 
     <SectionTitle Class="mt-8" Title=@(_("Overlay")) />
     <Switch Title=@(_("Disable Overlay"))
             Description=@(_("Disables the overlay entirely. This will fix the black screen issue at the cost of breaking all features that rely on the overlay, including AR and the HUD."))
             Value="@DisableOverlay"
             ValueChanged="@((bool value) => DisableOverlay = value)" />
+    @if (IsLinux)
+    {
+        <Switch Title=@(_("Allow Wayland"))
+                Description=@(_("Allow ETS2LA's overlay to run on Wayland. Wayland might cause compatibility issues, however you might want to try to enable this option."))
+                Value="@AllowOverlayWayland"
+                Class="@(!DisableOverlay ? "" : "opacity-30 pointer-events-none")"
+                ValueChanged="@((bool value) => AllowOverlayWayland = value)" />
+    }
+    <Dropdown Title=@(_("Monitor"))
+              Description=@(_("The monitor ETS2LA's overlay will be displayed on. If you have multiple monitors, you can select which one to use here. Please select the monitor the game is running on, and ensure the game is in fullscreen."))
+              Options="@GetMonitorNames()"
+              SelectedIndex="@MonitorIndex"
+              SelectedIndexChanged="(int index) => MonitorIndex = index" />
     <Slider Title=@(_("Overlay Font Size"))
             Suffix="px"
             Description=@(_("The font size of the overlay. This can be used to scale the overlay to your monitor's DPI settings."))

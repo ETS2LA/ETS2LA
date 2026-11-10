@@ -168,7 +168,7 @@ public class Installation
             return false;
         }
 
-        List<string> modFiles = DataUtils.FindModsFromLogs(logs);
+        List<string> modFiles = DataUtils.FindModsFromLogs(logs).Where(mod => !GameSettings.Current.IgnoredMods.Contains(mod)).ToList();
         List<string> scsFiles = new List<string>();
         GetBaseContent(scsFiles);
 
@@ -196,7 +196,43 @@ public class Installation
         foreach (string modFile in modFiles)
         {
             Logger.Info(_("Adding mod: {0}", modFile));
-            tasks.Add(Task.Run(() => DataUtils.UnpackMod(modFile, hashFsReaders)));
+            tasks.Add(Task.Run(() => { 
+                bool success = DataUtils.UnpackMod(modFile, hashFsReaders);
+                if (!success)
+                {
+                    Logger.Warn(_("Failed to unpack mod '{0}'", modFile));
+                    NotificationHandler.Current.SendNotification(new Notification
+                    {
+                        Id = $"ETS2LA.Game.Error.{Guid.NewGuid()}",
+                        Title = _("Error Unpacking Mod"),
+                        Content = _("An error occurred while unpacking mod '{0}'. Parsing will continue, however information contained in this mod won't be available to ETS2LA.", modFile),
+                        IsProgressIndeterminate = false,
+                        Level = NotificationLevel.Danger,
+                        CloseAfter = 10,
+                        Actions = new List<NotificationAction>
+                        {
+                            new NotificationAction
+                            {
+                                Label = _("Exclude Mod"),
+                                Action = () =>
+                                {
+                                    GameSettings.Current.IgnoredMods.Add(modFile);
+                                    GameSettings.Current.Save();
+                                    NotificationHandler.Current.SendNotification(new Notification
+                                    {
+                                        Id = $"ETS2LA.Game.ExcludeMod.{Guid.NewGuid()}",
+                                        Title = _("Mod Excluded"),
+                                        Content = _("Mod '{0}' has been excluded from future parsing.", modFile),
+                                        IsProgressIndeterminate = false,
+                                        Level = NotificationLevel.Success,
+                                        CloseAfter = 5
+                                    });
+                                }
+                            }
+                        }
+                    });
+                }
+            }));
         }
 
         while (!Task.WhenAll(tasks).IsCompleted)
@@ -390,6 +426,12 @@ public class Installation
         try
         {
             Directory.CreateDirectory(SDKDestinationPath);
+            foreach (string oldFile in Directory.GetFiles(SDKDestinationPath, "ets2la_1.*"))
+            {
+                File.Delete(oldFile);
+                Logger.Info(_("Deleted old SDK file '{0}'", oldFile));
+            }
+
             foreach (string newPath in Directory.GetFiles(SDKSourcePath, "*.*", SearchOption.AllDirectories))
             {
                 File.Copy(newPath, newPath.Replace(SDKSourcePath, SDKDestinationPath), true);

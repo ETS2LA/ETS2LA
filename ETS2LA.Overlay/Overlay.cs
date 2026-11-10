@@ -83,9 +83,23 @@ public class OverlayHandler
     public float AverageFrameTime => frameTimes.Count > 0 ? frameTimes.Average() : 0f;
     public float AverageRemainingTime => remainingMs.Count > 0 ? (float)remainingMs.Average() : 0f;
 
-    public float OverlayWidth => GLFW.GetVideoMode(GLFW.GetPrimaryMonitor()).Width;
-    public float OverlayHeight => GLFW.GetVideoMode(GLFW.GetPrimaryMonitor()).Height;
-    public float OverlayMonitorRefreshRate => GLFW.GetVideoMode(GLFW.GetPrimaryMonitor()).RefreshRate;
+    public List<Hexa.NET.GLFW.GLFWmonitorPtr>? Monitors;
+    public List<GLFWvidmodePtr>? MonitorModes;
+
+    private int SelectedMonitorIndex =>
+        (Monitors != null && Monitors.Count > 0 && overlaySettings.MonitorIndex >= 0 && overlaySettings.MonitorIndex < Monitors.Count)
+            ? overlaySettings.MonitorIndex
+            : 0;
+
+    public float OverlayWidth => (MonitorModes != null && SelectedMonitorIndex < MonitorModes.Count)
+        ? MonitorModes[SelectedMonitorIndex].Width
+        : GLFW.GetVideoMode(GLFW.GetPrimaryMonitor()).Width;
+    public float OverlayHeight => (MonitorModes != null && SelectedMonitorIndex < MonitorModes.Count)
+        ? MonitorModes[SelectedMonitorIndex].Height
+        : GLFW.GetVideoMode(GLFW.GetPrimaryMonitor()).Height;
+    public float OverlayMonitorRefreshRate => (MonitorModes != null && SelectedMonitorIndex < MonitorModes.Count)
+        ? MonitorModes[SelectedMonitorIndex].RefreshRate
+        : GLFW.GetVideoMode(GLFW.GetPrimaryMonitor()).RefreshRate;
 
     private string glslVersion = "#version 150";
     private GLFWwindowPtr glfwWindow;
@@ -487,7 +501,9 @@ public class OverlayHandler
         style.Colors[(int)ImGuiCol.TitleBgActive] = new Vector4(0.1f, 0.1f, 0.1f, 1f);
 
         // And then we scale by the monitor DPI
-        var mon = GLFW.GetPrimaryMonitor();
+        var mon = (Monitors != null && SelectedMonitorIndex < Monitors.Count)
+            ? Monitors[SelectedMonitorIndex]
+            : GLFW.GetPrimaryMonitor();
         float mainScale = ImGuiImplGLFW.GetContentScaleForMonitor(Unsafe.BitCast<Hexa.NET.GLFW.GLFWmonitorPtr, Hexa.NET.ImGui.Backends.GLFW.GLFWmonitorPtr>(mon));
 
         style.ScaleAllSizes(mainScale);
@@ -590,14 +606,16 @@ public class OverlayHandler
             Logger.Info(_("Initializing GLFW Version: {0}", Utils.DecodeStringUTF8(GLFW.GetVersionString())));
         }
 
-        // This code sets the platform to X11 instead of wayland. This only needs to be
-        // done inside vscode for whatever reason. https://github.com/opentk/opentk/issues/1823
-        string? sessionType = Environment.GetEnvironmentVariable("XDG_SESSION_TYPE");
-        string? useWayland = Environment.GetEnvironmentVariable("GLFW_USE_WAYLAND");
-        if (sessionType == "wayland" && useWayland == "0")
-        {
-            GLFW.InitHint(GLFW.GLFW_PLATFORM, GLFW.GLFW_PLATFORM_X11);
-        }
+        #if LINUX
+            if (overlaySettings.AllowWayland)
+            {
+                GLFW.InitHint(GLFW.GLFW_PLATFORM, GLFW.GLFW_PLATFORM_WAYLAND);
+            }
+            else 
+            {
+                GLFW.InitHint(GLFW.GLFW_PLATFORM, GLFW.GLFW_PLATFORM_X11);
+            }
+        #endif
 
         Logger.Info(_("Initializing GLFW..."));
         GLFW.Init();
@@ -607,6 +625,8 @@ public class OverlayHandler
 
         # if LINUX
             GLFW.WindowHint(GLFW.GLFW_CONTEXT_CREATION_API, GLFW.GLFW_EGL_CONTEXT_API);
+            GLFW.WindowHintString(GLFW.GLFW_X11_INSTANCE_NAME, "ETS2LA Overlay");
+            GLFW.WindowHintString(GLFW.GLFW_WAYLAND_APP_ID, "ETS2LA Overlay");
         # endif
 
         GLFW.WindowHint(GLFW.GLFW_TRANSPARENT_FRAMEBUFFER, 1);  // Transparent
@@ -614,16 +634,34 @@ public class OverlayHandler
         GLFW.WindowHint(GLFW.GLFW_FLOATING, 1);                 // Always on top
         GLFW.WindowHint(GLFW.GLFW_FOCUSED, 0);                  // Start unfocused
         GLFW.WindowHint(GLFW.GLFW_FOCUS_ON_SHOW, 0);            // Start unfocused
-        
-        var mon = GLFW.GetPrimaryMonitor();
-        int width, height;
-        width = GLFW.GetVideoMode(mon).Width;
-        height = GLFW.GetVideoMode(mon).Height;
+
+        unsafe
+        {
+            int count = 0;
+            var mons = GLFW.GetMonitors(&count);
+            for (int i = 0; i < count; i++)
+            {
+                if (mons[i] == null) { break; }
+                Logger.Info(_("Monitor {0}: {1}", i, Utils.DecodeStringUTF8(GLFW.GetMonitorName(mons[i]))));
+                Monitors ??= new List<Hexa.NET.GLFW.GLFWmonitorPtr>();
+                Monitors.Add(mons[i]);
+                MonitorModes ??= new List<GLFWvidmodePtr>();
+                MonitorModes.Add(GLFW.GetVideoMode(mons[i]));
+            }
+            if (count == 0)
+            {
+                Logger.Error(_("No monitors detected, overlay cannot be initialized."));
+                return false;
+            }
+        }
+        int monitorIndex = SelectedMonitorIndex;
+        var mon = Monitors![monitorIndex];
+        var mode = MonitorModes![monitorIndex];
 
         // NOTE: Width and height set to screen-2
         // If they are set to the screen size, windows does some optimizations that cause the window
         // to go full black when focused. Setting these to -2 seems to prevent that.
-        glfwWindow = GLFW.CreateWindow(width - 2, height - 2, "ETS2LA Overlay", null, null);
+        glfwWindow = GLFW.CreateWindow(mode.Width - 2, mode.Height - 2, "ETS2LA Overlay", null, null);
         if (glfwWindow.IsNull)
         {
             Logger.Error(_("Failed to create GLFW window"));
@@ -631,9 +669,12 @@ public class OverlayHandler
             return false;
         }
 
-        # if WINDOWS
-        GLFW.SetWindowPos(glfwWindow, 1, 1);
-        # endif
+        unsafe
+        {
+            int monX, monY;
+            GLFW.GetMonitorPos(mon, &monX, &monY);
+            GLFW.SetWindowPos(glfwWindow, monX + 1, monY + 1);
+        }
 
         return true;
     }

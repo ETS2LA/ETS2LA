@@ -86,25 +86,25 @@ public class AudioHandler
     /// <exception cref="ArgumentOutOfRangeException"></exception>
     public void Play(DefaultAudio audio, int loopCount = 1, Func<bool>? loopCondition = null, bool overrideCurrent = false)
     {
-        string filename;
+        string filename = AppContext.BaseDirectory;
         switch (audio)
         {
             case DefaultAudio.Engage:
-                filename = "Assets/Sounds/engage.wav"; break;
+                filename += "Assets/Sounds/engage.wav"; break;
             case DefaultAudio.Disengage:
-                filename = "Assets/Sounds/disengage.wav"; break;
+                filename += "Assets/Sounds/disengage.wav"; break;
             case DefaultAudio.Refuse:
-                filename = "Assets/Sounds/refuse.wav"; break;
+                filename += "Assets/Sounds/refuse.wav"; break;
             case DefaultAudio.PreAlert:
-                filename = "Assets/Sounds/pre_alert.wav"; break;
+                filename += "Assets/Sounds/pre_alert.wav"; break;
             case DefaultAudio.Warning:
-                filename = "Assets/Sounds/warning.wav"; break;
+                filename += "Assets/Sounds/warning.wav"; break;
             case DefaultAudio.Critical:
-                filename = "Assets/Sounds/critical.wav"; break;
+                filename += "Assets/Sounds/critical.wav"; break;
             case DefaultAudio.SoftWarning:
-                filename = "Assets/Sounds/soft_warning.wav"; break;
+                filename += "Assets/Sounds/soft_warning.wav"; break;
             case DefaultAudio.SoftCritical:
-                filename = "Assets/Sounds/soft_critical.wav"; break;
+                filename += "Assets/Sounds/soft_critical.wav"; break;
             default:
                 throw new ArgumentOutOfRangeException(nameof(audio), audio, null);
         }

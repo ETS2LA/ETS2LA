@@ -23,7 +23,10 @@ public class UserInterface
     {
         var iconPath = "wwwroot/favicon.ico";
         #if LINUX
-            SetNativeEnv("GDK_BACKEND", "x11", 1);
+            if (!WindowSettings.Current.AllowWayland)
+            {
+                SetNativeEnv("GDK_BACKEND", "x11", 1);
+            }
             SetNativeEnv("WEBKIT_DISABLE_DMABUF_RENDERER", "1", 1);
             SetNativeEnv("WEBKIT_FORCE_COMPOSITING_MODE", "1", 1);
 
