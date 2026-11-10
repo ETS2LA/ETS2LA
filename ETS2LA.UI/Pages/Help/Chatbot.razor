@@ -23,7 +23,7 @@
     private User? CurrentUser => NetworkingSettings.Current.CurrentUser;
     string currentVersion = System.Reflection.Assembly.GetEntryAssembly()?.GetName().Version?.ToString(3) ?? "unknown";
 
-    // Provided by lun011666, who also provides the ETS2LA discord server
+    // Provided by Lun011666, who also provides the ETS2LA discord server
     // support bot. This is a free service, and we are grateful for it. 
     // Please do not abuse it.
     private const string Endpoint = "https://mandarinbot-api.lun011666.com/ask";
@@ -41,6 +41,8 @@
     private string Draft = string.Empty;
     private string Status = string.Empty;
     private string Error = string.Empty;
+    private bool RegionBlocked;
+    private void OpenRegions() { if (RegionBlocked) UserInterfaceUtils.OpenUrl("https://mandarinbot.lun011666.com/regions"); }
     private static bool IsSending;
 
     private ElementReference inputElement;
@@ -111,6 +113,7 @@
         if (diagnostics.Length == 0)
             Draft = string.Empty;
         Error = string.Empty;
+        RegionBlocked = false;
         Status = _("Thinking...");
 
         IsSending = true;
@@ -146,6 +149,8 @@
             response.EnsureSuccessStatusCode();
 
             await ReadEvents(response, assistant, requestCancellation.Token);
+            if (RegionBlocked)
+                throw new InvalidOperationException(_("This service is not available in your region. <span class=\"hover:underline hover:cursor-pointer\">Click here to see supported regions.</span>"));
             Status = string.Empty;
         }
         catch (OperationCanceledException) when (requestCancellation?.IsCancellationRequested == true)
@@ -214,6 +219,9 @@
             }
             else if (string.Equals(type, "done", StringComparison.OrdinalIgnoreCase))
             {
+                RegionBlocked = string.Equals(GetString(root, "outcome"), "region_blocked", StringComparison.OrdinalIgnoreCase);
+                if (RegionBlocked)
+                    return;
                 assistant.Text = text;
                 assistant.RequestLog = root.TryGetProperty("request_log", out var requestLog) && requestLog.ValueKind == JsonValueKind.True;
                 Status = string.Empty;
@@ -393,7 +401,7 @@
             }
             @if (!string.IsNullOrEmpty(Error))
             {
-                <p class="text-warning">@((MarkupString)Error)</p>
+                <p class="text-warning" @onclick="OpenRegions">@((MarkupString)Error)</p>
             }
         </div>
 
