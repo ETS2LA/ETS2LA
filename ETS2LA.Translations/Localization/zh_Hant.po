@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
 "POT-Creation-Date: 2026-11-10 15:01:24+0200\n"
-"PO-Revision-Date: 2026-11-09 19:43+0000\n"
+"PO-Revision-Date: 2026-11-11 10:23+0000\n"
 "Last-Translator: Lun <lun@ets2la.com>\n"
 "Language-Team: Chinese (Traditional Han script) <http://weblate.ets2la.com/"
 "projects/ets2la/ets2la/zh_Hant/>\n"
@@ -95,7 +95,7 @@ msgid "Register"
 msgstr "註冊"
 
 msgid "Backup Now"
-msgstr ""
+msgstr "立即備份"
 
 msgid "kg"
 msgstr "kg"
@@ -855,7 +855,7 @@ msgstr "輔助功能已停用"
 
 msgid ""
 "Cannot save settings to cloud: User is not logged in or JWT token is missing."
-msgstr ""
+msgstr "無法將設定儲存至雲端：使用者尚未登入或缺少 JWT 權杖。"
 
 msgid ""
 "Too many requests. You have sent too many requests in a given amount of time."
@@ -1221,6 +1221,8 @@ msgid ""
 "This service is not available in your region. <span class=\"hover:underline "
 "hover:cursor-pointer\">Click here to see supported regions.</span>"
 msgstr ""
+"此服務目前不適用於你所在的地區。<span class="
+"\"hover:underline hover:cursor-pointer\">點擊此處查看支援的地區。</span>"
 
 #, csharp-format
 msgid "Error while applying update: {0}"
@@ -1443,7 +1445,7 @@ msgstr ""
 
 #, csharp-format
 msgid "Failed to save settings to cloud: {0}"
-msgstr ""
+msgstr "將設定儲存至雲端失敗：{0}"
 
 msgid "Binding thread started with no control to bind."
 msgstr "綁定執行緒已啟動，但沒有指定要綁定的控制項。"
