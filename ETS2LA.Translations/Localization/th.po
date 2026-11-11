@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-11-10 15:01:24+0200\n"
+"POT-Creation-Date: 2026-11-11 15:03:10+0200\n"
 "PO-Revision-Date: 2026-10-20 09:37+0000\n"
 "Last-Translator: cooper153826 <cooper153826@ets2la.com>\n"
 "Language-Team: Thai <http://weblate.ets2la.com/projects/ets2la/ets2la/th/>\n"
@@ -241,14 +241,14 @@ msgstr "ขนาดขั้นในการปรับความเร็
 msgid "Please enter a username."
 msgstr "กรุณากรอก Username"
 
+#, csharp-format
+msgid "Your username must be at least {0} characters long."
+msgstr "Username ต้องมีความยาวอย่างน้อย {0} ตัวอักษร"
+
 msgid ""
 "Allow ETS2LA's overlay to run on Wayland. Wayland might cause compatibility "
 "issues, however you might want to try to enable this option."
 msgstr ""
-
-#, csharp-format
-msgid "Your username must be at least {0} characters long."
-msgstr "Username ต้องมีความยาวอย่างน้อย {0} ตัวอักษร"
 
 msgid "Press anywhere outside the dialog to close it."
 msgstr "กดบริเวณนอกกล่องโต้ตอบเพื่อปิด"
@@ -329,12 +329,12 @@ msgstr "แสดง Log น้อยลง"
 msgid "Your login token is invalid or expired."
 msgstr "Login Token ของคุณไม่ถูกต้องหรือหมดอายุแล้ว"
 
-msgid "I won't leave ETS2LA unattended"
-msgstr "ฉันจะไม่ปล่อยให้ ETS2LA ทำงานโดยไม่มีคนดูแล"
-
 #, csharp-format
 msgid "Error while downloading update: {0}"
 msgstr "ดาวน์โหลดอัปเดตไม่สำเร็จ: {0}"
+
+msgid "I won't leave ETS2LA unattended"
+msgstr "ฉันจะไม่ปล่อยให้ ETS2LA ทำงานโดยไม่มีคนดูแล"
 
 msgid "Keyboard"
 msgstr "คีย์บอร์ด"
@@ -827,11 +827,11 @@ msgstr ""
 "เว็บไซต์ภายนอกบางแห่งอาจต้องการเข้าถึงบัญชีของคุณ<br/>คุณสามารถกดปุ่มด้านล่างเพื่อแสดง JWT "
 "Token ของคุณได้"
 
-msgid "Collision Avoidance"
-msgstr "ระบบหลีกเลี่ยงการชน"
-
 msgid "If you're streaming or recording, now's the time to hide this window."
 msgstr "หากคุณกำลังไลฟ์สตรีมหรือบันทึกหน้าจอ ควรซ่อนหน้าต่างนี้ตอนนี้"
+
+msgid "Collision Avoidance"
+msgstr "ระบบหลีกเลี่ยงการชน"
 
 #, csharp-format
 msgid "Monitor {0}: {1}"
@@ -1024,12 +1024,12 @@ msgstr "เข้าสู่ระบบ"
 msgid "SDK Installed"
 msgstr "ติดตั้ง SDK แล้ว"
 
-msgid "Current Speed"
-msgstr "ความเร็วตอนนี้"
-
 #, csharp-format
 msgid "Bound control {0} ({1}) to device {2} and control {3}"
 msgstr "กำหนดการควบคุม {0} ({1}) ให้กับอุปกรณ์ {2} และปุ่ม {3}"
+
+msgid "Current Speed"
+msgstr "ความเร็วตอนนี้"
 
 msgid "miles per hour"
 msgstr "ไมล์ต่อชั่วโมง"
@@ -1292,14 +1292,14 @@ msgstr ""
 msgid "Failed to install latest version of plugin with ID {0}."
 msgstr "ติดตั้งปลั๊กอิน ID {0} เวอร์ชันล่าสุดไม่สำเร็จ"
 
-msgid "I understand, now let me in!"
-msgstr "ฉันเข้าใจ, ตอนนี้ให้ฉันเข้า!"
-
 #, csharp-format
 msgid ""
 "If you think this is a bug, please report it in the {0}Discord Server{1} or "
 "on {2}GitHub{3}."
 msgstr "หากคิดว่าเป็นบั๊ก โปรดรายงานใน {0}Discord Server{1} หรือบน {2}GitHub{3}"
+
+msgid "I understand, now let me in!"
+msgstr "ฉันเข้าใจ, ตอนนี้ให้ฉันเข้า!"
 
 #, csharp-format
 msgid ""
@@ -1916,6 +1916,11 @@ msgstr "เกิดข้อผิดพลาดขณะแสดง Context 
 msgid "Audio playback canceled"
 msgstr "ยกเลิกการเล่นเสียงแล้ว"
 
+msgid ""
+"Our application is regularly stolen and cloned by vibe coders. If you have "
+"paid for access, you may have been scammed."
+msgstr ""
+
 msgid "kilograms"
 msgstr "กิโลกรัม"
 
@@ -1975,13 +1980,13 @@ msgstr "ปลั๊กอินที่แนะนำ"
 msgid "Failed to remove account. Please try again."
 msgstr "ลบบัญชีไม่สำเร็จ โปรดลองอีกครั้ง"
 
+msgid "Game added"
+msgstr "เพิ่มเกมแล้ว"
+
 msgid ""
 "The maximum speed ETS2LA will accelerate to. It might still drift over this "
 "limit due to momentum."
 msgstr "ความเร็วสูงสุดที่ ETS2LA จะเร่งไปถึง แต่รถอาจเกินค่านี้เล็กน้อยจากแรงเฉื่อย"
-
-msgid "Game added"
-msgstr "เพิ่มเกมแล้ว"
 
 msgid "Privacy Policy"
 msgstr ""
@@ -2117,6 +2122,9 @@ msgstr ""
 "และอาจมีปัญหาในการขับขี่และความปลอดภัย <span class=\"text-text-accent font-"
 "bold\">อย่าปล่อยให้ ETS2LA ขับโดยไม่มีคนดูแล โดยเฉพาะใน Multiplayer</span>"
 
+msgid "Scammer Notice"
+msgstr ""
+
 #, csharp-format
 msgid "Tried to enable {0}, but it was not found among loaded plugins."
 msgstr "พยายามจะเปิดใช้งาน {0} แต่มันไม่เจอท่ามกลางปลั๊กอินที่โหลดแล้ว"
@@ -2139,11 +2147,11 @@ msgstr "ไฟล์ที่เลือกไม่ใช่ core.scs"
 msgid "Manual Backup and Restore"
 msgstr ""
 
-msgid "Translated by:"
-msgstr "แปลโดย:"
-
 msgid "You have successfully logged out."
 msgstr "ออกจากระบบสำเร็จแล้ว"
+
+msgid "Translated by:"
+msgstr "แปลโดย:"
 
 msgid "This game was found at"
 msgstr "เกมนี้เจอที่"
@@ -2173,11 +2181,11 @@ msgstr "ข้อยกเว้นภายใน: {0}"
 msgid "Plugin with ID {0} not found."
 msgstr "ไม่พบปลั๊กอิน ID {0}"
 
-msgid "Units and Language"
-msgstr "หน่วยและภาษา"
-
 msgid "One Time Password"
 msgstr "วัน ทาม พาสเวิร์ด(OTP)"
+
+msgid "Units and Language"
+msgstr "หน่วยและภาษา"
 
 #, csharp-format
 msgid "Loaded plugin: [gray]{0}[/] from [gray]{1}[/]."
@@ -2445,12 +2453,12 @@ msgstr "Dependency ที่ขาด: {0}"
 msgid "Final Disclaimer <span class=\"description\">2/2</span>"
 msgstr "ข้อจำกัดความรับผิดชอบสุดท้าย <span class=\"description\">2/2</span>"
 
+msgid "Logout Failed"
+msgstr "ออกจากระบบไม่สำเร็จ"
+
 #, csharp-format
 msgid "Snap to each 10 {0}"
 msgstr "ปรับเข้าหาทุก 10 {0}"
-
-msgid "Logout Failed"
-msgstr "ออกจากระบบไม่สำเร็จ"
 
 #, csharp-format
 msgid "Created plugin directory: [gray]{0}[/]"
@@ -2507,9 +2515,6 @@ msgstr "กำลังเพิ่ม Mod: {0}"
 msgid "Like ETS2LA?"
 msgstr "ชอบ ETS2LA ไหม?"
 
-msgid "Show Plugin Updates"
-msgstr "แสดงอัปเดตปลั๊กอิน"
-
 msgid ""
 "Allows ETS2LA to control throttle and brake using direct memory editing. "
 "This might not work on some systems, but allows for control even while "
@@ -2519,6 +2524,9 @@ msgstr ""
 "อนุญาตให้ ETS2LA ควบคุมคันเร่งและเบรกด้วยการแก้ไข Memory โดยตรง อาจใช้ไม่ได้กับบางระบบ "
 "แต่ช่วยให้ควบคุมได้แม้สลับออกจากหน้าต่างเกม หากเปิดแล้วใช้งานไม่ได้ โปรดรายงานปัญหาใน "
 "Discord Server ของเรา"
+
+msgid "Show Plugin Updates"
+msgstr "แสดงอัปเดตปลั๊กอิน"
 
 #, csharp-format
 msgid "Not all dependencies for plugin {0} are installed."

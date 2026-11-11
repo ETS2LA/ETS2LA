@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-11-10 15:01:24+0200\n"
+"POT-Creation-Date: 2026-11-11 15:03:10+0200\n"
 "PO-Revision-Date: 2026-10-15 20:45+0000\n"
 "Last-Translator: Hugo <hugo@ets2la.com>\n"
 "Language-Team: French <http://weblate.ets2la.com/projects/ets2la/ets2la/fr/"
@@ -256,13 +256,13 @@ msgstr "Le pas de modification de la vitesse du régulateur de vitesse."
 msgid "Please enter a username."
 msgstr ""
 
+#, csharp-format
+msgid "Your username must be at least {0} characters long."
+msgstr ""
+
 msgid ""
 "Allow ETS2LA's overlay to run on Wayland. Wayland might cause compatibility "
 "issues, however you might want to try to enable this option."
-msgstr ""
-
-#, csharp-format
-msgid "Your username must be at least {0} characters long."
 msgstr ""
 
 msgid "Press anywhere outside the dialog to close it."
@@ -342,12 +342,12 @@ msgstr "Afficher moins de journaux"
 msgid "Your login token is invalid or expired."
 msgstr ""
 
-msgid "I won't leave ETS2LA unattended"
-msgstr "Je ne laisserai pas ETS2LA sans surveillance"
-
 #, csharp-format
 msgid "Error while downloading update: {0}"
 msgstr "Erreur lors du téléchargement de la mise à jour : {0}"
+
+msgid "I won't leave ETS2LA unattended"
+msgstr "Je ne laisserai pas ETS2LA sans surveillance"
 
 msgid "Keyboard"
 msgstr "Clavier"
@@ -853,11 +853,11 @@ msgid ""
 "the button below to display your JWT token."
 msgstr ""
 
-msgid "Collision Avoidance"
-msgstr "Anticollision"
-
 msgid "If you're streaming or recording, now's the time to hide this window."
 msgstr ""
+
+msgid "Collision Avoidance"
+msgstr "Anticollision"
 
 #, csharp-format
 msgid "Monitor {0}: {1}"
@@ -1059,12 +1059,12 @@ msgstr ""
 msgid "SDK Installed"
 msgstr "SDK installé"
 
-msgid "Current Speed"
-msgstr "Vitesse actuelle"
-
 #, csharp-format
 msgid "Bound control {0} ({1}) to device {2} and control {3}"
 msgstr "Commande {0} ({1}) associée au périphérique {2} et à la commande {3}"
+
+msgid "Current Speed"
+msgstr "Vitesse actuelle"
 
 msgid "miles per hour"
 msgstr "miles par heure"
@@ -1346,9 +1346,6 @@ msgid "Failed to install latest version of plugin with ID {0}."
 msgstr ""
 "Échec de l'installation de la dernière version du plugin avec l'ID {0}."
 
-msgid "I understand, now let me in!"
-msgstr "J'ai compris, laissez-moi entrer !"
-
 #, csharp-format
 msgid ""
 "If you think this is a bug, please report it in the {0}Discord Server{1} or "
@@ -1356,6 +1353,9 @@ msgid ""
 msgstr ""
 "Si vous pensez qu'il s'agit d'un bug, veuillez le signaler sur le {0}serveur "
 "Discord{1} ou sur {2}GitHub{3}."
+
+msgid "I understand, now let me in!"
+msgstr "J'ai compris, laissez-moi entrer !"
 
 #, csharp-format
 msgid ""
@@ -2001,6 +2001,11 @@ msgstr "Erreur lors du rendu du menu contextuel pour la fenêtre {0} : {1}"
 msgid "Audio playback canceled"
 msgstr "Lecture audio annulée"
 
+msgid ""
+"Our application is regularly stolen and cloned by vibe coders. If you have "
+"paid for access, you may have been scammed."
+msgstr ""
+
 msgid "kilograms"
 msgstr "kilogrammes"
 
@@ -2065,15 +2070,15 @@ msgstr "Plugins recommandés"
 msgid "Failed to remove account. Please try again."
 msgstr ""
 
+msgid "Game added"
+msgstr "Jeu ajouté"
+
 msgid ""
 "The maximum speed ETS2LA will accelerate to. It might still drift over this "
 "limit due to momentum."
 msgstr ""
 "La vitesse maximale à laquelle ETS2LA accélérera. Elle peut toutefois "
 "légèrement dépasser cette limite à cause de l'inertie."
-
-msgid "Game added"
-msgstr "Jeu ajouté"
 
 msgid "Privacy Policy"
 msgstr ""
@@ -2222,6 +2227,9 @@ msgstr ""
 "class=\"text-text-accent font-bold\">Ne laissez pas ETS2LA sans "
 "surveillance, en particulier en multijoueur.</span>"
 
+msgid "Scammer Notice"
+msgstr ""
+
 #, csharp-format
 msgid "Tried to enable {0}, but it was not found among loaded plugins."
 msgstr ""
@@ -2248,11 +2256,11 @@ msgstr "Le fichier sélectionné n'est pas un fichier core.scs."
 msgid "Manual Backup and Restore"
 msgstr ""
 
-msgid "Translated by:"
-msgstr "Traduit par :"
-
 msgid "You have successfully logged out."
 msgstr ""
+
+msgid "Translated by:"
+msgstr "Traduit par :"
 
 msgid "This game was found at"
 msgstr "Ce jeu a été trouvé à"
@@ -2282,11 +2290,11 @@ msgstr "Exception interne : {0}"
 msgid "Plugin with ID {0} not found."
 msgstr "Le plugin avec l'ID {0} est introuvable."
 
-msgid "Units and Language"
-msgstr "Unités et langue"
-
 msgid "One Time Password"
 msgstr ""
+
+msgid "Units and Language"
+msgstr "Unités et langue"
 
 #, csharp-format
 msgid "Loaded plugin: [gray]{0}[/] from [gray]{1}[/]."
@@ -2558,12 +2566,12 @@ msgstr "Dépendance manquante : {0}"
 msgid "Final Disclaimer <span class=\"description\">2/2</span>"
 msgstr "Avertissement final <span class=\"description\">2/2</span>"
 
+msgid "Logout Failed"
+msgstr ""
+
 #, csharp-format
 msgid "Snap to each 10 {0}"
 msgstr "Aligner sur des multiples de 10 {0}"
-
-msgid "Logout Failed"
-msgstr ""
 
 #, csharp-format
 msgid "Created plugin directory: [gray]{0}[/]"
@@ -2626,14 +2634,14 @@ msgstr "Ajout du mod : {0}"
 msgid "Like ETS2LA?"
 msgstr ""
 
-msgid "Show Plugin Updates"
-msgstr ""
-
 msgid ""
 "Allows ETS2LA to control throttle and brake using direct memory editing. "
 "This might not work on some systems, but allows for control even while "
 "tabbed out of the game. If you enable this and it doesn't work, please "
 "report the issue on our Discord server."
+msgstr ""
+
+msgid "Show Plugin Updates"
 msgstr ""
 
 #, csharp-format

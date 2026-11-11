@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-11-10 15:01:24+0200\n"
+"POT-Creation-Date: 2026-11-11 15:03:10+0200\n"
 "PO-Revision-Date: 2026-11-07 22:18+0000\n"
 "Last-Translator: Kubex70 <kubex70@ets2la.com>\n"
 "Language-Team: Polish <http://weblate.ets2la.com/projects/ets2la/ets2la/pl/"
@@ -261,16 +261,16 @@ msgstr "Wielkość przeskoku zmiany prędkości tempomatu."
 msgid "Please enter a username."
 msgstr "Proszę podać nazwę użytkownika."
 
+#, csharp-format
+msgid "Your username must be at least {0} characters long."
+msgstr "Twoja nazwa użytkownika musi mieć co najmniej {0} znaków."
+
 msgid ""
 "Allow ETS2LA's overlay to run on Wayland. Wayland might cause compatibility "
 "issues, however you might want to try to enable this option."
 msgstr ""
 "Umożliwienie działania nakładki ETS2LA w środowisku Wayland. Wayland może "
 "powodować problemy ze zgodnością, niemniej warto spróbować włączyć tę opcję."
-
-#, csharp-format
-msgid "Your username must be at least {0} characters long."
-msgstr "Twoja nazwa użytkownika musi mieć co najmniej {0} znaków."
 
 msgid "Press anywhere outside the dialog to close it."
 msgstr "Kliknij w dowolnym miejscu poza oknem dialogowym, aby je zamknąć."
@@ -352,12 +352,12 @@ msgstr "Pokaż mniej dzienników"
 msgid "Your login token is invalid or expired."
 msgstr "Twój token logowania jest nieprawidłowy lub wygasł."
 
-msgid "I won't leave ETS2LA unattended"
-msgstr "Nie zostawie ETS2LA bez nadzoru"
-
 #, csharp-format
 msgid "Error while downloading update: {0}"
 msgstr "Błąd podczas pobierania aktualizacji: {0}"
+
+msgid "I won't leave ETS2LA unattended"
+msgstr "Nie zostawie ETS2LA bez nadzoru"
 
 msgid "Keyboard"
 msgstr "Klawiatura"
@@ -888,13 +888,13 @@ msgstr ""
 "Niektóre witryny zewnętrzne mogą wymagać dostępu do Twojego konta.<br/"
 ">Możesz nacisnąć poniższy przycisk, aby wyświetlić swój token JWT."
 
-msgid "Collision Avoidance"
-msgstr "Unikanie kolizji"
-
 msgid "If you're streaming or recording, now's the time to hide this window."
 msgstr ""
 "Jeśli prowadzisz transmisję lub nagrywasz, to odpowiedni moment, by ukryć to "
 "okno."
+
+msgid "Collision Avoidance"
+msgstr "Unikanie kolizji"
 
 #, csharp-format
 msgid "Monitor {0}: {1}"
@@ -1108,12 +1108,12 @@ msgstr "Login"
 msgid "SDK Installed"
 msgstr "Zainstalowano zestaw SDK"
 
-msgid "Current Speed"
-msgstr "Aktualna prędkość"
-
 #, csharp-format
 msgid "Bound control {0} ({1}) to device {2} and control {3}"
 msgstr "Powiąż sterowanie {0} ({1}) z urządzeniem {2} i sterowaniem {3}"
+
+msgid "Current Speed"
+msgstr "Aktualna prędkość"
 
 msgid "miles per hour"
 msgstr "mile na godzinę"
@@ -1403,9 +1403,6 @@ msgid "Failed to install latest version of plugin with ID {0}."
 msgstr ""
 "Nie udało się zainstalować najnowszej wersji pluginu o identyfikatorze {0}."
 
-msgid "I understand, now let me in!"
-msgstr "Rozumiem, teraz mnie wpuść!"
-
 #, csharp-format
 msgid ""
 "If you think this is a bug, please report it in the {0}Discord Server{1} or "
@@ -1413,6 +1410,9 @@ msgid ""
 msgstr ""
 "Jeśli uważasz, że to błąd, zgłoś to na {0}serwerze Discord{1} lub na {2}"
 "GitHubie{3}."
+
+msgid "I understand, now let me in!"
+msgstr "Rozumiem, teraz mnie wpuść!"
 
 #, csharp-format
 msgid ""
@@ -2081,6 +2081,11 @@ msgstr "Błąd podczas renderowania menu kontekstowego dla okna {0}: {1}"
 msgid "Audio playback canceled"
 msgstr "Odtwarzanie dźwięku anulowane"
 
+msgid ""
+"Our application is regularly stolen and cloned by vibe coders. If you have "
+"paid for access, you may have been scammed."
+msgstr ""
+
 msgid "kilograms"
 msgstr "kilogramy"
 
@@ -2144,15 +2149,15 @@ msgstr "Zalecane pluginy"
 msgid "Failed to remove account. Please try again."
 msgstr "Nie udało się usunąć konta. Spróbuj ponownie."
 
+msgid "Game added"
+msgstr "Gra dodana"
+
 msgid ""
 "The maximum speed ETS2LA will accelerate to. It might still drift over this "
 "limit due to momentum."
 msgstr ""
 "Maksymalna prędkość, jaką osiągnie ETS2LA. Może jednak nadal przekraczać ten "
 "limit ze względu na pęd."
-
-msgid "Game added"
-msgstr "Gra dodana"
 
 msgid "Privacy Policy"
 msgstr "Polityka prywatności"
@@ -2299,6 +2304,9 @@ msgstr ""
 "accent font-bold\">Nie pozostawiaj ETS2LA bez nadzoru, zwłaszcza w trybie "
 "wieloosobowym.</span>"
 
+msgid "Scammer Notice"
+msgstr ""
+
 #, csharp-format
 msgid "Tried to enable {0}, but it was not found among loaded plugins."
 msgstr ""
@@ -2324,11 +2332,11 @@ msgstr "Wybrany plik nie jest plikiem core.scs ."
 msgid "Manual Backup and Restore"
 msgstr ""
 
-msgid "Translated by:"
-msgstr "Przetłumaczone przez:"
-
 msgid "You have successfully logged out."
 msgstr "Wylogowano pomyślnie."
+
+msgid "Translated by:"
+msgstr "Przetłumaczone przez:"
 
 msgid "This game was found at"
 msgstr "Tę grę znaleziono pod adresem"
@@ -2358,11 +2366,11 @@ msgstr "Wyjątek wewnętrzny: {0}"
 msgid "Plugin with ID {0} not found."
 msgstr "Plugin o ID {0} nie został znaleziony."
 
-msgid "Units and Language"
-msgstr "Jednostki i język"
-
 msgid "One Time Password"
 msgstr "Hasło jednorazowe"
+
+msgid "Units and Language"
+msgstr "Jednostki i język"
 
 #, csharp-format
 msgid "Loaded plugin: [gray]{0}[/] from [gray]{1}[/]."
@@ -2651,12 +2659,12 @@ msgstr "Brak zależności: {0}"
 msgid "Final Disclaimer <span class=\"description\">2/2</span>"
 msgstr "Ostateczne ostrzeżenie <span class=\"description\">2/2</span>"
 
+msgid "Logout Failed"
+msgstr "Wylogowanie nie powiodło się"
+
 #, csharp-format
 msgid "Snap to each 10 {0}"
 msgstr "Przeskakuj do każdej 10 {0}"
-
-msgid "Logout Failed"
-msgstr "Wylogowanie nie powiodło się"
 
 #, csharp-format
 msgid "Created plugin directory: [gray]{0}[/]"
@@ -2723,9 +2731,6 @@ msgstr "Dodawanie moda: {0}"
 msgid "Like ETS2LA?"
 msgstr "Lubisz ETS2LA?"
 
-msgid "Show Plugin Updates"
-msgstr "Pokaż aktualizacje pluginów"
-
 msgid ""
 "Allows ETS2LA to control throttle and brake using direct memory editing. "
 "This might not work on some systems, but allows for control even while "
@@ -2737,6 +2742,9 @@ msgstr ""
 "sterowanie nawet wtedy, gdy gra jest zminimalizowana lub użytkownik znajduje "
 "się w innym oknie. Jeśli po włączeniu tej opcji sterowanie nie działa, "
 "prosimy o zgłoszenie problemu na naszym serwerze Discord."
+
+msgid "Show Plugin Updates"
+msgstr "Pokaż aktualizacje pluginów"
 
 #, csharp-format
 msgid "Not all dependencies for plugin {0} are installed."

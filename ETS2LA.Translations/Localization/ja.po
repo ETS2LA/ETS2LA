@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-11-10 15:01:24+0200\n"
+"POT-Creation-Date: 2026-11-11 15:03:10+0200\n"
 "PO-Revision-Date: 2026-10-20 09:37+0000\n"
 "Last-Translator: Pastel <pastel@ets2la.com>\n"
 "Language-Team: Japanese <http://weblate.ets2la.com/projects/ets2la/ets2la/ja/"
@@ -252,13 +252,13 @@ msgstr "クルーズコントロールの速度を変更する際の刻み幅で
 msgid "Please enter a username."
 msgstr ""
 
+#, csharp-format
+msgid "Your username must be at least {0} characters long."
+msgstr ""
+
 msgid ""
 "Allow ETS2LA's overlay to run on Wayland. Wayland might cause compatibility "
 "issues, however you might want to try to enable this option."
-msgstr ""
-
-#, csharp-format
-msgid "Your username must be at least {0} characters long."
 msgstr ""
 
 msgid "Press anywhere outside the dialog to close it."
@@ -340,12 +340,12 @@ msgstr "ログの表示数を減らす"
 msgid "Your login token is invalid or expired."
 msgstr ""
 
-msgid "I won't leave ETS2LA unattended"
-msgstr "ETS2LAを無人で動作させません"
-
 #, csharp-format
 msgid "Error while downloading update: {0}"
 msgstr "アップデートのダウンロード中にエラーが発生しました:{0}"
+
+msgid "I won't leave ETS2LA unattended"
+msgstr "ETS2LAを無人で動作させません"
 
 msgid "Keyboard"
 msgstr "キーボード"
@@ -842,11 +842,11 @@ msgid ""
 "the button below to display your JWT token."
 msgstr ""
 
-msgid "Collision Avoidance"
-msgstr "衝突回避"
-
 msgid "If you're streaming or recording, now's the time to hide this window."
 msgstr ""
+
+msgid "Collision Avoidance"
+msgstr "衝突回避"
 
 #, csharp-format
 msgid "Monitor {0}: {1}"
@@ -1047,13 +1047,13 @@ msgstr ""
 msgid "SDK Installed"
 msgstr "SDKがインストールされました"
 
-msgid "Current Speed"
-msgstr "現在の速度"
-
 #, csharp-format
 msgid "Bound control {0} ({1}) to device {2} and control {3}"
 msgstr ""
 "コントロール {0} ({1}) をデバイス {2} およびコントロール {3} に紐付けました"
+
+msgid "Current Speed"
+msgstr "現在の速度"
 
 msgid "miles per hour"
 msgstr "マイル毎時"
@@ -1332,9 +1332,6 @@ msgstr ""
 msgid "Failed to install latest version of plugin with ID {0}."
 msgstr "ID {0} のプラグインの最新バージョンのインストールに失敗しました。"
 
-msgid "I understand, now let me in!"
-msgstr "理解しました。始めよう!"
-
 #, csharp-format
 msgid ""
 "If you think this is a bug, please report it in the {0}Discord Server{1} or "
@@ -1342,6 +1339,9 @@ msgid ""
 msgstr ""
 "バグだと思われる場合は、{0}Discordサーバー{1}または{2}GitHub{3}で報告してくだ"
 "さい。"
+
+msgid "I understand, now let me in!"
+msgstr "理解しました。始めよう!"
 
 #, csharp-format
 msgid ""
@@ -1989,6 +1989,11 @@ msgstr ""
 msgid "Audio playback canceled"
 msgstr "音声の再生が中止されました"
 
+msgid ""
+"Our application is regularly stolen and cloned by vibe coders. If you have "
+"paid for access, you may have been scammed."
+msgstr ""
+
 msgid "kilograms"
 msgstr "キログラム"
 
@@ -2052,15 +2057,15 @@ msgstr "おすすめのプラグイン"
 msgid "Failed to remove account. Please try again."
 msgstr ""
 
+msgid "Game added"
+msgstr "ゲームを追加しました"
+
 msgid ""
 "The maximum speed ETS2LA will accelerate to. It might still drift over this "
 "limit due to momentum."
 msgstr ""
 "ETS2LAが加速する最高速度です。慣性により、この制限速度を超える場合がありま"
 "す。"
-
-msgid "Game added"
-msgstr "ゲームを追加しました"
 
 msgid "Privacy Policy"
 msgstr ""
@@ -2203,6 +2208,9 @@ msgstr ""
 "る問題が発生する場合があります。 <span class=\"text-text-accent font-bold\">"
 "特にマルチプレイヤープレイ中は、ETS2LAを放置しないでください。</span>"
 
+msgid "Scammer Notice"
+msgstr ""
+
 #, csharp-format
 msgid "Tried to enable {0}, but it was not found among loaded plugins."
 msgstr ""
@@ -2228,11 +2236,11 @@ msgstr "選択されたファイルは core.scs ファイルではありませ�
 msgid "Manual Backup and Restore"
 msgstr ""
 
-msgid "Translated by:"
-msgstr "翻訳者:"
-
 msgid "You have successfully logged out."
 msgstr ""
+
+msgid "Translated by:"
+msgstr "翻訳者:"
 
 msgid "This game was found at"
 msgstr "このゲームが見つかった場所"
@@ -2262,11 +2270,11 @@ msgstr "内部例外: {0}"
 msgid "Plugin with ID {0} not found."
 msgstr "ID {0} のプラグインが見つかりません。"
 
-msgid "Units and Language"
-msgstr "単位と言語"
-
 msgid "One Time Password"
 msgstr ""
+
+msgid "Units and Language"
+msgstr "単位と言語"
 
 #, csharp-format
 msgid "Loaded plugin: [gray]{0}[/] from [gray]{1}[/]."
@@ -2539,12 +2547,12 @@ msgstr "不足している依存関係: {0}"
 msgid "Final Disclaimer <span class=\"description\">2/2</span>"
 msgstr "最終的な免責事項 <span class=\"description\">2/2</span>"
 
+msgid "Logout Failed"
+msgstr ""
+
 #, csharp-format
 msgid "Snap to each 10 {0}"
 msgstr "10 {0}ごとにスナップ"
-
-msgid "Logout Failed"
-msgstr ""
 
 #, csharp-format
 msgid "Created plugin directory: [gray]{0}[/]"
@@ -2606,9 +2614,6 @@ msgstr "MODを追加: {0}"
 msgid "Like ETS2LA?"
 msgstr ""
 
-msgid "Show Plugin Updates"
-msgstr ""
-
 msgid ""
 "Allows ETS2LA to control throttle and brake using direct memory editing. "
 "This might not work on some systems, but allows for control even while "
@@ -2619,6 +2624,9 @@ msgstr ""
 "します。一部のシステムでは動作しない場合がありますが、ゲームのウィンドウをタ"
 "ブで切り替えた状態でも操作が可能になります。有効にしても動作しない場合は、"
 "Discordサーバーにて問題をご報告ください。"
+
+msgid "Show Plugin Updates"
+msgstr ""
 
 #, csharp-format
 msgid "Not all dependencies for plugin {0} are installed."

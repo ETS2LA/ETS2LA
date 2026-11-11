@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-11-10 15:01:24+0200\n"
+"POT-Creation-Date: 2026-11-11 15:03:10+0200\n"
 "PO-Revision-Date: 2026-11-02 20:26+0000\n"
 "Last-Translator: bot_lapis <botlapis@ets2la.com>\n"
 "Language-Team: Korean <http://weblate.ets2la.com/projects/ets2la/ets2la/ko/"
@@ -249,14 +249,14 @@ msgstr "크루즈 컨트롤 속도를 변경할 때의 단계 크기입니다."
 msgid "Please enter a username."
 msgstr "사용자 이름을 입력해 주세요."
 
+#, csharp-format
+msgid "Your username must be at least {0} characters long."
+msgstr "사용자 이름은 최소 {0}자 이상이어야 합니다."
+
 msgid ""
 "Allow ETS2LA's overlay to run on Wayland. Wayland might cause compatibility "
 "issues, however you might want to try to enable this option."
 msgstr ""
-
-#, csharp-format
-msgid "Your username must be at least {0} characters long."
-msgstr "사용자 이름은 최소 {0}자 이상이어야 합니다."
 
 msgid "Press anywhere outside the dialog to close it."
 msgstr "대화 상자 바깥 아무 곳이나 눌러 닫으세요."
@@ -337,12 +337,12 @@ msgstr "로그 적게 보기"
 msgid "Your login token is invalid or expired."
 msgstr "로그인 토큰이 유효하지 않거나 만료되었습니다."
 
-msgid "I won't leave ETS2LA unattended"
-msgstr "ETS2LA를 방치하지 않겠습니다"
-
 #, csharp-format
 msgid "Error while downloading update: {0}"
 msgstr "업데이트를 다운로드하는 중 오류가 발생했습니다: {0}"
+
+msgid "I won't leave ETS2LA unattended"
+msgstr "ETS2LA를 방치하지 않겠습니다"
 
 msgid "Keyboard"
 msgstr "키보드"
@@ -849,11 +849,11 @@ msgstr ""
 "일부 타사 웹사이트에서 귀하의 계정에 접근하려 할 수 있습니다.<br/>아래 버튼"
 "을 눌러 JWT 토큰을 표시할 수 있습니다."
 
-msgid "Collision Avoidance"
-msgstr "충돌 방지"
-
 msgid "If you're streaming or recording, now's the time to hide this window."
 msgstr "스트리밍이나 녹화 중이라면, 지금이 이 창을 숨길 때입니다."
+
+msgid "Collision Avoidance"
+msgstr "충돌 방지"
 
 #, csharp-format
 msgid "Monitor {0}: {1}"
@@ -1055,12 +1055,12 @@ msgstr "로그인"
 msgid "SDK Installed"
 msgstr "SDK 설치됨"
 
-msgid "Current Speed"
-msgstr "현재 속도"
-
 #, csharp-format
 msgid "Bound control {0} ({1}) to device {2} and control {3}"
 msgstr "컨트롤 {0} ({1})을(를) 장치 {2}, 컨트롤 {3}에 바인딩했습니다"
+
+msgid "Current Speed"
+msgstr "현재 속도"
 
 msgid "miles per hour"
 msgstr "마일/시간"
@@ -1338,9 +1338,6 @@ msgstr ""
 msgid "Failed to install latest version of plugin with ID {0}."
 msgstr "ID가 {0}인 플러그인의 최신 버전을 설치하지 못했습니다."
 
-msgid "I understand, now let me in!"
-msgstr "이해했어요, 이제 들여보내 주세요!"
-
 #, csharp-format
 msgid ""
 "If you think this is a bug, please report it in the {0}Discord Server{1} or "
@@ -1348,6 +1345,9 @@ msgid ""
 msgstr ""
 "이것이 버그라고 생각되면 {0}Discord 서버{1} 또는 {2}GitHub{3}에 보고해 주세"
 "요."
+
+msgid "I understand, now let me in!"
+msgstr "이해했어요, 이제 들여보내 주세요!"
 
 #, csharp-format
 msgid ""
@@ -1987,6 +1987,11 @@ msgstr "창 {0}의 컨텍스트 메뉴를 렌더링하는 중 오류가 발생�
 msgid "Audio playback canceled"
 msgstr "오디오 재생이 취소되었습니다"
 
+msgid ""
+"Our application is regularly stolen and cloned by vibe coders. If you have "
+"paid for access, you may have been scammed."
+msgstr ""
+
 msgid "kilograms"
 msgstr "킬로그램 (kg)"
 
@@ -2048,15 +2053,15 @@ msgstr "추천 플러그인"
 msgid "Failed to remove account. Please try again."
 msgstr "계정을 제거하지 못했습니다. 다시 시도해 주세요."
 
+msgid "Game added"
+msgstr "게임 추가됨"
+
 msgid ""
 "The maximum speed ETS2LA will accelerate to. It might still drift over this "
 "limit due to momentum."
 msgstr ""
 "ETS2LA의 최고 가속 속도입니다. 관성으로 인해 제한 속도를 살짝 오버할 수 있어"
 "요."
-
-msgid "Game added"
-msgstr "게임 추가됨"
 
 msgid "Privacy Policy"
 msgstr "개인정보 처리방침"
@@ -2199,6 +2204,9 @@ msgstr ""
 "및 안전 측면에서 문제를 발견하실 수 있습니다. <span class=\"text-text-accent "
 "font-bold\">특히 멀티플레이어에서는 ETS2LA를 방치하지 마세요.</span>"
 
+msgid "Scammer Notice"
+msgstr ""
+
 #, csharp-format
 msgid "Tried to enable {0}, but it was not found among loaded plugins."
 msgstr ""
@@ -2223,11 +2231,11 @@ msgstr "선택한 파일은 core.scs 파일이 아닙니다."
 msgid "Manual Backup and Restore"
 msgstr ""
 
-msgid "Translated by:"
-msgstr "번역:"
-
 msgid "You have successfully logged out."
 msgstr "성공적으로 로그아웃되었습니다."
+
+msgid "Translated by:"
+msgstr "번역:"
 
 msgid "This game was found at"
 msgstr "이 게임은 다음 위치에서 발견되었습니다"
@@ -2257,11 +2265,11 @@ msgstr "내부 예외: {0}"
 msgid "Plugin with ID {0} not found."
 msgstr "플러그인 {0}을(를) 찾지 못했습니다."
 
-msgid "Units and Language"
-msgstr "단위 및 언어"
-
 msgid "One Time Password"
 msgstr "일회용 비밀번호"
+
+msgid "Units and Language"
+msgstr "단위 및 언어"
 
 #, csharp-format
 msgid "Loaded plugin: [gray]{0}[/] from [gray]{1}[/]."
@@ -2537,12 +2545,12 @@ msgstr "누락된 종속성: {0}"
 msgid "Final Disclaimer <span class=\"description\">2/2</span>"
 msgstr "최종 면책 조항 <span class=\"description\">2/2</span>"
 
+msgid "Logout Failed"
+msgstr "로그아웃 실패"
+
 #, csharp-format
 msgid "Snap to each 10 {0}"
 msgstr "10 {0} 간격으로 스냅"
-
-msgid "Logout Failed"
-msgstr "로그아웃 실패"
 
 #, csharp-format
 msgid "Created plugin directory: [gray]{0}[/]"
@@ -2606,9 +2614,6 @@ msgstr "모드 추가 중: {0}"
 msgid "Like ETS2LA?"
 msgstr "ETS2LA가 마음에 드시나요?"
 
-msgid "Show Plugin Updates"
-msgstr "플러그인 업데이트 표시"
-
 msgid ""
 "Allows ETS2LA to control throttle and brake using direct memory editing. "
 "This might not work on some systems, but allows for control even while "
@@ -2619,6 +2624,9 @@ msgstr ""
 "다. 일부 시스템에서는 작동하지 않을 수 있지만, 게임에서 탭 아웃한 상태에서도 "
 "제어할 수 있습니다. 이 기능을 활성화했는데 작동하지 않으면 Discord 서버에 문"
 "제를 보고해 주세요."
+
+msgid "Show Plugin Updates"
+msgstr "플러그인 업데이트 표시"
 
 #, csharp-format
 msgid "Not all dependencies for plugin {0} are installed."

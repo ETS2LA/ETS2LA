@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-11-10 15:01:24+0200\n"
+"POT-Creation-Date: 2026-11-11 15:03:10+0200\n"
 "PO-Revision-Date: 2026-08-25 11:19+0000\n"
 "Last-Translator: Artyz <artyz@ets2la.com>\n"
 "Language-Team: Hindi (Hinglish) <http://weblate.ets2la.com/projects/ets2la/"
@@ -231,13 +231,13 @@ msgstr ""
 msgid "Please enter a username."
 msgstr ""
 
+#, csharp-format
+msgid "Your username must be at least {0} characters long."
+msgstr ""
+
 msgid ""
 "Allow ETS2LA's overlay to run on Wayland. Wayland might cause compatibility "
 "issues, however you might want to try to enable this option."
-msgstr ""
-
-#, csharp-format
-msgid "Your username must be at least {0} characters long."
 msgstr ""
 
 msgid "Press anywhere outside the dialog to close it."
@@ -312,11 +312,11 @@ msgstr ""
 msgid "Your login token is invalid or expired."
 msgstr ""
 
-msgid "I won't leave ETS2LA unattended"
-msgstr ""
-
 #, csharp-format
 msgid "Error while downloading update: {0}"
+msgstr ""
+
+msgid "I won't leave ETS2LA unattended"
 msgstr ""
 
 msgid "Keyboard"
@@ -786,11 +786,11 @@ msgid ""
 "the button below to display your JWT token."
 msgstr ""
 
-msgid "Collision Avoidance"
-msgstr "Takkar Bachav"
-
 msgid "If you're streaming or recording, now's the time to hide this window."
 msgstr ""
+
+msgid "Collision Avoidance"
+msgstr "Takkar Bachav"
 
 #, csharp-format
 msgid "Monitor {0}: {1}"
@@ -974,11 +974,11 @@ msgstr ""
 msgid "SDK Installed"
 msgstr ""
 
-msgid "Current Speed"
-msgstr ""
-
 #, csharp-format
 msgid "Bound control {0} ({1}) to device {2} and control {3}"
+msgstr ""
+
+msgid "Current Speed"
 msgstr ""
 
 msgid "miles per hour"
@@ -1232,13 +1232,13 @@ msgstr ""
 msgid "Failed to install latest version of plugin with ID {0}."
 msgstr ""
 
-msgid "I understand, now let me in!"
-msgstr ""
-
 #, csharp-format
 msgid ""
 "If you think this is a bug, please report it in the {0}Discord Server{1} or "
 "on {2}GitHub{3}."
+msgstr ""
+
+msgid "I understand, now let me in!"
 msgstr ""
 
 #, csharp-format
@@ -1850,6 +1850,11 @@ msgstr ""
 msgid "Audio playback canceled"
 msgstr ""
 
+msgid ""
+"Our application is regularly stolen and cloned by vibe coders. If you have "
+"paid for access, you may have been scammed."
+msgstr ""
+
 msgid "kilograms"
 msgstr ""
 
@@ -1905,15 +1910,15 @@ msgstr ""
 msgid "Failed to remove account. Please try again."
 msgstr ""
 
+msgid "Game added"
+msgstr ""
+
 msgid ""
 "The maximum speed ETS2LA will accelerate to. It might still drift over this "
 "limit due to momentum."
 msgstr ""
 "Ye wo maximum speed hai jahan tak ETS2LA accelerate karega. Momentum ki "
 "wajah se speed is limit se upar ja sakti hai."
-
-msgid "Game added"
-msgstr ""
 
 msgid "Privacy Policy"
 msgstr ""
@@ -2043,6 +2048,9 @@ msgstr ""
 "font-bold\">ETS2LA ko bina dhyan diye na chhodein, khas karke multiplayer "
 "mein.</span>"
 
+msgid "Scammer Notice"
+msgstr ""
+
 #, csharp-format
 msgid "Tried to enable {0}, but it was not found among loaded plugins."
 msgstr ""
@@ -2065,11 +2073,11 @@ msgstr ""
 msgid "Manual Backup and Restore"
 msgstr ""
 
-msgid "Translated by:"
-msgstr "Anuvadak:"
-
 msgid "You have successfully logged out."
 msgstr ""
+
+msgid "Translated by:"
+msgstr "Anuvadak:"
 
 msgid "This game was found at"
 msgstr ""
@@ -2099,11 +2107,11 @@ msgstr ""
 msgid "Plugin with ID {0} not found."
 msgstr "ID {0} ka plugin nai mil saka."
 
-msgid "Units and Language"
-msgstr "Units aur Language"
-
 msgid "One Time Password"
 msgstr ""
+
+msgid "Units and Language"
+msgstr "Units aur Language"
 
 #, csharp-format
 msgid "Loaded plugin: [gray]{0}[/] from [gray]{1}[/]."
@@ -2365,11 +2373,11 @@ msgstr ""
 msgid "Final Disclaimer <span class=\"description\">2/2</span>"
 msgstr "Aakhri Disclaimer <span class=\"description\">2/2</span>"
 
-#, csharp-format
-msgid "Snap to each 10 {0}"
+msgid "Logout Failed"
 msgstr ""
 
-msgid "Logout Failed"
+#, csharp-format
+msgid "Snap to each 10 {0}"
 msgstr ""
 
 #, csharp-format
@@ -2427,14 +2435,14 @@ msgstr ""
 msgid "Like ETS2LA?"
 msgstr ""
 
-msgid "Show Plugin Updates"
-msgstr ""
-
 msgid ""
 "Allows ETS2LA to control throttle and brake using direct memory editing. "
 "This might not work on some systems, but allows for control even while "
 "tabbed out of the game. If you enable this and it doesn't work, please "
 "report the issue on our Discord server."
+msgstr ""
+
+msgid "Show Plugin Updates"
 msgstr ""
 
 #, csharp-format
