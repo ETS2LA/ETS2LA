@@ -40,31 +40,34 @@
         case 1:
             <PrivacyPolicyStep OnNext="NextStep" />
             break;
-        case 2:
-            <EnsureGameClosed OnNext="NextStep" />
+        case 2: 
+            <SecondWebsiteNotice OnNext="NextStep" />
             break;
         case 3:
-            <SDKStep OnNext="NextStep" />
+            <EnsureGameClosed OnNext="NextStep" />
             break;
         case 4:
-            <SDKReminderStep OnNext="NextStep" />
+            <SDKStep OnNext="NextStep" />
             break;
         case 5:
-            <OverlayStep OnNext="NextStep" />
+            <SDKReminderStep OnNext="NextStep" />
             break;
         case 6:
-            <ControlsStep OnNext="NextStep" />
+            <OverlayStep OnNext="NextStep" />
             break;
         case 7:
-            <PluginStep OnNext="NextStep" />
+            <ControlsStep OnNext="NextStep" />
             break;
         case 8:
-            <DisclaimerStep1 OnNext="NextStep" />
+            <PluginStep OnNext="NextStep" />
             break;
         case 9:
-            <DisclaimerStep2 OnNext="NextStep" />
+            <DisclaimerStep1 OnNext="NextStep" />
             break;
         case 10:
+            <DisclaimerStep2 OnNext="NextStep" />
+            break;
+        case 11:
             <FinishStep />
             break;
     }

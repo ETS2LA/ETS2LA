@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-11-10 14:59:53+0200\n"
-"PO-Revision-Date: 2026-11-10 14:59:53+0200\n"
+"POT-Creation-Date: 2026-11-11 15:02:48+0200\n"
+"PO-Revision-Date: 2026-11-11 15:02:48+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -92,10 +92,6 @@ msgstr ""
 msgid "Send log"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Settings/Backup.razor:36
-msgid "Save to Cloud on Exit"
-msgstr ""
-
 #: ../../../ETS2LA.Game/Installation.cs:298
 #, csharp-format
 msgid "Parsing installation at '{0}' (version: {1})"
@@ -157,15 +153,15 @@ msgstr ""
 msgid "Maximum Speed"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Settings/Display.razor:403
-msgid ""
-"When the game reports itself being paused, ETS2LA won't render AR elements."
-msgstr ""
-
 #: ../../../ETS2LA.UI/Pages/Settings/Account/LoginFlow.razor:60
 msgid ""
 "Your username may only contain letters, numbers, underscores, hyphens and "
 "periods, and must start and end with a letter or number."
+msgstr ""
+
+#: ../../../ETS2LA.UI/Pages/Settings/Display.razor:403
+msgid ""
+"When the game reports itself being paused, ETS2LA won't render AR elements."
 msgstr ""
 
 #: ../../../ETS2LA.Controls/Windows/SharpDXControlsBackend.cs:104
@@ -191,7 +187,7 @@ msgstr ""
 msgid "Failed to enable dependency: {0}"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Shared/Layouts/MainLayout.razor:69
+#: ../../../ETS2LA.UI/Shared/Layouts/MainLayout.razor:70
 msgid "Main"
 msgstr ""
 
@@ -233,7 +229,7 @@ msgstr ""
 msgid "Successfully opened memory for output."
 msgstr ""
 
-#: ../../../ETS2LA.UI/Shared/Layouts/MainLayout.razor:70
+#: ../../../ETS2LA.UI/Shared/Layouts/MainLayout.razor:71
 msgid "Dashboard"
 msgstr ""
 
@@ -297,15 +293,15 @@ msgstr ""
 msgid "Please enter a username."
 msgstr ""
 
+#: ../../../ETS2LA.UI/Pages/Settings/Account/LoginFlow.razor:50
+#, csharp-format
+msgid "Your username must be at least {0} characters long."
+msgstr ""
+
 #: ../../../ETS2LA.UI/Pages/Settings/Display.razor:342
 msgid ""
 "Allow ETS2LA's overlay to run on Wayland. Wayland might cause compatibility "
 "issues, however you might want to try to enable this option."
-msgstr ""
-
-#: ../../../ETS2LA.UI/Pages/Settings/Account/LoginFlow.razor:50
-#, csharp-format
-msgid "Your username must be at least {0} characters long."
 msgstr ""
 
 #: ../../../ETS2LA.UI/Pages/Home.razor:311
@@ -394,12 +390,12 @@ msgstr ""
 msgid "Additional"
 msgstr ""
 
-#: ../../../ETS2LA.Overlay/Window/Console.cs:57
-msgid "Show Fewer Logs"
-msgstr ""
-
 #: ../../../ETS2LA.UI/Pages/Onboarding/Steps/PluginStep.razor:56
 msgid "Install Plugins"
+msgstr ""
+
+#: ../../../ETS2LA.Overlay/Window/Console.cs:57
+msgid "Show Fewer Logs"
 msgstr ""
 
 #: ../../../ETS2LA.UI/Pages/Help/Chatbot.razor:146
@@ -500,7 +496,7 @@ msgstr ""
 msgid "Networking"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/PrivacyPolicyStep.razor:57
+#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/PrivacyPolicyStep.razor:53
 msgid ""
 "By clicking <span class=\"font-bold\">Continue</span>, you agree to the "
 "transfer of your possible account information to an international recipient."
@@ -671,7 +667,7 @@ msgstr ""
 msgid "Unregistered control: {0} ({1})"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Shared/Layouts/MainLayout.razor:83
+#: ../../../ETS2LA.UI/Shared/Layouts/MainLayout.razor:84
 msgid "Contact Us"
 msgstr ""
 
@@ -790,7 +786,7 @@ msgstr ""
 msgid "Apparent plugin directory {0} does not exist."
 msgstr ""
 
-#: ../../../ETS2LA.UI/Shared/Layouts/MainLayout.razor:71
+#: ../../../ETS2LA.UI/Shared/Layouts/MainLayout.razor:72
 msgid "Visualization"
 msgstr ""
 
@@ -809,12 +805,12 @@ msgstr ""
 msgid "Please enable the Visualization Sockets plugin."
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Settings/Account/Account.razor:99
-msgid "Your account has been successfully removed."
-msgstr ""
-
 #: ../../../ETS2LA.UI/Pages/Settings/Data.razor:91
 msgid "Force Map Load"
+msgstr ""
+
+#: ../../../ETS2LA.UI/Pages/Settings/Account/Account.razor:99
+msgid "Your account has been successfully removed."
 msgstr ""
 
 #: ../../../ETS2LA.Game/Installation.cs:519
@@ -1024,12 +1020,12 @@ msgid ""
 "the button below to display your JWT token."
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Settings/Account/Account.razor:193
-msgid "If you're streaming or recording, now's the time to hide this window."
-msgstr ""
-
 #: ../../../ETS2LA.UI/Pages/Settings/Assists.razor:176
 msgid "Collision Avoidance"
+msgstr ""
+
+#: ../../../ETS2LA.UI/Pages/Settings/Account/Account.razor:193
+msgid "If you're streaming or recording, now's the time to hide this window."
 msgstr ""
 
 #: ../../../ETS2LA.Overlay/Overlay.cs:645
@@ -1161,8 +1157,8 @@ msgid ""
 "with each message, <span class=\"text-text-l\">click to display</span>."
 msgstr ""
 
-#: ../../../ETS2LA.Controls/Windows/SharpDXControlsBackend.cs:170
 #: ../../../ETS2LA.Controls/Linux/SDL3ControlsBackend.cs:149
+#: ../../../ETS2LA.Controls/Windows/SharpDXControlsBackend.cs:170
 #, csharp-format
 msgid "Control with ID '{0}' not found for unregistration."
 msgstr ""
@@ -1209,7 +1205,7 @@ msgstr ""
 msgid "Excluded Mods"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Shared/Layouts/MainLayout.razor:76
+#: ../../../ETS2LA.UI/Shared/Layouts/MainLayout.razor:77
 msgid "Manager"
 msgstr ""
 
@@ -1295,12 +1291,12 @@ msgstr ""
 msgid "Test Audio"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Shared/Layouts/MainLayout.razor:82
+#: ../../../ETS2LA.UI/Shared/Layouts/MainLayout.razor:83
 msgid "Wiki / FAQ"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/PrivacyPolicyStep.razor:56
-#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/PrivacyPolicyStep.razor:61
+#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/PrivacyPolicyStep.razor:52
+#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/PrivacyPolicyStep.razor:57
 msgid ""
 "By clicking <span class=\"font-bold\">Continue</span>, you agree to our "
 "Privacy Policy."
@@ -1674,9 +1670,10 @@ msgstr ""
 
 #: ../../../ETS2LA.UI/Pages/Onboarding/Steps/EnsureGameClosed.razor:52
 #: ../../../ETS2LA.UI/Pages/Onboarding/Steps/ControlsStep.razor:48
-#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/PluginStep.razor:57
 #: ../../../ETS2LA.UI/Pages/Onboarding/Steps/OverlayStep.razor:27
-#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/PrivacyPolicyStep.razor:51
+#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/PrivacyPolicyStep.razor:47
+#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/PluginStep.razor:57
+#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/ScammerStep.razor:28
 #: ../../../ETS2LA.UI/Pages/Onboarding/Steps/SDKStep.razor:17
 msgid "Continue"
 msgstr ""
@@ -1704,7 +1701,7 @@ msgstr ""
 msgid "The plugin was enabled successfully."
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/PrivacyPolicyStep.razor:40
+#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/PrivacyPolicyStep.razor:36
 msgid ""
 "• If you create an account, we transfer your account information to an "
 "international recipient."
@@ -1825,8 +1822,8 @@ msgstr ""
 msgid "Steering Sensitivity"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Plugins/Manager.razor:226
 #: ../../../ETS2LA.UI/Pages/Settings/Assists.razor:204
+#: ../../../ETS2LA.UI/Pages/Plugins/Manager.razor:226
 msgid "Disabled"
 msgstr ""
 
@@ -1891,13 +1888,13 @@ msgstr ""
 msgid "Font file not found at {0}"
 msgstr ""
 
+#: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:92
+msgid "No release notes available."
+msgstr ""
+
 #: ../../../ETS2LA.UI/Pages/Plugins/Catalogue.razor:170
 #: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:194
 msgid "Changelog"
-msgstr ""
-
-#: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:92
-msgid "No release notes available."
 msgstr ""
 
 #: ../../../ETS2LA.State/Program.cs:71
@@ -2032,6 +2029,10 @@ msgstr ""
 msgid "Loaded library plugin: [gray]{0}[/] from [gray]{1}[/]."
 msgstr ""
 
+#: ../../../ETS2LA.UI/Pages/Settings/Backup.razor:36
+msgid "Backup on Exit"
+msgstr ""
+
 #: ../../../ETS2LA.UI/Pages/Settings/Account/LoginFlow.razor:219
 msgid "Enter the OTP generated by your authenticator app."
 msgstr ""
@@ -2134,7 +2135,7 @@ msgid ""
 "information contained in this mod won't be available to ETS2LA."
 msgstr ""
 
-#: ../../../ETS2LA.UI/Shared/Layouts/MainLayout.razor:84
+#: ../../../ETS2LA.UI/Shared/Layouts/MainLayout.razor:85
 msgid "Chatbot"
 msgstr ""
 
@@ -2164,7 +2165,7 @@ msgstr ""
 msgid "Update to {0} from {1}"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/PrivacyPolicyStep.razor:50
+#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/PrivacyPolicyStep.razor:46
 msgid "Open Externally"
 msgstr ""
 
@@ -2184,7 +2185,7 @@ msgstr ""
 msgid "Restart"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Shared/Layouts/MainLayout.razor:75
+#: ../../../ETS2LA.UI/Shared/Layouts/MainLayout.razor:76
 msgid "Plugins"
 msgstr ""
 
@@ -2338,7 +2339,7 @@ msgid ""
 msgstr ""
 
 #: ../../../ETS2LA.UI/Pages/Home.razor:215
-#: ../../../ETS2LA.UI/Shared/Layouts/MainLayout.razor:89
+#: ../../../ETS2LA.UI/Shared/Layouts/MainLayout.razor:90
 msgid "Settings"
 msgstr ""
 
@@ -2381,8 +2382,8 @@ msgstr ""
 #: ../../../ETS2LA.UI/Pages/Settings/Backup.razor:27
 #: ../../../ETS2LA.UI/Pages/Settings/Telemetry.razor:16
 #: ../../../ETS2LA.UI/Pages/Settings/Data.razor:34
-#: ../../../ETS2LA.UI/Pages/Settings/Data.razor:127
 #: ../../../ETS2LA.UI/Pages/Settings/Display.razor:97
+#: ../../../ETS2LA.UI/Pages/Settings/Data.razor:127
 #: ../../../ETS2LA.UI/Pages/Settings/Display.razor:238
 #: ../../../ETS2LA.UI/Pages/Settings/Display.razor:270
 msgid "Restart Required"
@@ -2408,6 +2409,12 @@ msgstr ""
 
 #: ../../../ETS2LA.Audio/AudioHandler.cs:222
 msgid "Audio playback canceled"
+msgstr ""
+
+#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/ScammerStep.razor:24
+msgid ""
+"Our application is regularly stolen and cloned by vibe coders. If you have "
+"paid for access, you may have been scammed."
 msgstr ""
 
 #: ../../../ETS2LA.State/Units.cs:213
@@ -2492,7 +2499,7 @@ msgstr ""
 msgid "Game added"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/PrivacyPolicyStep.razor:37
+#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/PrivacyPolicyStep.razor:33
 msgid "Privacy Policy"
 msgstr ""
 
@@ -2562,8 +2569,8 @@ msgstr ""
 
 #: ../../../ETS2LA.Game/SDK/Navigation.cs:122
 #: ../../../ETS2LA.Game/SDK/ParkedVehicles.cs:108
-#: ../../../ETS2LA.Game/SDK/Camera.cs:130
 #: ../../../ETS2LA.Game/SDK/Semaphores.cs:176
+#: ../../../ETS2LA.Game/SDK/Camera.cs:130
 #: ../../../ETS2LA.Game/SDK/Traffic.cs:159
 #, csharp-format
 msgid "Error initializing memory mapped file: {0}"
@@ -2657,6 +2664,10 @@ msgid ""
 "font-bold\">Do not leave ETS2LA unattended, especially in multiplayer.</span>"
 msgstr ""
 
+#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/ScammerStep.razor:23
+msgid "Scammer Notice"
+msgstr ""
+
 #: ../../../ETS2LA.Backend/PluginHandler/Handler.cs:442
 #, csharp-format
 msgid "Tried to enable {0}, but it was not found among loaded plugins."
@@ -2731,12 +2742,12 @@ msgstr ""
 msgid "Plugin with ID {0} not found."
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Settings/Display.razor:301
-msgid "Units and Language"
-msgstr ""
-
 #: ../../../ETS2LA.UI/Pages/Settings/Account/LoginFlow.razor:218
 msgid "One Time Password"
+msgstr ""
+
+#: ../../../ETS2LA.UI/Pages/Settings/Display.razor:301
+msgid "Units and Language"
 msgstr ""
 
 #: ../../../ETS2LA.Backend/PluginHandler/Handler.cs:195
@@ -2851,7 +2862,7 @@ msgstr ""
 msgid "Final Disclaimer <span class=\"description\">1/2</span>"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/PrivacyPolicyStep.razor:41
+#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/PrivacyPolicyStep.razor:37
 msgid "• ETS2LA Developers, contact@ets2la.com, Poland."
 msgstr ""
 
@@ -2953,7 +2964,7 @@ msgstr ""
 msgid "No audio output device available"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Shared/Layouts/MainLayout.razor:77
+#: ../../../ETS2LA.UI/Shared/Layouts/MainLayout.razor:78
 msgid "Catalogue"
 msgstr ""
 
@@ -2992,13 +3003,13 @@ msgstr ""
 msgid "Cannot enable plugin {0} because dependency {1} was not found."
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Settings/Assists.razor:125
-msgid "Keybind Behaviour"
-msgstr ""
-
 #: ../../../ETS2LA.UI/Pages/Settings/Updates.razor:136
 #, csharp-format
 msgid "Download progress: {0}% ({1} / {2})"
+msgstr ""
+
+#: ../../../ETS2LA.UI/Pages/Settings/Assists.razor:125
+msgid "Keybind Behaviour"
 msgstr ""
 
 #: ../../../ETS2LA.UI/Pages/Onboarding/Steps/WelcomeStep.razor:73
@@ -3027,7 +3038,7 @@ msgid ""
 "effect. Restart now?"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Shared/Layouts/MainLayout.razor:81
+#: ../../../ETS2LA.UI/Shared/Layouts/MainLayout.razor:82
 msgid "Help"
 msgstr ""
 
@@ -3096,8 +3107,8 @@ msgstr ""
 #: ../../../ETS2LA.UI/Utils.cs:74
 #: ../../../ETS2LA.UI/Pages/Settings/Telemetry.razor:17
 #: ../../../ETS2LA.UI/Pages/Settings/Data.razor:35
-#: ../../../ETS2LA.UI/Pages/Settings/Data.razor:128
 #: ../../../ETS2LA.UI/Pages/Settings/Display.razor:98
+#: ../../../ETS2LA.UI/Pages/Settings/Data.razor:128
 #: ../../../ETS2LA.UI/Pages/Settings/Display.razor:239
 msgid ""
 "Changing this option requires a restart of ETS2LA to take effect. Restart "
@@ -3108,7 +3119,7 @@ msgstr ""
 msgid "And to those who've decided to remain anonymous!"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/PrivacyPolicyStep.razor:45
+#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/PrivacyPolicyStep.razor:41
 msgid ""
 "We don't sell or transfer your personal data to any third parties, in fact, "
 "we don't even collect it. However, we are still obligated to display and "

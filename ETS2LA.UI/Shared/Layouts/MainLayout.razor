@@ -45,8 +45,9 @@
       <div class="flex pl-3 flex-col relative">
         <div class=@((WindowState.Current.IsSidebarOpen ? " opacity-100" : " opacity-0") + " transition-opacity duration-100 ease-in-out")>
           <div class="flex items-end gap-0.5">
-            <p class="font-bold">ETS2LA</p>
-            <p class="text-[12px] mb-px">@subtitle</p>
+            <!-- IDs for changing these from the C# side if we want to in the future. -->
+            <p id="abt" class="font-bold">ETS2LA</p>
+            <p id="abts" class="text-[12px] mb-px">@subtitle</p>
           </div>
           @try
           {

@@ -1,7 +1,6 @@
-### ETS2LA C# 2026.11.5287
-- `feat` Added support for Backups. This is an upcoming subscription feature. People who've previous supported us (have the `Supporter` role) will have access to this feature already.
-- `fix` *Lun011666* - Added region blocking to the chatbot to comply with 
-- `translations` Updated translations for Hungarian, Slovak and Chinese (Traditional).
+### ETS2LA C# 2026.11.5291
+- `feat` Added new onboarding page.
+- `fix` **sifumax** - Fixed a crash on linux during startup. Specifically `There is no browser renderer`.
 
 #### Thank you to today's sponsor... You!
 Development is possible thanks to our [sponsors](https://github.com/sponsors/Tumppi066). Please consider supporting if you like the project and have the means to do so.

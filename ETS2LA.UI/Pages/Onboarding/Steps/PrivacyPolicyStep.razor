@@ -8,17 +8,13 @@
 @code {
     // When ETS2LA is downloaded from CNB, it sets the default updater source
     // to CNB, we can detect this to show a different page for Chinese Users.
-    public bool IsChina => false; //Updater.Current.GetSelectedSource().sourceName == "CNB";
+    public bool IsChina => Updater.Current.GetSelectedSource().sourceName == "CNB";
 
     [Parameter]
     public Action OnNext { get; set; }
 
     [Parameter]
     public Action OnPrevious { get; set; }
-
-    private List<string> DisplayOnly { get; set; } = new List<string> { 
-        "ETS2LA.Overlay.Interact" 
-    };
 
     private void OpenGlobalPrivacyPolicy()
     {
