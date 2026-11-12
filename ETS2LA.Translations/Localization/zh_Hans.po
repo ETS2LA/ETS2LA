@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
 "POT-Creation-Date: 2026-11-11 15:03:10+0200\n"
-"PO-Revision-Date: 2026-11-02 20:26+0000\n"
+"PO-Revision-Date: 2026-11-12 02:24+0000\n"
 "Last-Translator: goodnightan <goodnightan@ets2la.com>\n"
 "Language-Team: Chinese (Simplified Han script) <http://weblate.ets2la.com/"
 "projects/ets2la/ets2la/zh_Hans/>\n"
@@ -69,7 +69,7 @@ msgid "Control with ID '{0}' not found for updating bindings."
 msgstr "找不到可以修改绑定的 {0} 号控件。"
 
 msgid "Monitor"
-msgstr ""
+msgstr "监控"
 
 msgid ""
 "Force ETS2LA to load the map on game startup. This can resolve issues where "
@@ -101,7 +101,7 @@ msgid "Register"
 msgstr "注册"
 
 msgid "Backup Now"
-msgstr ""
+msgstr "立即备份"
 
 msgid "kg"
 msgstr "kg"
@@ -255,7 +255,8 @@ msgstr "您的用户名至少需要包含{0}个字符。"
 msgid ""
 "Allow ETS2LA's overlay to run on Wayland. Wayland might cause compatibility "
 "issues, however you might want to try to enable this option."
-msgstr ""
+msgstr "允许 ETS2LA 的覆盖层在 Wayland 上运行。Wayland 可能会导致兼容性问题，但您可能"
+"仍希望尝试启用此选项。"
 
 msgid "Press anywhere outside the dialog to close it."
 msgstr "点击对话框外的任意位置即可关闭。"
@@ -319,7 +320,7 @@ msgid "Failed to log out. Please try again."
 msgstr "退出登录失败。请重试。"
 
 msgid "Update Information"
-msgstr ""
+msgstr "更新信息"
 
 msgid "Visual"
 msgstr "视觉提示"
@@ -383,7 +384,7 @@ msgid "No Update Available"
 msgstr "没有可用更新"
 
 msgid "Exclude Mod"
-msgstr ""
+msgstr "排除模组"
 
 msgid "Performance Overlay"
 msgstr "性能叠加层"
@@ -484,7 +485,7 @@ msgstr "你确定吗？"
 
 #, csharp-format
 msgid "Mod '{0}' has been excluded from future parsing."
-msgstr ""
+msgstr "'{0}' 模组已被排除在后续的解析之外。"
 
 #, csharp-format
 msgid "You have successfully logged in as {0}."
@@ -513,7 +514,7 @@ msgid "Failed to uninstall current version of plugin with ID {0}."
 msgstr "无法卸载 ID 为 {0} 插件的当前版本。"
 
 msgid "Error retrieving monitor names"
-msgstr ""
+msgstr "检索显示器名称时出错"
 
 msgid "Early"
 msgstr "早"
@@ -760,7 +761,7 @@ msgid "Error while checking for updates: {0}"
 msgstr "检查更新时发生错误：{0}"
 
 msgid "Error Unpacking Mod"
-msgstr ""
+msgstr "解压模组时出错"
 
 msgid "Undetermined"
 msgstr "无法判断"
@@ -772,7 +773,7 @@ msgid "Traffic Lights"
 msgstr "交通信号灯"
 
 msgid "No monitors detected, overlay cannot be initialized."
-msgstr ""
+msgstr "未检测到显示器，无法初始化叠加层。"
 
 msgid "Update check skipped, using already cached result."
 msgstr "已略过更新检查，使用现有的缓存结果。"
@@ -840,7 +841,7 @@ msgstr "防碰撞"
 
 #, csharp-format
 msgid "Monitor {0}: {1}"
-msgstr ""
+msgstr "显示器 {0}：{1}"
 
 msgid ""
 "Disables the overlay entirely. This will fix the black screen issue at the "
@@ -858,7 +859,7 @@ msgstr "辅助功能已禁用"
 
 msgid ""
 "Cannot save settings to cloud: User is not logged in or JWT token is missing."
-msgstr ""
+msgstr "无法将设置保存到云端：用户未登录或 JWT 令牌缺失。"
 
 msgid ""
 "Too many requests. You have sent too many requests in a given amount of time."
@@ -980,10 +981,10 @@ msgid ""
 msgstr "移除账户将删除您在我们服务器上的所有数据。此操作无法撤销。"
 
 msgid "Unknown File"
-msgstr ""
+msgstr "未知文件"
 
 msgid "Excluded Mods"
-msgstr ""
+msgstr "已排除的模组"
 
 msgid "Manager"
 msgstr "插件管理"
@@ -1207,7 +1208,7 @@ msgid ""
 msgstr "按下“设定”按键时，ETS2LA 应将当前巡航速度设定为什么速度？"
 
 msgid "Allow Wayland"
-msgstr ""
+msgstr "允许 Wayland"
 
 msgid "The selected directory does not exist."
 msgstr "所选目录不存在。"
@@ -1224,6 +1225,8 @@ msgid ""
 "This service is not available in your region. <span class=\"hover:underline "
 "hover:cursor-pointer\">Click here to see supported regions.</span>"
 msgstr ""
+"此服务在您所在的地区不可用。<span class="
+"\"hover:underline hover:cursor-pointer\"> 点击此处查看支持服务的地区。</span>"
 
 #, csharp-format
 msgid "Error while applying update: {0}"
