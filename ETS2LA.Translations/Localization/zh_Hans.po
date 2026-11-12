@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
 "POT-Creation-Date: 2026-11-11 15:03:10+0200\n"
-"PO-Revision-Date: 2026-11-12 02:32+0000\n"
+"PO-Revision-Date: 2026-11-12 02:54+0000\n"
 "Last-Translator: goodnightan <goodnightan@ets2la.com>\n"
 "Language-Team: Chinese (Simplified Han script) <http://weblate.ets2la.com/"
 "projects/ets2la/ets2la/zh_Hans/>\n"
@@ -69,7 +69,7 @@ msgid "Control with ID '{0}' not found for updating bindings."
 msgstr "找不到可以修改绑定的 {0} 号控件。"
 
 msgid "Monitor"
-msgstr "监控"
+msgstr "显示器设置"
 
 msgid ""
 "Force ETS2LA to load the map on game startup. This can resolve issues where "
@@ -2145,13 +2145,13 @@ msgid ""
 msgstr "解析仍会继续，但此文件中的信息将无法供 ETS2LA 使用。"
 
 msgid "No options selected"
-msgstr ""
+msgstr "未选择任何选项"
 
 msgid "The selected file is not a core.scs file."
 msgstr "所选的文件不是 core.scs 文件。"
 
 msgid "Manual Backup and Restore"
-msgstr ""
+msgstr "手动备份与恢复"
 
 msgid "You have successfully logged out."
 msgstr "您已成功退出登录。"
@@ -2201,7 +2201,8 @@ msgid ""
 "The monitor ETS2LA's overlay will be displayed on. If you have multiple "
 "monitors, you can select which one to use here. Please select the monitor "
 "the game is running on, and ensure the game is in fullscreen."
-msgstr ""
+msgstr "ETS2LA 叠加层将显示在该显示器上。如果您有多个显示器，可在此选择要使用哪一个。"
+"请选择游戏正在运行的显示器，并确保游戏处于全屏模式。"
 
 msgid ""
 "You do not have permission to access this resource. The server understood "
@@ -2234,7 +2235,7 @@ msgstr "渲染视野摄像头"
 
 #, csharp-format
 msgid "Failed to unpack mod '{0}'"
-msgstr ""
+msgstr "无法解压模组'{0}'"
 
 msgid "Imperial"
 msgstr "英制"
@@ -2341,7 +2342,7 @@ msgstr "删除账户时发生错误。请稍后重试。错误： "
 
 #, csharp-format
 msgid "Deleted old SDK file '{0}'"
-msgstr ""
+msgstr "已删除旧的 SDK 文件'{0}'"
 
 msgid "°C"
 msgstr "°C"
@@ -2385,7 +2386,8 @@ msgid ""
 "You do not have access to these features. Please log in with an account that "
 "has an active subscription. You can manage your subscription through the "
 "account settings page."
-msgstr ""
+msgstr "您无权访问这些功能。请使用拥有有效订阅的账户登录。您可以通过账户设置页面管理"
+"您的订阅。"
 
 #, csharp-format
 msgid "Cannot enable plugin {0} because dependency {1} was not found."
@@ -2396,7 +2398,7 @@ msgstr "按键行为"
 
 #, csharp-format
 msgid "Download progress: {0}% ({1} / {2})"
-msgstr ""
+msgstr "下载进度：{0}% ({1} / {2})"
 
 msgid "Next"
 msgstr "下一步"
@@ -2414,12 +2416,13 @@ msgstr "演示窗口"
 msgid ""
 "Allow ETS2LA's window to run on Wayland. Wayland might cause compatibility "
 "issues, however you might want to try to enable this option."
-msgstr ""
+msgstr "允许 ETS2LA 窗口在 Wayland 上运行。Wayland 可能会导致兼容性问题，但您可能希望"
+"尝试启用此选项。"
 
 msgid ""
 "Restoring settings from the cloud requires a restart of ETS2LA to take "
 "effect. Restart now?"
-msgstr ""
+msgstr "从云端恢复设置需要重启 ETS2LA 才能生效。现在重启？"
 
 msgid "Help"
 msgstr "帮助"
