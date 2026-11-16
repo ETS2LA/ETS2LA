@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
 "POT-Creation-Date: 2026-11-11 15:03:10+0200\n"
-"PO-Revision-Date: 2026-10-20 09:37+0000\n"
+"PO-Revision-Date: 2026-11-16 16:42+0000\n"
 "Last-Translator: Pastel <pastel@ets2la.com>\n"
 "Language-Team: Japanese <http://weblate.ets2la.com/projects/ets2la/ets2la/ja/"
 ">\n"
@@ -34,7 +34,7 @@ msgid "Display"
 msgstr "ディスプレイ"
 
 msgid "Go to Account Settings"
-msgstr ""
+msgstr "アカウント設定を開く"
 
 msgid "Overlay Interaction"
 msgstr "オーバーレイのインタラクション"
@@ -58,14 +58,14 @@ msgstr ""
 
 #, csharp-format
 msgid "Legacy audio path detected: {0}"
-msgstr ""
+msgstr "旧形式のオーディオパスを検出しました:{0}"
 
 #, csharp-format
 msgid "Control with ID '{0}' not found for updating bindings."
 msgstr "割り当ての更新に必要な、ID「{0}」のコントロールが見つかりません。"
 
 msgid "Monitor"
-msgstr ""
+msgstr "モニター"
 
 msgid ""
 "Force ETS2LA to load the map on game startup. This can resolve issues where "
@@ -76,13 +76,13 @@ msgstr ""
 "とがあります。"
 
 msgid "Gates"
-msgstr ""
+msgstr "ゲート"
 
 msgid "Game SDK"
 msgstr "ゲームSDK"
 
 msgid "Send log"
-msgstr ""
+msgstr "ログを送信"
 
 #, csharp-format
 msgid "Parsing installation at '{0}' (version: {1})"
@@ -115,7 +115,7 @@ msgid "Become a GitHub Sponsor"
 msgstr "GitHubスポンサーになる"
 
 msgid "Game not found"
-msgstr ""
+msgstr "ゲームが見つかりません"
 
 msgid "If you've not yet installed it, you can find it in the catalogue."
 msgstr "まだインストールしていない場合は、カタログから探すことができます。"
@@ -143,7 +143,8 @@ msgstr ""
 msgid ""
 "Your username may only contain letters, numbers, underscores, hyphens and "
 "periods, and must start and end with a letter or number."
-msgstr ""
+msgstr "ユーザー名には英字、数字、アンダーバー、ハイフン、ピリオドのみ使用できます。"
+"先頭と末尾は英字または数字にする必要があります。"
 
 #, csharp-format
 msgid "Connected joystick: [bold]{0}[/] [gray italic]({1})[/]"
@@ -184,7 +185,7 @@ msgid "Binding for control {0} ({1}) timed out."
 msgstr "操作 {0}（{1}）の割り当てがタイムアウトしました。"
 
 msgid "Remove Account"
-msgstr ""
+msgstr "アカウントを削除する"
 
 #, csharp-format
 msgid ""
@@ -250,16 +251,19 @@ msgid "The step size for changing the cruise control speed."
 msgstr "クルーズコントロールの速度を変更する際の刻み幅です。"
 
 msgid "Please enter a username."
-msgstr ""
+msgstr "ユーザー名を入力してください。"
 
 #, csharp-format
 msgid "Your username must be at least {0} characters long."
-msgstr ""
+msgstr "ユーザー名は、{0}文字以上である必要があります。"
 
 msgid ""
 "Allow ETS2LA's overlay to run on Wayland. Wayland might cause compatibility "
 "issues, however you might want to try to enable this option."
 msgstr ""
+"ETS2LAのオーバーレイをWayland上で動作できるようにします。Waylandでは互換性の"
+"問題が発生する可能性がありますが、このオプションを有効にして試すこともできま"
+"す。"
 
 msgid "Press anywhere outside the dialog to close it."
 msgstr "ダイアログの外側をクリックすると閉じます。"
@@ -268,7 +272,7 @@ msgid "Welcome to ETS2LA!"
 msgstr "ETS2LAへようこそ！"
 
 msgid "Account Removal Failed"
-msgstr ""
+msgstr "アカウントの削除に失敗しました"
 
 msgid ""
 "<span class=\"text-text-accent\"))>Success!</span> You can find more plugins "
@@ -310,7 +314,7 @@ msgstr ""
 "font-bold\">少なくとも1つのゲーム</span>にSDKをインストールしてください。"
 
 msgid "Enable Memory Output for Pedals"
-msgstr ""
+msgstr "ペダル用のメモリ出力を有効にする"
 
 #, csharp-format
 msgid "Successfully updated plugin with ID {0}."
@@ -320,10 +324,10 @@ msgid "Look in the top left corner."
 msgstr "左上の隅を見てください。"
 
 msgid "Failed to log out. Please try again."
-msgstr ""
+msgstr "ログアウトに失敗しました。もう一度お試しください。"
 
 msgid "Update Information"
-msgstr ""
+msgstr "アップデート情報"
 
 msgid "Visual"
 msgstr "ビジュアル"
@@ -338,7 +342,7 @@ msgid "Show Fewer Logs"
 msgstr "ログの表示数を減らす"
 
 msgid "Your login token is invalid or expired."
-msgstr ""
+msgstr "ログイントークンが無効か、有効期限が切れています。"
 
 #, csharp-format
 msgid "Error while downloading update: {0}"
@@ -379,7 +383,7 @@ msgstr ""
 "ETS2LAが車線変更を行う速度を制御できます。"
 
 msgid "Logout Successful"
-msgstr ""
+msgstr "ログアウトに成功しました"
 
 #, csharp-format
 msgid "Successfully uninstalled plugin with ID {0}."
@@ -389,7 +393,7 @@ msgid "No Update Available"
 msgstr "利用可能なアップデートはありません"
 
 msgid "Exclude Mod"
-msgstr ""
+msgstr "MODを除外"
 
 msgid "Performance Overlay"
 msgstr "パフォーマンスオーバーレイ"
@@ -462,7 +466,7 @@ msgstr "アシスト有効：<span class=\"text-text-accent font-bold\">{0}</spa
 msgid ""
 "Only show news articles from official sources, such as the ETS2LA team or "
 "it's developers."
-msgstr ""
+msgstr "ETS2LAチームや開発者など、公式ソースからのニュース記事のみを表示します。"
 
 msgid ""
 "Memory not available for output, please ensure the game is running and "
@@ -472,7 +476,7 @@ msgstr ""
 "てSDKを再インストールしてください。"
 
 msgid "All driving assists have been disabled."
-msgstr ""
+msgstr "すべての運転支援機能が無効になりました。"
 
 msgid "Translating release notes..."
 msgstr "リリースノートの翻訳中..."
@@ -523,7 +527,7 @@ msgstr ""
 "ID {0} のプラグインの現在のバージョンをアンインストールできませんでした。"
 
 msgid "Error retrieving monitor names"
-msgstr ""
+msgstr "モニター名の取得に失敗しました"
 
 msgid "Early"
 msgstr "早い"
