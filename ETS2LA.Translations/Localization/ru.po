@@ -3,10 +3,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
 "POT-Creation-Date: 2026-11-11 15:03:10+0200\n"
-"PO-Revision-Date: 2026-10-28 00:04+0000\n"
+"PO-Revision-Date: 2026-11-18 07:03+0000\n"
 "Last-Translator: Tema <tema@ets2la.com>\n"
-"Language-Team: Russian <http://weblate.ets2la.com/projects/ets2la/ets2la/ru/"
-">\n"
+"Language-Team: Russian <http://weblate.ets2la.com/projects/ets2la/ets2la/ru/>"
+"\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -60,14 +60,14 @@ msgstr ""
 
 #, csharp-format
 msgid "Legacy audio path detected: {0}"
-msgstr ""
+msgstr "Обнаружен устаревший путь к аудиофайлу: {0}"
 
 #, csharp-format
 msgid "Control with ID '{0}' not found for updating bindings."
 msgstr "Элемент управления с ID '{0}' не найден для обновления привязок."
 
 msgid "Monitor"
-msgstr ""
+msgstr "Монитор"
 
 msgid ""
 "Force ETS2LA to load the map on game startup. This can resolve issues where "
@@ -100,7 +100,7 @@ msgid "Register"
 msgstr "Зарегистрироваться"
 
 msgid "Backup Now"
-msgstr ""
+msgstr "Создать резервную копию"
 
 msgid "kg"
 msgstr "кг"
@@ -219,7 +219,7 @@ msgid "Window Zoom"
 msgstr "Масштаб окна"
 
 msgid "Show More Logs"
-msgstr "Показать больше записей журнала"
+msgstr "Показать больше логов"
 
 msgid ""
 "Cracked games or demos will block our SDK from loading. They do not work, "
@@ -263,6 +263,8 @@ msgid ""
 "Allow ETS2LA's overlay to run on Wayland. Wayland might cause compatibility "
 "issues, however you might want to try to enable this option."
 msgstr ""
+"Разрешает оверлею ETS2LA работать на Wayland. Wayland может вызывать "
+"проблемы совместимости, однако вы можете попробовать включить эту опцию."
 
 msgid "Press anywhere outside the dialog to close it."
 msgstr ""
@@ -328,7 +330,7 @@ msgid "Failed to log out. Please try again."
 msgstr "Не удалось выйти из аккаунта. Попробуйте ещё раз."
 
 msgid "Update Information"
-msgstr ""
+msgstr "Информация об обновлении"
 
 msgid "Visual"
 msgstr "Визуальное"
@@ -340,7 +342,7 @@ msgid "Install Plugins"
 msgstr "Установить плагины"
 
 msgid "Show Fewer Logs"
-msgstr "Показать меньше записей журнала"
+msgstr "Показать меньше логов"
 
 msgid "Your login token is invalid or expired."
 msgstr "Токен входа недействителен или срок его действия истёк."
@@ -395,7 +397,7 @@ msgid "No Update Available"
 msgstr "Обновлений нет"
 
 msgid "Exclude Mod"
-msgstr ""
+msgstr "Исключить мод"
 
 msgid "Performance Overlay"
 msgstr "Оверлей производительности"
@@ -485,7 +487,7 @@ msgstr ""
 "запущена, и при необходимости переустановите SDK."
 
 msgid "All driving assists have been disabled."
-msgstr ""
+msgstr "Все ассистенты вождения отключены."
 
 msgid "Translating release notes..."
 msgstr "Перевод списка изменений..."
@@ -507,7 +509,7 @@ msgstr "Вы уверены?"
 
 #, csharp-format
 msgid "Mod '{0}' has been excluded from future parsing."
-msgstr ""
+msgstr "Мод '{0}' исключён из дальнейшей обработки."
 
 #, csharp-format
 msgid "You have successfully logged in as {0}."
@@ -538,7 +540,7 @@ msgid "Failed to uninstall current version of plugin with ID {0}."
 msgstr "Не удалось удалить текущую версию плагина с ID {0}."
 
 msgid "Error retrieving monitor names"
-msgstr ""
+msgstr "Не удалось получить названия мониторов"
 
 msgid "Early"
 msgstr "Рано"
@@ -557,7 +559,7 @@ msgid "The server timed out waiting for the request from the client."
 msgstr "Истекло время ожидания запроса от клиента."
 
 msgid "Assists Enabled"
-msgstr ""
+msgstr "Ассистенты включены"
 
 msgid "Backend shutdown complete."
 msgstr "Работа бэкенда завершена."
@@ -577,7 +579,7 @@ msgstr ""
 
 #, csharp-format
 msgid "Unregistered control: {0} ({1})"
-msgstr "Регистрация элемента управления отменена: {0} ({1})"
+msgstr "Разрегистрирован элемент управления: {0} ({1})"
 
 msgid "Contact Us"
 msgstr "Связаться с нами"
@@ -620,6 +622,8 @@ msgid ""
 "Target speed changed. Current speedlimit: {0} {1}. Offsets are carried over "
 "on speedlimit change."
 msgstr ""
+"Целевая скорость изменена. Текущее ограничение скорости: {0} {1}. "
+"Корректировки сохраняются при смене ограничения скорости."
 
 msgid "Adaptive Cruise Control Only"
 msgstr "Только адаптивный круиз-контроль"
@@ -798,7 +802,7 @@ msgid "Error while checking for updates: {0}"
 msgstr "Ошибка при проверке обновлений: {0}"
 
 msgid "Error Unpacking Mod"
-msgstr ""
+msgstr "Ошибка распаковки мода"
 
 msgid "Undetermined"
 msgstr "Не определено"
@@ -810,7 +814,7 @@ msgid "Traffic Lights"
 msgstr "Светофоры"
 
 msgid "No monitors detected, overlay cannot be initialized."
-msgstr ""
+msgstr "Мониторы не обнаружены, оверлей не может быть инициализирован."
 
 msgid "Update check skipped, using already cached result."
 msgstr "Проверка обновлений пропущена, используется сохранённый результат."
@@ -882,7 +886,7 @@ msgstr "Предотвращение столкновений"
 
 #, csharp-format
 msgid "Monitor {0}: {1}"
-msgstr ""
+msgstr "Монитор {0}: {1}"
 
 msgid ""
 "Disables the overlay entirely. This will fix the black screen issue at the "
@@ -896,11 +900,13 @@ msgid "Overrides"
 msgstr "Переопределения"
 
 msgid "Assists Disabled"
-msgstr ""
+msgstr "Ассистенты отключены"
 
 msgid ""
 "Cannot save settings to cloud: User is not logged in or JWT token is missing."
 msgstr ""
+"Не удалось сохранить настройки в облако: пользователь не вошёл в аккаунт или "
+"отсутствует JWT-токен."
 
 msgid ""
 "Too many requests. You have sent too many requests in a given amount of time."
@@ -934,7 +940,7 @@ msgstr ""
 
 #, csharp-format
 msgid "Invalid audio job: {0}, does the file exist?"
-msgstr ""
+msgstr "Недопустимое аудиозадание: {0}. Проверьте, существует ли файл."
 
 #, csharp-format
 msgid "Failed to load library plugin from [gray]{0}[/]: {1}"
@@ -1039,10 +1045,10 @@ msgstr ""
 "Это действие нельзя отменить."
 
 msgid "Unknown File"
-msgstr ""
+msgstr "Неизвестный файл"
 
 msgid "Excluded Mods"
-msgstr ""
+msgstr "Исключённые моды"
 
 msgid "Manager"
 msgstr "Менеджер"
@@ -1112,7 +1118,7 @@ msgstr ""
 "они не нужны."
 
 msgid "Test Audio"
-msgstr ""
+msgstr "Проверить звук"
 
 msgid "Wiki / FAQ"
 msgstr "Вики / Частые вопросы"
@@ -1281,7 +1287,7 @@ msgstr ""
 "SET?"
 
 msgid "Allow Wayland"
-msgstr ""
+msgstr "Разрешить Wayland"
 
 msgid "The selected directory does not exist."
 msgstr "Выбранный каталог не существует."
@@ -1300,6 +1306,9 @@ msgid ""
 "This service is not available in your region. <span class=\"hover:underline "
 "hover:cursor-pointer\">Click here to see supported regions.</span>"
 msgstr ""
+"Этот сервис недоступен в вашем регионе. <span class="
+"\"hover:underline hover:cursor-pointer\">Нажмите здесь, чтобы посмотреть "
+"поддерживаемые регионы.</span>"
 
 #, csharp-format
 msgid "Error while applying update: {0}"
@@ -1325,6 +1334,8 @@ msgid ""
 "Select mods that you want to exclude from the data. This can be useful if "
 "you have a mod that is causing issues with the data."
 msgstr ""
+"Выберите моды, которые нужно исключить из обработки данных. Это полезно, "
+"если какой-то мод вызывает проблемы с данными."
 
 msgid ""
 "Adjust the level of detail of the game data we use. Higher values use more "
@@ -1478,7 +1489,7 @@ msgstr ""
 "• При создании аккаунта мы передаём сведения о нём международному получателю."
 
 msgid "Update Settings"
-msgstr ""
+msgstr "Настройки обновлений"
 
 #, csharp-format
 msgid "<span class=\"font-semibold\">{0}</span> at {1}"
@@ -1544,7 +1555,7 @@ msgstr ""
 
 #, csharp-format
 msgid "Failed to save settings to cloud: {0}"
-msgstr ""
+msgstr "Не удалось сохранить настройки в облако: {0}"
 
 msgid "Binding thread started with no control to bind."
 msgstr "Поток привязки запущен, но элемент управления для привязки не выбран."
@@ -1563,6 +1574,8 @@ msgid ""
 "When enabled, your settings will be automatically saved to the cloud when "
 "you exit ETS2LA."
 msgstr ""
+"Если включено, настройки будут автоматически сохраняться в облако при выходе "
+"из ETS2LA."
 
 msgid "Simplified Graphics"
 msgstr "Упрощённая графика"
@@ -1636,7 +1649,7 @@ msgid "Currently running at {0} FPS."
 msgstr "Текущая частота кадров: {0} FPS."
 
 msgid "Mod Excluded"
-msgstr ""
+msgstr "Мод исключён"
 
 #, csharp-format
 msgid "Version {0} not found for plugin with ID {1}."
@@ -1674,7 +1687,7 @@ msgstr ""
 
 #, csharp-format
 msgid "No versions available for plugin with ID {0}."
-msgstr ""
+msgstr "Для плагина с ID {0} нет доступных версий."
 
 #, csharp-format
 msgid ""
@@ -1735,14 +1748,14 @@ msgid "The selected game executable was not found."
 msgstr "Не удалось найти исполняемый файл выбранной игры."
 
 msgid "No update available."
-msgstr ""
+msgstr "Обновлений нет."
 
 #, csharp-format
 msgid "Loaded library plugin: [gray]{0}[/] from [gray]{1}[/]."
 msgstr "Загружен плагин-библиотека: [gray]{0}[/] из [gray]{1}[/]."
 
 msgid "Backup on Exit"
-msgstr ""
+msgstr "Резервное копирование при выходе"
 
 msgid "Enter the OTP generated by your authenticator app."
 msgstr ""
@@ -1775,6 +1788,8 @@ msgid ""
 "Cannot load settings from cloud: User is not logged in or JWT token is "
 "missing."
 msgstr ""
+"Не удалось загрузить настройки из облака: пользователь не вошёл в аккаунт "
+"или отсутствует JWT-токен."
 
 msgid "Failed to initialize overlay, OpenGL initialization failed."
 msgstr "Не удалось инициализировать оверлей: ошибка инициализации OpenGL."
@@ -1836,6 +1851,8 @@ msgid ""
 "An error occurred while unpacking mod '{0}'. Parsing will continue, however "
 "information contained in this mod won't be available to ETS2LA."
 msgstr ""
+"Произошла ошибка при распаковке мода '{0}'. Обработка продолжится, однако "
+"информация из этого мода будет недоступна ETS2LA."
 
 msgid "Chatbot"
 msgstr "Чат-бот"
@@ -1949,10 +1966,10 @@ msgstr ""
 "Оверлей отключён в настройках, поэтому регистрация окна {0} пропускается."
 
 msgid "Audio Settings"
-msgstr ""
+msgstr "Настройки звука"
 
 msgid "Backup"
-msgstr ""
+msgstr "Резервное копирование"
 
 msgid "Request cancelled."
 msgstr "Запрос отменён."
@@ -2022,7 +2039,7 @@ msgid "Experiments"
 msgstr "Эксперименты"
 
 msgid "Backup Settings"
-msgstr ""
+msgstr "Настройки резервного копирования"
 
 msgid "gallons"
 msgstr "галлоны"
@@ -2059,6 +2076,8 @@ msgid ""
 "Our application is regularly stolen and cloned by vibe coders. If you have "
 "paid for access, you may have been scammed."
 msgstr ""
+"Наше приложение регулярно крадут и клонируют вайб-кодеры. Если вы платили за "
+"доступ, вас могли обмануть."
 
 msgid "kilograms"
 msgstr "килограммы"
@@ -2172,7 +2191,7 @@ msgid ""
 msgstr "Вы вошли в аккаунт как <span class=\"text-text-l\">{0}</span>. [{1}]"
 
 msgid "Restore from Cloud"
-msgstr ""
+msgstr "Восстановить из облака"
 
 msgid ""
 "We will pause the game when we detect instability or the steering is "
@@ -2280,7 +2299,7 @@ msgstr ""
 "присмотра, особенно в мультиплеере.</span>"
 
 msgid "Scammer Notice"
-msgstr ""
+msgstr "Предупреждение о мошенниках"
 
 #, csharp-format
 msgid "Tried to enable {0}, but it was not found among loaded plugins."
@@ -2288,7 +2307,7 @@ msgstr "Не удалось включить {0}: плагин не найден
 
 #, csharp-format
 msgid "Failed to load settings from cloud: {0}"
-msgstr ""
+msgstr "Не удалось загрузить настройки из облака: {0}"
 
 msgid ""
 "Parsing will continue, however information contained in this file won't be "
@@ -2298,13 +2317,13 @@ msgstr ""
 "ETS2LA."
 
 msgid "No options selected"
-msgstr ""
+msgstr "Ничего не выбрано"
 
 msgid "The selected file is not a core.scs file."
 msgstr "Выбранный файл не является файлом core.scs."
 
 msgid "Manual Backup and Restore"
-msgstr ""
+msgstr "Ручное резервное копирование и восстановление"
 
 msgid "You have successfully logged out."
 msgstr "Вы успешно вышли из аккаунта."
@@ -2355,6 +2374,9 @@ msgid ""
 "monitors, you can select which one to use here. Please select the monitor "
 "the game is running on, and ensure the game is in fullscreen."
 msgstr ""
+"Монитор, на котором будет отображаться оверлей ETS2LA. Если у вас несколько "
+"мониторов, здесь можно выбрать нужный. Выберите монитор, на котором запущена "
+"игра, и убедитесь, что игра работает в полноэкранном режиме."
 
 msgid ""
 "You do not have permission to access this resource. The server understood "
@@ -2389,7 +2411,7 @@ msgstr "Отображать камеры компьютерного зрени�
 
 #, csharp-format
 msgid "Failed to unpack mod '{0}'"
-msgstr ""
+msgstr "Не удалось распаковать мод '{0}'"
 
 msgid "Imperial"
 msgstr "Имперская система"
@@ -2504,7 +2526,7 @@ msgstr ""
 
 #, csharp-format
 msgid "Deleted old SDK file '{0}'"
-msgstr ""
+msgstr "Удалён старый файл SDK '{0}'"
 
 msgid "°C"
 msgstr "°C"
@@ -2524,7 +2546,7 @@ msgid "Checking for updates..."
 msgstr "Проверка обновлений..."
 
 msgid "No audio output device available"
-msgstr ""
+msgstr "Нет доступных устройств аудиовыхода"
 
 msgid "Catalogue"
 msgstr "Каталог"
@@ -2553,6 +2575,8 @@ msgid ""
 "has an active subscription. You can manage your subscription through the "
 "account settings page."
 msgstr ""
+"У вас нет доступа к этим функциям. Войдите в аккаунт с активной подпиской. "
+"Управлять подпиской можно на странице настроек аккаунта."
 
 #, csharp-format
 msgid "Cannot enable plugin {0} because dependency {1} was not found."
@@ -2563,7 +2587,7 @@ msgstr "Режим работы клавиши"
 
 #, csharp-format
 msgid "Download progress: {0}% ({1} / {2})"
-msgstr ""
+msgstr "Загрузка: {0}% ({1} / {2})"
 
 msgid "Next"
 msgstr "Далее"
@@ -2582,11 +2606,15 @@ msgid ""
 "Allow ETS2LA's window to run on Wayland. Wayland might cause compatibility "
 "issues, however you might want to try to enable this option."
 msgstr ""
+"Разрешает окну ETS2LA работать на Wayland. Wayland может вызывать проблемы "
+"совместимости, однако вы можете попробовать включить эту опцию."
 
 msgid ""
 "Restoring settings from the cloud requires a restart of ETS2LA to take "
 "effect. Restart now?"
 msgstr ""
+"Чтобы восстановление настроек из облака вступило в силу, необходимо "
+"перезапустить ETS2LA. Перезапустить сейчас?"
 
 msgid "Help"
 msgstr "Справка"
@@ -2668,7 +2696,7 @@ msgid "Successfully installed SDK version '{0}' to '{1}'"
 msgstr "SDK версии '{0}' успешно установлен в '{1}'"
 
 msgid "All driving assists have been enabled."
-msgstr ""
+msgstr "Все ассистенты вождения включены."
 
 msgid "Display Units: "
 msgstr "Единицы измерения: "
