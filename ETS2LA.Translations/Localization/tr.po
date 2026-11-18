@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-11-11 15:03:10+0200\n"
+"POT-Creation-Date: 2026-11-18 13:09:47+0200\n"
 "PO-Revision-Date: 2026-10-18 11:30+0000\n"
 "Last-Translator: Yhuyy <yhuyy@ets2la.com>\n"
 "Language-Team: Turkish <http://weblate.ets2la.com/projects/ets2la/ets2la/tr/"
@@ -113,6 +113,9 @@ msgid ""
 msgstr ""
 "Mevcut hedef hızı bir kademe düşürür. Hız kontrolü ve şerit takip sistemi "
 "kapalıysa, bu tuş AYARLA işlevi görür. Yani mevcut hızı hız sınırına ayarlar."
+
+msgid "Logs"
+msgstr ""
 
 msgid "Become a GitHub Sponsor"
 msgstr "GitHub Sponsoru Olun"
@@ -258,13 +261,13 @@ msgstr "Hız sabitleyici hızı artırma/azaltma miktarı."
 msgid "Please enter a username."
 msgstr ""
 
-#, csharp-format
-msgid "Your username must be at least {0} characters long."
-msgstr ""
-
 msgid ""
 "Allow ETS2LA's overlay to run on Wayland. Wayland might cause compatibility "
 "issues, however you might want to try to enable this option."
+msgstr ""
+
+#, csharp-format
+msgid "Your username must be at least {0} characters long."
 msgstr ""
 
 msgid "Press anywhere outside the dialog to close it."
@@ -337,22 +340,22 @@ msgstr "Görsel"
 msgid "Additional"
 msgstr "Ek olarak"
 
-msgid "Install Plugins"
-msgstr "Eklentileri Yükle"
-
 msgid "Show Fewer Logs"
 msgstr "Daha az günlük göster"
+
+msgid "Install Plugins"
+msgstr "Eklentileri Yükle"
 
 msgid "Your login token is invalid or expired."
 msgstr "Oturum açma jetonunuz geçersiz veya süresi dolmuş."
 
-#, csharp-format
-msgid "Error while downloading update: {0}"
-msgstr "Güncelleme indirilirken hata oluştu: {0}"
-
 #, fuzzy
 msgid "I won't leave ETS2LA unattended"
 msgstr "ETS2LA'i gözetimsiz bırakmayacağım"
+
+#, csharp-format
+msgid "Error while downloading update: {0}"
+msgstr "Güncelleme indirilirken hata oluştu: {0}"
 
 msgid "Keyboard"
 msgstr "Klavye"
@@ -1060,12 +1063,12 @@ msgstr ""
 msgid "SDK Installed"
 msgstr "SDK Yüklendi"
 
+msgid "Current Speed"
+msgstr "Mevcut Hız"
+
 #, csharp-format
 msgid "Bound control {0} ({1}) to device {2} and control {3}"
 msgstr ""
-
-msgid "Current Speed"
-msgstr "Mevcut Hız"
 
 msgid "miles per hour"
 msgstr "mil/saat"
@@ -1333,6 +1336,9 @@ msgstr ""
 msgid "Failed to install latest version of plugin with ID {0}."
 msgstr ""
 
+msgid "I understand, now let me in!"
+msgstr "Anladım, şimdi beni içeri al!"
+
 #, csharp-format
 msgid ""
 "If you think this is a bug, please report it in the {0}Discord Server{1} or "
@@ -1340,9 +1346,6 @@ msgid ""
 msgstr ""
 "Bunun bir hata olduğunu düşünüyorsanız, lütfen bunu {0}Discord "
 "Sunucusunda{1} veya {2}GitHub'da{3} bildirin."
-
-msgid "I understand, now let me in!"
-msgstr "Anladım, şimdi beni içeri al!"
 
 #, csharp-format
 msgid ""
@@ -1566,11 +1569,11 @@ msgstr "Oyun eklenemedi"
 msgid "Font file not found at {0}"
 msgstr "Yazı tipi dosyası şu konumda bulunamadı: {0}"
 
-msgid "No release notes available."
-msgstr "Sürüm notları mevcut değil."
-
 msgid "Changelog"
 msgstr "Değişiklik Günlüğü"
+
+msgid "No release notes available."
+msgstr "Sürüm notları mevcut değil."
 
 #, csharp-format
 msgid "Detected a switch to {0}, waiting for its game data to be parsed."
@@ -2044,15 +2047,15 @@ msgstr "Önerilen Eklentiler"
 msgid "Failed to remove account. Please try again."
 msgstr ""
 
-msgid "Game added"
-msgstr "Oyun eklendi"
-
 msgid ""
 "The maximum speed ETS2LA will accelerate to. It might still drift over this "
 "limit due to momentum."
 msgstr ""
 "ETS2LA'nın ulaşabileceği maksimum hız. İvme nedeniyle bu sınırın üzerine "
 "çıkabilir."
+
+msgid "Game added"
+msgstr "Oyun eklendi"
 
 msgid "Privacy Policy"
 msgstr ""
@@ -2119,12 +2122,12 @@ msgid "Error initializing memory mapped file: {0}"
 msgstr ""
 
 #, csharp-format
-msgid "Failed to load plugin from [gray]{0}[/]: {1}"
-msgstr ""
-
-#, csharp-format
 msgid "Assist Mode: <span class=\"text-text-accent font-bold\">{0}</span>"
 msgstr "Yardım Modu: <span class=\"text-text-accent font-bold\">{0}</span>"
+
+#, csharp-format
+msgid "Failed to load plugin from [gray]{0}[/]: {1}"
+msgstr ""
 
 msgid "Thinking..."
 msgstr "Düşünüyor..."
@@ -2213,14 +2216,14 @@ msgstr ""
 msgid "Manual Backup and Restore"
 msgstr ""
 
-msgid "You have successfully logged out."
-msgstr "Başarıyla oturum kapattınız."
-
 msgid "Translated by:"
 msgstr "Çeviren:"
 
 msgid "This game was found at"
 msgstr "Bu oyun şu konumda bulundu"
+
+msgid "You have successfully logged out."
+msgstr "Başarıyla oturum kapattınız."
 
 msgid "Data Quality"
 msgstr "Veri Kalitesi"
@@ -2247,11 +2250,11 @@ msgstr ""
 msgid "Plugin with ID {0} not found."
 msgstr "{0} ID'li eklenti bulunamadı."
 
-msgid "One Time Password"
-msgstr "Tek Kullanımlık Şifre"
-
 msgid "Units and Language"
 msgstr "Birimler ve Dil"
+
+msgid "One Time Password"
+msgstr "Tek Kullanımlık Şifre"
 
 #, csharp-format
 msgid "Loaded plugin: [gray]{0}[/] from [gray]{1}[/]."
@@ -2526,12 +2529,12 @@ msgstr "Eksik bağımlılık: {0}"
 msgid "Final Disclaimer <span class=\"description\">2/2</span>"
 msgstr ""
 
-msgid "Logout Failed"
-msgstr "Oturum Kapatılamadı"
-
 #, csharp-format
 msgid "Snap to each 10 {0}"
 msgstr ""
+
+msgid "Logout Failed"
+msgstr "Oturum Kapatılamadı"
 
 #, csharp-format
 msgid "Created plugin directory: [gray]{0}[/]"
@@ -2590,6 +2593,9 @@ msgstr ""
 msgid "Like ETS2LA?"
 msgstr "ETS2LA'i seviyor musunuz?"
 
+msgid "Show Plugin Updates"
+msgstr ""
+
 msgid ""
 "Allows ETS2LA to control throttle and brake using direct memory editing. "
 "This might not work on some systems, but allows for control even while "
@@ -2600,9 +2606,6 @@ msgstr ""
 "izin verir. Bu durum bazı sistemlerde çalışmayabilir ancak oyundan sekme "
 "değiştirildiğinde (alt-tab yapıldığında) bile denetime olanak tanır. Bunu "
 "etkinleştirirseniz ve çalışmazsa, lütfen sorunu Discord sunucumuzda bildirin."
-
-msgid "Show Plugin Updates"
-msgstr ""
 
 #, csharp-format
 msgid "Not all dependencies for plugin {0} are installed."

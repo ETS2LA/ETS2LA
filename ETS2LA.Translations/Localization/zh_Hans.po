@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-11-11 15:03:10+0200\n"
+"POT-Creation-Date: 2026-11-18 13:09:47+0200\n"
 "PO-Revision-Date: 2026-11-12 02:54+0000\n"
 "Last-Translator: goodnightan <goodnightan@ets2la.com>\n"
 "Language-Team: Chinese (Simplified Han script) <http://weblate.ets2la.com/"
@@ -113,6 +113,9 @@ msgid ""
 msgstr ""
 "将当前目标速度降低一个档位。如果速度控制和车道辅助均已关闭，此按键的作用类似"
 "于“SET”，即将当前速度设为限速值。"
+
+msgid "Logs"
+msgstr ""
 
 msgid "Become a GitHub Sponsor"
 msgstr "成为 GitHub 赞助者"
@@ -248,15 +251,16 @@ msgstr "调整巡航速度时的步长。"
 msgid "Please enter a username."
 msgstr "请输入用户名。"
 
-#, csharp-format
-msgid "Your username must be at least {0} characters long."
-msgstr "您的用户名至少需要包含{0}个字符。"
-
 msgid ""
 "Allow ETS2LA's overlay to run on Wayland. Wayland might cause compatibility "
 "issues, however you might want to try to enable this option."
-msgstr "允许 ETS2LA 的覆盖层在 Wayland 上运行。Wayland 可能会导致兼容性问题，但您可能"
+msgstr ""
+"允许 ETS2LA 的覆盖层在 Wayland 上运行。Wayland 可能会导致兼容性问题，但您可能"
 "仍希望尝试启用此选项。"
+
+#, csharp-format
+msgid "Your username must be at least {0} characters long."
+msgstr "您的用户名至少需要包含{0}个字符。"
 
 msgid "Press anywhere outside the dialog to close it."
 msgstr "点击对话框外的任意位置即可关闭。"
@@ -328,21 +332,21 @@ msgstr "视觉提示"
 msgid "Additional"
 msgstr "其他"
 
-msgid "Install Plugins"
-msgstr "安装插件"
-
 msgid "Show Fewer Logs"
 msgstr "显示更少日志"
+
+msgid "Install Plugins"
+msgstr "安装插件"
 
 msgid "Your login token is invalid or expired."
 msgstr "登录令牌无效或已过期。"
 
+msgid "I won't leave ETS2LA unattended"
+msgstr "我不会在无人看管的情况下运行 ETS2LA"
+
 #, csharp-format
 msgid "Error while downloading update: {0}"
 msgstr "下载更新时发生错误：{0}"
-
-msgid "I won't leave ETS2LA unattended"
-msgstr "我不会在无人看管的情况下运行 ETS2LA"
 
 msgid "Keyboard"
 msgstr "键盘"
@@ -1029,12 +1033,12 @@ msgstr "登录"
 msgid "SDK Installed"
 msgstr "已安装SDK"
 
+msgid "Current Speed"
+msgstr "当前速度"
+
 #, csharp-format
 msgid "Bound control {0} ({1}) to device {2} and control {3}"
 msgstr "已将控件 {0}（{1}）绑定至设备 {2} 的控件 {3}"
-
-msgid "Current Speed"
-msgstr "当前速度"
 
 msgid "miles per hour"
 msgstr "英里每小时"
@@ -1225,8 +1229,8 @@ msgid ""
 "This service is not available in your region. <span class=\"hover:underline "
 "hover:cursor-pointer\">Click here to see supported regions.</span>"
 msgstr ""
-"此服务在您所在的地区不可用。<span class="
-"\"hover:underline hover:cursor-pointer\"> 点击此处查看支持服务的地区。</span>"
+"此服务在您所在的地区不可用。<span class=\"hover:underline hover:cursor-"
+"pointer\"> 点击此处查看支持服务的地区。</span>"
 
 #, csharp-format
 msgid "Error while applying update: {0}"
@@ -1250,7 +1254,8 @@ msgstr ""
 msgid ""
 "Select mods that you want to exclude from the data. This can be useful if "
 "you have a mod that is causing issues with the data."
-msgstr "选择您希望从数据中排除的模组。如果您有某个模组导致数据出现问题，此功能会很有"
+msgstr ""
+"选择您希望从数据中排除的模组。如果您有某个模组导致数据出现问题，此功能会很有"
 "用。"
 
 msgid ""
@@ -1300,15 +1305,15 @@ msgstr ""
 msgid "Failed to install latest version of plugin with ID {0}."
 msgstr "ID 为 {0} 的插件最新版本安装失败。"
 
+msgid "I understand, now let me in!"
+msgstr "我明白了，现在让我进入！"
+
 #, csharp-format
 msgid ""
 "If you think this is a bug, please report it in the {0}Discord Server{1} or "
 "on {2}GitHub{3}."
 msgstr ""
 "如果你认为这是一个错误，请在 {0}Discord 服务器{1} 或 {2}GitHub{3} 报告。"
-
-msgid "I understand, now let me in!"
-msgstr "我明白了，现在让我进入！"
 
 #, csharp-format
 msgid ""
@@ -1521,11 +1526,11 @@ msgstr "游戏添加失败"
 msgid "Font file not found at {0}"
 msgstr "找不到字体文件：{0}"
 
-msgid "No release notes available."
-msgstr "暂无更新日志。"
-
 msgid "Changelog"
 msgstr "更新日志"
+
+msgid "No release notes available."
+msgstr "暂无更新日志。"
 
 #, csharp-format
 msgid "Detected a switch to {0}, waiting for its game data to be parsed."
@@ -1714,7 +1719,8 @@ msgstr "分享日志"
 msgid ""
 "An error occurred while unpacking mod '{0}'. Parsing will continue, however "
 "information contained in this mod won't be available to ETS2LA."
-msgstr "解压 mod {0} 时发生错误。解析将继续进行，但该 mod 中包含的信息将无法供 "
+msgstr ""
+"解压 mod {0} 时发生错误。解析将继续进行，但该 mod 中包含的信息将无法供 "
 "ETS2LA 使用。"
 
 msgid "Chatbot"
@@ -1928,7 +1934,8 @@ msgstr "音频播放已取消"
 msgid ""
 "Our application is regularly stolen and cloned by vibe coders. If you have "
 "paid for access, you may have been scammed."
-msgstr "我们的应用程序经常被\"AI开发者\"盗用和克隆。如果您已付费获取访问权限，您可能"
+msgstr ""
+"我们的应用程序经常被\"AI开发者\"盗用和克隆。如果您已付费获取访问权限，您可能"
 "遭遇了诈骗。"
 
 msgid "kilograms"
@@ -1988,13 +1995,13 @@ msgstr "推荐插件"
 msgid "Failed to remove account. Please try again."
 msgstr "删除账户失败。请重试。"
 
-msgid "Game added"
-msgstr "游戏已添加"
-
 msgid ""
 "The maximum speed ETS2LA will accelerate to. It might still drift over this "
 "limit due to momentum."
 msgstr "ETS2LA 会加速到的最高速度。由于惯性，速度仍可能略微超过此限制。"
+
+msgid "Game added"
+msgstr "游戏已添加"
 
 msgid "Privacy Policy"
 msgstr "隐私政策"
@@ -2059,12 +2066,12 @@ msgid "Error initializing memory mapped file: {0}"
 msgstr "初始化内存映射文件时发生错误：{0}"
 
 #, csharp-format
-msgid "Failed to load plugin from [gray]{0}[/]: {1}"
-msgstr "从 [gray]{0}[/] 加载插件失败：{1}"
-
-#, csharp-format
 msgid "Assist Mode: <span class=\"text-text-accent font-bold\">{0}</span>"
 msgstr "辅助模式：<span class=\"text-text-accent font-bold\">{0}</span>"
+
+#, csharp-format
+msgid "Failed to load plugin from [gray]{0}[/]: {1}"
+msgstr "从 [gray]{0}[/] 加载插件失败：{1}"
 
 msgid "Thinking..."
 msgstr "思考中…"
@@ -2153,14 +2160,14 @@ msgstr "所选的文件不是 core.scs 文件。"
 msgid "Manual Backup and Restore"
 msgstr "手动备份与恢复"
 
-msgid "You have successfully logged out."
-msgstr "您已成功退出登录。"
-
 msgid "Translated by:"
 msgstr "译者为："
 
 msgid "This game was found at"
 msgstr "此游戏位于"
+
+msgid "You have successfully logged out."
+msgstr "您已成功退出登录。"
 
 msgid "Data Quality"
 msgstr "数据质量"
@@ -2187,11 +2194,11 @@ msgstr "内部异常：{0}"
 msgid "Plugin with ID {0} not found."
 msgstr "找不到 ID 为 {0} 的插件。"
 
-msgid "One Time Password"
-msgstr "一次性密码"
-
 msgid "Units and Language"
 msgstr "单位与语言"
+
+msgid "One Time Password"
+msgstr "一次性密码"
 
 #, csharp-format
 msgid "Loaded plugin: [gray]{0}[/] from [gray]{1}[/]."
@@ -2201,7 +2208,8 @@ msgid ""
 "The monitor ETS2LA's overlay will be displayed on. If you have multiple "
 "monitors, you can select which one to use here. Please select the monitor "
 "the game is running on, and ensure the game is in fullscreen."
-msgstr "ETS2LA 叠加层将显示在该显示器上。如果您有多个显示器，可在此选择要使用哪一个。"
+msgstr ""
+"ETS2LA 叠加层将显示在该显示器上。如果您有多个显示器，可在此选择要使用哪一个。"
 "请选择游戏正在运行的显示器，并确保游戏处于全屏模式。"
 
 msgid ""
@@ -2386,7 +2394,8 @@ msgid ""
 "You do not have access to these features. Please log in with an account that "
 "has an active subscription. You can manage your subscription through the "
 "account settings page."
-msgstr "您无权访问这些功能。请使用拥有有效订阅的账户登录。您可以通过账户设置页面管理"
+msgstr ""
+"您无权访问这些功能。请使用拥有有效订阅的账户登录。您可以通过账户设置页面管理"
 "您的订阅。"
 
 #, csharp-format
@@ -2416,7 +2425,8 @@ msgstr "演示窗口"
 msgid ""
 "Allow ETS2LA's window to run on Wayland. Wayland might cause compatibility "
 "issues, however you might want to try to enable this option."
-msgstr "允许 ETS2LA 窗口在 Wayland 上运行。Wayland 可能会导致兼容性问题，但您可能希望"
+msgstr ""
+"允许 ETS2LA 窗口在 Wayland 上运行。Wayland 可能会导致兼容性问题，但您可能希望"
 "尝试启用此选项。"
 
 msgid ""
@@ -2460,12 +2470,12 @@ msgstr "缺少依赖项：{0}"
 msgid "Final Disclaimer <span class=\"description\">2/2</span>"
 msgstr "最终免责声明 <span class=\"description\">2/2</span>"
 
-msgid "Logout Failed"
-msgstr "退出登录失败"
-
 #, csharp-format
 msgid "Snap to each 10 {0}"
 msgstr "对齐至 10 {0} 的倍数"
+
+msgid "Logout Failed"
+msgstr "退出登录失败"
 
 #, csharp-format
 msgid "Created plugin directory: [gray]{0}[/]"
@@ -2524,6 +2534,9 @@ msgstr "正在添加模组：{0}"
 msgid "Like ETS2LA?"
 msgstr "喜欢 ETS2LA 吗？"
 
+msgid "Show Plugin Updates"
+msgstr "显示插件更新"
+
 msgid ""
 "Allows ETS2LA to control throttle and brake using direct memory editing. "
 "This might not work on some systems, but allows for control even while "
@@ -2533,9 +2546,6 @@ msgstr ""
 "允许 ETS2LA 通过直接修改内存来控制油门和刹车。此功能可能无法在某些系统上正常"
 "工作，但即使切换到游戏外，也仍可进行控制。如果启用此功能后无法正常工作，请在"
 "我们的 Discord 服务器上报告问题。"
-
-msgid "Show Plugin Updates"
-msgstr "显示插件更新"
 
 #, csharp-format
 msgid "Not all dependencies for plugin {0} are installed."
