@@ -3,10 +3,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
 "POT-Creation-Date: 2026-11-11 15:03:10+0200\n"
-"PO-Revision-Date: 2026-10-27 15:18+0000\n"
+"PO-Revision-Date: 2026-11-18 11:25+0000\n"
 "Last-Translator: Tumppi066 <contact@ets2la.com>\n"
-"Language-Team: Finnish <http://weblate.ets2la.com/projects/ets2la/ets2la/fi/"
-">\n"
+"Language-Team: Finnish <http://weblate.ets2la.com/projects/ets2la/ets2la/fi/>"
+"\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -59,7 +59,7 @@ msgstr ""
 
 #, csharp-format
 msgid "Legacy audio path detected: {0}"
-msgstr ""
+msgstr "Löydettiin vanha äänikutsu: {0}"
 
 #, csharp-format
 msgid "Control with ID '{0}' not found for updating bindings."
@@ -67,7 +67,7 @@ msgstr ""
 "Ohjainmääritystä jonka ID {0}, ei löytynyt määrityksen muuttamista varten."
 
 msgid "Monitor"
-msgstr ""
+msgstr "Näyttö"
 
 msgid ""
 "Force ETS2LA to load the map on game startup. This can resolve issues where "
@@ -98,7 +98,7 @@ msgid "Register"
 msgstr "Rekisteröidy"
 
 msgid "Backup Now"
-msgstr ""
+msgstr "Varmuuskopioi"
 
 msgid "kg"
 msgstr "kg"
@@ -262,6 +262,8 @@ msgid ""
 "Allow ETS2LA's overlay to run on Wayland. Wayland might cause compatibility "
 "issues, however you might want to try to enable this option."
 msgstr ""
+"Anna sovelluksen peitekuvan käyttää Waylandiä. Tämä voi aiheuttaa "
+"yhteensopivuusongelmia, mutta haluat ehkä kokeillä tätä suorituskyvyn takia."
 
 msgid "Press anywhere outside the dialog to close it."
 msgstr "Paina dialogin ulkopuolelle sulkeaksesi sen."
@@ -325,7 +327,7 @@ msgid "Failed to log out. Please try again."
 msgstr "Uloskirjautuminen epäonnistui. Yritä uudelleen."
 
 msgid "Update Information"
-msgstr ""
+msgstr "Päivityksen Tiedot"
 
 msgid "Visual"
 msgstr "Visuaalinen"
@@ -389,7 +391,7 @@ msgid "No Update Available"
 msgstr "Päivitystä ei ole saatavilla"
 
 msgid "Exclude Mod"
-msgstr ""
+msgstr "Älä lataa modia"
 
 msgid "Performance Overlay"
 msgstr "Suorituskyvyn Peitekuva"
@@ -480,7 +482,7 @@ msgstr ""
 "käynnissä ja asenna SDK uudelleen jos tarpeellista."
 
 msgid "All driving assists have been disabled."
-msgstr ""
+msgstr "Kaikki ajoavusteet on kytketty pois."
 
 msgid "Translating release notes..."
 msgstr "Käännetään muutoslokia..."
@@ -501,7 +503,7 @@ msgstr "Oletko varma?"
 
 #, csharp-format
 msgid "Mod '{0}' has been excluded from future parsing."
-msgstr ""
+msgstr "Modi '{0}' on suljettu pois tulevista latauksista."
 
 #, csharp-format
 msgid "You have successfully logged in as {0}."
@@ -532,7 +534,7 @@ msgid "Failed to uninstall current version of plugin with ID {0}."
 msgstr "Lisäosan {0} nykyisen version poisto epäonnistui."
 
 msgid "Error retrieving monitor names"
-msgstr ""
+msgstr "Virhe luettaessa näyttöjen nimiä"
 
 msgid "Early"
 msgstr "Aikaisin"
@@ -552,7 +554,7 @@ msgstr ""
 "Palvelin katkaisi yhteyden, sillä käyttäjä ei vastannut kyselyyn ajoissa."
 
 msgid "Assists Enabled"
-msgstr ""
+msgstr "Ajotuet käynnistetty"
 
 msgid "Backend shutdown complete."
 msgstr "Taustapalvelu on suljettu."
@@ -615,6 +617,7 @@ msgid ""
 "Target speed changed. Current speedlimit: {0} {1}. Offsets are carried over "
 "on speedlimit change."
 msgstr ""
+"Tavoitenopeus muuttunut. Nykyinen nopeusrajoitus {0} {1}, poikkeama lisätään."
 
 msgid "Adaptive Cruise Control Only"
 msgstr "Vain vakionopeudensäädin"
@@ -790,7 +793,7 @@ msgid "Error while checking for updates: {0}"
 msgstr "Virhe päivityksen tarkastuksen yhteydessä: {0}"
 
 msgid "Error Unpacking Mod"
-msgstr ""
+msgstr "Virhe modia purkaessa"
 
 msgid "Undetermined"
 msgstr "Määrittelemätön"
@@ -802,7 +805,7 @@ msgid "Traffic Lights"
 msgstr "Liikennevalot"
 
 msgid "No monitors detected, overlay cannot be initialized."
-msgstr ""
+msgstr "Näyttöjä ei löytynyt, peitekuva ei voi käynnistyä."
 
 msgid "Update check skipped, using already cached result."
 msgstr "Päivityksen tarkastus ohitettiin, käytetään tallennettua vastausta."
@@ -872,7 +875,7 @@ msgstr "Törmäyksen Esto"
 
 #, csharp-format
 msgid "Monitor {0}: {1}"
-msgstr ""
+msgstr "Näyttö {0}: {1}"
 
 msgid ""
 "Disables the overlay entirely. This will fix the black screen issue at the "
@@ -887,11 +890,13 @@ msgid "Overrides"
 msgstr "Pakotukset"
 
 msgid "Assists Disabled"
-msgstr ""
+msgstr "Ajotuet poistettu käytöstä"
 
 msgid ""
 "Cannot save settings to cloud: User is not logged in or JWT token is missing."
 msgstr ""
+"Virhe asetuksien pilvitallennuksessa: käyttäjä ei ole kirjautunut tai sen "
+"JWT merkki puuttuu."
 
 msgid ""
 "Too many requests. You have sent too many requests in a given amount of time."
@@ -925,7 +930,7 @@ msgstr ""
 
 #, csharp-format
 msgid "Invalid audio job: {0}, does the file exist?"
-msgstr ""
+msgstr "Virheellinen äänentoisto: {0}, onko tiedosto olemassa?"
 
 #, csharp-format
 msgid "Failed to load library plugin from [gray]{0}[/]: {1}"
@@ -1026,10 +1031,10 @@ msgid ""
 msgstr "Tämä poistaa kaiken datasi palvelimiltamme. Poistoa ei voi kumota."
 
 msgid "Unknown File"
-msgstr ""
+msgstr "Tuntematon tiedosto"
 
 msgid "Excluded Mods"
-msgstr ""
+msgstr "Poissuljetut modit"
 
 msgid "Manager"
 msgstr "Hallinta"
@@ -1096,7 +1101,7 @@ msgstr ""
 "tai tallenna salasanoja, sillä ne eivät ole tarpeellisia kirjautumiseen."
 
 msgid "Test Audio"
-msgstr ""
+msgstr "Testaa ääntä"
 
 msgid "Wiki / FAQ"
 msgstr "Wiki / UKK"
@@ -1266,7 +1271,7 @@ msgstr ""
 "vakionopeudensäätimen nopeudeksi?"
 
 msgid "Allow Wayland"
-msgstr ""
+msgstr "Wayland Tuki"
 
 msgid "The selected directory does not exist."
 msgstr "Valittu kansio ei ole olemassa."
@@ -1285,6 +1290,9 @@ msgid ""
 "This service is not available in your region. <span class=\"hover:underline "
 "hover:cursor-pointer\">Click here to see supported regions.</span>"
 msgstr ""
+"Tämä palvelu ei ole saatavilla alueellasi. <span class="
+"\"hover:underline hover:cursor-pointer\">Paina tästä nähdäksesi tuetut "
+"alueet.</span>"
 
 #, csharp-format
 msgid "Error while applying update: {0}"
@@ -1310,6 +1318,8 @@ msgid ""
 "Select mods that you want to exclude from the data. This can be useful if "
 "you have a mod that is causing issues with the data."
 msgstr ""
+"Valitse modit jotka haluat poislukea lataamisesta. Tämä voi olla hyödyllinen "
+"jos jotkut modit eivät lataudu oikein."
 
 msgid ""
 "Adjust the level of detail of the game data we use. Higher values use more "
@@ -1460,7 +1470,7 @@ msgstr ""
 "vastaanottajalle."
 
 msgid "Update Settings"
-msgstr ""
+msgstr "Päivitysten asetukset"
 
 #, csharp-format
 msgid "<span class=\"font-semibold\">{0}</span> at {1}"
@@ -1526,7 +1536,7 @@ msgstr ""
 
 #, csharp-format
 msgid "Failed to save settings to cloud: {0}"
-msgstr ""
+msgstr "Virhe asetusten pilvitallennuksen yhteydessä: {0}"
 
 msgid "Binding thread started with no control to bind."
 msgstr "Kuuntelusäe käynnistettiin ilman ohjainmääritystä."
@@ -1543,6 +1553,8 @@ msgid ""
 "When enabled, your settings will be automatically saved to the cloud when "
 "you exit ETS2LA."
 msgstr ""
+"Kun aktivoitu, asetuksesi tallentuvat automaattisesti pilveen sovelluksen "
+"sulkemisen yhteydessä."
 
 msgid "Simplified Graphics"
 msgstr "Yksinkertaistetut grafiikat"
@@ -1618,7 +1630,7 @@ msgid "Currently running at {0} FPS."
 msgstr "Tämänhetkinen virkistystaajuus {0} FPS."
 
 msgid "Mod Excluded"
-msgstr ""
+msgstr "Modi poissuljettu"
 
 #, csharp-format
 msgid "Version {0} not found for plugin with ID {1}."
@@ -1656,7 +1668,7 @@ msgstr ""
 
 #, csharp-format
 msgid "No versions available for plugin with ID {0}."
-msgstr ""
+msgstr "Lisäosaan {0} ei ole saatavilla versioita."
 
 #, csharp-format
 msgid ""
@@ -1714,14 +1726,14 @@ msgid "The selected game executable was not found."
 msgstr "Valitun pelin käynnistys tiedostoa ei löydetty."
 
 msgid "No update available."
-msgstr ""
+msgstr "Päivitystä ei saatavilla."
 
 #, csharp-format
 msgid "Loaded library plugin: [gray]{0}[/] from [gray]{1}[/]."
 msgstr "Ladatiin kirjasto [gray]{0}[/] paikasta [gray]{1}[/]."
 
 msgid "Backup on Exit"
-msgstr ""
+msgstr "Varmuuskopioi sulkemisen yhteydessä"
 
 msgid "Enter the OTP generated by your authenticator app."
 msgstr "Kirjoita autentikaatiosovelluksen OTP koodi tähän."
@@ -1752,6 +1764,8 @@ msgid ""
 "Cannot load settings from cloud: User is not logged in or JWT token is "
 "missing."
 msgstr ""
+"Virhe luettaessa asetuksia pilvestä: käyttäjä ei ole kirjautunut tai sen JWT "
+"merkki puuttuu."
 
 msgid "Failed to initialize overlay, OpenGL initialization failed."
 msgstr "Peitekuvan käynnistys epäonnistui, OpenGL ei käynnistynyt."
@@ -1810,6 +1824,8 @@ msgid ""
 "An error occurred while unpacking mod '{0}'. Parsing will continue, however "
 "information contained in this mod won't be available to ETS2LA."
 msgstr ""
+"Virhe purkaessa modia '{0}'. Lataaminen jatkuu, mutta tämän modin alueet "
+"eivät ole saatavilla ETS2LAssa."
 
 msgid "Chatbot"
 msgstr "Keskustelubotti"
@@ -1924,10 +1940,10 @@ msgid "Overlay is disabled in settings, skipping window registration for {0}."
 msgstr "Peitekuva poistettu käytöstä, ohitetaan ikkunan {0} rekisteröinti."
 
 msgid "Audio Settings"
-msgstr ""
+msgstr "Ääniasetukset"
 
 msgid "Backup"
-msgstr ""
+msgstr "Varmuuskopiointi"
 
 msgid "Request cancelled."
 msgstr "Pyyntö peruutettu."
@@ -1996,7 +2012,7 @@ msgid "Experiments"
 msgstr "Kokeilut"
 
 msgid "Backup Settings"
-msgstr ""
+msgstr "Varmuskopioinnin asetukset"
 
 msgid "gallons"
 msgstr "gallonaa"
@@ -2031,6 +2047,8 @@ msgid ""
 "Our application is regularly stolen and cloned by vibe coders. If you have "
 "paid for access, you may have been scammed."
 msgstr ""
+"Sovelluksemme on jatkuvana varastuksen ja kopioinnin kohteena. Jos olet "
+"maksanut pääsystä, olet joutunut huijauksen kohteeksi."
 
 msgid "kilograms"
 msgstr "kilogrammaa"
@@ -2143,7 +2161,7 @@ msgid ""
 msgstr "Hei <span class=\"text-text-l\">{0}</span>, tilisi status on [{1}]."
 
 msgid "Restore from Cloud"
-msgstr ""
+msgstr "Palauta varmuuskopio"
 
 msgid ""
 "We will pause the game when we detect instability or the steering is "
@@ -2247,7 +2265,7 @@ msgstr ""
 "moninpelissä.</span>"
 
 msgid "Scammer Notice"
-msgstr ""
+msgstr "Varo huijauksia"
 
 #, csharp-format
 msgid "Tried to enable {0}, but it was not found among loaded plugins."
@@ -2257,7 +2275,7 @@ msgstr ""
 
 #, csharp-format
 msgid "Failed to load settings from cloud: {0}"
-msgstr ""
+msgstr "Virhe asetuksen lataamisessa pilvipalvelusta: {0}"
 
 msgid ""
 "Parsing will continue, however information contained in this file won't be "
@@ -2267,13 +2285,13 @@ msgstr ""
 "ETS2LA:lle."
 
 msgid "No options selected"
-msgstr ""
+msgstr "Valintaa ei ole tehty"
 
 msgid "The selected file is not a core.scs file."
 msgstr "Valittu tiedosto ei ole core.scs."
 
 msgid "Manual Backup and Restore"
-msgstr ""
+msgstr "Varmuuskopioi ja palauta"
 
 msgid "You have successfully logged out."
 msgstr "Sinut on kirjattu ulos."
@@ -2324,6 +2342,9 @@ msgid ""
 "monitors, you can select which one to use here. Please select the monitor "
 "the game is running on, and ensure the game is in fullscreen."
 msgstr ""
+"Näyttö jossa sovelluksen peitekuva näytetään. Jos sinulla on monta näyttöä, "
+"voit valita tästä mitä käytämme. Valitsethan näytön, jossa peli on "
+"käynnissä. Varmista myös että peli on kokonäytöntilassa."
 
 msgid ""
 "You do not have permission to access this resource. The server understood "
@@ -2358,7 +2379,7 @@ msgstr "Renderöi näkömallien kamerat"
 
 #, csharp-format
 msgid "Failed to unpack mod '{0}'"
-msgstr ""
+msgstr "Virhe modin '{0}' purkamisessa"
 
 msgid "Imperial"
 msgstr "Brittiläinen"
@@ -2471,7 +2492,7 @@ msgstr ""
 
 #, csharp-format
 msgid "Deleted old SDK file '{0}'"
-msgstr ""
+msgstr "Poistettiin vanha SDK -tiedosto '{0}'"
 
 msgid "°C"
 msgstr "°C"
@@ -2492,7 +2513,7 @@ msgid "Checking for updates..."
 msgstr "Tarkastetaan päivityksiä..."
 
 msgid "No audio output device available"
-msgstr ""
+msgstr "Äänentoistolaitetta ei ole saatavilla"
 
 msgid "Catalogue"
 msgstr "Luettelo"
@@ -2520,6 +2541,8 @@ msgid ""
 "has an active subscription. You can manage your subscription through the "
 "account settings page."
 msgstr ""
+"Sinulla ei ole pääsyä näihin toimintoihin. Kirjaudu sisään tilillä jolla on "
+"aktiivinen tilaus, voit muuttaa tilaustasi tilin asetuksien kautta."
 
 #, csharp-format
 msgid "Cannot enable plugin {0} because dependency {1} was not found."
@@ -2531,7 +2554,7 @@ msgstr "Ohjainmäärityksien Toiminta"
 
 #, csharp-format
 msgid "Download progress: {0}% ({1} / {2})"
-msgstr ""
+msgstr "Lataus: {0}% ({1} / {2})"
 
 msgid "Next"
 msgstr "Seuraava"
@@ -2550,11 +2573,15 @@ msgid ""
 "Allow ETS2LA's window to run on Wayland. Wayland might cause compatibility "
 "issues, however you might want to try to enable this option."
 msgstr ""
+"Anna sovelluksen ikkunan käyttää Waylandiä. Tämä voi aiheuttaa "
+"yhteensopivuusongelmia, mutta haluat ehkä kokeillä tätä suorituskyvyn takia."
 
 msgid ""
 "Restoring settings from the cloud requires a restart of ETS2LA to take "
 "effect. Restart now?"
 msgstr ""
+"Asetuksien palauttaminen vaatii sovelluksen uudelleenkäynnistystä. Käynnistä "
+"uudelleen nyt?"
 
 msgid "Help"
 msgstr "Apua"
@@ -2636,7 +2663,7 @@ msgid "Successfully installed SDK version '{0}' to '{1}'"
 msgstr "Asennettiin SDK versio {0} onnistuneesti paikkaan {1}"
 
 msgid "All driving assists have been enabled."
-msgstr ""
+msgstr "Kaikki ajotuet on aktivoitu."
 
 msgid "Display Units: "
 msgstr "Yksiköt: "
