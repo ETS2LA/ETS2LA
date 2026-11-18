@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-11-11 15:02:48+0200\n"
-"PO-Revision-Date: 2026-11-11 15:02:48+0200\n"
+"POT-Creation-Date: 2026-11-18 13:08:47+0200\n"
+"PO-Revision-Date: 2026-11-18 13:08:47+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -122,6 +122,11 @@ msgid ""
 "speedlimit."
 msgstr ""
 
+#: ../../../ETS2LA.UI/Pages/Settings/Logs.razor:83
+#: ../../../ETS2LA.UI/Shared/Layouts/SettingsLayout.razor:43
+msgid "Logs"
+msgstr ""
+
 #: ../../../ETS2LA.UI/Pages/Home.razor:269
 msgid "Become a GitHub Sponsor"
 msgstr ""
@@ -153,15 +158,15 @@ msgstr ""
 msgid "Maximum Speed"
 msgstr ""
 
+#: ../../../ETS2LA.UI/Pages/Settings/Display.razor:403
+msgid ""
+"When the game reports itself being paused, ETS2LA won't render AR elements."
+msgstr ""
+
 #: ../../../ETS2LA.UI/Pages/Settings/Account/LoginFlow.razor:60
 msgid ""
 "Your username may only contain letters, numbers, underscores, hyphens and "
 "periods, and must start and end with a letter or number."
-msgstr ""
-
-#: ../../../ETS2LA.UI/Pages/Settings/Display.razor:403
-msgid ""
-"When the game reports itself being paused, ETS2LA won't render AR elements."
 msgstr ""
 
 #: ../../../ETS2LA.Controls/Windows/SharpDXControlsBackend.cs:104
@@ -169,16 +174,16 @@ msgstr ""
 msgid "Connected joystick: [bold]{0}[/] [gray italic]({1})[/]"
 msgstr ""
 
+#: ../../../ETS2LA.UI/Pages/Settings/Controls.razor:205
+#, csharp-format
+msgid "Starting binding for control {0} ({1})"
+msgstr ""
+
 #: ../../../ETS2LA.UI/Pages/Settings/Account/LoginFlow.razor:212
 #: ../../../ETS2LA.UI/Pages/Settings/Account/LoginFlow.razor:215
 #: ../../../ETS2LA.UI/Pages/Settings/Account/LoginFlow.razor:240
 #: ../../../ETS2LA.UI/Pages/Settings/Account/LoginFlow.razor:243
 msgid "Username"
-msgstr ""
-
-#: ../../../ETS2LA.UI/Pages/Settings/Controls.razor:205
-#, csharp-format
-msgid "Starting binding for control {0} ({1})"
 msgstr ""
 
 #: ../../../ETS2LA.Backend/PluginHandler/Handler.cs:387
@@ -293,21 +298,22 @@ msgstr ""
 msgid "Please enter a username."
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Settings/Account/LoginFlow.razor:50
-#, csharp-format
-msgid "Your username must be at least {0} characters long."
-msgstr ""
-
 #: ../../../ETS2LA.UI/Pages/Settings/Display.razor:342
 msgid ""
 "Allow ETS2LA's overlay to run on Wayland. Wayland might cause compatibility "
 "issues, however you might want to try to enable this option."
 msgstr ""
 
+#: ../../../ETS2LA.UI/Pages/Settings/Account/LoginFlow.razor:50
+#, csharp-format
+msgid "Your username must be at least {0} characters long."
+msgstr ""
+
 #: ../../../ETS2LA.UI/Pages/Home.razor:311
 #: ../../../ETS2LA.UI/Pages/Home.razor:322
 #: ../../../ETS2LA.UI/Pages/Settings/Account/Account.razor:189
 #: ../../../ETS2LA.UI/Pages/Settings/Account/Account.razor:194
+#: ../../../ETS2LA.UI/Pages/Settings/Logs.razor:104
 #: ../../../ETS2LA.UI/Pages/Help/Chatbot.razor:418
 #: ../../../ETS2LA.UI/Pages/Help/Chatbot.razor:433
 #: ../../../ETS2LA.UI/Pages/Help/Chatbot.razor:442
@@ -390,12 +396,12 @@ msgstr ""
 msgid "Additional"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/PluginStep.razor:56
-msgid "Install Plugins"
-msgstr ""
-
 #: ../../../ETS2LA.Overlay/Window/Console.cs:57
 msgid "Show Fewer Logs"
+msgstr ""
+
+#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/PluginStep.razor:56
+msgid "Install Plugins"
 msgstr ""
 
 #: ../../../ETS2LA.UI/Pages/Help/Chatbot.razor:146
@@ -492,7 +498,7 @@ msgstr ""
 msgid "Control with ID '{0}' not found for updating axis behavior."
 msgstr ""
 
-#: ../../../ETS2LA.UI/Shared/Layouts/SettingsLayout.razor:46
+#: ../../../ETS2LA.UI/Shared/Layouts/SettingsLayout.razor:47
 msgid "Networking"
 msgstr ""
 
@@ -805,12 +811,12 @@ msgstr ""
 msgid "Please enable the Visualization Sockets plugin."
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Settings/Data.razor:91
-msgid "Force Map Load"
-msgstr ""
-
 #: ../../../ETS2LA.UI/Pages/Settings/Account/Account.razor:99
 msgid "Your account has been successfully removed."
+msgstr ""
+
+#: ../../../ETS2LA.UI/Pages/Settings/Data.razor:91
+msgid "Force Map Load"
 msgstr ""
 
 #: ../../../ETS2LA.Game/Installation.cs:519
@@ -1020,12 +1026,12 @@ msgid ""
 "the button below to display your JWT token."
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Settings/Assists.razor:176
-msgid "Collision Avoidance"
-msgstr ""
-
 #: ../../../ETS2LA.UI/Pages/Settings/Account/Account.razor:193
 msgid "If you're streaming or recording, now's the time to hide this window."
+msgstr ""
+
+#: ../../../ETS2LA.UI/Pages/Settings/Assists.razor:176
+msgid "Collision Avoidance"
 msgstr ""
 
 #: ../../../ETS2LA.Overlay/Overlay.cs:645
@@ -1157,8 +1163,8 @@ msgid ""
 "with each message, <span class=\"text-text-l\">click to display</span>."
 msgstr ""
 
-#: ../../../ETS2LA.Controls/Linux/SDL3ControlsBackend.cs:149
 #: ../../../ETS2LA.Controls/Windows/SharpDXControlsBackend.cs:170
+#: ../../../ETS2LA.Controls/Linux/SDL3ControlsBackend.cs:149
 #, csharp-format
 msgid "Control with ID '{0}' not found for unregistration."
 msgstr ""
@@ -1263,14 +1269,14 @@ msgstr ""
 msgid "SDK Installed"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Settings/Assists.razor:37
-msgid "Current Speed"
-msgstr ""
-
 #: ../../../ETS2LA.UI/Pages/Settings/Controls.razor:181
 #: ../../../ETS2LA.UI/Pages/Settings/Controls.razor:186
 #, csharp-format
 msgid "Bound control {0} ({1}) to device {2} and control {3}"
+msgstr ""
+
+#: ../../../ETS2LA.UI/Pages/Settings/Assists.razor:37
+msgid "Current Speed"
 msgstr ""
 
 #: ../../../ETS2LA.State/Units.cs:182
@@ -1514,11 +1520,11 @@ msgstr ""
 msgid "Following Distance"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Shared/Layouts/SettingsLayout.razor:55
+#: ../../../ETS2LA.UI/Shared/Layouts/SettingsLayout.razor:56
 msgid "Check For Updates"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Shared/Layouts/SettingsLayout.razor:48
+#: ../../../ETS2LA.UI/Shared/Layouts/SettingsLayout.razor:49
 msgid "Telemetry"
 msgstr ""
 
@@ -1547,7 +1553,7 @@ msgid_plural "found {0} nodes"
 msgstr[0] ""
 msgstr[1] ""
 
-#: ../../../ETS2LA.UI/Shared/Layouts/SettingsLayout.razor:54
+#: ../../../ETS2LA.UI/Shared/Layouts/SettingsLayout.razor:55
 msgid "Open Source"
 msgstr ""
 
@@ -1670,11 +1676,11 @@ msgstr ""
 
 #: ../../../ETS2LA.UI/Pages/Onboarding/Steps/EnsureGameClosed.razor:52
 #: ../../../ETS2LA.UI/Pages/Onboarding/Steps/ControlsStep.razor:48
-#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/OverlayStep.razor:27
-#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/PrivacyPolicyStep.razor:47
 #: ../../../ETS2LA.UI/Pages/Onboarding/Steps/PluginStep.razor:57
-#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/ScammerStep.razor:28
+#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/PrivacyPolicyStep.razor:47
 #: ../../../ETS2LA.UI/Pages/Onboarding/Steps/SDKStep.razor:17
+#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/OverlayStep.razor:27
+#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/SecondWebsiteNotice.razor:28
 msgid "Continue"
 msgstr ""
 
@@ -2089,7 +2095,7 @@ msgid ""
 "last target speed was not set, this key acts like SET."
 msgstr ""
 
-#: ../../../ETS2LA.UI/Shared/Layouts/SettingsLayout.razor:47
+#: ../../../ETS2LA.UI/Shared/Layouts/SettingsLayout.razor:48
 msgid "Account"
 msgstr ""
 
@@ -2271,7 +2277,7 @@ msgstr ""
 msgid "Audio Settings"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Shared/Layouts/SettingsLayout.razor:49
+#: ../../../ETS2LA.UI/Shared/Layouts/SettingsLayout.razor:50
 msgid "Backup"
 msgstr ""
 
@@ -2382,8 +2388,8 @@ msgstr ""
 #: ../../../ETS2LA.UI/Pages/Settings/Backup.razor:27
 #: ../../../ETS2LA.UI/Pages/Settings/Telemetry.razor:16
 #: ../../../ETS2LA.UI/Pages/Settings/Data.razor:34
-#: ../../../ETS2LA.UI/Pages/Settings/Display.razor:97
 #: ../../../ETS2LA.UI/Pages/Settings/Data.razor:127
+#: ../../../ETS2LA.UI/Pages/Settings/Display.razor:97
 #: ../../../ETS2LA.UI/Pages/Settings/Display.razor:238
 #: ../../../ETS2LA.UI/Pages/Settings/Display.razor:270
 msgid "Restart Required"
@@ -2411,7 +2417,7 @@ msgstr ""
 msgid "Audio playback canceled"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/ScammerStep.razor:24
+#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/SecondWebsiteNotice.razor:24
 msgid ""
 "Our application is regularly stolen and cloned by vibe coders. If you have "
 "paid for access, you may have been scammed."
@@ -2567,10 +2573,10 @@ msgstr ""
 msgid "Target Speed: <span class=\"text-text-accent font-bold\">{0} {1}</span>"
 msgstr ""
 
-#: ../../../ETS2LA.Game/SDK/Navigation.cs:122
 #: ../../../ETS2LA.Game/SDK/ParkedVehicles.cs:108
-#: ../../../ETS2LA.Game/SDK/Semaphores.cs:176
+#: ../../../ETS2LA.Game/SDK/Navigation.cs:122
 #: ../../../ETS2LA.Game/SDK/Camera.cs:130
+#: ../../../ETS2LA.Game/SDK/Semaphores.cs:176
 #: ../../../ETS2LA.Game/SDK/Traffic.cs:159
 #, csharp-format
 msgid "Error initializing memory mapped file: {0}"
@@ -2664,7 +2670,7 @@ msgid ""
 "font-bold\">Do not leave ETS2LA unattended, especially in multiplayer.</span>"
 msgstr ""
 
-#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/ScammerStep.razor:23
+#: ../../../ETS2LA.UI/Pages/Onboarding/Steps/SecondWebsiteNotice.razor:23
 msgid "Scammer Notice"
 msgstr ""
 
@@ -3085,13 +3091,13 @@ msgstr ""
 msgid "Final Disclaimer <span class=\"description\">2/2</span>"
 msgstr ""
 
+#: ../../../ETS2LA.UI/Pages/Settings/Account/Account.razor:43
+msgid "Logout Failed"
+msgstr ""
+
 #: ../../../ETS2LA.UI/Pages/Settings/Assists.razor:143
 #, csharp-format
 msgid "Snap to each 10 {0}"
-msgstr ""
-
-#: ../../../ETS2LA.UI/Pages/Settings/Account/Account.razor:43
-msgid "Logout Failed"
 msgstr ""
 
 #: ../../../ETS2LA.Backend/PluginHandler/Handler.cs:70
@@ -3107,8 +3113,8 @@ msgstr ""
 #: ../../../ETS2LA.UI/Utils.cs:74
 #: ../../../ETS2LA.UI/Pages/Settings/Telemetry.razor:17
 #: ../../../ETS2LA.UI/Pages/Settings/Data.razor:35
-#: ../../../ETS2LA.UI/Pages/Settings/Display.razor:98
 #: ../../../ETS2LA.UI/Pages/Settings/Data.razor:128
+#: ../../../ETS2LA.UI/Pages/Settings/Display.razor:98
 #: ../../../ETS2LA.UI/Pages/Settings/Display.razor:239
 msgid ""
 "Changing this option requires a restart of ETS2LA to take effect. Restart "

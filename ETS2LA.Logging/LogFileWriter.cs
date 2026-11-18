@@ -67,6 +67,12 @@ public class LogFileWriter
             return reader.ReadToEnd();
         }
     }
+
+    public string GetLogFilePath()
+    {
+        return logFilePath;
+    }
+
     public void Save()
     {
         lock (fileLock)

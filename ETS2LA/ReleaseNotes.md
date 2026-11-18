@@ -1,8 +1,6 @@
-### ETS2LA C# 2026.11.5297
-- `feat` Our SDK will now automatically detect and use force feedback wheels when available. Your wheel will now turn towards ETS2LA's steering.
-  - **Note:** The quality of the steering depends on your wheel's type. Direct drive wheels should be the best, while Logitech wheels will have trouble centering and holding an angle smoothly.
-  - **Important:** To get this feature, you'll need to reinstall the SDK in the settings. **You won't be notified about the SDK update, so please check the settings after updating ETS2LA.** The game has to be closed when you reinstall the SDK.
-- `translation` Updated translations for both Chinese types.
+### ETS2LA C# 2026.11.5301
+- `feat` Added *Logs* page to the settings menu. This page will display all previous log entries. You'll also find a button to open the log file in your system's default text editor here.
+- `translation` Update translations for *Finnish*, *Japanese* and *Russian*.
 
 #### Thank you to today's sponsor... You!
 Development is possible thanks to our [sponsors](https://github.com/sponsors/Tumppi066). Please consider supporting if you like the project and have the means to do so.

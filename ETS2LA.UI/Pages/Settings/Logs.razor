@@ -1,0 +1,107 @@
+@page "/settings/logs"
+@layout Shared.Layouts.SettingsLayout
+@using ETS2LA.UI.Shared.Components
+@using ETS2LA.Logging;
+@using System.Diagnostics;
+@inject IJSRuntime JSRuntime
+
+@code 
+{
+    struct LogEntry
+    {
+        public string Level { get; set; }
+        public string Message { get; set; }
+    }
+    static List<LogEntry> logs = new List<LogEntry>();
+
+    bool SettingsDialogOpen = false;
+
+    int ShowLastLines = 100;
+    bool Follow = true;
+    bool ScrollPending = false;
+    ElementReference logBottom;
+
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+        if (logs.Count == 0)
+        {
+            var file = LogFileWriter.Current.ReadRecent().Split(Environment.NewLine, StringSplitOptions.RemoveEmptyEntries);
+            foreach (var line in file)
+            {
+                logs.Add(ParseLogLine(line));
+            }
+
+            Logger.OnLog += (Tuple<string, string> log) =>
+            {
+                logs.Add(new LogEntry { Level = log.Item1, Message = log.Item2 });
+                ScrollPending = true;
+                InvokeAsync(StateHasChanged);
+            };
+        }
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (ScrollPending)
+        {
+            ScrollPending = false;
+            if (Follow)
+            {
+                await JSRuntime.InvokeVoidAsync("scrollElementIntoView", logBottom);
+            }
+        }
+    }
+
+    LogEntry ParseLogLine(string line)
+    {
+        var parts = line.Split(" ", 2);
+        if (parts.Length < 2)
+        {
+            return new LogEntry { Level = "", Message = line };
+        }
+        return new LogEntry { Level = parts[0], Message = parts[1] };
+    }
+
+    void OpenLogFile()
+    {
+        var logFilePath = LogFileWriter.Current.GetLogFilePath();
+        if (File.Exists(logFilePath))
+        {
+            Process.Start(new ProcessStartInfo
+            {
+                FileName = logFilePath,
+                UseShellExecute = true
+            });
+        }
+    }
+}
+
+<div class="flex flex-col w-full p-5 px-8">
+    <p class="description">This page will automatically update with new log entries. Press <span @onclick="() => SettingsDialogOpen = true" class="text-text-l cursor-pointer hover:underline">here</span> to open this page's settings.</p>
+    <p class="description text-text-l hover:underline cursor-pointer" @onclick="OpenLogFile">@LogFileWriter.Current.GetLogFilePath()</p>
+    <SectionTitle Title=@(_("Logs")) Class="mt-3" />
+    <div>
+        @foreach (var log in logs.Skip(Math.Max(0, logs.Count - ShowLastLines)))
+        {
+            <div class="flex flex-row gap-2 description">
+                <span class="font-semibold text-text-l min-w-8">@log.Level</span> @log.Message
+            </div>
+        }
+        <div @ref="logBottom"></div>
+    </div>
+
+    <Dialog Open="@SettingsDialogOpen" OpenChanged="@((bool value) => SettingsDialogOpen = value)">
+        <div class="flex flex-col gap-4">
+            <Switch Title="Follow Logs"
+                    Description="Automatically scroll to the bottom of the log when new entries are added."
+                    Value="@Follow"
+                    ValueChanged="@((bool value) => Follow = value)" />
+            <Input Title="Line Count"
+                   Description="The number of lines to show in the log view. Set to 0 to show all lines."
+                   Value="@ShowLastLines.ToString()"
+                   ValueChanged="@((string value) => ShowLastLines = int.Parse(value))" />
+            <p class="description mt-2">@_("Press anywhere outside the dialog to close it.")</p>
+        </div>
+    </Dialog>
+</div>

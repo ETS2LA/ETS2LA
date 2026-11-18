@@ -87,3 +87,7 @@ window.initScrollDivider = function (scrollArea, divider) {
     render();
     updateScrollable();
 };
+
+window.scrollElementIntoView = function (element) {
+    element?.scrollIntoView({ behavior: 'auto', block: 'end' });
+};
