@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
 "POT-Creation-Date: 2026-11-18 13:09:47+0200\n"
-"PO-Revision-Date: 2026-10-27 15:18+0000\n"
+"PO-Revision-Date: 2026-11-20 14:44+0000\n"
 "Last-Translator: McAs13 <tsumiguel@ets2la.com>\n"
 "Language-Team: Spanish (American) <http://weblate.ets2la.com/projects/ets2la/"
 "ets2la/es_US/>\n"
@@ -61,14 +61,14 @@ msgstr ""
 
 #, csharp-format
 msgid "Legacy audio path detected: {0}"
-msgstr ""
+msgstr "Ruta de audio heredada detectada: {0}"
 
 #, csharp-format
 msgid "Control with ID '{0}' not found for updating bindings."
 msgstr "No se encontró el control con ID '{0}' para actualizar los enlaces."
 
 msgid "Monitor"
-msgstr ""
+msgstr "Monitor"
 
 msgid ""
 "Force ETS2LA to load the map on game startup. This can resolve issues where "
@@ -100,7 +100,7 @@ msgid "Register"
 msgstr "Registrarse"
 
 msgid "Backup Now"
-msgstr ""
+msgstr "Respaldar ahora"
 
 msgid "kg"
 msgstr "kg"
@@ -115,7 +115,7 @@ msgstr ""
 "SET. Es decir, establecerá la velocidad actual según el límite de velocidad."
 
 msgid "Logs"
-msgstr ""
+msgstr "Registros"
 
 msgid "Become a GitHub Sponsor"
 msgstr "Conviértete en GitHub Sponsor"
@@ -267,6 +267,9 @@ msgid ""
 "Allow ETS2LA's overlay to run on Wayland. Wayland might cause compatibility "
 "issues, however you might want to try to enable this option."
 msgstr ""
+"Permite que la superposición de ETS2LA se ejecute en Wayland. Wayland puede "
+"causar problemas de compatibilidad, aunque podrías probar a activar esta "
+"opción."
 
 #, csharp-format
 msgid "Your username must be at least {0} characters long."
@@ -335,7 +338,7 @@ msgid "Failed to log out. Please try again."
 msgstr "Error al cerrar sesión. Por favor, inténtalo de nuevo."
 
 msgid "Update Information"
-msgstr ""
+msgstr "Información de la actualización"
 
 msgid "Visual"
 msgstr "Visual"
@@ -401,7 +404,7 @@ msgid "No Update Available"
 msgstr "No hay actualizaciones disponibles"
 
 msgid "Exclude Mod"
-msgstr ""
+msgstr "Excluir mod"
 
 msgid "Performance Overlay"
 msgstr "Superposición de rendimiento"
@@ -494,7 +497,7 @@ msgstr ""
 "ejecución y reinstala el SDK si es necesario."
 
 msgid "All driving assists have been disabled."
-msgstr ""
+msgstr "Todas las asistencias de conducción han sido desactivadas."
 
 msgid "Translating release notes..."
 msgstr "Traduciendo notas de la versión..."
@@ -516,7 +519,7 @@ msgstr "¿Estás seguro?"
 
 #, csharp-format
 msgid "Mod '{0}' has been excluded from future parsing."
-msgstr ""
+msgstr "El mod ‘{0}’ ha sido excluido del análisis futuro."
 
 #, csharp-format
 msgid "You have successfully logged in as {0}."
@@ -547,7 +550,7 @@ msgid "Failed to uninstall current version of plugin with ID {0}."
 msgstr "Error al desinstalar la versión actual del plugin con ID {0}."
 
 msgid "Error retrieving monitor names"
-msgstr ""
+msgstr "Error al obtener los nombres de los monitores"
 
 msgid "Early"
 msgstr "Temprano"
@@ -566,7 +569,7 @@ msgid "The server timed out waiting for the request from the client."
 msgstr "El servidor agotó el tiempo de espera de la solicitud del cliente."
 
 msgid "Assists Enabled"
-msgstr ""
+msgstr "Asistencias activadas"
 
 msgid "Backend shutdown complete."
 msgstr "Apagado del backend completado."
@@ -629,6 +632,8 @@ msgid ""
 "Target speed changed. Current speedlimit: {0} {1}. Offsets are carried over "
 "on speedlimit change."
 msgstr ""
+"Velocidad objetivo cambiada. Límite de velocidad actual: {0} {1}. Los "
+"desfases se conservan al cambiar el límite de velocidad."
 
 msgid "Adaptive Cruise Control Only"
 msgstr "Solo control de crucero adaptativo"
@@ -805,7 +810,7 @@ msgid "Error while checking for updates: {0}"
 msgstr "Error al comprobar actualizaciones: {0}"
 
 msgid "Error Unpacking Mod"
-msgstr ""
+msgstr "Error al descomprimir el mod"
 
 msgid "Undetermined"
 msgstr "Indeterminada"
@@ -817,7 +822,7 @@ msgid "Traffic Lights"
 msgstr "Semáforos"
 
 msgid "No monitors detected, overlay cannot be initialized."
-msgstr ""
+msgstr "No se detectaron monitores, no se puede inicializar la superposición."
 
 msgid "Update check skipped, using already cached result."
 msgstr ""
@@ -892,7 +897,7 @@ msgstr "Prevención de colisiones"
 
 #, csharp-format
 msgid "Monitor {0}: {1}"
-msgstr ""
+msgstr "Monitor {0}: {1}"
 
 msgid ""
 "Disables the overlay entirely. This will fix the black screen issue at the "
@@ -907,11 +912,13 @@ msgid "Overrides"
 msgstr "Anulaciones"
 
 msgid "Assists Disabled"
-msgstr ""
+msgstr "Asistencias desactivadas"
 
 msgid ""
 "Cannot save settings to cloud: User is not logged in or JWT token is missing."
 msgstr ""
+"No se puede guardar la configuración en la nube: el usuario no ha iniciado "
+"sesión o falta el token JWT."
 
 msgid ""
 "Too many requests. You have sent too many requests in a given amount of time."
@@ -945,7 +952,7 @@ msgstr ""
 
 #, csharp-format
 msgid "Invalid audio job: {0}, does the file exist?"
-msgstr ""
+msgstr "Tarea de audio no válida: {0}, ¿existe el archivo?"
 
 #, csharp-format
 msgid "Failed to load library plugin from [gray]{0}[/]: {1}"
@@ -1051,10 +1058,10 @@ msgstr ""
 "acción no se puede deshacer."
 
 msgid "Unknown File"
-msgstr ""
+msgstr "Archivo desconocido"
 
 msgid "Excluded Mods"
-msgstr ""
+msgstr "Mods excluidos"
 
 msgid "Manager"
 msgstr "Gestor"
@@ -1122,7 +1129,7 @@ msgstr ""
 "autenticación."
 
 msgid "Test Audio"
-msgstr ""
+msgstr "Probar audio"
 
 msgid "Wiki / FAQ"
 msgstr "Wiki / Preguntas frecuentes"
@@ -1295,7 +1302,7 @@ msgstr ""
 "la velocidad actual del control de crucero?"
 
 msgid "Allow Wayland"
-msgstr ""
+msgstr "Permitir Wayland"
 
 msgid "The selected directory does not exist."
 msgstr "El directorio seleccionado no existe."
@@ -1314,6 +1321,9 @@ msgid ""
 "This service is not available in your region. <span class=\"hover:underline "
 "hover:cursor-pointer\">Click here to see supported regions.</span>"
 msgstr ""
+"Este servicio no está disponible en tu región. <span class="
+"\"hover:underline hover:cursor-pointer\">Haz clic aquí para ver las regiones "
+"compatibles.</span>"
 
 #, csharp-format
 msgid "Error while applying update: {0}"
@@ -1339,6 +1349,8 @@ msgid ""
 "Select mods that you want to exclude from the data. This can be useful if "
 "you have a mod that is causing issues with the data."
 msgstr ""
+"Selecciona los mods que quieres excluir de los datos. Esto puede ser útil si "
+"tienes un mod que causa problemas con los datos."
 
 msgid ""
 "Adjust the level of detail of the game data we use. Higher values use more "
@@ -1492,7 +1504,7 @@ msgstr ""
 "destinatario internacional."
 
 msgid "Update Settings"
-msgstr ""
+msgstr "Configuración de actualizaciones"
 
 #, csharp-format
 msgid "<span class=\"font-semibold\">{0}</span> at {1}"
@@ -1557,7 +1569,7 @@ msgstr ""
 
 #, csharp-format
 msgid "Failed to save settings to cloud: {0}"
-msgstr ""
+msgstr "Error al guardar la configuración en la nube: {0}"
 
 msgid "Binding thread started with no control to bind."
 msgstr "El hilo de enlace se inició sin ningún control para enlazar."
@@ -1576,6 +1588,8 @@ msgid ""
 "When enabled, your settings will be automatically saved to the cloud when "
 "you exit ETS2LA."
 msgstr ""
+"Cuando está activado, tu configuración se guardará automáticamente en la "
+"nube al salir de ETS2LA."
 
 msgid "Simplified Graphics"
 msgstr "Gráficos simplificados"
@@ -1652,7 +1666,7 @@ msgid "Currently running at {0} FPS."
 msgstr "Actualmente ejecutándose a {0} FPS."
 
 msgid "Mod Excluded"
-msgstr ""
+msgstr "Mod excluido"
 
 #, csharp-format
 msgid "Version {0} not found for plugin with ID {1}."
@@ -1691,7 +1705,7 @@ msgstr ""
 
 #, csharp-format
 msgid "No versions available for plugin with ID {0}."
-msgstr ""
+msgstr "No hay versiones disponibles para el plugin con ID {0}."
 
 #, csharp-format
 msgid ""
@@ -1751,14 +1765,14 @@ msgid "The selected game executable was not found."
 msgstr "No se encontró el ejecutable del juego seleccionado."
 
 msgid "No update available."
-msgstr ""
+msgstr "No hay actualizaciones disponibles."
 
 #, csharp-format
 msgid "Loaded library plugin: [gray]{0}[/] from [gray]{1}[/]."
 msgstr "Plugin de biblioteca cargado: [gray]{0}[/] desde [gray]{1}[/]."
 
 msgid "Backup on Exit"
-msgstr ""
+msgstr "Respaldar al salir"
 
 msgid "Enter the OTP generated by your authenticator app."
 msgstr "Introduce el OTP generado por tu aplicación de autenticación."
@@ -1791,6 +1805,8 @@ msgid ""
 "Cannot load settings from cloud: User is not logged in or JWT token is "
 "missing."
 msgstr ""
+"No se puede cargar la configuración desde la nube: el usuario no ha iniciado "
+"sesión o falta el token JWT."
 
 msgid "Failed to initialize overlay, OpenGL initialization failed."
 msgstr ""
@@ -1852,6 +1868,9 @@ msgid ""
 "An error occurred while unpacking mod '{0}'. Parsing will continue, however "
 "information contained in this mod won't be available to ETS2LA."
 msgstr ""
+"Se produjo un error al descomprimir el mod ‘{0}’. El análisis continuará, "
+"sin embargo, la información contenida en este mod no estará disponible para "
+"ETS2LA."
 
 msgid "Chatbot"
 msgstr "Chatbot"
@@ -1968,10 +1987,10 @@ msgstr ""
 "registro de la ventana para {0}."
 
 msgid "Audio Settings"
-msgstr ""
+msgstr "Configuración de audio"
 
 msgid "Backup"
-msgstr ""
+msgstr "Respaldo"
 
 msgid "Request cancelled."
 msgstr "Solicitud cancelada."
@@ -2042,7 +2061,7 @@ msgid "Experiments"
 msgstr "Experimentos"
 
 msgid "Backup Settings"
-msgstr ""
+msgstr "Configuración de respaldo"
 
 msgid "gallons"
 msgstr "galones"
@@ -2079,6 +2098,8 @@ msgid ""
 "Our application is regularly stolen and cloned by vibe coders. If you have "
 "paid for access, you may have been scammed."
 msgstr ""
+"Nuestra aplicación es robada y clonada con regularidad por vibe coders. Si "
+"has pagado por acceder a ella, es posible que te hayan estafado."
 
 msgid "kilograms"
 msgstr "kilogramos"
@@ -2192,7 +2213,7 @@ msgid ""
 msgstr "Has iniciado sesión como <span class=\"text-text-l\">{0}</span>. [{1}]"
 
 msgid "Restore from Cloud"
-msgstr ""
+msgstr "Restaurar desde la nube"
 
 msgid ""
 "We will pause the game when we detect instability or the steering is "
@@ -2300,7 +2321,7 @@ msgstr ""
 "multijugador.</span>"
 
 msgid "Scammer Notice"
-msgstr ""
+msgstr "Aviso sobre estafadores"
 
 #, csharp-format
 msgid "Tried to enable {0}, but it was not found among loaded plugins."
@@ -2309,7 +2330,7 @@ msgstr ""
 
 #, csharp-format
 msgid "Failed to load settings from cloud: {0}"
-msgstr ""
+msgstr "Error al cargar la configuración desde la nube: {0}"
 
 msgid ""
 "Parsing will continue, however information contained in this file won't be "
@@ -2319,13 +2340,13 @@ msgstr ""
 "archivo no estará disponible para ETS2LA."
 
 msgid "No options selected"
-msgstr ""
+msgstr "Ninguna opción seleccionada"
 
 msgid "The selected file is not a core.scs file."
 msgstr "El archivo seleccionado no es un archivo core.scs."
 
 msgid "Manual Backup and Restore"
-msgstr ""
+msgstr "Respaldo y restauración manuales"
 
 msgid "Translated by:"
 msgstr "Traducido por:"
@@ -2376,6 +2397,10 @@ msgid ""
 "monitors, you can select which one to use here. Please select the monitor "
 "the game is running on, and ensure the game is in fullscreen."
 msgstr ""
+"El monitor en el que se mostrará la superposición de ETS2LA. Si tienes "
+"varios monitores, puedes seleccionar aquí cuál usar. Por favor, selecciona "
+"el monitor en el que se ejecuta el juego y asegúrate de que el juego esté en "
+"pantalla completa."
 
 msgid ""
 "You do not have permission to access this resource. The server understood "
@@ -2410,7 +2435,7 @@ msgstr "Renderizar cámaras de visión"
 
 #, csharp-format
 msgid "Failed to unpack mod '{0}'"
-msgstr ""
+msgstr "Error al descomprimir el mod ‘{0}’"
 
 msgid "Imperial"
 msgstr "Imperial"
@@ -2528,7 +2553,7 @@ msgstr ""
 
 #, csharp-format
 msgid "Deleted old SDK file '{0}'"
-msgstr ""
+msgstr "Se eliminó el archivo antiguo del SDK ‘{0}’"
 
 msgid "°C"
 msgstr "°C"
@@ -2549,7 +2574,7 @@ msgid "Checking for updates..."
 msgstr "Comprobando actualizaciones..."
 
 msgid "No audio output device available"
-msgstr ""
+msgstr "No hay ningún dispositivo de salida de audio disponible"
 
 msgid "Catalogue"
 msgstr "Catálogo"
@@ -2578,6 +2603,9 @@ msgid ""
 "has an active subscription. You can manage your subscription through the "
 "account settings page."
 msgstr ""
+"No tienes acceso a estas funciones. Por favor, inicia sesión con una cuenta "
+"que tenga una suscripción activa. Puedes gestionar tu suscripción en la "
+"página de configuración de la cuenta."
 
 #, csharp-format
 msgid "Cannot enable plugin {0} because dependency {1} was not found."
@@ -2589,7 +2617,7 @@ msgstr "Comportamiento de las teclas"
 
 #, csharp-format
 msgid "Download progress: {0}% ({1} / {2})"
-msgstr ""
+msgstr "Progreso de descarga: {0}% ({1} / {2})"
 
 msgid "Next"
 msgstr "Siguiente"
@@ -2609,11 +2637,15 @@ msgid ""
 "Allow ETS2LA's window to run on Wayland. Wayland might cause compatibility "
 "issues, however you might want to try to enable this option."
 msgstr ""
+"Permite que la ventana de ETS2LA se ejecute en Wayland. Wayland puede causar "
+"problemas de compatibilidad, aunque podrías probar a activar esta opción."
 
 msgid ""
 "Restoring settings from the cloud requires a restart of ETS2LA to take "
 "effect. Restart now?"
 msgstr ""
+"Restaurar la configuración desde la nube requiere reiniciar ETS2LA para que "
+"surta efecto. ¿Reiniciar ahora?"
 
 msgid "Help"
 msgstr "Ayuda"
@@ -2695,7 +2727,7 @@ msgid "Successfully installed SDK version '{0}' to '{1}'"
 msgstr "Se instaló correctamente la versión del SDK '{0}' en '{1}'"
 
 msgid "All driving assists have been enabled."
-msgstr ""
+msgstr "Todas las asistencias de conducción han sido activadas."
 
 msgid "Display Units: "
 msgstr "Unidades de visualización: "
