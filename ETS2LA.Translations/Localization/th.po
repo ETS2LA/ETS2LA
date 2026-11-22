@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
 "POT-Creation-Date: 2026-11-18 13:09:47+0200\n"
-"PO-Revision-Date: 2026-10-20 09:37+0000\n"
+"PO-Revision-Date: 2026-11-22 18:44+0000\n"
 "Last-Translator: cooper153826 <cooper153826@ets2la.com>\n"
 "Language-Team: Thai <http://weblate.ets2la.com/projects/ets2la/ets2la/th/>\n"
 "Language: th\n"
@@ -57,14 +57,14 @@ msgstr ""
 
 #, csharp-format
 msgid "Legacy audio path detected: {0}"
-msgstr ""
+msgstr "ตรวจพบตำแหน่งไฟล์เสียงแบบเก่า: {0}"
 
 #, csharp-format
 msgid "Control with ID '{0}' not found for updating bindings."
 msgstr "ไม่พบ Control ID '{0}' สำหรับแก้ไขการกำหนดปุ่ม"
 
 msgid "Monitor"
-msgstr ""
+msgstr "จอภาพ"
 
 msgid ""
 "Force ETS2LA to load the map on game startup. This can resolve issues where "
@@ -80,7 +80,7 @@ msgid "Game SDK"
 msgstr "SDK ของเกม"
 
 msgid "Send log"
-msgstr ""
+msgstr "ส่ง Log"
 
 #, csharp-format
 msgid "Parsing installation at '{0}' (version: {1})"
@@ -95,7 +95,7 @@ msgid "Register"
 msgstr "ลงทะเบียน"
 
 msgid "Backup Now"
-msgstr ""
+msgstr "สำรองข้อมูลเลย"
 
 msgid "kg"
 msgstr "กก."
@@ -109,7 +109,7 @@ msgstr ""
 "ปุ่มนี้จะทำงานเหมือน SET โดยตั้งความเร็วปัจจุบันตามขีดจำกัดความเร็ว"
 
 msgid "Logs"
-msgstr ""
+msgstr "Log"
 
 msgid "Become a GitHub Sponsor"
 msgstr "สนับสนุนโปรเจกต์ผ่าน GitHub Sponsors"
@@ -248,6 +248,8 @@ msgid ""
 "Allow ETS2LA's overlay to run on Wayland. Wayland might cause compatibility "
 "issues, however you might want to try to enable this option."
 msgstr ""
+"อนุญาตให้ Overlay ของ ETS2LA ทำงานบน Wayland ได้ Wayland อาจมีปัญหาเรื่องความเข้ากันได้"
+" แต่ก็ลองเปิดดูได้"
 
 #, csharp-format
 msgid "Your username must be at least {0} characters long."
@@ -315,7 +317,7 @@ msgid "Failed to log out. Please try again."
 msgstr "ออกจากระบบไม่สำเร็จ กรุณาลองอีกครั้ง"
 
 msgid "Update Information"
-msgstr ""
+msgstr "ข้อมูลอัปเดต"
 
 msgid "Visual"
 msgstr "ภาพและการแสดงผล"
@@ -379,7 +381,7 @@ msgid "No Update Available"
 msgstr "ไม่มีอัปเดตใหม่"
 
 msgid "Exclude Mod"
-msgstr ""
+msgstr "ไม่รวม Mod นี้"
 
 msgid "Performance Overlay"
 msgstr "Overlay แสดงประสิทธิภาพ"
@@ -408,6 +410,8 @@ msgid ""
 "By clicking <span class=\"font-bold\">Continue</span>, you agree to the "
 "transfer of your possible account information to an international recipient."
 msgstr ""
+"เมื่อกด <span class=\"font-bold\">ดำเนินการต่อ</span> ถือว่าคุณยินยอมให้ส่งข้อมูลบัญชีของคุ"
+"ณ (ถ้ามี) ไปยังผู้รับในต่างประเทศ"
 
 #, csharp-format
 msgid ""
@@ -459,7 +463,7 @@ msgstr ""
 "ไม่สามารถใช้ Memory Output ได้ โปรดตรวจสอบว่าเกมกำลังทำงาน และติดตั้ง SDK ใหม่หากจำเป็น"
 
 msgid "All driving assists have been disabled."
-msgstr ""
+msgstr "ปิดระบบช่วยขับทั้งหมดแล้ว"
 
 msgid "Translating release notes..."
 msgstr "กำลังแปลบันทึกประจำเวอร์ชัน..."
@@ -468,6 +472,8 @@ msgid ""
 "This chatbot is provided for free by <span class=\"text-text-l\">Lun011666</"
 "span>.<br/>For the sake of the community, we ask you not to abuse access."
 msgstr ""
+"Chatbot นี้ให้ใช้ฟรีโดย <span class=\"text-text-l\">Lun011666</span><br/>เพื่อคอมมูนิตี้"
+"ของเรา ขอความร่วมมืออย่าใช้งานในทางที่ผิด"
 
 #, csharp-format
 msgid "Failed to read version from '{0}': {1}"
@@ -478,7 +484,7 @@ msgstr "ยืนยันการดำเนินการหรือไม
 
 #, csharp-format
 msgid "Mod '{0}' has been excluded from future parsing."
-msgstr ""
+msgstr "จะไม่นำ Mod '{0}' มาประมวลผลอีก"
 
 #, csharp-format
 msgid "You have successfully logged in as {0}."
@@ -507,7 +513,7 @@ msgid "Failed to uninstall current version of plugin with ID {0}."
 msgstr "ถอนการติดตั้งปลั๊กอินเวอร์ชันปัจจุบัน ID {0} ไม่สำเร็จ"
 
 msgid "Error retrieving monitor names"
-msgstr ""
+msgstr "ดึงชื่อจอภาพไม่สำเร็จ"
 
 msgid "Early"
 msgstr "เร็ว"
@@ -526,7 +532,7 @@ msgid "The server timed out waiting for the request from the client."
 msgstr "เซิร์ฟเวอร์หมดเวลารอคำขอจากไคลเอนต์"
 
 msgid "Assists Enabled"
-msgstr ""
+msgstr "เปิดระบบช่วยขับแล้ว"
 
 msgid "Backend shutdown complete."
 msgstr "ปิด Backend เรียบร้อยแล้ว"
@@ -588,6 +594,8 @@ msgid ""
 "Target speed changed. Current speedlimit: {0} {1}. Offsets are carried over "
 "on speedlimit change."
 msgstr ""
+"เปลี่ยนความเร็วเป้าหมายแล้ว ความเร็วจำกัดตอนนี้: {0} {1} "
+"ค่าที่ปรับเพิ่ม/ลดไว้จะยังใช้ต่อเมื่อความเร็วจำกัดเปลี่ยน"
 
 msgid "Adaptive Cruise Control Only"
 msgstr "Adaptive Cruise Control เท่านั้น"
@@ -756,7 +764,7 @@ msgid "Error while checking for updates: {0}"
 msgstr "เกิดข้อผิดพลาดขณะตรวจสอบอัปเดต: {0}"
 
 msgid "Error Unpacking Mod"
-msgstr ""
+msgstr "แตกไฟล์ Mod ไม่สำเร็จ"
 
 msgid "Undetermined"
 msgstr "ไม่สามารถระบุได้"
@@ -768,13 +776,13 @@ msgid "Traffic Lights"
 msgstr "ไฟจราจร"
 
 msgid "No monitors detected, overlay cannot be initialized."
-msgstr ""
+msgstr "ไม่พบจอภาพ เริ่มต้น Overlay ไม่ได้"
 
 msgid "Update check skipped, using already cached result."
 msgstr "ข้ามการตรวจสอบอัปเดต โดยใช้ผลที่แคชไว้"
 
 msgid "Unable to read the current log."
-msgstr ""
+msgstr "อ่าน Log ปัจจุบันไม่ได้"
 
 msgid "Open Update Page"
 msgstr "เปิดหน้าต่างอัปเดต"
@@ -838,7 +846,7 @@ msgstr "ระบบหลีกเลี่ยงการชน"
 
 #, csharp-format
 msgid "Monitor {0}: {1}"
-msgstr ""
+msgstr "จอ {0}: {1}"
 
 msgid ""
 "Disables the overlay entirely. This will fix the black screen issue at the "
@@ -852,11 +860,12 @@ msgid "Overrides"
 msgstr "เขียนทับ"
 
 msgid "Assists Disabled"
-msgstr ""
+msgstr "ปิดระบบช่วยขับแล้ว"
 
 msgid ""
 "Cannot save settings to cloud: User is not logged in or JWT token is missing."
 msgstr ""
+"บันทึกการตั้งค่าขึ้นคลาวด์ไม่ได้: ยังไม่ได้เข้าสู่ระบบ หรือไม่มี JWT Token"
 
 msgid ""
 "Too many requests. You have sent too many requests in a given amount of time."
@@ -886,7 +895,7 @@ msgstr "การตั้งค่านี้จะโหลดเฉพาะ
 
 #, csharp-format
 msgid "Invalid audio job: {0}, does the file exist?"
-msgstr ""
+msgstr "งานเสียงไม่ถูกต้อง: {0} มีไฟล์นี้อยู่จริงไหม?"
 
 #, csharp-format
 msgid "Failed to load library plugin from [gray]{0}[/]: {1}"
@@ -921,7 +930,7 @@ msgid "New limit {0} {1}"
 msgstr "จำกันใหม่ {0}{1}"
 
 msgid "Log sent. Click here to view it."
-msgstr ""
+msgstr "ส่ง Log แล้ว คลิกที่นี่เพื่อดู"
 
 #, csharp-format
 msgid "Error playing audio file {0}: {1}"
@@ -979,10 +988,10 @@ msgid ""
 msgstr "การลบบัญชีจะลบข้อมูลทั้งหมดของคุณจากเซิร์ฟเวอร์ของเรา และไม่สามารถย้อนกลับได้"
 
 msgid "Unknown File"
-msgstr ""
+msgstr "ไฟล์ที่ไม่รู้จัก"
 
 msgid "Excluded Mods"
-msgstr ""
+msgstr "Mod ที่ไม่รวม"
 
 msgid "Manager"
 msgstr "ตัวจัดการ"
@@ -1048,7 +1057,7 @@ msgstr ""
 "เนื่องจากระบบไม่จำเป็นต้องใช้รหัสผ่านในการยืนยันตัวตน"
 
 msgid "Test Audio"
-msgstr ""
+msgstr "ทดสอบเสียง"
 
 msgid "Wiki / FAQ"
 msgstr "Wiki / คำถามที่พบบ่อย"
@@ -1057,6 +1066,8 @@ msgid ""
 "By clicking <span class=\"font-bold\">Continue</span>, you agree to our "
 "Privacy Policy."
 msgstr ""
+"เมื่อกด <span class=\"font-bold\">ดำเนินการต่อ</span> "
+"ถือว่าคุณยอมรับนโยบายความเป็นส่วนตัวของเรา"
 
 #, csharp-format
 msgid "Failed to install SDK from '{0}' to '{1}': {2}"
@@ -1206,7 +1217,7 @@ msgid ""
 msgstr "เมื่อกดปุ่ม SET ควรให้ ETS2LA ตั้งความเร็ว Cruise Control ปัจจุบันเป็นเท่าใด?"
 
 msgid "Allow Wayland"
-msgstr ""
+msgstr "อนุญาต Wayland"
 
 msgid "The selected directory does not exist."
 msgstr "ไม่มีโฟลเดอร์ที่เลือก"
@@ -1223,6 +1234,8 @@ msgid ""
 "This service is not available in your region. <span class=\"hover:underline "
 "hover:cursor-pointer\">Click here to see supported regions.</span>"
 msgstr ""
+"บริการนี้ยังไม่เปิดให้ใช้ในภูมิภาคของคุณ <span class="
+"\"hover:underline hover:cursor-pointer\">คลิกที่นี่เพื่อดูภูมิภาคที่รองรับ</span>"
 
 #, csharp-format
 msgid "Error while applying update: {0}"
@@ -1247,6 +1260,7 @@ msgid ""
 "Select mods that you want to exclude from the data. This can be useful if "
 "you have a mod that is causing issues with the data."
 msgstr ""
+"เลือก Mod ที่ไม่ต้องการให้รวมในข้อมูล มีประโยชน์ถ้ามี Mod ไหนทำให้ข้อมูลมีปัญหา"
 
 msgid ""
 "Adjust the level of detail of the game data we use. Higher values use more "
@@ -1271,6 +1285,7 @@ msgid ""
 "User folder paths are hidden automatically. Review the log for other "
 "personal information before sending."
 msgstr ""
+"ระบบจะซ่อนพาธโฟลเดอร์ผู้ใช้ให้อัตโนมัติ แต่ก่อนส่งช่วยเช็ก Log อีกทีว่าไม่มีข้อมูลส่วนตัวอื่นติดไปด้วย"
 
 msgid "Did you remember to restart after installing them?"
 msgstr "คุณได้รีสตาร์ตหลังติดตั้งแล้วหรือยัง?"
@@ -1380,10 +1395,10 @@ msgstr "เปิดใช้งานปลั๊กอินสำเร็จ
 msgid ""
 "• If you create an account, we transfer your account information to an "
 "international recipient."
-msgstr ""
+msgstr "• หากคุณสร้างบัญชี เราจะส่งข้อมูลบัญชีของคุณไปยังผู้รับในต่างประเทศ"
 
 msgid "Update Settings"
-msgstr ""
+msgstr "การตั้งค่าอัปเดต"
 
 #, csharp-format
 msgid "<span class=\"font-semibold\">{0}</span> at {1}"
@@ -1443,7 +1458,7 @@ msgstr "เมื่อกดจะปิดระบบช่วยขับข
 
 #, csharp-format
 msgid "Failed to save settings to cloud: {0}"
-msgstr ""
+msgstr "บันทึกการตั้งค่าขึ้นคลาวด์ไม่สำเร็จ: {0}"
 
 msgid "Binding thread started with no control to bind."
 msgstr "เริ่ม Thread กำหนดปุ่มโดยไม่มีการควบคุมให้กำหนด"
@@ -1460,6 +1475,7 @@ msgid ""
 "When enabled, your settings will be automatically saved to the cloud when "
 "you exit ETS2LA."
 msgstr ""
+"เมื่อเปิดไว้ การตั้งค่าของคุณจะถูกบันทึกขึ้นคลาวด์ให้อัตโนมัติตอนปิด ETS2LA"
 
 msgid "Simplified Graphics"
 msgstr "กราฟิกแบบเรียบง่าย"
@@ -1529,7 +1545,7 @@ msgid "Currently running at {0} FPS."
 msgstr "ขณะนี้ทำงานที่ {0} FPS"
 
 msgid "Mod Excluded"
-msgstr ""
+msgstr "ไม่รวม Mod แล้ว"
 
 #, csharp-format
 msgid "Version {0} not found for plugin with ID {1}."
@@ -1563,7 +1579,7 @@ msgstr "เซิร์ฟเวอร์ไม่เข้าใจคำขอ
 
 #, csharp-format
 msgid "No versions available for plugin with ID {0}."
-msgstr ""
+msgstr "ไม่มีเวอร์ชันให้ใช้สำหรับปลั๊กอิน ID {0}"
 
 #, csharp-format
 msgid ""
@@ -1617,14 +1633,14 @@ msgid "The selected game executable was not found."
 msgstr "ไม่พบไฟล์ Executable ของเกมที่เลือกไว้"
 
 msgid "No update available."
-msgstr ""
+msgstr "ไม่มีอัปเดตใหม่"
 
 #, csharp-format
 msgid "Loaded library plugin: [gray]{0}[/] from [gray]{1}[/]."
 msgstr "โหลด Library Plugin: [gray]{0}[/] จาก [gray]{1}[/] แล้ว"
 
 msgid "Backup on Exit"
-msgstr ""
+msgstr "สำรองข้อมูลตอนปิดโปรแกรม"
 
 msgid "Enter the OTP generated by your authenticator app."
 msgstr "ใส่ OTP ที่แอปแอปยืนยันตัวตน(authenticator)เจน"
@@ -1654,7 +1670,7 @@ msgstr "ซ่อนรายการที่ติดตั้งแล้ว
 msgid ""
 "Cannot load settings from cloud: User is not logged in or JWT token is "
 "missing."
-msgstr ""
+msgstr "โหลดการตั้งค่าจากคลาวด์ไม่ได้: ยังไม่ได้เข้าสู่ระบบ หรือไม่มี JWT Token"
 
 msgid "Failed to initialize overlay, OpenGL initialization failed."
 msgstr "เริ่มต้น Overlay ไม่สำเร็จ เนื่องจากเริ่มต้น OpenGL ไม่สำเร็จ"
@@ -1703,13 +1719,15 @@ msgid "Control with ID '{0}' not found for event unsubscription."
 msgstr "ไม่พบ Control ID '{0}' สำหรับยกเลิกการสมัครรับ Event"
 
 msgid "Share log"
-msgstr ""
+msgstr "แชร์ Log"
 
 #, csharp-format
 msgid ""
 "An error occurred while unpacking mod '{0}'. Parsing will continue, however "
 "information contained in this mod won't be available to ETS2LA."
 msgstr ""
+"เกิดข้อผิดพลาดตอนแตกไฟล์ Mod '{0}' ระบบจะประมวลผลต่อ แต่ ETS2LA จะใช้ข้อมูลจาก Mod "
+"นี้ไม่ได้"
 
 msgid "Chatbot"
 msgstr "Chatbot"
@@ -1736,7 +1754,7 @@ msgid "Update to {0} from {1}"
 msgstr "อัปเดตจาก {1} เป็น {0}"
 
 msgid "Open Externally"
-msgstr ""
+msgstr "เปิดในหน้าต่างภายนอก"
 
 msgid "Restarting ETS2LA..."
 msgstr "กำลังรีสตาร์ต ETS2LA..."
@@ -1816,10 +1834,10 @@ msgid "Overlay is disabled in settings, skipping window registration for {0}."
 msgstr "ปิด Overlay ในการตั้งค่าอยู่ ข้ามการลงทะเบียนหน้าต่างสำหรับ {0}"
 
 msgid "Audio Settings"
-msgstr ""
+msgstr "การตั้งค่าเสียง"
 
 msgid "Backup"
-msgstr ""
+msgstr "สำรองข้อมูล"
 
 msgid "Request cancelled."
 msgstr "ยกเลิกคำขอแล้ว"
@@ -1888,7 +1906,7 @@ msgid "Experiments"
 msgstr "ทดลอง"
 
 msgid "Backup Settings"
-msgstr ""
+msgstr "การตั้งค่าการสำรองข้อมูล"
 
 msgid "gallons"
 msgstr "แกลลอน"
@@ -1923,6 +1941,8 @@ msgid ""
 "Our application is regularly stolen and cloned by vibe coders. If you have "
 "paid for access, you may have been scammed."
 msgstr ""
+"แอปของเราโดนพวกไวบ์โค้ดเดอร์ขโมยไปก๊อปอยู่บ่อยๆ ถ้าคุณเสียเงินเพื่อเข้าใช้งาน "
+"คุณอาจโดนหลอกแล้ว"
 
 msgid "kilograms"
 msgstr "กิโลกรัม"
@@ -1992,7 +2012,7 @@ msgid "Game added"
 msgstr "เพิ่มเกมแล้ว"
 
 msgid "Privacy Policy"
-msgstr ""
+msgstr "นโยบายความเป็นส่วนตัว"
 
 #, csharp-format
 msgid "You are permanently banned.<br/>Reason: {0}"
@@ -2025,7 +2045,7 @@ msgid ""
 msgstr "ขณะนี้คุณเข้าสู่ระบบด้วยบัญชี <span class=\"text-text-l\">{0}</span> [{1}]"
 
 msgid "Restore from Cloud"
-msgstr ""
+msgstr "กู้คืนจากคลาวด์"
 
 msgid ""
 "We will pause the game when we detect instability or the steering is "
@@ -2126,7 +2146,7 @@ msgstr ""
 "bold\">อย่าปล่อยให้ ETS2LA ขับโดยไม่มีคนดูแล โดยเฉพาะใน Multiplayer</span>"
 
 msgid "Scammer Notice"
-msgstr ""
+msgstr "ระวังมิจฉาชีพ"
 
 #, csharp-format
 msgid "Tried to enable {0}, but it was not found among loaded plugins."
@@ -2134,7 +2154,7 @@ msgstr "พยายามจะเปิดใช้งาน {0} แต่ม�
 
 #, csharp-format
 msgid "Failed to load settings from cloud: {0}"
-msgstr ""
+msgstr "โหลดการตั้งค่าจากคลาวด์ไม่สำเร็จ: {0}"
 
 msgid ""
 "Parsing will continue, however information contained in this file won't be "
@@ -2142,13 +2162,13 @@ msgid ""
 msgstr "การวิเคราะห์จะดำเนินต่อ แต่ ETS2LA จะไม่สามารถใช้ข้อมูลในไฟล์นี้ได้"
 
 msgid "No options selected"
-msgstr ""
+msgstr "ยังไม่ได้เลือกตัวเลือก"
 
 msgid "The selected file is not a core.scs file."
 msgstr "ไฟล์ที่เลือกไม่ใช่ core.scs"
 
 msgid "Manual Backup and Restore"
-msgstr ""
+msgstr "สำรองและกู้คืนข้อมูลด้วยตนเอง"
 
 msgid "Translated by:"
 msgstr "แปลโดย:"
@@ -2199,6 +2219,8 @@ msgid ""
 "monitors, you can select which one to use here. Please select the monitor "
 "the game is running on, and ensure the game is in fullscreen."
 msgstr ""
+"จอภาพที่จะแสดง Overlay ของ ETS2LA ถ้ามีหลายจอ เลือกได้ที่นี่ว่าจะใช้จอไหน "
+"โปรดเลือกจอที่เปิดเกมอยู่ และตั้งเกมเป็นแบบเต็มจอ"
 
 msgid ""
 "You do not have permission to access this resource. The server understood "
@@ -2231,7 +2253,7 @@ msgstr "เรนเดอร์กล้อง Vision"
 
 #, csharp-format
 msgid "Failed to unpack mod '{0}'"
-msgstr ""
+msgstr "แตกไฟล์ Mod '{0}' ไม่สำเร็จ"
 
 msgid "Imperial"
 msgstr "อิมพีเรียล"
@@ -2276,7 +2298,7 @@ msgid "Final Disclaimer <span class=\"description\">1/2</span>"
 msgstr "ข้อจำกัดความรับผิดชอบสุดท้าย <span class=\"description\">1/2</span>"
 
 msgid "• ETS2LA Developers, contact@ets2la.com, Poland."
-msgstr ""
+msgstr "• ทีมผู้พัฒนา ETS2LA, contact@ets2la.com, ประเทศโปแลนด์"
 
 msgid ""
 "Translate news articles to your selected display language. This may take a "
@@ -2340,7 +2362,7 @@ msgstr "เกิดข้อผิดพลาดขณะลบบัญชี
 
 #, csharp-format
 msgid "Deleted old SDK file '{0}'"
-msgstr ""
+msgstr "ลบไฟล์ SDK เก่า '{0}' แล้ว"
 
 msgid "°C"
 msgstr "°C"
@@ -2358,7 +2380,7 @@ msgid "Checking for updates..."
 msgstr "กำลังเช็คอัปเดต"
 
 msgid "No audio output device available"
-msgstr ""
+msgstr "ไม่พบอุปกรณ์เสียงออก"
 
 msgid "Catalogue"
 msgstr "คลังปลั๊กอิน"
@@ -2378,13 +2400,15 @@ msgid "Assist Level: "
 msgstr "ระดับระบบช่วยขับ: "
 
 msgid "View Privacy Policy"
-msgstr ""
+msgstr "ดูนโยบายความเป็นส่วนตัว"
 
 msgid ""
 "You do not have access to these features. Please log in with an account that "
 "has an active subscription. You can manage your subscription through the "
 "account settings page."
 msgstr ""
+"คุณยังไม่มีสิทธิ์ใช้ฟีเจอร์เหล่านี้ โปรดเข้าสู่ระบบด้วยบัญชีที่มีการสมัครสมาชิกอยู่ "
+"จัดการการสมัครสมาชิกได้ที่หน้าการตั้งค่าบัญชี"
 
 #, csharp-format
 msgid "Cannot enable plugin {0} because dependency {1} was not found."
@@ -2395,7 +2419,7 @@ msgstr "พฤติกรรมของปุ่มลัด"
 
 #, csharp-format
 msgid "Download progress: {0}% ({1} / {2})"
-msgstr ""
+msgstr "กำลังดาวน์โหลด: {0}% ({1} / {2})"
 
 msgid "Next"
 msgstr "ต่อไป"
@@ -2414,11 +2438,14 @@ msgid ""
 "Allow ETS2LA's window to run on Wayland. Wayland might cause compatibility "
 "issues, however you might want to try to enable this option."
 msgstr ""
+"อนุญาตให้หน้าต่างของ ETS2LA ทำงานบน Wayland ได้ Wayland อาจมีปัญหาเรื่องความเข้ากันได้ "
+"แต่ก็ลองเปิดดูได้"
 
 msgid ""
 "Restoring settings from the cloud requires a restart of ETS2LA to take "
 "effect. Restart now?"
 msgstr ""
+"ต้องรีสตาร์ท ETS2LA ก่อน การตั้งค่าที่กู้คืนจากคลาวด์ถึงจะมีผล รีสตาร์ทเลยไหม?"
 
 msgid "Help"
 msgstr "ช่วยเหลือ"
@@ -2484,6 +2511,8 @@ msgid ""
 "we don't even collect it. However, we are still obligated to display and "
 "acquire your consent before proceeding."
 msgstr ""
+"เราไม่ขายหรือส่งต่อข้อมูลส่วนตัวของคุณให้บุคคลที่สามเด็ดขาด จริงๆ แล้วเราไม่ได้เก็บด้วยซ้ำ "
+"แต่ตามกฎหมายเรายังต้องแจ้งและขอความยินยอมจากคุณก่อนไปต่อ"
 
 msgid "Plugin Installer"
 msgstr "ตัวติดตั้งปลั๊กอิน"
@@ -2493,7 +2522,7 @@ msgid "Successfully installed SDK version '{0}' to '{1}'"
 msgstr "ติดตั้ง SDK เวอร์ชั่น '{0}' ไปยัง '{1}' เสร็จสิ้น"
 
 msgid "All driving assists have been enabled."
-msgstr ""
+msgstr "เปิดระบบช่วยขับทั้งหมดแล้ว"
 
 msgid "Display Units: "
 msgstr "หน่วยที่แสดง: "
