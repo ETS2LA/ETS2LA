@@ -1,6 +1,5 @@
-### ETS2LA C# 2026.11.5301
-- `feat` Added *Logs* page to the settings menu. This page will display all previous log entries. You'll also find a button to open the log file in your system's default text editor here.
-- `translation` Update translations for *Finnish*, *Japanese* and *Russian*.
+### ETS2LA C# 2026.11.5309
+- `translation` Update translations for *Polish*, *Chinese (Traditional)*, *Spanish*, *Thai*, *Lithuanian* and *Russian*.
 
 #### Thank you to today's sponsor... You!
 Development is possible thanks to our [sponsors](https://github.com/sponsors/Tumppi066). Please consider supporting if you like the project and have the means to do so.
