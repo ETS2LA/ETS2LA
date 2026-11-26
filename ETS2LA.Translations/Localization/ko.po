@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA\n"
-"POT-Creation-Date: 2026-11-18 13:09:47+0200\n"
+"POT-Creation-Date: 2026-11-26 19:49:21+0200\n"
 "PO-Revision-Date: 2026-11-02 20:26+0000\n"
 "Last-Translator: bot_lapis <botlapis@ets2la.com>\n"
 "Language-Team: Korean <http://weblate.ets2la.com/projects/ets2la/ets2la/ko/"
@@ -136,16 +136,16 @@ msgid "Maximum Speed"
 msgstr "최대 속도"
 
 msgid ""
-"When the game reports itself being paused, ETS2LA won't render AR elements."
-msgstr ""
-"게임이 일시정지 상태라고 보고하면, ETS2LA는 AR 요소를 렌더링하지 않습니다."
-
-msgid ""
 "Your username may only contain letters, numbers, underscores, hyphens and "
 "periods, and must start and end with a letter or number."
 msgstr ""
 "사용자 이름에는 문자, 숫자, 밑줄, 하이픈, 마침표만 포함할 수 있으며, 문자나 "
 "숫자로 시작하고 끝나야 합니다."
+
+msgid ""
+"When the game reports itself being paused, ETS2LA won't render AR elements."
+msgstr ""
+"게임이 일시정지 상태라고 보고하면, ETS2LA는 AR 요소를 렌더링하지 않습니다."
 
 #, csharp-format
 msgid "Connected joystick: [bold]{0}[/] [gray italic]({1})[/]"
@@ -252,14 +252,14 @@ msgstr "크루즈 컨트롤 속도를 변경할 때의 단계 크기입니다."
 msgid "Please enter a username."
 msgstr "사용자 이름을 입력해 주세요."
 
+#, csharp-format
+msgid "Your username must be at least {0} characters long."
+msgstr "사용자 이름은 최소 {0}자 이상이어야 합니다."
+
 msgid ""
 "Allow ETS2LA's overlay to run on Wayland. Wayland might cause compatibility "
 "issues, however you might want to try to enable this option."
 msgstr ""
-
-#, csharp-format
-msgid "Your username must be at least {0} characters long."
-msgstr "사용자 이름은 최소 {0}자 이상이어야 합니다."
 
 msgid "Press anywhere outside the dialog to close it."
 msgstr "대화 상자 바깥 아무 곳이나 눌러 닫으세요."
@@ -331,11 +331,11 @@ msgstr "비주얼"
 msgid "Additional"
 msgstr "추가"
 
-msgid "Show Fewer Logs"
-msgstr "로그 적게 보기"
-
 msgid "Install Plugins"
 msgstr "플러그인 설치"
+
+msgid "Show Fewer Logs"
+msgstr "로그 적게 보기"
 
 msgid "Your login token is invalid or expired."
 msgstr "로그인 토큰이 유효하지 않거나 만료되었습니다."
@@ -697,11 +697,11 @@ msgstr "SDK 버전 '{0}'을(를) '{1}'에서 제거하지 못했습니다: {2}"
 msgid "Failed to initialize overlay, ImGui initialization failed."
 msgstr "오버레이 초기화 실패, ImGui 초기화에 실패했습니다."
 
-msgid "Your account is not allowed to use the chatbot."
-msgstr "귀하의 계정은 챗봇을 사용할 수 없습니다."
-
 msgid "Speed Limit Warning"
 msgstr "속도 제한 경고"
+
+msgid "Your account is not allowed to use the chatbot."
+msgstr "귀하의 계정은 챗봇을 사용할 수 없습니다."
 
 msgid "Speed limit changed"
 msgstr "제한 속도 변경됨"
@@ -1045,12 +1045,12 @@ msgstr "파스칼 (Pa)"
 msgid "Account Removal Error"
 msgstr "계정 제거 오류"
 
+msgid "You can enable the plugins we installed in a previous step here."
+msgstr "이전 단계에서 설치한 플러그인을 여기에서 활성화할 수 있습니다."
+
 #, csharp-format
 msgid "Failed to disable {0}: {1}"
 msgstr "{0}을(를) 비활성화하지 못했습니다: {1}"
-
-msgid "You can enable the plugins we installed in a previous step here."
-msgstr "이전 단계에서 설치한 플러그인을 여기에서 활성화할 수 있습니다."
 
 msgid "Login"
 msgstr "로그인"
@@ -1058,12 +1058,12 @@ msgstr "로그인"
 msgid "SDK Installed"
 msgstr "SDK 설치됨"
 
-msgid "Current Speed"
-msgstr "현재 속도"
-
 #, csharp-format
 msgid "Bound control {0} ({1}) to device {2} and control {3}"
 msgstr "컨트롤 {0} ({1})을(를) 장치 {2}, 컨트롤 {3}에 바인딩했습니다"
+
+msgid "Current Speed"
+msgstr "현재 속도"
 
 msgid "miles per hour"
 msgstr "마일/시간"
@@ -1310,15 +1310,15 @@ msgstr "오픈 소스"
 msgid "<span class=\"font-semibold\">{0}</span> until {1}"
 msgstr "{1}까지 <span class=\"font-semibold\">{0}</span>"
 
+msgid "Did you remember to restart after installing them?"
+msgstr "설치한 후 다시 시작하는 것을 잊지 않으셨나요?"
+
 msgid ""
 "User folder paths are hidden automatically. Review the log for other "
 "personal information before sending."
 msgstr ""
 "사용자 폴더 경로는 자동으로 숨겨집니다. 전송하기 전에 로그에서 다른 개인 정보"
 "를 검토하세요."
-
-msgid "Did you remember to restart after installing them?"
-msgstr "설치한 후 다시 시작하는 것을 잊지 않으셨나요?"
 
 msgid "Volume"
 msgstr "볼륨"
@@ -1572,11 +1572,11 @@ msgstr "게임을 추가하지 못했습니다"
 msgid "Font file not found at {0}"
 msgstr "{0}에서 글꼴 파일을 찾을 수 없습니다"
 
-msgid "Changelog"
-msgstr "변경 로그"
-
 msgid "No release notes available."
 msgstr "사용 가능한 릴리스 노트가 없습니다."
+
+msgid "Changelog"
+msgstr "변경 로그"
 
 #, csharp-format
 msgid "Detected a switch to {0}, waiting for its game data to be parsed."
@@ -2056,15 +2056,15 @@ msgstr "추천 플러그인"
 msgid "Failed to remove account. Please try again."
 msgstr "계정을 제거하지 못했습니다. 다시 시도해 주세요."
 
+msgid "Game added"
+msgstr "게임 추가됨"
+
 msgid ""
 "The maximum speed ETS2LA will accelerate to. It might still drift over this "
 "limit due to momentum."
 msgstr ""
 "ETS2LA의 최고 가속 속도입니다. 관성으로 인해 제한 속도를 살짝 오버할 수 있어"
 "요."
-
-msgid "Game added"
-msgstr "게임 추가됨"
 
 msgid "Privacy Policy"
 msgstr "개인정보 처리방침"
@@ -2143,14 +2143,14 @@ msgstr "어시스트 모드: <span class=\"text-text-accent font-bold\">{0}</spa
 msgid "Failed to load plugin from [gray]{0}[/]: {1}"
 msgstr "[gray]{0}[/]에서 플러그인을 로드하지 못했습니다: {1}"
 
-msgid "Thinking..."
-msgstr "처리 중..."
-
 msgid "View Public Telemetry"
 msgstr "공개 텔레메트리 보기"
 
 msgid "Adjust the volume of the audio output."
 msgstr "오디오 출력의 볼륨을 조정합니다."
+
+msgid "Thinking..."
+msgstr "처리 중..."
 
 #, csharp-format
 msgid ""
@@ -2234,14 +2234,14 @@ msgstr "선택한 파일은 core.scs 파일이 아닙니다."
 msgid "Manual Backup and Restore"
 msgstr ""
 
-msgid "Translated by:"
-msgstr "번역:"
+msgid "You have successfully logged out."
+msgstr "성공적으로 로그아웃되었습니다."
 
 msgid "This game was found at"
 msgstr "이 게임은 다음 위치에서 발견되었습니다"
 
-msgid "You have successfully logged out."
-msgstr "성공적으로 로그아웃되었습니다."
+msgid "Translated by:"
+msgstr "번역:"
 
 msgid "Data Quality"
 msgstr "데이터 품질"
@@ -2268,11 +2268,11 @@ msgstr "내부 예외: {0}"
 msgid "Plugin with ID {0} not found."
 msgstr "플러그인 {0}을(를) 찾지 못했습니다."
 
-msgid "Units and Language"
-msgstr "단위 및 언어"
-
 msgid "One Time Password"
 msgstr "일회용 비밀번호"
+
+msgid "Units and Language"
+msgstr "단위 및 언어"
 
 #, csharp-format
 msgid "Loaded plugin: [gray]{0}[/] from [gray]{1}[/]."
@@ -2480,12 +2480,12 @@ msgstr ""
 msgid "Cannot enable plugin {0} because dependency {1} was not found."
 msgstr "종속성 {1}을(를) 찾을 수 없어 {0} 플러그인을 활성화할 수 없습니다."
 
-msgid "Keybind Behaviour"
-msgstr "키 바인드 동작"
-
 #, csharp-format
 msgid "Download progress: {0}% ({1} / {2})"
 msgstr ""
+
+msgid "Keybind Behaviour"
+msgstr "키 바인드 동작"
 
 msgid "Next"
 msgstr "다음"
@@ -2548,12 +2548,12 @@ msgstr "누락된 종속성: {0}"
 msgid "Final Disclaimer <span class=\"description\">2/2</span>"
 msgstr "최종 면책 조항 <span class=\"description\">2/2</span>"
 
+msgid "Logout Failed"
+msgstr "로그아웃 실패"
+
 #, csharp-format
 msgid "Snap to each 10 {0}"
 msgstr "10 {0} 간격으로 스냅"
-
-msgid "Logout Failed"
-msgstr "로그아웃 실패"
 
 #, csharp-format
 msgid "Created plugin directory: [gray]{0}[/]"
@@ -2617,9 +2617,6 @@ msgstr "모드 추가 중: {0}"
 msgid "Like ETS2LA?"
 msgstr "ETS2LA가 마음에 드시나요?"
 
-msgid "Show Plugin Updates"
-msgstr "플러그인 업데이트 표시"
-
 msgid ""
 "Allows ETS2LA to control throttle and brake using direct memory editing. "
 "This might not work on some systems, but allows for control even while "
@@ -2630,6 +2627,9 @@ msgstr ""
 "다. 일부 시스템에서는 작동하지 않을 수 있지만, 게임에서 탭 아웃한 상태에서도 "
 "제어할 수 있습니다. 이 기능을 활성화했는데 작동하지 않으면 Discord 서버에 문"
 "제를 보고해 주세요."
+
+msgid "Show Plugin Updates"
+msgstr "플러그인 업데이트 표시"
 
 #, csharp-format
 msgid "Not all dependencies for plugin {0} are installed."
